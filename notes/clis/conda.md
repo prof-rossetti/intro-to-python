@@ -74,6 +74,8 @@ After the installation is complete, try repeating the detection commands again, 
 
 Once you are able to successfully detect your installation of Anaconda, you are ready to proceed!
 
+> NOTE: On Windows, you may need to run the command `conda init bash` when prompted to do so, in order to activate a virtual environment for the first time.
+
 ## Usage
 
 ### The `conda` Utility
