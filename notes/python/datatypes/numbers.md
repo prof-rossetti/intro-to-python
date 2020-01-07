@@ -55,7 +55,6 @@ Use [string formatting](https://docs.python.org/3.4/library/string.html#string-f
 Feel free to use this function in your projects:
 
 ```py
-# source: https://github.com/prof-rossetti/nyu-info-2335-201905/edit/master/notes/python/datatypes/numbers.md
 def to_usd(my_price):
     """
     Converts a numeric value to usd-formatted string, for printing and display purposes. \n
@@ -72,4 +71,3 @@ Also reference the numeric functionality of these built-in Python modules:
   + [`math`](../modules/math.md)
   + [`random`](../modules/random.md)
   + [`statistics`](../modules/statistics.md)
-

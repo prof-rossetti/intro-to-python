@@ -14,11 +14,11 @@ def to_usd(my_price):
 csv_filename = "sales-201803.csv"
 
 # reference a file in the "data" directory
-# ... adapted from: https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/notes/python/modules/os.md#file-operations
+# ... adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/modules/os.md#file-operations
 csv_filepath = os.path.join(os.path.dirname(__file__), "data", csv_filename)
 
 # read csv file into a pandas dataframe object
-# ... this and other pandas operations adapted from: https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/notes/python/packages/pandas.md
+# ... this and other pandas operations adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/pandas.md
 csv_data = pandas.read_csv(csv_filepath)
 
 #

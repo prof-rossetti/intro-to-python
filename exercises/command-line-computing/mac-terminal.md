@@ -158,5 +158,5 @@ Request the contents of a webpage:
 ```sh
 curl google.com
 curl http://www.google.com
-curl https://raw.githubusercontent.com/prof-rossetti/nyu-info-2335-201905/master/data/products.json
+curl https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.json
 ```

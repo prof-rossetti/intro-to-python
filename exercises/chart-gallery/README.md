@@ -152,14 +152,3 @@ adapt the contents of the "three_charts.py" script to process the provided data 
 Focus on one chart at a time. Commit your code incrementally as you make progress and reach certain milestones. Make at least one commit per chart.
 
 Prefer to generate a draft version of each chart before moving on to customizing the intricate details of each (e.g. chart formatting and style).
-
-## Submission Instructions
-
-Submission of this exercise is optional, but if you'd like to take this opportunity to practice the project submission process, consult the [Contributor's Guide](/CONTRIBUTING.md) and follow the steps below:
-
-  1. Push your local project repository to GitHub, so you can visit your remote project repository at a URL like `https://github.com/YOUR_USERNAME/chart-gallery`
-  2. Fork the ["upstream" course repository](https://github.com/prof-rossetti/nyu-info-2335-201905) (or refresh your existing fork)
-  3. Update the ["submissions.csv"](submissions.csv) file in your remote fork of the course repository to include an entry linking to your remote project repository URL
-  4. Finally, submit a Pull Request for the changes in your remote fork of the course repository to be accepted back into the "upstream" course repository
-
-This process may seem a little unfamiliar at the moment, but it will become more familiar with each repetition.

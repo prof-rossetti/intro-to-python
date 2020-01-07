@@ -20,11 +20,11 @@ def to_usd(my_price):
 csv_filename = "sales-201803.csv"  # TODO: allow user to specify
 
 # reference a file in the "data" directory
-# ... adapted from: https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/notes/python/modules/os.md#file-operations
+# ... adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/modules/os.md#file-operations
 csv_filepath = os.path.join(os.path.dirname(__file__), "data", csv_filename)
 
 # read csv file into a pandas dataframe object
-# ... this and other pandas operations adapted from: https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/notes/python/packages/pandas.md
+# ... this and other pandas operations adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/pandas.md
 csv_data = pandas.read_csv(csv_filepath)
 
 #
@@ -74,7 +74,7 @@ unique_product_names = unique_product_names.tolist()
 top_sellers = []
 
 for product_name in unique_product_names:
-    # filering approach adapted from: https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/notes/python/packages/pandas.md
+    # filering approach adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/pandas.md
     # ... matching_rows = stats[stats["games"] > 150]
     matching_rows = csv_data[csv_data["product"] == product_name]
     #(Pdb) print(type(matching_rows)) #> <class 'pandas.core.frame.DataFrame'>
@@ -89,7 +89,7 @@ for product_name in unique_product_names:
         {"name": product_name, "monthly_sales": product_monthly_sales})
 
 # sort the list of dictionaries to make sure they are looped through and charted in the right order
-# ... adapted from: https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/notes/python/datatypes/lists.md#sorting
+# ... adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/datatypes/lists.md#sorting
 # sort in descending order, google search for "python sorted function sort descending" yields:
 #  + https://www.programiz.com/python-programming/methods/built-in/sorted
 #  + https://docs.python.org/3/howto/sorting.html
@@ -121,7 +121,6 @@ for d in top_sellers:
 print("-----------------------")
 print("VISUALIZING THE DATA...")
 
-# adapted from code posted to matplotlib Slack channel: https://georgetown-opim-py.slack.com/archives/CFZDKNKA4/p1549494877005200
 # google search for "matplotlib chart title" yields:
 #  + https://matplotlib.org/api/_as_gen/matplotlib.pyplot.title.html
 #  + https://matplotlib.org/gallery/subplots_axes_and_figures/figure_title.html

@@ -146,7 +146,7 @@ Download the [cURL](https://curl.haxx.se/download.html) utility if necessary, th
 ```sh
 curl google.com
 curl http://www.google.com
-curl https://raw.githubusercontent.com/prof-rossetti/nyu-info-2335-201905/master/data/products.json
+curl https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.json
 ```
 
 You may need to execute these commands from within the downloaded directory. See ["Installing cURL on Windows"](http://stackoverflow.com/questions/9507353/how-do-i-install-set-up-and-use-curl-on-a-windows) for more support.

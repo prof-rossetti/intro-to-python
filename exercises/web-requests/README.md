@@ -72,16 +72,16 @@ Iteratively develop your Python script to tackle each of the following challenge
 
 ### Requesting a Product
 
-Write a Python program which issues a GET request for this [product.json data](https://raw.githubusercontent.com/prof-rossetti/nyu-info-2335-201905/master/data/products/2.json), then prints the product's "name".
+Write a Python program which issues a GET request for this [product.json data](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products/2.json), then prints the product's "name".
 
 > FYI: the response text will be a JSON object, like a Python dictionary
 
 ### Requesting Products
 
-Write a Python program which issues a GET request for this [products.json data](https://raw.githubusercontent.com/prof-rossetti/nyu-info-2335-201905/master/data/products.json), then loop through each product and print its "name" and "id" attributes.
+Write a Python program which issues a GET request for this [products.json data](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.json), then loop through each product and print its "name" and "id" attributes.
 
 > FYI: the response text will be a JSON array of objects, like a Python list of dictionaries
 
 #### Requesting the Gradebook
 
-Write a Python program which issues a GET request for this [gradebook.json data](https://raw.githubusercontent.com/prof-rossetti/nyu-info-2335-201905/master/data/gradebook.json), then calculate and print the average, min, and max grades.
+Write a Python program which issues a GET request for this [gradebook.json data](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/gradebook.json), then calculate and print the average, min, and max grades.
