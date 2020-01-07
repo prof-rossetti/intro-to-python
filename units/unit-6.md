@@ -6,8 +6,6 @@
 
 In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.
 
-## [Slides](https://docs.google.com/presentation/d/1x20QoKXQgK6JSvRyWRiEYOVf4iMP0Rnwrrt35vnP_zw/edit?usp=sharing)
-
 ## Discussions and Notes
 
   + [Project Management](/notes/project-mgmt/README.md)

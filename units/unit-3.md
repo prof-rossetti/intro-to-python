@@ -6,8 +6,6 @@
 
 In this unit, we will take a high-level guided tour of the Python programming language. We'll start by familiarizing ourselves with some introductory Python reference materials, then we'll illustrate and apply these concepts as we work through a guided Python exercise.
 
-## [Slides](https://docs.google.com/presentation/d/1bL93l9KOJB6QYbvOXWXMz5cdOK3TTA1wyk0sxJBs7zc/edit?usp=sharing)
-
 ## Discussions and Notes
 
   + Object-oriented Programming (OOP)

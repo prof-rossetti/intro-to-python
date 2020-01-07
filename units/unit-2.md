@@ -8,8 +8,6 @@ In this unit, we'll discuss how people can interact with software applications. 
 
 We'll also use this unit to continue practicing our ability to run Python applications using the developer tools we've set up in a previous unit. And we'll begin introducing some basic components of the Python language to prepare for the next unit.
 
-## [Slides](https://docs.google.com/presentation/d/1VOVLK8PMLIr99dOsInJIjEzZx-MxSoLRyBggj8OOLZc/edit?usp=sharing)
-
 ## Discussions and Notes
 
   + User Interfaces and Experiences (UI/UX)

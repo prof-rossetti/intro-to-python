@@ -9,8 +9,6 @@
 
 In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data. We'll also get more familiar with taking an active, independent learning approach.
 
-## [Slides](https://docs.google.com/presentation/d/1frWgIWxloO7estJmm1dyuOPptIKf_d7eCiggmEyP5C4/edit?usp=sharing)
-
 ## Discussions and Notes
 
   + Business Intelligence and Data Visualization

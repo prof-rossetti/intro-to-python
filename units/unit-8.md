@@ -8,8 +8,6 @@
 
 For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
 
-## [Slides](https://docs.google.com/presentation/d/14QOUrGNlzHogoHuEctc-xpuQ2IlmlJh91b8ZAMySpzc/edit?usp=sharing)
-
 ## Discussions and Notes
 
   + Version Control:

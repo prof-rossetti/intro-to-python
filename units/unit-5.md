@@ -6,8 +6,6 @@
 
 In this unit, we'll learn how to use Python to process data from the Internet, focusing on data returned by web services in JSON format.
 
-## [Slides](https://docs.google.com/presentation/d/12RssqBFdMdeWMFdoLYL487ONILZK-Z0UehCQH_jAsx0/edit?usp=sharing)
-
 ## Discussions and Notes
 
   + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)

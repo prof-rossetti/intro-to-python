@@ -1,4 +1,4 @@
-# Unit 0: Onboarding
+# Unit 0: Onboarding / Development Environment Setup
 
 Welcome to this Introductory Python course! To prepare for the first class, please complete all of the onboarding activities below.
 
@@ -20,12 +20,12 @@ Anaconda provides various command-line utilities for installing and managing dif
 
 Unless it is already installed, download [Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. During the installation, you should remember to check the option to "Add Anaconda to my PATH environment variable". See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
 
-## GitHub Desktop
-
-Unless you already have a Git client of choice, please install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. We'll use this software to upload our Python projects to the GitHub platform. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
-
 ## Git
 
 GitHub Desktop software will require the Git command-line utility to be installed on our computers. So let's install Git now. See the professor's [Git installation reference](/notes/clis/git.md#installation) for more details.
 
 This installation should also install a program called Git Bash, which Windows users will use as their default command-line computing application.
+
+## GitHub Desktop
+
+Unless you already have a Git client of choice, please install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. We'll use this software to upload our Python projects to the GitHub platform. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
