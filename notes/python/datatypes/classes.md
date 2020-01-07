@@ -5,6 +5,7 @@ Reference:
   + https://docs.python.org/3/tutorial/classes.html
   + https://docs.python.org/3/tutorial/classes.html#class-objects
   + https://www.tutorialspoint.com/python/python_classes_objects.htm
+  + https://realpython.com/instance-class-and-static-methods-demystified/
 
 A **Class** is a representation of one or more objects which share the same or similar properties. Each class is like its own custom data type with properties defined by the developer.
 
@@ -26,6 +27,7 @@ class BaseballTeam():
     self.league = params["league"]
     self.players = params["players"]
 
+  @property
   def full_name(self):
     return self.city + " " + self.name
 
@@ -59,5 +61,5 @@ bt.city #> 'New York'
 
 bt.players #> ['Jeter', 'Mariano', 'Mantle', 'Babe']
 
-bt.full_name() #> 'New York Yankees'
+bt.full_name #> 'New York Yankees'
 ```
