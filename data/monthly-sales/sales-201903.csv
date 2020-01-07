@@ -1,0 +1,125 @@
+date,product,unit price,units sold,sales price
+2019-03-01,Khaki Pants,89.00,1,89.00
+2019-03-01,Super Soft Hoodie,75.00,1,75.00
+2019-03-01,Button-Down Shirt,65.05,1,65.05
+2019-03-01,Vintage Logo Tee,15.95,3,47.85
+2019-03-02,Button-Down Shirt,65.05,8,520.40
+2019-03-02,Vintage Logo Tee,15.95,4,63.80
+2019-03-02,Sticker Pack,4.50,2,9.00
+2019-03-03,Super Soft Hoodie,75.00,1,75.00
+2019-03-03,Button-Down Shirt,65.05,9,585.45
+2019-03-03,Baseball Cap,22.33,1,22.33
+2019-03-03,Sticker Pack,4.50,5,22.50
+2019-03-04,Khaki Pants,89.00,1,89.00
+2019-03-04,Sticker Pack,4.50,2,9.00
+2019-03-05,Khaki Pants,89.00,1,89.00
+2019-03-05,Button-Down Shirt,65.05,3,195.15
+2019-03-05,Sticker Pack,4.50,2,9.00
+2019-03-06,Khaki Pants,89.00,1,89.00
+2019-03-06,Super Soft Hoodie,75.00,1,75.00
+2019-03-06,Button-Down Shirt,65.05,2,130.10
+2019-03-06,Vintage Logo Tee,15.95,3,47.85
+2019-03-06,Sticker Pack,4.50,1,4.50
+2019-03-07,Khaki Pants,89.00,1,89.00
+2019-03-07,Super Soft Hoodie,75.00,1,75.00
+2019-03-07,Vintage Logo Tee,15.95,1,15.95
+2019-03-08,Khaki Pants,89.00,1,89.00
+2019-03-08,Button-Down Shirt,65.05,6,390.30
+2019-03-08,Baseball Cap,22.33,1,22.33
+2019-03-08,Vintage Logo Tee,15.95,3,47.85
+2019-03-08,Sticker Pack,4.50,1,4.50
+2019-03-09,Khaki Pants,89.00,2,178.00
+2019-03-09,Super Soft Hoodie,75.00,3,225.00
+2019-03-09,Button-Down Shirt,65.05,5,325.25
+2019-03-09,Vintage Logo Tee,15.95,1,15.95
+2019-03-09,Sticker Pack,4.50,4,18.00
+2019-03-10,Brown Boots,125.00,1,125.00
+2019-03-10,Khaki Pants,89.00,3,267.00
+2019-03-10,Super Soft Hoodie,75.00,3,225.00
+2019-03-10,Button-Down Shirt,65.05,5,325.25
+2019-03-10,Baseball Cap,22.33,1,22.33
+2019-03-10,Vintage Logo Tee,15.95,3,47.85
+2019-03-10,Sticker Pack,4.50,1,4.50
+2019-03-11,Khaki Pants,89.00,1,89.00
+2019-03-11,Super Soft Hoodie,75.00,1,75.00
+2019-03-11,Button-Down Shirt,65.05,2,130.10
+2019-03-11,Sticker Pack,4.50,1,4.50
+2019-03-12,Super Soft Hoodie,75.00,1,75.00
+2019-03-12,Button-Down Shirt,65.05,3,195.15
+2019-03-12,Vintage Logo Tee,15.95,3,47.85
+2019-03-13,Super Soft Hoodie,75.00,1,75.00
+2019-03-13,Button-Down Shirt,65.05,2,130.10
+2019-03-13,Vintage Logo Tee,15.95,3,47.85
+2019-03-13,Sticker Pack,4.50,2,9.00
+2019-03-14,Khaki Pants,89.00,1,89.00
+2019-03-14,Super Soft Hoodie,75.00,1,75.00
+2019-03-14,Button-Down Shirt,65.05,1,65.05
+2019-03-14,Vintage Logo Tee,15.95,3,47.85
+2019-03-14,Sticker Pack,4.50,2,9.00
+2019-03-15,Khaki Pants,89.00,1,89.00
+2019-03-15,Super Soft Hoodie,75.00,1,75.00
+2019-03-15,Button-Down Shirt,65.05,4,260.20
+2019-03-15,Vintage Logo Tee,15.95,1,15.95
+2019-03-15,Sticker Pack,4.50,3,13.50
+2019-03-16,Button-Down Shirt,65.05,4,260.20
+2019-03-16,Baseball Cap,22.33,1,22.33
+2019-03-16,Vintage Logo Tee,15.95,4,63.80
+2019-03-17,Brown Boots,125.00,1,125.00
+2019-03-17,Khaki Pants,89.00,2,178.00
+2019-03-17,Super Soft Hoodie,75.00,2,150.00
+2019-03-17,Button-Down Shirt,65.05,2,130.10
+2019-03-17,Vintage Logo Tee,15.95,1,15.95
+2019-03-17,Sticker Pack,4.50,5,22.50
+2019-03-18,Khaki Pants,89.00,1,89.00
+2019-03-18,Button-Down Shirt,65.05,3,195.15
+2019-03-18,Vintage Logo Tee,15.95,2,31.90
+2019-03-19,Khaki Pants,89.00,1,89.00
+2019-03-19,Super Soft Hoodie,75.00,1,75.00
+2019-03-19,Sticker Pack,4.50,2,9.00
+2019-03-20,Super Soft Hoodie,75.00,1,75.00
+2019-03-20,Vintage Logo Tee,15.95,1,15.95
+2019-03-21,Button-Down Shirt,65.05,1,65.05
+2019-03-21,Vintage Logo Tee,15.95,3,47.85
+2019-03-21,Sticker Pack,4.50,2,9.00
+2019-03-22,Super Soft Hoodie,75.00,2,150.00
+2019-03-22,Vintage Logo Tee,15.95,1,15.95
+2019-03-23,Khaki Pants,89.00,2,178.00
+2019-03-23,Button-Down Shirt,65.05,7,455.35
+2019-03-23,Baseball Cap,22.33,1,22.33
+2019-03-23,Vintage Logo Tee,15.95,6,95.70
+2019-03-23,Sticker Pack,4.50,2,9.00
+2019-03-24,Brown Boots,125.00,1,125.00
+2019-03-24,Super Soft Hoodie,75.00,2,150.00
+2019-03-24,Button-Down Shirt,65.05,2,130.10
+2019-03-24,Baseball Cap,22.33,1,22.33
+2019-03-24,Vintage Logo Tee,15.95,2,31.90
+2019-03-24,Sticker Pack,4.50,6,27.00
+2019-03-25,Super Soft Hoodie,75.00,1,75.00
+2019-03-25,Button-Down Shirt,65.05,4,260.20
+2019-03-25,Vintage Logo Tee,15.95,1,15.95
+2019-03-25,Sticker Pack,4.50,1,4.50
+2019-03-26,Khaki Pants,89.00,1,89.00
+2019-03-26,Super Soft Hoodie,75.00,1,75.00
+2019-03-26,Button-Down Shirt,65.05,2,130.10
+2019-03-26,Vintage Logo Tee,15.95,1,15.95
+2019-03-26,Sticker Pack,4.50,2,9.00
+2019-03-27,Button-Down Shirt,65.05,1,65.05
+2019-03-27,Vintage Logo Tee,15.95,1,15.95
+2019-03-27,Sticker Pack,4.50,2,9.00
+2019-03-28,Button-Down Shirt,65.05,4,260.20
+2019-03-28,Sticker Pack,4.50,2,9.00
+2019-03-29,Khaki Pants,89.00,2,178.00
+2019-03-29,Super Soft Hoodie,75.00,1,75.00
+2019-03-29,Button-Down Shirt,65.05,3,195.15
+2019-03-29,Baseball Cap,22.33,1,22.33
+2019-03-29,Vintage Logo Tee,15.95,3,47.85
+2019-03-29,Sticker Pack,4.50,2,9.00
+2019-03-30,Super Soft Hoodie,75.00,3,225.00
+2019-03-30,Button-Down Shirt,65.05,7,455.35
+2019-03-30,Vintage Logo Tee,15.95,6,95.70
+2019-03-30,Sticker Pack,4.50,4,18.00
+2019-03-31,Khaki Pants,89.00,1,89.00
+2019-03-31,Super Soft Hoodie,75.00,1,75.00
+2019-03-31,Button-Down Shirt,65.05,5,325.25
+2019-03-31,Baseball Cap,22.33,1,22.33
+2019-03-31,Vintage Logo Tee,15.95,6,95.70

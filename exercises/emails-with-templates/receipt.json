@@ -1,0 +1,11 @@
+{
+    "total_price_usd": "$14.95",
+    "human_friendly_timestamp": "July 4th, 2019 10:00 AM",
+    "products":[
+        {"id":1, "name": "Product 1"},
+        {"id":2, "name": "Product 2"},
+        {"id":3, "name": "Product 3"},
+        {"id":2, "name": "Product 2"},
+        {"id":1, "name": "Product 1"}
+    ]
+}

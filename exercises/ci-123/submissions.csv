@@ -1,0 +1,7 @@
+github_username, repository_url, ci_url
+s2t2, https://github.com/s2t2/testing-456-py, https://travis-ci.com/s2t2/testing-456-py
+s2t2, https://github.com/prof-rossetti/rock-paper-scissors-py, https://travis-ci.com/prof-rossetti/rock-paper-scissors-py
+s2t2, https://github.com/prof-rossetti/shopping-cart-demo-2019, https://travis-ci.com/prof-rossetti/shopping-cart-demo-2019
+s2t2, https://github.com/prof-rossetti/robo-advisor-demo-2019, https://travis-ci.com/prof-rossetti/robo-advisor-demo-2019
+s2t2, https://github.com/s2t2/playlist-service-py, https://travis-ci.com/s2t2/playlist-service-py
+..., ..., ...

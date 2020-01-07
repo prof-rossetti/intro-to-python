@@ -1,0 +1,109 @@
+date,product,unit price,units sold,sales price
+2018-06-01,Super Soft Hoodie,75.00,1,75.00
+2018-06-01,Swim Trunks,42.20,1,42.20
+2018-06-01,Sticker Pack,4.50,3,13.50
+2018-06-02,Button-Down Shirt,65.05,1,65.05
+2018-06-02,Swim Trunks,42.20,3,126.60
+2018-06-02,Baseball Cap,22.33,1,22.33
+2018-06-02,Vintage Logo Tee,15.95,5,79.75
+2018-06-02,Sticker Pack,4.50,2,9.00
+2018-06-03,Super Soft Hoodie,75.00,1,75.00
+2018-06-03,Button-Down Shirt,65.05,5,325.25
+2018-06-03,Swim Trunks,42.20,3,126.60
+2018-06-03,Sticker Pack,4.50,3,13.50
+2018-06-04,Super Soft Hoodie,75.00,1,75.00
+2018-06-04,Button-Down Shirt,65.05,1,65.05
+2018-06-04,Vintage Logo Tee,15.95,2,31.90
+2018-06-04,Sticker Pack,4.50,3,13.50
+2018-06-05,Super Soft Hoodie,75.00,1,75.00
+2018-06-05,Button-Down Shirt,65.05,3,195.15
+2018-06-05,Swim Trunks,42.20,1,42.20
+2018-06-05,Vintage Logo Tee,15.95,2,31.90
+2018-06-05,Sticker Pack,4.50,3,13.50
+2018-06-06,Swim Trunks,42.20,1,42.20
+2018-06-06,Vintage Logo Tee,15.95,2,31.90
+2018-06-06,Sticker Pack,4.50,1,4.50
+2018-06-07,Swim Trunks,42.20,1,42.20
+2018-06-07,Vintage Logo Tee,15.95,2,31.90
+2018-06-07,Sticker Pack,4.50,1,4.50
+2018-06-08,Super Soft Hoodie,75.00,1,75.00
+2018-06-08,Button-Down Shirt,65.05,1,65.05
+2018-06-08,Vintage Logo Tee,15.95,1,15.95
+2018-06-08,Sticker Pack,4.50,4,18.00
+2018-06-09,Khaki Pants,89.00,1,89.00
+2018-06-09,Swim Trunks,42.20,2,84.40
+2018-06-09,Vintage Logo Tee,15.95,1,15.95
+2018-06-09,Sticker Pack,4.50,2,9.00
+2018-06-10,Button-Down Shirt,65.05,6,390.30
+2018-06-10,Swim Trunks,42.20,3,126.60
+2018-06-10,Baseball Cap,22.33,1,22.33
+2018-06-10,Sticker Pack,4.50,2,9.00
+2018-06-11,Swim Trunks,42.20,1,42.20
+2018-06-11,Vintage Logo Tee,15.95,3,47.85
+2018-06-12,Super Soft Hoodie,75.00,1,75.00
+2018-06-12,Button-Down Shirt,65.05,1,65.05
+2018-06-12,Vintage Logo Tee,15.95,2,31.90
+2018-06-12,Sticker Pack,4.50,2,9.00
+2018-06-13,Super Soft Hoodie,75.00,1,75.00
+2018-06-13,Button-Down Shirt,65.05,2,130.10
+2018-06-13,Vintage Logo Tee,15.95,3,47.85
+2018-06-13,Sticker Pack,4.50,3,13.50
+2018-06-14,Button-Down Shirt,65.05,1,65.05
+2018-06-14,Swim Trunks,42.20,1,42.20
+2018-06-14,Vintage Logo Tee,15.95,3,47.85
+2018-06-14,Sticker Pack,4.50,1,4.50
+2018-06-15,Super Soft Hoodie,75.00,1,75.00
+2018-06-15,Button-Down Shirt,65.05,4,260.20
+2018-06-15,Vintage Logo Tee,15.95,2,31.90
+2018-06-15,Sticker Pack,4.50,4,18.00
+2018-06-16,Khaki Pants,89.00,1,89.00
+2018-06-16,Button-Down Shirt,65.05,3,195.15
+2018-06-16,Baseball Cap,22.33,1,22.33
+2018-06-16,Vintage Logo Tee,15.95,1,15.95
+2018-06-16,Sticker Pack,4.50,5,22.50
+2018-06-17,Super Soft Hoodie,75.00,1,75.00
+2018-06-17,Swim Trunks,42.20,2,84.40
+2018-06-17,Vintage Logo Tee,15.95,6,95.70
+2018-06-17,Sticker Pack,4.50,1,4.50
+2018-06-18,Button-Down Shirt,65.05,1,65.05
+2018-06-18,Swim Trunks,42.20,1,42.20
+2018-06-19,Button-Down Shirt,65.05,2,130.10
+2018-06-19,Vintage Logo Tee,15.95,3,47.85
+2018-06-19,Sticker Pack,4.50,2,9.00
+2018-06-20,Button-Down Shirt,65.05,2,130.10
+2018-06-20,Vintage Logo Tee,15.95,3,47.85
+2018-06-21,Super Soft Hoodie,75.00,1,75.00
+2018-06-21,Button-Down Shirt,65.05,3,195.15
+2018-06-21,Swim Trunks,42.20,1,42.20
+2018-06-22,Khaki Pants,89.00,1,89.00
+2018-06-22,Baseball Cap,22.33,1,22.33
+2018-06-22,Sticker Pack,4.50,4,18.00
+2018-06-23,Khaki Pants,89.00,1,89.00
+2018-06-23,Button-Down Shirt,65.05,4,260.20
+2018-06-23,Swim Trunks,42.20,3,126.60
+2018-06-23,Baseball Cap,22.33,1,22.33
+2018-06-24,Khaki Pants,89.00,1,89.00
+2018-06-24,Button-Down Shirt,65.05,1,65.05
+2018-06-24,Swim Trunks,42.20,1,42.20
+2018-06-24,Vintage Logo Tee,15.95,2,31.90
+2018-06-24,Sticker Pack,4.50,6,27.00
+2018-06-25,Button-Down Shirt,65.05,2,130.10
+2018-06-25,Vintage Logo Tee,15.95,2,31.90
+2018-06-26,Super Soft Hoodie,75.00,1,75.00
+2018-06-26,Button-Down Shirt,65.05,2,130.10
+2018-06-26,Vintage Logo Tee,15.95,3,47.85
+2018-06-27,Button-Down Shirt,65.05,2,130.10
+2018-06-27,Sticker Pack,4.50,3,13.50
+2018-06-28,Button-Down Shirt,65.05,2,130.10
+2018-06-28,Vintage Logo Tee,15.95,1,15.95
+2018-06-28,Sticker Pack,4.50,1,4.50
+2018-06-29,Button-Down Shirt,65.05,3,195.15
+2018-06-29,Swim Trunks,42.20,2,84.40
+2018-06-29,Vintage Logo Tee,15.95,4,63.80
+2018-06-29,Sticker Pack,4.50,4,18.00
+2018-06-30,Khaki Pants,89.00,1,89.00
+2018-06-30,Super Soft Hoodie,75.00,1,75.00
+2018-06-30,Button-Down Shirt,65.05,4,260.20
+2018-06-30,Swim Trunks,42.20,1,42.20
+2018-06-30,Baseball Cap,22.33,1,22.33
+2018-06-30,Vintage Logo Tee,15.95,3,47.85

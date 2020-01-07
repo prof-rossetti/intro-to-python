@@ -1,0 +1,142 @@
+[
+  {
+  	"aisle": "cookies cakes",
+  	"department": "snacks",
+  	"id": 1,
+  	"name": "Chocolate Sandwich Cookies",
+  	"price": 3.5
+  },
+  {
+  	"aisle": "spices seasonings",
+  	"department": "pantry",
+  	"id": 2,
+  	"name": "All-Seasons Salt",
+  	"price": 4.99
+  },
+  {
+  	"aisle": "tea",
+  	"department": "beverages",
+  	"id": 3,
+  	"name": "Robust Golden Unsweetened Oolong Tea",
+  	"price": 2.49
+  },
+  {
+  	"aisle": "frozen meals",
+  	"department": "frozen",
+  	"id": 4,
+  	"name": "Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce",
+  	"price": 6.99
+  },
+  {
+  	"aisle": "marinades meat preparation",
+  	"department": "pantry",
+  	"id": 5,
+  	"name": "Green Chile Anytime Sauce",
+  	"price": 7.99
+  },
+  {
+  	"aisle": "cold flu allergy",
+  	"department": "personal care",
+  	"id": 6,
+  	"name": "Dry Nose Oil",
+  	"price": 21.99
+  },
+  {
+  	"aisle": "juice nectars",
+  	"department": "beverages",
+  	"id": 7,
+  	"name": "Pure Coconut Water With Orange",
+  	"price": 3.5
+  },
+  {
+  	"aisle": "frozen produce",
+  	"department": "frozen",
+  	"id": 8,
+  	"name": "Cut Russet Potatoes Steam N' Mash",
+  	"price": 4.25
+  },
+  {
+  	"aisle": "yogurt",
+  	"department": "dairy eggs",
+  	"id": 9,
+  	"name": "Light Strawberry Blueberry Yogurt",
+  	"price": 6.5
+  },
+  {
+  	"aisle": "water seltzer sparkling water",
+  	"department": "beverages",
+  	"id": 10,
+  	"name": "Sparkling Orange Juice & Prickly Pear Beverage",
+  	"price": 2.99
+  },
+  {
+  	"aisle": "refrigerated",
+  	"department": "beverages",
+  	"id": 11,
+  	"name": "Peach Mango Juice",
+  	"price": 1.99
+  },
+  {
+  	"aisle": "frozen dessert",
+  	"department": "frozen",
+  	"id": 12,
+  	"name": "Chocolate Fudge Layer Cake",
+  	"price": 18.5
+  },
+  {
+  	"aisle": "cold flu allergy",
+  	"department": "personal care",
+  	"id": 13,
+  	"name": "Saline Nasal Mist",
+  	"price": 16.0
+  },
+  {
+  	"aisle": "dish detergents",
+  	"department": "household",
+  	"id": 14,
+  	"name": "Fresh Scent Dishwasher Cleaner",
+  	"price": 4.99
+  },
+  {
+  	"aisle": "diapers wipes",
+  	"department": "babies",
+  	"id": 15,
+  	"name": "Overnight Diapers Size 6",
+  	"price": 25.5
+  },
+  {
+  	"aisle": "ice cream toppings",
+  	"department": "snacks",
+  	"id": 16,
+  	"name": "Mint Chocolate Flavored Syrup",
+  	"price": 4.5
+  },
+  {
+  	"aisle": "poultry counter",
+  	"department": "meat seafood",
+  	"id": 17,
+  	"name": "Rendered Duck Fat",
+  	"price": 9.99
+  },
+  {
+  	"aisle": "frozen pizza",
+  	"department": "frozen",
+  	"id": 18,
+  	"name": "Pizza for One Suprema Frozen Pizza",
+  	"price": 12.5
+  },
+  {
+  	"aisle": "grains rice dried goods",
+  	"department": "dry goods pasta",
+  	"id": 19,
+  	"name": "Gluten Free Quinoa Three Cheese & Mushroom Blend",
+  	"price": 3.99
+  },
+  {
+  	"aisle": "juice nectars",
+  	"department": "beverages",
+  	"id": 20,
+  	"name": "Pomegranate Cranberry & Aloe Vera Enrich Drink",
+  	"price": 4.25
+  }
+]

@@ -1,0 +1,2 @@
+python-dotenv
+sendgrid==6.0.5

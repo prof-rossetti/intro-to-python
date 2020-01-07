@@ -1,0 +1,135 @@
+date,product,unit price,units sold,sales price
+2018-11-01,Super Soft Sweater,149.99,1,149.99
+2018-11-01,Super Soft Hoodie,75.00,1,75.00
+2018-11-01,Button-Down Shirt,65.05,4,260.20
+2018-11-01,Vintage Logo Tee,15.95,1,15.95
+2018-11-01,Winter Hat,12.95,1,12.95
+2018-11-01,Sticker Pack,4.50,1,4.50
+2018-11-02,Super Soft Sweater,149.99,1,149.99
+2018-11-02,Khaki Pants,89.00,2,178.00
+2018-11-02,Button-Down Shirt,65.05,4,260.20
+2018-11-02,Vintage Logo Tee,15.95,3,47.85
+2018-11-03,Super Soft Sweater,149.99,1,149.99
+2018-11-03,Khaki Pants,89.00,1,89.00
+2018-11-03,Super Soft Hoodie,75.00,3,225.00
+2018-11-03,Button-Down Shirt,65.05,3,195.15
+2018-11-03,Vintage Logo Tee,15.95,2,31.90
+2018-11-03,Sticker Pack,4.50,4,18.00
+2018-11-04,Brown Boots,125.00,1,125.00
+2018-11-04,Khaki Pants,89.00,1,89.00
+2018-11-04,Super Soft Hoodie,75.00,3,225.00
+2018-11-04,Button-Down Shirt,65.05,7,455.35
+2018-11-04,Vintage Logo Tee,15.95,1,15.95
+2018-11-04,Sticker Pack,4.50,6,27.00
+2018-11-05,Khaki Pants,89.00,1,89.00
+2018-11-05,Button-Down Shirt,65.05,4,260.20
+2018-11-05,Vintage Logo Tee,15.95,1,15.95
+2018-11-05,Sticker Pack,4.50,1,4.50
+2018-11-06,Super Soft Sweater,149.99,1,149.99
+2018-11-06,Button-Down Shirt,65.05,3,195.15
+2018-11-06,Winter Hat,12.95,1,12.95
+2018-11-07,Super Soft Hoodie,75.00,1,75.00
+2018-11-07,Button-Down Shirt,65.05,3,195.15
+2018-11-07,Vintage Logo Tee,15.95,1,15.95
+2018-11-07,Sticker Pack,4.50,2,9.00
+2018-11-08,Button-Down Shirt,65.05,4,260.20
+2018-11-08,Vintage Logo Tee,15.95,2,31.90
+2018-11-08,Winter Hat,12.95,1,12.95
+2018-11-09,Super Soft Sweater,149.99,1,149.99
+2018-11-09,Khaki Pants,89.00,1,89.00
+2018-11-09,Super Soft Hoodie,75.00,2,150.00
+2018-11-09,Button-Down Shirt,65.05,3,195.15
+2018-11-09,Vintage Logo Tee,15.95,3,47.85
+2018-11-09,Winter Hat,12.95,1,12.95
+2018-11-09,Sticker Pack,4.50,4,18.00
+2018-11-10,Super Soft Sweater,149.99,2,299.98
+2018-11-10,Khaki Pants,89.00,2,178.00
+2018-11-10,Super Soft Hoodie,75.00,3,225.00
+2018-11-10,Vintage Logo Tee,15.95,2,31.90
+2018-11-10,Winter Hat,12.95,1,12.95
+2018-11-10,Sticker Pack,4.50,6,27.00
+2018-11-11,Super Soft Sweater,149.99,1,149.99
+2018-11-11,Khaki Pants,89.00,1,89.00
+2018-11-11,Super Soft Hoodie,75.00,2,150.00
+2018-11-11,Vintage Logo Tee,15.95,1,15.95
+2018-11-11,Winter Hat,12.95,2,25.90
+2018-11-11,Sticker Pack,4.50,1,4.50
+2018-11-12,Khaki Pants,89.00,1,89.00
+2018-11-12,Super Soft Hoodie,75.00,1,75.00
+2018-11-12,Button-Down Shirt,65.05,4,260.20
+2018-11-12,Vintage Logo Tee,15.95,2,31.90
+2018-11-13,Super Soft Sweater,149.99,1,149.99
+2018-11-13,Khaki Pants,89.00,1,89.00
+2018-11-13,Winter Hat,12.95,1,12.95
+2018-11-14,Khaki Pants,89.00,1,89.00
+2018-11-14,Button-Down Shirt,65.05,3,195.15
+2018-11-14,Vintage Logo Tee,15.95,1,15.95
+2018-11-15,Super Soft Sweater,149.99,1,149.99
+2018-11-15,Khaki Pants,89.00,1,89.00
+2018-11-15,Super Soft Hoodie,75.00,1,75.00
+2018-11-15,Button-Down Shirt,65.05,4,260.20
+2018-11-15,Vintage Logo Tee,15.95,1,15.95
+2018-11-15,Sticker Pack,4.50,1,4.50
+2018-11-16,Super Soft Hoodie,75.00,1,75.00
+2018-11-16,Button-Down Shirt,65.05,5,325.25
+2018-11-16,Vintage Logo Tee,15.95,2,31.90
+2018-11-16,Sticker Pack,4.50,3,13.50
+2018-11-17,Khaki Pants,89.00,3,267.00
+2018-11-17,Super Soft Hoodie,75.00,2,150.00
+2018-11-17,Button-Down Shirt,65.05,7,455.35
+2018-11-17,Vintage Logo Tee,15.95,3,47.85
+2018-11-17,Sticker Pack,4.50,5,22.50
+2018-11-18,Super Soft Hoodie,75.00,1,75.00
+2018-11-18,Button-Down Shirt,65.05,9,585.45
+2018-11-18,Sticker Pack,4.50,1,4.50
+2018-11-19,Khaki Pants,89.00,1,89.00
+2018-11-19,Super Soft Hoodie,75.00,1,75.00
+2018-11-19,Button-Down Shirt,65.05,2,130.10
+2018-11-19,Vintage Logo Tee,15.95,1,15.95
+2018-11-19,Winter Hat,12.95,1,12.95
+2018-11-19,Sticker Pack,4.50,2,9.00
+2018-11-20,Super Soft Sweater,149.99,1,149.99
+2018-11-20,Khaki Pants,89.00,1,89.00
+2018-11-20,Super Soft Hoodie,75.00,1,75.00
+2018-11-20,Button-Down Shirt,65.05,4,260.20
+2018-11-20,Vintage Logo Tee,15.95,1,15.95
+2018-11-21,Button-Down Shirt,65.05,1,65.05
+2018-11-22,Khaki Pants,89.00,1,89.00
+2018-11-22,Super Soft Hoodie,75.00,1,75.00
+2018-11-22,Button-Down Shirt,65.05,3,195.15
+2018-11-22,Winter Hat,12.95,1,12.95
+2018-11-22,Sticker Pack,4.50,1,4.50
+2018-11-23,Super Soft Sweater,149.99,1,149.99
+2018-11-23,Khaki Pants,89.00,1,89.00
+2018-11-23,Super Soft Hoodie,75.00,1,75.00
+2018-11-23,Button-Down Shirt,65.05,2,130.10
+2018-11-23,Sticker Pack,4.50,2,9.00
+2018-11-24,Super Soft Sweater,149.99,1,149.99
+2018-11-24,Super Soft Hoodie,75.00,2,150.00
+2018-11-24,Button-Down Shirt,65.05,9,585.45
+2018-11-24,Winter Hat,12.95,1,12.95
+2018-11-24,Sticker Pack,4.50,1,4.50
+2018-11-25,Super Soft Sweater,149.99,1,149.99
+2018-11-25,Button-Down Shirt,65.05,9,585.45
+2018-11-25,Vintage Logo Tee,15.95,4,63.80
+2018-11-25,Winter Hat,12.95,2,25.90
+2018-11-25,Sticker Pack,4.50,6,27.00
+2018-11-26,Super Soft Sweater,149.99,1,149.99
+2018-11-26,Button-Down Shirt,65.05,4,260.20
+2018-11-26,Vintage Logo Tee,15.95,2,31.90
+2018-11-26,Winter Hat,12.95,1,12.95
+2018-11-27,Khaki Pants,89.00,1,89.00
+2018-11-27,Super Soft Hoodie,75.00,1,75.00
+2018-11-27,Button-Down Shirt,65.05,2,130.10
+2018-11-27,Vintage Logo Tee,15.95,1,15.95
+2018-11-27,Sticker Pack,4.50,3,13.50
+2018-11-28,Super Soft Hoodie,75.00,1,75.00
+2018-11-28,Vintage Logo Tee,15.95,2,31.90
+2018-11-29,Super Soft Sweater,149.99,1,149.99
+2018-11-29,Button-Down Shirt,65.05,2,130.10
+2018-11-29,Vintage Logo Tee,15.95,1,15.95
+2018-11-30,Khaki Pants,89.00,2,178.00
+2018-11-30,Super Soft Hoodie,75.00,2,150.00
+2018-11-30,Button-Down Shirt,65.05,2,130.10
+2018-11-30,Vintage Logo Tee,15.95,2,31.90
+2018-11-30,Sticker Pack,4.50,2,9.00
