@@ -4,16 +4,25 @@
 
 ## Instructional Units
 
-  + [Unit 0](/units/unit-0.md): Onboarding
-  + [Unit 1](/units/unit-1.md): Software Products and Services
-  + [Unit 2](/units/unit-2.md): User Interfaces and Experiences (UI/UX)
-  + [Unit 3](/units/unit-3.md): Python Language Overview, and Processing Data in Memory
-  + [Unit 4](/units/unit-4.md): Datastores, and Processing CSV Data
-  + [Unit 4B](/units/unit-4b.md) Dataviz and Business Analytics
-  + [Unit 5](/units/unit-5.md): Networks, and Processing Data from the Internet
-  + [Unit 6](/units/unit-6.md): Technology Management, and the Systems Development Lifecycle (SDLC)
-  + [Unit 7](/units/unit-7.md): Software Delivery and Distribution
-  + [Unit 8](/units/unit-8.md): Software Maintenance and Quality Control
+Module I:
+
+  + [Unit 0](/units/unit-0.md) - Onboarding / Development Environment Setup
+  + [Unit 1](/units/unit-1.md) - Information Systems and Software
+  + [Unit 2](/units/unit-2.md) - Version Control Overview
+  + [Unit 3](/units/unit-3.md) - Python Language Overview
+  + [Unit 4](/units/unit-4.md) - Processing and Validating User Inputs
+  + [Unit 5](/units/unit-5.md) - Datastores, Databases, and Processing CSV Files
+  + [Unit 5b](/units/unit-5b.md) - Analytics, Business Intelligence, and Data Visualization
+  + [Unit 6](/units/unit-6.md) - Networks, and Processing JSON Data from the Internet
+  + Unit 7 - Review
+
+Module II:
+
+  + [Unit 8](/units/unit-8.md) - Software Products and Services
+  + [Unit 9](/units/unit-9.md) - Technology Project Management, and the Software Development Lifecycle (SDLC)
+  + [Unit 10](/units/unit-10.md) - Software Maintenance and Quality Control
+  + Unit 11 - Project Implementation Sprint
+  + Unit 12 - Project Demo Days
 
 ## External Resources
 

@@ -1,35 +1,33 @@
-# Unit 5: Networks, and Processing Data from the Internet
 
-> Prerequisites: [Datastores, and Processing CSV Data](unit-4.md)
+# Unit 5: Datastores, Databases, and Processing CSV Data
+
+> Prerequisites: [Processing and Validating User Inputs](unit-4.md)
 
 ## Learning Objectives
 
-In this unit, we'll learn how to use Python to process data from the Internet, focusing on data returned by web services in JSON format.
+In this unit, we'll illustrate the concept of program-data independence as we explore integrations between software and datastores. We'll focus on the Comma-separated Values (CSV) data format and learn how to use Python to process CSV data.
 
 ## Discussions and Notes
 
-  + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)
-  + [Web Services and APIs](/notes/software/apis.md)
-  + [Information Security and Privacy](/notes/info-systems/security-privacy.md)
-  + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
-  + [Environment Variables](/notes/environment-variables.md)
-
-## Reference Documents
-
-  + Issuing HTTP Requests:
-    + [The `requests` Package](/notes/python/packages/requests.md)
-  + Processing JSON-formatted data:
-    + [The `json` Module](/notes/python/modules/json.md)
-  + Processing HTML-formatted data:
-    + [The `beautifulsoup` Package](/notes/python/packages/beautifulsoup.md)
-  + Automated Web Browsing (a.k.a. "scraping"):
-    + [The `selenium` Package](/notes/python/packages/selenium.md)
-  + Reading API Credentials from Environment Variables:
-    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
-    + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
+  + Program-Data Independence
+  + [Datastores, Databases, and CSV Files](/notes/info-systems/datastores.md)
+  + [Managing Files](/notes/python/file-management.md):
+    + [The `os` Module](/notes/python/modules/os.md#file-operations) (w/ focus on file and directory operations)
+  + Processing Data:
+    + [The `itertools` Module](/notes/python/modules/itertools.md)
+  + [Managing Packages w/ the `pip` Utility](/notes/clis/pip.md)
+  + Processing CSV Files:
+    + [The `csv` Module](/notes/python/modules/csv.md)
+    + [The `pandas` Package](/notes/python/packages/pandas.md)
+  + Processing Data in other Formats (just for your awareness):
+    + [The `json` Module](/notes/python/modules/json.md) (for processing JSON)
+    + [The `BeautifulSoup` Package](/notes/python/packages/beautifulsoup.md) (for processing XML and HTML)
+    + [The `pdftotext` Utility](/notes/clis/pdftotext.md) (for parsing PDFs)
+    + [The `fpdf` Package](/notes/python/packages/fpdf.md) (for generating PDFs)
+    + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
+    + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
 
 ## Activities and Exercises
 
-  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
-  + ["API Client" Exercise](/exercises/api-client/README.md)
-  + ["Robo Advisor" Project](/projects/robo-advisor/README.md)
+  + ["Omniparser" Exercise](/exercises/omniparser/README.md)
+  + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)

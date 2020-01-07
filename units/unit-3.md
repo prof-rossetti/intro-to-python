@@ -1,6 +1,6 @@
 # Unit 3: Python Language Overview
 
-> Prerequisites: [User Interfaces and Experiences (UI/UX)](unit-2.md)
+> Prerequisites: [Version Control Overview](unit-2.md)
 
 ## Learning Objectives
 
@@ -9,10 +9,6 @@ In this unit, we will take a high-level guided tour of the Python programming la
 ## Discussions and Notes
 
   + Object-oriented Programming (OOP)
-  + [Environment Variables](/notes/environment-variables.md) (just for your awareness, should have shared this info earlier)
-
-## Reference Documents
-
   + Python Programming:
     + [Datatypes](/notes/python/datatypes):
       + [Null Values](/notes/python/datatypes/none.md)
@@ -26,20 +22,11 @@ In this unit, we will take a high-level guided tour of the Python programming la
     + [Variables](/notes/python/variables.md)
     + [Functions](/notes/python/functions.md)
     + [Control Flow](/notes/python/control-flow.md)
-    + [Errors](/notes/python/errors.md) (just for your awareness)
-    + [File Management](/notes/python/file-management.md) (just for your awareness)
-    + [Modules](/notes/python/modules):
-      + [The `os` Module](/notes/python/modules/os.md) (just for your awareness, should have shared this info earlier)
-      + [The `datetime` Module](/notes/python/modules/datetime.md)
-      + [The `random` Module](/notes/python/modules/random.md)
-      + [The `operator` Module](https://docs.python.org/3/library/operator.html)
-    + Packages:
-      + [The `dotenv` Package](/notes/python/packages/dotenv.md) (just for your awareness, should have shared this info earlier)
-      + [The `pytest` Package](/notes/python/packages/pytest.md) (intermediate / advanced topic)
+    + [Errors](/notes/python/errors.md)
+    + [File Management](/notes/python/file-management.md)
 
 ## Activities and Exercises
 
   + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
   + ["Groceries" Exercise](/exercises/groceries/README.md)
   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
-  + ["Shopping Cart" Project](/projects/shopping-cart/README.md)

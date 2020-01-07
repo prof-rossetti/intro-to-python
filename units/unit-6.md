@@ -1,27 +1,32 @@
-# Unit 6: Technology Management, and the Systems Development Lifecycle (SDLC)
+# Unit 6: Networks, and Processing Data from the Internet
 
-> Prerequisites: [Networks, and Processing Data from the Internet](/units/unit-5.md)
+> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-5.md)
 
 ## Learning Objectives
 
-In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.
+In this unit, we'll learn how to use Python to process data from the Internet, focusing on data returned by web services in JSON format.
 
 ## Discussions and Notes
 
-  + [Project Management](/notes/project-mgmt/README.md)
-  + [Project Management Tools](/notes/project-mgmt/tools.md)
-  + [The Systems Development Lifecycle (SDLC)](/notes/project-mgmt/dev-lifecycle.md):
-    + Iterative Development Methodologies and Minimum Viable Products (MVPs)
-  + [Users, User Needs, and User-Centered Design](/notes/info-systems/people.md)
-  + [Process Analysis, Diagramming, and Re-engineering](/notes/info-systems/processes.md)
+  + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)
+  + [Web Services and APIs](/notes/software/apis.md)
+  + [Information Security and Privacy](/notes/info-systems/security-privacy.md)
+  + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
+  + [Environment Variables](/notes/environment-variables.md)
+  + Issuing HTTP Requests:
+    + [The `requests` Package](/notes/python/packages/requests.md)
+  + Processing JSON-formatted data:
+    + [The `json` Module](/notes/python/modules/json.md)
+  + Processing HTML-formatted data:
+    + [The `beautifulsoup` Package](/notes/python/packages/beautifulsoup.md)
+  + Automated Web Browsing (a.k.a. "scraping"):
+    + [The `selenium` Package](/notes/python/packages/selenium.md)
+  + Reading API Credentials from Environment Variables:
+    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
+    + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
 
 ## Activities and Exercises
 
-  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
-  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
-  + "Design Thinking" Workshop
-
-## Deliverables
-
-  + ["Freestyle" Project Proposal](/projects/freestyle/proposal.md) ("Learning" Phase)
-  + ["Freestyle" Project Plan](/projects/freestyle/plan.md) ("Planning" Phase)
+  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
+  + ["API Client" Exercise](/exercises/api-client/README.md)
+  + ["Robo Advisor" Project](/projects/robo-advisor/README.md)

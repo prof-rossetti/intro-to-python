@@ -1,33 +1,28 @@
-# Unit 8: Software Maintenance and Quality Control
+
+
+# Unit 8: Software Products and Services
 
 > Prerequisites:
->   + [Software Delivery and Distribution](/units/unit-7.md)
->   + [Technology Management, and the Systems Development Lifecycle (SDLC)](/units/unit-6.md)
+>   + [Information Systems and Software](/units/unit-1.md)
+>   + [Networks, and Processing Data from the Internet](unit-6.md)
 
 ## Learning Objectives
 
-For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
+In this unit, we'll discuss software products and services, and practice delivering software services to end users.
 
 ## Discussions and Notes
 
-  + Version Control:
-    + [Branch Operations](/notes/clis/git.md#branch-operations)
-    + [Reverting Changes](/notes/clis/git.md#reverting-changes)
- + Quality Control:
-    + [Code Refactoring and Simplification](/notes/software/refactoring.md)
-    + [Automated Testing](/notes/software/testing.md)
-    + [Continuous Integration](/notes/software/testing.md#continuous-integration)
-
-## Reference Documents
-
-  + Automated Testing:
-    + [The `pytest` Package](/notes/python/packages/pytest.md)
-  + Continuous Integration:
-    + [The Travis CI Platform](/notes/travis-ci.md)
+  + Software Products and Services:
+    + [Business Models](/notes/software.md#business-models)
+    + [Distribution Models](/notes/software.md#distribution-models)
+    + [Licensing Models](/notes/software.md#licensing-models)
+  + Software Delivery and Distribution:
+    + [Remote Servers](/notes/servers.md)
+    + [The `git` Utility](/notes/git.md), revisited: [Remote Repositories](/notes/git.md#remote-repositories) and Managing Remote Addresses
+    + [The `heroku` Utility](/notes/heroku.md)
 
 ## Activities and Exercises
 
-  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
-  + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
-  + ["Freestyle" Project Implementation](/projects/freestyle/implementation.md) ("Building" Phase)
-  + ["Freestyle" Project Demonstration](/projects/freestyle/demo.md)
+  + [Managing and Refreshing your Fork of the Course Repository](/CONTRIBUTING.md#step-1-fork-the-repository)
+  + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/README.md)
+  + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)

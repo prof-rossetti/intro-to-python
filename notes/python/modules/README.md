@@ -4,10 +4,10 @@ You can extend the capabilities of your Python program by leveraging, or "import
 
 Some selected Python modules of interest include:
 
-  + [The `csv` Module](csv.md) <--- for processing CSV data
+  + [The `csv` Module](csv.md)
   + [The `datetime` Module](datetime.md)
   + [The `itertools` Module](itertools.md)
-  + [The `json` Module](json.md) <--- for processing JSON data
+  + [The `json` Module](json.md)
   + [The `math` Module](math.md)
   + [The `os` Module](os.md)
   + [The `random` Module](random.md)
