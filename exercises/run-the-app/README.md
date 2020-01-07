@@ -2,7 +2,7 @@
 
 > Prerequisites:
 >   + [Development Environment Setup](/units/unit-0.md), including creation of a GitHub Account and installation of Anaconda, VS Code, and GitHub Desktop software
->   + [Software Products and Services](/units/unit-1.md)
+>   + [Information Systems and Software](/units/unit-1.md)
 >   + ["Command-line Computing" Exercise](/exercises/command-line-computing) - recommended, as it will help you learn how to navigate your filesystem via the command-line
 
 ## Learning Objectives

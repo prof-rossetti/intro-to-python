@@ -1,7 +1,7 @@
 # "Deploy a Web App to Production" Exercise
 
 > Prerequisites:
->   + [Software Delivery and Distribution](/units/unit-7.md)
+>   + [Software Products and Services](/units/unit-8.md)
 >   + [Heroku](/notes/clis/heroku.md) (sign up for a account, install the Heroku CLI, and login via the command line)
 >   + ["Deploying Background Services" Exercise](/exercises/deploying-services/README.md) (FYI, contains more details about the deployment process)
 

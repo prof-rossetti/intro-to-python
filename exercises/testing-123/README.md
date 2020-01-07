@@ -1,6 +1,6 @@
 # "Testing 1, 2, 3" Exercise
 
-> Prerequisite: [Maintenance and Quality Control](/units/unit-8.md)
+> Prerequisite: [Maintenance and Quality Control](/units/unit-10.md)
 
 ## Learning Objectives
 

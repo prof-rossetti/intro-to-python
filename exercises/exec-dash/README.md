@@ -1,7 +1,7 @@
 # "Executive Dashboard" Exercise
 
 > Prerequisites:
->   + [Dataviz and Business Analytics](/units/unit-4b.md)
+>   + [Dataviz and Business Analytics](/units/unit-5b.md)
 >   + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)
 >   + ["Chart Gallery" Exercise](/exercises/monthly-sales-reporting/README.md)
 

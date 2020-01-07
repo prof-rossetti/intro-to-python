@@ -1,7 +1,7 @@
 # "Continuous Integration 1, 2, 3" Exercise
 
 > Prerequisites:
->   + [Maintenance and Quality Control](/units/unit-8.md)
+>   + [Maintenance and Quality Control](/units/unit-10.md)
 >   + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
 >   + [Travis CI](/notes/travis-ci.md)
 
