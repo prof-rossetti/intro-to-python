@@ -33,5 +33,6 @@ App Name | Functionality Description
 [Starter Web App w/ Google Sheets datastore](https://github.com/prof-rossetti/web-app-starter-flask-sheets) | A basic navigable web application with examples of reading and writing data to and from a Google Sheets datastore.
 [DineCision](https://github.com/jessicalee127/DineCision) by @jessicalee | Prompts the user to input their zipcode via a web form so it can use the Yelp API to provide a dining recommendation.
 [GMR's Algo Machine](https://github.com/s2t2/spotify_app/) by @gmr50 | Prompts the user to login to their Spotify account so it can create new Spotify playlist recommendations on their behalf.
+[Time Tracker](https://github.com/kyokang1/time-tracker) by @kyokang1 | Evaluates your work-life balance status and warn you if you work too hard. Interfaces with Google Sheets.
 [Products API](https://github.com/prof-rossetti/products-api-flask) | A JSON API with no front-end interface, uses CSV datastore.
 [Salad System](https://github.com/prof-rossetti/salad-system-flask) | Includes a front-end interface and uses an SQL database as a datastore.
