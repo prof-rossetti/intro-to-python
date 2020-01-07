@@ -2,6 +2,20 @@
 
 Reference: https://docs.python.org/3/library/itertools.html.
 
+## Usage
+
+### Combinations and Permutations
+
+```py
+from itertools import combinations
+
+vals = ["M", "C", "P", "Z"]
+combos = combinations(vals, 2) # choose 2
+list(combos) #> [('M', 'C'), ('M', 'P'), ('M', 'Z'), ('C', 'P'), ('C', 'Z'), ('P', 'Z')]
+```
+
+### Grouping
+
 Use the `itertools` module to perform advanced operations on iterable objects such as lists.
 
 Group a list of dictionaries by key:

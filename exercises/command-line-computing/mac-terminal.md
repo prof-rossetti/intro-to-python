@@ -53,6 +53,16 @@ cd ~/Desktop
 
 > FYI: the tilde (`~`) represents your "home" filepath
 
+Open a directory via the operating system's filesystem explorer:
+
+```sh
+# Mac Terminal:
+open .
+
+# Windows Git Bash:
+explorer .
+```
+
 Make a new directory:
 
 ```sh
@@ -65,6 +75,9 @@ Remove a directory:
 rm my_folder # triggers an error
 rm -rf my_folder # recursively (-r) forces (-f) removal
 ```
+
+
+
 
 ### Manage Files
 

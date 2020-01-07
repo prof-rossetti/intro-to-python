@@ -20,6 +20,15 @@ else:
     raise ValueError("OOPS - Please type 'rock', or 'paper', or 'scissors' (without using using quotation marks).")
 ```
 
+### Defining and Raising Custom Errors
+
+```py
+class MyCustomError(Exception):
+   pass
+
+raise MyCustomError("My custom message")
+```
+
 ## Handling Errors
 
 You can use a `try... except` block to handle errors, whether encountered naturally or triggered intentionally:

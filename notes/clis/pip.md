@@ -29,6 +29,7 @@ To specify a project's dependencies, first create a new "requirements.txt" file 
     requests
     pandas
     python-dotenv
+    sendgrid==5.6.0 # can "lock" a specific version of the package
     git+https://github.com/eskerda/pybikes.git # can install from GitHub source via HTTPS
     git+ssh://git@github.com/s2t2/game-utils-py.git # can install from GitHub source via SSH
 
