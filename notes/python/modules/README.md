@@ -13,6 +13,7 @@ Some selected Python modules of interest include:
   + [The `random` Module](random.md)
   + [The `statistics` Module](statistics.md)
   + [The `time` Module](time.md)
+  + [The `webbrowser` Module](webbrowser.md)
 
 You can also create and import your own modules to help you organize your code into separate logical files.
 
