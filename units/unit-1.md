@@ -23,4 +23,4 @@ In this unit, we'll lay a foundation for the rest of the semester by introducing
 ## Activities and Exercises
 
   + ["Command-line Computing" Exercise](/exercises/command-line-computing)
-  + ["Run the App" Exercise](/exercises/run-the-app.md)
+  + ["Run the App" Exercise](/exercises/run-the-app/README.md)
