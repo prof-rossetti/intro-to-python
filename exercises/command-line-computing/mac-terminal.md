@@ -1,8 +1,8 @@
 # Command-line Computing Exercise
 
-## Terminal (Mac OS)
+## Terminal (Mac OS) / Git Bash (Windows OS)
 
-Open the Terminal application.
+Open the Terminal application on Mac, or the Git Bash application on Windows.
 
 > FYI: If you are into maximum efficiency through keyboard shortcuts, get there quick by pressing the "command + space" buttons to start a spotlight search, then begin typing the word "terminal", then hit enter when you see "Terminal" show up. :smiley_cat:
 >
@@ -16,7 +16,7 @@ Open the Terminal application.
 
 After typing each of the commands below, press "enter" to execute it.
 
-Optionally clear previous terminal output at any time by pressing "command + k".
+Optionally clear previous terminal output at any time by pressing "command + k", or by typing `clear` and pressing "enter".
 
 ### Current User
 
@@ -34,7 +34,7 @@ Print the current/present working directory:
 pwd
 ```
 
-### List Files in a Directory
+### Listing Files in a Directory
 
 List files in the current working directory:
 
@@ -43,7 +43,7 @@ ls
 ls -al # for a different display
 ```
 
-### Navigate and Manage Directories
+### Navigating and Managing Directories
 
 Change directories (specifying an absolute file path):
 
@@ -52,6 +52,8 @@ cd ~/Desktop
 ```
 
 > FYI: the tilde (`~`) represents your "home" filepath
+
+> FYI: you can use `cd ..` to move "up" one directory relative to the current working directory
 
 Open a directory via the operating system's filesystem explorer:
 
@@ -76,20 +78,16 @@ rm my_folder # triggers an error
 rm -rf my_folder # recursively (-r) forces (-f) removal
 ```
 
+### Managing Files
 
-
-
-### Manage Files
-
-Change directories (using relative file path):
+Setup a new directory in which to add some files, and navigate into that directory:
 
 ```sh
-cd my_folder # first re-create this directory if it doesn't exist, else this will trigger an error
+mkdir my_folder
+cd my_folder
 ```
 
-> FYI: Use the command `cd ..` to move "up" one directory relative to the current working directory.
-
-Create one or more files:
+Create one or more files in the new directory you just created:
 
 ```sh
 touch README.md
@@ -138,7 +136,7 @@ pbcopy < ~/Desktop/my_folder/my_message.txt
 # ... then just paste as you normally would after copying some text
 ```
 
-### Further Exploration
+### Further Exploration (Mac only)
 
 There are many other utilities to use from the command-line.
 
