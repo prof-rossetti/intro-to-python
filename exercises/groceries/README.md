@@ -1,7 +1,7 @@
 # Python Datatypes (a.k.a. "Groceries") Exercise
 
 > Prerequisites:
->   + [Python Language Overview](/units/unit-3.md)
+>   + [Python Language Overview](/units/unit-2.md)
 >   + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
 
 ## Learning Objectives

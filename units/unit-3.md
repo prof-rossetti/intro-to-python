@@ -1,32 +1,53 @@
-# Unit 3: Python Language Overview
 
-> Prerequisites: [Version Control Overview](unit-2.md)
+# Unit 3: Version Control Overview
+
+> Prerequisites: [Python Language Overview](unit-2.md)
 
 ## Learning Objectives
 
-In this unit, we will take a high-level guided tour of the Python programming language. We'll start by familiarizing ourselves with some introductory Python reference materials, then we'll illustrate and apply these concepts as we work through a guided Python exercise.
+In this unit, we'll reinforce Python concepts from the previous unit while learning how to incorporate version control practices into our software development process.
 
 ## Discussions and Notes
 
-  + Object-oriented Programming (OOP)
-  + Python Programming:
-    + [Datatypes](/notes/python/datatypes):
-      + [Null Values](/notes/python/datatypes/none.md)
-      + [Booleans](/notes/python/datatypes/booleans.md)
-      + [Strings](/notes/python/datatypes/strings.md)
-      + [Numbers](/notes/python/datatypes/numbers.md)
-      + [Dates and Times](/notes/python/datatypes/dates.md)
-      + [Lists and Sets](/notes/python/datatypes/lists.md)
-      + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-      + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
-    + [Variables](/notes/python/variables.md)
-    + [Functions](/notes/python/functions.md)
-    + [Control Flow](/notes/python/control-flow.md)
-    + [Errors](/notes/python/errors.md)
-    + [File Management](/notes/python/file-management.md)
+  + [Version Control](/notes/software/version-control.md)
+  + Command-line Utilities (CLIs):
+    + [The `git` Utility](/notes/git.md)
 
 ## Activities and Exercises
 
-  + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
-  + ["Groceries" Exercise](/exercises/groceries/README.md)
-  + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+  + ["Groceries" Version Control Exercise](/exercises/groceries/version-control.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## [Slides](https://docs.google.com/presentation/d/1ZAOXpio3o15pvaeXNOTvTpMY7Km9lWpb4CYesjyR7PU/edit?usp=sharing)
+
+## Discussions and Notes
+
+
+  + OPIM 243 Project Development and Submission Processes
+
+## Activities and Exercises
+
+
+## Screencasts
+
+  + ["Groceries" Exercise Walkthrough](https://www.youtube.com/watch?v=Noy20XaMqho&feature=youtu.be) :movie_camera:
+  + ["Groceries" Exercise Submission Process Walkthrough](https://youtu.be/aHYcxb2mDlY) :movie_camera:

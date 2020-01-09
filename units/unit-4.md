@@ -1,7 +1,7 @@
 
 # Unit 4: Processing and Validating User Inputs
 
-> Prerequisites: [Python Language Overview](unit-3.md)
+> Prerequisites: [Python Language Overview](unit-2.md)
 
 ## Learning Objectives
 

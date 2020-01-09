@@ -1,7 +1,7 @@
 # "Rock, Paper, Scissors" Exercise
 
 > Prerequisites:
->   + [Python Language Overview](/units/unit-3.md)
+>   + [Python Language Overview](/units/unit-2.md)
 
 ## Learning Objectives
 
