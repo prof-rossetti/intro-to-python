@@ -18,7 +18,7 @@ For businesses which provide software products and services, improved code quali
   + Automated Testing:
     + [The `pytest` Package](/notes/python/packages/pytest.md)
   + Continuous Integration:
-    + [The Travis CI Platform](/notes/travis-ci.md)
+    + [The Travis CI Platform](/notes/devtools/travis-ci.md)
 
 ## Activities and Exercises
 
