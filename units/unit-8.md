@@ -2,9 +2,7 @@
 
 # Unit 8: Software Products and Services
 
-> Prerequisites:
->   + [Information Systems and Software](/units/unit-1.md)
->   + [Networks, and Processing Data from the Internet](unit-6.md)
+> Prerequisites: [Review](unit-7.md)
 
 ## Learning Objectives
 
