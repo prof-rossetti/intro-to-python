@@ -7,7 +7,7 @@
 Module I:
 
   + [Unit 0](/units/unit-0.md) - Onboarding / Development Environment Setup
-  + [Unit 1](/units/unit-1.md) - Information Systems and Software
+  + [Unit 1](/units/unit-1.md) - Getting Started / Information Systems and Software
   + [Unit 2](/units/unit-2.md) - Python Language Overview
   + [Unit 3](/units/unit-3.md) - Version Control Overview
   + [Unit 4](/units/unit-4.md) - Processing and Validating User Inputs

@@ -1,6 +1,6 @@
 # Unit 2: Python Language Overview
 
-> Prerequisites: [Information Systems and Software](unit-1.md)
+> Prerequisites: [Getting Started](unit-1.md)
 
 ## Learning Objectives
 
