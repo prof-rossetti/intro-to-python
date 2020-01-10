@@ -1,7 +1,7 @@
 # "Shopping Cart" Project
 
 > Prerequisites:
->   + [Python Language Overview](/units/unit-3.md)
+>   + [Python Language Overview](/units/unit-2.md)
 >   + ["Groceries" Exercise](/exercises/groceries/README.md)
 >   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
 
