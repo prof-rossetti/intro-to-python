@@ -132,7 +132,11 @@ Get a specific environment variable (e.g. `MY_SECRET_MESSAGE`, only after you ha
 my_var = os.environ["MY_SECRET_MESSAGE"]
 print(my_var) #> SecretPassword123
 
-# using a getter function approach:
+# using a getter function:
 my_var = os.environ.get("MY_SECRET_MESSAGE")
+print(my_var) #> SecretPassword123
+
+# using the newer getter function (recommended):
+my_var = os.getenv("MY_SECRET_MESSAGE", default="This is a default / fallback message.")
 print(my_var) #> SecretPassword123
 ```
