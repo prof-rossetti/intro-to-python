@@ -11,7 +11,7 @@ In this unit, we'll reinforce Python concepts from the previous unit while learn
 
   + [Version Control](/notes/software/version-control.md)
   + Command-line Utilities (CLIs):
-    + [The `git` Utility](/notes/git.md)
+    + [The `git` Utility](/notes/clis/git.md)
 
 ## Activities and Exercises
 
