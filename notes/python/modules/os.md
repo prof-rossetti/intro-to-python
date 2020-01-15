@@ -120,9 +120,9 @@ print("------------")
 print(type(my_env)) #> <class 'os._Environ'>
 print(my_env)
 
+# can be converted to a dictionary:
 print("------------")
 print(type(dict(my_env))) #> <class 'dict'>
-print(dict(my_env)) #> 'dict'
 ```
 
 Get a specific environment variable (e.g. `MY_SECRET_MESSAGE`, only after you have set it):
