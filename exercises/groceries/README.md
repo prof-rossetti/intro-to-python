@@ -11,7 +11,6 @@
   + Practice using a text editor to edit and save files of Python code.
   + Practice incorporating version control into your development process.
   + Practice importing and accessing functionality provided by Python modules.
-  + Optional Challenge: Observe the relationship between application logic and automated tests, and start to get a feel for what logic to test and why.
 
 ## Instructions
 
@@ -84,15 +83,6 @@ conda create -n groceries-env python=3.7 # (first time only)
 conda activate groceries-env
 ```
 
-From within the virtual environment, install the `pytest` package:
-
-```sh
-# NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
-# so you can feel free to skip this now and return later...
-
-pip install pytest
-```
-
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
 ```sh
@@ -139,8 +129,11 @@ For a more in-depth guided exercise walkthrough, follow the screencast, but keep
 
   1. The screencast will instruct you to use the GitHub.com online interface to "commit", but you should be using GitHub Desktop instead
   2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
-  3. The screencast includes a walkthrough of printing departments, which for you is not part of the basic requirements but rather an optional "Further Exploration Challenge"
+  3. During the virtual environment creation step, make sure to specify the python version as 3.7 (was ommitted in the video).
+  4. The screencast includes a walkthrough of printing departments, which for you is not part of the basic requirements but rather an optional "Further Exploration Challenge"
 
 ## [Further Exploration Challenges](challenges.md)
 
 If you are able to implement the basic requirements with relative ease, consider addressing one or more of these "Further Exploration Challenges" to enrich and expand your learning experience.
+
+> NOTE: beginners should do the "departments" challenge and not the "pytest" challenge
