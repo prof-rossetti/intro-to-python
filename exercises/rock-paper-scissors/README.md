@@ -131,4 +131,3 @@ Oh, the computer won. It's ok.
 Thanks for playing. Please play again!
 ```
 
-## [Further Exploration Challenges](challenges.md)
