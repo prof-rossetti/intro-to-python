@@ -93,6 +93,8 @@ If you see the provided "products" data structure, you're ready to move on to pr
 
 ## Basic Requirements
 
+### Printing Products
+
 Inside the "groceries.py" script, write Python code which will transform the provided data structure into the following output:
 
     --------------
@@ -119,6 +121,53 @@ Inside the "groceries.py" script, write Python code which will transform the pro
      + Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce ($6.99)
      + Sparkling Orange Juice & Prickly Pear Beverage ($2.99)
 
+### Printing Departments
+
+> Prerequisites: [Lists](/notes/python/datatypes/lists.md) and the ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+
+In addition to displaying the products in a human-friendly format, also display the departments in a human-friendly format. For each department, include the number of products associated with that department.
+
+Example desired output:
+
+    --------------
+    THERE ARE 20 PRODUCTS:
+    --------------
+     + All-Seasons Salt ($4.99)
+     + Chocolate Fudge Layer Cake ($18.50)
+     + Chocolate Sandwich Cookies ($3.50)
+     + Cut Russet Potatoes Steam N' Mash ($4.25)
+     + Dry Nose Oil ($21.99)
+     + Fresh Scent Dishwasher Cleaner ($4.99)
+     + Gluten Free Quinoa Three Cheese & Mushroom Blend ($3.99)
+     + Green Chile Anytime Sauce ($7.99)
+     + Light Strawberry Blueberry Yogurt ($6.50)
+     + Mint Chocolate Flavored Syrup ($4.50)
+     + Overnight Diapers Size 6 ($25.50)
+     + Peach Mango Juice ($1.99)
+     + Pizza For One Suprema Frozen Pizza ($12.50)
+     + Pomegranate Cranberry & Aloe Vera Enrich Drink ($4.25)
+     + Pure Coconut Water With Orange ($3.50)
+     + Rendered Duck Fat ($9.99)
+     + Robust Golden Unsweetened Oolong Tea ($2.49)
+     + Saline Nasal Mist ($16.00)
+     + Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce ($6.99)
+     + Sparkling Orange Juice & Prickly Pear Beverage ($2.99)
+    --------------
+    THERE ARE 10 DEPARTMENTS:
+    --------------
+     + Babies (1 product)
+     + Beverages (5 products)
+     + Dairy Eggs (1 product)
+     + Dry Goods Pasta (1 product)
+     + Frozen (4 products)
+     + Household (1 product)
+     + Meat Seafood (1 product)
+     + Pantry (2 products)
+     + Personal Care (2 products)
+     + Snacks (2 products)
+
+> HINT: use the `filter()` function or the filtering capabilities of a list comprehension to lookup all products associated with any given department, then use the `len()` function to count them
+
 ## [Guided Checkpoints](checkpoints.md)
 
 Feel free but not obligated to follow these guided "checkpoints", which provide one example strategy for breaking-up the requirements into smaller, more manageable pieces.
@@ -131,9 +180,3 @@ For a more in-depth guided exercise walkthrough, follow the screencast, but keep
   2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
   3. During the virtual environment creation step, make sure to specify the python version as 3.7 (was ommitted in the video).
   4. The screencast includes a walkthrough of printing departments, which for you is not part of the basic requirements but rather an optional "Further Exploration Challenge"
-
-## [Further Exploration Challenges](challenges.md)
-
-If you are able to implement the basic requirements with relative ease, consider addressing one or more of these "Further Exploration Challenges" to enrich and expand your learning experience.
-
-> NOTE: beginners should do the "departments" challenge and not the "pytest" challenge
