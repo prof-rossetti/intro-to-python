@@ -176,7 +176,6 @@ Feel free but not obligated to follow these guided "checkpoints", which provide 
 
 For a more in-depth guided exercise walkthrough, follow the screencast, but keep in mind a few caveats:
 
-  1. The screencast will instruct you to use the GitHub.com online interface to "commit", but you should be using GitHub Desktop instead
-  2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
-  3. During the virtual environment creation step, make sure to specify the python version as 3.7 (was ommitted in the video).
-  4. The screencast includes a walkthrough of printing departments, which for you is not part of the basic requirements but rather an optional "Further Exploration Challenge"
+  1. The screencast will instruct you to use the GitHub.com online interface to "commit", but you should be using GitHub Desktop instead.
+  2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well.
+  3. During the virtual environment creation step, make sure to specify the python version as 3.7 (was omitted in the video).
