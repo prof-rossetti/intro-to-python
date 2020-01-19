@@ -1,3 +1,0 @@
-# The `seaborne` Package
-
-> 
