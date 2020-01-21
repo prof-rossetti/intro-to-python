@@ -1,7 +1,5 @@
 # The `seaborn` Package
 
-**Created by Kuran Malhotra**
-
 > Seaborn is a library for making statistical graphics in Python. It is built on top of matplotlib and closely integrated with pandas data structures. — [Seaborn website](https://seaborn.pydata.org/)
 
 ## Reference
