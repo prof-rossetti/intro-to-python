@@ -121,6 +121,8 @@ Inside the "groceries.py" script, write Python code which will transform the pro
      + Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce ($6.99)
      + Sparkling Orange Juice & Prickly Pear Beverage ($2.99)
 
+> HINT: for formatting numbers as currency, feel free to use the `to_usd` function provided [here](/notes/python/datatypes/numbers.md#formatting-as-currency).
+
 ### Printing Departments
 
 > Prerequisites: [Lists](/notes/python/datatypes/lists.md) and the ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
