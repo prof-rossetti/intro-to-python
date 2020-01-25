@@ -48,17 +48,27 @@ round(4.49, 2) #> 4.49
 Use [string formatting](https://docs.python.org/3.4/library/string.html#string-formatting) to control how numbers will display when printed:
 
 ```python
+# using the format function:
 "the price is ${0:.2f}".format(6.5) #> 'the price is $6.50'
 "the price is ${0:,.2f}".format(1234567890.12345678) #> 'the price is $1,234,567,890.12'
+
+# alternatively using a format string:
+price = 6.5
+f"the price is ${price:,.2f}" #> 'the price is $6.50'
+
+price = 1234567890.12345678
+f"the price is ${price:,.2f}" #> 'the price is $1,234,567,890.12'
 ```
 
-Feel free to use this function in your projects:
+Feel free to use (copy-paste) this function definition into your projects:
 
 ```py
 def to_usd(my_price):
     """
-    Converts a numeric value to usd-formatted string, for printing and display purposes. \n
-    Example: to_usd(4000.444444) \n
+    Converts a numeric value to usd-formatted string, for printing and display purposes.
+    Source: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/datatypes/numbers.md#formatting-as-currency
+    Param: my_price (int or float) like 4000.444444
+    Example: to_usd(4000.444444)
     Returns: $4,000.44
     """
     return f"${my_price:,.2f}" #> $12,000.71
