@@ -4,6 +4,8 @@
 >   + [Python Language Overview](/units/unit-2.md)
 >   + ["Groceries" Exercise](/exercises/groceries/README.md)
 >   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+>   + [The `datetime` Module](/notes/python/modules/datetime.md)
+>   + [Raising and Handling Errors](/notes/python/errors.md)
 
 ## Learning Objectives
 

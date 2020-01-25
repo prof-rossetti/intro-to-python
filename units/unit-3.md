@@ -10,15 +10,19 @@ In this unit, we'll learn how process and validate user inputs in Python as we c
 ## Discussions and Notes
 
   + User Interfaces (UI) and User Experience (UX)
-  + Capturing and Validating User Inputs
-  + [Debugging](/notes/python/debugging.md)
-  + [Handling Errors](/notes/python/errors.md)
-  + [Python Modules](/notes/python/modules/README.md):
-    + [The `os` Module](/notes/python/modules/os.md)
-    + [The `datetime` Module](/notes/python/modules/datetime.md)
-    + [The `random` Module](/notes/python/modules/random.md)
-    + [The `operator` Module](https://docs.python.org/3/library/operator.html)
-  + [File Management](/notes/python/file-management.md)
+  + Capturing and Validating User Inputs:
+    + [The `input()` Function](/notes/python/inputs.md)
+  + Voice Interfaces:
+    + [The `speech_recognition` Package](/notes/python/packages/speech_recognition.md)
+  + Messaging Interfaces:
+    + [The `sendgrid` Package](/notes/python/packages/sendgrid.md) (for sending emails)
+    + [The `twilio` Package](/notes/python/packages/twilio.md) (for sending SMS)
+    + [The `tweepy` Package](/notes/python/packages/tweepy.md) (for sending tweets :bird:)
+  + Native Graphical User Interfaces:
+    + [The `PySimpleGUI` Package](/notes/python/packages/pysimplegui.md)
+    + [The `tkinter` Package](/notes/python/packages/tkinter.md)
+  + Web Application Interfaces:
+    + [The `flask` Package](/notes/python/packages/flask.md) (advanced topic)
 
 ## Activities and Exercises
 

@@ -10,19 +10,22 @@ In this unit, we will take a high-level guided tour of the Python programming la
 
   + Object-oriented Programming (OOP)
   + Python Programming:
+    + [Syntax and Style](/notes/python/syntax-and-style.md)
+    + [Comments](/notes/python/comments.md)
+    + [Printing and Logging](/notes/python/printing.md)
+    + [Debugging](/notes/python/debugging.md)
+    + [Variables](/notes/python/variables.md)
+    + [Functions](/notes/python/functions.md)
+    + [Control Flow](/notes/python/control-flow.md)
     + [Datatypes](/notes/python/datatypes):
       + [Null Values](/notes/python/datatypes/none.md)
       + [Booleans](/notes/python/datatypes/booleans.md)
       + [Strings](/notes/python/datatypes/strings.md)
       + [Numbers](/notes/python/datatypes/numbers.md)
       + [Dates and Times](/notes/python/datatypes/dates.md)
-      + [Lists and Sets](/notes/python/datatypes/lists.md)
+      + [Lists and Sets](/notes/python/datatypes/lists.md) and `for` Loops
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
       + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
-    + [Variables](/notes/python/variables.md)
-    + [Functions](/notes/python/functions.md)
-    + [Control Flow](/notes/python/control-flow.md)
-    + [Errors](/notes/python/errors.md)
 
 ## Activities and Exercises
 

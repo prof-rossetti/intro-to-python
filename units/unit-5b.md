@@ -16,10 +16,11 @@ This unit is provided as optional bonus material for students interested in stat
 
 ## Reference Documents
 
-  + Natural Language Processing in Python:
+  + Natural Language Processing:
     + [The `nltk` Package](/notes/python/packages/nltk.md)
     + The `spacy` Package
-  + Statistical Models, Machine Learning, and Neural Networks in Python:
+  + Statistical Models, Machine Learning, and Neural Networks:
+    + [The `statistics` Module](/notes/python/modules/statistics.md)
     + [The `scikitlearn` Package](https://scikit-learn.org/stable/)
     + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/)
     + The `tensorflow` Package

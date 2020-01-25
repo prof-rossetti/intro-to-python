@@ -9,3 +9,5 @@ x = input("Please input a number:")
 
 print(x)
 ```
+
+> NOTE: the resulting value will be a string
