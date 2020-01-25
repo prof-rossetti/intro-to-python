@@ -1,32 +1,30 @@
 
-# Unit 4B: Dataviz and Business Analytics
+# Unit 5B: Business Analytics, Statistics, and Machine Learning
 
-> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-5.md)
-
-> NOTE: this unit is provided as optional bonus material for students interested in dataviz, statistics, natural language processing, and machine learning
+> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
 
 ## Learning Objectives
 
-In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data. We'll also get more familiar with taking an active, independent learning approach.
+This unit is provided as optional bonus material for students interested in statistics, natural language processing, and machine learning. :smiley_cat:
 
 ## Discussions and Notes
 
-  + Business Intelligence and Data Visualization
-  + Metrics and Key Performance Indicators (KPIs)
+  + Business Analytics
+  + Statistics and Statistical Models
+  + Natural Language Processing (NLP) and Sentiment Analysis
+  + Artificial Intelligence and Machine Learning (AI/ML)
 
 ## Reference Documents
 
-  + Data Visualization in Python:
-    + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
-    + [The `plotly` Package](/notes/python/packages/plotly.md)
-    + [The `altair` Package](/notes/python/packages/altair.md)
-  + Analytics and Statistics:
-    + [The `nltk` Package](/notes/python/packages/nltk.md) - for natural language processing
-    + [The `scikitlearn` Package](https://scikit-learn.org/stable/) - for machine learning
-    + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/) - for machine learning and neural networks
+  + Natural Language Processing in Python:
+    + [The `nltk` Package](/notes/python/packages/nltk.md)
+    + The `spacy` Package
+  + Statistical Models, Machine Learning, and Neural Networks in Python:
+    + [The `scikitlearn` Package](https://scikit-learn.org/stable/)
+    + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/)
+    + The `tensorflow` Package
 
 ## Activities and Exercises
 
-  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
-  + ["Executive Dashboard" Exercise](/exercises/exec-dash/README.md)
+  + Sentiment Analysis Exercise
   + ["Monthly Sales Predictions" Exercise](/exercises/monthly-sales-predictions/README.md)

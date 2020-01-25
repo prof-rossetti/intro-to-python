@@ -17,6 +17,7 @@ In this unit, we'll discuss software products and services, and practice deliver
   + Software Delivery and Distribution:
     + [Remote Servers](/notes/servers.md)
     + [The `git` Utility](/notes/git.md), revisited: [Remote Repositories](/notes/git.md#remote-repositories) and Managing Remote Addresses
+  + Managing Remote Servers:
     + [The `heroku` Utility](/notes/heroku.md)
 
 ## Activities and Exercises

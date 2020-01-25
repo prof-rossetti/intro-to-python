@@ -1,24 +1,32 @@
 
-# Unit 4: Processing and Validating User Inputs
+# Unit 4: Datastores, Databases, and Processing CSV Data
 
-> Prerequisites: [Python Language Overview](unit-2.md)
+> Prerequisites: [Processing and Validating User Inputs](unit-3.md)
 
 ## Learning Objectives
 
-In this unit, we'll learn how process and validate user inputs in Python as we create tools to facilitate business operations. We'll also begin to leverage built-in Python modules to extend the capabilities of our Python programs.
+In this unit, we'll illustrate the concept of program-data independence as we explore integrations between software and datastores. We'll focus on the Comma-separated Values (CSV) data format and learn how to use Python to process CSV data.
 
 ## Discussions and Notes
 
-  + User Interfaces (UI) and User Experience (UX)
-  + Capturing and Validating User Inputs
-  + [Debugging](/notes/python/debugging.md)
-  + [Handling Errors](/notes/python/errors.md)
-  + [Python Modules](/notes/python/modules/README.md):
-    + [The `os` Module](/notes/python/modules/os.md)
-    + [The `datetime` Module](/notes/python/modules/datetime.md)
-    + [The `random` Module](/notes/python/modules/random.md)
-    + [The `operator` Module](https://docs.python.org/3/library/operator.html)
+  + Program-Data Independence
+  + [Datastores, Databases, and CSV Files](/notes/info-systems/datastores.md)
+  + [Managing Files](/notes/python/file-management.md):
+    + [The `os` Module](/notes/python/modules/os.md#file-operations) (w/ focus on file and directory operations)
+  + Processing Data:
+    + [The `itertools` Module](/notes/python/modules/itertools.md)
+  + Processing CSV Files:
+    + [The `csv` Module](/notes/python/modules/csv.md)
+    + [The `pandas` Package](/notes/python/packages/pandas.md)
+  + Processing Data in other Formats (just for your awareness):
+    + [The `json` Module](/notes/python/modules/json.md) (for processing JSON)
+    + [The `BeautifulSoup` Package](/notes/python/packages/beautifulsoup.md) (for processing XML and HTML)
+    + [The `pdftotext` Utility](/notes/clis/pdftotext.md) (for parsing PDFs)
+    + [The `fpdf` Package](/notes/python/packages/fpdf.md) (for generating PDFs)
+    + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
+    + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
 
 ## Activities and Exercises
 
-  + ["Shopping Cart" Project](/projects/shopping-cart/README.md)
+  + ["Omniparser" Exercise](/exercises/omniparser/README.md)
+  + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)

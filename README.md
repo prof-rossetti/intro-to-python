@@ -7,12 +7,13 @@
 Module I:
 
   + [Unit 0](/units/unit-0.md) - Onboarding / Development Environment Setup
-  + [Unit 1](/units/unit-1.md) - Getting Started / Information Systems and Software
+  + [Unit 1](/units/unit-1.md) - Getting Started / Intro to Information Systems and Software
   + [Unit 2](/units/unit-2.md) - Python Language Overview
-  + [Unit 3](/units/unit-3.md) - Version Control Overview
-  + [Unit 4](/units/unit-4.md) - Processing and Validating User Inputs
-  + [Unit 5](/units/unit-5.md) - Datastores, Databases, and Processing CSV Files
-  + [Unit 5b](/units/unit-5b.md) - Analytics, Business Intelligence, and Data Visualization
+  + [Unit 2b](/units/unit-2b.md) - Version Control Overview
+  + [Unit 3](/units/unit-3.md) - Processing and Validating User Inputs
+  + [Unit 4](/units/unit-4.md) - Datastores, Databases, and Processing CSV Files
+  + [Unit 5](/units/unit-5.md) - Business Intelligence and Data Visualization
+  + [Unit 5b](/units/unit-5b.md) - Business Analytics, Statistics, and Machine Learning
   + [Unit 6](/units/unit-6.md) - Networks, and Processing JSON Data from the Internet
   + Unit 7 - Review
 
