@@ -13,19 +13,19 @@ In this unit, we'll learn how process and validate user inputs in Python as we c
   + Capturing and Validating User Inputs:
     + [The `input()` Function](/notes/python/inputs.md)
 
-Optional Further Exploration (for students seeking greater difficulty level):
-
-  + Native Graphical User Interfaces (GUIs):
-    + [The `PySimpleGUI` Package](/notes/python/packages/pysimplegui.md)
-    + [The `tkinter` Package](/notes/python/packages/tkinter.md)
-  + Messaging Interfaces:
-    + [The `sendgrid` Package](/notes/python/packages/sendgrid.md) (for sending emails)
-    + [The `twilio` Package](/notes/python/packages/twilio.md) (for sending SMS)
-    + [The `tweepy` Package](/notes/python/packages/tweepy.md) (for sending tweets :bird:)
-  + Voice Interfaces:
-    + [The `speech_recognition` Package](/notes/python/packages/speech_recognition.md)
-  + Web Application Interfaces:
-    + [The `flask` Package](/notes/python/packages/flask.md) (advanced)
+> Optional Further Exploration (for students seeking greater difficulty level):
+>
+>   + Native Graphical User Interfaces (GUIs):
+>     + [The `PySimpleGUI` Package](/notes/python/packages/pysimplegui.md)
+>     + [The `tkinter` Package](/notes/python/packages/tkinter.md)
+>   + Messaging Interfaces:
+>     + [The `sendgrid` Package](/notes/python/packages/sendgrid.md) (for sending emails)
+>     + [The `twilio` Package](/notes/python/packages/twilio.md) (for sending SMS)
+>     + [The `tweepy` Package](/notes/python/packages/tweepy.md) (for sending tweets :bird:)
+>   + Voice Interfaces:
+>     + [The `speech_recognition` Package](/notes/python/packages/speech_recognition.md)
+>   + Web Application Interfaces:
+>     + [The `flask` Package](/notes/python/packages/flask.md) (advanced)
 
 ## Activities and Exercises
 

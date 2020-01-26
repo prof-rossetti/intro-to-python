@@ -28,6 +28,8 @@ In this unit, we will take a high-level guided tour of the Python programming la
     + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
     + [Custom Modules](/notes/python/modules/README.md) (intermediate / advanced topic)
 
+See also: [W3Schools Python Tutorial](https://www.w3schools.com/python/).
+
 ## Activities and Exercises
 
   + ["Groceries" Exercise](/exercises/groceries/README.md)
