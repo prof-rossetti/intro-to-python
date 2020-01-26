@@ -75,6 +75,8 @@ Near the bottom of the script, uncomment the lines of code relating to this func
 
 ## Further Exploration Challenges
 
+> HINT: use [the `input()` function](/notes/python/inputs.md) to capture user inputs
+
 ### User Inputs Temperature
 
 The program should ask the user to input a Celsius temperature via the command-line, and pass that value into the custom function instead of the hard-coded `0`.
@@ -88,6 +90,8 @@ The program should ask the user to input a numeric grade via the command-line, a
 Create another file in this exercise directory called "my_script.py" and place inside the following contents:
 
 ```py
+# custom-functions/my_script.py
+
 from my_functions import celsius_to_fahrenheit
 
 if __name__ == "__main__":
