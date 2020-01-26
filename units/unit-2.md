@@ -23,9 +23,10 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [Strings](/notes/python/datatypes/strings.md)
       + [Numbers](/notes/python/datatypes/numbers.md)
       + [Dates and Times](/notes/python/datatypes/dates.md)
-      + [Lists and Sets](/notes/python/datatypes/lists.md) and `for` Loops
+      + [Lists and Sets](/notes/python/datatypes/lists.md)
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-      + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
+    + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
+    + [Custom Modules](/notes/python/modules/README.md) (intermediate / advanced topic)
 
 ## Activities and Exercises
 

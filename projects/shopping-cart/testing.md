@@ -1,5 +1,21 @@
 
-# "Shopping Cart" Project
+# Testing the "Shopping Cart" Project
+
+> Prerequisite: [The `pytest` Package](/notes/python/packages/pytest.md)
+
+## Setup
+
+From within the "shopping-env" virtual environment, install the `pytest` package:
+
+```sh
+pip install pytest # (first time only)
+```
+
+As you tackle the challenges below, you should be able to run tests from the root directory of your project repository:
+
+```sh
+pytest
+```
 
 ## Automated Testing Challenges
 

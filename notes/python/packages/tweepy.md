@@ -1,5 +1,7 @@
 # The `tweepy` Package
 
+> Prerequisites: [Environment Variables](/notes/environment-variables.md), [The `dotenv` Package](/notes/python/packages/dotenv.md)
+
 The `tweepy` package provides some useful tweeting capabilities. :bird: :bird:
 
 Reference:

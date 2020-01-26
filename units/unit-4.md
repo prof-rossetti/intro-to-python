@@ -16,6 +16,9 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
   + Processing CSV Files:
     + [The `csv` Module](/notes/python/modules/csv.md)
     + [The `pandas` Package](/notes/python/packages/pandas.md)
+
+Optional Further Exploration:
+
   + Processing Google Sheets:
     + [The `gspread` Package](/notes/python/packages/gspread.md)
   + Processing Relational (SQL) Data:

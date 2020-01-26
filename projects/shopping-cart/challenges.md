@@ -1,5 +1,7 @@
 # "Shopping Cart" Further Exploration Challenges
 
+This document provides optional project challenges for students seeking a greater level of difficulty.
+
 ## Functionality Challenges
 
 ### Handling Pricing per Pound
@@ -50,7 +52,7 @@ Ask to borrow the professor's barcode scanner during class or office hours, or f
 
 Connect the barcode scanner to your computer's USB port, and practice scanning a few of the items, and record the resulting product identifiers.
 
-Adapt the program's `products` variable (or whatever datastore you're using) to reflect the real products and their identifiers. For example:
+Adapt the program's `products` variable (or CSV file or Google Sheet, or whatever datastore you're using) to reflect the real products and their identifiers. For example:
 
 ```py
 # shopping_cart.py

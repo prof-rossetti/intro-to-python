@@ -1,5 +1,7 @@
 # The `twilio` Package
 
+> Prerequisites: [Environment Variables](/notes/environment-variables.md), [The `dotenv` Package](/notes/python/packages/dotenv.md)
+
 The `twilio` package provides some useful programmatic SMS and voice message capabilities via the [Twilio Service](https://www.twilio.com/).
 
 Reference:

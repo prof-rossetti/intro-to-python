@@ -1,5 +1,7 @@
 # The `pytest` Package
 
+> Prerequisite: [Automated Testing](/notes/software/testing.md)
+
 Reference:
 
   + https://github.com/pytest-dev/pytest/
