@@ -34,3 +34,4 @@ See also: [W3Schools Python Tutorial](https://www.w3schools.com/python/)
 
   + ["Groceries" Exercise](/exercises/groceries/README.md)
   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+  + ["Custom Functions" Exercise](/exercises/custom-functions/README.md)
