@@ -101,6 +101,12 @@ if __name__ == "__main__":
 
 ```
 
-Run this script. It should work, as long as you kept the `if __name__ == "__main__"` conditional in the "my_functions.py" file.
+Run this script:
+
+```sh
+python my_functions.py
+```
+
+It should work, as long as you kept the `if __name__ == "__main__"` conditional in the "my_functions.py" file.
 
 Nice job! You've demonstrated how to import a function from one file to be used in another. This is basically what happens when we import functions from built-in modules and third-party packages. It's just that the code we import from those modules and packages has been defined for us, whereas in this exercise we have defined our own custom functions.
