@@ -57,9 +57,9 @@ From within the virtual environment, run the exercise script:
 python my_functions.py
 ```
 
-If you see your printed message, you're ready to tackle the challenges below.
+If you see your printed message, you're ready to tackle the basic challenges below.
 
-## Challenges
+## Basic Challenges
 
 ### Temperature Converter
 
@@ -67,12 +67,36 @@ Near the top of the script, define a custom function called `celsius_to_fahrenhe
 
 Near the bottom of the script, uncomment the lines of code relating to this function, and run the program. The program should invoke your custom function to perform the example conversion and print the corresponding Fahrenheit temperature.
 
->FURTHER EXPLORATION: the program should ask the user to input a Celsius temperature via the command-line, and pass that value into the custom function instead of the hard-coded `0`
-
 ### Gradebook
 
 Near the top of the script, define a custom function called `number_to_letter_grade()`, the responsibility of which is to convert a numeric grade (e.g. `87.5`) to a corresponding letter grade (e.g. `B+`). Inside the function's definition, use your own custom algorithm to convert the grade and return the resulting value.
 
 Near the bottom of the script, uncomment the lines of code relating to this function, and run the program. The program should invoke your custom function to perform the example conversion and print the corresponding letter grade.
 
->FURTHER EXPLORATION: the program should ask the user to input a numeric grade via the command-line, and pass that value into the custom function instead of the hard-coded `87.5`
+## Further Exploration Challenges
+
+### User Inputs Temperature
+
+The program should ask the user to input a Celsius temperature via the command-line, and pass that value into the custom function instead of the hard-coded `0`.
+
+### User Inputs Grade
+
+The program should ask the user to input a numeric grade via the command-line, and pass that value into the custom function instead of the hard-coded `87.5`
+
+### Importing Functions from Other Files
+
+Create another file in this exercise directory called "my_script.py" and place inside the following contents:
+
+```py
+from my_functions import celsius_to_fahrenheit
+
+if __name__ == "__main__":
+
+    f = celsius_to_fahrenheit(0)
+    print("F TEMP IS:", f)
+
+```
+
+Run this script. It should work, as long as you kept the `if __name__ == "__main__"` conditional in the "my_functions.py" file.
+
+Nice job! You've demonstrated how to import a function from one file to be used in another. This is basically what happens when we import functions from built-in modules and third-party packages. It's just that the code we import from those modules and packages has been defined for us, whereas in this exercise we have defined our own custom functions.
