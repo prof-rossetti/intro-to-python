@@ -4,6 +4,14 @@ This document provides optional project challenges for students seeking a greate
 
 ## Functionality Challenges
 
+### Configuring Sales Tax Rate
+
+You'd like to share your code with stores in other locations as well, but different municipalities use different sales tax rates. Instead of hard-coding the sales tax rate, allow the user to configure it via environment variable using a ".env" file approach.
+
+> HINT: use [The `os` Module](/notes/python/modules/os.md) in conjunction with [The `dotenv` Package](/notes/python/packages/dotenv.md)
+
+> HINT: you might need to use the `float()` function to convert the environment variable value to a float datatype, so you can perform numeric calculations with it
+
 ### Handling Pricing per Pound
 
 Add a new product called "Organic Bananas" to the products inventory. Assign it a price of `0.79`, but add another attribute called something like `price_per` to indicate the item is priced per "pound". Update all the other product dictionaries to match the new structure, indicating they are priced per "item".
