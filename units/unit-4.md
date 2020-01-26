@@ -5,22 +5,20 @@
 
 ## Learning Objectives
 
-In this unit, we'll illustrate the concept of program-data independence as we explore integrations between software and datastores. We'll focus on the Comma-separated Values (CSV) data format and learn how to use Python to process CSV data.
+In this unit, we'll illustrate the concept of program-data independence as we explore integrations between software and datastores. We'll focus on the Comma-separated Values (CSV) format and learn how to use Python to process CSV data.
 
 ## Discussions and Notes
 
   + Program-Data Independence
-  + [Datastores, Databases, and CSV Files](/notes/info-systems/datastores.md)
+  + [Machine-readable Data Formats](/notes/info-systems/datastores.md)
   + [Managing Files](/notes/python/file-management.md):
-    + [The `os` Module](/notes/python/modules/os.md#file-operations) (w/ focus on file and directory operations)
-  + Processing Data:
-    + [The `itertools` Module](/notes/python/modules/itertools.md)
+    + [The `os` Module](/notes/python/modules/os.md#file-operations) (focus on filepath construction)
   + Processing CSV Files:
     + [The `csv` Module](/notes/python/modules/csv.md)
     + [The `pandas` Package](/notes/python/packages/pandas.md)
   + Processing Google Sheets:
     + [The `gspread` Package](/notes/python/packages/gspread.md)
-  + Processing SQL Data:
+  + Processing Relational (SQL) Data:
     + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
     + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
   + Processing JSON Data:
