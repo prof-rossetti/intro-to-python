@@ -1,6 +1,6 @@
 # Unit 6: Networks, and Processing Data from the Internet
 
-> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-5.md)
+> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
 
 ## Learning Objectives
 
@@ -12,7 +12,6 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
   + [Web Services and APIs](/notes/software/apis.md)
   + [Information Security and Privacy](/notes/info-systems/security-privacy.md)
   + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
-  + [Environment Variables](/notes/environment-variables.md)
   + Issuing HTTP Requests:
     + [The `requests` Package](/notes/python/packages/requests.md)
   + Processing JSON-formatted data:
@@ -21,9 +20,6 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
     + [The `beautifulsoup` Package](/notes/python/packages/beautifulsoup.md)
   + Automated Web Browsing (a.k.a. "scraping"):
     + [The `selenium` Package](/notes/python/packages/selenium.md)
-  + Reading API Credentials from Environment Variables:
-    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
-    + [The `os` Module](/notes/python/modules/os.md#environment-variables), focusing on environment variable capabilities
 
 ## Activities and Exercises
 

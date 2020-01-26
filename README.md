@@ -2,22 +2,25 @@
 
 ![](https://www.perforce.com/sites/default/files/image/2018-08/image-blog-enterprises-investing-python%20(2).jpg)
 
+## [Slides](https://docs.google.com/presentation/d/1K83U0VjYob6dgdRodbidWBtFxK4Q_9h8zojzmto2wJY/edit?usp=sharing)
+
 ## Instructional Units
 
-Module I:
+Module I (Software Development):
 
   + [Unit 0](/units/unit-0.md) - Onboarding / Development Environment Setup
-  + [Unit 1](/units/unit-1.md) - Getting Started / Information Systems and Software
+  + [Unit 1](/units/unit-1.md) - Getting Started / Intro to Information Systems
   + [Unit 2](/units/unit-2.md) - Python Language Overview
-  + [Unit 3](/units/unit-3.md) - Version Control Overview
-  + [Unit 4](/units/unit-4.md) - Processing and Validating User Inputs
-  + [Unit 5](/units/unit-5.md) - Datastores, Databases, and Processing CSV Files
-  + [Unit 5b](/units/unit-5b.md) - Analytics, Business Intelligence, and Data Visualization
+  + [Unit 3](/units/unit-3.md) - Processing and Validating User Inputs
+  + [Unit 4](/units/unit-4.md) - Datastores, Databases, and Processing CSV Files
+  + [Unit 5](/units/unit-5.md) - Business Intelligence and Data Visualization
+  + [Unit 5b](/units/unit-5b.md) - Business Analytics and Statistics (Bonus Material)
   + [Unit 6](/units/unit-6.md) - Networks, and Processing JSON Data from the Internet
-  + Unit 7 - Review
+  + [Unit 7](/units/unit-7.md) - Review
 
-Module II:
+Module II (Management of Software Development):
 
+  + [Unit 2b](/units/unit-2b.md) - Version Control Overview
   + [Unit 8](/units/unit-8.md) - Software Products and Services
   + [Unit 9](/units/unit-9.md) - Technology Project Management, and the Software Development Lifecycle (SDLC)
   + [Unit 10](/units/unit-10.md) - Software Maintenance and Quality Control

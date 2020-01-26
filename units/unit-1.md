@@ -10,14 +10,15 @@ In this unit, we'll lay a foundation for the rest of the semester by introducing
 
   + [Information Systems](/notes/info-systems)
   + [Software](/notes/software)
-  + Command-line Utilities (CLIs):
+  + Managing Virtual Environments:
     + [The `conda` Utility](/notes/clis/conda.md)
-    + [The `python` Utility](/notes/clis/python.md)
+  + Installing Python Packages:
     + [The `pip` Utility](/notes/clis/pip.md)
-  + [Environment Variables](/notes/environment-variables.md)
-  + Python Modules and Packages:
-    + [The `os` Module](/notes/python/modules/os.md#environment-variables) (focusing on environment variables)
+  + Running Python Programs:
+    + [The `python` Utility](/notes/clis/python.md)
+  + Managing [Environment Variables](/notes/environment-variables.md):
     + [The `dotenv` Package](/notes/python/packages/dotenv.md)
+    + [The `os` Module](/notes/python/modules/os.md#environment-variables) (focusing on environment variables)
 
 ## Activities and Exercises
 

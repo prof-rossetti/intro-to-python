@@ -2,7 +2,7 @@
 
 > Prerequisites:
 >   + ["Run the App" Exercise](/exercises/run-the-app.md)
->   + [Processing and Validating User Inputs](/units/unit-4.md)
+>   + [Processing and Validating User Inputs](/units/unit-3.md)
 
 ## Learning Objectives
 

@@ -2,7 +2,7 @@
 # "Monthly Sales Predictions" Exercise
 
 > Prerequisites:
->   + [Dataviz and Business Analytics](/units/unit-5b.md)
+>   + [Business Analytics and Statistics](/units/unit-5b.md)
 >   + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)
 
 > WARNING: intended for students with experience and interest in statistics

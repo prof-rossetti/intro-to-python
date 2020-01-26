@@ -1,5 +1,7 @@
 # "Shopping Cart" Further Exploration Challenges
 
+This document provides optional project challenges for students seeking a greater level of difficulty.
+
 ## Functionality Challenges
 
 ### Handling Pricing per Pound
@@ -30,9 +32,6 @@ Each text file should be named according to the date and time the checkout proce
 
 ### Sending Receipts via Email
 
-> Prerequisite: The email-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
-
-
 Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should prompt the checkout clerk or the customer to indicate whether the customer would like to receive the receipt by email. And if so, it should prompt the checkout clerk or the customer to input the customer's email address, and then it should send the receipt information to the customer by email. The clerk's network-connected computer should be able to send these emails.
 
 At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
@@ -53,7 +52,7 @@ Ask to borrow the professor's barcode scanner during class or office hours, or f
 
 Connect the barcode scanner to your computer's USB port, and practice scanning a few of the items, and record the resulting product identifiers.
 
-Adapt the program's `products` variable (or whatever datastore you're using) to reflect the real products and their identifiers. For example:
+Adapt the program's `products` variable (or CSV file or Google Sheet, or whatever datastore you're using) to reflect the real products and their identifiers. For example:
 
 ```py
 # shopping_cart.py
@@ -73,46 +72,3 @@ products = [
 > NOTE: for real life products, we'll probably want to change the identifier values to strings, in case any contain alphabetic characters or leading zeros (e.g. "LIFE water" identifier above)
 
 After modifying the product list, try re-running the program, using the barcode scanner to scan the real items. It should work!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<hr>
-
-
-## Automated Testing Challenges
-
-### Testing Price Formatting
-
-Refactor price-formatting logic into a function called something like `to_usd()`, and implement a corresponding test called something like `test_to_usd()`.
-
-Test various scenarios to ensure the price formatting function displays a dollar sign, two decimal places, and a thousands separator.
-
-### Testing Timestamp Formatting
-
-Refactor timestamp-formatting logic into a function called something like `human_friendly_timestamp()`, and implement a corresponding test called something like `test_human_friendly_timestamp()`.
-
-Test to ensure the function processes any given datetime object into a corresponding human-friendly string.
-
-### Testing Product Lookups
-
-Refactor product-finding logic into a function called something like `find_product()`, and implement a corresponding test called something like `test_find_product()`.
-
-Test various scenarios to ensure the product lookup function finds and returns the proper product, even if the products are not sorted in order of their unique identifiers. What should happen when the function is passed a numeric identifier vs a string identifier? What should happen when there is no product matching the given identifier?
-
-### Testing Tax and Total Calculations
-
-Refactor subtotal and/or total price calculation logic into one or more function(s) called something like `calculate_total_price()`, and implement a corresponding test(s) called something like `test_calculate_total_price()`.
-
-Test various scenarios to ensure the calculation function(s) produce the proper sum of prices, given a list of selected products and/or product identifiers.

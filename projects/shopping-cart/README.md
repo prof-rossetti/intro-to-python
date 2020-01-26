@@ -4,6 +4,8 @@
 >   + [Python Language Overview](/units/unit-2.md)
 >   + ["Groceries" Exercise](/exercises/groceries/README.md)
 >   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+>   + [The `datetime` Module](/notes/python/modules/datetime.md)
+>   + [Raising and Handling Errors](/notes/python/errors.md)
 
 ## Learning Objectives
 
@@ -96,15 +98,6 @@ conda create -n shopping-env python=3.7 # (first time only)
 conda activate shopping-env
 ```
 
-From within the virtual environment, install the `pytest` package:
-
-```sh
-# NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
-# so you can feel free to skip this now and return later...
-
-pip install pytest
-```
-
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
 ```sh
@@ -117,9 +110,12 @@ If you see the provided "products" data structure, you're ready to move on to pr
 
 The provided code includes a variable called `products` which facilitates management of the products inventory from within the application's source code.
 
-If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data". And you can later try to reference that data instead of the provided `products` variable.
+> FURTHER EXPLORATION: If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data", and use [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) for CSV file management.
 
-If you'd like to manage the products inventory via Google Sheet document instead, reference this provided [products sheet](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing). And you can later try to reference that data instead of the provided `products` variable. See the "Integrating with a Google Sheets Datastore" challenge for more info.
+
+
+
+> FURTHER EXPLORATION: If you'd like to manage the products inventory via Google Sheet document instead, see the [Integrating with a Google Sheets Datastore challenge](challenges.md#integrating-with-a-google-sheets-datastore) for more info.
 
 ## Basic Requirements
 

@@ -1,7 +1,7 @@
 # "Chart Gallery" Exercise
 
 > Prerequisites:
->   + [Dataviz and Business Analytics](/units/unit-5b.md)
+>   + [Business Intelligence and Dataviz](/units/unit-5.md)
 
 ## Learning Objectives
 

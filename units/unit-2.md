@@ -10,6 +10,13 @@ In this unit, we will take a high-level guided tour of the Python programming la
 
   + Object-oriented Programming (OOP)
   + Python Programming:
+    + [Syntax and Style](/notes/python/syntax-and-style.md)
+    + [Comments](/notes/python/comments.md)
+    + [Printing and Logging](/notes/python/printing.md)
+    + [Debugging](/notes/python/debugging.md)
+    + [Variables](/notes/python/variables.md)
+    + [Functions](/notes/python/functions.md)
+    + [Control Flow](/notes/python/control-flow.md)
     + [Datatypes](/notes/python/datatypes):
       + [Null Values](/notes/python/datatypes/none.md)
       + [Booleans](/notes/python/datatypes/booleans.md)
@@ -18,15 +25,12 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [Dates and Times](/notes/python/datatypes/dates.md)
       + [Lists and Sets](/notes/python/datatypes/lists.md)
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-      + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
-    + [Variables](/notes/python/variables.md)
-    + [Functions](/notes/python/functions.md)
-    + [Control Flow](/notes/python/control-flow.md)
-    + [Errors](/notes/python/errors.md)
-    + [File Management](/notes/python/file-management.md)
+    + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
+    + [Custom Modules](/notes/python/modules/README.md) (intermediate / advanced topic)
+
+See also: [W3Schools Python Tutorial](https://www.w3schools.com/python/)
 
 ## Activities and Exercises
 
-  + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
   + ["Groceries" Exercise](/exercises/groceries/README.md)
   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)

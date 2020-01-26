@@ -11,6 +11,7 @@ For businesses which provide software products and services, improved code quali
   + Version Control and Developer Collaboration:
     + [Branch Operations](/notes/clis/git.md#branch-operations)
     + [Reverting Changes](/notes/clis/git.md#reverting-changes)
+  + [Custom Python Modules](/notes/python/modules/README.md)
   + Quality Control:
     + [Code Refactoring and Simplification](/notes/software/refactoring.md)
     + [Automated Testing](/notes/software/testing.md)
