@@ -1,5 +1,5 @@
 
-# Unit 5B: Business Analytics, Statistics, and Machine Learning
+# Unit 5B: Business Analytics and Statistics
 
 > Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
 

@@ -110,9 +110,12 @@ If you see the provided "products" data structure, you're ready to move on to pr
 
 The provided code includes a variable called `products` which facilitates management of the products inventory from within the application's source code.
 
-If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data", and use [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) for CSV file management.
+> FURTHER EXPLORATION: If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data", and use [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) for CSV file management.
 
-If you'd like to manage the products inventory via Google Sheet document instead, see the [Integrating with a Google Sheets Datastore challenge](challenges.md#integrating-with-a-google-sheets-datastore) for more info.
+
+
+
+> FURTHER EXPLORATION: If you'd like to manage the products inventory via Google Sheet document instead, see the [Integrating with a Google Sheets Datastore challenge](challenges.md#integrating-with-a-google-sheets-datastore) for more info.
 
 ## Basic Requirements
 
