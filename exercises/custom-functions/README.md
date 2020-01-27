@@ -1,5 +1,7 @@
 # "Custom Functions" Exercise
 
+> Prerequisites: [Functions](/notes/python/functions.md)
+
     --------------------
     CUSTOM FUNCTIONS EXERCISE...
     --------------------
