@@ -12,9 +12,6 @@ Reference:
   + https://github.com/Uberi/speech_recognition/blob/master/speech_recognition/__main__.py
   + https://github.com/s2t2/learning-new-sounds
 
-
-> NOTE: so far, the professor has only been able to successfully get this package fully working on a Mac (maybe due to some issue with the Professor's Windows computer, or perhaps due to improper Windows installation steps). If you're on a Windows and interested in using this package, please consult with the professor, who will work with you to hopefully [make a breakthrough](https://github.com/s2t2/sounds-app-setup-py/blob/master/CREDITS.md).
-
 ## Prerequisites
 
 The `SpeechRecognition` Python package depends on another Python package called [`pyaudio`](http://people.csail.mit.edu/hubert/pyaudio/#downloads), which itself depends on a lower-level library caled `portaudio` (not a Python package).
