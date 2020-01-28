@@ -8,7 +8,7 @@ def celsius_to_fahrenheit(temp):
 
     Returns: the corresponding temp (float), like 32.0
     """
-    return (temp / 5) + 32
+    return (temp * 9 / 5) + 32
 
 def numeric_to_letter_grade(numeric_score):
     """
