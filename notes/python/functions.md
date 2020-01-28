@@ -19,7 +19,7 @@ def do_stuff(): # NOTE: the trailing parentheses are required
 Invoke the function:
 
 ```python
-do_stuff() # NOTE: the trailing parentheses are important. If they are omitted, the function will accessed but not be invoked
+do_stuff() # NOTE: the trailing parentheses are important. If they are omitted, the function will be accessed but not be invoked
 ```
 
 If you try to invoke a function before or without defining it, you will see an error like `NameError: name 'do_stuff' is not defined`.
