@@ -59,7 +59,6 @@ From within the virtual environment, install any packages you think you'll need:
 
 ```sh
 pip install pandas # (only if you're using pandas to parse the CSV files)
-pip install pytest # (only if you're writing tests)
 ```
 
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
