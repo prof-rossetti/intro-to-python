@@ -56,8 +56,6 @@ Use your text editor or the command-line to create a file in that repo called "s
 ```py
 # shopping_cart.py
 
-#from pprint import pprint
-
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -81,10 +79,20 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-print(products)
-# pprint(products)
+def to_usd(my_price):
+    """
+    Converts a numeric value to usd-formatted string, for printing and display purposes.
+    Source: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/datatypes/numbers.md#formatting-as-currency
+    Param: my_price (int or float) like 4000.444444
+    Example: to_usd(4000.444444)
+    Returns: $4,000.44
+    """
+    return f"${my_price:,.2f}" #> $12,000.71
 
 # TODO: write some Python code here to produce the desired output
+
+print(products)
+
 ```
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
@@ -133,11 +141,11 @@ After the clerk indicates there are no more items, the program should print a cu
 
   + A grocery store name of your choice
   + A grocery store phone number and/or website URL and/or address of choice
-  + The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. `2019-06-06 11:31 AM`)
-  + The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. `$1.50`)
-  + The total cost of all shopping cart items, formatted as US dollars and cents (e.g. `$4.50`), calculated as the sum of their prices
-  + The amount of tax owed (e.g. `$0.39`), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
-  + The total amount owed, formatted as US dollars and cents (e.g. `$4.89`), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
+  + The date and time of the beginning of the checkout process, formatted in a human-friendly way (e.g. `2020-02-07 03:54 PM`)
+  + The name and price of each shopping cart item, price being formatted as US dollars and cents (e.g. `$3.50`, etc.)
+  + The total cost of all shopping cart items, formatted as US dollars and cents (e.g. `$19.47`), calculated as the sum of their prices
+  + The amount of tax owed (e.g. `$1.70`), calculated by multiplying the total cost by a New York City sales tax rate of 8.75% (for the purposes of this project, groceries are not exempt from sales tax)
+  + The total amount owed, formatted as US dollars and cents (e.g. `$21.17`), calculated by adding together the amount of tax owed plus the total cost of all shopping cart items
   + A friendly message thanking the customer and/or encouraging the customer to shop again
 
 The program should be able to process multiple shopping cart items of the same kind, but need not display any groupings or aggregations of those items (although it may optionally do so).
@@ -148,34 +156,31 @@ The program should be able to process multiple shopping cart items of the same k
 ``` sh
 (shopping-env)  --->> python shopping_cart.py
 Please input a product identifier: 1
-Please input a product identifier: 8
-Please input a product identifier: 6
-Please input a product identifier: 8
-Please input a product identifier: 8
-Please input a product identifier: 16
-Please input a product identifier: 12
+Please input a product identifier: 2
+Please input a product identifier: 3
+Please input a product identifier: 2
+Please input a product identifier: 1
 Please input a product identifier: DONE
 #> ---------------------------------
 #> GREEN FOODS GROCERY
 #> WWW.GREEN-FOODS-GROCERY.COM
 #> ---------------------------------
-#> CHECKOUT AT: 2019-06-06 11:31 AM
+#> CHECKOUT AT: 2020-02-07 03:54 PM
 #> ---------------------------------
 #> SELECTED PRODUCTS:
 #>  ... Chocolate Sandwich Cookies ($3.50)
-#>  ... Cut Russet Potatoes Steam N' Mash ($4.25)
-#>  ... Dry Nose Oil ($21.99)
-#>  ... Cut Russet Potatoes Steam N' Mash ($4.25)
-#>  ... Cut Russet Potatoes Steam N' Mash ($4.25)
-#>  ... Mint Chocolate Flavored Syrup ($4.50)
-#>  ... Chocolate Fudge Layer Cake ($18.50)
+#>  ... All-Seasons Salt ($4.99)
+#>  ... Robust Golden Unsweetened Oolong Tea ($2.49)
+#>  ... All-Seasons Salt ($4.99)
+#>  ... Chocolate Sandwich Cookies ($3.50)
 #> ---------------------------------
-#> SUBTOTAL: $61.24
-#> TAX: $5.35
-#> TOTAL: $66.59
+#> SUBTOTAL: $19.47
+#> TAX: $1.70
+#> TOTAL: $21.17
 #> ---------------------------------
 #> THANKS, SEE YOU AGAIN SOON!
 #> ---------------------------------
+
 ```
 
 ## [Guided Checkpoints](checkpoints.md)
