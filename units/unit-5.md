@@ -18,7 +18,7 @@ In this unit, we'll learn how to use Python to create business intelligence and 
     + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
     + [The `plotly` Package](/notes/python/packages/plotly.md)
     + [The `altair` Package](/notes/python/packages/altair.md)
-    + The `seaborn` Package
+    + [The `seaborn` Package](/notes/python/packages/seaborn.md)
 
 ## Activities and Exercises
 
