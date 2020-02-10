@@ -25,7 +25,7 @@ print("FILTERED LIST W/ MATCHES:", filtered_list) #> [4, 5, 6, 7]
 
 no_matches = [n for n in my_numbers if n > 8]
 print("--------------")
-print("FILTERED LIST W/O MATCHES:", no_matches) #> [4, 5, 6, 7]
+print("FILTERED LIST W/O MATCHES:", no_matches) #> []
 
 #
 # MAPPING AND FILTERING
