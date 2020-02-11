@@ -101,13 +101,12 @@ From within the virtual environment, install the required packages specified in 
 
 ```sh
 pip install -r requirements.txt
-pip install pytest # (only if you'll be writing tests)
 ```
 
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
 ```sh
-python robo_advisor.py
+python app/robo_advisor.py
 ```
 
 If you see the example output, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
