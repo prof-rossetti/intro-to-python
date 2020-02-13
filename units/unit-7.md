@@ -4,9 +4,9 @@
 
 ## Learning Objectives
 
-In this unit, we'll review the material we've covered this semester as we prepare for the final exam.
+Let's review some of the most important material we've covered so far.
 
 ## Activities and Exercises
 
-  + Final Exam Prep
-  + Final Exam
+  + [Exam Prep](/exam/README.md)
+  + Exam
