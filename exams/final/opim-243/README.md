@@ -7,7 +7,7 @@ The final exam is designed to evaluate students' knowledge of programming concep
 
 The exam will be administered during the final class period (75 minutes). The exam will be administered in paper format, so students should remember to bring a pen or pencil. The exam is "closed book" and students should not consult any outside sources of information during the exam period.
 
-The exam consists primarily of free-response questions, but may also contain multiple-choice and matching questions. In terms of content, anything discussed in class is fair game, as well as the accompanying [notes](/notes), slides, exercises, and projects (including walkthrough screencasts). The following concepts and techniques are of particular importance:
+The exam consists primarily of free-response questions, but may also contain multiple-choice and matching questions. In terms of content, anything discussed in class is fair game, as well as any accompanying notes, slides, exercises, and projects (including walkthrough screencasts). The following concepts and techniques are of particular importance:
 
   + [Information Systems](/notes/info-systems)
   + Python Programming:
