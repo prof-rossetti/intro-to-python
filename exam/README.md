@@ -22,10 +22,14 @@ In terms of content, anything discussed in class is fair game, as well as any ac
 
 Students may consult these past exams in an effort to understand what kinds of questions might be asked:
 
-  + [Summer 2019](https://github.com/prof-rossetti/nyu-info-2335-201905/blob/master/exams/final/exam.pdf) (NYU INFO 2335, 90 mins)
-  + [Spring 2019](https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/exams/final/exam.pdf) (Georgetown OPIM 243, 75 mins)
-  + [Summer 2018](https://github.com/prof-rossetti/nyu-info-2335-201805/blob/master/exams/final/final-exam.pdf) (NYU INFO 2335, 90 mins)
-  + [Summer 2017](https://github.com/prof-rossetti/nyu-info-2335-201706/blob/master/exams/final/NYU-INFO-2335-70-Final-Exam.pdf) (NYU INFO 2335, 90 mins)
+
+Semester | Course | Duration
+---|---|---
+[Summer 2019](https://github.com/prof-rossetti/nyu-info-2335-201905/blob/master/exams/final/exam.pdf) | NYU INFO 2335 | 90 mins
+[Spring 2019](https://github.com/prof-rossetti/georgetown-opim-243-201901/blob/master/exams/final/exam.pdf) | Georgetown OPIM 243 | 75 mins
+[Summer 2018](https://github.com/prof-rossetti/nyu-info-2335-201805/blob/master/exams/final/final-exam.pdf) | NYU INFO 2335 | 90 mins
+[Summer 2017](https://github.com/prof-rossetti/nyu-info-2335-201706/blob/master/exams/final/NYU-INFO-2335-70-Final-Exam.pdf) | NYU INFO 2335 | 90 mins
+
 
 ## Submission Instructions
 
