@@ -4,7 +4,10 @@
 
 The `requests` package provides an easy way for Python programs to issue HTTP requests, whether scraping the contents of a web page, or exchanging data with an API.
 
-Reference: http://docs.python-requests.org/en/master/.
+Reference: 
+
+  + [Source Code](https://github.com/psf/requests)
+  + [Docs](https://requests.readthedocs.io/en/master/)
 
 ## Installation
 
