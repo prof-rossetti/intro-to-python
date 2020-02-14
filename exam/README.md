@@ -11,7 +11,7 @@ The exam consists primarily of free-response questions, but may also contain mul
 
 In terms of content, anything discussed in class is fair game, as well as any accompanying notes, slides, exercises, and projects (including walkthrough screencasts). The following concepts and techniques are of particular importance:
 
-  + [Information Systems](/notes/info-systems)
+  + [Information Systems](/notes/info-systems/README.md)
   + Python Programming:
     + [Variables](/notes/python/variables.md)
     + [Control Flow](/notes/python/control-flow.md)
