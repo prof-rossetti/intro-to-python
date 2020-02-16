@@ -40,6 +40,14 @@ From either API page, or from the [API Credentials](https://console.developers.g
 
 The suggested credentials will be for a service account. Follow the prompt to create a new service account with a role of: "Project" > "Editor", and create credentials for that service account. Download the resulting .json file and store it in your project repo in a location like "auth/google_api_credentials.json".
 
+Before committing, add the credentials filepath to your ".gitignore" file to ensure it does not get tracked in version control or uploaded to GitHub:
+
+```sh
+# .gitignore
+
+auth/google_api_credentials.json
+```
+
 ### Configuring Spreadsheet Document
 
 Use this [example Google Sheet](https://docs.google.com/spreadsheets/d/1_hisQ9kNjmc-cafIasMue6IQG-ql_6TcqFGpVNOkUSE/edit#gid=0), or create your own. Note the document's unique identifier (e.g. `1_hisQ9kNjmc-cafIasMue6IQG-ql_6TcqFGpVNOkUSE`) from its URL, and store the identifier in an environment variable called `GOOGLE_SHEET_ID`.
