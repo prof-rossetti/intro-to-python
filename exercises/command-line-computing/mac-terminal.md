@@ -105,9 +105,14 @@ rm index.html
 Edit and save a file, using a command-line utility provided by your preferred text editor (just choose one of these, depending on which editor you're using):
 
 ```sh
-code my_message.txt # VS Code text editor, may first require installation of shell commands from the settings
-atom my_message.txt # Atom text editor, may first require installation of shell commands from the settings
+# VS Code text editor, may first require installation of shell commands from the settings: 
+code my_message.txt 
+
+# Atom text editor, may first require installation of shell commands from the settings:
+atom my_message.txt 
 ```
+
+> NOTE: these text editor commands may require preliminary setup. For Mac users wanting to configure the `code` command, see these [VS Code shell command setup instructions](/notes/devtools/vs-code.md#shell-commands).
 
 Print file contents:
 
