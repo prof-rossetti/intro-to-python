@@ -19,7 +19,7 @@ When installing Pipenv, one option is to install it via Pip, almost like you wou
 pip install --user pipenv
 ```
 
-However, alternatively, if you have used Homebrew to install Python on Mac OS, then you can try using Homebrew to install Pipenv as well. This is the approach the professor recommends for Mac users:
+However, for Mac users, you can alternatively install Pipenv via Homebrew (recommended):
 
 ```sh
 brew install pipenv
