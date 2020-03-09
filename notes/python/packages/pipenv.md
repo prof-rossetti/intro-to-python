@@ -1,6 +1,6 @@
 # The `pipenv` Package
 
-Pipenv provides an alternative command-line utility for installing third-party Python packages and managing Python versions and package dependencies. The Python community is moving towards using Pipenv as a best practice.
+Pipenv provides an alternative command-line utility for installing third-party Python packages and managing Python versions and package dependencies. 
 
 Reference:
 
@@ -16,10 +16,6 @@ Reference:
 When installing Pipenv, one option is to install it via Pip, almost like you would any other Python package:
 
 ```sh
-# For Homebrew-installed Python 3.x on Mac OS:
-pip3 install --user pipenv
-
-# All others:
 pip install --user pipenv
 ```
 
