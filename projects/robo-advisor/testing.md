@@ -66,4 +66,4 @@ Test to ensure these functions operate as expected to further process the raw da
 
 Refactor CSV file-writing logic into a function called something like `write_to_csv()`, and implement a corresponding test called something like `test_write_to_csv()`.
 
-Test to ensure the function processes the provided data. the parsed response itself or list of daily dictionaries), creates a new CSV file, and writes the data there. Optionally test to ensure the CSV file contains the proper headers and/or expected values.
+Test to ensure the function processes the provided data (the entire parsed response structure, or just the list of daily dictionaries), creates a new CSV file, and writes the data there. Optionally test to ensure the CSV file contains the proper headers and/or expected values.
