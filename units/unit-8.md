@@ -13,6 +13,8 @@ For businesses which provide software products and services, improved code quali
     + [Git Branch Operations](/notes/clis/git.md#branch-operations)
     + GitHub Pull Request (PR) Workflow
   + [Code Refactoring and Simplification](/notes/software/refactoring.md)
+  + Code Documentation
+    + [Docstrings](/notes/python/docstrings.md)
   + [Automated Testing](/notes/software/testing.md):
     + [The `pytest` Package](/notes/python/packages/pytest.md)
   + [Continuous Integration](/notes/software/testing.md#continuous-integration):

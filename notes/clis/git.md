@@ -14,6 +14,7 @@ References:
   + https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line
   + https://www.atlassian.com/git/tutorials
   + https://www.youtube.com/watch?v=MJUJ4wbFm_A
+  + https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
 ## Installation
 
@@ -127,6 +128,8 @@ git reset --hard abc123def456 # where abc123def456 is the identifier, or "SHA", 
 ### Remote Repositories
 
 When you create a new empty repository on GitHub, it will display a screen that contains the `REMOTE_ADDRESS`. Otherwise, to find the `REMOTE_ADDRESS` of any existing GitHub repository, visit its homepage and click the big green "Clone or download" button. The address should resemble `https://github.com/USERNAME/REPONAME.git` (HTTPS), or `git@github.com:USERNAME/REPONAME.git` (SSH).
+
+> NOTE: to enable SSH, see this guide on [connecting to GitHub via SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), which will prompt you to generate a public/private key pair and save the files locally in your "~/.ssh" directory. These files help establish your identity to GitHub.
 
 #### Cloning Remote Repositories
 
