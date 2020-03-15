@@ -8,13 +8,14 @@ For businesses which provide software products and services, improved code quali
 
 ## Discussions and Notes
 
-  + Version Control and Developer Collaboration:
+  + Version Control, Developer Collaboration, and Code Reviews:
     + [The `git` Utility](/notes/clis/git.md), revisited
     + [Git Branch Operations](/notes/clis/git.md#branch-operations)
     + GitHub Pull Request (PR) Workflow
+  + [Python Code Style](/notes/python/syntax-and-style.md)
+  + [Code Documentation](/notes/software/documentation.md):
+    + [Python Docstrings](/notes/python/docstrings.md)
   + [Code Refactoring and Simplification](/notes/software/refactoring.md)
-  + [Code Documentation](/notes/software/documentation.md)
-    + [Docstrings](/notes/python/docstrings.md)
   + [Automated Testing](/notes/software/testing.md):
     + [The `pytest` Package](/notes/python/packages/pytest.md)
   + [Continuous Integration](/notes/software/testing.md#continuous-integration):

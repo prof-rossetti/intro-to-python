@@ -27,6 +27,6 @@ Revisit your previous projects and tackle their respective "testing challenges":
   + [Shopping Cart Project - Testing Challenges](/projects/shopping-cart/testing.md)
   + [Robo Advisor Project - Testing Challenges](/projects/robo-advisor/testing.md)
 
-Use Git Branch Operations and Pull Request Workflow as you develop.
+Develop on a new branch called something like "cleanup" or "qc", and incorporate GitHub Pull Requests into your development workflow.
 
-> BONUS: also incorporate Continuous Integration into your workflow.
+Optionally also configure your application's tests to run on a platform like Travis CI, and incorporate Continuous Integration (CI) into your workflow (BONUS).
