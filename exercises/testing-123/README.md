@@ -82,9 +82,9 @@ def test_enlarge():
 
 Once your repository structure looks like this, if you were to try to run tests again, you'd run into an error `ModuleNotFoundError: No module named 'app'`. We need to indicate that scripts inside the "app" directory should be able to be loaded / imported by files in other directories.
 
-In some cases this can be achieved by adding a special file called "\_\_init_\_.py" to the "app" directory. But for testing purposes, the professor recommends you take the approach of adding a special file called "conftest.py" to the repository's root directory. Even if the contents of that file are blank, it helps the Pytest package locate the proper files.
+In some cases this can be achieved by adding a special file called "\_\_init_\_.py" to the "app" directory. But for testing purposes, the professor recommends you also add a special file called "conftest.py" to the repository's root directory. Even if the contents of these files are empty, it helps the Pytest package locate the proper files.
 
-Once you have finished setting up this example, including the "conftest.py" file, run the tests again:
+Once you have finished setting up this example, including the "app/\_\_init_\_.py" and "conftest.py" files, run the tests again:
 
 ```py
 pytest #> 1 passed in 0.01 seconds

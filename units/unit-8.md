@@ -24,4 +24,4 @@ For businesses which provide software products and services, improved code quali
 
   + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
   + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
-  + [Codebase Cleanup Assignment](/exercises/codebase-cleanup/README.md)
+  + ["Codebase Cleanup" Assignment](/exercises/codebase-cleanup/README.md)

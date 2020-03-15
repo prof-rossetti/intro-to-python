@@ -1,11 +1,11 @@
 
-# Testing the "Shopping Cart" Project
+# "Shopping Cart" Project - Automated Testing Challenges
 
-> Prerequisite: [The `pytest` Package](/notes/python/packages/pytest.md)
+> Prerequisite: ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
 
 ## Setup
 
-From within the "shopping-env" virtual environment, install the `pytest` package:
+From within your shopping cart project's virtual environment (e.g. "shopping-env"), install the `pytest` package:
 
 ```sh
 pip install pytest # (first time only)
@@ -17,7 +17,9 @@ As you tackle the challenges below, you should be able to run tests from the roo
 pytest
 ```
 
-## Automated Testing Challenges
+## Challenges
+
+Your goal is to write tests to tackle the challenges below, and revise the application code as necessary to make the tests pass.
 
 ### Testing Price Formatting
 

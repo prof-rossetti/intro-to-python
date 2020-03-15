@@ -22,6 +22,6 @@ In this unit, we'll discuss software products and services, and practice deliver
 
 ## Activities and Exercises
 
-  + [Managing and Refreshing your Fork of the Course Repository](/CONTRIBUTING.md#step-1-fork-the-repository)
   + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/README.md)
   + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)
+  + Web Application Assignment

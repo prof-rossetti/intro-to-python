@@ -3,6 +3,26 @@
 
 # Robo Advisor Project - Automated Testing Challenges
 
+> Prerequisite: ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+
+## Setup
+
+From within your shopping cart project's virtual environment (e.g. "stocks-env"), install the `pytest` package:
+
+```sh
+pip install pytest # (first time only)
+```
+
+As you tackle the challenges below, you should be able to run tests from the root directory of your project repository:
+
+```sh
+pytest
+```
+
+## Challenges
+
+Your goal is to write tests to tackle the challenges below, and revise the application code as necessary to make the tests pass.
+
 ## Formatting Prices
 
 Refactor price-formatting logic into a function called something like `to_usd()`, and implement a corresponding test called something like `test_to_usd()`.
