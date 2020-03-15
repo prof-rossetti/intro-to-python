@@ -16,7 +16,7 @@
 
 ### Practice Round
 
-Fork the Professor's [Codebase Cleanup Starter Repo](_______), and follow its README instructions to setup a new virtual environment, install package dependencies, and run the tests.
+Fork the Professor's [Codebase Cleanup Starter Repo](https://github.com/prof-rossetti/codebase-cleanup-starter-py), and follow its README instructions to setup a new virtual environment, install package dependencies, and run the tests.
 
 Follow along during class as the professor iteratively simplifies and tests the code in the starter repo. Think of ways to relate the starter code to other code you may have written recently.
 
