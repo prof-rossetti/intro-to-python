@@ -26,7 +26,7 @@ Think about the user experience and expectations. What do they need the program 
 
 Think of ways to verify your code is behaving as expected. Implement automated tests, for example using the `pytest` package. Feel free to reference the examples below, but it is not necessary to adhere to them exactly.
 
-## Examples
+## Challenges
 
 > NOTE: the testing prompts below are examples to help you think about what kind of functionality to test. Ultimately everyone's programs may operate differently. The overall goal is just to implement tests in your program, in whatever way best makes most sense for your individual circumstance. :smile_cat:
 
