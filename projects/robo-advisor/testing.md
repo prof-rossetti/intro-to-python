@@ -14,7 +14,7 @@ conda activate stocks-env # for example, if necessary
 pip install pytest # (first time only)
 ```
 
-As you complete this exercise, you should be able to run tests from the root directory of your project repository:
+After writing tests, you should be able to run them from the root directory of your project repository:
 
 ```sh
 pytest
