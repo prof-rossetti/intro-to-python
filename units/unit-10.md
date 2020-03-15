@@ -1,29 +1,29 @@
-# Unit 10: Software Maintenance and Quality Control
+# Unit 10: Technology Management, and the Systems Development Lifecycle (SDLC)
 
-> Prerequisites: [Technology Project Management, and the Systems Development Lifecycle (SDLC)](/units/unit-9.md)
+> Prerequisites: [Software Products and Services](/units/unit-9.md)
 
 ## Learning Objectives
 
-For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
+In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.
 
 ## Discussions and Notes
 
-  + Version Control and Developer Collaboration:
-    + [Branch Operations](/notes/clis/git.md#branch-operations)
-    + [Reverting Changes](/notes/clis/git.md#reverting-changes)
-  + [Custom Python Modules](/notes/python/modules/README.md)
-  + Quality Control:
-    + [Code Refactoring and Simplification](/notes/software/refactoring.md)
-    + [Automated Testing](/notes/software/testing.md)
-    + [Continuous Integration](/notes/software/testing.md#continuous-integration)
-  + Automated Testing:
-    + [The `pytest` Package](/notes/python/packages/pytest.md)
-  + Continuous Integration:
-    + [The Travis CI Platform](/notes/devtools/travis-ci.md)
+  + [Project Management](/notes/project-mgmt/README.md)
+  + [Project Management Tools](/notes/project-mgmt/tools.md)
+  + [The Systems Development Lifecycle (SDLC)](/notes/project-mgmt/dev-lifecycle.md):
+    + Iterative Development Methodologies and Minimum Viable Products (MVPs)
+  + [Users, User Needs, and User-Centered Design](/notes/info-systems/people.md)
+  + [Process Analysis, Diagramming, and Re-engineering](/notes/info-systems/processes.md)
+
+  + Management of Software Products and Services, continued:
+    + [Software Licensing](/notes/licensing.md) and Open Source
+    + [Security and Privacy](/notes/security-privacy.md)
+    + [Ethics](/notes/ethics.md)
 
 ## Activities and Exercises
 
-  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
-  + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
-  + "Freestyle" Project Implementation ("Building" Phase)
-  + "Freestyle" Project Demonstration
+  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
+  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
+  + "Design Thinking" Workshop
+  + "Freestyle" Project Proposal ("Learning" Phase)
+  + "Freestyle" Project Plan ("Planning" Phase)

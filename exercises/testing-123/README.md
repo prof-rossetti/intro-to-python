@@ -1,7 +1,7 @@
 # "Testing 1, 2, 3" Exercise
 
 > Prerequisites:
->  + [Maintenance and Quality Control](/units/unit-10.md)
+>  + [Software Maintenance and Quality Control](/units/unit-8.md)
 >  + [The `pytest` Package](/notes/python/packages/pytest.md)
 
 ## Learning Objectives

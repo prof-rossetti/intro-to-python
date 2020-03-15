@@ -6,7 +6,7 @@
 
 ## Instructional Units
 
-Module I (Software Development):
+Module I (Software Development in Python):
 
   + [Unit 0](/units/unit-0.md) - Onboarding / Development Environment Setup
   + [Unit 1](/units/unit-1.md) - Getting Started / Intro to Information Systems
@@ -20,10 +20,10 @@ Module I (Software Development):
 
 Module II (Management of Software Development):
 
-  + [Unit 2b](/units/unit-2b.md) - Version Control Overview
-  + [Unit 8](/units/unit-8.md) - Software Products and Services
-  + [Unit 9](/units/unit-9.md) - Technology Project Management, and the Software Development Lifecycle (SDLC)
-  + [Unit 10](/units/unit-10.md) - Software Maintenance and Quality Control
+  + [Unit 2b](/units/unit-2b.md) - Version Control, Revisited
+  + [Unit 8](/units/unit-8.md) - Software Maintenance and Quality Control
+  + [Unit 9](/units/unit-9.md) - Software Products and Services
+  + [Unit 10](/units/unit-10.md) - Software Project Management, and the Systems Development Lifecycle (SDLC)
   + Unit 11 - Project Implementation Sprint
   + Unit 12 - Project Demo Days
 

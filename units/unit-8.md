@@ -1,27 +1,25 @@
-
-
-# Unit 8: Software Products and Services
+# Unit 8: Software Maintenance and Quality Control
 
 > Prerequisites: [Review](unit-7.md)
 
 ## Learning Objectives
 
-In this unit, we'll discuss software products and services, and practice delivering software services to end users.
+For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
 
 ## Discussions and Notes
 
-  + Software Products and Services:
-    + [Business Models](/notes/software.md#business-models)
-    + [Distribution Models](/notes/software.md#distribution-models)
-    + [Licensing Models](/notes/software.md#licensing-models)
-  + Software Delivery and Distribution:
-    + [Remote Servers](/notes/servers.md)
-    + [The `git` Utility](/notes/git.md), revisited: [Remote Repositories](/notes/git.md#remote-repositories) and Managing Remote Addresses
-  + Managing Remote Servers:
-    + [The `heroku` Utility](/notes/heroku.md)
+  + Version Control and Developer Collaboration:
+    + [The `git` Utility](/notes/clis/git.md), revisited
+    + [Git Branch Operations](/notes/clis/git.md#branch-operations)
+    + GitHub Pull Request (PR) Workflow
+  + [Code Refactoring and Simplification](/notes/software/refactoring.md)
+  + [Automated Testing](/notes/software/testing.md):
+    + [The `pytest` Package](/notes/python/packages/pytest.md)
+  + [Continuous Integration](/notes/software/testing.md#continuous-integration):
+    + [The Travis CI Platform](/notes/devtools/travis-ci.md)
 
 ## Activities and Exercises
 
-  + [Managing and Refreshing your Fork of the Course Repository](/CONTRIBUTING.md#step-1-fork-the-repository)
-  + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/README.md)
-  + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)
+  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+  + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
+  + [Codebase Cleanup Assignment](/exercises/codebase-cleanup/README.md)
