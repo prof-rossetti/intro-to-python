@@ -37,3 +37,11 @@ DON'T:
   + `firstAndLastName`
 
 > PROFESSOR'S SIDE-NOTE: When in doubt, use lowercase snake case like `my_var = ...` or `def my_func(): ...` . You'll see me sometimes use all caps variable names like `CSV_FILEPATH = ...` which I think is the cause of some confusion. In other languages, a variable name in all caps like this is a "constant", or a variable whose value can't be changed. Although this behavior does not apply to Python, I have carried over this convention into my Python out of habit, perhaps providing you with a poor example. I also generally do this when I'm converting environment variables into Python variables, for consistency there. But this isn't a rule and I encourage each of you to adopt a pattern that makes sense to you!
+
+## Style Checking
+
+Resources:
+
+  + https://pypi.org/project/autopep8/
+  + http://pep8online.com/
+  + https://codeclimate.com/
