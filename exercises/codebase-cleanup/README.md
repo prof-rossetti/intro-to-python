@@ -8,8 +8,8 @@
 ## Learning Objectives
 
   + Practice simplifying and refactoring code to improve readability and quality and decrease maintenance costs.
-  + Practice writing and executing automated tests to verify your program behaves as expected.
-  + Practice GitHub Pull Request workflow, including Git Branch operations and code review capabilities
+  + Practice writing and executing automated tests to verify your program behaves as expected, and incorporating automated testing into your development workflow.
+  + Practice incorporating GitHub Pull Requests into your development workflow.
   + Practice running automated tests on a Continuous Integration server, and incorporating CI checks into your development workflow.
 
 ## Instructions
