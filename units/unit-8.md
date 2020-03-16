@@ -11,7 +11,7 @@ For businesses which provide software products and services, improved code quali
   + Version Control, Developer Collaboration, and Code Reviews:
     + [The `git` Utility](/notes/clis/git.md), revisited
     + [Git Branch Operations](/notes/clis/git.md#branch-operations)
-    + GitHub Pull Request (PR) Workflow
+    + [GitHub Pull Request (PR) Workflow](https://guides.github.com/introduction/flow/)
   + [Python Code Style](/notes/python/syntax-and-style.md)
   + [Code Documentation](/notes/software/documentation.md):
     + [Python Docstrings](/notes/python/docstrings.md)
