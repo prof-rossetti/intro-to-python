@@ -1,7 +1,7 @@
 # "Deploying a Background Service to Production" Exercise
 
 > Prerequisites:
->   + [Software Products and Services](/units/unit-8.md)
+>   + [Software Products and Services](/units/unit-9.md)
 >   + [Heroku](/notes/clis/heroku.md) (sign up for a account, install the Heroku CLI, and login via the command line)
 >   + [The `sendgrid` Package](/notes/python/packages/sendgrid.md), including the setup instructions
 

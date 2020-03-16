@@ -46,8 +46,7 @@ pytest test/parser_test.py -k 'test_my_thing' # test a certain file / function
 
 ### Fixtures
 
-However, in addition, the Pytest package can be imported to facilitate the construction of test fixtures:
-
+Additionally, the Pytest package can be imported to facilitate the construction of test fixtures:
 
 ```py
 import pytest
