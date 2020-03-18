@@ -1,7 +1,8 @@
 # "Codebase Cleanup" Exercise
 
 > Prerequisites:
->  + [Software Maintenance and Quality Control](/units/unit-8.md)
+>  + [Software Maintenance and Quality Control](/units/unit-8.md), including all linked notes
+>  + ["Code Simplification" Exercise](https://github.com/prof-rossetti/code-simplification-exercise-py/)
 >  + ["Testing, 1,2,3" Exercise](/exercises/testing-123/README.md)
 >  + ["CI, 1,2,3" Exercise](/exercises/ci-123/README.md)
 
@@ -34,7 +35,8 @@ See the following examples of a fully-tested projects:
 
 Category | Description | Weight
 --- | --- | ---
-Pull Request Workflow | At least one or two Pull Requests used during development | 30%
-Simplification | Previous code has been simplified or organized in at least a few minor ways | 30%
+Pull Request Workflow | At least one or two Pull Requests used during development | 20%
+Simplification | Previous code has been simplified or organized in at least a few minor ways | 20%
+Documentation | Most if not all functions are documented via "docstring" comments | 20%
 Automated Testing | Presence of at least a few tests which directly invoke functions from the source code to verify the program behaves as expected | 30%
 Continuous Integration | Presence of tests being run on a CI server at least once, ideally integrated into the PR workflow | 10%
