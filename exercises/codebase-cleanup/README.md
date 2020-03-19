@@ -26,7 +26,7 @@ Optionally also configure your application's tests to run on a platform like Tra
 
 ## Examples
 
-See the following examples of a fully-tested projects:
+See the following examples of fully-tested projects:
 
   + [Shopping Cart Tests](https://github.com/s2t2/shopping-cart-screencast/tree/testing)
   + [Robo Advisor Tests](https://github.com/s2t2/robo-advisor-screencast/tree/v3-testing)
