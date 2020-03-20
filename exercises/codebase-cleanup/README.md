@@ -33,10 +33,14 @@ See the following examples of fully-tested projects:
 
 ## Evaluation
 
+Each of the two projects will comprise half of the weight for each of the categories below:
+
 Category | Description | Weight
 --- | --- | ---
 Pull Request Workflow | At least one or two Pull Requests used during development | 20%
-Simplification | Previous code has been simplified or organized in at least a few minor ways | 20%
+Simplification | Current state of the code is reasonably well organized and simplified | 20%
 Documentation | Most if not all functions are documented via "docstring" comments | 20%
 Automated Testing | Presence of at least a few tests which directly invoke functions from the source code to verify the program behaves as expected | 30%
-Continuous Integration | Presence of tests being run on a CI server at least once, ideally integrated into the PR workflow | 10%
+Continuous Integration | Tests have been run and passed on a CI server at least once, ideally as part of the Pull Request workflow | 10%
+
+> NOTE: you'll be evaluated according to the rubric above, not any previous functionality requirements
