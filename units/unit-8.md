@@ -20,6 +20,8 @@ For businesses which provide software products and services, improved code quali
     + [The `pytest` Package](/notes/python/packages/pytest.md)
   + [Continuous Integration](/notes/software/testing.md#continuous-integration):
     + [The Travis CI Platform](/notes/devtools/travis-ci.md)
+  + Code Quality:
+    + [The Code Climate Platform](/notes/devtools/code-climate.md)
 
 ## Activities and Exercises
 
