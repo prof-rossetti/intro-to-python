@@ -27,7 +27,7 @@ Fork this [Starter Web Application w/ Google Sheets Datastore repo](https://gith
 
 Follow the deployment instructions to push your app to a server hosted by Heroku, then demonstrate your ability to visit the app on the Internet at its public address!
 
-### Configuring a Deploying a Web App from Scratch
+### Configuring and Deploying a Web App from Scratch
 
 So far both of the repositories referenced above already contain configuration files which allow them to be hosted on a Heroku server. This [Rock-Paper-Scissors Web App](https://github.com/prof-rossetti/rock-paper-scissors-flask) runs locally, but has not yet been deployed to a public-facing Heroku server. See if you can configure it to be deployed, and then deploy it.
 
