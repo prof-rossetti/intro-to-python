@@ -28,6 +28,8 @@ Great, the local directory is looking good. Let's take a moment to create a new 
 
 ![screenshot of GitHub new repo form with checkbox for enabling Travis CI](https://user-images.githubusercontent.com/1328807/55443080-55c9b200-557f-11e9-9b54-eb49b76747f5.png)
 
+> NOTE: To configure Travis CI on an existing repository, or if you don't see the Travis CI option during repo creation, visit the [Travis account settings](https://travis-ci.com/account/repositories) and click "Manage repositories on GitHub", where you will be redirected to GitHub and prompted to select which repositories to configure.
+
 As a final setup step, initialize a new Git repository in your local "testing-123" directory, then associate that local repository with the remote repository's remote address:
 
 ```sh
