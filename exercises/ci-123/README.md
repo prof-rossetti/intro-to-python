@@ -30,9 +30,11 @@ Great, the local directory is looking good. Let's take a moment to create a new 
 
 > NOTE: To configure Travis CI on an existing repository, or if you don't see the Travis CI option during repo creation, visit the [Travis account settings](https://travis-ci.com/account/repositories) and click "Manage repositories on GitHub", where you will be redirected to GitHub and prompted to select which repositories to configure.
 
-As a final setup step, initialize a new Git repository in your local "testing-123" directory, then associate that local repository with the remote repository's remote address:
+As a final setup step, if you haven't yet done so, either clone your existing "testing-123" repository onto your local computer, or initialize a new Git repository in your local "testing-123" directory then associate that local repository with the remote repository's remote address:
 
 ```sh
+# (only if you haven't already set up the repo):
+
 git init .
 git add .
 git commit -m "My first commit"
