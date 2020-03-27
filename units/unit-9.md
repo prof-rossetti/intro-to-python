@@ -11,15 +11,15 @@ In this unit, we'll discuss software products and services, and practice deliver
 ## Discussions and Notes
 
   + Management of Software Products and Services:
-    + [Business Models](/notes/software.md#business-models)
-    + [Distribution Models](/notes/software.md#distribution-models)
-    + [Licensing Models](/notes/software.md#licensing-models), including Open Source Software (OSS)
-    + [Security and Privacy](/notes/security-privacy.md)
-    + [Ethics](/notes/ethics.md)
+    + [Business Models](/notes/software/README.md#business-models)
+    + [Distribution Models](/notes/software/README.md#distribution-models)
+    + [Licensing](/notes/software/licensing.md) and [Licensing Models](/notes/software/README.md#licensing-models), including Open Source Software (OSS)
+    + [Security and Privacy](/notes/info-systems/security-privacy.md)
+    + [Ethics](/notes/software/ethics.md)
   + Software Delivery and Distribution:
-    + [Remote Repositories](/notes/git.md#remote-repositories) and Managing Remote Addresses
-    + [Remote Servers](/notes/servers.md)
-    + [The `heroku` Utility](/notes/heroku.md)
+    + [Remote Repositories](/notes/clis/git.md#remote-repositories) and Managing Remote Addresses
+    + [Remote Servers](/notes/hardware/servers.md)
+    + [The `heroku` Utility](/notes/clis/heroku.md)
 
 ## Activities and Exercises
 
