@@ -1,4 +1,4 @@
-# "Codebase Cleanup" Exercise
+# "Codebase Cleanup" Assignment
 
 > Prerequisites:
 >  + [Software Maintenance and Quality Control](/units/unit-8.md), including all linked notes
@@ -42,5 +42,6 @@ Simplification | Current state of the code is reasonably well organized and simp
 Documentation | Most if not all functions are documented via "docstring" comments | 20%
 Automated Testing | Presence of at least a few tests which directly invoke functions from the source code to verify the program behaves as expected | 30%
 Continuous Integration | Tests have been run and passed on a CI server at least once, ideally as part of the Pull Request workflow | 10%
+Code Quality | The Code Climate service has been integrated into the Pull Request workflow to provide automated code quality checks | 10% (BONUS)
 
-> NOTE: you'll be evaluated according to the rubric above, not any previous functionality requirements
+> NOTE: you'll be evaluated according to the rubric above, not any previous functionality requirements. Instructors will be reading your code and running your tests and inspecting your GitHub Pull Request history, but not necessarily running your application code directly.
