@@ -5,6 +5,7 @@
 >  + ["Code Simplification" Exercise](https://github.com/prof-rossetti/code-simplification-exercise-py/)
 >  + ["Testing, 1,2,3" Exercise](/exercises/testing-123/README.md)
 >  + ["CI, 1,2,3" Exercise](/exercises/ci-123/README.md)
+>  + [Code Climate](/notes/devtools/code-climate.md)
 
 ## Learning Objectives
 
@@ -12,6 +13,7 @@
   + Practice writing and executing automated tests to verify your program behaves as expected, and incorporating automated testing into your development workflow.
   + Practice incorporating GitHub Pull Requests into your development workflow.
   + Practice running automated tests on a Continuous Integration server, and incorporating CI checks into your development workflow.
+  + Practice incorporating peer reviews and automated quality checks into your development workflow.
 
 ## Instructions
 
@@ -43,5 +45,6 @@ Documentation | Most if not all functions are documented via "docstring" comment
 Automated Testing | Presence of at least a few tests which directly invoke functions from the source code to verify the program behaves as expected | 30%
 Continuous Integration | Tests have been run and passed on a CI server at least once, ideally as part of the Pull Request workflow | 10%
 Code Quality | The Code Climate service has been integrated into the Pull Request workflow to provide automated code quality checks | 10% (BONUS)
+Peer Reviews | A peer has provided an unofficial comment or official review as part of the Pull Request workflow | 0% (OPTIONAL)
 
 > NOTE: you'll be evaluated according to the rubric above, not any previous functionality requirements. Instructors will be reading your code and running your tests and inspecting your GitHub Pull Request history, but not necessarily running your application code directly.
