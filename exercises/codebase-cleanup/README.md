@@ -24,7 +24,9 @@ Revisit your previous projects and tackle their respective "testing challenges":
 
 Start developing on a new branch called something like "cleanup" or "qc", and incorporate [Git Branch operations](/notes/clis/git.md#branch-operations) and GitHub Pull Requests and code self-reviews into your development workflow. Optionally ask a friend to review your PR and make a comment, or add them as a collaborator on your repository and they'll be able to conduct an official "review".
 
-Optionally also configure your application's tests to run on a platform like Travis CI, and incorporate Continuous Integration (CI) into your workflow (BONUS).
+Also configure your application's tests to run on a platform like Travis CI, and incorporate Continuous Integration (CI) into your workflow.
+
+Also configure your repository to integrate with a platform like Code Climate, and incorporate automated code quality checks into your workflow (BONUS).
 
 ## Examples
 
