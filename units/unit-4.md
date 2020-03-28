@@ -19,7 +19,7 @@ In this unit, we'll illustrate the concept of program-data independence as we ex
     + [The `csv` Module](/notes/python/modules/csv.md)
     + [The `pandas` Package](/notes/python/packages/pandas.md)
 
-> Optional Further Exploration (for students seeking greater difficulty level):
+> Optional Further Exploration (for students seeking greater difficulty level now or when revisiting from Unit 9):
 >
 >  + Processing Google Sheets:
 >    + [The `gspread` Package](/notes/python/packages/gspread.md)
