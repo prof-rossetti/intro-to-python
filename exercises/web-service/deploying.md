@@ -1,71 +1,6 @@
-# "Deploying a Background Service to Production" Exercise
+# Deploying a Background Web Service to Heroku
 
-> Prerequisites:
->   + [Software Products and Services](/units/unit-9.md)
->   + [Heroku](/notes/clis/heroku.md) (sign up for a account, install the Heroku CLI, and login via the command line)
->   + [The `sendgrid` Package](/notes/python/packages/sendgrid.md), including the setup instructions
-
-## Learning Objectives
-
-Learn how to "deploy" a Python script to a "production" environment, namely an application server hosted by Heroku, and schedule the server to execute the script at regular intervals.
-
-> NOTE: the script you deploy must be able to be run in a fully automated way, without needing any user inputs
-
-
-## Instructions
-
-### Repo Setup
-
-Fork [this repository](https://github.com/prof-rossetti/notification-service-py) which contains a simple Python script for sending emails ("app/send_email.py").
-
-> NOTE: this project might be using an older version of the `sendgrid` package (5.6.0) than the one currently referenced in the course repository (6.0.5), so be aware you may see some code that only works with that previous version. If you'd like to create your own email-sending project, use the newer version and defer to the notes in the course repository.
-
-Clone your fork to download it onto your local computer and automatically associate it with a remote address named "origin".
-
-```sh
-git clone https://github.com/YOUR_USERNAME/notification-service-py.git # this is the HTTP address, but you could alternatively use the SSH address
-```
-
-Navigate into your local repo before running any of the other commands below:
-
-```sh
-cd notification-service-py
-```
-
-### Local Execution
-
-Before we try to run the script on a server, let's verify our ability to run the script from our local machine. This should give us confidence in the script's ability to function, and a greater understanding about any setup or configuration steps required.
-
-First, create and activate a new Anaconda virtual environment, perhaps named "notifications-env":
-
-```sh
-conda create -n notifications-env
-conda activate notifications-env
-```
-
-Then, from within the virtual environment, install package dependencies:
-
-```sh
-pip install -r requirements.txt
-```
-
-Almost ready to run the script, but before you do, configure the necessary environment variables using a local ".env" file approach:
-
-```sh
-# .env
-SENDGRID_API_KEY="abc123" # use your own API Key!
-MY_EMAIL_ADDRESS="someone@gmail.com" # use the email address you associated with the SendGrid service
-```
-
-Then execute the script and verify it has run successfully:
-
-```sh
-python app/send_email.py
-```
-
-### Server Setup
-
-Once you have verified your ability to run the script locally, it's time to copy the source code onto an application server hosted by Heroku.
+## Prerequisites
 
 If you haven't yet done so, [install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), and make sure you can login and list your applications.
 
@@ -75,7 +10,9 @@ heroku login
 heroku apps:list # at this time, results might be empty-ish
 ```
 
-Then use the online [Heroku Dashboard](https://dashboard.heroku.com/) or the command-line (instructions below) to [create a new application server](https://dashboard.heroku.com/new-app), specifying a unique name (e.g. "notification-app-123", but yours will need to be different):
+## Server Setup
+
+Use the online [Heroku Dashboard](https://dashboard.heroku.com/) or the command-line (instructions below) to [create a new application server](https://dashboard.heroku.com/new-app), specifying a unique name (e.g. "notification-app-123", but yours will need to be different):
 
 ![a screenshot of a Heroku web form asking the user to choose a new application name](https://user-images.githubusercontent.com/1328807/54228060-b7928100-44d7-11e9-969e-817eb219f1c9.png)
 
@@ -83,13 +20,6 @@ Then use the online [Heroku Dashboard](https://dashboard.heroku.com/) or the com
 # or, alternatively:
 heroku apps:create notification-app-123
 ```
-
-
-
-
-
-
-
 
 Verify the app has been created:
 
@@ -115,7 +45,7 @@ At this point, you should be able to verify the repository is configured with a 
 git remote -v
 ```
 
-### Server Configuration
+## Server Configuration
 
 Before we copy the script to the remote server, we need to configure the server's environment in a similar way we configured our local environment. But instead of using a ".env" file, we will directly configure the server's environment variables by either clicking "Reveal Config Vars" from the "Settings" tab in your application's Heroku dashboard, or from the command line (instructions below):
 
@@ -130,6 +60,7 @@ heroku config -a notification-app-123 # at this time, results might be empty-ish
 # set environment variables:
 heroku config:set SENDGRID_API_KEY="abc123" -a notification-app-123
 heroku config:set MY_EMAIL_ADDRESS="someone@gmail.com" -a notification-app-123
+# etc...
 ```
 
 At this point, you should be able to verify the production environment has been configured with the proper environment variable values:
@@ -138,7 +69,7 @@ At this point, you should be able to verify the production environment has been 
 heroku config -a notification-app-123
 ```
 
-### Deploying
+## Deploying
 
 After this configuration process is complete, you are finally ready to "deploy" the application's source code to the Heroku server:
 
@@ -146,7 +77,7 @@ After this configuration process is complete, you are finally ready to "deploy" 
 git push heroku master
 ```
 
-### Invoking the Script
+## Running the Script
 
 Once you've deployed the source code to the Heroku server, login to the server to see the files there, and take an opportunity to test your ability to run the script that now lives on the server:
 
@@ -160,7 +91,7 @@ exit # logout
 heroku run "python app/send_email.py" -a notification-app-123
 ```
 
-### Scheduling the Script
+## Scheduling the Script
 
 Finally, provision and configure the server's "Heroku Scheduler" resource to run the notification script at specified intervals, for example once per day.
 
@@ -176,7 +107,7 @@ Finally, click on the provisioned "Heroku Scheduler" resource from the "Resource
 ![a screenshot of ](https://user-images.githubusercontent.com/1328807/54229044-da259980-44d9-11e9-91d8-51773499cbfb.png)
 
 
-### It's Alive!
+## It's Alive!
 
 Congratulations, you have just deployed a software service!
 
