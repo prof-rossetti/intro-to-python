@@ -12,6 +12,8 @@ heroku apps # at this time, results might be empty-ish
 
 ## Server Setup
 
+> IMPORTANT: run the following commands from the root directory of your repository!
+
 Use the online [Heroku Dashboard](https://dashboard.heroku.com/) or the command-line (instructions below) to [create a new application server](https://dashboard.heroku.com/new-app), specifying a unique name (e.g. "notification-app-123", but yours will need to be different):
 
 ```sh
