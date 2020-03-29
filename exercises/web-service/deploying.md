@@ -72,12 +72,12 @@ Once you've deployed the source code to the Heroku server, login to the server t
 
 ```sh
 heroku run bash # login to the server
-ls -al # optionally see the files, nice!
-python app/send_email.py # see the output, nice!
-exit # logout
+# ... ls -al # optionally see the files, nice!
+# ... python -m app.daily_briefing # see the output, nice!
+# ... exit # logout
 
-# or alternatively, without the login and logout steps:
-heroku run "python app/send_email.py"
+# or alternatively, run it from your computer, in "detached" mode:
+heroku run "python -m app.daily_briefing"
 ```
 
 ## Scheduling the Script
