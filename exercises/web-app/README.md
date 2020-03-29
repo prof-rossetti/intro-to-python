@@ -29,7 +29,7 @@ Continue following the README instructions to run web application locally and vi
 
 After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server and configure environment variables, etc.
 
-In addition to the previous steps, you'll also need to create a special file called the "Procfile" to instruct the Heroku server which command to invoke in order to run the app:
+There are no scripts to be scheduled, so skip that part. Instead, you'll need to create a special file called the "Procfile" in the repo's root directory to instruct the Heroku server which command to invoke in order to run the app:
 
 ```sh
 web: gunicorn "web_app:create_app()"
