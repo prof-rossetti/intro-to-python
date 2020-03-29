@@ -5,7 +5,7 @@
 >   + [The Open Weather API](https://home.openweathermap.org/api_keys) (sign up and obtain an API Key)
 >   + [The `flask` Package](/notes/python/packages/flask.md)
 >   + [Heroku](/notes/clis/heroku.md) (sign up for a account and install the Heroku CLI)
->   + [Web Service Exercise](/exercises/web-service/README.md), especially the deployment instructions
+>   + [Web Service Exercise](/exercises/web-service/README.md), especially the deployment process
 
 ## Learning Objectives
 
@@ -19,7 +19,7 @@
 
 Fork this Weather Web App repo (LINK TBA!!!) under your own control and then clone / download it onto your local computer.
 
-Follow the README instructions to setup the virtual environment, install package dependencies, and configure environment variables.
+Follow the README instructions to setup a virtual environment, install package dependencies, and configure environment variables.
 
 ### Running Locally
 
@@ -27,7 +27,7 @@ Continue following the README instructions to run web application locally and vi
 
 ### Deploying to Production
 
-After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a Web Service](/exercises/web-service/deploying.md) to upload the source code onto a remote server and configure environment variables, etc.
+After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server and configure environment variables, etc.
 
 In addition to the previous steps, you'll also need to create a special file called the "Procfile" to instruct the Heroku server which command to invoke in order to run the app:
 

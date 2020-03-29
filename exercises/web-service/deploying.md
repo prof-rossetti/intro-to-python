@@ -1,4 +1,4 @@
-# Deploying a Background Web Service to Heroku
+# Deploying an Application to Heroku
 
 ## Prerequisites
 
