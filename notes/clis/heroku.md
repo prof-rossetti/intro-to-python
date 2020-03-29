@@ -64,27 +64,6 @@ heroku login # this will prompt you for a username and password
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Usage
 
 List applications:
@@ -95,7 +74,7 @@ heroku apps
 
 > NOTE, for other commands below, you can specify which app to run the command against by providing the `-a` flag followed by the app name (e.g. `-a my-app-name`).
 
-### Generation
+### Server Creation
 
 Create a Heroku application server (from within the root directory of an existing project):
 
@@ -105,13 +84,19 @@ heroku create
 # heroku create my-app-name
 ```
 
-Or create a new application via the Heroku online console, and note its name (e.g. "my-app-name"), and associate an existing repository with it (from within the root directory of an existing project):
+... Or alternatively create a new application via the Heroku online console, and note its name (e.g. "my-app-name"), and associate an existing repository with it (from within the root directory of an existing project):
 
 ```sh
 heroku git:remote -a my-app-name
 ```
 
-### Configuration
+After doing so, you should be able to verify the repository is configured with a remote address called "heroku":
+
+```sh
+git remote -v
+```
+
+### Server Configuration
 
 Get environment variables currently set on the server:
 
