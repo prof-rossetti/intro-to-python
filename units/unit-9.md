@@ -20,9 +20,11 @@ In this unit, we'll discuss software products and services, and practice deliver
     + [Remote Repositories](/notes/clis/git.md#remote-repositories) and Managing Remote Addresses
     + [Remote Servers](/notes/hardware/servers.md)
     + [The `heroku` Utility](/notes/clis/heroku.md)
+  + Web Applications:
+    + [The `flask` Package](/notes/python/packages/flask.md)
+  + [Datastores](/units/unit-4.md), revisited
 
 ## Activities and Exercises
 
-  + ["Deploying a Background Service to Production" Exercise](/exercises/deploying-services/README.md)
-  + ["Deploying a Web App to Production" Exercise](/exercises/deploying-web-apps/README.md)
-  + "Web Application" Assignment
+  + ["Web Service" Exercise](/exercises/web-service/README.md)
+  + ["Web App" Exercise](/exercises/web-app/README.md)
