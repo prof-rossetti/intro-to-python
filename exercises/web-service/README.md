@@ -1,10 +1,16 @@
-# "Web Service" (a.k.a. "Morning Briefings") Exercise
+# "Web Service" (a.k.a. "Daily Briefings") Exercise
+
+Write a Python application to send yourself an email containing information of interest, like an up-to-date hourly weather forecast. Then deploy the application to a remote server and schedule the server to send you the email at the same time every morning.
 
 > Prerequisites:
 >   + [Software Products and Services](/units/unit-9.md)
+>   + [The Open Weather API](https://home.openweathermap.org/api_keys) (sign up and obtain an API Key)
 >   + [The `requests` Package](/notes/python/packages/requests.md), revisited
->   + [The `sendgrid` Package](/notes/python/packages/sendgrid.md), including the setup instructions
->   + [Heroku](/notes/clis/heroku.md) (sign up for a account, install the Heroku CLI, and login via the command line)
+>   + [The SendGrid API](https://app.sendgrid.com/settings/api_keys), revisited (sign up and obtain an API Key)
+>   + [The `sendgrid` Package](/notes/python/packages/sendgrid.md), revisited
+>   + [Heroku](/notes/clis/heroku.md) (sign up for a account and install the Heroku CLI)
+
+This exercise is inspired by a [project](https://github.com/mgallea/daily-email) by former student @mgallea.
 
 ## Learning Objectives
 
@@ -16,122 +22,18 @@
 
 ### Setup
 
-Create a new repo on GitHub called something like "morning-briefings". Clone it onto your local computer (for example to your Desktop) and navigate there from the command-line:
+Fork this [Daily Briefings repo](https://github.com/prof-rossetti/daily-briefings-py) under your own control and then clone / download it onto your local computer.
 
-```sh
-cd ~/Desktop/morning-briefings/
-```
-
-Create an "app" directory with three files inside called "stocks_service.py", "weather_service, and "email_service.py", respectively, and place the following contents inside:
-
-```py
-# app/stocks_service.py
-
-# TODO
-```
-
-```py
-# app/weather_service.py
-
-# TODO
-```
-
-```py
-# app/email_service.py
-
-# TODO
-```
-
-Create another file in the "app" directory called "daily_briefing.py", and place the following contents inside:
-
-```py
-# app/daily_briefing.py
-
-# TODO
-```
-
-Create a "requirements.txt" file in the root directory, and place inside the following contents:
-
-```sh
-# requirements.txt
-python-dotenv
-requests
-```
-
-Create a ".env" file in the root directory and place configuration variables and secret credentials inside:
-
-```sh
-# .env
-
-MY_ZIP_CODE="_______"
-MY_FAVORITE_STOCKS="MSFT,TSLA,GOOG,WORK"
-MY_EMAIL_ADDRESS="________"
-
-WEATHER_API_KEY="_____"
-SENDGRID_API_KEY="________"
-```
-
-Create a ".gitignore" file in the root directory and place the following contents inside:
-
-```sh
-# .gitignore
-
-# ignore hidden files (Mac OS only):
-.DS_Store
-
-# ignore secret credentials in the ".env" file:
-.env
-```
-
-Make sure to save all the files, then make a commit with a message like "Setup repo".
+Follow the README instructions to setup the virtual environment, install package dependencies, and configure environment variables.
 
 ### Running Locally
 
-Create and activate a new Anaconda virtual environment, perhaps named "briefings-env":
-
-```sh
-conda create -n briefings-env python=3.7
-conda activate briefings-env
-```
-
-Then, from within the virtual environment, install package dependencies:
-
-```sh
-pip install -r requirements.txt
-```
-
-From within the virtual environment, ensure you can run each of the files and see them produce their desired results of: printing the latest closing prices, printing today's weather forecast, and sending an example email, respectively.
-
-```sh
-python app/stocks_service.py
-#> THE LATEST CLOSING PRICE IS ...
-```
-
-```sh
-python app/weather_service.py
-#> TODAY'S WEATHER FORECAST IS ...
-```
-
-```sh
-python app/email_service.py
-#> SENDING EMAIL TO ...
-```
-
-> NOTE: the Sendgrid emails might first start showing up in spam, until you designate them as coming from a trusted source
-
-Also demonstrate your ability to send the daily briefing email:
-
-```sh
-python app/daily_briefing.py
-```
+Continue following the README instructions to run each of the Python scripts locally and see them produce their desired results. Check your email inbox to verify you are receiving the emails.
 
 ### Deploying to Production
 
-After getting the app running locally, follow these [Deployment Instructions](deploying.md) to deploy it to a remote server and schedule it to run at regular (e.g. daily) intervals.
+After demonstrating the ability to successfully run the app locally, follow these [Deployment Instructions](deploying.md) to upload the source code onto a remote server and configure the server to send you an email at scheduled (e.g. daily) intervals.
 
 ## Evaluation
 
-Category | Description | Weight
---- | --- | ---
-A | lorum | 20%
-B | ipsum | 20%
+If you'd like to submit this exercise for evaluation, wait until the server sends you three scheduled emails, then forward them to the instructors via email around the same time when you submit a link to your GitHub repo via the designated form.
