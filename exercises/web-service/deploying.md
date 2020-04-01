@@ -5,10 +5,12 @@
 If you haven't yet done so, [install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), and make sure you can login and list your applications.
 
 ```sh
-heroku login
+heroku login # just a one-time thing when you use heroku for the first time
 
 heroku apps # at this time, results might be empty-ish
 ```
+
+> NOTE: some students have reported that when running `heroku login` in Git Bash, it hangs after successfully logging them in. If this is the case for you, close that Git Bash window and when you open a new one you should be all set.
 
 ## Server Setup
 
