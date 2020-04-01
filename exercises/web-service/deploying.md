@@ -47,9 +47,12 @@ Instead of using a ".env" file, we will directly configure the server's environm
 heroku config # at this time, results might be empty-ish
 
 # set environment variables:
-heroku config:set SENDGRID_API_KEY="abc123"
+heroku config:set APP_ENV="production" 
+heroku config:set OPEN_WEATHER_API_KEY="___________"
+heroku config:set MY_ZIP="10017"
+heroku config:set SENDGRID_API_KEY="_________"
 heroku config:set MY_EMAIL_ADDRESS="someone@gmail.com"
-# etc...
+heroku config:set MY_NAME="Jon Snow"
 ```
 
 At this point, you should be able to verify the production environment has been configured with the proper environment variable values:
@@ -66,12 +69,15 @@ After this configuration process is complete, you are finally ready to "deploy" 
 git push heroku master
 ```
 
+> NOTE: any time you update your source code, you can repeat this deployment command to upload your new code onto the server
+
 ## Running the Script
 
 Once you've deployed the source code to the Heroku server, login to the server to see the files there, and take an opportunity to test your ability to run the script that now lives on the server:
 
 ```sh
 heroku run bash # login to the server
+# ... whoami # see that you are not on your local computer anymore
 # ... ls -al # optionally see the files, nice!
 # ... python -m app.daily_briefing # see the output, nice!
 # ... exit # logout
@@ -90,6 +96,7 @@ From the "Resources" tab in your application's Heroku dashboard, search for an a
 
 ![a screenshot of provisioning the resource](https://user-images.githubusercontent.com/1328807/54228820-5e2b5180-44d9-11e9-9901-13c538a73ac4.png)
 
+> NOTE: if doing this for the first time, Heroku may ask you to provide billing info. Feel free to provide it, as the services we are using to complete this exercise are all free, and your card should not be charged!
 
 Finally, click on the provisioned "Heroku Scheduler" resource from the "Resources" tab, then click to "Add a new Job". When adding the job, choose to execute the designated python command (`python -m app.daily_briefing`) at a scheduled interval (e.g. every 10 minutes), and finally click to "Save" the job:
 
