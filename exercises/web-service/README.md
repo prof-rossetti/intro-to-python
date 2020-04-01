@@ -30,6 +30,8 @@ Follow the README instructions to setup the virtual environment, install package
 
 Continue following the README instructions to run each of the Python scripts locally and see them produce their desired results. Check your email inbox to verify you are receiving the emails.
 
+> FYI: the email content is being formatted as HTML. For any students who are not familiar with HTML, see this [Quick HTML Reference](https://www.w3schools.com/html/html_basic.asp)!
+
 ### Deploying to Production
 
 After demonstrating the ability to successfully run the app locally, follow these [Deployment Instructions](deploying.md) to upload the source code onto a remote server and configure the server to send you an email at scheduled (e.g. daily) intervals.
