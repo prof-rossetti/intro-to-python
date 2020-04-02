@@ -24,7 +24,7 @@
 
 ## Instructions
 
-So, you've setup a background web service to send you an email every day. But what if you wanted your information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
+So, you've [deployed a background web service](/exercises/web-service/README.md) to send you an email every day. But what if you wanted your information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
 
 ![](../../img/exercises/web-app/weather-form.png)
 
