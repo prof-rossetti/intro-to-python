@@ -26,11 +26,12 @@
 
 So, you've setup a background web service to send you an email every day. But what if you wanted your information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
 
+![](../../img/exercises/web-app/weather-form.png)
+
 Follow along in class as the professor guides you through the process of building a web application from scratch.
 
 If you'd like to work ahead or asynchronously, you can reference this [Draft Pull Request in the Daily Briefings Repo](https://github.com/prof-rossetti/daily-briefings-py/pull/4) which includes a [step-by-step commit history](https://github.com/prof-rossetti/daily-briefings-py/pull/4/commits) and [comprehensive file diffs](https://github.com/prof-rossetti/daily-briefings-py/pull/4/files).
 
-![](../../img/exercises/web-app/weather-form.png)
 
 ### Setup
 
