@@ -56,7 +56,11 @@ flask run # subsequent times
 
 ### Deploying to Production
 
-After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server and configure environment variables, etc.
+After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server:
+
+```sh
+git push heroku master
+```
 
 There are no scripts to be scheduled, so skip that part. Instead, you'll need to create a special file called the "Procfile" in the repo's root directory to instruct the Heroku server which command to invoke in order to run the app:
 
@@ -64,11 +68,19 @@ There are no scripts to be scheduled, so skip that part. Instead, you'll need to
 web: gunicorn "web_app:create_app()"
 ```
 
-> NOTE: since we're instructing the server to use the `gunicorn` package (Heroku's preferred tool) to run the web app on production, we'll also need to add that package to the "requirements.txt" file so it will be installed on the server during the deployment process.
+> NOTE: since we're instructing the server to use the "gunicorn" package (Heroku's preferred tool) to run the web app on production, we'll also need to add `gunicorn` to the "requirements.txt" file so it will be installed on the server during the deployment process.
 
 Save the "Procfile" and "requirements.txt" files, and make a commit before re-attempting to deploy your app to the server.
 
+```sh
+git push heroku master
+```
+
 View the server logs and troubleshoot as necessary until you're able to see the weather forecast in the browser. Nice!
+
+```sh
+heroku logs --tail
+```
 
 ## Evaluation
 
