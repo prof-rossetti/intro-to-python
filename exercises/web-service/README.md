@@ -16,6 +16,7 @@ This exercise is inspired by a [project](https://github.com/mgallea/daily-email)
 
   + Practice leveraging third-party APIs and Python packages.
   + Practice security and privacy best practices by using a "dotenv" approach in conjunction with a ".gitignore" file.
+  + Gain high-level exposure to basic HTML.
   + Learn how to "deploy" a Python script to a user-facing "production" environment, namely an application server hosted by Heroku, and schedule the server to execute the script at regular intervals.
 
 ## Instructions
