@@ -18,6 +18,8 @@ Install Homebrew if necessary:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
+> FYI: during the installation process you might be asked to also install "Xcode Developer Tools" for the first time if you have not already done so.
+
 ## Usage
 
 List installed programs:
