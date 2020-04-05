@@ -9,7 +9,7 @@ This project provides students with an opportunity to create software to suit th
 
 ## Learning Objectives
 
-  + Propose and implement a software solution to address some real-life problem and the needs of real users.
+  + Implement software to address the needs of real users.
   + Participate in the entire Systems Development Lifecycle (SDLC), including planning, analysis, design, implementation, and maintenance.
   + Follow personal interests and passions, and find an outlet for creative expression.
   + Practice building software within a larger team (optional).
@@ -18,9 +18,9 @@ This project provides students with an opportunity to create software to suit th
 
 The project's scope should be roughly equivalent to the previous "guided" projects (i.e. Shopping Cart, Robo Advisor), or greater if desired.
 
-## Subject Matter
+## Requirements
 
-Students can choose whatever subject matter is interesting for them, and should strive for individuality and uniqueness.
+The software should transform information inputs into information outputs for some practical purpose.
 
 ## Groups
 
@@ -32,9 +32,6 @@ To incentivize individual effort within groups, each group member may be asked t
 
 ## Deliverables
 
-First students will brainstorm and submit a proposal outlining their project's scope, objectives, and requirements. Then students will implement the requirements by writing their own Python applications.
-
   1. [Proposal](proposal.md)
-  2. [Planning and Requirements Document](plan.md) (optional)
-  3. [Implementation](implementation.md)
-  4. [Demonstration](demo.md)
+  2. [Implementation](implementation.md)
+  3. [Demonstration](demo.md)
