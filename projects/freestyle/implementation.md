@@ -17,15 +17,18 @@ The implementation should adhere to the requirements below.
 
 ### Documentation Requirements
 
-Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, run, and test your program. This includes instructions for creating and activating a virtual environment, most likely using Anaconda. It also includes instructions for installing package dependencies, most likely using Pip. It also includes instructions for setting environment variables as necessary, most likely using a "dotenv" approach.
+Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, run, and test your program. This includes:
+  + instructions for creating and activating a virtual environment, most likely using Anaconda
+  + instructions for installing package dependencies, most likely using Pip
+  + instructions for obtaining and setting environment variables, as necessary
 
 As you document for your application, strive to make it as easy as possible for someone else (or even your future self) to install it, use it, and understand what it is about.
 
-Also, your codebase should be reasonably organized and documented with docstrings and other comments as necessary, to help others (and your future self) understand the code.
+Also, your codebase should be reasonably documented with docstrings and other comments as necessary, to help others (and your future self) understand the code.
 
 ### Licensing Requirements
 
-[Choose a software license](/notes/software/licensing.md), and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository. If you need help choosing a license, ask an instructor for guidance.
+Choose a software license, and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository. If you need help choosing a license, ask an instructor for guidance.
 
 ### Security Requirements
 
@@ -33,13 +36,13 @@ If your program requires sensitive information like secret passwords, API keys, 
 
 ### Quality Requirements
 
-Scan your application's codebase for duplication of terms, and refactor (using custom functions as necessary) to remove that duplication.
+Scan your application's codebase for duplication of terms, and refactor (using custom functions as necessary) to simplify the code and make it easier to maintain.
 
 As desired, integrate your GitHub repository with a service like Code Climate to provide automated code quality checks.
 
 ### Testing Requirements
 
-Implement automated tests using the Pytest package.
+Implement at least a few automated tests using the Pytest package.
 
 As you think about ways to test your application, consider asking yourself questions like the following:
 
