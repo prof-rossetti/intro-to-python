@@ -1,34 +1,41 @@
-# The "Freestyle" Project
+# The Self-Directed (a.k.a "Freestyle") Project
 
 > Prerequisites:
->   + [Software Products and Services](/units/unit-10.md)
+>   + [Software Maintenance and Quality Control](/units/unit-8.md)
+>   + [Software Products and Services](/units/unit-9.md)
 >   + [The Systems Development Lifecycle (SDLC)](/units/unit-10.md)
 
-The Self-Directed (a.k.a. "Freestyle") Project provides students with the flexibility and support to create basic application software to suit their own business or personal interests.
+This project provides students with an opportunity to create software to suit their own business or personal interests.
 
 ## Learning Objectives
 
   + Propose and implement a software solution to address some real-life problem and the needs of real users.
-  + Participate in the entire Systems Development Lifecycle, including system planning, analysis, design, implementation, and maintenance.
+  + Participate in the entire Systems Development Lifecycle (SDLC), including planning, analysis, design, implementation, and maintenance.
   + Follow personal interests and passions, and find an outlet for creative expression.
-  + Optional: Practice collaborating on a software project with other individuals.
+  + Practice building software within a larger team (optional).
 
-## Scope and Subject Matter
+## Scope and Complexity
 
-The project's scope should be roughly equivalent or greater than previous "guided" projects (i.e. Shopping Cart, Robo Advisor). Students can choose whatever subject matter is interesting for them, but should prefer to achieve a unique set of functionality.
+The project's scope should be roughly equivalent to the previous "guided" projects (i.e. Shopping Cart, Robo Advisor), or greater if desired.
 
-## Phases
+## Subject Matter
 
-First students will brainstorm and submit a proposal outlining their project's scope, objectives, and requirements. Then students will implement the requirements by writing their own Python applications.
+Students can choose whatever subject matter is interesting for them, but should prefer to find solutions which are both practical.
 
-  1. Proposal Phase (Learning and Planning)
-  2. Implementation Phase (Building and Testing)
+achieve a unique set of functionality.
+
+## Groups
+
+Students have the option of working by themselves, or in groups of the designated size (usually two or maybe three total members).
+
+To fairly evaluate groups of different sizes, projects may be ranked against others of the same group composition (e.g. solo projects vs other solo projects, two-person teams vs other two-person teams, etc.).
+
+To incentivize individual effort within groups, each group member may be asked to submit a form describing and rating the roles and relative contributions of all other group members.
 
 ## Deliverables
 
-Follow the links below for more information about each deliverable, including submission instructions and evaluation criteria:
+First students will brainstorm and submit a proposal outlining their project's scope, objectives, and requirements. Then students will implement the requirements by writing their own Python applications.
 
-  1. [Proposal](proposal.md)
-  2. [Planing and Requirements Document](plan.md)
-  3. [Implementation](implementation.md)
-  4. [Demonstration](demo.md)
+  1. [Planning and Requirements Document](plan.md)
+  2. [Implementation](implementation.md)
+  3. [Demonstration](demo.md)

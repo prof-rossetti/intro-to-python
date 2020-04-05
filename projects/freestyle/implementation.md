@@ -1,4 +1,4 @@
-# "Freestyle" Project Implementation
+# "Freestyle" Project - Implementation
 
 > Prerequisites:
 >   + [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)

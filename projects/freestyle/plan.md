@@ -1,7 +1,8 @@
-# "Freestyle" Project Planning and Requirements Document
+# "Freestyle" Project - Planning and Requirements Document
 
+> See: [The "Freestyle" Project](README.md)
+>
 > Prerequisites:
->   + [The "Freestyle" Project Proposal](/projects/freestyle/proposal.md)
 >   + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
 >   + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
 
