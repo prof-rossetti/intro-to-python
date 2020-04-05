@@ -74,9 +74,9 @@ Uniqueness and Individuality | Exhibits creativity, and a unique set of function
 User Experience | Provides a simple, pleasant, and intuitive experience for the user, with clear usage instructions, and free of idiosyncrasies or errors | 15%
 Documentation | Contains a comprehensive README file; includes Python docstrings as necessary | 20%
 Licensing | Contains an appropriate LICENSE file | 5%
-Security | Excludes sensitive information and credentials | 10%
-Quality | Simplified to remove or minimize code duplication | 7.5%
-Testing | Contains relevant automated tests | 10%
-Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 10%
+Security | Excludes sensitive information and credentials; protects user data as necessary | 12.5%
+Quality | Simplified to remove or minimize code duplication | 12.5%
+Testing | Contains relevant automated tests | 12.5%
+Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 12.5%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
