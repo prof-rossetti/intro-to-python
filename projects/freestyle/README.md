@@ -20,13 +20,11 @@ The project's scope should be roughly equivalent to the previous "guided" projec
 
 ## Subject Matter
 
-Students can choose whatever subject matter is interesting for them, but should prefer to find solutions which are both practical.
-
-achieve a unique set of functionality.
+Students can choose whatever subject matter is interesting for them, and should strive for individuality and uniqueness.
 
 ## Groups
 
-Students have the option of working by themselves, or in groups of the designated size (usually two or maybe three total members).
+Students have the option of working by themselves, or in groups of up to three total members.
 
 To fairly evaluate groups of different sizes, projects may be ranked against others of the same group composition (e.g. solo projects vs other solo projects, two-person teams vs other two-person teams, etc.).
 
@@ -36,6 +34,7 @@ To incentivize individual effort within groups, each group member may be asked t
 
 First students will brainstorm and submit a proposal outlining their project's scope, objectives, and requirements. Then students will implement the requirements by writing their own Python applications.
 
-  1. [Planning and Requirements Document](plan.md)
-  2. [Implementation](implementation.md)
-  3. [Demonstration](demo.md)
+  1. [Proposal](proposal.md)
+  2. [Planning and Requirements Document](plan.md) (optional)
+  3. [Implementation](implementation.md)
+  4. [Demonstration](demo.md)
