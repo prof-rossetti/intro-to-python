@@ -34,7 +34,7 @@ Describe your proposed solution to the problem, including a high-level Data Flow
 
 ### Live Demo
 
-Transition into a live demonstration of your project in action. Depending on which day you are scheduled to present, you might not have completed development of all aspects of your project. If you have not yet completed your project, choose a small component to demo, or demo the results of your investigation efforts into the system's technical feasibility.
+Transition into a live demonstration of your project in action. If for some reason you have not yet completed your project, choose a small component to demo, or demo the results of your investigation efforts into the system's technical feasibility.
 
 ### Reflections
 
@@ -44,6 +44,7 @@ Remark on your reactions to the process. For example, you might address the foll
   + How did you prioritize features? For groups, how did you split up the work?
   + What did you learn while working on this project? How did you learn what you needed to learn? Did you find any helpful resources?
   + What went well, and/or what would you do differently next time?
+  + What are your next steps, if any?
 
 ## Submission Instructions
 
