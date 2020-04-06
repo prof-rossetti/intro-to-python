@@ -20,4 +20,4 @@ In this unit, we'll become more familiar with the preliminary phases of the Syst
   + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
   + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
   + "Design Thinking" Workshop / "Freestyle" Project Ideation
-  + "Freestyle" Project Proposal
+  + ["Freestyle" Project Proposal](/projects/freestyle/proposal.md)
