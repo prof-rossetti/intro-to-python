@@ -69,4 +69,4 @@ Otherwise if presenting remotely via Zoom:
 
 ## Evaluation
 
-Presentations will be evaluated on the basis of content and delivery. Strive to deliver presentations with clarity and confidence. Impressive and memorable demonstrations are a great way to earn top grades. The professor may ask other students in the audience to evaluate the presentations, in which case these peer evaluations will be factored into the final presentation grade.
+Presentations will be evaluated on the basis of content and delivery. Students should strive to deliver presentations with clarity and confidence. Impressive and memorable demonstrations are a great way to earn top grades. The professor may ask other students in the audience to evaluate the presentations, in which case these peer evaluations may likely be factored into the final presentation grade.
