@@ -6,6 +6,8 @@
 >   + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
 >   + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
 
+This is an optional alternative part of the Freestyle Project which may or may not be assigned, depending on the individual class. If you're not sure whether or not this is required for you, ask an instructor.
+
 ## Learning Objectives
 
   + Practice translating project ideas into a written format to communicate them to other people and inform your development efforts.
@@ -113,12 +115,19 @@ Will your software be deployed to a remote server (i.e. web app or scheduled ser
 
 How will you prioritize which parts of the system to work on first? If working with other individuals, how will you split-up the work? Include any supporting charts, tables, or diagrams.
 
-<hr>
+
+
+
+
+
+
+
+
 
 
 ## Submission Instructions
 
-[Upload a PDF version of your planning and requirements document to NYU Classes](https://newclasses.nyu.edu/portal/site/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/tool/f1178530-8a47-4ef7-831d-d554df55b4eb?assignmentId=/assignment/a/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/fa119b5a-ff65-4567-8ca5-cfbb7f53bdff&panel=Main&sakai_action=doView_assignment).
+Upload a PDF version of your planning and requirements document using the designated link.
 
 Optionally also include a copy of this document and any supporting artifacts in your project repository in a subdirectory called something like "planning" or "design".
 
