@@ -47,15 +47,24 @@ Remark on your reactions to the process. For example, you might address the foll
 
 ## Submission Instructions
 
-The professor will assign your group to present on one of two "Demo Days".
+The professor will assign your group to present on a designated "Demo Day".
 
-At least an hour before the beginning of class on your designated demo day, [upload a PDF version of your presentation document to NYU Classes](https://newclasses.nyu.edu/portal/site/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/tool/f1178530-8a47-4ef7-831d-d554df55b4eb?assignmentId=/assignment/a/e7aed58f-c4e8-4fbd-b8ab-40c86414d0ab/ea14ea83-1336-4949-b945-d46aaf6b0146&panel=Main&sakai_action=doView_assignment).
+At least an hour before the beginning of class on your designated demo day, upload a PDF version of your presentation document using the designated link.
 
-During the first few minutes of class on your designated demo day, practice connecting your computer to the projector using either of the provided VGA or HDMI cables.
+If presenting in-person:
 
-After the group scheduled to present before you starts to take questions, begin setting up your computer by connecting it to the projector and preparing to demo.
+  1. During the first few minutes of class on your designated demo day, practice connecting your computer to the projector using either of the provided VGA or HDMI cables.
+  2. After the group scheduled to present before you starts to take questions, begin setting up your computer by connecting it to the projector and preparing to demo.
+  3. During your designated demo time, deliver your presentation in front of the class. When you are finished, step to the side to answer questions while the next group sets up.
 
-During your designated demo time, deliver your presentation in front of the class. When you are finished, step to the side to answer questions while the next group sets up.
+Otherwise if presenting remotely via Zoom:
+
+  1. Before your designated demo day, invite a friend to your own Zoom meeting and practice your ability to connect and screen share.
+  2. After the group scheduled to present before you starts to take questions, mentally prepare to start your demo. Make sure your screen is suitable to start sharing.
+  3. During your designated demo time, deliver your presentation in front of the class. When you are finished, prepare to answer questions as moderated by the professor.
+
+> NOTE: students in different time zones who are not able to present during the designated Demo Day should pre-record their presentation via Zoom and share a link to the cloud recording with the professor at least one day in advance of the designated Demo Day.
+
 
 ## Evaluation
 
