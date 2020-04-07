@@ -50,7 +50,7 @@ Depending on the way a Flask app is organized, the run command will differ, but 
 FLASK_APP=web_app flask run
 
 # Windows:
-set FLASK_APP=web_app # first time, to set the env var
+export FLASK_APP=web_app # first time, to set the env var
 flask run # subsequent times
 ```
 
