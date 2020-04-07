@@ -41,7 +41,6 @@ Inside "web_app/templates/home.html":
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My App</title>
 </head>
 <body>
@@ -68,7 +67,6 @@ Inside "web_app/templates/about.html":
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My App</title>
 </head>
 <body>
@@ -80,5 +78,8 @@ Inside "web_app/templates/about.html":
 </body>
 </html>
 ```
+
+
+> FYI: we actually created the code in both of these HTML files by leveraging the auto-completion capabilities of our text editor. When we create a file with a ".html" extension, if we start to write the word "html" in that file, we'll see the ability to generate an entire "html:5" document skeleton (which you see above).
 
 Restart your server and view the app in the browser and see the complete HTML pages!
