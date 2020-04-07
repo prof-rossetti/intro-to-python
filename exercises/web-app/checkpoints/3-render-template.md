@@ -25,6 +25,11 @@ def about():
     print("VISITED THE ABOUT PAGE")
     #return "About Me (TODO)"
     return render_template("about.html")
+
+@home_routes.route("/register")
+def register():
+    print("VISITED THE REGISTRATION PAGE")
+    return "Sign Up for our Product! (TODO)" # we'll make an HTML template for this later!
 ```
 
 Here we are referencing two HTML files, called "home.html" and "about.html". Flask wants to look in a specific directory called "templates" for these files. So let's create a new directory in the "web_app" directory called "templates" and insert the following files inside:
