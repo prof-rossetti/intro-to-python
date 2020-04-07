@@ -2,11 +2,12 @@
 
 Reference:
 
-  + [Website](http://flask.pocoo.org/)
-  + [Docs](http://flask.pocoo.org/docs/1.0/)
+  + [Website](https://flask.palletsprojects.com/)
+  + [Docs](https://flask.palletsprojects.com/en/1.1.x/)
   + [Source](https://github.com/pallets/flask)
-  + [Quick-start Guide](http://flask.pocoo.org/docs/1.0/quickstart/)
-  + [Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/)
+  + [Quick-start Guide](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
+  + [Tutorial](https://flask.palletsprojects.com/en/1.1.x/tutorial/)
+  + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
 
 The `flask` package provides a micro-framework for making applications with web interfaces (a.k.a "web applications").
 
