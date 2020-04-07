@@ -32,7 +32,16 @@ Follow along in class as the professor guides you through the process of buildin
 
 If you'd like to work ahead or asynchronously, you can reference this [Draft Pull Request in the Daily Briefings Repo](https://github.com/prof-rossetti/daily-briefings-py/pull/4) which includes a [step-by-step commit history](https://github.com/prof-rossetti/daily-briefings-py/pull/4/commits) and [comprehensive file diffs](https://github.com/prof-rossetti/daily-briefings-py/pull/4/files).
 
-Or follow these written ["checkpoints"](checkpoints/) sequentially.
+Or follow these written "checkpoints" sequentially:
+
+  1. [Basic App](checkpoints/1-basic-app.md)
+  2. [Application Factory](checkpoints/2-app-factory.md)
+  3. [Rendering HTML Templates](checkpoints/3-render-template.md)
+  4. [Shared HTML Layouts](checkpoints/4-shared-layout.md)
+  5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
+  6. Web Forms
+  7. Flash Messaging
+  8. Integrating with Weather Functionality
 
 ### Setup
 
