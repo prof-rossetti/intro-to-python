@@ -19,6 +19,8 @@ For each system:
      2. What **Information Outputs** does the system produce, and who consumes these outputs?
   2. Visually depict the flow of information using a Data Flow Diagram (DFD). Include any people or other "entities" within the scope of the system which provide information to the system or receive information from the system.
 
+You can start by sketching the DFDs on a whiteboard or piece of paper. Then ideally translate them into digital format using a diagramming tool like [Lucid Chart](https://www.lucidchart.com/).
+
 ### DFD Shapes
 
   + The **System** should be depicted as a rectangle with a curved top. This shape should be labeled to include the name of the system as a proper noun (e.g. "Class Registration System").
