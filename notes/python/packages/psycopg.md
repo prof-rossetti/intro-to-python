@@ -16,7 +16,7 @@ The `psycopg2` ("psycho pee gee") package provides a way for Python to interface
 
 > Psycopg is the most popular PostgreSQL adapter for the Python programming language. At its core it fully implements the Python DB API 2.0 specifications. Several extensions allow access to many of the features offered by PostgreSQL. - [Psycopg website](http://initd.org/psycopg/)
 
-Run a `psycopg2` application "in development" using a database server on your local machine, and/or "in production" using a remote database server hosted by a provider like Heroku. If you run it in development, you should be able to connect via localhost, whereas if you run it in production, you should be able to connect using the production server's credentials. The professor recommends using [Postico](https://eggerapps.at/postico/) or some other GUI interface to your PostgreSQL databases, local or remote.
+Run a `psycopg2` application "in development" using a database server on your local machine, and/or "in production" using a remote database server hosted by a provider like Heroku. If you run it in development, you should be able to connect via localhost, whereas if you run it in production, you should be able to connect using the production server's credentials. The professor recommends using [Table Plus](https://tableplus.com/) or some other GUI interface to your PostgreSQL databases, local or remote.
 
 ## Installation
 
