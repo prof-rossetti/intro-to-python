@@ -39,9 +39,8 @@ Or follow these written "checkpoints" sequentially:
   3. [Rendering HTML Templates](checkpoints/3-render-template.md)
   4. [Shared HTML Layouts](checkpoints/4-shared-layout.md)
   5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
-  6. Web Forms
-  7. Flash Messaging
-  8. Integrating with Weather Functionality
+  6. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
+  7. [Integrating Weather Functionality](checkpoints/7-integration.md)
 
 ### Setup
 

@@ -23,7 +23,7 @@ pip install flask
 
 ## Usage
 
-Follow the [Official Flask Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/).
+Follow the [Official Flask Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/) or the ["Web Application" Exercise](/exercises/web-app/README.md) for an introduction to making web applications with Flask.
 
 Also reference these example applications by the professor and previous students:
 
