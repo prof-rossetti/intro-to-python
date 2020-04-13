@@ -77,4 +77,4 @@ Right now this route is demonstrating its ability to print the captured user reg
 
 But in the meantime, we are displaying a success message to the user, and redirecting them to the homepage, for an example experience that a user might be expecting. This is primarily just to demonstrate flash messaging and redirection capabilities.
 
-Restart the server and visit localhost:5000/users/new to begin the registration flow! And check the server logs to verify everything is working as desired.
+Restart the server and visit "localhost:5000/users/new" to begin the registration flow! And check the server logs to verify everything is working as desired.

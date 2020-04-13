@@ -53,7 +53,7 @@ def weather_forecast():
         zip_code = request.form["zip_code"]
     elif request.method == "GET":
         print("URL PARAMS:", dict(request.args))
-        zip_code = request.args["zip_code"]
+        zip_code = request.args["zip_code"] #> {'zip_code': '20057'}
 
     results = get_hourly_forecasts(zip_code)
     print(results.keys())
@@ -85,7 +85,7 @@ After we get a weather forecast for the given zip code, we'll send the results t
 
 Here, we are using the Jinja templating language to display any Python variables that are wrapped inside double curly braces (e.g. `{{ zip_code }}`). Fun, right?
 
-Restart the server and visit localhost:5000/weather/form to test the newly-integrated weather forecasting functionality.
+Restart the server and visit "localhost:5000/weather/form" to test the newly-integrated weather forecasting functionality.
 
 At this time, if you haven't told your app about these new routes, we'll get 404 errors, so let's finally configure the app to recognize the weather routes. In the "web_app/\_\_init\_\_.py" file, add the following lines:
 
@@ -108,4 +108,4 @@ from web_app.routes.weather_routes import weather_routes
 
 Alright, now when you restart the server, you should be able to view the new pages as desired. Nice!
 
-You'll also notice we can view "" directly, customizing the zip code via URL params as desired. We did this primarily just to show you how your route can accept data passed via URL params.
+You'll also notice we can view "localhost:5000/weather/forecast?zip_code=20057" directly, customizing the zip code via URL params as desired to send a "GET" request to our forecast route. We set the route up this way primarily just to show you how to accept data passed via URL params. You could make your own API this way!
