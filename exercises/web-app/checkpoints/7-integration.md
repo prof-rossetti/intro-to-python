@@ -137,4 +137,4 @@ def forecast():
     return jsonify(results)
 ```
 
-Register these new routes, restart your server, and view the API routes directly from the browser to see the JSON responses. You've created your own API. Nice!
+Register these new routes, restart your server, and view the API routes directly from the browser to see the JSON responses. Customize the zip code via URL params. You've created your own API. Nice!
