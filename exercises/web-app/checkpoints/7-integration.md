@@ -108,4 +108,33 @@ from web_app.routes.weather_routes import weather_routes
 
 Alright, now when you restart the server, you should be able to view the new pages as desired. Nice!
 
-You'll also notice we can view "localhost:5000/weather/forecast?zip_code=20057" directly, customizing the zip code via URL params as desired to send a "GET" request to our forecast route. We set the route up this way primarily just to show you how to accept data passed via URL params. You could make your own API this way!
+## Further Exploration (Optional)
+
+You'll notice we can also view "localhost:5000/weather/forecast?zip_code=20057" directly, customizing the zip code via URL params as desired. You'll probably set up most of your routes to handle either GET requests or POST requests, but we configured the `weather_forecast` route to conditionally handle either, primarily as an example to show you how you could handle URL params.
+
+Think of how this URL parameter approach relates to some other APIs that we've used earlier in the semester. Let's set up our own API routes now:
+
+```py
+# web_app/routes/api_routes.py
+
+from flask import Blueprint, request, jsonify
+
+api_routes = Blueprint("api_routes", __name__)
+
+@api_routes.route("/api/hello.json")
+def hello():
+    return jsonify({"message": "Hello World"}) # can jsonify a dictionary
+
+@api_routes.route("/api/users.json")
+def users():
+    return jsonify([1,2,3]) # can jsonify a list
+
+@api_routes.route("/api/forecast.json")
+def forecast():
+    print("URL PARAMS:", dict(request.args))
+    zip_code = request.args["zip_code"] #> {'zip_code': '20057'}
+    results = get_hourly_forecasts(zip_code)
+    return jsonify(results)
+```
+
+Register these new routes, restart your server, and view the API routes directly from the browser to see the JSON responses. You've created your own API. Nice!
