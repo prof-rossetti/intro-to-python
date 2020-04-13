@@ -42,7 +42,7 @@ In the templates directory, add a new HTML file called "new_user_form.html" and 
 {% endblock %}
 ```
 
-Here we're saying when the user submits the form, we'll send their form inputs via POST request to a new route called "/users/create", so let's update our routes now:
+The HTML `<form>` elements are kind of magical. We can use them to issue HTTP requests to a given URL when the user clicks the `button` element inside the form. Focus on the form's `action` and `method` attributes. Here, we're saying that when the user submits the form, we'll send their data via POST request to a new route called "/users/create". So let's update our routes now:
 
 ```py
 # web_app/routes/home_routes.py
@@ -59,15 +59,16 @@ def register():
 @home_routes.route("/users/create", methods=["POST"])
 def create_user():
     print("FORM DATA:", dict(request.form))
-    # we are able to access the form data via the "request" object we import from flask
-    # these keys correspond with the "name" attributes of each <input> element in the form!
+    # FYI: we are able to access the form data via the "request" object we import from flask
+    # ... these keys correspond with the "name" attributes of each <input> element in the form!
     #> {'full_name': 'Example User', 'email_address': 'me@example.com', 'country': 'US'}
 
     user = dict(request.form)
     # todo: store in a database or google sheet!
 
     # FYI: "warning", "primary", "danger", "success", etc. are bootstrap color classes
-    # see: https://getbootstrap.com/docs/4.3/components/alerts/ and the flash messaging section of the "bootstrap_layout.html" file
+    # ... see https://getbootstrap.com/docs/4.3/components/alerts/
+    # ... and the flash messaging section of the "bootstrap_layout.html" file for more details
     flash(f"User '{user['full_name']}' created successfully! (TODO)", "warning")
     return redirect("/")
 ```
@@ -75,3 +76,5 @@ def create_user():
 Right now this route is demonstrating its ability to print the captured user registration information, but not doing much else with it. Maybe in the future we could store it in a database, or send it in an email to a systems administrator, to facilitate the user's ability to use our system in certain ways.
 
 But in the meantime, we are displaying a success message to the user, and redirecting them to the homepage, for an example experience that a user might be expecting. This is primarily just to demonstrate flash messaging and redirection capabilities.
+
+Restart the server and visit "localhost:5000/users/new" to begin the registration flow!
