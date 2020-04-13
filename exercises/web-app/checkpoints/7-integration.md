@@ -112,7 +112,7 @@ Alright, now when you restart the server, you should be able to view the new pag
 
 You'll notice we can also view "localhost:5000/weather/forecast?zip_code=20057" directly, customizing the zip code via URL params as desired. You'll probably set up most of your routes to handle either GET requests or POST requests, but we configured the `weather_forecast` route to conditionally handle either, primarily as an example to show you how you could handle URL params.
 
-Think of how this URL parameter approach relates to some other APIs that we've used earlier in the semester. Let's set up our own API routes now:
+Think of how this URL parameter approach relates to some other APIs that we've used earlier in the semester. Let's set up some example API routes now:
 
 ```py
 # web_app/routes/api_routes.py
