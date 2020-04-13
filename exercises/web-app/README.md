@@ -39,9 +39,8 @@ Or follow these written "checkpoints" sequentially:
   3. [Rendering HTML Templates](checkpoints/3-render-template.md)
   4. [Shared HTML Layouts](checkpoints/4-shared-layout.md)
   5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
-  6. Web Forms
-  7. Flash Messaging
-  8. Integrating with Weather Functionality
+  6. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
+  7. [Integrating Weather Functionality](checkpoints/7-integration.md)
 
 ### Setup
 
@@ -65,6 +64,8 @@ flask run # subsequent times
 ```
 
 ### Deploying to Production
+
+> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/efa9daf3c28bf083bce262526947155f6140ac58)
 
 After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server:
 
