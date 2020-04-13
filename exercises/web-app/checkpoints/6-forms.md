@@ -1,4 +1,4 @@
-# Web App Checkpoint 6 - HTML Forms
+# Web App Checkpoint 6 - Web Forms, POST Requests, and Flash Messaging
 
 
 > FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/8efe1f3627e0d046a3595fd81a867d3c54776879)
@@ -42,7 +42,7 @@ In the templates directory, add a new HTML file called "new_user_form.html" and 
 {% endblock %}
 ```
 
-The HTML `<form>` elements are kind of magical. We can use them to issue HTTP requests to a given URL when the user clicks the `button` element inside the form. Focus on the form's `action` and `method` attributes. Here, we're saying that when the user submits the form, we'll send their data via POST request to a new route called "/users/create". So let's update our routes now:
+The HTML `<form>` elements are kind of magical. We can use them to issue HTTP requests to a given URL when the user clicks the `<button>` element inside the form. Focus on the form's `action` and `method` attributes. Here, we're saying that when the user submits the form, we'll send their data via POST request to a new route called "/users/create". So let's update our routes now:
 
 ```py
 # web_app/routes/home_routes.py
@@ -77,4 +77,4 @@ Right now this route is demonstrating its ability to print the captured user reg
 
 But in the meantime, we are displaying a success message to the user, and redirecting them to the homepage, for an example experience that a user might be expecting. This is primarily just to demonstrate flash messaging and redirection capabilities.
 
-Restart the server and visit "localhost:5000/users/new" to begin the registration flow!
+Restart the server and visit localhost:5000/users/new to begin the registration flow! And check the server logs to verify everything is working as desired.

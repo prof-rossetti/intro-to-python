@@ -83,7 +83,9 @@ After we get a weather forecast for the given zip code, we'll send the results t
 {% endblock %}
 ```
 
-Restart your server and visit "/weather/form" to test the newly-integrated weather forecasting functionality.
+Here, we are using the Jinja templating language to display any Python variables that are wrapped inside double curly braces (e.g. `{{ zip_code }}`). Fun, right?
+
+Restart the server and visit localhost:5000/weather/form to test the newly-integrated weather forecasting functionality.
 
 At this time, if you haven't told your app about these new routes, we'll get 404 errors, so let's finally configure the app to recognize the weather routes. In the "web_app/\_\_init\_\_.py" file, add the following lines:
 
