@@ -28,7 +28,7 @@ Let's create a web form with a text input element to allow the user to specify t
 {% endblock %}
 ```
 
-Here we're saying when the user submits the form, we'll send their zip code via POST request to a new route called "/weather/forecast", so let's set up our weather routes now.
+Here we're saying when the user submits the form, we'll send their zip code via POST request to a new route called "/weather/forecast", so let's set up our weather routes now:
 
 ```py
 # web_app/routes/weather_routes.py

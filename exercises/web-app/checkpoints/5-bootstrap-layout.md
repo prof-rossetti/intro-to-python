@@ -58,7 +58,7 @@ New layout called "web_app/templates/bootstrap_layout.html":
   <body>
 
     <!-- FLASH MESSAGING -->
-    <!-- see: http://flask.pocoo.org/docs/1.0/patterns/flashing/#flashing-with-categories -->
+    <!-- see: https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/ -->
     <!-- see: https://getbootstrap.com/docs/4.3/components/alerts/ -->
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
