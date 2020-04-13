@@ -2,9 +2,9 @@
 
 > FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/26299ec21548b3d9465b78e11f8ff5e4e17a77b8)
 
-Alright, we've demonstrated our ability to send and receive data from a web form. Now let's apply that approach to integrating our weather functionality.
+Alright, we've demonstrated our ability to send and receive data via a web form. Now let's apply that approach to integrating our weather functionality.
 
-Let's create a web form with a text input element to allow the user to specify their given zipcode. In the templates directory, add a new HTML file called "weather_form.html" and place the following contents inside:
+Let's create a web form with a text input element to allow the user to specify their given zip code. In the templates directory, add a new HTML file called "weather_form.html" and place inside the following contents:
 
 ```html
 {% extends "bootstrap_layout.html" %}
@@ -60,7 +60,7 @@ def weather_forecast():
     return render_template("weather_forecast.html", zip_code=zip_code, results=results)
 ```
 
-After we get a weather forecast for the given zip code, we'll send the results to a new page called "weather_forecast", so let's create that page now in the templates directory, and place the following contents inside:
+After we get a weather forecast for the given zip code, we'll send the results to a new page called "weather_forecast", so let's create that page now in the templates directory, and place inside the following contents:
 
 ```html
 {% extends "bootstrap_layout.html" %}

@@ -5,7 +5,7 @@
 
 Our web app is looking good, but its functionality is still basic. Let's take full advantage of our data capture capabilities via a web form.
 
-In the templates directory, add a new HTML file called "new_user_form.html" and place the following contents inside:
+In the templates directory, add a new HTML file called "new_user_form.html" and place inside the following contents:
 
 ```html
 {% extends "bootstrap_layout.html" %}
