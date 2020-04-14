@@ -44,9 +44,21 @@ pytest  -s #> see print statements
 pytest test/parser_test.py -k 'test_my_thing' # test a certain file / function
 ```
 
+### Expecting Errors
+
+The Pytest package can be imported to facilitate assertions that errors will be raised:
+
+```py
+import pytest
+
+def test_divide_by_zero():
+    with pytest.raises(Exception) as e_info:
+        result = 2 / 0 # we expect this code will raise the error (division by zero)
+```
+
 ### Fixtures
 
-Additionally, the Pytest package can be imported to facilitate the construction of test fixtures:
+The Pytest package can be imported to facilitate the construction of test fixtures (for example, to be placed in the "conftest.py" file):
 
 ```py
 import pytest
