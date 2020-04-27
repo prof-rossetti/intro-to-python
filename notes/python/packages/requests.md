@@ -47,6 +47,18 @@ response = requests.put(request_url, json=my_data)
 response = requests.delete(request_url)
 ```
 
+Example POST request:
+
+```py
+import requests
+
+request_url = "https://www.ssa.gov/cgi-bin/babyname.cgi"
+params = {"name": "Jane", "sex": "F"}
+response = requests.post(request_url, params)
+print(response.status_code)
+print(response.text)
+```
+
 ### Parsing HTTP Responses
 
 If the response contains JSON, you can use [the `json` module](/notes/python/modules/json.md) to parse it:
