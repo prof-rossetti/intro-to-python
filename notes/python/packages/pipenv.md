@@ -4,9 +4,8 @@ Pipenv provides an alternative command-line utility for installing third-party P
 
 Reference:
 
-  + https://docs.pipenv.org/
-  + https://docs.pipenv.org/basics/
-  + https://docs.pipenv.org/diagnose/
+  + https://pipenv-fork.readthedocs.io/en/latest/
+  + https://pipenv-fork.readthedocs.io/en/latest/install.html#installing-pipenv
   + http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref <-- an awesome guide to help you get started
   + http://docs.python-guide.org/en/latest/starting/install3/win/
   + https://github.com/pypa/pipenv
