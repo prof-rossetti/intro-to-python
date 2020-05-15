@@ -39,9 +39,9 @@ Windows users who don't already have a preferred command-line application are en
 
 ### Anaconda
 
-Unless it is already installed, install [Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. 
+Unless it is already installed, install [Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
 
-> IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows. See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
+> IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows. 
 
 > NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash` and Mac Zsh profile users may need to run `conda init zsh`.
 
