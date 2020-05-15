@@ -2,19 +2,19 @@
 
 ## Objectives
 
-Welcome to this Introductory Python course! In this unit, we'll prepare to start working with Python applications by installing all the requisite development tools.
+Welcome to this Introductory Python course! In this unit, we'll prepare to start working with Python applications by installing a few required development tools.
 
 ## Development Tools Overview
 
-Category | Recommended Tool(s) | Purpose
+Category | Recommended Tool | Purpose
 --- | --- | ---
 Text Editor | VS Code | For creating, reading, editing, and deleting files of Python code.
 Command-line | Mac Terminal or Windows Git Bash | For interfacing with the computer in programmatic ways (i.e. to install or execute software).
-Virtual Environment Manager | Anaconda (`conda`) | For installing different versions of the Python programming language.
-Programming Language Utility | Python (`python`) | For executing files of code written in the Python programming language.
+Virtual Environments | Anaconda (`conda`) | For installing different versions of the Python programming language.
+Programming Language | Python (`python`) | For executing files of code written in the Python programming language.
 Package Manager | Pip (`pip`)| For installing third-party packages written in the Python programming language.
-Version Control Utility | Git (`git`) | For incrementally saving different versions of software files, and interfacing with GitHub, which is a place to share software files online.
-Server Management Utility | Heroku (`heroku`) | For provisioning and managing remote servers on which to run software.
+Version Control | Git (`git`) | For incrementally saving different versions of software files, and interfacing with GitHub, which is a place to share software files online.
+Server Management | Heroku (`heroku`) | For provisioning and managing remote servers on which to run software.
 
 ## Development Environment Setup
 
@@ -44,22 +44,34 @@ Unless it is already installed, install [Anaconda Version 3.7](https://www.anaco
 
 > IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows. See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
 
+> NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash` and Mac Zsh profile users may need to run `conda init zsh`.
+
+> NOTE: if experiencing issues recognizing `conda` commands on Mac OS Catalina, reference these [Catalina setup steps](https://github.com/prof-rossetti/intro-to-python/issues/13).
+
 ### Version Control Utilities
 
-Follow just this "Installation" section to install [Git](/notes/clis/git.md#installation). On Windows, this will install a program called Git Bash, which Windows users will use as their default command-line computing application.
+We'll use the Git Command-line Utility and the GitHub Desktop software to upload our Python projects to the GitHub platform.
 
-After installing Git, also install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. We'll use this software to upload our Python projects to the GitHub platform. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
+#### Git
+
+Windows users who have installed Git Bash (see "Command-line Application" section above) will have satisfied the Git installation requirement.
+
+Mac users may find that Git is already installed, otherwise you are encouraged to install Git via Homebrew. See the professor's [Git installation reference](/notes/clis/git.md#installation) for more details.
+
+#### GitHub Desktop
+
+After installing Git, Mac and Windows users should also install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
 
 ## Preparation Exercise
 
 After installing and configuring these local development tools, you should be able to run the following commands without error:
 
 ```sh
+code --version # Mac users need to follow customization instructions to configure this for the first time
+
 conda --version
 
 git --version
-
-code --version # Mac users need to follow customization instructions to configure this for the first time
 ```
 
 If you are having issues, feel free to reach out to the professor via email or Slack with questions.
