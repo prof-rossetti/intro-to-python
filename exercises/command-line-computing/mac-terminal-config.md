@@ -48,3 +48,5 @@ alias gs="git status"
 alias deskhide="defaults write com.apple.finder CreateDesktop false && killall Finder"
 alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Finder"
 ```
+
+> NOTE: newer Macs may use the "zsh" shell instead of the "bash" shell, in which case you can do the "\~/.bash_profile" customizations using a file like "\~/.zshrc" instead.
