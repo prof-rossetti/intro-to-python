@@ -1,22 +1,21 @@
-# Unit 0: Onboarding
+# Unit 0: Onboarding Guide
 
 ## Objectives
 
-Welcome to this Introductory Python course! In this unit, we'll prepare to start working with Python applications by installing a few required development tools.
+Hello and welcome! In this unit, we'll prepare to start developing Python applications by installing all the necessary development tools.
 
 ## Development Tools Overview
 
 Category | Recommended Tool | Purpose
 --- | --- | ---
 Text Editor | VS Code | For creating, reading, editing, and deleting files of Python code.
-Command-line Application | Mac Terminal or Windows Git Bash | For interfacing with the computer in programmatic ways (i.e. to install or execute software).
-Virtual Environment Management | Anaconda (`conda`) | For installing different versions of the Python programming language.
+Command-line | Mac Terminal or Windows Git Bash | For interfacing with the computer in programmatic ways (i.e. to install or execute software).
+Virtual Environment Manager | Anaconda (`conda`) | For installing different versions of the Python programming language.
 Programming Language | Python (`python`) | For executing files of code written in the Python programming language.
-Package Management | Pip (`pip`)| For installing third-party packages written in the Python programming language.
-Version Control | Git (`git`) | For incrementally saving different versions of software files, and interfacing with GitHub, which is a place to share software files online.
-Server Management | Heroku (`heroku`) | For provisioning and managing remote servers on which to run software.
+Package Manager | Pip (`pip`)| For installing third-party packages written in the Python programming language.
+Version Control | Git (`git`) and GitHub Desktop | For incrementally saving different versions of software files, and interfacing with GitHub, which is a place to share software files online.
 
-## Development Environment Setup
+## Development Tools Setup
 
 ### GitHub
 
@@ -30,13 +29,13 @@ Afterwards, consider signing up for the [GitHub Student Developer Pack](https://
 
 Unless you already have a text editor of choice, please install [VS Code](https://code.visualstudio.com/). After doing so, make sure to install and enable the [Python language extension](/notes/devtools/vs-code.md#python-syntax-auto-completion), which provides Python code syntax-highlighting and auto-completion capabilities. Also take some time to [customize](/notes/devtools/vs-code.md#basic-configuration) the text editor's appearance and functionality, as desired.
 
-### Command-line Application
+### Command-line
 
 Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance and functionality, as desired). 
 
 Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users. 
 
-> DISCLAIMER: Windows users who choose an alternative command-line application (such as the Command Prompt or Anaconda Prompt) are responsible for translating between unix-style commands and windows-style commands. The command-line computing exercise linked at the bottom of this document can help.
+> NOTE: Windows users who choose an alternative command-line application (such as the Command Prompt or Anaconda Prompt) are responsible for translating between unix-style commands and windows-style commands. The command-line computing exercise linked at the bottom of this document can help.
 
 ### Anaconda
 
@@ -63,18 +62,6 @@ Mac users may find that Git is already installed, otherwise you are encouraged t
 After installing Git, Mac and Windows users should also install the [GitHub Desktop software](https://desktop.github.com/) and login with your GitHub account credentials. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
 
 ## Preparation Exercise
-
-After installing and configuring these local development tools, you should be able to run the following commands without error:
-
-```sh
-code --version # Mac users need to follow customization instructions to configure this for the first time
-
-conda --version
-
-git --version
-```
-
-If you are having issues, feel free to reach out to the professor via email or Slack with questions.
 
 Finally, sometime before the first class, in order to become more comfortable with command-line computing, complete this [Command-line Computing exercise](/exercises/command-line-computing).
 
