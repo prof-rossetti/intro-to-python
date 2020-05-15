@@ -4,6 +4,18 @@
 
 Welcome to this Introductory Python course! In this unit, we'll prepare to start working with Python applications by installing all the requisite development tools.
 
+## Development Tools Overview
+
+Category | Recommended Tool(s) | Purpose
+--- | --- | ---
+Text Editor or IDE | VS Code | For creating, reading, editing, and deleting files of text and code.
+Command-line Application | Mac Terminal, Windows Git Bash, the built-in terminal in VS Code, or whatever you can get to work! | For interfacing with the computer in programmatic ways (i.e. installing and running software).
+Programming Language | Python (`python`) | For executing software written in a given programming language.
+Virtual Environment Manager | Anaconda (`conda`) | For installing different versions of a programming language, to suit project-specific purposes, because sometimes you might need to use a different version.
+Package Manager | Pip (`pip`)| For installing third-party packages written in a given programming language.
+Version Control Utility | Git (`git`) | For incrementally saving different versions of software files, and interfacing with GitHub, which is an online place to share code repositories.
+Server Management Utility | Heroku (`heroku`) | For provisioning and managing remote servers on which to run software.
+
 ## Development Environment Setup
 
 ### GitHub
@@ -16,7 +28,7 @@ Afterwards, consider signing up for the [GitHub Student Developer Pack](https://
 
 ### Text Editor
 
-Unless you already have a programming-class text editor of choice, please install the [VS Code text editor](https://code.visualstudio.com/). We'll use this software to save and edit files of Python code. See the professor's [VS Code basic configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details.
+Unless you already have a text editor of choice, please install [VS Code](https://code.visualstudio.com/). After doing so, make sure to install and enable the [Python language extension](/notes/devtools/vs-code.md#python-syntax-auto-completion), which provides Python code syntax-highlighting and auto-completion capabilities. Also take some time to [customize](/notes/devtools/vs-code.md#basic-configuration) the text editor's appearance and functionality, as desired.
 
 ### Anaconda
 
