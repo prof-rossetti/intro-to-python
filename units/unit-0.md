@@ -63,5 +63,5 @@ After installing Git, Mac and Windows users should also install the [GitHub Desk
 
 ## Preparation Exercise
 
-Finally, sometime before the first class, in order to become more comfortable with command-line computing, complete this [Command-line Computing exercise](/exercises/command-line-computing).
+Finally, to become more comfortable with command-line computing, complete this [Command-line Computing exercise](/exercises/command-line-computing).
 
