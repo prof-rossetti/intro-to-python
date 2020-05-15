@@ -9,10 +9,10 @@ Welcome to this Introductory Python course! In this unit, we'll prepare to start
 Category | Recommended Tool | Purpose
 --- | --- | ---
 Text Editor | VS Code | For creating, reading, editing, and deleting files of Python code.
-Command-line | Mac Terminal or Windows Git Bash | For interfacing with the computer in programmatic ways (i.e. to install or execute software).
-Virtual Environments | Anaconda (`conda`) | For installing different versions of the Python programming language.
+Command-line Application | Mac Terminal or Windows Git Bash | For interfacing with the computer in programmatic ways (i.e. to install or execute software).
+Virtual Environment Management | Anaconda (`conda`) | For installing different versions of the Python programming language.
 Programming Language | Python (`python`) | For executing files of code written in the Python programming language.
-Package Manager | Pip (`pip`)| For installing third-party packages written in the Python programming language.
+Package Management | Pip (`pip`)| For installing third-party packages written in the Python programming language.
 Version Control | Git (`git`) | For incrementally saving different versions of software files, and interfacing with GitHub, which is a place to share software files online.
 Server Management | Heroku (`heroku`) | For provisioning and managing remote servers on which to run software.
 
@@ -34,9 +34,9 @@ Unless you already have a text editor of choice, please install [VS Code](https:
 
 Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance and functionality, as desired). 
 
-Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same commands as Mac users. Windows users who would like to use an alternative command-line application such as the Command Prompt or Anaconda Prompt are responsible for translating between unix-style commands and windows-style commands.
+Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users. 
 
-Mac or Windows students who'd rather configure and use the built-in terminal inside the VS Code text editor may do so, although this can be tricky to configure. 
+> DISCLAIMER: Windows users who choose an alternative command-line application (such as the Command Prompt or Anaconda Prompt) are responsible for translating between unix-style commands and windows-style commands. The command-line computing exercise linked at the bottom of this document can help.
 
 ### Anaconda
 
