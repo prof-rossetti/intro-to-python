@@ -10,16 +10,17 @@ In this unit, we'll lay a foundation for the rest of the semester by introducing
 
   + [Information Systems](/notes/info-systems)
   + [Software](/notes/software)
+  + [Version Control](/notes/software/version-control.md):
+    + [The `git` Utility](/notes/clis/git.md)
   + Managing Virtual Environments:
     + [The `conda` Utility](/notes/clis/conda.md)
   + Installing Python Packages:
     + [The `pip` Utility](/notes/clis/pip.md)
   + Running Python Programs:
     + [The `python` Utility](/notes/clis/python.md)
-  + Managing [Environment Variables](/notes/environment-variables.md):
-    + [The `dotenv` Package](/notes/python/packages/dotenv.md)
-    + [The `os` Module](/notes/python/modules/os.md#environment-variables) (focusing on environment variables)
+  + [Environment Variables](/notes/environment-variables.md)
 
 ## Activities and Exercises
 
+  + ["Version Control" Exercise](/exercises/version-control/README.md)
   + ["Run the App" Exercise](/exercises/run-the-app/README.md)

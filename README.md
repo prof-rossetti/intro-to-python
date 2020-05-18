@@ -8,10 +8,9 @@
 
 Module I (Software Development in Python):
 
-  + [Unit 0](/units/unit-0.md) - Onboarding / Development Environment Setup
-  + [Unit 1](/units/unit-1.md) - Getting Started / Intro to Information Systems
+  + [Unit 0](/units/unit-0.md) - Onboarding
+  + [Unit 1](/units/unit-1.md) - Getting Started
   + [Unit 2](/units/unit-2.md) - Python Language Overview
-  + [Unit 2b](/units/unit-2b.md) - Version Control
   + [Unit 3](/units/unit-3.md) - Processing and Validating User Inputs
   + [Unit 4](/units/unit-4.md) - Datastores, Databases, and Processing CSV Files
   + [Unit 5](/units/unit-5.md) - Business Intelligence and Data Visualization
