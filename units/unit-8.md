@@ -8,17 +8,20 @@ For businesses which provide software products and services, improved code quali
 
 ## Discussions and Notes
 
-  + Version Control, Developer Collaboration, and Code Reviews:
+  + [Information Security and Privacy](/notes/info-systems/security-privacy.md):
+    + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
+  + Developer Collaboration:
     + [The `git` Utility](/notes/clis/git.md), revisited
-    + [Git Branch Operations](/notes/clis/git.md#branch-operations)
+    + [Git Branch Operations](/notes/clis/git.md#branch-operations), revisited
     + [GitHub Pull Request (PR) Workflow](https://guides.github.com/introduction/flow/)
-  + [Python Code Style](/notes/python/syntax-and-style.md)
+    + Code Reviews
+  + [Code Style](/notes/python/syntax-and-style.md)
   + [Code Documentation](/notes/software/documentation.md):
     + [Python Docstrings](/notes/python/docstrings.md)
-  + [Code Refactoring and Simplification](/notes/software/refactoring.md)
+  + [Code Simplification and Refactoring](/notes/software/refactoring.md)
   + [Automated Testing](/notes/software/testing.md):
     + [The `pytest` Package](/notes/python/packages/pytest.md)
-  + [Continuous Integration](/notes/software/testing.md#continuous-integration):
+  + [Continuous Integration (CI)](/notes/software/testing.md#continuous-integration):
     + [The Travis CI Platform](/notes/devtools/travis-ci.md)
   + Code Quality:
     + [The Code Climate Platform](/notes/devtools/code-climate.md)
