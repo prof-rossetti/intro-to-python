@@ -1,7 +1,5 @@
 # Unit 6: Networks, and Processing Data from the Internet
 
-> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
-
 ## Learning Objectives
 
 In this unit, we'll learn how to use Python to process data from the Internet, focusing on data returned by web services in JSON format.

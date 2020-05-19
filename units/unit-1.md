@@ -1,15 +1,13 @@
 # Unit 1: Getting Started
 
-> Prerequisites: [Onboarding](unit-0.md)
-
 ## Learning Objectives
 
-In this unit, we'll lay a foundation for the rest of the semester by introducing high-level concepts and background knowledge. And we'll make all the necessary preparations to start learning Python and working with Python applications.
+In this unit, we'll gain familiarity with high-level concepts and background knowledge. And we'll practice our ability to run existing Python applications.
 
 ## Discussions and Notes
 
-  + [Information Systems](/notes/info-systems)
-  + [Software](/notes/software)
+  + [Information Systems](/notes/info-systems/README.md)
+  + [Software](/notes/software/README.md)
   + [Version Control](/notes/software/version-control.md):
     + [The `git` Utility](/notes/clis/git.md)
   + Managing Virtual Environments:

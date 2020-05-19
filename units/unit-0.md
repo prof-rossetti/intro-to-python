@@ -1,6 +1,6 @@
-# Unit 0: Onboarding Guide
+# Unit 0: Onboarding
 
-## Objectives
+## Learning Objectives
 
 Hello and welcome! In this unit, we'll prepare to start developing Python applications by installing all the necessary development tools.
 
@@ -31,9 +31,9 @@ Unless you already have a text editor of choice, please install [VS Code](https:
 
 ### Command-line
 
-Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance and functionality, as desired). 
+Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance and functionality, as desired).
 
-Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users. 
+Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users.
 
 > NOTE: Windows users who choose an alternative command-line application (such as the Command Prompt or Anaconda Prompt) are responsible for translating between unix-style commands and windows-style commands. The command-line computing exercise linked at the bottom of this document can help.
 
@@ -41,7 +41,7 @@ Windows users who don't already have a preferred command-line application are en
 
 Unless it is already installed, install [Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows. See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
 
-> IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows. 
+> IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows.
 
 > NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash` and Mac Zsh profile users may need to run `conda init zsh`.
 
@@ -64,4 +64,3 @@ After installing Git, Mac and Windows users should also install the [GitHub Desk
 ## Preparation Exercise
 
 Finally, to become more comfortable with command-line computing, complete this [Command-line Computing exercise](/exercises/command-line-computing).
-

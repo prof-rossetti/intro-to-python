@@ -1,7 +1,5 @@
 # Unit 2: Python Language Overview
 
-> Prerequisites: [Getting Started](unit-1.md)
-
 ## Learning Objectives
 
 In this unit, we will take a high-level guided tour of the Python programming language. We'll start by familiarizing ourselves with some introductory Python reference materials, then we'll illustrate and apply these concepts as we work through a guided Python exercise.
@@ -25,8 +23,8 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [Dates and Times](/notes/python/datatypes/dates.md)
       + [Lists and Sets](/notes/python/datatypes/lists.md)
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-    + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
-    + [Custom Modules](/notes/python/modules/README.md) (intermediate / advanced topic)
+      + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate topic)
+    + [Custom Modules](/notes/python/modules/README.md) (intermediate topic)
 
 See also: [W3Schools Python Tutorial](https://www.w3schools.com/python/)
 

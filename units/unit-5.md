@@ -1,8 +1,6 @@
 
 # Unit 5: Business Intelligence and Data Visualization
 
-> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
-
 ## Learning Objectives
 
 In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data.

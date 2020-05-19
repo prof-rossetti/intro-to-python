@@ -9,7 +9,7 @@ This exercise assumes you have already:
 
 ## Learning Objectives
 
-  + Learn how to install, configure, and run existing Python applications.
+In this exercise, we'll learn how to install, configure, and run an existing Python application.
 
 ## Instructions
 

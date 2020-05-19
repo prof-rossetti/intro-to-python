@@ -1,8 +1,8 @@
 # Version Control Exercise
 
-## Objectives
+## Learning Objectives
 
-  + Practice incorporating version control into your workflow.
+In this exercise, we'll practice incorporating version control into our development workflow.
 
 ## Prerequisites
 
