@@ -23,7 +23,7 @@ The **52-week low** should be calculated in a similar manner as the 52-week high
 
 ### Plotting Prices over Time
 
-> Prerequisite: The ["Executive Dashboard" Exercise](/exercises/exec-dash/README.md)
+> Prerequisite: the ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md) or ["Executive Dashboard" Project](/projects/exec-dash/README.md)
 
 In addition to writing the historical stock prices to a CSV file, your program should also display a line graph of the stock prices over time. :smiley_cat:
 

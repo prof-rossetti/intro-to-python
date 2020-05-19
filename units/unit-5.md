@@ -1,7 +1,5 @@
 
-# Unit 5: Business Intelligence and Data Visualization
-
-> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
+# Unit 5: Data Visualization
 
 ## Learning Objectives
 
@@ -23,4 +21,4 @@ In this unit, we'll learn how to use Python to create business intelligence and 
 ## Activities and Exercises
 
   + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
-  + ["Executive Dashboard" Exercise](/exercises/exec-dash/README.md)
+  + ["Executive Dashboard" Exercise](/projects/exec-dash/README.md)

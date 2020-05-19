@@ -1,7 +1,5 @@
 # Unit 2: Python Language Overview
 
-> Prerequisites: [Getting Started](unit-1.md)
-
 ## Learning Objectives
 
 In this unit, we will take a high-level guided tour of the Python programming language. We'll start by familiarizing ourselves with some introductory Python reference materials, then we'll illustrate and apply these concepts as we work through a guided Python exercise.
@@ -25,10 +23,19 @@ In this unit, we will take a high-level guided tour of the Python programming la
       + [Dates and Times](/notes/python/datatypes/dates.md)
       + [Lists and Sets](/notes/python/datatypes/lists.md)
       + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-    + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate / advanced topic)
-    + [Custom Modules](/notes/python/modules/README.md) (intermediate / advanced topic)
+      + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate topic)
+    + [Custom Modules](/notes/python/modules/README.md) (intermediate topic)
 
-See also: [W3Schools Python Tutorial](https://www.w3schools.com/python/)
+See also...
+
+  + Official Python Resources:
+    + [Python 3 Documentation](https://docs.python.org/3/reference/index.html)
+    + [Python 3 Tutorial](https://docs.python.org/3/tutorial/index.html)
+    + [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
+    + [Built-in Functions](https://docs.python.org/3/library/functions.html)
+    + [Built-in Constants](https://docs.python.org/3/library/constants.html)
+    + [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+  + [W3Schools Python Tutorial](https://www.w3schools.com/python/)
 
 ## Activities and Exercises
 

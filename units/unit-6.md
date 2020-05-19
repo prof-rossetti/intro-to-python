@@ -1,6 +1,4 @@
-# Unit 6: Networks, and Processing Data from the Internet
-
-> Prerequisites: [Datastores, Databases, and Processing CSV Data](unit-4.md)
+# Unit 6: Processing Data from the Internet
 
 ## Learning Objectives
 
@@ -10,8 +8,6 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
 
   + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)
   + [Web Services and APIs](/notes/software/apis.md)
-  + [Information Security and Privacy](/notes/info-systems/security-privacy.md)
-  + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
   + Issuing HTTP Requests:
     + [The `requests` Package](/notes/python/packages/requests.md)
   + Processing JSON-formatted data:
