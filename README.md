@@ -28,18 +28,6 @@ Module II (Management of Software Development):
   + [Unit 11](/units/unit-11.md) - Project Implementation Sprint
   + [Unit 12](/units/unit-12.md) - Project Presentations
 
-## External Resources
-
-  + Official Python Resources:
-    + [Python 3 Documentation](https://docs.python.org/3/reference/index.html)
-    + [Python 3 Tutorial](https://docs.python.org/3/tutorial/index.html)
-    + [Built-in Types](https://docs.python.org/3/library/stdtypes.html)
-    + [Built-in Functions](https://docs.python.org/3/library/functions.html)
-    + [Built-in Constants](https://docs.python.org/3/library/constants.html)
-    + [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
-  + [W3Schools Python Tutorial](https://www.w3schools.com/python/)
-  + [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
 ## [Contributor's Guide](/CONTRIBUTING.md)
 
 ## [License](/LICENSE.md)

@@ -10,6 +10,7 @@ In this unit, we'll gain familiarity with high-level concepts and background kno
   + [Software](/notes/software/README.md)
   + [Version Control](/notes/software/version-control.md):
     + [The `git` Utility](/notes/clis/git.md)
+    + [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
   + Managing Virtual Environments:
     + [The `conda` Utility](/notes/clis/conda.md)
   + Installing Python Packages:
