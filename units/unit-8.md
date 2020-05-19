@@ -1,7 +1,5 @@
 # Unit 8: Software Maintenance and Quality Control
 
-> Prerequisites: [Review](unit-7.md)
-
 ## Learning Objectives
 
 For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.

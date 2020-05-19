@@ -1,6 +1,4 @@
-# Unit 10: Technology Project Management, and the Systems Development Lifecycle (SDLC)
-
-> Prerequisites: [Software Products and Services](/units/unit-9.md)
+# Unit 10: The Systems Development Lifecycle (SDLC)
 
 ## Learning Objectives
 

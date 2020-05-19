@@ -1,4 +1,4 @@
-# Unit 6: Networks, and Processing Data from the Internet
+# Unit 6: Processing Data from the Internet
 
 ## Learning Objectives
 

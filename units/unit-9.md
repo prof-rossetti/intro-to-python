@@ -2,8 +2,6 @@
 
 # Unit 9: Software Products and Services
 
-> Prerequisites: [Software Maintenance and Quality Control](unit-8.md)
-
 ## Learning Objectives
 
 In this unit, we'll discuss software products and services, and practice delivering software services to end users.
@@ -22,7 +20,7 @@ In this unit, we'll discuss software products and services, and practice deliver
     + [The `heroku` Utility](/notes/clis/heroku.md)
   + Web Applications:
     + [The `flask` Package](/notes/python/packages/flask.md)
-  + [Datastores](/units/unit-4.md), revisited
+  + [Advanced Datastores](/units/unit-4b.md), revisited
 
 ## Activities and Exercises
 
