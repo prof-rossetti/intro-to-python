@@ -93,7 +93,9 @@ do_stuff_with_params(first_name= "Ophelia", message="HELLO THERE", last_name="Cl
 
 ## Return Values
 
-In order to have a function return some value when invoked, use the `return` keyword:
+In order to have a function return some value when invoked, use the `return` keyword.
+
+A geometry-inspired example:
 
 ```python
 def calculate_area(length, height):
@@ -109,4 +111,21 @@ def calculate_area(length, height):
 
 area = calculate_area(4, 2)
 print(area) #> 8
+```
+
+An algebra-inspired example:
+
+```py
+# function definition (once only)
+
+def f(x):
+    return (2 * x) + 1
+
+# function invocation (potentially many times, as needed)
+
+y = f(5)
+print(y) #> 11
+
+z = f(10)
+print(z) #> 21
 ```
