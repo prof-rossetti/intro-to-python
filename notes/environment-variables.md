@@ -50,16 +50,16 @@ Then exit and re-open your Terminal for the changes to take effect.
 
 #### Setting on Windows
 
-Windows users can set local environment variables from the command-line using the `set` keyword:
+Windows users can set local environment variables from the command-line using the `set` keyword (or `export`, if `set` doesn't work):
 
 ```sh
 # Windows Command Prompt:
 set MY_SECRET_MESSAGE="SecretPassword123"
 # or ...
-# set MY_SECRET_MESSAGE=SecretPassword123
+# export MY_SECRET_MESSAGE=SecretPassword123
 ```
 
-> NOTE: if you close your command prompt and re-open it, you will need to re-set the environment variable.
+> NOTE: if you close your command prompt and re-open it, you may need to re-set the environment variable.
 
 
 #### Setting Locally via the Command Line
