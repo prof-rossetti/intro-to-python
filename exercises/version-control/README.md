@@ -1,4 +1,4 @@
-# Version Control Exercise
+# "Version Control" Exercise
 
 ## Learning Objectives
 
