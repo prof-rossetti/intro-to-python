@@ -1,4 +1,4 @@
-# Command-line Computing Exercise
+# "Command-line Computing" Exercise
 
 ## Terminal (Mac OS) / Git Bash (Windows OS)
 
