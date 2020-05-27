@@ -292,7 +292,7 @@ When using the filter function, observe this alternative filtering syntax involv
 
 ```python
 arr = [1,2,4,8,16]
-list(filter(lambda i: i > 2, arr)) #> #> [4, 8, 16]
+list(filter(lambda i: i > 2, arr)) #> [4, 8, 16]
 ```
 
 If your list is full of [dictionaries](dictionaries.md), you can `filter()` based on their attribute values:
