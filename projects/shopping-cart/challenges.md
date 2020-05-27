@@ -2,9 +2,9 @@
 
 This document provides optional project challenges for students seeking a greater level of difficulty.
 
-## Functionality Challenges
+If you end up using any third-party packages, your repository MUST include a "requirements.txt" file with all the packages listed inside! And include a command like `pip install -r requirements.txt` in your README file.
 
-### Configuring Sales Tax Rate
+## Configuring Sales Tax Rate
 
 You'd like to share your code with stores in other locations as well, but different municipalities use different sales tax rates. Instead of hard-coding the sales tax rate, allow the user to configure it via environment variable using a ".env" file approach.
 
@@ -12,13 +12,13 @@ You'd like to share your code with stores in other locations as well, but differ
 
 > HINT: you might need to use the `float()` function to convert the environment variable value to a float datatype, so you can perform numeric calculations with it
 
-### Handling Pricing per Pound
+## Handling Pricing per Pound
 
 Add a new product called "Organic Bananas" to the products inventory. Assign it a price of `0.79`, but add another attribute called something like `price_per` to indicate the item is priced per "pound". Update all the other product dictionaries to match the new structure, indicating they are priced per "item".
 
 When running the program, if the clerk inputs the identifier of the bananas (or any other item that is priced by pound), the program should ask the clerk to input the number of pounds (e.g. `2.2`), then the program should calculate the price accordingly.
 
-### Writing Receipts to File
+## Writing Receipts to File
 
 Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should write the receipt information into a new ".txt" file saved in a new "receipts" directory inside the project repository. The clerk's printer-connected computer should be able to actually print a paper receipt from the information contained in this file.
 
@@ -38,21 +38,28 @@ Each text file should be named according to the date and time the checkout proce
 >     # except this ".gitignore" file:
 >     !.gitignore
 
-### Sending Receipts via Email
+## Sending Receipts via Email
 
 Instead of, or in addition to, displaying a receipt at the end of the checkout process, the program should prompt the checkout clerk or the customer to indicate whether the customer would like to receive the receipt by email. And if so, it should prompt the checkout clerk or the customer to input the customer's email address, and then it should send the receipt information to the customer by email. The clerk's network-connected computer should be able to send these emails.
 
 At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
 
-> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents.
 
-### Integrating with a Google Sheets Datastore
+## Integrating with a CSV File Datastore
 
-Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead.
+Instead of using a hard-coded `products` variable, download or copy the contents of the provided ["products.csv" file](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.csv) into your project directory in a new subdirectory called "data" (so the path to the CSV file should be "data/products.csv"). Then update your code to read the `products` from this CSV file.
 
-> HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md)
+> HINT: leverage the capabilities of [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) for CSV file management.
 
-### Integrating with a Barcode Scanner
+
+## Integrating with a Google Sheets Datastore
+
+Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead. Update your code to read the `products` from this Google Sheet.
+
+> HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md).
+
+## Integrating with a Barcode Scanner
 
 Assemble a handful of real products that have barcodes.
 
@@ -77,6 +84,6 @@ products = [
 # ...
 ```
 
-> NOTE: for real life products, we'll probably want to change the identifier values to strings, in case any contain alphabetic characters or leading zeros (e.g. "LIFE water" identifier above)
+> NOTE: for real life products, we'll probably want to change the identifier values to strings, in case any contain alphabetic characters or leading zeros (e.g. "LIFE water" identifier above).
 
 After modifying the product list, try re-running the program, using the barcode scanner to scan the real items. It should work!
