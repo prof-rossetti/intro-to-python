@@ -67,11 +67,11 @@ Common list functions and operators include the following built-in Python functi
 ```python
 arr = [6,3,9,7]
 
-len(arr) #> 4
+len(arr) #> 4 (counts number of items in the list)
 
-min(arr) #> 3
+min(arr) #> 3 (minimum value in the list)
 
-max(arr) #> 9
+max(arr) #> 9 (maximum value in the list)
 ```
 
 Add an element to the end of a list:
