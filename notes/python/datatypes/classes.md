@@ -17,9 +17,6 @@ To setup this example, create a new directory on your Desktop called `class-time
 
 ```python
 class BaseballTeam():
-  """
-  bt = BaseballTeam({"city": "Little Town", "name": "Tots", "league":"little", "players": ["JJ", "Zhang", "Margaret", "Ryan", "Joey"]})
-  """ # optional docstring
 
   def __init__(self, params):
     self.city = params["city"]
@@ -31,9 +28,8 @@ class BaseballTeam():
   def full_name(self):
     return self.city + " " + self.name
 
-  #
-  # ... probably more instance methods down here ...
-  #
+  def advertise(self):
+    print("COME TO ", self.city.upper(), "TO SEE OUR GAMES!")
 
 ```
 
@@ -62,4 +58,6 @@ bt.city #> 'New York'
 bt.players #> ['Jeter', 'Mariano', 'Mantle', 'Babe']
 
 bt.full_name #> 'New York Yankees'
+
+bt.advertise() #> "COME TO  NEW YORK TO SEE OUR GAMES!"
 ```
