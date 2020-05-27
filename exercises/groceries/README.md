@@ -180,3 +180,4 @@ For a more in-depth guided exercise walkthrough, follow the screencast, but keep
   1. The screencast will instruct you to use the GitHub.com online interface to "commit", but you should be using GitHub Desktop instead.
   2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well.
   3. During the virtual environment creation step, make sure to specify the python version as 3.7 (was omitted in the video).
+  4. For simplicity, when sorting with the `sorted()` function, it is reasonable to prefer the `operator.itemgetter()` approach over the custom function approach.
