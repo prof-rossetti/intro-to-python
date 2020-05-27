@@ -136,7 +136,7 @@ The program should prompt the checkout clerk to input the identifier of each sho
 
 When the clerk inputs a product identifier, the program should validate it, displaying a helpful message like "Hey, are you sure that product identifier is correct? Please try again!" if there are no products matching the given identifier.
 
-At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process.
+At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process. Before asking for identifiers, the program should provide clear instructions to the user about how to use the "DONE" keyword.
 
 After the clerk indicates there are no more items, the program should print a custom receipt on the screen. The receipt should include the following components:
 
