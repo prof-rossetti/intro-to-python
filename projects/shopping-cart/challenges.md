@@ -28,11 +28,11 @@ Each text file should be named according to the date and time the checkout proce
 
 > NOTE: exclude these receipt files from being tracked in version control by using a "receipts/.gitignore" file with the following contents:
 >
->     # data/.gitignore
+>     # receipts/.gitignore
 >
 >     # see: https://stackoverflow.com/a/5581995/670433
 >
->     # ignore all files in this "data" directory:
+>     # ignore all other files in this directory:
 >     *
 >
 >     # except this ".gitignore" file:
