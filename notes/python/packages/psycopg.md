@@ -30,34 +30,33 @@ pip install psycopg2
 
 ## Usage
 
-Place the following contents inside a new Python script:
+To setup this example, gain access to an existing PostgreSQL database, and observe its connection credentials.
 
-```python
+```py
+import os
+from dotenv import load_dotenv
 import psycopg2
 
-# OPEN DATABASE CONNECTION
+load_dotenv()
 
-# If you installed PostgreSQL via Homebrew on a Mac, there should be both a database and a user named after your computer's username.
-connection = psycopg2.connect(dbname="mjr", user="mjr", password="")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST")
 
-# PERFORM A DATABASE OPERATION
+connection = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
+print("CONNECTION:", connection)
 
-with connection:
-    with connection.cursor() as cursor:
-        sql_query = "SELECT usename, usecreatedb, usesuper, passwd FROM pg_user;"
+cursor = connection.cursor(cursor_factory=psycopg2.extras.DictCursor)
+print("CURSOR:", cursor)
 
-        cursor.execute(sql_query)
+cursor.execute("SELECT * from my_table;")
+result = cursor.fetchall()
+print("RESULT:", type(result))
+print(result)
 
-        print("usename | usecreatedb | usesuper | passwd")
-
-        for row in cursor.fetchall():
-            print(row)
-
-# CLOSE DATABASE CONNECTION
-
-connection.close()
+for row in result:
+    print("-----")
+    print(type(row))
+    print(row)
 ```
-
-Finally, run the Python script to see the results of your SQL query output into the terminal. Oh yea!
-
-Now that you know how to use Python to execute a SQL query, practice using Python to manage databases and tables, then populate them and query them.
