@@ -37,11 +37,11 @@ SECRET_MESSAGE="Hello World"
 from dotenv import load_dotenv
 import os
 
-print(os.environ.get("SECRET_MESSAGE")) #> None
+print(os.getenv("SECRET_MESSAGE")) #> None
 
 load_dotenv() #> loads contents of the .env file into the script's environment
 
-print(os.environ.get("SECRET_MESSAGE")) #> "Hello World"
+print(os.getenv("SECRET_MESSAGE")) #> "Hello World"
 ```
 
 And run the script to see the output:
