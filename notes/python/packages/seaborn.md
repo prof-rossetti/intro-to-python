@@ -51,7 +51,7 @@ sns.relplot(x="total_bill", y="tip", hue="smoker", data=tips)
 # Need to explicitly "show" the chart window
 plt.show()
 ```
-![the resulting scatterplot - two axes, two data sets](https://raw.githubusercontent.com/kmalhotra13/intro-to-python/img/notes/python/packages/seaborn/tips_scatterplot.png)
+![the resulting scatterplot - two axes, two data sets](/img/notes/python/packages/seaborn/tips_scatterplot.png)
 
 > NOTE: once you "show" the chart, you'll see the chart open in native window on your computer. You'll be able to view your chart, but when you're done you'll need to close the chart window in order to regain the ability to type commands in your terminal window.
 
