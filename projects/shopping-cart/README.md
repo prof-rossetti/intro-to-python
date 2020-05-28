@@ -1,11 +1,14 @@
 # "Shopping Cart" Project
 
-> Prerequisites:
->   + [Python Language Overview](/units/unit-2.md)
->   + ["Groceries" Exercise](/exercises/groceries/README.md)
->   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
->   + [The `datetime` Module](/notes/python/modules/datetime.md)
->   + [Raising and Handling Errors](/notes/python/errors.md)
+## Prerequisites:
+
+To succeed in developing this project, you should have already:
+
+   + Gained familiarity with the [Python Language Overview](/units/unit-2.md).
+   + Completed the ["Groceries" Exercise](/exercises/groceries/README.md), specifically the part about looking up matching products.
+   + Completed the ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md).
+   + Read about [The `datetime` Module](/notes/python/modules/datetime.md).
+   + Read about [Raising and Handling Errors](/notes/python/errors.md).
 
 ## Learning Objectives
 
@@ -30,17 +33,17 @@ The store owner also says it would be "nice to have" a feature which prompts the
 
 Iteratively develop a Python application which satisfies the store owner's objectives, as described in more detail by the "Basic Requirements" below.
 
-Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
+Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub and a local copy on your computer within which to develop.
 
-When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
+When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub at least once before you're done.
 
 If you are able to implement the basic requirements with relative ease, or if you are interested in a challenge, consider addressing one or more of the "Further Exploration Challenges". Otherwise, if you need help breaking the problem up into more manageable pieces, consult the "Guided Checkpoints". And if you would like a narrated walkthrough, consult the "Guided Screencast".
 
-## Setup
+### Setup
 
-### Repo Setup
+#### Repo Setup
 
-Use the GitHub.com online interface to create a new remote project repository called something like "shopping-cart". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/shopping-cart`.
+Use the GitHub online interface to create a new remote project repository called something like "shopping-cart". When prompted by the GitHub online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub at an address like `https://github.com/YOUR_USERNAME/shopping-cart`.
 
 After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
 
@@ -81,9 +84,11 @@ products = [
 def to_usd(my_price):
     """
     Converts a numeric value to usd-formatted string, for printing and display purposes.
-    Source: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/datatypes/numbers.md#formatting-as-currency
+
     Param: my_price (int or float) like 4000.444444
+
     Example: to_usd(4000.444444)
+
     Returns: $4,000.44
     """
     return f"${my_price:,.2f}" #> $12,000.71
@@ -96,7 +101,7 @@ print(products)
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-### Environment Setup
+#### Environment Setup
 
 Create and activate a new Anaconda virtual environment:
 
@@ -105,26 +110,23 @@ conda create -n shopping-env python=3.7 # (first time only)
 conda activate shopping-env
 ```
 
+> NOTE: It is possible to complete the project without needing any third-party packages. But if you do end up using any third-party packages (for example when addressing the further exploration challenges), you MUST include a "requirements.txt" file with all the packages listed inside!
+
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
 ```sh
 python shopping_cart.py
 ```
 
-If you see the provided "products" data structure, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
+If you see the provided "products" data structure, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file, such as adding instructions to tell someone else how to download, setup and run your app. When you're done, make your first commit, with a message like "Setup the repo".
 
-## Data Setup
+#### Data Setup
 
 The provided code includes a variable called `products` which facilitates management of the products inventory from within the application's source code.
 
-> FURTHER EXPLORATION: If you'd like to manage the products inventory via a CSV file instead, download the provided ["products.csv"](/data/products.csv) file and place it into your project directory in a directory called "data", and use [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) for CSV file management.
+> NOTE: If you'd like to use an alternative storage mechanism for the products inventory, like a CSV file or a Google Sheet document, reference the respective [further exploration challenges](challenges.md).
 
-
-
-
-> FURTHER EXPLORATION: If you'd like to manage the products inventory via Google Sheet document instead, see the [Integrating with a Google Sheets Datastore challenge](challenges.md#integrating-with-a-google-sheets-datastore) for more info.
-
-## Basic Requirements
+### Basic Requirements
 
 Write a program that asks the user to input one or more product identifiers, then looks up the prices for each, then prints an itemized customer receipt including the total amount owed.
 
@@ -134,7 +136,7 @@ The program should prompt the checkout clerk to input the identifier of each sho
 
 When the clerk inputs a product identifier, the program should validate it, displaying a helpful message like "Hey, are you sure that product identifier is correct? Please try again!" if there are no products matching the given identifier.
 
-At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process.
+At any time the clerk should be able to indicate there are no more shopping cart items by inputting the word `DONE` or otherwise indicating they are done with the process. Before asking for identifiers, the program should provide clear instructions to the user about how to use the "DONE" keyword.
 
 After the clerk indicates there are no more items, the program should print a custom receipt on the screen. The receipt should include the following components:
 
