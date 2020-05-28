@@ -25,5 +25,3 @@ App Name | Functionality Description | Interface Capabilities | Deployment Capab
 [Voice Interface Demo](https://github.com/prof-rossetti/voice-interface-demo-py) | A mock Amazon Alexa service which recognizes voice commands and responds accordingly. | Accepts voice inputs through a command-line interface. | Needs to be installed and run locally on the user's computer.
 
 > FYI: some of these applications may require you to sign up for third-party services to perform the desired functionality (e.g. Sendgrid if you want to send an email, Twitter if you want to send a tweet, etc.). See the respective repository's README file for more details.
-
-> NOTE: the Notification Service app might be using an older version of the `sendgrid` package (5.6.0) than the one currently referenced in the course repository (6.0.5), so be aware you may see some code that only works with that previous version. If you'd like to create your own email-sending project, use the newer version and defer to [the `sendgrid` notes](/notes/python/packages/sendgrid.md) in the course repository.
