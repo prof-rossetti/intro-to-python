@@ -5,9 +5,9 @@ For interfacing with SQLite databases.
 > SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world. - [SQLite website](https://www.sqlite.org/index.html)
 
 References:
-    + https://www.sqlitetutorial.net/
-    + https://docs.python.org/3/library/sqlite3.html
-    + https://kite.com/python/examples/3884/sqlite3-use-a-row-factory-to-access-values-by-column-name
+  + https://www.sqlitetutorial.net/
+  + https://docs.python.org/3/library/sqlite3.html
+  + https://kite.com/python/examples/3884/sqlite3-use-a-row-factory-to-access-values-by-column-name
 
 ## Usage
 
