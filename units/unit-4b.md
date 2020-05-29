@@ -16,7 +16,7 @@ This unit provides optional reference material for students interested in explor
     + [The `sqlalchemy` Package](/notes/python/packages/sqlalchemy.md) (an ORM for various relational databases)
     + [The `bigquery` Package](/notes/python/packages/bigquery.md) (for Google Big Query)
   + Document-object Storage ("No SQL"):
-    + [The `mongodb` Package](/notes/python/packages/mongodb.md) (for MongoDB databases)
+    + [The `pymongo` Package](/notes/python/packages/pymongo.md) (for MongoDB databases)
 
 ## Activities and Exercises
 
