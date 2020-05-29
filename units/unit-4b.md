@@ -13,8 +13,10 @@ This unit provides optional reference material for students interested in explor
     + [The `sqlite` Module](/notes/python/modules/sqlite.md) (for SQLite databases)
     + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
     + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
-  + Big Data:
-    + Google Big Query
+    + [The `sqlalchemy` Package](/notes/python/packages/sqlalchemy.md) (an ORM for various relational databases)
+    + [The `bigquery` Package](/notes/python/packages/bigquery.md) (for Google BigQuery)
+  + Document-object Storage ("No SQL"):
+    + [The `pymongo` Package](/notes/python/packages/pymongo.md) (for MongoDB databases)
 
 ## Activities and Exercises
 
