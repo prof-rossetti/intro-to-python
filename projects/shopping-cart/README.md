@@ -10,6 +10,10 @@ To succeed in developing this project, you should have already:
    + Read about [The `datetime` Module](/notes/python/modules/datetime.md).
    + Read about [Raising and Handling Errors](/notes/python/errors.md).
 
+It also helps if you have:
+
+  + Completed the ["Rock Paper Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
+
 ## Learning Objectives
 
   1. Create a tool to facilitate and streamline a real-world business process.
