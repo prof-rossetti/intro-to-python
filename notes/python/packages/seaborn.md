@@ -40,7 +40,7 @@ import seaborn as sns
 sns.set(style="darkgrid")
 
 # The .load_dataset() function uses a built-in dataset
-tips = sns.load_dataset("tips")
+tips = sns.load_dataset("tips") # this is a pandas DataFrame!
 print(type(tips)) #> <class 'pandas.core.frame.DataFrame'>
 print(tips.columns.tolist()) #> ['total_bill', 'tip', 'sex', 'smoker', 'day', 'time', 'size']
 
