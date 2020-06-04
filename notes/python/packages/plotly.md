@@ -9,7 +9,6 @@
   + https://plot.ly/python/reference/
   + https://plot.ly/python/reference/#layout
   + https://plot.ly/python/getting-started/
-  + https://plot.ly/python/getting-started/#initialization-for-offline-plotting
   + https://plot.ly/python/user-guide/
   + https://plot.ly/python/static-image-export/#write-image-file
   + https://plot.ly/python/setting-graph-size/
@@ -68,3 +67,7 @@ plotly.offline.plot([trace], filename="basic_pie_chart.html", auto_open=True)
 ```
 
 ![the resulting chart - a pie chart with four slices](https://user-images.githubusercontent.com/1328807/52388830-38380a80-2a5e-11e9-8e7b-6951e083a265.png)
+
+## Further Exploration
+
+See also [the `plotly.express` package](https://plotly.com/python/plotly-express/), which allows you to construct graphs from pandas DataFrames.
