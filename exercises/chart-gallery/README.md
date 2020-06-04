@@ -96,6 +96,7 @@ From within the virtual environment, install any packages you might need (see "I
 pip install matplotlib # (only if using matplotlib)
 pip install plotly # (only if using plotly)
 pip install pandas altair # (only if using altair)
+pip install seaborn # (only if using seaborn)
 ```
 
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
@@ -115,6 +116,7 @@ The instructions in the "Research" and "Investigation" sections below can help y
   + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
   + [The `plotly` Package](/notes/python/packages/plotly.md) (recommended)
   + [The `altair` Package](/notes/python/packages/altair.md)
+  + [The `seaborn` Package](/notes/python/packages/seaborn.md)
 
 Generally the approach you should try to follow is something like:
 
