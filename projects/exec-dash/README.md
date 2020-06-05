@@ -1,4 +1,4 @@
-# "Executive Dashboard" Exercise
+# "Executive Dashboard" Project
 
 > Prerequisites:
 >   + [Business Intelligence and Dataviz](/units/unit-5.md)
@@ -152,3 +152,26 @@ All displays of price-related information should be formatted as USD, with a dol
 ### Further Exploration Challenges
 
 If you're able to complete the basic project requirements with relative ease, consider addressing one or more of the ["Exec Dash" Further Exploration Challenges](challenges.md) (e.g. validating CSV files, comparing sales across months, predicting future sales).
+
+
+
+
+## Evaluation
+
+Project submissions will be evaluated according to the requirements set forth above, as summarized by the rubric below:
+
+Category | Requirement | Weight
+--- | --- | ---
+Info Inputs | Captures file selection | 10%
+Validations | Fails gracefully if file doesn't exist | 5%
+Calculations | Displays accurate information | 20%
+Info Outputs | Displays total monthly sales | 10%
+Info Outputs | Displays top-selling products | 15%
+Info Outputs | Displays charts and graphs, including titles and axis labels | 20%
+Info Outputs | Formats prices as USD | 5%
+Dev Process | Submitted via remote Git repository which reflects an incremental revision history | 15%
+
+If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by between 4% and 25%, depending on the circumstances and severity of the error(s).
+
+In recognition of deliverables which exhibit functionality above and beyond the basic requirements, evaluators are encouraged to award between 4% and 15% "engagement points" to be applied as extra credit.
+
