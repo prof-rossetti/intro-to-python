@@ -1,15 +1,15 @@
 
 # "Robo Advisor" Further Exploration Challenges
 
-## Functionality Challenges
+> NOTE: the first two challenges are mildly interesting, but the third challenge, "Plotting Prices over Time", is the one that will excite instructors and earn the most extra credit.
 
-### Handling Multiple Stocks
+## Handling Multiple Stocks
 
 Instead of processing a single stock at a time, allow the user to process multiple stocks at the same time.
 
 If you decide to implement this approach, pay attention to the "Information Output Requirements" about using multiple CSV files instead of a single file.
 
-### Calculating 52-Week Highs and Lows
+## Calculating 52-Week Highs and Lows
 
 Instead of calculating and printing the stock's **recent average high** and **recent average low**, calculate and print the stock's **52-week high** and **52-week low**, respectively.
 
@@ -21,7 +21,7 @@ The **52-week low** should be calculated in a similar manner as the 52-week high
 
 > NOTE: If you do request "full" responses of daily data, the size of the response may drastically increase, and the speed of your requests may slow down noticeably. If you think these changes negatively impact user experience, you might want to consider requesting weekly data instead.
 
-### Plotting Prices over Time
+## Plotting Prices over Time
 
 > Prerequisite: the ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md) or ["Executive Dashboard" Project](/projects/exec-dash/README.md)
 
@@ -30,7 +30,7 @@ In addition to writing the historical stock prices to a CSV file, your program s
 Optionally include any other data visualizations as desired, to add context to and increase confidence in the final recommendations.
 
 
-### Sending Alerts via Email
+## Sending Alerts via Email
 
 > Prerequisite: The email-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
 
@@ -38,7 +38,7 @@ Modify the logic of your application such that if it detects the stock's price h
 
 > HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
 
-### Sending Alerts via SMS
+## Sending Alerts via SMS
 
 > Prerequisite: The SMS-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
 
