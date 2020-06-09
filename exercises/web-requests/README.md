@@ -82,6 +82,6 @@ Write a Python program which issues a GET request for this [products.json data](
 
 > FYI: the response text will be a JSON array of objects, like a Python list of dictionaries
 
-#### Requesting the Gradebook
+### Requesting the Gradebook
 
 Write a Python program which issues a GET request for this [gradebook.json data](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/gradebook.json), then calculate and print the average, min, and max grades.
