@@ -35,6 +35,8 @@ python write_teams.py
 #> New Haven,Ravens
 ```
 
+> FYI: if you're on Windows, this CSV writing approach may insert a blank row between each real row you're trying to write. To remedy this, change your file open command to: `with open(csv_file_path, "w", newline="") as csv_file:`. The `newline` parameter should fix this behavior.
+
 ## Reading CSV Files
 
 Process the "teams.csv" file into some Python dictionaries by running this script:
