@@ -4,7 +4,6 @@
 >  + [Networks, and Processing Data from the Internet](/units/unit-6.md)
 >  + [APIs](/notes/software/apis.md)
 >  + [Environment Variables](/notes/environment-variables.md)
->  + The ["Omniparser" Exercise](/exercises/omniparser/README.md) (specifically the stock data parsing challenge)
 >  + The ["Web Requests" Exercise](/exercises/web-requests/README.md)
 
 
