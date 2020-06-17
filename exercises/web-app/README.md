@@ -93,6 +93,4 @@ View the server logs and troubleshoot as necessary until you're able to see the 
 heroku logs --tail
 ```
 
-## Evaluation
 
-If you'd like to submit this exercise for evaluation, submit links to both your GitHub repo and your production app via the designated form.
