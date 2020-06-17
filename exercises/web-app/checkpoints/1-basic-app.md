@@ -30,9 +30,11 @@ We'll run the file like this:
 FLASK_APP=hello.py flask run
 
 # windows:
-export FLASK_APP=hello.py
+export FLASK_APP=hello.py 
 flask run
 ```
+
+> NOTE: on Windows, if `export` doesn't work for you, try `set`
 
 This command starts a local web server. Visit localhost:5000 in the browser to see the app in action!
 
