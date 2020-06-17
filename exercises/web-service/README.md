@@ -37,6 +37,3 @@ Continue following the README instructions to run each of the Python scripts loc
 
 After demonstrating the ability to successfully run the app locally, follow these [Deployment Instructions](deploying.md) to upload the source code onto a remote server and configure the server to send you an email at scheduled (e.g. daily) intervals.
 
-## Evaluation
-
-If you'd like to submit this exercise for evaluation, wait until the server sends you three scheduled emails, then forward them to the instructors via email around the same time when you submit a link to your GitHub repo via the designated form.
