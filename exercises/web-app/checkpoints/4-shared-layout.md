@@ -46,7 +46,7 @@ Inside "web_app/templates/layout.html":
 <!doctype html>
 <html>
   <head>
-    <title>My Starter Web App | Learning how to use the Flask Python package.</title>
+    <title>My Starter Web App | Learning how to use the Flask Python package</title>
   </head>
 
   <body>
