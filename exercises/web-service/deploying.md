@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-If you haven't yet done so, [install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install), and make sure you can login and list your applications.
+If you haven't yet done so, [install the Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up), and make sure you can login and list your applications.
 
 ```sh
 heroku login # just a one-time thing when you use heroku for the first time
