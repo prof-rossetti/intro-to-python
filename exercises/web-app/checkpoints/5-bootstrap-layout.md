@@ -48,9 +48,7 @@ New layout called "web_app/templates/bootstrap_layout.html":
 <!doctype html>
 <html>
   <head>
-    {% block title %}
-      <title>My Starter Web App | Helps students learn how to use the Flask Python package.</title>
-    {% endblock %}
+    <title>My Starter Web App | Learning how to use the Flask Python package</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
@@ -111,8 +109,8 @@ New layout called "web_app/templates/bootstrap_layout.html":
       <!-- FOOTER -->
       <div id="footer">
         <hr>
-        &copy; Copyright 2019 Prof. MJ Rossetti |
-        <a href="https://github.com/prof-rossetti/">source</a>
+        &copy; Copyright 2020 [Your Name Here] |
+        <a href="https://github.com/prof-rossetti/daily-briefings-py">source</a>
       </div>
     </div>
 
