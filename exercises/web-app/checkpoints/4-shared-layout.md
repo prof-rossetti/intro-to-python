@@ -46,9 +46,7 @@ Inside "web_app/templates/layout.html":
 <!doctype html>
 <html>
   <head>
-    {% block title %}
-      <title>My Starter Web App | Helps students learn how to use the Flask Python package.</title>
-    {% endblock %}
+    <title>My Starter Web App | Learning how to use the Flask Python package.</title>
   </head>
 
   <body>
@@ -73,8 +71,8 @@ Inside "web_app/templates/layout.html":
       <!-- FOOTER -->
       <div id="footer">
         <hr>
-        &copy; Copyright 2019 Prof. MJ Rossetti |
-        <a href="https://github.com/prof-rossetti/">source</a>
+        &copy; Copyright 2020 [Your Name Here] |
+        <a href="https://github.com/prof-rossetti/daily-briefings-py">source</a>
       </div>
     </div>
 
