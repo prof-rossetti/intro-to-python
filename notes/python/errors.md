@@ -42,7 +42,7 @@ choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 if choice in options:
     print("YOU CHOSE", choice)
 else:
-    raise ValueError("OOPS - Please type 'rock', or 'paper', or 'scissors' (without using using quotation marks).")
+    raise ValueError("OOPS - Please type 'rock', or 'paper', or 'scissors'.")
 ```
 
 ### Defining and Raising Custom Errors
