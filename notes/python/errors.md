@@ -5,6 +5,31 @@ Reference:
   + https://docs.python.org/3/library/exceptions.html#bltin-exceptions
   + https://docs.python.org/3/tutorial/errors.html
 
+## Handling Errors
+
+You can use a `try... except` block to handle errors:
+
+```python
+try:
+  empty_list = []
+  matching_item = empty_list[0] # triggers an IndexError (list index out of range)
+  print("EVERYTHING IS GOING FINE")
+except IndexError:
+  print("OOPS - MY ERROR")
+
+#> OOPS - MY ERROR
+```
+
+```python
+try:
+  100 / 0 # triggers a DivisionByZeroError
+  print("EVERYTHING IS GOING FINE")
+except DivisionByZeroError:
+  print("OOPS - MY ERROR")
+
+#> OOPS - MY ERROR
+```
+
 ## Raising Errors
 
 You can use the `raise` keyword to stop program execution if a certain condition is met.
@@ -29,26 +54,3 @@ class MyCustomError(Exception):
 raise MyCustomError("My custom message")
 ```
 
-## Handling Errors
-
-You can use a `try... except` block to handle errors, whether encountered naturally or triggered intentionally:
-
-```python
-try:
-  raise RuntimeError("Hello")
-  print("EVERYTHING IS GOING FINE")
-except RuntimeError:
-  print("OOPS - MY ERROR")
-
-#> OOPS - MY ERROR
-```
-
-```python
-try:
-  100 / 0
-  print("EVERYTHING IS GOING FINE")
-except DivisionByZeroError:
-  print("OOPS - MY ERROR")
-
-#> OOPS - MY ERROR
-```
