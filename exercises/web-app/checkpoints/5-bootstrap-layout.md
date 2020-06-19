@@ -74,7 +74,7 @@ New layout called "web_app/templates/bootstrap_layout.html":
     <!-- see: https://getbootstrap.com/docs/4.0/components/navbar/ -->
     {% set nav_links = [
       ('/about', 'about', 'About'),
-      ('/users/new', 'new_user', 'Sign Up')
+      ('/register', 'new_user', 'Sign Up')
     ] -%}
     {% set active_page = active_page|default('index') -%}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
