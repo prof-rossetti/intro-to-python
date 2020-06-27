@@ -85,16 +85,14 @@ for product_name in unique_product_names:
     #> 9  2018-03-03  Button-Down Shirt       65.05           8       520.40
     product_monthly_sales = matching_rows["sales price"].sum()
     # print(type(product_monthly_sales)) #> FYI: <class 'numpy.float64'> which is like a normal float. possible to convert, but maybe not necessary...
-    top_sellers.append(
-        {"name": product_name, "monthly_sales": product_monthly_sales})
+    top_sellers.append({"name": product_name, "monthly_sales": product_monthly_sales})
 
 # sort the list of dictionaries to make sure they are looped through and charted in the right order
 # ... adapted from: https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/datatypes/lists.md#sorting
 # sort in descending order, google search for "python sorted function sort descending" yields:
 #  + https://www.programiz.com/python-programming/methods/built-in/sorted
 #  + https://docs.python.org/3/howto/sorting.html
-top_sellers = sorted(top_sellers, key=operator.itemgetter(
-    "monthly_sales"), reverse=True)
+top_sellers = sorted(top_sellers, key=operator.itemgetter("monthly_sales"), reverse=True)
 
 #
 # OUTPUTS
@@ -114,8 +112,7 @@ print("TOP SELLING PRODUCTS:")
 
 rank = 1
 for d in top_sellers:
-    print("  " + str(rank) + ") " +
-          d["name"] + ": " + to_usd(d["monthly_sales"]))
+    print("  " + str(rank) + ") " + d["name"] + ": " + to_usd(d["monthly_sales"]))
     rank = rank + 1
 
 print("-----------------------")
