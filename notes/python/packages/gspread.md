@@ -65,8 +65,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 load_dotenv()
 
-DOCUMENT_ID = os.environ.get("GOOGLE_SHEET_ID", "OOPS")
-SHEET_NAME = os.environ.get("SHEET_NAME", "Products")
+DOCUMENT_ID = os.getenv("GOOGLE_SHEET_ID", default="OOPS")
+SHEET_NAME = os.getenv("SHEET_NAME", default="Products")
 
 #
 # AUTHORIZATION
