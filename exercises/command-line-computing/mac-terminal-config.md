@@ -50,3 +50,13 @@ alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Fi
 ```
 
 > NOTE: newer Macs may use the "zsh" shell instead of the "bash" shell, in which case you can do the "\~/.bash_profile" customizations using a file like "\~/.zshrc" instead.
+
+> FYI: Files beginning with a "." are generally hidden files, so to access them we'll use the VS Code text editor (see onboarding instructions for a link to install VS Code first), after having installed the `code` shell commands:
+
+```sh
+# Windows Git Bash, Older Macs:
+code ~/.bash_profile
+
+# Newer Macs:
+code ~/.zshrc
+```
