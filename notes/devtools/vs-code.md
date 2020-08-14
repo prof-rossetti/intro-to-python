@@ -46,7 +46,7 @@ If configured, your text editor can also enable vertical text selection. This co
 
 ![a screenshot of the text editor's column selection](https://user-images.githubusercontent.com/1328807/50870478-2e9b8400-1386-11e9-9378-0afadc4a7dce.gif)
 
-By default, you should be able to achieve column selection functionality in VS Code by pressing "shift + alt" then clicking and dragging up or down.
+By default, you should be able to achieve column selection functionality in VS Code by pressing "shift + alt" (Windows) or "shift + option" (Mac), then clicking and dragging up or down.
 
 <hr>
 
