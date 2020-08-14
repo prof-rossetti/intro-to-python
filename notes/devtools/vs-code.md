@@ -109,3 +109,19 @@ A sample of relevant settings from the professor's `settings.json` file:
   "window.zoomLevel": 0,
 }
 ```
+
+Keyboard shortcut overrides:
+
+```json
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+\\",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    }
+]
+```
