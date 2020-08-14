@@ -60,9 +60,9 @@ A sample of the professor's installed extensions (results from running `code --l
 
 ```sh
 HookyQR.beautify
+mechatroner.rainbow-csv
 mikestead.dotenv
 ms-python.python
-ms-vscode.atom-keybindings
 sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 whizkydee.material-palenight-theme
