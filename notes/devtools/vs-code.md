@@ -70,9 +70,20 @@ xamm.filepath
 yzhang.markdown-all-in-one
 ```
 
-You might try searching these manually or [importing them programmatically](https://stackoverflow.com/a/49398449/670433) via `code --install-extension EXTENSION_NAME`, where "EXTENSION_NAME" is the extension's identifier (see list above).
+You might try searching these manually or [importing them programmatically](https://stackoverflow.com/a/49398449/670433) via `code --install-extension EXTENSION_NAME`, where "EXTENSION_NAME" is the extension's identifier (see list above). For example:
 
-> DISCLAIMER: the professor has not tested the extension importing process, so if you experience issues, please report them immediately
+```sh
+code --install-extension HookyQR.beautify
+code --install-extension mechatroner.rainbow-csv
+code --install-extension mikestead.dotenv
+code --install-extension ms-python.python
+code --install-extension sleistner.vscode-fileutils
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension whizkydee.material-palenight-theme
+code --install-extension xamm.filepath
+code --install-extension yzhang.markdown-all-in-one
+```
+
 
 ### User Settings
 
