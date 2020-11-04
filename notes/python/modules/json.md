@@ -39,35 +39,32 @@ print(type(person)) #> <class 'dict'>
 print(person) #> {'first_name': 'Ophelia', 'last_name': 'Clarke', 'message': 'Hi, thanks for the ice cream!', 'fav_flavors': ['Vanilla Bean', 'Mocha', 'Strawberry']}
 ```
 
-#### Processing JSON Files
+### Reading and Writing JSON Files
 
-Combine this JSON-parsing technique with [file management](/notes/python/file-management.md) techniques to read JSON data from a .json file (e.g. "path/to/gradebook.json"):
+Combine these JSON-parsing techniques with [file management](/notes/python/file-management.md) techniques to read and write JSON data from a .json file.
+
+Writing:
 
 ```py
-gradebook_filepath = "path/to/gradebook.json"
+json_filepath = "path/to/gradebook.json" # for example (see os module notes for constructing filepaths more reliably)
 
-with open(gradebook_filepath, "r") as json_file:
-    file_contents = json_file.read()
-
-gradebook = json.loads(file_contents)
-
-print(type(gradebook)) #> <class 'dict'>
-
-print(gradebook)
-#> {
-#>   "downloadDate": "2018-06-05",
-#>   "professorId": 123,
-#>   "students":[
-#>     {"studentId": 1, "finalGrade": 76.7},
-#>     {"studentId": 2, "finalGrade": 85.1},
-#>     {"studentId": 3, "finalGrade": 50.3},
-#>     {"studentId": 4, "finalGrade": 89.8},
-#>     {"studentId": 5, "finalGrade": 97.4},
-#>     {"studentId": 6, "finalGrade": 75.5},
-#>     {"studentId": 7, "finalGrade": 87.2},
-#>     {"studentId": 8, "finalGrade": 88.0},
-#>     {"studentId": 9, "finalGrade": 93.9},
-#>     {"studentId": 10, "finalGrade": 92.5}
-#>   ]
-#> }
+with open(json_filepath, "w") as json_file:
+    json.dump(data, json_file)
 ```
+
+Reading:
+
+```py
+json_filepath = "path/to/gradebook.json" # for example (see os module notes for constructing filepaths more reliably)
+
+with open(json_filepath, "r") as json_file:
+    my_data = json.load(json_file)
+
+print(my_data)
+```
+
+
+
+
+
+
