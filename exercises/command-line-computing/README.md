@@ -1,17 +1,19 @@
 # "Command-line Computing" Exercise
 
-Before we start learning about Python or software development, we need to achieve a basic level of familiarity with the command-line. Throughout the semester, we will be using the command-line to navigate and manage our computer's filesystem. We'll also be using it to execute Python scripts and other command-line utilities (CLIs).
+Before we start learning about Python or software development, it will be helpful for us to achieve a basic level of familiarity with the command-line. Throughout the semester, we will be using the command-line to navigate and manage our computer's filesystem, execute Python scripts, and perform other important tasks using various command-line utilities (CLIs).
+
+> NOTE: Commands can differ, depending on your computer's operating system. By default, most coding documentation references what is called "linux-style" commands:
+>  + On Mac OS, the default Terminal application will allow students to use linux-style commands.
+>  + On Windows OS, the default Command Prompt application uses different commands, but installing the Git Bash application will allow students to use linux-style commands.
 
 ## Instructions
 
-Follow along with one of the following OS-specific guides:
+Follow along with one of the following guides:
 
-  + [Using Terminal on Mac OS](mac-terminal.md) (or Git Bash on Windows)
-  + [Using Command Prompt on Windows OS](windows-command-prompt.md)
+  + [The Linux Command-Line](mac-terminal.md) - RECOMMENDED FOR ALL STUDENTS (MAC OR WINDOWS)
+  + [The Windows Command-Prompt](windows-command-prompt.md) - NOT RECOMMENDED
 
-> NOTE: commands are different on Mac vs Windows OS. Software repositories will often only list Mac-style commands, and the professor will default to sharing Mac-style commands. So students using Windows OS should also familiarize themselves with the Mac OS command equivalents. Students using Windows OS are encouraged to use Git Bash as their command-line application of choice, where they will have an opportunity to use the Mac-style commands.
-
-> QUICK COMMAND-LINE TIPS:
->   + press the up arrow to cycle through recent commands
->   + press "tab" to auto-complete filepaths
->   + type "clear" and press "enter" (or just "command + k" on Mac) to clear the screen
+> TIPS:
+>   + Pressubg the up arrow will cycle through recent commands
+>   + Pressing tab will auto-complete filepaths
+>   + Typing "clear" and pressing enter (or just pressing "command + k" on Mac) will clear the screen
