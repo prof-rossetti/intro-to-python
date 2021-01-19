@@ -14,6 +14,6 @@ Follow along with one of the following guides:
   + [The Windows Command-Prompt](windows-command-prompt.md) - NOT RECOMMENDED
 
 > TIPS:
->   + Pressubg the up arrow will cycle through recent commands
+>   + Pressing the up arrow will cycle through recent commands
 >   + Pressing tab will auto-complete filepaths
 >   + Typing "clear" and pressing enter (or just pressing "command + k" on Mac) will clear the screen
