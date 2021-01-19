@@ -4,13 +4,14 @@
 
 Open the Terminal application on Mac, or the Git Bash application on Windows.
 
-> FYI: If you are into maximum efficiency through keyboard shortcuts, get there quick by pressing the "command + space" buttons to start a spotlight search, then begin typing the word "terminal", then hit enter when you see "Terminal" show up. :smiley_cat:
+> FYI: Mac users who are into maximum efficiency through keyboard shortcuts can get there quickly by pressing the "command + space" buttons to start a spotlight search, then begin typing the word "terminal", then hit enter when you see "Terminal" show up. :smiley_cat:
 >
 > ![a screenshot of the terminal app showing up as a result of a spotlight search](/img/exercises/command-line-computing/mac-shortcut.png)
 
 ![a screenshot of the terminal](/img/exercises/command-line-computing/mac-terminal.png)
 
-> FYI: If you are interested in learning how to customize color themes and keyboard shortcuts, you may reference a copy of [the professor's terminal configuration](mac-terminal-config.md). :smiley_cat:
+> FYI: Mac users who are interested in customizing Terminal app color themes and keyboard shortcuts can reference the professor's [Terminal app configuration notes](mac-terminal-config.md). :smiley_cat:
+
 
 ## Instructions
 
