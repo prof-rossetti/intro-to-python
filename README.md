@@ -2,7 +2,7 @@
 
 ![](https://www.perforce.com/sites/default/files/image/2018-08/image-blog-enterprises-investing-python%20(2).jpg)
 
-## [Slides](https://docs.google.com/presentation/d/1CPZXF_JO-zi6i6_OU7mGYvDJdqB3LBo7HF4bmyCbjMY/edit?usp=sharing)
+## [Slides](https://docs.google.com/presentation/d/1acrt0P4u1NW8dqwmm0s613tCwZzWsVsFCcSBdO0YC48/edit?usp=sharing)
 
 ## Instructional Units
 
