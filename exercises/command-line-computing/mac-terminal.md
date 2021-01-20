@@ -1,8 +1,14 @@
 # "Command-line Computing" Exercise
 
-## Terminal (Mac OS) / Git Bash (Windows OS)
+## Command-line Application
 
-Open the Terminal application on Mac, or the Git Bash application on Windows.
+Open the Terminal application (Mac) or the Git Bash application (Windows). 
+
+### Git Bash (Windows OS)
+
+> FYI: Windows users who are into maximum efficiency through keyboard shortcuts can get there quickly by pressing the "windows" button, then begin typing the word "git", then hit enter when you see "Git Bash" show up. 😺
+
+### Terminal (Mac OS) 
 
 > FYI: Mac users who are into maximum efficiency through keyboard shortcuts can get there quickly by pressing the "command + space" buttons to start a spotlight search, then begin typing the word "terminal", then hit enter when you see "Terminal" show up. :smiley_cat:
 >
@@ -11,6 +17,8 @@ Open the Terminal application on Mac, or the Git Bash application on Windows.
 ![a screenshot of the terminal](/img/exercises/command-line-computing/mac-terminal.png)
 
 > FYI: Mac users who are interested in customizing Terminal app color themes and keyboard shortcuts can reference the professor's [Terminal app configuration notes](mac-terminal-config.md). :smiley_cat:
+
+
 
 
 ## Instructions
