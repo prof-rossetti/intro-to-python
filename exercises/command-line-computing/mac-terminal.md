@@ -103,17 +103,13 @@ Remove a file:
 rm index.html
 ```
 
-Edit and save a file, using a command-line utility provided by your preferred text editor (just choose one of these, depending on which editor you're using):
+Edit and save a file, using a command-line utility provided by your preferred text editor (like VS Code):
 
 ```sh
-# VS Code text editor, may first require installation of shell commands from the settings: 
-code my_message.txt 
-
-# Atom text editor, may first require installation of shell commands from the settings:
-atom my_message.txt 
+code my_message.txt # may first require installation of shell commands from the settings 
 ```
 
-> NOTE: these text editor commands may require preliminary setup. For Mac users wanting to configure the `code` command, see these [VS Code shell command setup instructions](/notes/devtools/vs-code.md#shell-commands).
+> NOTE: Mac users may need to first configure the `code` command by following these [VS Code shell command setup instructions](/notes/devtools/vs-code.md#shell-commands)
 
 Print file contents:
 
