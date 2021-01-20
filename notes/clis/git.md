@@ -47,13 +47,38 @@ The Git Bash application is where you can execute Git commands (like `git --vers
 
 
 
+## Configuration
+
+### Configuring User Info
+
+References:
+
+ + https://docs.github.com/en/github/using-git/setting-your-username-in-git
+ + https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address
+
+Configure the username and email message that will be associated with your work:
+
+```sh
+git config --global user.name "Mona Lisa"
+git config --global user.email "email@example.com"
+
+# verify settings:
+git config --global user.name
+git config --global user.email
+```
+
+> FYI: If you'd like to keep your email private, you can use the noreply email from your GitHub email settings page (e.g. `YOUR_GITHUB_USERNAME@users.noreply.github.com`)
 
 
+### Configuring SSH
 
+References:
 
+ + https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh#step-2-generate-a-new-ssh-key
+ + https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+ + https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 
-
-
+If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub, first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
 
 ## Usage (Git Commands Overview)
 
