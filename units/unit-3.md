@@ -1,17 +1,23 @@
-
-# Unit 3: Processing User Inputs
+# Unit 3: Python Datatypes
 
 ## Learning Objectives
 
-In this unit, we'll learn how process and validate user inputs in Python.
+In this unit, we continue a guided tour of the Python programming language, focusing on the building blocks known as datatypes.
 
 ## Discussions and Notes
 
-  + User Interfaces (UI) and User Experience (UX)
-  + Capturing and Validating User Inputs:
-    + [The `input()` Function](/notes/python/inputs.md)
+  + Object-oriented Programming (OOP)
+  + [Python Datatypes](/notes/python/datatypes):
+    + [Null Values](/notes/python/datatypes/none.md)
+    + [Booleans](/notes/python/datatypes/booleans.md)
+    + [Strings](/notes/python/datatypes/strings.md)
+    + [Numbers](/notes/python/datatypes/numbers.md)
+    + [Dates and Times](/notes/python/datatypes/dates.md)
+    + [Lists and Sets](/notes/python/datatypes/lists.md)
+    + [Dictionaries](/notes/python/datatypes/dictionaries.md)
+    + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate topic)
 
 ## Activities and Exercises
 
-  + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
-  + ["Shopping Cart" Project](/projects/shopping-cart/README.md)
+  + ["Groceries" Exercise](/exercises/groceries/README.md)
+  + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)

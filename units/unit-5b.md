@@ -1,31 +1,24 @@
 
-# Unit 5B: Advanced Data Analytics
+# Unit 5B: Data Visualization
 
 ## Learning Objectives
 
-This unit provides optional reference material for students interested in exploring alternative, more advanced applications in statistics, natural language processing, and machine learning. :smiley_cat:
+In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data.
 
 ## Discussions and Notes
 
-  + Business Analytics
-  + Statistics and Statistical Models
-  + Natural Language Processing (NLP) and Sentiment Analysis
-  + Artificial Intelligence and Machine Learning (AI/ML)
+  + Business Intelligence and Data Visualization
+  + Metrics and Key Performance Indicators (KPIs)
 
 ## Reference Documents
 
-  + Basic Statistics:
-    + [The `statistics` Module](/notes/python/modules/statistics.md)
-  + Predictive Models:
-    + [The `scikitlearn` Package](https://scikit-learn.org/stable/)
-  + Neural Networks:
-    + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/)
-    + The `tensorflow` Package
-  + Natural Language Processing:
-    + [The `nltk` Package](/notes/python/packages/nltk.md)
-    + The `spacy` Package
+  + Data Visualization in Python:
+    + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
+    + [The `plotly` Package](/notes/python/packages/plotly.md)
+    + [The `altair` Package](/notes/python/packages/altair.md)
+    + [The `seaborn` Package](/notes/python/packages/seaborn.md)
 
 ## Activities and Exercises
 
-  + Sentiment Analysis Exercise TBA - Contributions Welcome!
-  + Predictive Modeling Exercise TBA - Contributions Welcome!
+  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
+  + ["Executive Dashboard" Project](/projects/exec-dash/README.md)

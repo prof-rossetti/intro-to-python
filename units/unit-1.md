@@ -1,4 +1,4 @@
-# Unit 1: Getting Started
+# Unit 1: Python Development Environment
 
 ## Learning Objectives
 

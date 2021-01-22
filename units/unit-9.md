@@ -1,28 +1,21 @@
-
-
-# Unit 9: Software Products and Services
+# Unit 9: Software Planning, Analysis, and Design
 
 ## Learning Objectives
 
-In this unit, we'll discuss software products and services, and practice delivering software services to end users.
+In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.
 
 ## Discussions and Notes
 
-  + Management of Software Products and Services:
-    + [Business Models](/notes/software/README.md#business-models)
-    + [Distribution Models](/notes/software/README.md#distribution-models)
-    + [Licensing](/notes/software/licensing.md) and [Licensing Models](/notes/software/README.md#licensing-models), including Open Source Software (OSS)
-    + [Security and Privacy](/notes/info-systems/security-privacy.md)
-    + [Ethics](/notes/software/ethics.md)
-  + Software Delivery and Distribution:
-    + [Remote Repositories](/notes/clis/git.md#remote-repositories) and Managing Remote Addresses
-    + [Remote Servers](/notes/hardware/servers.md)
-    + [The `heroku` Utility](/notes/clis/heroku.md)
-  + Web Applications:
-    + [The `flask` Package](/notes/python/packages/flask.md)
-  + [Advanced Datastores](/units/unit-4b.md), revisited
+  + [Project Management](/notes/project-mgmt/README.md)
+  + [Project Management Tools](/notes/project-mgmt/tools.md)
+  + [The Systems Development Lifecycle (SDLC)](/notes/project-mgmt/dev-lifecycle.md)
+  + Iterative Development Methodologies and Minimum Viable Products (MVPs)
+  + [Users, User Needs, and User-Centered Design](/notes/info-systems/people.md)
+  + [Business Process Analysis, Diagramming, and Re-engineering](/notes/info-systems/processes.md)
 
 ## Activities and Exercises
 
-  + ["Web Service" Exercise](/exercises/web-service/README.md)
-  + ["Web App" Exercise](/exercises/web-app/README.md)
+  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
+  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
+  + "Design Thinking" Workshop / "Freestyle" Project Ideation
+  + ["Freestyle" Project Proposal](/projects/freestyle/proposal.md)
