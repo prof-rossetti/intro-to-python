@@ -2,12 +2,10 @@
 
 ## Learning Objectives
 
-In this unit, we'll gain familiarity with high-level concepts and background knowledge. And we'll practice our ability to run existing Python applications.
+In this unit, we'll practice our ability to run existing Python applications.
 
 ## Discussions and Notes
 
-  + [Information Systems](/notes/info-systems/README.md)
-  + [Software](/notes/software/README.md)
   + [Version Control](/notes/software/version-control.md):
     + [The `git` Utility](/notes/clis/git.md)
     + [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
@@ -21,5 +19,7 @@ In this unit, we'll gain familiarity with high-level concepts and background kno
 
 ## Activities and Exercises
 
+  + ["Hello World (Colab)" Exercise](/exercises/hello-world-colab/exercise.md)
+  + "Hello World (Local)" Exercise
   + ["Version Control" Exercise](/exercises/version-control/README.md)
   + ["Run the App" Exercise](/exercises/run-the-app/README.md)
