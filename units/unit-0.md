@@ -8,9 +8,9 @@ Hello and welcome! In this unit, we'll gain familiarity with high-level concepts
 
   + [Information Systems](/notes/info-systems/README.md)
   + [Software](/notes/software/README.md)
+  + [Local Development Tools Overview](/exercises/api-client/README.md)
 
-## Exercises
+## Activities and Exercises
 
-First, [Setup your Local Development Environment](/exercises/setup-local-dev/exercise.md) by installing and configuring all the necessary development tools as instructed.
-
-Then, to become more comfortable with command-line computing, complete this ["Command-line Computing" Exercise](/exercises/command-line-computing).
+  + [Local Development Environment Setup](/exercises/local-dev-setup/exercise.md)
+  + ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md)

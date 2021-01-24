@@ -8,14 +8,17 @@ In this unit, we continue a guided tour of the Python programming language, focu
 
   + Object-oriented Programming (OOP)
   + [Python Datatypes](/notes/python/datatypes):
-    + [Null Values](/notes/python/datatypes/none.md)
-    + [Booleans](/notes/python/datatypes/booleans.md)
-    + [Strings](/notes/python/datatypes/strings.md)
-    + [Numbers](/notes/python/datatypes/numbers.md)
-    + [Dates and Times](/notes/python/datatypes/dates.md)
-    + [Lists and Sets](/notes/python/datatypes/lists.md)
-    + [Dictionaries](/notes/python/datatypes/dictionaries.md)
-    + [Custom Classes](/notes/python/datatypes/classes.md) (intermediate topic)
+    + "Basic" Datatypes:
+      + [Null Values](/notes/python/datatypes/none.md)
+      + [Booleans](/notes/python/datatypes/booleans.md)
+      + [Strings](/notes/python/datatypes/strings.md)
+      + [Numbers](/notes/python/datatypes/numbers.md)
+    + "Intermediate" Datatypes:
+      + [Dates and Times](/notes/python/datatypes/dates.md)
+      + [Lists and Sets](/notes/python/datatypes/lists.md)
+      + [Dictionaries](/notes/python/datatypes/dictionaries.md)
+    + "Advanced" Datatypes:
+      + [Custom Classes](/notes/python/datatypes/classes.md)
 
 ## Activities and Exercises
 

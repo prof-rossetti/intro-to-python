@@ -6,7 +6,6 @@ In this unit, we will take a high-level guided tour of the Python programming la
 
 ## Discussions and Notes
 
-  + Object-oriented Programming (OOP)
   + Python Programming:
     + [Syntax and Style](/notes/python/syntax-and-style.md)
     + [Comments](/notes/python/comments.md)
@@ -14,7 +13,7 @@ In this unit, we will take a high-level guided tour of the Python programming la
     + [Debugging](/notes/python/debugging.md)
     + [Variables](/notes/python/variables.md)
     + [Functions](/notes/python/functions.md)
-    + [Control Flow](/notes/python/control-flow.md)
+    + [Conditionals](/notes/python/control-flow.md) and Control Flow
 
 ## Activities and Exercises
 
