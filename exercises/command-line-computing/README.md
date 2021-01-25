@@ -8,7 +8,11 @@ Before we start learning about Python or software development, it will be helpfu
 
 Additional References:
   + [Intro to Unix Commands](https://www.infoworld.com/article/3193969/10-unix-commands-every-mac-and-linux-user-should-know.html)
-  
+
+## Prerequisites
+
+  + [Local Development Environment Setup](/exercises/local-dev-setup/README.md)
+
 ## Instructions
 
 Follow along with one of the following guides:
