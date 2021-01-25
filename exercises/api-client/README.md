@@ -1,8 +1,9 @@
 # "API Client" Exercise
 
-> Prerequisites:
->  + [Networks, and Processing Data from the Internet](/units/unit-6.md), including [APIs](/notes/software/apis.md)
->  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
+## Prerequisites
+
+  + [APIs](/notes/software/apis.md)
+  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
 
 ## Business Prompt
 

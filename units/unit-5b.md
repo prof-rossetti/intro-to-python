@@ -1,31 +1,23 @@
 
-# Unit 5B: Advanced Data Analytics
+# Unit 5b: Databases and Datastores
 
 ## Learning Objectives
 
-This unit provides optional reference material for students interested in exploring alternative, more advanced applications in statistics, natural language processing, and machine learning. :smiley_cat:
+This unit provides optional reference material for students interested in exploring alternative, more advanced data storage solutions, including relational databases. :smiley_cat:
 
 ## Discussions and Notes
 
-  + Business Analytics
-  + Statistics and Statistical Models
-  + Natural Language Processing (NLP) and Sentiment Analysis
-  + Artificial Intelligence and Machine Learning (AI/ML)
-
-## Reference Documents
-
-  + Basic Statistics:
-    + [The `statistics` Module](/notes/python/modules/statistics.md)
-  + Predictive Models:
-    + [The `scikitlearn` Package](https://scikit-learn.org/stable/)
-  + Neural Networks:
-    + [The `keras` Package](http://data-creative.info/projects/2018/12/16/learning-keras-tensorflow-py/)
-    + The `tensorflow` Package
-  + Natural Language Processing:
-    + [The `nltk` Package](/notes/python/packages/nltk.md)
-    + The `spacy` Package
+  + Google Sheets:
+    + [The `gspread` Package](/notes/python/packages/gspread.md)
+  + Relational Databases (SQL):
+    + [The `sqlite` Module](/notes/python/modules/sqlite.md) (for SQLite databases)
+    + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
+    + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
+    + [The `sqlalchemy` Package](/notes/python/packages/sqlalchemy.md) (an ORM for various relational databases)
+    + [The `bigquery` Package](/notes/python/packages/bigquery.md) (for Google BigQuery)
+  + Document-object Storage ("No SQL"):
+    + [The `pymongo` Package](/notes/python/packages/pymongo.md) (for MongoDB databases)
 
 ## Activities and Exercises
 
-  + Sentiment Analysis Exercise TBA - Contributions Welcome!
-  + Predictive Modeling Exercise TBA - Contributions Welcome!
+  + Database Exercise - follow the sqlite module notes to connect to and query an example SQLite database!

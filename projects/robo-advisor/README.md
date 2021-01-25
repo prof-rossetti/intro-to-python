@@ -1,10 +1,10 @@
 # "Robo Advisor" Project
 
-> Prerequisites:
->  + [Networks, and Processing Data from the Internet](/units/unit-6.md)
->  + [APIs](/notes/software/apis.md)
->  + [Environment Variables](/notes/environment-variables.md)
->  + The ["Web Requests" Exercise](/exercises/web-requests/README.md)
+## Prerequisites
+
+  + [APIs](/notes/software/apis.md)
+  + [Environment Variables](/notes/environment-variables.md)
+  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
 
 
 ## Learning Objectives
@@ -92,7 +92,7 @@ After setting up a virtual environment, we will be ready to install these packag
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n stocks-env python=3.7 # (first time only)
+conda create -n stocks-env python=3.8 # (first time only)
 conda activate stocks-env
 ```
 

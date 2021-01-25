@@ -1,7 +1,5 @@
 # People
 
-> Prerequisites: [Information Systems](README.md)
-
 At the heart of any computer-based information system are the people within the system's scope. This includes the system's users, administrators, and anyone else participating in or affected by the processes the system is facilitating or performing.
 
 ## User-Centered Design

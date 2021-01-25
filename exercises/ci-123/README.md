@@ -1,9 +1,9 @@
 # "Continuous Integration 1, 2, 3" Exercise
 
-> Prerequisites:
->   + [Software Maintenance and Quality Control](/units/unit-8.md)
->   + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
->   + [Travis CI](/notes/devtools/travis-ci.md)
+## Prerequisites
+
+  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+  + [Travis CI](/notes/devtools/travis-ci.md)
 
 ## Learning Objectives
 

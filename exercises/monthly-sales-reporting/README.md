@@ -1,8 +1,8 @@
 # The "Monthly Sales Reporting" Exercise
 
-> Prerequisites:
->   + [Datastores, and Processing CSV Data](/units/unit-4.md)
->   + The [`csv`](/notes/python/modules/csv.md) and [`itertools`](/notes/python/modules/itertools.md) Modules, or [The `pandas` Package](/notes/python/packages/pandas.md)
+# Prerequisites
+
+  + The [`csv`](/notes/python/modules/csv.md) and [`itertools`](/notes/python/modules/itertools.md) Modules ... OR ... [The `pandas` Package](/notes/python/packages/pandas.md)
 
 ## Learning Objectives
 
@@ -44,9 +44,9 @@ def to_usd(my_price):
     Converts a numeric value to usd-formatted string, for printing and display purposes.
 
     Param: my_price (int or float) like 4000.444444
-    
+
     Example: to_usd(4000.444444)
-    
+
     Returns: $4,000.44
     """
     return f"${my_price:,.2f}" #> $12,000.71
@@ -63,7 +63,7 @@ Finally, download one or more of the ["monthly sales data"](/data/monthly-sales)
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n sales-env python=3.7 # (first time only)
+conda create -n sales-env python=3.8 # (first time only)
 conda activate sales-env
 ```
 

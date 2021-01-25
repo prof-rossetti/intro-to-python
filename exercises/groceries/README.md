@@ -1,7 +1,4 @@
-# Python Datatypes (a.k.a. "Groceries") Exercise
-
-> Prerequisites:
->   + [Python Language Overview](/units/unit-2.md)
+# "Groceries" Exercise
 
 ## Learning Objectives
 
@@ -78,7 +75,7 @@ Make sure to save Python files like this whenever you're done editing them. Afte
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n groceries-env python=3.7 # (first time only)
+conda create -n groceries-env python=3.8 # (first time only)
 conda activate groceries-env
 ```
 

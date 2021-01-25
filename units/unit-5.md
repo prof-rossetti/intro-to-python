@@ -1,24 +1,24 @@
 
-# Unit 5: Data Visualization
+# Unit 5: Processing CSV Data
 
 ## Learning Objectives
 
-In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data.
+In this unit, we'll learn how to use Python to process machine-readable data stored in Comma-Separated Values (CSV) format.
+
+> NOTE: for extra optional bonus material, see also [Unit 5-B](/units/unit-5b.md) for material about relational databases
+
+> NOTE: see also [Unit 5-V](/units/unit-5v.md) for material about data visualization
 
 ## Discussions and Notes
 
-  + Business Intelligence and Data Visualization
-  + Metrics and Key Performance Indicators (KPIs)
-
-## Reference Documents
-
-  + Data Visualization in Python:
-    + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
-    + [The `plotly` Package](/notes/python/packages/plotly.md)
-    + [The `altair` Package](/notes/python/packages/altair.md)
-    + [The `seaborn` Package](/notes/python/packages/seaborn.md)
+  + Program-Data Independence
+  + [Machine-readable Data Formats](/notes/info-systems/datastores.md)
+  + [Managing Files](/notes/python/file-management.md):
+    + [The `os` Module](/notes/python/modules/os.md#file-operations) (focusing on filepath construction)
+  + Processing CSV Files:
+    + [The `csv` Module](/notes/python/modules/csv.md)
+    + [The `pandas` Package](/notes/python/packages/pandas.md)
 
 ## Activities and Exercises
 
-  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
-  + ["Executive Dashboard" Project](/projects/exec-dash/README.md)
+  + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)

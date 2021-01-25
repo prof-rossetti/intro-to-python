@@ -1,12 +1,13 @@
 # "Freestyle" Project - Planning and Requirements Document
 
 > See: [The "Freestyle" Project](README.md)
->
-> Prerequisites:
->   + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
->   + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
 
 This is an optional alternative part of the Freestyle Project which may or may not be assigned, depending on the individual class. If you're not sure whether or not this is required for you, ask an instructor.
+
+# Prerequisites:
+
+  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
+  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
 
 ## Learning Objectives
 

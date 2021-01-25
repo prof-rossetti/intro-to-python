@@ -1,11 +1,10 @@
 # "Codebase Cleanup" Assignment
 
-> Prerequisites:
->  + [Software Maintenance and Quality Control](/units/unit-8.md), including all linked notes
->  + ["Code Simplification" Exercise](https://github.com/prof-rossetti/code-simplification-exercise-py/)
->  + ["Testing, 1,2,3" Exercise](/exercises/testing-123/README.md)
->  + ["CI, 1,2,3" Exercise](/exercises/ci-123/README.md)
->  + [Code Climate](/notes/devtools/code-climate.md)
+## Prerequisites
+ + ["Code Simplification" Exercise](https://github.com/prof-rossetti/code-simplification-exercise-py/)
+ + ["Testing, 1,2,3" Exercise](/exercises/testing-123/README.md)
+ + ["CI, 1,2,3" Exercise](/exercises/ci-123/README.md)
+ + [Code Climate](/notes/devtools/code-climate.md)
 
 ## Learning Objectives
 

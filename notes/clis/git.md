@@ -80,6 +80,8 @@ References:
 
 If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub, first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
 
+<hr>
+
 ## Usage (Git Commands Overview)
 
 > NOTE: after executing some commands like `git log` and `git diff`, you can press the "Enter" key to keep reading, and type "q" to quit when you are done.

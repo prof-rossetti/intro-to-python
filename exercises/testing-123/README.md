@@ -1,8 +1,8 @@
 # "Testing 1, 2, 3" Exercise
 
-> Prerequisites:
->  + [Software Maintenance and Quality Control](/units/unit-8.md)
->  + [The `pytest` Package](/notes/python/packages/pytest.md)
+## Prerequisites
+
+ + [The `pytest` Package](/notes/python/packages/pytest.md)
 
 ## Learning Objectives
 
@@ -41,7 +41,7 @@ Once you have setup the example files, create and activate a new Python 3.7 virt
 cd testing-123/
 
 # configure a virtual environment:
-conda create -n testing-123-env python=3.7 # (first time only)
+conda create -n testing-123-env python=3.8 # (first time only)
 conda activate testing-123-env
 
 # install pytest package (first time only)

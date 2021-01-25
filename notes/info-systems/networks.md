@@ -1,7 +1,5 @@
 # Computer Networks
 
-> Prerequisites: [Information Systems](README.md)
-
 > Unless otherwise specified, all quotes in this document are based on material from *Intro to Information Systems (5e)*, by Rainer.
 
 A **Computer Network** is a system of interconnected computers which use "communications media" to transmit data to each other.
