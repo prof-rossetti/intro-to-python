@@ -39,9 +39,9 @@ Instructional Units:
 
   + Unit 0-DS - Onboarding (Colab Only)
   + Unit 1-DS - Python Development Environment (Colab Only)
-  + Unit 2 - Python Language Overview
-  + Unit 3 - Python Datatypes
-  + Unit 4-DS (a.k.a. Unit 5) - Basic Data Processing and Visualization
+  + Unit 2-DS - Python Language Overview
+  + Unit 3-DS - Python Datatypes
+  + Unit 4-DS - Basic Data Processing and Visualization
   + Unit 5-DS - Databases and Advanced Data Processing
   + Unit 6-DS - Predictive Analytics
   + Unit 7-DS - Review / Analytics Challenge
