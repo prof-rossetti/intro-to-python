@@ -1,10 +1,10 @@
-# Unit 6B: Processing Data from the Internet (Bonus Material)
+# Unit 7b: Processing Data from the Internet (Bonus Material)
 
 ## Learning Objectives
 
 In this unit, we'll build upon our ability to process data from the Internet by focusing on scraping and processing HTML pages.
 
-> NOTE: this is a follow-on for [Unit 6](/units/unit-6.md), so you should do that first
+> NOTE: this is a follow-on for [Unit 7](/units/unit-7.md), so you should do that first
 
 ## Discussions and Notes
 

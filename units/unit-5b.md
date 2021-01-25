@@ -3,7 +3,7 @@
 
 ## Learning Objectives
 
-This unit provides optional reference material for students interested in exploring alternative, more advanced data storage solutions. :smiley_cat:
+This unit provides optional reference material for students interested in exploring alternative, more advanced data storage solutions, including relational databases. :smiley_cat:
 
 ## Discussions and Notes
 
@@ -20,4 +20,4 @@ This unit provides optional reference material for students interested in explor
 
 ## Activities and Exercises
 
-  + Database Exercise TBA - Contributions Welcome!
+  + Database Exercise - follow the sqlite module notes to connect to and query an example SQLite database!

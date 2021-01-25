@@ -1,25 +1,24 @@
-# Unit 6: Processing Data from the Internet
+
+# Unit 6: Data Visualization
 
 ## Learning Objectives
 
-In this unit, we'll learn how to use Python to process data from the Internet, focusing on data returned by web services in JSON format.
-
-> NOTE: for extra optional bonus material, see also [Unit 6B](/units/unit-6b.md)
+In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data.
 
 ## Discussions and Notes
 
-  + [Computer Networks, the Internet, and HTTP](/notes/info-systems/networks.md)
-  + [Web Services and APIs](/notes/software/apis.md)
-  + Issuing HTTP Requests:
-    + [The `requests` Package](/notes/python/packages/requests.md)
-  + Processing JSON-formatted data:
-    + [The `json` Module](/notes/python/modules/json.md)
-  + [Environment Variables](/notes/environment-variables.md), revisited:
-    + [The `os` module](/notes/python/modules/os.md#environment-variables), focusing on environment variables
-    + [The `dotenv` package](/notes/python/packages/dotenv.md)
+  + Business Intelligence and Data Visualization
+  + Metrics and Key Performance Indicators (KPIs)
+
+## Reference Documents
+
+  + Data Visualization in Python:
+    + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
+    + [The `plotly` Package](/notes/python/packages/plotly.md)
+    + [The `altair` Package](/notes/python/packages/altair.md)
+    + [The `seaborn` Package](/notes/python/packages/seaborn.md)
 
 ## Activities and Exercises
 
-  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
-  + ["API Client" Exercise](/exercises/api-client/README.md)
-  + ["Robo Advisor" Project](/projects/robo-advisor/README.md)
+  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
+  + ["Executive Dashboard" Project](/projects/exec-dash/README.md)

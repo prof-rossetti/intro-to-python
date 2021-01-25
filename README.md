@@ -17,9 +17,10 @@ Instructional Units:
   + [Unit 2](/units/unit-2.md) - Python Language Overview
   + [Unit 3](/units/unit-3.md) - Python Datatypes
   + [Unit 4](/units/unit-4.md) - User Interfaces and Experiences
-  + [Unit 5](/units/unit-5.md) - Basic Data Processing and Visualization
-  + [Unit 6](/units/unit-6.md) - Fetching Data from the Internet
-  + [Unit 7](/units/unit-7.md) - Review / Coding Challenge
+  + [Unit 5](/units/unit-5.md) - Processing CSV Data
+  + [Unit 6](/units/unit-6.md) - Data Visualization
+  + [Unit 7](/units/unit-7.md) - Fetching Data from the Internet
+  + Review / Coding Challenge
 
 ### Management of Software Development in Python
 
@@ -44,7 +45,7 @@ Instructional Units:
   + Unit 4-DS - Basic Data Processing and Visualization
   + Unit 5-DS - Databases and Advanced Data Processing
   + Unit 6-DS - Predictive Analytics
-  + Unit 7-DS - Review / Analytics Challenge
+  + Review / Analytics Challenge
 
 ## Alternative Resources
 
