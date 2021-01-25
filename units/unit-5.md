@@ -7,8 +7,6 @@ In this unit, we'll learn how to use Python to process machine-readable data sto
 
 > NOTE: for extra optional bonus material, see also [Unit 5-B](/units/unit-5b.md) for material about relational databases
 
-> NOTE: see also [Unit 5-V](/units/unit-5v.md) for material about data visualization
-
 ## Discussions and Notes
 
   + Program-Data Independence

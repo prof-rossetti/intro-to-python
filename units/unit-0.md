@@ -11,5 +11,5 @@ Hello and welcome! In this unit, we'll gain familiarity with high-level concepts
 
 ## Activities and Exercises
 
-  + [Local Development Environment Setup](/exercises/local-dev-setup/exercise.md)
+  + [Local Development Environment Setup](/exercises/local-dev-setup/README.md)
   + ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md)

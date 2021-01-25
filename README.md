@@ -34,7 +34,7 @@ Instructional Units:
 
 ### Intro to Data Science in Python
 
-> NOTE: alternative DS-focused course coming soon!
+> NOTE: alternative DS-focused course content coming soon...
 
 Instructional Units:
 

@@ -24,3 +24,4 @@ In this unit, we continue a guided tour of the Python programming language, focu
 
   + ["Groceries" Exercise](/exercises/groceries/README.md)
   + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
+  + "Data Processing" Exercise
