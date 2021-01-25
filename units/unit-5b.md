@@ -1,24 +1,23 @@
 
-# Unit 5B: Data Visualization
+# Unit 5b: Databases and Datastores
 
 ## Learning Objectives
 
-In this unit, we'll learn how to use Python to create business intelligence and analytics tools. We'll use third-party Python packages to analyze and visualize insights gleaned from CSV data.
+This unit provides optional reference material for students interested in exploring alternative, more advanced data storage solutions. :smiley_cat:
 
 ## Discussions and Notes
 
-  + Business Intelligence and Data Visualization
-  + Metrics and Key Performance Indicators (KPIs)
-
-## Reference Documents
-
-  + Data Visualization in Python:
-    + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
-    + [The `plotly` Package](/notes/python/packages/plotly.md)
-    + [The `altair` Package](/notes/python/packages/altair.md)
-    + [The `seaborn` Package](/notes/python/packages/seaborn.md)
+  + Google Sheets:
+    + [The `gspread` Package](/notes/python/packages/gspread.md)
+  + Relational Databases (SQL):
+    + [The `sqlite` Module](/notes/python/modules/sqlite.md) (for SQLite databases)
+    + [The `psycopg` Package](/notes/python/packages/psycopg.md) (for PostgreSQL databases)
+    + [The `pymysql` Package](/notes/python/packages/pymysql.md) (for MySQL databases)
+    + [The `sqlalchemy` Package](/notes/python/packages/sqlalchemy.md) (an ORM for various relational databases)
+    + [The `bigquery` Package](/notes/python/packages/bigquery.md) (for Google BigQuery)
+  + Document-object Storage ("No SQL"):
+    + [The `pymongo` Package](/notes/python/packages/pymongo.md) (for MongoDB databases)
 
 ## Activities and Exercises
 
-  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
-  + ["Executive Dashboard" Project](/projects/exec-dash/README.md)
+  + Database Exercise TBA - Contributions Welcome!
