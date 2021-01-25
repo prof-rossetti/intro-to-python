@@ -1,7 +1,7 @@
-# Python Datatypes (a.k.a. "Groceries") Exercise
+# "Groceries" Exercise
 
 > Prerequisites:
->   + [Python Language Overview](/units/unit-2.md)
+>   + [Python Datatypes](/units/unit-3.md)
 
 ## Learning Objectives
 

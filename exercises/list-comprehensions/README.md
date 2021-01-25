@@ -1,7 +1,7 @@
 # "List Comprehensions" Exercise
 
 > Prerequisites:
->   + [Python Language Overview](/units/unit-2.md)
+>   + [Python Datatypes](/units/unit-3.md)
 >   + [Lists](/notes/python/datatypes/lists.md)
 
 ## Learning Objectives

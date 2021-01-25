@@ -1,10 +1,5 @@
 # "Interface Capabilities" Exercise
 
-## Prerequisites
-
-  + ["Run the App" Exercise](/exercises/run-the-app.md)
-  + [Processing and Validating User Inputs](/units/unit-3.md)
-
 ## Learning Objectives
 
   + Continue to practice installing and running existing Python applications.
