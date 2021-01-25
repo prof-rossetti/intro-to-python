@@ -1,4 +1,4 @@
-# "Hello World (Version Control)" Exercise
+# "Hello World (Local w/ Version Control)" Exercise
 
 ## Learning Objectives
 

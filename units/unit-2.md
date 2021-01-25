@@ -17,10 +17,5 @@ In this unit, we will take a high-level guided tour of the Python programming la
 
 ## Activities and Exercises
 
-Level 1:
-
   + ["Custom Functions" Exercise](/exercises/custom-functions/README.md)
-
-Level 2:
-
   + ["Rock Paper Scissors" Exercise](/exercises/rock-paper-scissors/README.md)

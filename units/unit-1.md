@@ -7,7 +7,10 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
 ## Discussions and Notes
 
   + [Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+  + Text Editor:
+    + [VS Code](/notes/devtools/vs-code.md)
   + [Version Control](/notes/software/version-control.md):
+    + [GitHub Desktop Softawre](/notes/devtools/github-desktop.md)
     + [The `git` Utility](/notes/clis/git.md)
   + Managing Virtual Environments:
     + [The `conda` Utility](/notes/clis/conda.md)
@@ -19,12 +22,7 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
 
 ## Activities and Exercises
 
-Level 1:
-
   + ["Hello World (Colab)" Exercise](/exercises/hello-world/colab.md)
   + ["Hello World (Local)" Exercise](/exercises/hello-world/local.md)
   + ["Hello World (Version Control)" Exercise](/exercises/hello-world/version-control.md)
-
-Level 2:
-
   + ["Run the App" Exercise](/exercises/run-the-app/README.md)
