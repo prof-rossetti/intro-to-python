@@ -20,13 +20,7 @@ term | description
 
 ## Classifications
 
-Information Systems are classified
- based on
-  system purpose,
-  functionality,
-  scope,
-  audience,
-  and type of information processed:
+Information Systems can be classified based on system purpose, functionality, scope, audience, and/or type of information processed:
 
 system type | general functions |  specific example(s)
 --- | --- | ---
@@ -36,22 +30,17 @@ system type | general functions |  specific example(s)
 
 ## Components
 
-Information systems may or may not leverage technology.
-
-Examples of non-tech information systems include: a doctor's paper-based patient records system, a deli's paper-based ordering system, and a "tin-can telephone" system.
+Information systems may or may not leverage technology. Examples of non-tech information systems include: a doctor's paper-based patient records system, a deli's paper-based ordering system, and a "tin-can telephone" system.
 
 ![a "tin-can telephone"](/img/notes/info-systems/tin-can-telephone.jpg)
 
-A computer-based information system uses
- a related group of technology components working together
- to process information inputs into information outputs
- for a specific purpose. Components of a computer-based information system generally include:
+A computer-based information system uses a related group of technology components working together to process information inputs into information outputs for a specific purpose. Components of a computer-based information system generally include:
 
 component | description
 --- | ---
-People | Individuals who use the system.
-Processes | Procedures the system performs or facilitates.
-**Hardware** | Physical devices such as computers, servers, sensors, monitors, printers, speakers, etc. which perform as instructed by the system's software.
-**Software** | Written instructions which govern the system's logic.
-**Network** | Facilitates connection and communication between system components, often a computer network such as the Internet.
-Datastore | A storage place for the system's information, like a **Database** or file cabinet.
+[People](people.md) | Individuals who use the system.
+[Processes](processes.md) | Procedures the system performs or facilitates.
+[Hardware](../hardware/servers.md) | Physical devices such as computers, servers, sensors, monitors, printers, speakers, etc. which perform as instructed by the system's software.
+[Software](../software/README.md) | Written instructions which govern the system's logic.
+[Network](networks.md) | Facilitates connection and communication between system components, often a computer network such as the Internet.
+[Datastore](datastores.md) | A storage place for the system's information, like a Database or file cabinet.
