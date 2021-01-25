@@ -2,7 +2,9 @@
 
 ## Installation
 
-[Install GitHub Desktop](https://desktop.github.com/).
+[Install GitHub Desktop](https://desktop.github.com/). On Mac, drag it to your Applications folder. 
+
+Then login with your GitHub username when prompted to do so.
 
 ## Configuration
 
