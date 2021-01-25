@@ -6,8 +6,6 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
 
 ## Discussions and Notes
 
-Level 1:
-
   + [Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
   + [Version Control](/notes/software/version-control.md):
     + [The `git` Utility](/notes/clis/git.md)
