@@ -1,9 +1,9 @@
 # "Web App" Exercise
 
-> Prerequisites:
->   + [Software Products and Services](/units/unit-8.md)
->   + [The `flask` Package](/notes/python/packages/flask.md)
->   + [Web Service Exercise](/exercises/web-service/README.md), especially the deployment process
+## Prerequisites
+
+ + [The `flask` Package](/notes/python/packages/flask.md)
+ + ["Web Service" Exercise](/exercises/web-service/README.md), especially the deployment process
 
 > FYI: this web application involves some basic HTML code. To gain familiarity with HTML and the Twitter Bootstrap front-end framework, see these resources:
 >   + https://www.w3schools.com/html/html_basic.asp

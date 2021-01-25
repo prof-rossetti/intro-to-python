@@ -20,7 +20,6 @@ In this unit, we'll discuss software products and services, and practice deliver
     + [The `heroku` Utility](/notes/clis/heroku.md)
   + Web Applications:
     + [The `flask` Package](/notes/python/packages/flask.md)
-  + [Advanced Datastores](/units/unit-4b.md), revisited
 
 ## Activities and Exercises
 

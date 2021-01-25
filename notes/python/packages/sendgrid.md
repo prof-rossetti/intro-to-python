@@ -1,7 +1,5 @@
 # The `sendgrid` Package
 
-> Prerequisites: [Environment Variables](/notes/environment-variables.md), [The `dotenv` Package](/notes/python/packages/dotenv.md)
-
 The `sendgrid` package provides some useful emailing capabilities via the [SendGrid Email Delivery Service](https://sendgrid.com/solutions/email-api/). :mailbox_with_mail: :envelope:
 
 Reference:
@@ -28,7 +26,7 @@ pip install sendgrid==6.0.5
 
 First, [sign up for a free account](https://signup.sendgrid.com/), then click the link in a confirmation email to verify your account. Then [create an API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions.
 
-To setup the usage examples below, store the API Key value in an environment variable called `SENDGRID_API_KEY`. Also set an environment variable called `MY_EMAIL_ADDRESS` to be the email address you just associated with your SendGrid account (e.g. "abc123@gmail.com").
+To setup the usage examples below, store the API Key value in an [Environment Variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`. Also set an environment variable called `MY_EMAIL_ADDRESS` to be the email address you just associated with your SendGrid account (e.g. "abc123@gmail.com"). Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
 
 ## Usage
 

@@ -2,13 +2,13 @@
 
 Write a Python application to send yourself an email containing information of interest, like an up-to-date hourly weather forecast. Then deploy the application to a remote server and schedule the server to send you the email at the same time every morning.
 
-> Prerequisites:
->   + [Software Products and Services](/units/unit-8.md)
->   + [The Open Weather API](https://home.openweathermap.org/api_keys) (sign up and obtain an API Key)
->   + [The `requests` Package](/notes/python/packages/requests.md), revisited
->   + [The SendGrid API](https://app.sendgrid.com/settings/api_keys), revisited (sign up and obtain an API Key)
->   + [The `sendgrid` Package](/notes/python/packages/sendgrid.md), revisited
->   + [Heroku](/notes/clis/heroku.md) (sign up for a account and install the Heroku CLI)
+## Prerequisites
+
+  + [The Open Weather API](https://home.openweathermap.org/api_keys) (sign up and obtain an API Key)
+  + [The `requests` Package](/notes/python/packages/requests.md)
+  + [The SendGrid API](https://app.sendgrid.com/settings/api_keys) (sign up and obtain an API Key)
+  + [The `sendgrid` Package](/notes/python/packages/sendgrid.md)
+  + [Heroku](/notes/clis/heroku.md) (sign up for a account and install the Heroku CLI)
 
 This exercise is inspired by a [project](https://github.com/mgallea/daily-email) by former student @mgallea.
 

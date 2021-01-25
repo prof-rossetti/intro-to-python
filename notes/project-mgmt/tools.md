@@ -1,10 +1,6 @@
 
 # Project Management Tools and Techniques
 
-> Prerequisites:
->   + [Technology Project Management](README.md)
->   + [The Systems Development Lifecycle (SDLC)](dev-lifecycle.md)
-
 ## Gantt Charts
 
 A **Gantt Chart** helps project managers plan project efforts over time, specifically identifying any dependencies that exist between sub-processes, or "tasks".

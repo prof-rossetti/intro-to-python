@@ -1,7 +1,6 @@
 # "Web Requests" Exercise
 
 > Prerequisite:
->   + [Networks, and Processing Data from the Internet](/units/unit-6.md)
 >   + [The `requests` Package](/notes/python/packages/requests.md)
 
 ## Learning Objectives

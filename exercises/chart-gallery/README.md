@@ -1,8 +1,5 @@
 # "Chart Gallery" Exercise
 
-> Prerequisites:
->   + [Business Intelligence and Dataviz](/units/unit-5b.md)
-
 ## Learning Objectives
 
   + Learn how to create data visualizations in Python.

@@ -1,7 +1,5 @@
 # "Custom Functions" Exercise
 
-> Prerequisites: [Functions](/notes/python/functions.md)
-
     --------------------
     CUSTOM FUNCTIONS EXERCISE...
     --------------------
@@ -10,6 +8,10 @@
     --------------------
     THE NUMERIC SCORE IS: 87.5
     THE LETTER-GRADE EQUIVALENT IS: B+
+
+## Prerequisites
+
+  + [Functions](/notes/python/functions.md)
 
 ## Learning Objectives
 

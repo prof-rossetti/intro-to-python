@@ -1,10 +1,10 @@
 # "Robo Advisor" Project
 
-> Prerequisites:
->  + [Networks, and Processing Data from the Internet](/units/unit-6.md)
->  + [APIs](/notes/software/apis.md)
->  + [Environment Variables](/notes/environment-variables.md)
->  + The ["Web Requests" Exercise](/exercises/web-requests/README.md)
+## Prerequisites
+
+  + [APIs](/notes/software/apis.md)
+  + [Environment Variables](/notes/environment-variables.md)
+  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
 
 
 ## Learning Objectives

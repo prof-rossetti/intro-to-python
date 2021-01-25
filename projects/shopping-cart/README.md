@@ -4,7 +4,6 @@
 
 To succeed in developing this project, you should have already:
 
-   + Gained familiarity with the [Python Language Overview](/units/unit-2.md).
    + Completed the ["Groceries" Exercise](/exercises/groceries/README.md), specifically the part about looking up matching products.
    + Completed the ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md).
    + Read about [The `datetime` Module](/notes/python/modules/datetime.md).

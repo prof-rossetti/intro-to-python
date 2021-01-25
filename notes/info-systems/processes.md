@@ -1,7 +1,5 @@
 # Processes
 
-> Prerequisites: [Information Systems](README.md)
-
 Computer-based information systems enable or facilitate some set of defined processes or procedures.
 
 ## Process Analysis

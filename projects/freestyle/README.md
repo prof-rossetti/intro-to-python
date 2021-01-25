@@ -1,10 +1,5 @@
 # The Self-Directed (a.k.a "Freestyle") Project
 
-> Prerequisites:
->   + [Software Maintenance and Quality Control](/units/unit-8.md)
->   + [Software Products and Services](/units/unit-9.md)
->   + [The Systems Development Lifecycle (SDLC)](/units/unit-10.md)
-
 This project provides students with an opportunity to create software to suit their own business or personal interests.
 
 ## Learning Objectives

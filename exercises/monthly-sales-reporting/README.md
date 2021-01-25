@@ -1,8 +1,8 @@
 # The "Monthly Sales Reporting" Exercise
 
-> Prerequisites:
->   + [Datastores, and Processing CSV Data](/units/unit-5a.md)
->   + The [`csv`](/notes/python/modules/csv.md) and [`itertools`](/notes/python/modules/itertools.md) Modules, or [The `pandas` Package](/notes/python/packages/pandas.md)
+# Prerequisites
+
+  + The [`csv`](/notes/python/modules/csv.md) and [`itertools`](/notes/python/modules/itertools.md) Modules ... OR ... [The `pandas` Package](/notes/python/packages/pandas.md)
 
 ## Learning Objectives
 

@@ -1,6 +1,8 @@
 # Data Flow Diagramming Exercise
 
-> Prerequisites: [Information Systems](/notes/info-systems/README.md)
+## Prerequisites
+
+  + [Information Systems](/notes/info-systems/README.md)
 
 ## Learning Objectives
 

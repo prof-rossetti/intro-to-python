@@ -1,10 +1,12 @@
 # The `dotenv` Package
 
-> Prerequisites: [Environment Variables](/notes/environment-variables.md), [The `os` Module](/notes/python/modules/os.md#environment-variables)
+The `dotenv` package allows a program to reference [Environment Variables](/notes/environment-variables.md) from a special file called ".env" in the root directory of the given project, instead of passing them from the command-line.
 
-The `dotenv` package allows a program to reference environment variables from a project-specific ".env" file. This makes environment variables much easier to manage, especially for Windows users.
+This file-based approach makes environment variables much easier to manage, especially for Windows users.
 
 Reference: https://github.com/theskumar/python-dotenv.
+
+See also: [The `os` Module](/notes/python/modules/os.md#environment-variables) for reading environment variables
 
 ## Installation
 

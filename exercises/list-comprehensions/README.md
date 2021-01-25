@@ -1,8 +1,8 @@
 # "List Comprehensions" Exercise
 
-> Prerequisites:
->   + [Python Datatypes](/units/unit-3.md)
->   + [Lists](/notes/python/datatypes/lists.md)
+## Prerequisites
+
+  + [Lists](/notes/python/datatypes/lists.md)
 
 ## Learning Objectives
 

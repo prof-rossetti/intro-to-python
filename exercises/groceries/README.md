@@ -1,8 +1,5 @@
 # "Groceries" Exercise
 
-> Prerequisites:
->   + [Python Datatypes](/units/unit-3.md)
-
 ## Learning Objectives
 
   + Gain familiarity with the Python programming language, focusing on datatypes and looping.
