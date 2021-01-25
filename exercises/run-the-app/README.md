@@ -3,9 +3,8 @@
 ## Prerequisites
 
 This exercise assumes you have already:
-  1. Installed Anaconda by following instructions in the [Onboarding Guide](/units/unit-0.md).
-  2. Gained familiarity with Git repositories by completing the [Version Control Exercise](/exercises/version-control/README.md).
-  3. Read about [Environment Variables](/notes/environment-variables.md).
+  1. Gained familiarity with Git repositories by completing the [Version Control Exercise](/exercises/hello-world/version-control.md).
+  2. Read about [Environment Variables](/notes/environment-variables.md).
 
 ## Learning Objectives
 

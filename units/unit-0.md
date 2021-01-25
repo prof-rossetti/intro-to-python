@@ -8,7 +8,6 @@ Hello and welcome! In this unit, we'll gain familiarity with high-level concepts
 
   + [Information Systems](/notes/info-systems/README.md)
   + [Software](/notes/software/README.md)
-  + [Local Development Tools Overview](/exercises/api-client/README.md)
 
 ## Activities and Exercises
 

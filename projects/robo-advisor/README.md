@@ -92,7 +92,7 @@ After setting up a virtual environment, we will be ready to install these packag
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n stocks-env python=3.7 # (first time only)
+conda create -n stocks-env python=3.8 # (first time only)
 conda activate stocks-env
 ```
 

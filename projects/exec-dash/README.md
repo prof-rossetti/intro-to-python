@@ -74,7 +74,7 @@ Finally, download one or more of the ["monthly sales data"](/data/monthly-sales)
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n dashboard-env python=3.7 # (first time only)
+conda create -n dashboard-env python=3.8 # (first time only)
 conda activate dashboard-env
 ```
 
@@ -174,4 +174,3 @@ Dev Process | Submitted via remote Git repository which reflects an incremental 
 If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by between 4% and 25%, depending on the circumstances and severity of the error(s).
 
 In recognition of deliverables which exhibit functionality above and beyond the basic requirements, evaluators are encouraged to award between 4% and 15% "engagement points" to be applied as extra credit.
-

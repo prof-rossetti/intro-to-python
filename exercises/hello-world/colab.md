@@ -40,10 +40,9 @@ For more information about Markdown syntax, see the [Markdown Guide](https://gui
 Example Python code:
 
 ```py
-# This is an example python code cell
-# Run it and see the output below
-# These lines are "comments", starting with the #
-# Don't be confused that # means something different in .md and .py files.
+# This is some example python code
+# These lines starting with # are "comments"
+# Don't be confused that # means something different in .md files than .py files
 
 print("HELLO WORLD!")
 

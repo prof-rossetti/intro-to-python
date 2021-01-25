@@ -42,7 +42,7 @@ Make sure to save Python files like this whenever you're done editing them. Afte
 Create and activate a new Anaconda virtual environment:
 
 ```sh
-conda create -n requests-env python=3.7 # (first time only)
+conda create -n requests-env python=3.8 # (first time only)
 conda activate requests-env
 ```
 
