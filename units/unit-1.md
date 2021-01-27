@@ -25,4 +25,4 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
   + ["Hello World (Colab)" Exercise](/exercises/hello-world/colab.md)
   + ["Hello World (Local)" Exercise](/exercises/hello-world/local.md)
   + ["Hello World (Version Control)" Exercise](/exercises/hello-world/version-control.md)
-  + "Run the App" Exercise -- under construction
+  + ["Run the App" Exercise](/exercises/run-the-app/README.md)
