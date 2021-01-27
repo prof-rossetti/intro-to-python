@@ -16,7 +16,7 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
   + Installing Python Packages:
     + [The `pip` Utility](/notes/clis/pip.md)
   + [Version Control](/notes/software/version-control.md):
-    + [GitHub Desktop Softawre](/notes/devtools/github-desktop.md)
+    + [GitHub Desktop Software](/notes/devtools/github-desktop.md)
     + [The `git` Utility](/notes/clis/git.md)
   + [Environment Variables](/notes/environment-variables.md)
 
