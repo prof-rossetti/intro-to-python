@@ -14,27 +14,41 @@ Increase font size to 18.
 
 ## Shortcuts
 
-Add the following contents to a special file called *~/.bash_profile*:
+Optionally further configure the profile by setting specific variables in a special configuration file. This file is called "\~/.bash_profile" for bash shell users (older Macs, Windows Git Bash), or "\~/.zshrc" for zsh shell users (newer Macs). Files beginning with a "." are generally hidden files, so to access them we'll use the text editor's shell commands:
+
+```sh
+# Windows Git Bash, Older Macs:
+code ~/.bash_profile
+
+# Newer Macs:
+code ~/.zshrc
+```
+
+After opening the file in your text editor, you can place any of the following contents inside:
+
 
 ``` sh
 # ~/.bash_profile
 
 #
-# CONFIGURATION
+# CONFIGURATIONS
 #
 
-export PS1=" --->> " # see: https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
+# control the "prompt" message that shows up in the terminal. see also: https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
+export PS1=" --->> " 
+
+# control some colors. see also: https://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #
-# SHORTCUTS
+# SHORTCUTS / ALIASES
 #
 
-# list all files in a different / more desirable format:
+# listing all files in an easier to read format:
 alias ll="ls -lahG"
 
-# Git command shortcuts:
+# shortcuts for git commands:
 alias gb="git branch"
 alias gd="git diff"
 alias gl="git log"
@@ -44,19 +58,10 @@ alias gpom="git pull origin master"
 alias gr="git remote -v"
 alias gs="git status"
 
-# hide or show all icons on the desktop:
+# hiding or showing all icons on the desktop (can be helpful for screenshare or zen modes):
 alias deskhide="defaults write com.apple.finder CreateDesktop false && killall Finder"
 alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Finder"
 ```
 
-> NOTE: newer Macs may use the "zsh" shell instead of the "bash" shell, in which case you can do the "\~/.bash_profile" customizations using a file like "\~/.zshrc" instead.
+After editing the config file, save the file. You may need to close your terminal window and re-open a new one for the changes to take effect.
 
-> FYI: Files beginning with a "." are generally hidden files, so to access them we'll use the VS Code text editor (see onboarding instructions for a link to install VS Code first), after having installed the `code` shell commands:
-
-```sh
-# Windows Git Bash, Older Macs:
-code ~/.bash_profile
-
-# Newer Macs:
-code ~/.zshrc
-```
