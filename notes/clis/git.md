@@ -8,13 +8,18 @@ References:
 
   + https://github.com/git/git
   + https://git-scm.com/doc
+
+References for Beginners:
+  + https://guides.github.com/introduction/git-handbook/
   + https://guides.github.com/introduction/flow/
+  + https://www.youtube.com/githubguides
+  + https://www.youtube.com/watch?v=MJUJ4wbFm_A
+  
+Command-Line References:
   + https://education.github.com/git-cheat-sheet-education.pdf
   + https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
   + https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line
   + https://www.atlassian.com/git/tutorials
-  + https://www.youtube.com/watch?v=MJUJ4wbFm_A
-  + https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
 ## Installation
 
@@ -74,9 +79,10 @@ git config --global user.email
 
 References:
 
- + https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh#step-2-generate-a-new-ssh-key
- + https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
- + https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+  + https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+  + https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh#step-2-generate-a-new-ssh-key
+  + https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+  + https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
 
 If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub, first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
 
