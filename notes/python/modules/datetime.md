@@ -29,3 +29,16 @@ print(july_fourth.strftime("%Y-%m-%d")) #> "2017-07-04"
 some_day = datetime.datetime.strptime("2020, 12, 31", "%Y, %m, %d")
 str(some_day) #> '2020-12-31 00:00:00'
 ```
+
+```python
+from datetime import datetime
+
+now = datetime.now()
+print(now) #> 2021-01-29 15:44:30.073718
+print(now.strftime("%Y-%m-%d")) #> 2021-01-29
+print(now.strftime("%H:%M:%S")) #> 15:44:30
+print(now.strftime("%Y-%m-%d %H:%M:%S")) #> 2021-01-29 15:44:30
+```
+
+
+
