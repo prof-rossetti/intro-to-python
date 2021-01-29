@@ -1,6 +1,6 @@
 # Anaconda
 
-Anaconda provides a command-line utility called `conda` for installing and managing different versions of the Python programming language and third-party packages.
+Anaconda provides a command-line utility called `conda` for installing and managing different versions of the Python programming language and third-party packages.  
 
 > Anaconda is a package manager, an environment manager, a Python/R data science distribution, and a collection of over 1,500+ open source packages. Anaconda is free and easy to install, and it offers free community support. - [Anaconda website](https://docs.anaconda.com/anaconda/)
 
@@ -93,7 +93,9 @@ All subsequent commands assume you are running them from within the project's ro
 View a list of existing virtual environments:
 
 ```sh
-conda env list
+# conda env list
+# ... OR ...
+conda info --envs
 ```
 
 Create a new virtual environment, and name it something like "my-first-env":
@@ -126,8 +128,5 @@ python --version #> Python 3.6.7 :: Anaconda, Inc.
 which pip #> /anaconda3/envs/my-first-env/bin/pip
 pip --version #> pip 18.1 from /anaconda3/envs/my-first-env/lib/python3.6/site-packages/pip (python 3.6)
 ```
-
-![](/img/notes/clis/conda/managing-envs.png)
-
 
 For more information, see notes on [the `python` utility](python.md) and [the `pip` utility](pip.md).
