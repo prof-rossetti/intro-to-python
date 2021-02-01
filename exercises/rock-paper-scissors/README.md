@@ -131,7 +131,20 @@ Thanks for playing. Please play again!
 
 Finally, update your program to allow the user to configure their own player name by passing an environment variable called "PLAYER_NAME" stored in a local ".env" file.
 
-Make sure to add corresponding instructions to the README file, to let the player know how to set up the .env file.
+Make sure to add corresponding instructions to the README file, to let the player know how to set up the ".env" file.
+
+Make sure the repository's ".gitignore" file includes an entry about the ".env" file, and ensure the ".gigitnore" file is saved and committed before adding a ".env" file. This should already be the case if you added a Python-flavored ".gitignore" file during the repo creation step.
+
+Example "requirements.txt" file contents:
+
+```sh
+# this is the requirements.txt file
+
+python-dotenv # see: https://github.com/theskumar/python-dotenv
+```
+
+Also note we are now requiring the program to use a third-party package, so we should add a "requirements.txt" file to the repo with the package name inside. And we should add a `pip install -r requirements.txt` step to the README file to instruct the user to install packages before trying to run the program.
+
 
 
 ## Evaluation
@@ -140,12 +153,12 @@ Exercise submissions will be evaluated according to the requirements set forth a
 
 Category | Requirement | Weight
 --- | --- | ---
-Repository | Includes README.md file with detailed instructions. | 15%
+Repository | Includes README.md file with detailed instructions, including the appropriate setup instructions, and the exact `pip` and `python` commands needed to run the program. | 20%
 Info Inputs | Instructs the user to provide an input, and then captures and stores that user input. | 10%
 Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors") | 15%
 Calculations | Displays accurate information about which player is the winner. | 15%
 Info Outputs | Presents all desired information outputs to the user. | 10%
-Player Customization | Instructs and enables the user to configure their own player name without revising the code, by passing an environment variable from a local ".env" file. | 15%
+Player Customization | Instructs and enables the user to configure their own player name without revising the code, by passing an environment variable from a local ".env" file. | 10%
 Dev Process | Submitted via remote Git repository which reflects an incremental revision history with at least a handful of commits. | 20%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
