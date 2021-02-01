@@ -15,7 +15,7 @@
 
 ## Instructions
 
-Iteratively develop a Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer (NPC) opponent. The game's functionality should adhere to the "Basic Requirements" below.
+Iteratively develop a command-line Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer (NPC) opponent. The game's functionality should adhere to the "Requirements" below.
 
 Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub and a local copy on your computer within which to develop.
 
@@ -67,11 +67,11 @@ If you see the "Rock, Paper, Scissors, Shoot!" message, you're ready to move on 
 
 ## Requirements
 
-Once you have completed the setup section above, you are ready to tackle the implementation of this exercise, as described by the sections below.
+Once you have completed the setup section above, you are ready to tackle the implementation of this exercise, as described by the sections below. To develop good version control habits, aim to make a separate commit after completing each section.
 
 ### Processing User Inputs
 
-The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via command-line interface (CLI).
+The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via command-line interface (CLI). It should store the user's selection in a variable for later reference.
 
 > HINT: use [the `input()` function](/notes/python/inputs.md) to capture user inputs.
 
@@ -89,7 +89,7 @@ The application should select one of the options (i.e. "rock", "paper", or "scis
 
 > HINT: use the `choice()` function provided by [the `random` module](/notes/python/modules/random.md).
 
-> HINT: ensure the valid choices are stored in a ["list" datatype](/notes/python/datatypes/lists.md), and then pass that list to the random choice function
+> HINT: ensure the valid choices are stored in a ["list" datatype](/notes/python/datatypes/lists.md), and then pass that list to the random choice function.
 
 ### Determining the Winner
 
@@ -104,7 +104,7 @@ The application should compare the user's selection to the computer player's sel
 
 ### Displaying Results
 
-After determining the winner, the application should display the results to the user. Desired information outputs include:
+After determining the winner, the application should display the results to the user. Desired information outputs (from start to finish) should include at least the following:
 
   + A friendly welcome message, including the player's name (by default, use "Player One").
   + The user's selected option
@@ -112,7 +112,7 @@ After determining the winner, the application should display the results to the 
   + Whether the user or the computer was the winner
   + A friendly farewell message
 
-Example desired output:
+Example desired output after one round of game-play:
 
 ```
 -------------------
