@@ -2,26 +2,31 @@
 
 ## Learning Objectives
 
-  + Gain familiarity with the Python programming language, focusing on variables, functions, and conditional logic.
-  + Practice processing and validating user inputs in Python.
-  + Practice using a text editor to edit and save files of Python code.
-  + Practice incorporating version control into your development process.
+  + Gain familiarity with the Python programming language, focusing on variables and conditional logic.
+  + Learn how to process and validate user inputs in Python.
   + Learn how to import and access functionality provided by Python modules.
+  + Practice editing, saving, and executing local Python programs.
+  + Practice incorporating version control into your local development process.
+
+## Prerequisites
+
+  + ["Run the App" Exercise](/exercises/run-the-app/README.md)
+  + Python Language Overview (focusing on [Variables](/notes/python/variables.md) and [Conditionals](/notes/python/control-flow.md))
 
 ## Instructions
 
-Iteratively develop a Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer (AI) opponent. The game's functionality should adhere to the "Basic Requirements" below.
+Iteratively develop a Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer (NPC) opponent. The game's functionality should adhere to the "Basic Requirements" below.
 
-Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub.com and a local copy on your computer within which to develop.
+Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub and a local copy on your computer within which to develop.
 
-When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub.com at least once before you're done.
+When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub at least once before you're done.
 
 
 ## Setup
 
 ### Repo Setup
 
-Use the GitHub.com online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub.com online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub.com at an address like `https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise`.
+Use the GitHub online interface to create a new remote project repository called something like "rock-paper-scissors-exercise". When prompted by the GitHub online interface, let's get in the habit of adding a "README.md" file and a Python-flavored ".gitignore" file (and also optionally a "LICENSE") during the repo creation process. After this process is complete, you should be able to view the repo on GitHub at an address like `https://github.com/YOUR_USERNAME/rock-paper-scissors-exercise`.
 
 After creating the remote repo, use GitHub Desktop software or the command-line to download or "clone" it onto your computer. Choose a familiar download location like the Desktop.
 
