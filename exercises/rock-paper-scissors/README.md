@@ -4,7 +4,7 @@
 
   + Gain familiarity with the Python programming language, focusing on variables and conditional logic.
   + Learn how to process and validate user inputs in Python.
-  + Learn how to import and access functionality provided by Python modules.
+  + Learn how to import and access functionality provided by built-in Python modules and third-party Python packages.
   + Practice editing, saving, and executing local Python programs.
   + Practice incorporating version control into your local development process.
 
@@ -153,9 +153,9 @@ Exercise submissions will be evaluated according to the requirements set forth a
 
 Category | Requirement | Weight
 --- | --- | ---
-Repository | Includes README.md file with detailed instructions, including the appropriate setup instructions, and the exact `pip` and `python` commands needed to run the program. | 20%
+Repository | Includes a README file with detailed instructions, including the appropriate setup instructions, and the exact `conda`, `pip`, and `python` commands needed to run the program from scratch. | 20%
 Info Inputs | Instructs the user to provide an input, and then captures and stores that user input. | 10%
-Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors") | 15%
+Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors"). | 15%
 Calculations | Displays accurate information about which player is the winner. | 15%
 Info Outputs | Presents all desired information outputs to the user. | 10%
 Player Customization | Instructs and enables the user to configure their own player name without revising the code, by passing an environment variable from a local ".env" file. | 10%
