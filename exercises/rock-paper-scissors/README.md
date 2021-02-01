@@ -158,7 +158,7 @@ Info Inputs | Instructs the user to provide an input, and then captures and stor
 Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors"). | 15%
 Calculations | Displays accurate information about which player is the winner. | 15%
 Info Outputs | Presents all desired information outputs to the user. | 10%
-Player Customization | Instructs and enables the user to configure their own player name without revising the code, by passing an environment variable from a local ".env" file. | 10%
+Customization | Instructs and enables the user to configure their own player name without revising the code, by passing an environment variable from a local ".env" file. | 10%
 Dev Process | Submitted via remote Git repository which reflects an incremental revision history with at least a handful of commits. | 20%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
