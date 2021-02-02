@@ -80,21 +80,9 @@ Once you are able to successfully detect your installation of Anaconda, you are 
 
 ### The `conda` Utility
 
-When activating Anaconda virtual environments and issuing project-specific `conda` commands, we generally want to do so within that project's directory. So let's take a moment to create a new project directory now, then navigate there from the command line:
-
-```sh
-cd path/to/my-first-project/ # where path/to/my-first-project/ is the actual path of your desired project directory
-```
-
-All subsequent commands assume you are running them from within the project's root directory.
-
-#### Managing Virtual Environments
-
 View a list of existing virtual environments:
 
 ```sh
-# conda env list
-# ... OR ...
 conda info --envs
 ```
 
@@ -119,7 +107,7 @@ conda activate my-first-env
 # conda deactivate
 ```
 
-Once activating the environment, you should be able to detect and use its installations of Python and Pip:
+After activating the environment, you should be able to detect and use its installations of Python and Pip:
 
 ```sh
 which python #> /anaconda3/envs/my-first-env/bin/python
