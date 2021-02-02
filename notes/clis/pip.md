@@ -35,6 +35,7 @@ If we have an existing project, we can `pip freeze > requirements.txt` to create
 
 First create a new "requirements.txt" file in your repository's root directory, then revise the file to include the names of the packages your project requires. Write the name of each Python package dependency on a new line. For example, any of the following:
 
+    # this is the requirements.txt file!
     pytest
     requests
     pandas
