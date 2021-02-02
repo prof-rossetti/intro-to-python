@@ -17,5 +17,5 @@ In this unit, we will take a high-level guided tour of the Python programming la
 
 ## Activities and Exercises
 
-  + ["Custom Functions" Exercise (Colab)](/exercises/custom-functions/Custom_Functions_Exercise.ipynb)
+  + ["Custom Functions" Exercise (Colab)](https://colab.research.google.com/drive/1fyJb4kJ3YDYjV7llYL-TGhad09UJT3Mm?usp=sharing) and [Solutions](/exercises/custom-functions/Custom_Functions_Exercise.ipynb)
   + ["Rock Paper Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
