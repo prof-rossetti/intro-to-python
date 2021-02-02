@@ -54,13 +54,12 @@ If you type `python` on Mac Terminal (or `python -i` on Windows Git Bash) and pr
 
 ### Executing Scripts
 
-You can alternatively use the `python` utility to execute a pre-written Python program, by specifying its filepath (e.g. `~/Desktop/my_script.py` if a file called "my_script.py" exists on your Desktop with some valid Python code in it):
+You can alternatively use the `python` utility to execute a pre-written Python program, by specifying its filepath. To test this out yourself, follow the instructions in the [Hello World (Local) Exercise](/exercises/hello-world/local.md).
 
 ```sh
-python ~/Desktop/my_script.py
+python path/to/my_script.py
 ```
 
 ![a screenshot of the output resulting from running a python script from the command-line. the hello message is printed in the terminal](/img/notes/clis/python/running-python-scripts.png)
 
-To test this out yourself, follow the instructions in the [Hello World (Local) Exercise](/exercises/hello-world/local.md).
 
