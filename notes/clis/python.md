@@ -32,6 +32,8 @@ Let's see which version of Python is installed:
 python --version
 ```
 
+If you see a result here like "Python 3.8.3" (or some other 3.x version), it means the specified version of Python is installed, so you can advance to the usage instructions below. Otherwise, if you see an empty result, error message, or 2.x version, that usually means Python is not installed (properly).
+
 ## Usage
 
 After Python is installed, you should be able to execute Python commands.
