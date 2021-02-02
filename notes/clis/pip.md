@@ -31,7 +31,7 @@ pip install pandas # where pandas is the name of a package we want to install
 
 We can also manage project-specific package dependencies by listing them all in a special file called "requirements.txt" in the project's root directory. This is the recommended approach that allows us to install all the packages at once, and also keeps an official record of their versions. It is possible for "breaking changes" from updated versions of underlying packages to introduce bugs into our apps, so it is helpful to keep track of which versions are being used. 
 
-If we have an existing project, we can `pip freeze > requirements.txt` to create a new requirements file to reflect the existing environment. But more commonly, we'll create the requirements file fist and build the environment around it.
+If we have an existing project, we can `pip freeze > requirements.txt` to create a new requirements file to reflect the existing environment. But more commonly, we'll create the requirements file first and build the environment around it.
 
 First create a new "requirements.txt" file in your repository's root directory, then revise the file to include the names of the packages your project requires. Write the name of each Python package dependency on a new line. For example, any of the following:
 
