@@ -23,5 +23,5 @@ In this unit, we continue a guided tour of the Python programming language, focu
 ## Activities and Exercises
 
   + ["Groceries" Exercise](/exercises/groceries/README.md)
-  + ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md)
-  + "Data Processing" Exercise
+  + ["List Comprehensions" Exercise (Colab)](https://colab.research.google.com/drive/1SBWW2Waedzn-FZRbaIxwP5HQz6smxBPe?usp=sharing) | [(Local)](/exercises/list-comprehensions/README.md)
+  + ["Crunch the Data" Exercise (Colab)](https://colab.research.google.com/drive/1G_Mp7hyV3xRBDjDrS0KEDY1QwOxHXG_q?usp=sharing)
