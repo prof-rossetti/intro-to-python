@@ -45,7 +45,7 @@ Before committing, add the credentials filepath to your ".gitignore" file to ens
 ```sh
 # .gitignore
 
-auth/google_api_credentials.json
+auth/google-credentials.json
 ```
 
 ### Configuring Spreadsheet Document
@@ -72,7 +72,7 @@ SHEET_NAME = os.getenv("SHEET_NAME", default="Products")
 # AUTHORIZATION
 #
 
-CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "..", "auth", "spreadsheet_credentials.json")
+CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "..", "auth", "google-credentials.json")
 
 AUTH_SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets", #> Allows read/write access to the user's sheets and their properties.
