@@ -4,13 +4,14 @@ This document provides optional project challenges for students seeking a greate
 
 ## Configuring Sales Tax Rate
 
-> BONUS POINTS: 3-4%
+> BONUS POINTS: 3-4% (RECOMMENDED)
 
-You'd like to share your code with stores in other locations as well, but different municipalities use different sales tax rates. Instead of hard-coding the sales tax rate, allow the user to configure it via environment variable using a ".env" file approach.
+You'd like to use your app in stores in other locations, but different municipalities use different sales tax rates. Instead of hard-coding the sales tax rate, allow the user to configure it via environment variable using a ".env" file approach. The ".env" file must be ignored from version control as a best practice, by using a corresponding entry in the ".gitignore" file. Your "README.md" file must contain instructions for how the user can set up their own local ".env" file, including an example of the variable assignment.
 
 > HINT: use [The `os` Module](/notes/python/modules/os.md) in conjunction with [The `dotenv` Package](/notes/python/packages/dotenv.md)
 
 > HINT: you might need to use the `float()` function to convert the environment variable value to a float datatype, so you can perform numeric calculations with it
+
 
 ## Handling Pricing per Pound
 
@@ -30,7 +31,7 @@ Each text file should be named according to the date and time the checkout proce
 
 > HINT: consult the notes on [file management](/notes/python/file-management.md) for examples of how to write to file in Python
 
-> NOTE: to prevent clutter, exclude these receipt files from being tracked in version control by creating a new "receipts" directory with its own ".gitignore" file, and adding the following contents inside:
+> NOTE: to prevent clutter, exclude these receipt files from being tracked in version control by creating a new ".gitignore" file in the "receipts" directory, and adding the following contents inside:
 >
 >     # receipts/.gitignore
 >
@@ -42,7 +43,7 @@ Each text file should be named according to the date and time the checkout proce
 
 ## Sending Receipts via Email
 
-> BONUS POINTS: 6-8% (RECOMMENDED CHALLENGE)
+> BONUS POINTS: 6-8% (RECOMMENDED)
 
 In addition to displaying a receipt at the end of the checkout process, the program should prompt the checkout clerk or the customer to indicate whether the customer would like to receive the receipt by email. And if so, it should prompt the checkout clerk or the customer to input the customer's email address, and then it should send the receipt information to the customer by email. The clerk's network-connected computer should be able to send these emails.
 
@@ -56,7 +57,17 @@ At the very least, the email should display the checkout timestamp and the total
 
 Instead of using a hard-coded `products` variable, download or copy the contents of the provided ["products.csv" file](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.csv) into your project directory in a new subdirectory called "data" (so the path to the CSV file should be "data/products.csv"). Then update your code to read the `products` from this CSV file.
 
-> HINT: leverage the capabilities of [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) for CSV file management.
+> HINT: leverage the capabilities of [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
+
+> NOTE: to prevent clutter, exclude the CSV file from being tracked in version control by creating a new ".gitignore" file within the "data" directory, and adding the following contents inside:
+>
+>     # data/.gitignore
+>
+>     # ignore all the files in this directory:
+>     *
+>
+>     # but don't ignore this ".gitignore" file:
+>     !.gitignore
 
 
 ## Integrating with a Google Sheets Datastore
