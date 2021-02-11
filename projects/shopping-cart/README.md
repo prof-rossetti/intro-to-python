@@ -1,18 +1,5 @@
 # "Shopping Cart" Project
 
-## Prerequisites:
-
-To succeed in developing this project, you should have already:
-
-   + Completed the ["Groceries" Exercise](/exercises/groceries/README.md), specifically the part about looking up matching products.
-   + Completed the ["List Comprehensions" Exercise](/exercises/list-comprehensions/README.md).
-   + Read about [The `datetime` Module](/notes/python/modules/datetime.md).
-   + Read about [Raising and Handling Errors](/notes/python/errors.md).
-
-It also helps if you have:
-
-  + Completed the ["Rock Paper Scissors" Exercise](/exercises/rock-paper-scissors/README.md)
-
 ## Learning Objectives
 
   1. Create a tool to facilitate and streamline a real-world business process.
@@ -30,7 +17,7 @@ Instead, the store owner describes a desired checkout process which involves the
 
 The store owner says it would be "acceptable but not preferable" to manage the inventory of products via the application's source code, that it would be "better" to manage the inventory of products via a local CSV file stored on the checkout computer, and that it would be "ideal" to be able to manage the inventory of products via a centralized Google Sheet spreadsheet document.
 
-The store owner also says it would be "nice to have" a feature which prompts the checkout clerk or the customer to input the customer's email address in order to send them a receipt via email.
+The store owner also says it would be "nice to have" a feature which prompts the checkout clerk or the customer to input the customer's email address in order to send them a receipt via email. And that it would be "ideal" to also save the customer's email addresses somewhere (if the customer consents to opt-in to the customer loyalty program).
 
 ## Instructions
 
@@ -53,7 +40,7 @@ After creating the remote repo, use GitHub Desktop software or the command-line 
 After cloning the repo, navigate there from the command-line:
 
 ```sh
-cd ~/Desktop/shopping-cart
+cd ~/Desktop/shopping-cart 
 ```
 
 Use your text editor or the command-line to create a file in that repo called "shopping_cart.py", and then place the following contents inside:
@@ -84,6 +71,7 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
+
 def to_usd(my_price):
     """
     Converts a numeric value to usd-formatted string, for printing and display purposes.
@@ -96,6 +84,7 @@ def to_usd(my_price):
     """
     return f"${my_price:,.2f}" #> $12,000.71
 
+
 # TODO: write some Python code here to produce the desired output
 
 print(products)
@@ -106,16 +95,16 @@ Make sure to save Python files like this whenever you're done editing them. Afte
 
 #### Environment Setup
 
-Create and activate a new Anaconda virtual environment:
+It is possible to complete this project using the "base" Anaconda environment, because the basic requirements don't require any third-party packages. However if you eventually end up tackling bonus challenges that require third-party packages, then you'll want to create and activate a new Anaconda virtual environment, and use a "requirements.txt" file approach to installing your packages:
 
 ```sh
-conda create -n shopping-env python=3.8 # (first time only)
+# IF USING THIRD-PARTY PACKAGES, USE A NEW ENV:
+conda create -n shopping-env python=3.8 
 conda activate shopping-env
+pip install -r requirements.txt # (after specifying desired packages inside)
 ```
 
-> NOTE: It is possible to complete the project without needing any third-party packages. But if you do end up using any third-party packages (for example when addressing the further exploration challenges), you MUST include a "requirements.txt" file with all the packages listed inside!
-
-From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+Within an active virtual environment of choice ("base" or project-specific), demonstrate your ability to run the Python script from the command-line:
 
 ```sh
 python shopping_cart.py
@@ -209,14 +198,15 @@ Project submissions will be evaluated according to the requirements set forth ab
 
 Category | Requirement | Weight
 --- | --- | ---
-Info Inputs | Captures / scans product identifiers | 10%
-Info Inputs | Handles invalid inputs | 10%
-Info Inputs | Handles the "DONE" signal | 10%
-Info Outputs (Receipt) | Displays store info | 10%
-Info Outputs (Receipt) | Displays checkout date and time | 10%
-Info Outputs (Receipt) | Displays names and prices of all scanned products | 15%
-Info Outputs (Receipt) | Displays tax and totals | 15%
-Dev Process | Submitted via Git repository which reflects an incremental revision history | 20%
+Repository | Includes README.md file with detailed instructions, including specific `python` run command. If requiring third-party packages, must specify `conda` environment management commands and `pip` installation commands in conjunction with a "requirements.txt" file approach. If using environment variables, must use a secure ".env" file approach. | 12%
+Info Inputs | Captures / scans product identifiers. | 8%
+Info Inputs | Handles invalid inputs, fails gracefully on invalid product lookups. | 10%
+Info Inputs | Instructs the user about, and handles, the "DONE" signal. | 10%
+Info Outputs (Receipt) | Displays store info. | 8%
+Info Outputs (Receipt) | Displays checkout date and time, in a human-friendly format. | 10%
+Info Outputs (Receipt) | Displays names and prices of all scanned products. | 15%
+Info Outputs (Receipt) | Displays tax and totals. | 15%
+Dev Process | Submitted via Git repository which reflects an incremental revision history. | 12%
 
 If experiencing execution error(s) while evaluating the application's required functionality, evaluators are advised to reduce the project's grade by between 4% and 25%, depending on the circumstances and severity of the error(s).
 
