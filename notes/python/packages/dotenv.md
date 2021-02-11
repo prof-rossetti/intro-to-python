@@ -36,14 +36,13 @@ SECRET_MESSAGE="Hello World"
 ```py
 # my-secure-project/my_script.py
 
-from dotenv import load_dotenv
 import os
-
-print(os.getenv("SECRET_MESSAGE")) #> None
+from dotenv import load_dotenv
 
 load_dotenv() #> loads contents of the .env file into the script's environment
 
-print(os.getenv("SECRET_MESSAGE")) #> "Hello World"
+print(os.getenv("SECRET_MESSAGE")) # reads the variable from the environment
+#> "Hello World"
 ```
 
 And run the script to see the output:
