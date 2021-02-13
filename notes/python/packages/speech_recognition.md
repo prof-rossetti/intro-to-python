@@ -7,10 +7,8 @@ Reference:
   + https://github.com/Uberi/speech_recognition
   + http://people.csail.mit.edu/hubert/pyaudio/#downloads
   + https://github.com/Uberi/speech_recognition/blob/master/reference/library-reference.rst
-  + https://github.com/Uberi/speech_recognition/blob/master/examples/write_audio.py
-  + https://github.com/Uberi/speech_recognition/blob/master/examples
-  + https://github.com/Uberi/speech_recognition/blob/master/speech_recognition/__main__.py
   + https://github.com/s2t2/learning-new-sounds
+  + https://github.com/prof-rossetti/voice-interface-demo-py
 
 ## Prerequisites
 
@@ -32,17 +30,8 @@ conda install -c conda-forge portaudio
 
 ## Installation
 
-Note: this package may not yet work in Python 3.7, so when creating your Anaconda virtual environment, specify version 3.6 instead:
-
 ```sh
-conda create -n sounds-env python=3.6
-conda activate sounds-env
-```
-
-Use Pip to install the package and its `pyaudio` dependency:
-
-```sh
-pip install pyaudio # depends on the lower-level "portaudio" library
+pip install pyaudio # depends on the lower-level "portaudio" library (see requirements)
 
 pip install SpeechRecognition # depends on the "pyaudio" Python package
 ```
