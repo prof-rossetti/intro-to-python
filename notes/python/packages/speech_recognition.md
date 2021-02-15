@@ -1,6 +1,6 @@
-# The `speech_recognition` Package
+# The `SpeechRecognition` Package
 
-The `speech_recognition` package provides a high-level interface to record and process audio inputs in Python.
+The `SpeechRecognition` package provides a high-level interface to record and process audio inputs in Python.
 
 Reference:
 
@@ -12,28 +12,29 @@ Reference:
 
 ## Prerequisites
 
-The `SpeechRecognition` Python package depends on another Python package called [`pyaudio`](http://people.csail.mit.edu/hubert/pyaudio/#downloads), which itself depends on a lower-level library caled `portaudio` (not a Python package).
+This package depends on another Python package called ["pyaudio"](http://people.csail.mit.edu/hubert/pyaudio/#downloads), which itself depends on a lower-level library caled "portaudio" (not a Python package). To install "portaudio": 
 
-On Mac OS, use [homebrew](/notes/clis/brew.md) to install `portaudio`:
+  + On a Mac, use homebrew (`brew install portaudio`). 
+  + On Windows, use pipwin within an active virtual environment (see installation steps below).
 
-```sh
-# Mac Terminal:
-brew install portaudio
-```
-
-On Windows, [install these Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/downloads/), then afterwards, run the following Anaconda command to install `portaudio`:
-
-```sh
-# Windows Git Bash:
-conda install -c conda-forge portaudio
-```
 
 ## Installation
 
-```sh
-pip install pyaudio # depends on the lower-level "portaudio" library (see requirements)
+Do these installation steps after activating a virtual environment.
 
+Windows:
+
+```sh
+pip install pipwin
+pipwin install pyaudio # will install along with lower level binaries
 pip install SpeechRecognition # depends on the "pyaudio" Python package
+```
+
+Mac:
+
+```sh
+pip install pyaudio 
+pip install SpeechRecognition
 ```
 
 ## Usage
