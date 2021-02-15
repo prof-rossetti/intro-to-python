@@ -5,7 +5,6 @@ The `SpeechRecognition` package provides a high-level interface to record and pr
 Reference:
 
   + https://github.com/Uberi/speech_recognition
-  + http://people.csail.mit.edu/hubert/pyaudio/#downloads
   + https://github.com/Uberi/speech_recognition/blob/master/reference/library-reference.rst
   + https://github.com/s2t2/learning-new-sounds
   + https://github.com/prof-rossetti/voice-interface-demo-py
