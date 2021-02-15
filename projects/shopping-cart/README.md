@@ -184,8 +184,9 @@ Feel free but not obligated to follow these guided "checkpoints", which provide 
 
 For a more in-depth guided exercise walkthrough, feel free but not obligated to follow the screencast, but keep in mind a few caveats:
 
-  1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
-  2. If there is any discrepancy between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document
+  1. Around minute 50, a "real-time lookups" strategy is changed to a "lookup later" strategy, but either is fine!
+  2. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
+  3. If there is any discrepancy between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document
 
 ## [Further Exploration Challenges](challenges.md)
 
