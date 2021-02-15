@@ -1,12 +1,5 @@
 # "Robo Advisor" Project
 
-## Prerequisites
-
-  + [APIs](/notes/software/apis.md)
-  + [Environment Variables](/notes/environment-variables.md)
-  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
-
-
 ## Learning Objectives
 
   1. Create a tool to automate manual efforts and streamline business processes.
@@ -39,10 +32,10 @@ After cloning the repo, navigate there from the command-line:
 cd ~/Desktop/robo-advisor
 ```
 
-Use your text editor or the command-line to create a new sub-directory called "app" with a file called "robo_advisor.py", and then place the following contents inside:
+Use your text editor or the command-line to create a new sub-directory called "app" with a file called "robo_advisor.py", and then place inside some example print statements like the following:
 
 ```py
-# app/robo_advisor.py
+# this is the "app/robo_advisor.py" file
 
 print("-------------------------")
 print("SELECTED SYMBOL: XYZ")
@@ -67,7 +60,7 @@ Make sure to save Python files like this whenever you're done editing them. Afte
 
 
 
-Use your text editor or the command-line to create a new file called "requirements.txt", and then place the following contents inside:
+Use your text editor or the command-line to create a new file called "requirements.txt" in the root directory of your repository, and then place inside the following contents:
 
 ```
 requests
@@ -145,25 +138,24 @@ Your project repository should contain a "README.md" file. The README file shoul
 Your project repository should contain a file called ".gitignore" which prevents the ".env" file and its secret credentials from being tracked in version control. The ".gitignore" file generated during the GitHub repo creation process should already do this, otherwise you can create your own ".gitignore" file and place inside the following contents:
 
 ```
-# .gitignore
+# this is the ".gitignore" file
 
 # ignore secret environment variable values in the ".env" file:
 .env
 ```
 
-Finally, your project repository should contain a "data" directory with another ".gitignore" file inside, with the following contents in it to ignore CSV files which will be written inside the data directory:
+Finally, your project repository should contain a "data" directory with another ".gitignore" file inside. In the "data/.gitignore", place inside the following contents to track the empty directory (thus allowing CSV files to be written there without error), while ignoring the CSV files themselves:
 
 ```
-# data/.gitignore
+# this is the "data/.gitignore" file
 
-# h/t: https://stackoverflow.com/a/5581995/670433
-
-# ignore all files in this directory:
+# ignore all files in this "data" directory:
 *
 
-# except this gitignore file:
+# except this ".gitignore" file:
 !.gitignore
 ```
+
 
 ### Security Requirements
 
