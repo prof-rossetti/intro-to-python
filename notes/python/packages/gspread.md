@@ -38,7 +38,7 @@ From either API page, or from the [API Credentials](https://console.developers.g
   + Accessing: "Application Data"
   + Using Engines: "No"
 
-The suggested credentials will be for a service account. Follow the prompt to create a new service account with a role of: "Project" > "Editor", and create credentials for that service account. Download the resulting .json file and store it in your project repo in a location like "auth/google_api_credentials.json".
+The suggested credentials will be for a service account. Follow the prompt to create a new service account with a role of: "Project" > "Editor", and create credentials for that service account. Download the resulting .json file and store it in your project repo in a location like "auth/google-credentials.json".
 
 Before committing, add the credentials filepath to your ".gitignore" file to ensure it does not get tracked in version control or uploaded to GitHub:
 
