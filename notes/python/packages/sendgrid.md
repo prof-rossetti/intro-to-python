@@ -148,10 +148,9 @@ Example "Code" template which will specify the structure of all emails:
 
 <p>Date: {{human_friendly_timestamp}}</p>
 
-<p>You ordered:</p>
 <ul>
 {{#each products}}
-	<li>{{this.id}} ... {{this.name}}</li>
+	<li>You ordered: ... {{this.name}}</li>
 {{/each}}
 </ul>
 
