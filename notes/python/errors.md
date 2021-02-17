@@ -7,7 +7,7 @@ Reference:
 
 ## Handling Errors
 
-You can use a `try... except` block to handle errors:
+We can use a `try... except` block to handle errors:
 
 ```python
 try:
@@ -30,9 +30,20 @@ except DivisionByZeroError:
 #> OOPS - MY ERROR
 ```
 
+We can also catch errors generically, and learn more about the one that got caught:
+
+```py
+try:
+    do_something()
+except Exception as err:
+    print("OOPS")
+    print(type(err)) #> this will tell you the error class
+    print(err)
+```
+
 ## Raising Errors
 
-You can use the `raise` keyword to stop program execution if a certain condition is met.
+We can use the `raise` keyword to stop program execution if a certain condition is met.
 
 ```python
 options = ["rock", "paper", "scissors"]
@@ -47,10 +58,10 @@ else:
 
 ### Defining and Raising Custom Errors
 
+We can define our own errors if that's helpful, by inheriting a class from the base `Exception` class (or preferably a more specific one):
 ```py
 class MyCustomError(Exception):
    pass
 
 raise MyCustomError("My custom message")
 ```
-

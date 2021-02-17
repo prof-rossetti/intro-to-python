@@ -11,26 +11,36 @@ Reference:
   + [SendGrid Account Types, including Free Tier](https://sendgrid.com/pricing/)
   + [SendGrid Account Signup](https://signup.sendgrid.com/)
   + [Obtaining API Keys](https://app.sendgrid.com/settings/api_keys)
+  + [Email Templates](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
+
+> Thanks to former student @mgallea for discovering the email template capabilities
 
 ## Installation
 
-From within a virtual environment, install `sendgrid`, if necessary:
+From within a virtual environment, install the `sendgrid` package:
 
 ```sh
-pip install sendgrid==6.0.5
+pip install sendgrid
+
+# optionally install a specific version:
+#pip install sendgrid==6.6.0
 ```
 
-> NOTE: previous versions of these instructions were applicable for sendgrid package version 5.6.0, but the examples below apply to a more current version (6.0.5)
+We'll want to make sure the installed version is greater than 6.0.5, because earlier versions of this package worked differently, and the code examples in this document only apply to the newer versions.
 
 ## Setup
 
-First, [sign up for a free account](https://signup.sendgrid.com/), then click the link in a confirmation email to verify your account. Then [create an API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions.
+First, [sign up for a SendGrid account](https://signup.sendgrid.com/), then follow the instructions to complete your "Single Sender Verification", clicking the link in a confirmation email to verify your account.
 
-To setup the usage examples below, store the API Key value in an [Environment Variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`. Also set an environment variable called `MY_EMAIL_ADDRESS` to be the email address you just associated with your SendGrid account (e.g. "abc123@gmail.com"). Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
+Then [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions. We'll want to store the API Key value in an [environment variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`.
+
+Also set an environment variable called `MY_EMAIL_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account (e.g. "abc123@gmail.com").
+
+Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
 
 ## Usage
 
-Send yourself an email:
+Sending yourself an email:
 
 ```py
 
@@ -41,7 +51,7 @@ from sendgrid.helpers.mail import Mail
 
 load_dotenv()
 
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
 MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
 
 client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
@@ -51,20 +61,22 @@ subject = "Your Receipt from the Green Grocery Store"
 
 html_content = "Hello World"
 #
-# or maybe ...
-#html_content = "Hello <strong>World</strong>"
+#  ...OR MAYBE START TO USE SOME HTML FORMATTING...
 #
-# or maybe ...
-#html_list_items = "<li>You ordered: Product 1</li>"
-#html_list_items += "<li>You ordered: Product 2</li>"
-#html_list_items += "<li>You ordered: Product 3</li>"
-#html_content = f"""
-#<h3>Hello this is your receipt</h3>
-#<p>Date: ____________</p>
-#<ol>
-#    {html_list_items}
-#</ol>
-#"""
+# html_content = "Hello <strong>World</strong>"
+#
+#  ...OR MAYBE ASSEMBLE AN ENTIRE PAGE OF HTML INTO A SINGLE STRING...
+#
+# html_list_items = "<li>You ordered: Product 1</li>"
+# html_list_items += "<li>You ordered: Product 2</li>"
+# html_list_items += "<li>You ordered: Product 3</li>"
+# html_content = f"""
+# <h3>Hello this is your receipt</h3>
+# <p>Date: ____________</p>
+# <ol>
+#     {html_list_items}
+# </ol>
+# """
 print("HTML:", html_content)
 
 message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS, subject=subject, html_content=html_content)
@@ -82,21 +94,21 @@ except Exception as e:
 
 ```
 
-> NOTE: the message was successfully sent if you see a 202 status code
+> NOTE: if you see a status code of 202, it means the message was sent successfully
 
 ![](/img/notes/python/packages/sendgrid/email-screenshot.png)
 
 > NOTE: this message might take a minute to send, and it might be in your spam folder to start
 
+
+
+
+
+
+
 ### Email Templates
 
-> Thanks to @mgallea for surfacing these email template capabilities
-
-If you'd like further control over the content displayed in the email's body, you can use Sendgrid's email templates.
-
-Reference:
-
-  + https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/
+If you'd like further control over the content displayed in the email's body, you can use an "dynamic email template".
 
 Let's try sending a simple receipt:
 
@@ -106,11 +118,11 @@ Navigate to https://sendgrid.com/dynamic_templates and press the "Create Templat
 
 ![](/img/notes/python/packages/sendgrid/create-template.png)
 
-Back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism.
+Back in the SendGrid platform, click "Add Version" to create a new version of a "Blank Template" and select the "Code Editor" as your desired editing mechanism.
 
 ![](/img/notes/python/packages/sendgrid/create-template-version.png)
 
-At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
+At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab, and save each after you're done editing them:
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -119,11 +131,10 @@ At this point you should be able to paste the following HTML into the "Code" tab
 
 <p>Date: {{human_friendly_timestamp}}</p>
 
-<p>Total: {{total_price_usd}}</p>
-
+<p>You ordered:</p>
 <ul>
 {{#each products}}
-	<li>You ordered: {{this.name}}</li>
+	<li>{{this.price}} ... {{this.name}}</li>
 {{/each}}
 </ul>
 ```
