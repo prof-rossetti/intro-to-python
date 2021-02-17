@@ -11,29 +11,38 @@ Reference:
   + [SendGrid Account Types, including Free Tier](https://sendgrid.com/pricing/)
   + [SendGrid Account Signup](https://signup.sendgrid.com/)
   + [Obtaining API Keys](https://app.sendgrid.com/settings/api_keys)
+  + [Email Templates](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
+
+> Thanks to former student @mgallea for discovering the email template capabilities
 
 ## Installation
 
-From within a virtual environment, install `sendgrid`, if necessary:
+From within an active virtual environment, install the `sendgrid` package:
 
 ```sh
-pip install sendgrid==6.0.5
+pip install sendgrid
+
+# optionally install a specific version:
+#pip install sendgrid==6.6.0
 ```
 
-> NOTE: previous versions of these instructions were applicable for sendgrid package version 5.6.0, but the examples below apply to a more current version (6.0.5)
+> NOTE: we'll want to make sure the installed version is greater than 6.0.5, because earlier versions of this package worked differently, and the code examples in this document only apply to the newer versions.
 
 ## Setup
 
-First, [sign up for a free account](https://signup.sendgrid.com/), then click the link in a confirmation email to verify your account. Then [create an API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions.
+First, [sign up for a SendGrid account](https://signup.sendgrid.com/), then follow the instructions to complete your "Single Sender Verification", clicking the link in a confirmation email to verify your account.
 
-To setup the usage examples below, store the API Key value in an [Environment Variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`. Also set an environment variable called `MY_EMAIL_ADDRESS` to be the email address you just associated with your SendGrid account (e.g. "abc123@gmail.com"). Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
+Then [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions. We'll want to store the API Key value in an [environment variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`.
+
+Also set an environment variable called `SENDER_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account (e.g. "abc123@gmail.com").
+
+Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
 
 ## Usage
 
 Send yourself an email:
 
 ```py
-
 import os
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
@@ -41,8 +50,8 @@ from sendgrid.helpers.mail import Mail
 
 load_dotenv()
 
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
-MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
+SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
 
 client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
 print("CLIENT:", type(client))
@@ -50,24 +59,11 @@ print("CLIENT:", type(client))
 subject = "Your Receipt from the Green Grocery Store"
 
 html_content = "Hello World"
-#
-# or maybe ...
-#html_content = "Hello <strong>World</strong>"
-#
-# or maybe ...
-#html_list_items = "<li>You ordered: Product 1</li>"
-#html_list_items += "<li>You ordered: Product 2</li>"
-#html_list_items += "<li>You ordered: Product 3</li>"
-#html_content = f"""
-#<h3>Hello this is your receipt</h3>
-#<p>Date: ____________</p>
-#<ol>
-#    {html_list_items}
-#</ol>
-#"""
 print("HTML:", html_content)
 
-message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS, subject=subject, html_content=html_content)
+# FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
+# ... but we can customize the `to_emails` param to send to other addresses
+message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS, subject=subject, html_content=html_content)
 
 try:
     response = client.send(message)
@@ -77,28 +73,59 @@ try:
     print(response.body)
     print(response.headers)
 
-except Exception as e:
-    print("OOPS", e.message)
+except Exception as err:
+    print(type(err))
+    print(err)
 
 ```
 
-> NOTE: the message was successfully sent if you see a 202 status code
+> NOTE: if you see a status code of 202, it means the message was sent successfully
+
+Check your inbox:
 
 ![](/img/notes/python/packages/sendgrid/email-screenshot.png)
 
 > NOTE: this message might take a minute to send, and it might be in your spam folder to start
 
+
+### Compiling HTML Content
+
+For the mail object's `html_content` parameter, we can use a simple string like the example above, or we can start to use some HTML content:
+
+```py
+# ...
+
+html_content = "Hello <strong>World</strong>"
+print(html_content)
+
+# ...
+```
+
+... or we can even compile an entire HTML document into a single string:
+
+```py
+# ...
+
+html_list_items = "<li>You ordered: Product 1</li>"
+html_list_items += "<li>You ordered: Product 2</li>"
+html_list_items += "<li>You ordered: Product 3</li>"
+
+html_content = f"""
+<h3>Hello this is your receipt</h3>
+<p>Date: ____________</p>
+<ol>
+    {html_list_items}
+</ol>
+"""
+print(html_content)
+
+# ...
+```
+
+
 ### Email Templates
 
-> Thanks to @mgallea for surfacing these email template capabilities
-
-If you'd like further control over the content displayed in the email's body, you can use Sendgrid's email templates.
-
-Reference:
-
-  + https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/
-
-Let's try sending a simple receipt:
+An alternative way to compile the email content is to use a "dynamic email template" whereby we'll specify some common HTML structure that will apply to all emails, and pass specific data to populate the template for each specific email. Let's try sending a simple receipt via template.
 
 ![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
 
@@ -106,11 +133,13 @@ Navigate to https://sendgrid.com/dynamic_templates and press the "Create Templat
 
 ![](/img/notes/python/packages/sendgrid/create-template.png)
 
-Back in the SendGrid platform, click "Add Version" to create a new version of this template and select the "Code Editor" as your desired editing mechanism.
+Back in the SendGrid platform, click "Add Version" to create a new version of a "Blank Template" and select the "Code Editor" as your desired editing mechanism.
 
 ![](/img/notes/python/packages/sendgrid/create-template-version.png)
 
-At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab:
+At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab, and save each after you're done editing them.
+
+Example "Code" template which will specify the structure of all emails:
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -119,38 +148,40 @@ At this point you should be able to paste the following HTML into the "Code" tab
 
 <p>Date: {{human_friendly_timestamp}}</p>
 
-<p>Total: {{total_price_usd}}</p>
-
 <ul>
 {{#each products}}
-	<li>You ordered: {{this.name}}</li>
+	<li>You ordered: ... {{this.name}}</li>
 {{/each}}
 </ul>
+
+<p>Total: {{total_price_usd}}</p>
 ```
 
-> NOTE: the ["handlebars" syntax above](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to construct HTML dynamically based on some data like the example below
+> NOTE: the ["handlebars" syntax above](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to construct HTML dynamically based on some data (in this case it wants us to pass it `human_friendly_timestamp`, `products`, and `total_price_usd` variables)
+
+Example "Test Data" which will populate the template:
 
 ```py
 {
-    "total_price_usd": "$14.95",
-    "human_friendly_timestamp": "July 4th, 2019 10:00 AM",
+    "total_price_usd": "$99.99",
+    "human_friendly_timestamp": "July 4th, 2099 10:00 AM",
     "products":[
-        {"id":1, "name": "Product 1"},
-        {"id":2, "name": "Product 2"},
-        {"id":3, "name": "Product 3"},
-        {"id":2, "name": "Product 2"},
-        {"id":1, "name": "Product 1"}
+        {"id": 100, "name": "Product 100"},
+        {"id": 200, "name": "Product 200"},
+        {"id": 300, "name": "Product 300"},
+        {"id": 200, "name": "Product 200"},
+        {"id": 100, "name": "Product 100"}
     ]
 }
 ```
 
-
+> NOTE: when we send real emails using this template, we'll pass dynamic data with different values, but it should resemble this test data structure.
 
 Finally, configure the template's subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
 
 ![](/img/notes/python/packages/sendgrid/template-settings.png)
 
-After configuring and saving the email template, we should be able to send an email using the template:
+After configuring and saving the email template, we should be able to use it to send an email:
 
 ```py
 import os
@@ -160,14 +191,11 @@ from sendgrid.helpers.mail import Mail
 
 load_dotenv()
 
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
-SENDGRID_TEMPLATE_ID = os.environ.get("SENDGRID_TEMPLATE_ID", "OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
-MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
+SENDGRID_TEMPLATE_ID = os.getenv("SENDGRID_TEMPLATE_ID", default="OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
+SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
 
-#print("API KEY:", SENDGRID_API_KEY)
-#print("TEMPLATE ID:", SENDGRID_TEMPLATE_ID)
-#print("EMAIL ADDRESS:", MY_ADDRESS)
-
+# this must match the test data structure
 template_data = {
     "total_price_usd": "$14.95",
     "human_friendly_timestamp": "June 1st, 2019 10:00 AM",
@@ -183,12 +211,10 @@ template_data = {
 client = SendGridAPIClient(SENDGRID_API_KEY)
 print("CLIENT:", type(client))
 
-message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS)
-print("MESSAGE:", type(message))
-
+message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS)
 message.template_id = SENDGRID_TEMPLATE_ID
-
 message.dynamic_template_data = template_data
+print("MESSAGE:", type(message))
 
 try:
     response = client.send(message)
@@ -197,8 +223,9 @@ try:
     print(response.body)
     print(response.headers)
 
-except Exception as e:
-    print("OOPS", e)
+except Exception as err:
+    print(type(err))
+    print(err)
 ```
 
 ![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
