@@ -17,7 +17,7 @@ Reference:
 
 ## Installation
 
-From within a virtual environment, install the `sendgrid` package:
+From within an active virtual environment, install the `sendgrid` package:
 
 ```sh
 pip install sendgrid
@@ -26,7 +26,7 @@ pip install sendgrid
 #pip install sendgrid==6.6.0
 ```
 
-We'll want to make sure the installed version is greater than 6.0.5, because earlier versions of this package worked differently, and the code examples in this document only apply to the newer versions.
+> NOTE: we'll want to make sure the installed version is greater than 6.0.5, because earlier versions of this package worked differently, and the code examples in this document only apply to the newer versions.
 
 ## Setup
 
@@ -40,10 +40,9 @@ Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these
 
 ## Usage
 
-Sending yourself an email:
+Send yourself an email:
 
 ```py
-
 import os
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
@@ -52,7 +51,7 @@ from sendgrid.helpers.mail import Mail
 load_dotenv()
 
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
-MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
+SENDER_ADDRESS = os.environ.get("SENDER_ADDRESS", "OOPS, please set env var called 'SENDER_ADDRESS'")
 
 client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
 print("CLIENT:", type(client))
@@ -60,26 +59,9 @@ print("CLIENT:", type(client))
 subject = "Your Receipt from the Green Grocery Store"
 
 html_content = "Hello World"
-#
-#  ...OR MAYBE START TO USE SOME HTML FORMATTING...
-#
-# html_content = "Hello <strong>World</strong>"
-#
-#  ...OR MAYBE ASSEMBLE AN ENTIRE PAGE OF HTML INTO A SINGLE STRING...
-#
-# html_list_items = "<li>You ordered: Product 1</li>"
-# html_list_items += "<li>You ordered: Product 2</li>"
-# html_list_items += "<li>You ordered: Product 3</li>"
-# html_content = f"""
-# <h3>Hello this is your receipt</h3>
-# <p>Date: ____________</p>
-# <ol>
-#     {html_list_items}
-# </ol>
-# """
 print("HTML:", html_content)
 
-message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS, subject=subject, html_content=html_content)
+message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS, subject=subject, html_content=html_content)
 
 try:
     response = client.send(message)
@@ -89,28 +71,60 @@ try:
     print(response.body)
     print(response.headers)
 
-except Exception as e:
-    print("OOPS", e.message)
+except Exception as err:
+    print("OOPS")
+    print(type(err))
+    print(err)
 
 ```
 
 > NOTE: if you see a status code of 202, it means the message was sent successfully
+
+Check your inbox:
 
 ![](/img/notes/python/packages/sendgrid/email-screenshot.png)
 
 > NOTE: this message might take a minute to send, and it might be in your spam folder to start
 
 
+### Compiling HTML Content
 
+For the mail object's `html_content` parameter, we can use a simple string like the example above, or we can start to use some HTML content:
 
+```py
+# ...
 
+html_content = "Hello <strong>World</strong>"
+print(html_content)
+
+# ...
+```
+
+... or we can even compile an entire HTML document into a single string:
+
+```py
+# ...
+
+html_list_items = "<li>You ordered: Product 1</li>"
+html_list_items += "<li>You ordered: Product 2</li>"
+html_list_items += "<li>You ordered: Product 3</li>"
+
+html_content = f"""
+<h3>Hello this is your receipt</h3>
+<p>Date: ____________</p>
+<ol>
+    {html_list_items}
+</ol>
+"""
+print(html_content)
+
+# ...
+```
 
 
 ### Email Templates
 
-If you'd like further control over the content displayed in the email's body, you can use an "dynamic email template".
-
-Let's try sending a simple receipt:
+An alternative way to compile the email content is to use a "dynamic email template" whereby we'll specify some common HTML structure that will apply to all emails, and pass specific data to populate the template for each specific email. Let's try sending a simple receipt via template:
 
 ![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
 
