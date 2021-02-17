@@ -7,13 +7,17 @@ Reference:
 
 ## Handling Errors
 
-We can use a `try... except` block to handle errors:
+Sometimes our programs will encounter errors. In Python, we can use a `try... except` block to handle these errors.
+
+After running into an error for the first time, we should observe what type of error we are experiencing (e.g. `KeyError`, `IndexError`, `DivisionByZeroError`, etc.).
+
+Once we know what type of error we need to handle, we should wrap the problematic code inside the `try` clause, and specify the known error type in the `except` clause:
 
 ```python
 try:
   empty_list = []
   matching_item = empty_list[0] # triggers an IndexError (list index out of range)
-  print("EVERYTHING IS GOING FINE")
+  print("EVERYTHING IS GOING FINE") # this never gets reached
 except IndexError:
   print("OOPS - MY ERROR")
 
@@ -23,27 +27,30 @@ except IndexError:
 ```python
 try:
   100 / 0 # triggers a DivisionByZeroError
-  print("EVERYTHING IS GOING FINE")
+  print("EVERYTHING IS GOING FINE") # this never gets reached
 except DivisionByZeroError:
   print("OOPS - MY ERROR")
 
 #> OOPS - MY ERROR
 ```
 
-We can also catch errors generically, and learn more about the one that got caught:
+If we're not yet sure what type of error we're experiencing, we can temporarily catch all error classes that inherit from the base error class (`Exception`), and once caught, we print the specific error's datatype to learn how to handle it:
 
-```py
+```python
 try:
-    do_something()
+    do_something() # some hypothetical problematic code
 except Exception as err:
-    print("OOPS")
-    print(type(err)) #> this will tell you the error class
-    print(err)
+    print(type(err)) #> this will tell you the error type
+    print(err) #> the error message
 ```
+
+
+
+
 
 ## Raising Errors
 
-We can use the `raise` keyword to stop program execution if a certain condition is met.
+If we find the need to trigger our own errors to stop program execution (less common), we can use the `raise` keyword followed by the type of error (e.g. `ValueError`):
 
 ```python
 options = ["rock", "paper", "scissors"]
@@ -59,6 +66,7 @@ else:
 ### Defining and Raising Custom Errors
 
 We can define our own errors if that's helpful, by inheriting a class from the base `Exception` class (or preferably a more specific one):
+
 ```py
 class MyCustomError(Exception):
    pass
