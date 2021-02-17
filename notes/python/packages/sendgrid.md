@@ -34,7 +34,7 @@ First, [sign up for a SendGrid account](https://signup.sendgrid.com/), then foll
 
 Then [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions. We'll want to store the API Key value in an [environment variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`.
 
-Also set an environment variable called `MY_EMAIL_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account (e.g. "abc123@gmail.com").
+Also set an environment variable called `SENDER_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account (e.g. "abc123@gmail.com").
 
 Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
 
@@ -72,7 +72,6 @@ try:
     print(response.headers)
 
 except Exception as err:
-    print("OOPS")
     print(type(err))
     print(err)
 
@@ -136,7 +135,9 @@ Back in the SendGrid platform, click "Add Version" to create a new version of a 
 
 ![](/img/notes/python/packages/sendgrid/create-template-version.png)
 
-At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab, and save each after you're done editing them:
+At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab, and save each after you're done editing them.
+
+Example "Code" template which will specify the structure of all emails:
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -148,28 +149,32 @@ At this point you should be able to paste the following HTML into the "Code" tab
 <p>You ordered:</p>
 <ul>
 {{#each products}}
-	<li>{{this.price}} ... {{this.name}}</li>
+	<li>{{this.id}} ... {{this.name}}</li>
 {{/each}}
 </ul>
+
+<p>Total: {{total_price_usd}}</p>
 ```
 
-> NOTE: the ["handlebars" syntax above](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to construct HTML dynamically based on some data like the example below
+> NOTE: the ["handlebars" syntax above](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to construct HTML dynamically based on some data (in this case it wants us to pass it `human_friendly_timestamp`, `products`, and `total_price_usd` variables)
+
+Example "Test Data" which will populate the template:
 
 ```py
 {
-    "total_price_usd": "$14.95",
+    "total_price_usd": "$13.95",
     "human_friendly_timestamp": "July 4th, 2019 10:00 AM",
     "products":[
-        {"id":1, "name": "Product 1"},
-        {"id":2, "name": "Product 2"},
-        {"id":3, "name": "Product 3"},
-        {"id":2, "name": "Product 2"},
-        {"id":1, "name": "Product 1"}
+        {"id": 1, "name": "Product 1"},
+        {"id": 2, "name": "Product 2"},
+        {"id": 3, "name": "Product 3"},
+        {"id": 2, "name": "Product 2"},
+        {"id": 1, "name": "Product 1"}
     ]
 }
 ```
 
-
+> NOTE: when we send real emails with this template, we'll pass different dynamic data that should resemble this test data structure
 
 Finally, configure the template's subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
 
@@ -187,11 +192,7 @@ load_dotenv()
 
 SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY", "OOPS, please set env var called 'SENDGRID_API_KEY'")
 SENDGRID_TEMPLATE_ID = os.environ.get("SENDGRID_TEMPLATE_ID", "OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
-MY_ADDRESS = os.environ.get("MY_EMAIL_ADDRESS", "OOPS, please set env var called 'MY_EMAIL_ADDRESS'")
-
-#print("API KEY:", SENDGRID_API_KEY)
-#print("TEMPLATE ID:", SENDGRID_TEMPLATE_ID)
-#print("EMAIL ADDRESS:", MY_ADDRESS)
+SENDER_ADDRESS = os.environ.get("SENDER_ADDRESS", "OOPS, please set env var called 'SENDER_ADDRESS'")
 
 template_data = {
     "total_price_usd": "$14.95",
@@ -208,12 +209,10 @@ template_data = {
 client = SendGridAPIClient(SENDGRID_API_KEY)
 print("CLIENT:", type(client))
 
-message = Mail(from_email=MY_ADDRESS, to_emails=MY_ADDRESS)
-print("MESSAGE:", type(message))
-
+message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS)
 message.template_id = SENDGRID_TEMPLATE_ID
-
 message.dynamic_template_data = template_data
+print("MESSAGE:", type(message))
 
 try:
     response = client.send(message)
@@ -222,8 +221,9 @@ try:
     print(response.body)
     print(response.headers)
 
-except Exception as e:
-    print("OOPS", e)
+except Exception as err:
+    print(type(err))
+    print(err)
 ```
 
 ![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
