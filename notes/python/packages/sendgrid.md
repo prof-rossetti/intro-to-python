@@ -61,6 +61,8 @@ subject = "Your Receipt from the Green Grocery Store"
 html_content = "Hello World"
 print("HTML:", html_content)
 
+# FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
+# ... but we can customize the `to_emails` param to send to other addresses
 message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS, subject=subject, html_content=html_content)
 
 try:
@@ -123,7 +125,7 @@ print(html_content)
 
 ### Email Templates
 
-An alternative way to compile the email content is to use a "dynamic email template" whereby we'll specify some common HTML structure that will apply to all emails, and pass specific data to populate the template for each specific email. Let's try sending a simple receipt via template:
+An alternative way to compile the email content is to use a "dynamic email template" whereby we'll specify some common HTML structure that will apply to all emails, and pass specific data to populate the template for each specific email. Let's try sending a simple receipt via template.
 
 ![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
 
@@ -162,25 +164,25 @@ Example "Test Data" which will populate the template:
 
 ```py
 {
-    "total_price_usd": "$13.95",
-    "human_friendly_timestamp": "July 4th, 2019 10:00 AM",
+    "total_price_usd": "$99.99",
+    "human_friendly_timestamp": "July 4th, 2099 10:00 AM",
     "products":[
-        {"id": 1, "name": "Product 1"},
-        {"id": 2, "name": "Product 2"},
-        {"id": 3, "name": "Product 3"},
-        {"id": 2, "name": "Product 2"},
-        {"id": 1, "name": "Product 1"}
+        {"id": 100, "name": "Product 100"},
+        {"id": 200, "name": "Product 200"},
+        {"id": 300, "name": "Product 300"},
+        {"id": 200, "name": "Product 200"},
+        {"id": 100, "name": "Product 100"}
     ]
 }
 ```
 
-> NOTE: when we send real emails with this template, we'll pass different dynamic data that should resemble this test data structure
+> NOTE: when we send real emails using this template, we'll pass dynamic data with different values, but it should resemble this test data structure.
 
 Finally, configure the template's subject by clicking on "Settings" in the left sidebar. Choose an email subject like "Your Receipt from the Green Grocery Store". Then click "Save Template".
 
 ![](/img/notes/python/packages/sendgrid/template-settings.png)
 
-After configuring and saving the email template, we should be able to send an email using the template:
+After configuring and saving the email template, we should be able to use it to send an email:
 
 ```py
 import os
