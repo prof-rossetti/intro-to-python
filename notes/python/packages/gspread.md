@@ -56,14 +56,13 @@ auth/google-credentials.json
 
 Use this [example Google Sheet](https://docs.google.com/spreadsheets/d/1_hisQ9kNjmc-cafIasMue6IQG-ql_6TcqFGpVNOkUSE/edit#gid=0), or create your own. Note the document's unique identifier (e.g. `1_hisQ9kNjmc-cafIasMue6IQG-ql_6TcqFGpVNOkUSE`) from its URL, and store the identifier in an environment variable called `GOOGLE_SHEET_ID`.
 
-If you create your own, make sure it contains a sheet called "Products" with column headers `id`, `name`, `department`, `price`, and `availability_date`. If you choose a different sheet name, customize it via an environment variable called `SHEET_NAME`. Finally, modify the document's sharing settings to grant "edit" privileges to the "client email" address located in the credentials file.
+If you create your own, make sure it contains a sheet called "Products-2021" with column headers `id`, `name`, `department`, `price`, and `availability_date`. If you choose a different sheet name, customize it via an environment variable called `SHEET_NAME`. Finally, modify the document's sharing settings to grant "edit" privileges to the "client email" address specified in the credentials file.
 
 ## Usage
 
 ```py
-from dotenv import load_dotenv
 import os
-
+from dotenv import load_dotenv
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
@@ -88,7 +87,6 @@ print("CREDS:", type(credentials))
 
 client = gspread.authorize(credentials)
 print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
-#print(dir(client))
 
 #
 # READ SHEET VALUES
@@ -112,12 +110,10 @@ print("ROWS:", type(rows)) #> <class 'list'>
 for row in rows:
     print(row) #> <class 'dict'>
 
-
 #
 # WRITE VALUES TO SHEET
 #
 # see: https://gspread.readthedocs.io/en/latest/api.html#gspread.models.Worksheet.insert_row
-#
 
 print("-----------------")
 print("NEW ROW...")
