@@ -13,9 +13,11 @@ Google APIs:
 The `gspread` Package:
 
   + https://github.com/burnash/gspread
-  + https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
   + https://gspread.readthedocs.io/en/latest
   + https://gspread.readthedocs.io/en/latest/oauth2.html
+  + https://gspread.readthedocs.io/en/latest/api.html
+
+This document was originally adapted from an excellent [blog post](https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html).
 
 ## Installation
 
@@ -145,5 +147,3 @@ print("RESPONSE:", type(response)) #> dict
 print(response) #> {'spreadsheetId': '____', 'updatedRange': "'Products-2021'!A9:E9", 'updatedRows': 1, 'updatedColumns': 5, 'updatedCells': 5}
 
 ```
-
-For more, see the API Reference.
