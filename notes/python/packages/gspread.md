@@ -74,6 +74,8 @@ SHEET_NAME = os.getenv("SHEET_NAME", default="Products-2021")
 #
 # AUTHORIZATION
 #
+# see: https://gspread.readthedocs.io/en/latest/api.html#gspread.authorize
+# ... and FYI there is also a newer, more high level way to do this (see the docs)
 
 # an OS-agnostic (Windows-safe) way to reference the "auth/google-credentials.json" filepath:
 CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "auth", "google-credentials.json")
@@ -84,7 +86,7 @@ AUTH_SCOPE = [
 ]
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(CREDENTIALS_FILEPATH, AUTH_SCOPE)
-print("CREDS:", type(credentials))
+print("CREDS:", type(credentials)) #> <class 'oauth2client.service_account.ServiceAccountCredentials'>
 
 client = gspread.authorize(credentials)
 print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
