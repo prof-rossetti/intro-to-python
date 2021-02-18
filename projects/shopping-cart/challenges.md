@@ -10,6 +10,8 @@ The store owner likes your work and wants to use your app in all their regional 
 
 > NOTE: Use a ".env" file approach for managing environment variables. Your "README.md" file must contain instructions for how the user can set up their own local ".env" file, including an example of the variable assignment:
 > 
+>      # this is the ".env" file...
+>      
 >      TAX_RATE=0.0875
 
 > NOTE: The ".env" file must be ignored from version control, by using a corresponding entry in the ".gitignore" file. 
