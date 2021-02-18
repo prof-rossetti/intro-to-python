@@ -13,9 +13,11 @@ Google APIs:
 The `gspread` Package:
 
   + https://github.com/burnash/gspread
-  + https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
   + https://gspread.readthedocs.io/en/latest
   + https://gspread.readthedocs.io/en/latest/oauth2.html
+  + https://gspread.readthedocs.io/en/latest/api.html
+
+This document was originally adapted from an excellent [blog post](https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html).
 
 ## Installation
 
@@ -25,26 +27,28 @@ First install the package (and a dependent auth-related package) using Pip, if n
 pip install gspread oauth2client
 ```
 
+> NOTE: the example code below has been tested against `gspread==3.6.0`  and `oauth2client==4.1.3`
+
 ## Setup
 
 ### Downloading API Credentials
 
 Visit the [Google Developer Console](https://console.developers.google.com/cloud-resource-manager). Create a new project, or select an existing one. Click on your project, then from the project page, search for the "Google Sheets API" and enable it. Also search for the "Google Drive API" and enable it.
 
-From either API page, or from the [API Credentials](https://console.developers.google.com/apis/credentials) page, follow a process to create and download credentials to use the APIs. Fill in the form to find out what kind of credentials:
+From either API page, or from the [API Credentials](https://console.developers.google.com/apis/credentials) page, follow a process to create and download credentials to use the APIs:
+  1. Click "Create Credentials" for a "Service Account". Follow the prompt to create a new service account named something like "spreadsheet-service", and add a role of "Editor".
+  2. Click on the newly created service account from the "Service Accounts" section, and click "Add Key" to create a new "JSON" credentials file for that service account. Download the resulting .json file (this might happen automatically).
+  3. Move a copy of the credentials file into your project repository, typically into the root directory or perhaps a directory called "auth", and note its filepath. For the example below, we'll refer to a file called "google-credentials.json" in an "auth" directory (i.e. "auth/google-credentials.json").
 
-  + API: "Google Sheets API"
-  + Calling From: "Web Server"
-  + Accessing: "Application Data"
-  + Using Engines: "No"
-
-The suggested credentials will be for a service account. Follow the prompt to create a new service account with a role of: "Project" > "Editor", and create credentials for that service account. Download the resulting .json file and store it in your project repo in a location like "auth/google-credentials.json".
-
-Before committing, add the credentials filepath to your ".gitignore" file to ensure it does not get tracked in version control or uploaded to GitHub:
+Finally, before committing, add the credentials filepath to your repository's ".gitignore" file to ensure it does not get tracked in version control or uploaded to GitHub:
 
 ```sh
-# .gitignore
+# the .gitignore file
 
+# ignore environment variables in the ".env" file:
+.env
+
+# ignore the google api credentials file at the following location:
 auth/google-credentials.json
 ```
 
@@ -52,27 +56,29 @@ auth/google-credentials.json
 
 Use this [example Google Sheet](https://docs.google.com/spreadsheets/d/1_hisQ9kNjmc-cafIasMue6IQG-ql_6TcqFGpVNOkUSE/edit#gid=0), or create your own. Note the document's unique identifier (e.g. `1_hisQ9kNjmc-cafIasMue6IQG-ql_6TcqFGpVNOkUSE`) from its URL, and store the identifier in an environment variable called `GOOGLE_SHEET_ID`.
 
-If you create your own, make sure it contains a sheet called "Products" with column headers `id`, `name`, `department`, `price`, and `availability_date`. And modify the document's sharing settings to grant "edit" privileges to the "client email" address located in the credentials file.
+If you create your own, make sure it contains a sheet called "Products-2021" with column headers `id`, `name`, `department`, `price`, and `availability_date`. If you choose a different sheet name, customize it via an environment variable called `SHEET_NAME`. Finally, modify the document's sharing settings to grant "edit" privileges to the "client email" address specified in the credentials file.
 
 ## Usage
 
 ```py
-from dotenv import load_dotenv
 import os
-
+from dotenv import load_dotenv
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 load_dotenv()
 
 DOCUMENT_ID = os.getenv("GOOGLE_SHEET_ID", default="OOPS")
-SHEET_NAME = os.getenv("SHEET_NAME", default="Products")
+SHEET_NAME = os.getenv("SHEET_NAME", default="Products-2021")
 
 #
 # AUTHORIZATION
 #
+# see: https://gspread.readthedocs.io/en/latest/api.html#gspread.authorize
+# ... and FYI there is also a newer, more high level way to do this (see the docs)
 
-CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "..", "auth", "google-credentials.json")
+# an OS-agnostic (Windows-safe) way to reference the "auth/google-credentials.json" filepath:
+CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "auth", "google-credentials.json")
 
 AUTH_SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets", #> Allows read/write access to the user's sheets and their properties.
@@ -80,22 +86,29 @@ AUTH_SCOPE = [
 ]
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(CREDENTIALS_FILEPATH, AUTH_SCOPE)
+print("CREDS:", type(credentials)) #> <class 'oauth2client.service_account.ServiceAccountCredentials'>
+
+client = gspread.authorize(credentials)
+print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 
 #
 # READ SHEET VALUES
 #
-
-client = gspread.authorize(credentials) #> <class 'gspread.client.Client'>
-
-doc = client.open_by_key(DOCUMENT_ID) #> <class 'gspread.models.Spreadsheet'>
+# see: https://gspread.readthedocs.io/en/latest/api.html#client
+# ...  https://gspread.readthedocs.io/en/latest/api.html#gspread.models.Spreadsheet
+# ...  https://gspread.readthedocs.io/en/latest/api.html#gspread.models.Worksheet
 
 print("-----------------")
-print("SPREADSHEET:", doc.title)
-print("-----------------")
+print("READING DOCUMENT...")
 
-sheet = doc.worksheet(SHEET_NAME) #> <class 'gspread.models.Worksheet'>
+doc = client.open_by_key(DOCUMENT_ID)
+print("DOC:", type(doc), doc.title) #> <class 'gspread.models.Spreadsheet'>
 
-rows = sheet.get_all_records() #> <class 'list'>
+sheet = doc.worksheet(SHEET_NAME)
+print("SHEET:", type(sheet), sheet.title)#> <class 'gspread.models.Worksheet'>
+
+rows = sheet.get_all_records()
+print("ROWS:", type(rows)) #> <class 'list'>
 
 for row in rows:
     print(row) #> <class 'dict'>
@@ -103,28 +116,33 @@ for row in rows:
 #
 # WRITE VALUES TO SHEET
 #
+# see: https://gspread.readthedocs.io/en/latest/api.html#gspread.models.Worksheet.insert_row
 
-next_id = len(rows) + 1 # TODO: should change this to be one greater than the current maximum id value
+print("-----------------")
+print("NEW ROW...")
 
-next_object = {
-    "id": next_id,
-    "name": f"Product {next_id}",
+auto_incremented_id = len(rows) + 1 # TODO: should change this to be one greater than the current maximum id value
+new_row = {
+    "id": auto_incremented_id,
+    "name": f"Product {auto_incremented_id} (created from my python app)",
     "department": "snacks",
     "price": 4.99,
-    "availability_date": "2019-01-01"
+    "availability_date": "2021-02-17"
 }
+print(new_row)
 
-next_row = list(next_object.values()) #> [13, 'Product 13', 'snacks', 4.99, '2019-01-01']
+print("-----------------")
+print("WRITING VALUES TO DOCUMENT...")
 
+# the sheet's insert_row() method wants our data to be in this format (see docs):
+new_values = list(new_row.values()) #> [13, 'Product 13', 'snacks', 4.99, '2019-01-01']
+
+# the sheet's insert_row() method wants us to pass the row number where this will be inserted (see docs):
 next_row_number = len(rows) + 2 # number of records, plus a header row, plus one
 
-response = sheet.insert_row(next_row, next_row_number)
+response = sheet.insert_row(new_values, next_row_number)
 
-print("-----------------")
-print("NEW RECORD:")
-print(next_row)
-print("-----------------")
-print("RESPONSE:)
-print(type(response)) #> dict
-print(response) #> {'spreadsheetId': '___', 'updatedRange': '___', 'updatedRows': 1, 'updatedColumns': 5, 'updatedCells': 5}
+print("RESPONSE:", type(response)) #> dict
+print(response) #> {'spreadsheetId': '____', 'updatedRange': "'Products-2021'!A9:E9", 'updatedRows': 1, 'updatedColumns': 5, 'updatedCells': 5}
+
 ```
