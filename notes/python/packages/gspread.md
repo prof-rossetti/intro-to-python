@@ -75,7 +75,8 @@ SHEET_NAME = os.getenv("SHEET_NAME", default="Products-2021")
 # AUTHORIZATION
 #
 
-CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "auth", "google-credentials.json") # OS-agnostic filepath reference for "auth/google-credentials.json"
+# an OS-agnostic (Windows-safe) way to reference the "auth/google-credentials.json" filepath:
+CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "auth", "google-credentials.json")
 
 AUTH_SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets", #> Allows read/write access to the user's sheets and their properties.
