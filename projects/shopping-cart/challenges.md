@@ -1,16 +1,29 @@
 # "Shopping Cart" Further Exploration Challenges
 
 This document provides optional project challenges for students seeking a greater level of difficulty. 
-
+ 
 ## Configuring Sales Tax Rate
 
 > BONUS POINTS: 3-4% (RECOMMENDED)
 
-You'd like to use your app in stores in other locations, but different municipalities use different sales tax rates. Instead of hard-coding the sales tax rate, allow the user to configure it via environment variable using a ".env" file approach. The ".env" file must be ignored from version control as a best practice, by using a corresponding entry in the ".gitignore" file. Your "README.md" file must contain instructions for how the user can set up their own local ".env" file, including an example of the variable assignment.
+The store owner likes your work and wants to use your app in all their regional locations. But different municipalities use different sales tax rates. Instead of hard-coding a single sales tax rate, allow each user to configure their own tax rate via an environment variable called `TAX_RATE`.
 
-> HINT: use [The `os` Module](/notes/python/modules/os.md) in conjunction with [The `dotenv` Package](/notes/python/packages/dotenv.md)
+> NOTE: Use a ".env" file approach for managing environment variables. Your "README.md" file must contain instructions for how the user can set up their own local ".env" file, including an example of the variable assignment:
+> 
+>      TAX_RATE=0.0875
+
+> NOTE: The ".env" file must be ignored from version control, by using a corresponding entry in the ".gitignore" file. 
+>
+>     # this is the ".gitignore" file...
+>    
+>     # ignore environment variables in the ".env" file:
+>     .env
+    
+
+> HINT: use [the `os` module](/notes/python/modules/os.md) in conjunction with [the `dotenv` package](/notes/python/packages/dotenv.md)
 
 > HINT: you might need to use the `float()` function to convert the environment variable value to a float datatype, so you can perform numeric calculations with it
+
 
 
 ## Handling Pricing per Pound
@@ -33,7 +46,7 @@ Each text file should be named according to the date and time the checkout proce
 
 > NOTE: to prevent clutter, exclude these receipt files from being tracked in version control by creating a new ".gitignore" file in the "receipts" directory, and adding the following contents inside:
 >
->     # receipts/.gitignore
+>     # this is the "receipts/.gitignore" file...
 >
 >     # ignore all the files in this directory:
 >     *
@@ -49,7 +62,7 @@ In addition to displaying a receipt at the end of the checkout process, the prog
 
 At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
 
-> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents.
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [SendGrid Email Templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents.
 
 ## Integrating with a CSV File Datastore
 
@@ -57,11 +70,11 @@ At the very least, the email should display the checkout timestamp and the total
 
 Instead of using a hard-coded `products` variable, download or copy the contents of the provided ["products.csv" file](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.csv) into your project directory in a new subdirectory called "data" (so the path to the CSV file should be "data/products.csv"). Then update your code to read the `products` from this CSV file.
 
-> HINT: leverage the capabilities of [The `csv` Module](/notes/python/modules/csv.md) or [The `pandas` Package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
+> HINT: leverage the capabilities of [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
 
 > NOTE: to prevent clutter, exclude the CSV file from being tracked in version control by creating a new ".gitignore" file within the "data" directory, and adding the following contents inside:
 >
->     # data/.gitignore
+>     # this is the "data/.gitignore" file...
 >
 >     # ignore all the files in this directory:
 >     *
