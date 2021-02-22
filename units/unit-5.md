@@ -19,4 +19,4 @@ In this unit, we'll learn how to use Python to process machine-readable data sto
 
 ## Activities and Exercises
 
-  + ["Monthly Sales Reporting" Exercise](/exercises/monthly-sales-reporting/README.md)
+  + "Monthly Sales Reporting" Exercise ([Local](/exercises/monthly-sales-reporting/README.md) | [Colab](/exercises/monthly-sales-reporting/Monthly_Sales_Reporting_Exercise.ipynb))
