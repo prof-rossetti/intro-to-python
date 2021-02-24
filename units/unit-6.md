@@ -20,5 +20,5 @@ In this unit, we'll learn how to use Python to create business intelligence and 
 
 ## Activities and Exercises
 
-  + ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md)
+  + "Chart Gallery" Exercise ([Local](/exercises/chart-gallery/README.md) | [Colab](/exercises/chart-gallery/Chart_Gallery_Exercise.ipynb))
   + ["Executive Dashboard" Project](/projects/exec-dash/README.md)
