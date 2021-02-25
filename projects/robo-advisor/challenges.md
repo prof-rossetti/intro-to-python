@@ -1,15 +1,18 @@
 
 # "Robo Advisor" Further Exploration Challenges
 
-> NOTE: the first two challenges are mildly interesting, but the third challenge, "Plotting Prices over Time", is the one that will excite instructors and earn the most extra credit.
-
 ## Handling Multiple Stocks
+
+> BONUS POINTS: 4-5%
 
 Instead of processing a single stock at a time, allow the user to process multiple stocks at the same time.
 
-If you decide to implement this approach, pay attention to the "Information Output Requirements" about using multiple CSV files instead of a single file.
+If you decide to implement this approach, pay attention to the "Information Output Requirements" about using multiple CSV files instead of a single file. 
+
 
 ## Calculating 52-Week Highs and Lows
+
+> BONUS POINTS: 2-3%
 
 Instead of calculating and printing the stock's **recent average high** and **recent average low**, calculate and print the stock's **52-week high** and **52-week low**, respectively.
 
@@ -23,7 +26,7 @@ The **52-week low** should be calculated in a similar manner as the 52-week high
 
 ## Plotting Prices over Time
 
-> Prerequisite: the ["Chart Gallery" Exercise](/exercises/chart-gallery/README.md) or ["Executive Dashboard" Project](/projects/exec-dash/README.md)
+> BONUS POINTS: 8-12% (RECOMMENDED)
 
 In addition to writing the historical stock prices to a CSV file, your program should also display a line graph of the stock prices over time. :smiley_cat:
 
@@ -32,7 +35,7 @@ Optionally include any other data visualizations as desired, to add context to a
 
 ## Sending Alerts via Email
 
-> Prerequisite: The email-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
+> BONUS POINTS: 0% (HARD TO TEST)
 
 Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via email.
 
@@ -40,7 +43,7 @@ Modify the logic of your application such that if it detects the stock's price h
 
 ## Sending Alerts via SMS
 
-> Prerequisite: The SMS-sending component of the Notification Service app, referenced in the ["Interface Capabilities" Exercise](/exercises/interface-capabilities.md)
+> BONUS POINTS: 0% (HARD TO TEST)
 
 Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via SMS.
 
