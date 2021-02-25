@@ -103,12 +103,7 @@ From within the virtual environment, demonstrate your ability to run the Python 
 python app/robo_advisor.py
 ```
 
-If you see the example output, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
-
-
-
-
-
+If you see the example output, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how someone else could clone your repo, setup an environment, and run your script). After some attention to the README file, make your first commit, with a message like "Setup the repo".
 
 
 
