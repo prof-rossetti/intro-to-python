@@ -294,7 +294,7 @@ Project submissions will be evaluated according to the requirements set forth ab
 Category | Requirement | Weight
 --- | --- | ---
 Repository | Includes README.md file with detailed instructions | 12.5%
-Security | Excludes secret API Key values from the source code | 12.5%
+Security | Excludes secret API Key values from the source code, using an environment variable and ".env" file approach | 12.5%
 Validations (Prelim) | Prevents an HTTP request if stock symbol not likely to be valid (e.g. symbol of "8888") | 5%
 Validations | Fails gracefully if encountering a response error (e.g. symbol of "OOPS")| 7.5%
 Calculations | Displays accurate information | 15%
