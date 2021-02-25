@@ -12,7 +12,7 @@ If you decide to implement this approach, pay attention to the "Information Outp
 
 ## Calculating 52-Week Highs and Lows
 
-> BONUS POINTS: 2-3%
+> BONUS POINTS: 3-4%
 
 Instead of calculating and printing the stock's **recent average high** and **recent average low**, calculate and print the stock's **52-week high** and **52-week low**, respectively.
 
