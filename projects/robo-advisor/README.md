@@ -63,6 +63,8 @@ Make sure to save Python files like this whenever you're done editing them. Afte
 Use your text editor or the command-line to create a new file called "requirements.txt" in the root directory of your repository, and then place inside the following contents:
 
 ```
+# this is the "requirements.txt" file
+
 requests
 python-dotenv
 ```
