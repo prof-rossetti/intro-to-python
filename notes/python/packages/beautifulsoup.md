@@ -32,22 +32,25 @@ soup = BeautifulSoup(response_html)
 titles = soup.find_all("span", "title")
 
 print(type(titles)) #> <class 'bs4.element.ResultSet'> (like a list)
-print(titles[5]) #> <span class="title">Macbeth</span>
-print(titles[5].text) #> Macbeth
+print(titles[5]) #> <span class="title">Romeo and Juliet</span>
+print(titles[5].text) #> Romeo and Juliet
 
 booklinks = soup.find_all("li", "booklink")
 
 books = []
 for list_item in booklinks:
-    title = list_item.find("span", "title").text #> "Shakespeare's Sonnets"
-    author = list_item.find("span", "subtitle").text #> "William Shakespeare"
-    downloads = list_item.find("span", "extra").text #> '830 downloads'
-    downloads_count = int(downloads.replace(" downloads", "")) #> 830
-    book = {"title": title, "author": author, "downloads": downloads_count}
-    print(book)
-    books.append(book)
+    try:
+        title = list_item.find("span", "title").text #> "Shakespeare's Sonnets"
+        author = list_item.find("span", "subtitle").text #> "William Shakespeare"
+        downloads = list_item.find("span", "extra").text #> '830 downloads'
+        downloads_count = int(downloads.replace(" downloads", "")) #> 830
+        book = {"title": title, "author": author, "downloads": downloads_count}
+        print(book)
+        books.append(book)
+    except Exception as err:
+        print("OOPS", type(err), err, "SKIPPING...")
 
-print(books[2]["title"]) #> Macbeth
+print(books[2]["title"]) #> Romeo and Juliet
 ```
 
 It's easier to parse HTML once you know the document structure. Try using your browser's developer tools to examine the document structure of any web page. For example, in Google Chrome you can right-click on a webpage and select "Inspect".
