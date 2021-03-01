@@ -7,7 +7,7 @@
 
 Instead of processing a single stock at a time, allow the user to process multiple stocks at the same time.
 
-If you decide to implement this approach, pay attention to the "Information Output Requirements" about using multiple CSV files instead of a single file. 
+If you decide to implement this approach, pay attention to the "Information Output Requirements" about using multiple CSV files instead of a single file. Also this will potentially increase your chance of getting rate limited by the API, so you'll need to either implement a sleep mechanism or handle rate limits gracefully.
 
 
 ## Calculating 52-Week Highs and Lows
