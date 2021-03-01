@@ -64,9 +64,11 @@ Use your text editor or the command-line to create a new file called "requiremen
 
 ```
 # this is the "requirements.txt" file
+# it might be helpful to use pandas. if you do, uncomment the last line below ...
 
 requests
 python-dotenv
+# pandas 
 ```
 
 After setting up a virtual environment, we will be ready to install these packages.
@@ -295,13 +297,13 @@ Category | Requirement | Weight
 --- | --- | ---
 Repository | Includes README.md file with detailed instructions | 12.5%
 Security | Excludes secret API Key values from the source code, using an environment variable and ".env" file approach | 12.5%
-Validations (Prelim) | Prevents an HTTP request if stock symbol not likely to be valid (e.g. symbol of "8888") | 5%
-Validations | Fails gracefully if encountering a response error (e.g. symbol of "OOPS")| 7.5%
-Calculations | Displays accurate information | 15%
-Info Outputs | Displays final recommendation, including justification / context | 12.5%
-Info Outputs | Writes historical prices to CSV file | 10%
-Info Outputs | Formats all prices as USD (doesn't apply to CSV file values) | 5%
-Dev Process | Submitted via remote Git repository which reflects an incremental revision history | 20%
+Validations (Prelim) | Prevents an HTTP request if stock symbol not likely to be valid (e.g. symbol of "8888") | 7.5%
+Validations | Fails gracefully if encountering a response error (e.g. symbol of "OOPS")| 12.5%
+Calculations | Displays accurate information | 10%
+Info Outputs | Displays final recommendation, including justification / context | 10%
+Info Outputs | Writes historical prices to CSV file | 12.5%
+Info Outputs | Formats all prices as USD (doesn't apply to CSV file values) | 7.5%
+Dev Process | Submitted via remote Git repository which reflects an incremental revision history | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
 
