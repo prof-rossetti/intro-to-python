@@ -190,7 +190,7 @@ The system should prompt the user to input one stock or cryptocurrency symbol (e
 
 #### Validation Requirements
 
-Before requesting data from the Internet, the system should first perform preliminary validations on user inputs. For example, it should ensure stock symbols are a reasonable amount of characters in length and not numeric in nature.
+Before requesting data from the Internet, the system should first perform preliminary validations on user inputs. For example, it should ensure stock symbols are a [reasonable amount of characters in length](https://www.investopedia.com/terms/s/stocksymbol.asp) (usually somewhere between 1 and 5 characters) and not numeric in nature.
 
 If preliminary validations are not satisfied, the system should display a friendly error message like "Oh, expecting a properly-formed stock symbol like 'MSFT'. Please try again." and stop execution.
 
