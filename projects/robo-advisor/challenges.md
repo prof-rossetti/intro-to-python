@@ -32,6 +32,7 @@ In addition to writing the historical stock prices to a CSV file, your program s
 
 Optionally include any other data visualizations as desired, to add context to and increase confidence in the final recommendations.
 
+Charts should ideally include appropriate titles, axis labels, legends, etc.
 
 ## Sending Alerts via Email
 
