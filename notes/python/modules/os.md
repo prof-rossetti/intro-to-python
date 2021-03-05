@@ -60,9 +60,11 @@ Since certain filepaths will break if we run the same script from different loca
 
 ```py
 # BAD:
+"my_receipt.txt"
 "../data/monthly_sales.csv"
 
 # GOOD:
+os.path.join(os.path.dirname(__file__), "my_receipt.txt")
 os.path.join(os.path.dirname(__file__), "..", "data", "monthly_sales.csv")
 ```
 
