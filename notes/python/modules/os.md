@@ -4,7 +4,7 @@ Reference: https://docs.python.org/3/library/os.html.
 
 Use the `os` module perform command-line-style file and directory operations, and to access system environment variables.
 
-> NOTE: Windows users may need to modify the filepaths below by using different slashes.
+> NOTE: On Windows, the filepaths may need different slashes (i.e. `\`  vs. `/`). To mitigate this difference, we'll ideally follow the techniques suggested in the "Constructing Filepaths" section, to make filepaths that will work on any operating system.
 
 ## Directory Operations
 
@@ -52,22 +52,27 @@ Detect whether a specific file exists:
 os.path.isfile("/path/to/Desktop/some_file.txt") #> returns True or False
 ```
 
-Compile file paths by joining the directory of the current file with a relative file path:
+### Constructing Filepaths
+
+Since different operating systems use different slashes, we must standardize filepaths across operating systems. To do this, we use `os.path.join` in conjunction with commas, to apply the proper slashes depending on the user's operating system. 
+
+Since certain filepaths will break if we run the same script from different locations on the command line, we also must ensure our filepaths work no matter which directory we are running the script from. So we use `os.path.dirname(__file__)` to reference the location of the current Python script, and start to form a relative reference from there. 
 
 ```py
-os.path.join(os.path.dirname(__file__), "../data/monthly_sales.csv")
+# BAD:
+"../data/monthly_sales.csv"
 
-# use `os.path.join` in conjunction with commas to standardize paths across operating systems:
+# GOOD:
 os.path.join(os.path.dirname(__file__), "..", "data", "monthly_sales.csv")
 ```
 
-More examples of how to assemble file paths:
+More filepath construction examples:
 
 ```py
 #
 # /Users/mjr/Desktop/my-dir/paths.py
 #
-# Assumes the following files and directories exist on your computer:
+# Assumes the following files and directories exist on your computer (might want to set these up to follow along yourself):
 #
 #   /Users/mjr/Desktop/desktop_message.txt
 #   /Users/mjr/Desktop/my-dir
