@@ -26,9 +26,9 @@ Instructional Units:
 
 Instructional Units:
 
-  + [Unit 8](/units/unit-8.md) - Software Products and Services
-  + [Unit 9](/units/unit-9.md) - Software Planning, Analysis, and Design
-  + [Unit 10](/units/unit-10.md) - Software Maintenance and Quality Control
+  + [Unit 8](/units/unit-8.md) - Software Maintenance and Quality Control
+  + [Unit 9](/units/unit-9.md) - Software Products and Services
+  + [Unit 10](/units/unit-10.md) - Software Planning, Analysis, and Design
   + [Unit 11](/units/unit-11.md) - Project Implementation Sprint
   + [Unit 12](/units/unit-12.md) - Project Presentations
 
