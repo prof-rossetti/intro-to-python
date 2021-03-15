@@ -9,7 +9,7 @@
 
 ## Instructions
 
-Follow the instructions in each of the sections below. For the purpose of this exercise, we'll be using specific repos and wanting to make specific changes to those repos.
+Follow the instructions in each of the exercises below, to practice collaboration for three different use cases. For the second and third use case, we'll be using specific repos and wanting to make specific changes to those repos.
 
 ### Independent Projects
 
