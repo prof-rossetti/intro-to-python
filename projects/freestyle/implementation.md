@@ -59,7 +59,7 @@ As desired, integrate your GitHub repository with a Continuous Integration servi
 
 Iteratively develop your project using version control practices. Save new versions of your source code as you reach key milestones.
 
-You are encouraged to use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the master branch.
+You are encouraged to use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the main branch.
 
 If working in a group, each group member must make significant contributions to the application's source code! Any group member not committing significant portions of the code may be subject to deductions.
 

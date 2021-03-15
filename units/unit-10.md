@@ -1,32 +1,21 @@
-# Unit 10: Software Maintenance and Quality Control
+# Unit 10: Software Planning, Analysis, and Design
 
 ## Learning Objectives
 
-For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
+In this unit, we'll become more familiar with the preliminary phases of the Systems Development Lifecycle (SDLC), focusing on system planning, analysis, and design. We'll analyze business processes and employ Design Thinking methods to identify user needs and business opportunities. And we'll learn how to translate these activities into written system requirements.
 
 ## Discussions and Notes
 
-  + [Information Security and Privacy](/notes/info-systems/security-privacy.md):
-    + [Ethics, Malware, and Hacking](/notes/software/ethics.md)
-  + Developer Collaboration:
-    + [The `git` Utility](/notes/clis/git.md), revisited
-    + [Git Branch Operations](/notes/clis/git.md#branch-operations), revisited
-    + [GitHub Pull Request (PR) Workflow](https://guides.github.com/introduction/flow/)
-    + Code Reviews
-  + [Code Style](/notes/python/syntax-and-style.md)
-  + [Code Documentation](/notes/software/documentation.md):
-    + [Python Docstrings](/notes/python/docstrings.md)
-  + [Code Simplification and Refactoring](/notes/software/refactoring.md)
-  + [Automated Testing](/notes/software/testing.md):
-    + [The `pytest` Package](/notes/python/packages/pytest.md)
-  + [Continuous Integration (CI)](/notes/software/testing.md#continuous-integration):
-    + [The Travis CI Platform](/notes/devtools/travis-ci.md)
-  + Code Quality:
-    + [The Code Climate Platform](/notes/devtools/code-climate.md)
+  + [Project Management](/notes/project-mgmt/README.md)
+  + [Project Management Tools](/notes/project-mgmt/tools.md)
+  + [The Systems Development Lifecycle (SDLC)](/notes/project-mgmt/dev-lifecycle.md)
+  + Iterative Development Methodologies and Minimum Viable Products (MVPs)
+  + [Users, User Needs, and User-Centered Design](/notes/info-systems/people.md)
+  + [Business Process Analysis, Diagramming, and Re-engineering](/notes/info-systems/processes.md)
 
 ## Activities and Exercises
 
-  + ["Code Simplification" Exercise](https://github.com/prof-rossetti/code-simplification-exercise-py/)
-  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
-  + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)
-  + ["Codebase Cleanup" Assignment](/exercises/codebase-cleanup/README.md)
+  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
+  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
+  + "Design Thinking" Workshop / "Freestyle" Project Ideation
+  + ["Freestyle" Project Proposal](/projects/freestyle/proposal.md)

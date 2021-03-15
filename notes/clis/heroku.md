@@ -115,9 +115,9 @@ heroku config:set MY_SECRET_MESSAGE="abc123" -a my-app-name
 Deploy the application's source code to the application server:
 
 ```` sh
-git push heroku master
+git push heroku main
 # or if you need to deploy from a different branch:
-# git push heroku mybranch:master
+# git push heroku mybranch:main
 ````
 
 Visit the application in a browser and note its URL for future reference:

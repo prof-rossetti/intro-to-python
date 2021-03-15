@@ -1,27 +1,30 @@
-
-
-# Unit 8: Software Products and Services
+# Unit 8: Software Maintenance and Quality Control
 
 ## Learning Objectives
 
-In this unit, we'll discuss software products and services, and practice delivering software services to end users.
+For businesses which provide software products and services, improved code quality leads to better user experiences, higher customer satisfaction and retention, and lower maintenance costs. In this unit, we'll learn ways to control and improve the quality of our applications.
 
 ## Discussions and Notes
 
-  + Management of Software Products and Services:
-    + [Business Models](/notes/software/README.md#business-models)
-    + [Distribution Models](/notes/software/README.md#distribution-models)
-    + [Licensing](/notes/software/licensing.md) and [Licensing Models](/notes/software/README.md#licensing-models), including Open Source Software (OSS)
-    + [Security and Privacy](/notes/info-systems/security-privacy.md)
-    + [Ethics](/notes/software/ethics.md)
-  + Software Delivery and Distribution:
-    + [Remote Repositories](/notes/clis/git.md#remote-repositories) and Managing Remote Addresses
-    + [Remote Servers](/notes/hardware/servers.md)
-    + [The `heroku` Utility](/notes/clis/heroku.md)
-  + Web Applications:
-    + [The `flask` Package](/notes/python/packages/flask.md)
+  + Developer Collaboration:
+    + [The `git` Utility](/notes/clis/git.md), revisited
+    + [Git Branch Operations](/notes/clis/git.md#branch-operations), revisited
+    + [GitHub Pull Request (PR) Workflow](https://guides.github.com/introduction/flow/)
+    + Code Reviews
+  + [Code Style](/notes/python/syntax-and-style.md)
+  + [Code Documentation](/notes/software/documentation.md):
+    + [Python Docstrings](/notes/python/docstrings.md)
+  + [Code Simplification and Refactoring](/notes/software/refactoring.md)
+  + [Automated Testing](/notes/software/testing.md):
+    + [The `pytest` Package](/notes/python/packages/pytest.md)
+  + [Continuous Integration (CI)](/notes/software/testing.md#continuous-integration):
+    + [The Travis CI Platform](/notes/devtools/travis-ci.md)
+  + Code Quality:
+    + [The Code Climate Platform](/notes/devtools/code-climate.md)
 
 ## Activities and Exercises
 
-  + ["Web Service" Exercise](/exercises/web-service/README.md)
-  + ["Web App" Exercise](/exercises/web-app/README.md)
+  + ["Developer Collaboration" Exercise](/exercises/dev-collaboration/README.md)
+  + "Codebase Cleanup" Exercise
+  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+  + ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)

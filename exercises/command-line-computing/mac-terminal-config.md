@@ -35,7 +35,7 @@ After opening the file in your text editor, you can place any of the following c
 #
 
 # control the "prompt" message that shows up in the terminal. see also: https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
-export PS1=" --->> " 
+export PS1=" --->> "
 
 # control some colors. see also: https://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 export CLICOLOR=1
@@ -54,7 +54,7 @@ alias gd="git diff"
 alias gl="git log"
 alias glt="git log --graph --decorate --oneline --full-history --all --simplify-by-decoration"
 alias glsd="git ls-files --deleted"
-alias gpom="git pull origin master"
+alias gpom="git pull origin main"
 alias gr="git remote -v"
 alias gs="git status"
 
@@ -64,4 +64,3 @@ alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Fi
 ```
 
 After editing the config file, save the file. You may need to close your terminal window and re-open a new one for the changes to take effect.
-
