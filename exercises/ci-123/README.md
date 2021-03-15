@@ -40,10 +40,10 @@ git add .
 git commit -m "My first commit"
 
 git remote add origin YOUR_REPOS_REMOTE_ADDRESS
-git push origin master
+git push origin main
 ```
 
-> NOTE: if you see an error like "failed to push some refs", you may have to do a "forced" push with `git push origin master -f` instead.
+> NOTE: if you see an error like "failed to push some refs", you may have to do a "forced" push with `git push origin main -f` instead.
 
 You should now be able to see your code reflected on GitHub.
 
@@ -78,7 +78,7 @@ git commit -m "Configure Travis CI"
 Push your local code up to the remote repository:
 
 ```sh
-git push origin master
+git push origin main
 ```
 
 This push should now trigger the execution of automated tests on the CI server. Visit your repository's CI "builds" at a URL like `https://travis-ci.com/GITHUB_USERNAME/GITHUB_REPONAME` to see the results of the automated tests and verify Travis has been configured properly:
@@ -96,7 +96,7 @@ Commit this change and push up to GitHub to see the badge reflected on your repo
 ```sh
 git add .
 git commit -m "Add CI status badge"
-git push origin master
+git push origin main
 ```
 
 ## Branch Operations
@@ -137,7 +137,7 @@ git push origin my-new-feature
 #>  * [new branch]      my-new-feature -> my-new-feature
 ```
 
-You should be able to follow the resulting link to view your branch online and open a Pull Request to propose it be merged into the "master" branch.
+You should be able to follow the resulting link to view your branch online and open a Pull Request to propose it be merged into the "main" branch.
 
 Opening this PR should trigger a CI build, which in this case we expect to be failing:
 
@@ -149,9 +149,9 @@ This is an example of how automated checks can help alert developers to the need
 
 > OPTIONAL
 
-Follow [this guide](https://help.github.com/en/articles/enabling-required-status-checks) to designate the "master" branch as a protected branch, and "enable status checks" for the remote repository. Add a "branch protection rule" with a name pattern of "master", and enable the "Require status checks to pass before merging" and "Require branches to be up to date before merging" settings:
+Follow [this guide](https://help.github.com/en/articles/enabling-required-status-checks) to designate the "main" branch as a protected branch, and "enable status checks" for the remote repository. Add a "branch protection rule" with a name pattern of "main", and enable the "Require status checks to pass before merging" and "Require branches to be up to date before merging" settings:
 
-![a screenshot of enabling master branch protection in the GitHub settings](https://user-images.githubusercontent.com/1328807/55444237-a5aa7800-5583-11e9-8c77-b025e07b5388.png)
+![a screenshot of enabling main branch protection in the GitHub settings](https://user-images.githubusercontent.com/1328807/55444237-a5aa7800-5583-11e9-8c77-b025e07b5388.png)
 
 
 Revisit your PR with the failing build and notice it now has merge restrictions:
