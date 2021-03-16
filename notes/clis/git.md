@@ -192,7 +192,7 @@ If you would like to upload the contents of a local repository to a remote addre
   1. Create a new repo on GitHub, then note its remote address.
   2. From the command-line, navigate to the root directory of your existing local repository (e.g `cd path/to/my-dir`).
   3. Configure a "remote" address for your local repository: `git remote add origin REMOTE_ADDRESS`. NOTE: the overwhelming convention is to name your default GitHub remote address "origin".
-  4. Associate the local repo with the remote repo (one-time, first-time only): `git pull origin master --allow-unrelated-histories`. After doing so, you may be in a "Vi" text editor window, which you can exit by pressing the "shift + ZZ" keys.
+  4. Associate the local repo with the remote repo (one-time, first-time only): `git pull origin main --allow-unrelated-histories`. After doing so, you may be in a "Vi" text editor window, which you can exit by pressing the "shift + ZZ" keys.
   5. Follow the "Syncing Local and Remote Repositories" section, below, to push your local changes up to GitHub.
 
 #### Syncing Local and Remote Repositories
@@ -200,8 +200,8 @@ If you would like to upload the contents of a local repository to a remote addre
 Assuming you have already associated a local repository with a remote address named "origin":
 
 ```sh
-git pull origin master # downloads recent contents from the remote repo, in case changes have been made to the remote repo since you last pushed.
-git push origin master # uploads local repo contents to remote address
+git pull origin main # downloads recent contents from the remote repo, in case changes have been made to the remote repo since you last pushed.
+git push origin main # uploads local repo contents to remote address
 ```
 
 Sometimes after pulling, you may see merge conflicts, in which case you might need to perform a "rebase" before being able to push. The rebase process can be difficult, so feel free to ask the professor for help.
@@ -215,7 +215,7 @@ After pushing successfully, you should be able to visit your remote repository o
 
 Branches offer separate namespaces for different versions of your code. This allows a single developer to try different approaches without affecting some known working version of the code. It also facilitates developer collaboration by allowing each developer a space to work, and by enabling Pull Request operations and reviews on GitHub.
 
-The default branch is called "master", but developers usually do their work on a branch corresponding with some development goal (e.g. "my-new-feature"):
+The default branch is called "main" (FYI: it used to be called "master"), but developers usually do their work on a branch corresponding with some development goal (e.g. "my-new-feature"):
 
 ```sh
 # determine which branch you're on:
@@ -225,7 +225,7 @@ git branch
 git checkout -b my-new-feature
 
 # switch between existing branches:
-git checkout master
+git checkout main
 git checkout my-new-feature
 
 # after committing some changes, push the branch up to GitHub:
