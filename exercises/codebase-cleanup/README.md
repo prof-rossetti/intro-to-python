@@ -28,7 +28,7 @@ User Feedback: "Sometimes it gets the winner wrong!"
 
 Developer Maintenance Steps:
 
-  1. Refactor duplicate code relating to the valid options ("rock", "paper", and "scissors").
+  1. Refactor duplicate code related to the valid options ("rock", "paper", and "scissors").
   2. Notice Code Climate says the existing winner determination logic is "complex". Refactor the complex logic to use less computational steps and also make it easier to read. Also notice the existing logic produces some inaccurate outcomes, and update the logic to produce accurate outcomes.
   3. Test that the winner determination logic produces accurate outcomes. Move the logic into a stand-alone function called `determine_winner()` that can be invoked and tested in isolation, separate from any user inputs.
 
@@ -38,8 +38,8 @@ User Feedback: "The receipt file has the wrong total amount due!"
 
 Developer Maintenance Steps:
 
-  1. Refactor duplicate code relating to the price-formatting logic. Notice and fix any discrepancies in this logic.
-  2. Refactor duplicate code relating to the receipt contents. Ensure the printed receipt has the same contents as the receipt file.
+  1. Refactor duplicate code related to the price-formatting logic. Notice and fix any discrepancies in this logic.
+  2. Refactor duplicate code related to the receipt contents. Ensure the printed receipt has the same contents as the receipt file.
   3. Test the program's price-formatting logic produces desired results. Move the logic into a stand-alone function called `format_usd()` that can be invoked and tested in isolation, separate from any user inputs.
   4. Test the program's ability to lookup matching products. Move the product lookup logic into a stand-alone function called `find_product()` that can be invoked and tested in isolation, separate from any user inputs. Use the mock products CSV file data to perform this test.
 
