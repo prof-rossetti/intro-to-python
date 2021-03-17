@@ -55,7 +55,7 @@ Continue following the Travis CI tutorial by adding a special configuration file
 dist: xenial
 language: python
 python:
-  - "3.7"
+  - "3.8"
 install:
   - pip install -r requirements.txt
 script:
