@@ -40,8 +40,8 @@ Developer Maintenance Steps:
 
   1. Refactor duplicate code relating to the price-formatting logic. Notice and fix any discrepancies in this logic.
   2. Refactor duplicate code relating to the receipt contents. Ensure the printed receipt has the same contents as the receipt file.
-  3. Test the program's price-formatting logic produces desired results. Move the logic into a stand-alone function called `format_usd()` that can be invoked and tested in isolation, WITHOUT any user inputs.
-  4. Test the program's ability to lookup matching products. Move the product lookup logic into a stand-alone function called `find_product()` that can be invoked and tested in isolation, WITHOUT any user inputs. Use the mock products CSV file data to perform this test.
+  3. Test the program's price-formatting logic produces desired results. Move the logic into a stand-alone function called `format_usd()` that can be invoked and tested in isolation, separate from any user inputs.
+  4. Test the program's ability to lookup matching products. Move the product lookup logic into a stand-alone function called `find_product()` that can be invoked and tested in isolation, separate from any user inputs. Use the mock products CSV file data to perform this test.
 
 ### Robo Improvements (Further Exploration)
 
@@ -50,10 +50,10 @@ User Feedback: "The chart shows prices in reverse!"
 Developer Maintenance Steps:
 
   1. Test the program's ability to request data for a given stock symbol, and that the resulting response data is structured in the expected format. HINT: since the response data will be dynamic, we can focus on some consistent parts of the response data, like ensuring certain keys like "Meta Data" and "Time Series (Daily)" exist, and checking the symbol we requested is contained in the "Meta Data".
-  2. Test the program's ability to convert the response data into a more usable format (for example a list of dictionaries or Pandas DataFrame). Use one or more valid mock responses to perform this test, WITHOUT making any network requests.
+  2. Test the program's ability to convert the response data into a more usable format (for example a list of dictionaries or Pandas DataFrame). Use one or more valid mock responses to perform this test, without making any network requests.
   3. Test the program's chart displays prices in the proper order. HINT: we can just do a test about some aspects of the DataFrame that gets charted.
   4. Ensure any tests that make web requests are skipped from being run on the CI server.
-  5. Refactor the `format_usd` function from the shopping script, moving it into the init file, and importing it from the init file into both the shopping and robo scripts.
+  5. Refactor the `format_usd()` function from the shopping script, moving it into the init file, and importing it from the init file into both the shopping and robo scripts.
 
 
 > FYI: one philosophy when testing is to minimize the number of web requests that need to be made. That's one reason for using mock data. The other reason for mock data is for testing certain edge-cases.
