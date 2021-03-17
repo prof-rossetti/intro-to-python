@@ -12,7 +12,7 @@
 
 The [Codebase Cleanup Repo](https://github.com/prof-rossetti/codebase-cleanup-2021) contains some abbreviated example code related to some projects we have worked on. But there are few opportunities for us to improve the quality of this code.
 
-First, fork the repo under your own control. Then integrate it with the [Code Climate](/notes/devtools/code-climate.md) platform, and the [Travis CI](/notes/devtools/travis-ci.md) platform.
+First, fork the repo under your own control. Then integrate your forked repo with the [Code Climate](/notes/devtools/code-climate.md) platform, and the [Travis CI](/notes/devtools/travis-ci.md) platform.
 
 Use a Pull Request workflow to complete each of the challenges below. Optionally invite a friend to collaborate on your repo, and perform a code review on at least one of your Pull Requests.
 
