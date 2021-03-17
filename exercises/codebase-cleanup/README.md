@@ -33,10 +33,11 @@ For Basic Requirements, do the "Game" and "Shopping" challenges. For further exp
 
 ## Robo Improvements (Further Exploration)
 
-  1. Test the program's ability to request data for a given stock symbol, and that the resulting response data is structured in the expected format. HINT: since the response data will be dynamic, we can focus on some consistent parts of the response data, like checking the symbol we requested is contained in the "Meta Data" attribute. We could also test to ensure certain keys like "Meta Data" and "Time Series (Daily)" are keys in the response data.
+  1. Test the program's ability to request data for a given stock symbol, and that the resulting response data is structured in the expected format. HINT: since the response data will be dynamic, we can focus on some consistent parts of the response data, like ensuring certain keys like "Meta Data" and "Time Series (Daily)" exist, and checking the symbol we requested is contained in the "Meta Data".
   2. Test the program's ability to convert the response data into a more usable format (for example a list of dictionaries or Pandas DataFrame). Use one or more valid mock responses to perform this test.
   3. Test the program's chart displays prices in the proper order. HINT: we can just do a test about some aspects of the DataFrame that gets charted.
   4. Ensure any tests that make web requests are skipped from being run on the CI server.
+  5. Refactor the `format_usd` function from the shopping script, moving it into the init file, and importing it from the init file into both the shopping and robo scripts.
 
 
 ## Evaluation
