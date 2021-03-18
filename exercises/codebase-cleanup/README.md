@@ -53,10 +53,10 @@ Developer Maintenance Steps:
   2. Test the program's ability to convert the response data into a more usable format (for example a list of dictionaries or Pandas DataFrame). Use one or more valid mock responses to perform this test, without making any network requests.
   3. Test the program's chart displays prices in the proper order. HINT: we can just do a test about some aspects of the DataFrame that gets charted.
   4. Ensure any tests that make web requests are skipped from being run on the CI server.
-  5. Refactor the `format_usd()` function from the shopping script, moving it into the init file, and importing it from the init file into both the shopping and robo scripts.
+  5. Refactor the `format_usd()` function from the shopping script, moving it into the init file or a separate "app/number_decorators.py" module, and importing it into both the shopping and robo scripts from there.
 
 
-> FYI: one philosophy when testing is to minimize the number of web requests that need to be made. That's one reason for using mock data. The other reason for mock data is for testing certain edge-cases.
+> FYI: our goal is to minimize the number of web requests that need to be made when testing. We can use mock data and/or pytest fixtures for this.
 
 ## Evaluation
 
