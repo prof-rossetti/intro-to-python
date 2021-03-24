@@ -24,7 +24,7 @@ After enabling your GitHub repository to integrate with Travis CI, add a special
 dist: xenial
 language: python
 python:
-  - "3.7"
+  - "3.8"
 install:
   - pip install -r requirements.txt
 script:
