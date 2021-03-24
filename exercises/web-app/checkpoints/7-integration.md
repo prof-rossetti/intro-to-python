@@ -50,8 +50,8 @@ def weather_forecast():
         print("FORM DATA:", dict(request.form)) #> {'zip_code': '20057'}
         zip_code = request.form["zip_code"]
     elif request.method == "GET":
-        print("URL PARAMS:", dict(request.args))
-        zip_code = request.args["zip_code"] #> {'zip_code': '20057'}
+        print("URL PARAMS:", dict(request.args)) #> {'zip_code': '20057'}
+        zip_code = request.args["zip_code"]
 
     results = get_hourly_forecasts(zip_code)
     print(results.keys())
