@@ -1,8 +1,6 @@
 
 # Web App Checkpoint 2 - Modular Organization
 
-> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/7ae7a98cb085e09a4cd43d5dda9230c40ec9e9c7)
-
 So far we've got a simple app with a few routes, but we need to use a more modular organizational structure for larger apps.
 
 Create a new directory called "web_app" with a file called "\_\_init_\_.py" and place inside the following contents:

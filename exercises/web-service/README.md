@@ -1,25 +1,17 @@
-# "Web Service" (a.k.a. "Daily Briefings") Exercise
+# "Web Service" Exercise
 
-Write a Python application to send yourself an email containing information of interest, like an up-to-date hourly weather forecast. Then deploy the application to a remote server and schedule the server to send you the email at the same time every morning.
 
-## Prerequisites
 
-  + [The Open Weather API](https://home.openweathermap.org/api_keys) (sign up and obtain an API Key)
-  + [The `requests` Package](/notes/python/packages/requests.md)
-  + [The SendGrid API](https://app.sendgrid.com/settings/api_keys) (sign up and obtain an API Key)
-  + [The `sendgrid` Package](/notes/python/packages/sendgrid.md)
-  + [Heroku](/notes/clis/heroku.md) (sign up for a account and install the Heroku CLI)
-
-This exercise is inspired by a [project](https://github.com/mgallea/daily-email) by former student @mgallea.
-
+> This exercise is inspired by a former [student project](https://github.com/mgallea/daily-email).
 ## Learning Objectives
 
-  + Practice leveraging third-party APIs and Python packages.
-  + Practice security and privacy best practices by using a "dotenv" approach in conjunction with a ".gitignore" file.
-  + Gain high-level exposure to basic HTML.
-  + Learn how to "deploy" a Python script to a user-facing "production" environment, namely an application server hosted by Heroku, and schedule the server to execute the script at regular intervals.
+  + Deploy a Python script to a user-facing "production" environment (i.e. a remote application server hosted by Heroku).
+  + Schedule a remote server to execute a specified Python application at specified intervals (i.e. once per day)
+  + Gain exposure to basic HTML.
 
 ## Instructions
+
+Deploy an application to a remote server, and configure the server to run the app at scheduled intervals. For this exercise, we will use the professor's "Daily Briefings" app, which ___________________.
 
 ### Setup
 
@@ -31,7 +23,9 @@ Follow the README instructions to setup the virtual environment, install package
 
 Continue following the README instructions to run each of the Python scripts locally and see them produce their desired results. Check your email inbox to verify you are receiving the emails.
 
-> FYI: the email content is being formatted as HTML. For any students who are not familiar with HTML, see this [Quick HTML Reference](https://www.w3schools.com/html/html_basic.asp)!
+> FYI: the email is getting sent via SendGrid. For more info, see these notes about the [the `sendgrid` package](https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/sendgrid.md).
+
+> FYI: the email content is being formatted as HTML. For any students who are not familiar with HTML, see these reference documents about [Basic HTML](https://www.w3schools.com/html/html_basic.asp) and [HTML Lists](https://www.w3schools.com/html/html_lists.asp)!
 
 ### Deploying to Production
 

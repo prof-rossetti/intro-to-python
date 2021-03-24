@@ -1,7 +1,5 @@
 # Web App Checkpoint 4 - Shared Layouts
 
-> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/3449ff1040dbdc6acae3650779098b314bac6ae1)
-
 Right now each template is a complete HTML file. If we wanted to implement common navigation and footer across each of the files, we'd have to copy and paste the same header and footer into all the files. This is not ideal from a maintainability perspective.
 
 Luckily we have the ability to define the shared aspects of each page, like the header and footer, and inherit them from a common "layout".
