@@ -1,8 +1,5 @@
 # "Web Service" Exercise
 
-
-
-> This exercise is inspired by a former [student project](https://github.com/mgallea/daily-email).
 ## Learning Objectives
 
   + Deploy a Python script to a user-facing "production" environment (i.e. a remote application server hosted by Heroku).
@@ -11,11 +8,9 @@
 
 ## Instructions
 
-Deploy an application to a remote server, and configure the server to run the app at scheduled intervals. For this exercise, we will use the professor's "Daily Briefings" app, which ___________________.
-
 ### Setup
 
-Fork this [Daily Briefings repo](https://github.com/prof-rossetti/daily-briefings-py) under your own control and then clone / download it onto your local computer.
+Fork the professor's [Daily Briefings repo](https://github.com/prof-rossetti/daily-briefings-py), then clone / download your copy onto your local computer.
 
 Follow the README instructions to setup the virtual environment, install package dependencies, and configure environment variables.
 
@@ -29,4 +24,4 @@ Continue following the README instructions to run each of the Python scripts loc
 
 ### Deploying to Production
 
-After demonstrating the ability to successfully run the app locally, follow these [Deployment Instructions](deploying.md) to upload the source code onto a remote server and configure the server to send you an email at scheduled (e.g. daily) intervals.
+After demonstrating the ability to successfully run the app locally, follow the app's [Deployment Instructions](https://github.com/prof-rossetti/daily-briefings-py/blob/main/DEPLOYING.md) to upload the source code onto a remote server and configure the server to send you an email at scheduled (e.g. daily) intervals.
