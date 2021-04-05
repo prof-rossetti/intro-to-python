@@ -38,7 +38,7 @@ If your program requires sensitive information like secret passwords, API keys, 
 
 Scan your application's codebase for duplication of terms, and refactor (using custom functions as necessary) to simplify the code and make it easier to maintain.
 
-As desired, integrate your GitHub repository with a service like Code Climate to provide automated code quality checks.
+Ideally also integrate your GitHub repository with a service like Code Climate to provide automated code quality checks.
 
 ### Testing Requirements
 
@@ -53,13 +53,13 @@ As you think about ways to test your application, consider asking yourself quest
   + If the application processes data from the Internet: Is there a way to test the application's functionality without making any additional / unnecessary network requests?
   + If the application processes data from a CSV file or database: Is there a way to test the application's functionality without affecting the development or production environment datastores?
 
-As desired, integrate your GitHub repository with a Continuous Integration service like Travis CI to automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository.
+Ideally also integrate your GitHub repository with a Continuous Integration service like Travis CI to automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository.
 
 ### Dev Process Requirements
 
 Iteratively develop your project using version control practices. Save new versions of your source code as you reach key milestones.
 
-You are encouraged to use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the main branch.
+Use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the main branch.
 
 If working in a group, each group member must make significant contributions to the application's source code! Any group member not committing significant portions of the code may be subject to deductions.
 
@@ -73,13 +73,13 @@ Project implementations will be evaluated according to the requirements set fort
 
 Category | Requirement | Weight
 --- | --- | ---
-Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality | 15%
-User Experience | Provides a simple, pleasant, and intuitive experience for the user, with clear usage instructions, and free of idiosyncrasies or errors | 15%
-Documentation | Contains a comprehensive README file; includes Python docstrings as necessary | 20%
-Licensing | Contains an appropriate LICENSE file | 5%
-Security | Excludes sensitive information and credentials; protects user data as necessary | 10%
-Quality | Simplified to remove or minimize code duplication | 10%
-Testing | Contains relevant automated tests | 10%
-Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members | 15%
+Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 15%
+User Experience | Provides a simple, pleasant, and intuitive experience for the user, with clear usage instructions, and free of idiosyncrasies or errors. | 15%
+Documentation | Contains a comprehensive README file; includes Python docstrings as necessary. | 20%
+Licensing | Contains an appropriate LICENSE file. | 5%
+Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
+Quality | Simplified to remove or minimize code duplication. Ideally integrates with Code Climate service. | 10%
+Testing | Contains relevant automated tests. Ideally integrates with the Travis CI service. | 10%
+Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members. | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
