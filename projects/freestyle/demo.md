@@ -10,13 +10,15 @@
 
 ## Instructions
 
-Prepare a five minute presentation to share your project with the rest of the class. It should be in Google Slides or MS PowerPoint format, and should generally include the following slides / components:
+Prepare a five minute presentation to share your project with the rest of the class. It should be in Google Slides or MS PowerPoint format, and should generally include the following slides / components (see "Sections" below for more details):
 
   1. Introduction
   2. Problem Statement / User Needs
   3. Proposed Solution / Info Requirements
   4. Live Demo
   5. Reflections (optional)
+
+Record your presentation using a tool like Zoom, then submit your presentation slideshow and video file(s) as instructed.
 
 ## Sections
 
@@ -48,9 +50,12 @@ Remark on your reactions to the process. For example, you might address the foll
 
 ## Submission Instructions
 
-The professor will assign your group to present on a designated "Demo Day".
+The professor will assign your group to present on a designated "Demo Day" and time. The professor will designate whether presentations will be given in-person, or remotely via Zoom. The professor will also designate whether presentations will be pre-recorded, or delivered synchronously. See instructions below according to the guidance you're given.
 
-At least an hour before the beginning of class on your designated demo day, upload a PDF version of your presentation document using the designated link.
+Before 11:59pm on the day before your designated demo day, upload a PDF version of your presentation document (and a copy of your prerecorded Zoom video .mp4 file) as instructed.
+
+
+### Synchronous Delivery Guidance
 
 If presenting in-person:
 
@@ -64,7 +69,15 @@ Otherwise if presenting remotely via Zoom:
   2. After the group scheduled to present before you starts to take questions, mentally prepare to start your demo. Make sure your screen is suitable to start sharing.
   3. During your designated demo time, deliver your presentation in front of the class. When you are finished, prepare to answer questions as moderated by the professor.
 
-> NOTE: students in different time zones who are not able to present during the designated Demo Day should pre-record their presentation via Zoom and share a link to the cloud recording with the professor at least one day in advance of the designated Demo Day.
+> NOTE: students in different time zones who are not able to present during the designated Demo Day should pre-record their presentation via Zoom and share the recording file(s) with the professor at least one day in advance of the designated Demo Day (see "Asynchronous Delivery" section).
+
+### Asynchronous Delivery
+
+If recording your presentation asynchronously:
+
+  1. Before your designated demo day, record your presentation via Zoom.
+  2. Before your designated demo day, upload the video file(s) or share them with the professor as instructed.
+  3. Sit back during demo day as the professor plays your prerecorded demo. Note the professor may play the video on a faster speed if the video is longer than desired.
 
 
 ## Evaluation
