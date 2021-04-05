@@ -65,8 +65,6 @@ flask run # subsequent times
 
 ### Deploying to Production
 
-> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/efa9daf3c28bf083bce262526947155f6140ac58)
-
 After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server:
 
 ```sh

@@ -1,7 +1,5 @@
 # Web App Checkpoint 5 - Twitter Bootstrap Layout
 
-> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/1991d4670b03a829390f206cc9892266fe0d7ad5)
-
 Right now we have consistent navigation and footer, but our site could use some style upgrades. Let's leverage the capabilities of the Twitter Bootstrap front-end framework.
 
 Instead of inheriting our views from the "layout.html" file, we're going to modify them to inherit from a new layout called "boostrap_layout.html".

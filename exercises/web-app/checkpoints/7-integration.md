@@ -1,7 +1,5 @@
 # Web App Checkpoint 7 - Integrating Weather Functionality
 
-> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/26299ec21548b3d9465b78e11f8ff5e4e17a77b8)
-
 Alright, we've demonstrated our ability to send and receive data via a web form. Now let's apply that approach to integrating our weather functionality.
 
 Let's create a web form with a text input element to allow the user to specify their given zip code. In the templates directory, add a new HTML file called "weather_form.html" and place inside the following contents:
@@ -52,8 +50,8 @@ def weather_forecast():
         print("FORM DATA:", dict(request.form)) #> {'zip_code': '20057'}
         zip_code = request.form["zip_code"]
     elif request.method == "GET":
-        print("URL PARAMS:", dict(request.args))
-        zip_code = request.args["zip_code"] #> {'zip_code': '20057'}
+        print("URL PARAMS:", dict(request.args)) #> {'zip_code': '20057'}
+        zip_code = request.args["zip_code"]
 
     results = get_hourly_forecasts(zip_code)
     print(results.keys())

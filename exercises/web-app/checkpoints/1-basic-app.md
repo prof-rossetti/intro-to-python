@@ -1,8 +1,6 @@
 
 # Web App Checkpoint 1 - Basic App
 
-> FYI: [Reference Code](https://github.com/s2t2/daily-briefings-py/pull/1/commits/468fe9d1c75bb8216e125b00e04bbb89d3545746)
-
 After installing the Flask package, let's read the [Flask Quick Start Guide](https://flask.palletsprojects.com/en/1.1.x/quickstart/) and see what it wants us to do.
 
 We find an example like this, so let's try it out:
@@ -30,7 +28,7 @@ We'll run the file like this:
 FLASK_APP=hello.py flask run
 
 # windows:
-export FLASK_APP=hello.py 
+export FLASK_APP=hello.py
 flask run
 ```
 
