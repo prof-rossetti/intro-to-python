@@ -28,5 +28,5 @@ To incentivize individual effort within groups, each group member may be asked t
 ## Deliverables
 
   1. [Proposal](proposal.md)
-  2. [Implementation - OPIM 244](implementation.md) | [Implementation - TECH 2335](implementation-2335.md)
+  2. [Implementation](implementation.md)
   3. [Demonstration](demo.md)
