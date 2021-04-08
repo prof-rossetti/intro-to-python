@@ -21,13 +21,25 @@
   + [Web Forms - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Forms)
   + [Sending and Retrieving Form Data - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
 
-## Instructions
+## Prompt
 
 So, you've [deployed a background web service](/exercises/web-service/README.md) to send you an email every day. But what if you wanted the information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
 
 ![](../../img/exercises/web-app/weather-form.png)
 
-Follow these "checkpoints" for a guided walk-through:
+## Instructions
+
+### Setup
+
+To use the Flask package, let's add `Flask` to the "requirements.txt" file and re-install packages:
+
+```sh
+pip install -r requirements.txt
+```
+
+### Checkpoints
+
+Follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
 
   1. [Basic App](checkpoints/1-basic-app.md)
   2. [Application Factory](checkpoints/2-app-factory.md)
@@ -37,19 +49,9 @@ Follow these "checkpoints" for a guided walk-through:
   6. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
   7. [Integrating Weather Functionality](checkpoints/7-integration.md)
 
-Also feel free to reference this [Draft Pull Request (2020)](https://github.com/prof-rossetti/daily-briefings-py/pull/4) which includes a [step-by-step commit history](https://github.com/prof-rossetti/daily-briefings-py/pull/4/commits) and [comprehensive file diffs](https://github.com/prof-rossetti/daily-briefings-py/pull/4/files).
-
-### Setup
-
-To use the Flask package, you'll need to add `Flask` to the "requirements.txt" file and re-install packages:
-
-```sh
-pip install -r requirements.txt
-```
-
 ### Running Locally
 
-Depending on the way a Flask app is organized, the run command will differ, but based on the provided organizational structure (with the `create_app()` function in the "web_app/\_\_init__.py" file), the following command should run web application locally so you can view it in a browser at localhost:5000:
+Depending on the way a Flask app is organized, the run command will differ, but based on the provided organizational structure (with the `create_app()` function in the "web_app/\_\_init__.py" file), the following command should run web application locally so we can view it in a browser at localhost:5000:
 
 ```sh
 # Mac:
@@ -62,7 +64,7 @@ flask run # subsequent times
 
 ### Deploying to Production
 
-After demonstrating the ability to successfully run the web app locally, repeat the process that you followed when [deploying a web service](/exercises/web-service/deploying.md) to upload the source code onto a remote server:
+After demonstrating the ability to successfully run the web app locally, repeat the process we followed when [deploying the web service](/exercises/web-service/deploying.md) to upload an updated copy of the source code onto the server:
 
 ```sh
 git push heroku main
