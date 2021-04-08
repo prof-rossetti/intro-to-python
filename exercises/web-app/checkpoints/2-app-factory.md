@@ -5,27 +5,20 @@ So far we've got a simple app with a few routes, but we need to use a more modul
 
 ## Application Factory
 
-Create a new directory called "web_app" with a file called "\_\_init_\_.py" and place inside the following contents:
+First, let's implement the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function. Among other benefits, this can help us test our app later.
+
+Create a new directory called "web_app" with a file called "\_\_init_\_.py" and place the following contents inside:
 
 ```py
 # web_app/__init__.py
 
-#import os
-#from dotenv import load_dotenv
 from flask import Flask
 
 from web_app.routes.home_routes import home_routes
-#from web_app.routes.weather_routes import weather_routes
-
-#load_dotenv()
-
-#SECRET_KEY = os.getenv("SECRET_KEY", default="super secret")
 
 def create_app():
     app = Flask(__name__)
-    #app.config["SECRET_KEY"] = SECRET_KEY
     app.register_blueprint(home_routes)
-    #app.register_blueprint(weather_routes)
     return app
 
 if __name__ == "__main__":
@@ -33,41 +26,33 @@ if __name__ == "__main__":
     my_app.run(debug=True)
 ```
 
-Here we are implementing the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function.
-
-Don't worry about the `SECRET_KEY` for now, we'll need this when we implement "flash messaging" later.
-
 ## Route Blueprints
 
-Inside the "web_app" directory, create a new subdirectory called "routes" with a file called "home_routes" and place the following contents inside:
+Let's move the route definitions to separate files, using [Flask Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/), just to be more organized.
+
+Inside the "web_app" directory, create a new subdirectory called "routes" with a file called "home_routes.py" and place the following contents inside:
 
 ```py
 # web_app/routes/home_routes.py
 
-from flask import Blueprint #, render_template
+from flask import Blueprint
 
 home_routes = Blueprint("home_routes", __name__)
 
 @home_routes.route("/")
 def index():
     print("VISITED THE HOME PAGE")
-    #return render_template("dashboard.html")
     return "Welcome Home (TODO)"
 
 @home_routes.route("/about")
 def about():
     print("VISITED THE ABOUT PAGE")
     return "About Me (TODO)"
-
-@home_routes.route("/register")
-def register():
-    print("VISITED THE REGISTRATION PAGE")
-    return "Sign Up for our Product! (TODO)"
 ```
 
-We're also moving the route definitions to separate files, using [Flask Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/), just to be more organized.
+## Running the Web Server
 
-With these routes in place and our application configured to recognize them, let's try running our app again. But since we moved the app into the "web_app" directory (the entry point of which is the init file), we'll now start to run our app like this:
+With these routes in place and our application configured to recognize them, let's try running our app again. Since we moved the app into the "web_app" directory (the entry point of which is the init file), we'll use this command to run it moving forward:
 
 ```sh
 # mac:
