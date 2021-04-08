@@ -25,15 +25,26 @@ pip install flask
 
 Follow the [Official Flask Tutorial](http://flask.pocoo.org/docs/1.0/tutorial/) or the ["Web Application" Exercise](/exercises/web-app/README.md) for an introduction to making web applications with Flask.
 
-Also reference these example applications by the professor and previous students:
+## Testing
 
-App Name | Functionality Description
---- | ---
-[Rock-Paper-Scissors (Flask)](https://github.com/prof-rossetti/rock-paper-scissors-flask) | Prompts the user to select an option from a dropdown menu, then processes that selection and displays the results on another page.
-[Starter Web App](https://github.com/prof-rossetti/web-app-starter-flask) | A basic navigable web application with examples of capturing user inputs through a web form.
-[Starter Web App w/ Google Sheets datastore](https://github.com/prof-rossetti/web-app-starter-flask-sheets) | A basic navigable web application with examples of reading and writing data to and from a Google Sheets datastore.
-[DineCision](https://github.com/jessicalee127/DineCision) by @jessicalee | Prompts the user to input their zipcode via a web form so it can use the Yelp API to provide a dining recommendation.
-[GMR's Algo Machine](https://github.com/s2t2/spotify_app/) by @gmr50 | Prompts the user to login to their Spotify account so it can create new Spotify playlist recommendations on their behalf.
-[Time Tracker](https://github.com/kyokang1/time-tracker) by @kyokang1 | Evaluates your work-life balance status and warn you if you work too hard. Interfaces with Google Sheets.
-[Products API](https://github.com/prof-rossetti/products-api-flask) | A JSON API with no front-end interface, uses CSV datastore.
-[Salad System](https://github.com/prof-rossetti/salad-system-flask) | Includes a front-end interface and uses an SQL database as a datastore.
+See also:
+  + [The `pytest` Package](/notes/python/packages/pytest.md#fixtures)
+  + [Testing Flask Apps](https://flask.palletsprojects.com/en/1.1.x/testing/)
+
+```py
+import pytest
+
+from api import create_app # (or whatever your app is called)
+
+@pytest.fixture
+def api_client():
+    app = create_app()
+    return app.test_client()
+
+def test_my_endpoint(api_client):
+    response = api_client.get("/api/v1/my_endpoint")
+    parsed_response = json.loads(response.data)
+    assert response.status_code == 200
+    assert isinstance(parsed_response, list)
+    # etc.
+```

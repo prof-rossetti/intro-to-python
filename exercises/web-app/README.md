@@ -2,45 +2,42 @@
 
 ## Prerequisites
 
- + [The `flask` Package](/notes/python/packages/flask.md)
- + ["Web Service" Exercise](/exercises/web-service/README.md), especially the deployment process
-
-> FYI: this web application involves some basic HTML code. To gain familiarity with HTML and the Twitter Bootstrap front-end framework, see these resources:
->   + https://www.w3schools.com/html/html_basic.asp
->   + https://www.w3schools.com/html/html_forms.asp
->   + https://www.w3schools.com/html/html_tables.asp
->   + https://getbootstrap.com/docs/4.0/components/navbar/
->   + https://getbootstrap.com/docs/4.0/components/alerts/
+ + ["Web Service" Exercise](/exercises/web-service/README.md)
 
 ## Learning Objectives
 
-  + Practice leveraging third-party APIs and Python packages.
-  + Practice security and privacy best practices by using a "dotenv" approach in conjunction with a ".gitignore" file.
-  + Gain high-level exposure to basic HTML.
-  + Learn how to use the Flask package to create a basic web application in Python.
-  + Learn how to "deploy" a Python web application to a user-facing "production" environment, namely an application server hosted by Heroku, and configure the server to host the application publicly over the Internet.
+  + Create a basic web application in Python, using modular architecture.
+  + Write routing logic to handle GET requests, and respond with HTML pages.
+  + Write API routing logic to handle GET and/or POST requests, and respond with JSON data.
+  + Gain exposure to HTML templates, and using HTML forms to submit form data.
+  + Run a web application in "development" using a local web server.
+  + Deploy a web application to a user-facing "production" environment (i.e. a Heroku server).
+
+## References
+
+  + [The `flask` Package](/notes/python/packages/flask.md)
+  + [HTTP Requests and Responses](/notes/info-systems/networks.md#HyperText-Transfer-Protocol)
+  + [Web Forms - W3Schools](https://www.w3schools.com/html/html_forms.asp)
+  + [Web Forms - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Forms)
+  + [Sending and Retrieving Form Data - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
 
 ## Instructions
 
-So, you've [deployed a background web service](/exercises/web-service/README.md) to send you an email every day. But what if you wanted your information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
+So, you've [deployed a background web service](/exercises/web-service/README.md) to send you an email every day. But what if you wanted the information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
 
 ![](../../img/exercises/web-app/weather-form.png)
 
-Follow along in class as the professor guides you through the process of building a web application from scratch.
-
-### Solution
-
-If you'd like to work ahead or asynchronously, you can reference this [Draft Pull Request in the Daily Briefings Repo](https://github.com/prof-rossetti/daily-briefings-py/pull/4) which includes a [step-by-step commit history](https://github.com/prof-rossetti/daily-briefings-py/pull/4/commits) and [comprehensive file diffs](https://github.com/prof-rossetti/daily-briefings-py/pull/4/files).
-
-Or follow these written "checkpoints" sequentially:
+Follow these written "checkpoints" sequentially for a guided walk-through:
 
   1. [Basic App](checkpoints/1-basic-app.md)
   2. [Application Factory](checkpoints/2-app-factory.md)
   3. [Rendering HTML Templates](checkpoints/3-render-template.md)
-  4. [Shared HTML Layouts](checkpoints/4-shared-layout.md)
+  4. [Shared Layouts](checkpoints/4-shared-layout.md)
   5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
   6. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
   7. [Integrating Weather Functionality](checkpoints/7-integration.md)
+
+Also feel free to reference this [Draft Pull Request (2020)](https://github.com/prof-rossetti/daily-briefings-py/pull/4) which includes a [step-by-step commit history](https://github.com/prof-rossetti/daily-briefings-py/pull/4/commits) and [comprehensive file diffs](https://github.com/prof-rossetti/daily-briefings-py/pull/4/files).
 
 ### Setup
 
