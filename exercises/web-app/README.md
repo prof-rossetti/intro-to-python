@@ -27,7 +27,7 @@ So, you've [deployed a background web service](/exercises/web-service/README.md)
 
 ![](../../img/exercises/web-app/weather-form.png)
 
-Follow these written "checkpoints" sequentially for a guided walk-through:
+Follow these "checkpoints" for a guided walk-through:
 
   1. [Basic App](checkpoints/1-basic-app.md)
   2. [Application Factory](checkpoints/2-app-factory.md)
