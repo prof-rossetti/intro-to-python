@@ -6,8 +6,8 @@ Before we start learning about Python or software development, it will be helpfu
 >  + On Mac OS, the default Terminal application will allow students to use unix-style commands.
 >  + On Windows OS, the default Command Prompt application uses different commands, but installing the Git Bash application will allow students to use unix-style commands.
 
-Additional References:
-  + [Intro to Unix Commands](https://www.infoworld.com/article/3193969/10-unix-commands-every-mac-and-linux-user-should-know.html)
+See also:
+  + [Intro to the Command-Line - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
 
 ## Prerequisites
 
