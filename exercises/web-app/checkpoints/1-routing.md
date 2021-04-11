@@ -145,9 +145,10 @@ Nice, our app is dynamically handling different URL parameters!
 Finally, visit the following urls in the browser:
   + http://localhost:5000/api/books.json
   + http://localhost:5000/api/books/100.json
+  + http://localhost:5000/api/books/oops.json
   + http://localhost:5000/weather/forecast.json
   + http://localhost:5000/weather/forecast.json?country_code=FR&zip_code=101010
 
 Review the code that handles these "book" and "forecast" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
 
-Wow we just made our own JSON API. Nice.
+Wow, we've just made our own JSON API.
