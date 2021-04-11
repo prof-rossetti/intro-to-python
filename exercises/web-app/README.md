@@ -7,11 +7,9 @@
 ## Learning Objectives
 
   + Create a basic web application in Python, using modular architecture.
-  + Write routing logic to handle GET requests, and respond with HTML pages.
-  + Write API routing logic to handle GET and/or POST requests, and respond with JSON data.
+  + Write routing logic to handle GET and POST requests, and respond by rendering HTML pages or returning JSON data.
   + Gain exposure to HTML templates, and using HTML forms to submit form data.
-  + Run a web application in "development" using a local web server.
-  + Deploy a web application to a user-facing "production" environment (i.e. a Heroku server).
+  + Run a web application in "development" using a local web server, and deploy to a user-facing "production" environment (i.e. a Heroku server).
 
 ## References
 
@@ -41,13 +39,13 @@ pip install -r requirements.txt
 
 Follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
 
-  1. [Routing](checkpoints/1-basic-app.md)
+  1. [Routing](checkpoints/1-routing.md)
   2. [Modular Organization](checkpoints/2-app-factory.md)
-  3. [Rendering HTML Templates](checkpoints/3-render-template.md)
+  3. [HTML and JSON Responses](checkpoints/3-render-template.md)
   4. [Shared Layouts](checkpoints/4-shared-layout.md)
-  5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
   6. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
   7. [Integrating Weather Functionality](checkpoints/7-integration.md)
+  5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
 
 ### Running Locally
 

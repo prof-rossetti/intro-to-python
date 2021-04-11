@@ -50,7 +50,7 @@ def about():
     return "About Me (TODO)"
 ```
 
-## Running the Web Server
+## New Run Command
 
 With these routes in place and our application configured to recognize them, let's try running our app again. Since we moved the app into the "web_app" directory (the entry point of which is the init file), we'll use this command to run it moving forward:
 
