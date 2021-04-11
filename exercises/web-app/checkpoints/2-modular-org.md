@@ -78,7 +78,7 @@ def hello_world():
 ```py
 # web_app/routes/book_routes.py
 
-from flask import Blueprint
+from flask import Blueprint, jsonify
 
 book_routes = Blueprint("book_routes", __name__)
 
@@ -105,7 +105,7 @@ def get_book(book_id):
 ```py
 # web_app/routes/weather_routes.py
 
-from flask import Blueprint
+from flask import Blueprint, request, jsonify
 
 weather_routes = Blueprint("weather_routes", __name__)
 

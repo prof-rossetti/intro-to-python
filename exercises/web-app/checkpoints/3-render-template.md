@@ -21,7 +21,7 @@ Inside "web_app/templates/home.html":
 
     <h1>Welcome Home</h1>
 
-    <p>This is a paragraph.</p>
+    <p>This is a paragraph on the "home" page.</p>
 
     <nav>
         <ul>
@@ -32,7 +32,6 @@ Inside "web_app/templates/home.html":
     </nav>
 
     <footer>
-        <hr>
         <p>My footer</p>
     </footer>
 
@@ -55,7 +54,7 @@ Inside "web_app/templates/about.html":
 
     <h1>About Me</h1>
 
-    <p>This is a paragraph.</p>
+    <p>This is a paragraph on the "about" page.</p>
 
     <nav>
         <ul>
@@ -66,7 +65,6 @@ Inside "web_app/templates/about.html":
     </nav>
 
     <footer>
-        </hr>
         <p>My footer</p>
     </footer>
 
@@ -75,6 +73,7 @@ Inside "web_app/templates/about.html":
 
 ```
 
+Inside "web_app/templates/hello.html":
 
 ```html
 <!DOCTYPE html>
@@ -87,7 +86,7 @@ Inside "web_app/templates/about.html":
 
     <h1>{{ message }}</h1>
 
-    <p>This is a paragraph.</p>
+    <p>This is a paragraph on the "hello" page.</p>
 
     <nav>
         <ul>
@@ -98,7 +97,6 @@ Inside "web_app/templates/about.html":
     </nav>
 
     <footer>
-        </hr>
         <p>My footer</p>
     </footer>
 
@@ -107,9 +105,14 @@ Inside "web_app/templates/about.html":
 
 ```
 
-Each page has a unique heading, and a shared navigation and footer. We'll refactor the duplicate /shared HTML code later, but for right now it's fine.
+Notice each HTML page has a unique heading, and a shared navigation and footer. We'll refactor the duplicate / shared HTML code later, but for right now it's fine.
 
-Let's now update the home routes to render these HTML pages:
+Notice what's going on with passing a variable to the "hello" page, and how we are using the "Jinja" template language to reference the variable using double curly braces. For more information about Jinja, see:
+
+  + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
+
+
+Let's update the home routes to render these HTML pages:
 
 ```py
 # web_app/routes/home_routes.py
@@ -141,12 +144,103 @@ def hello_world():
 
 ```
 
-> NOTE: flask specifically is looking for our HTML files in the "templates" directory by default!
+Restart the server and view the app in the browser and navigate between the three HTML pages. Use URL params to customize the name on the "hello" page. Cool!
 
-Restart the server and view the app in the browser and navigate between the three HTML pages. Cool!
-
-Notice what's going on with passing a variable to the "hello" page, and how we are using the "Jinja" templating language to reference the variable using double curly braces. For more information about Jinja, see __________.
 
 ## Shared Layouts
 
-TODO
+Right now each template is a complete HTML file. If we wanted to continue to implement common navigation and footer across each of the files, we'd have to copy and paste the same header and footer into all the files. This is not ideal from a maintainability perspective.
+
+Luckily we have the ability to define the shared aspects of each page, like the header and footer, and inherit them from a common "layout".
+
+Let's create a new file in the "templates" directory called "layout.html", and place inside the following contents:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Web App</title>
+</head>
+<body>
+
+  <!-- SITE NAVIGATION -->
+  <div class="container">
+    <nav>
+      <h1><a href="/">My Web App</a></h1>
+      <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/hello">Hello</a></li>
+      </ul>
+    </nav>
+    <hr>
+
+    <!-- PAGE CONTENTS -->
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <hr>
+      &copy; Copyright 2020 [Your Name Here] |
+      <a href="https://github.com/prof-rossetti/intro-to-python/_______________">source</a>
+    </footer>
+  </div>
+
+</body>
+</html>
+```
+
+Let's change the "home.html", "about.html", and "hello.html" templates to use the following contents, respectively.
+
+Inside "web_app/templates/home.html":
+
+```html
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>Welcome Home</h1>
+
+    <p>This is a paragraph on the "home" page.</p>
+
+{% endblock %}
+```
+
+Inside "web_app/templates/about.html":
+
+
+```html
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>About Me</h1>
+
+    <p>This is a paragraph on the "about" page.</p>
+
+{% endblock %}
+```
+
+Inside "web_app/templates/hello.html":
+
+
+```html
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>{{ message }}</h1>
+
+    <p>This is a paragraph on the "hello" page.</p>
+
+{% endblock %}
+```
+
+
+Notice each of these templates is inheriting from the "layout.html" template, and specifying some unique page contents to overwrite the "content" block.
+
+
+
+Restart your server and view your app in the browser and use the links to navigate between pages. Observe the consistent header and footer. Nice!

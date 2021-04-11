@@ -1,46 +1,8 @@
 # Web App Checkpoint 5 - Twitter Bootstrap Layout
 
-Right now we have consistent navigation and footer, but our site could use some style upgrades. Let's leverage the capabilities of the Twitter Bootstrap front-end framework.
+Right now we have consistent navigation and footer, but our site could use some style upgrades. Let's leverage the capabilities of the [Twitter Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) front-end framework.
 
-Instead of inheriting our views from the "layout.html" file, we're going to modify them to inherit from a new layout called "boostrap_layout.html".
-
-Updated "web_app/templates/home.html":
-
-```html
-{% extends "bootstrap_layout.html" %}
-{% set active_page = "home" %}
-
-{% block content %}
-
-    <h1>This is a heading</h1>
-
-    <p>This is a paragraph text</p>
-
-    <ul>
-        <li>First list item</li>
-        <li>Second list item</li>
-        <li>Third list item</li>
-    </ul>
-
-{% endblock %}
-```
-
-Updated "web_app/templates/about.html":
-
-```html
-{% extends "bootstrap_layout.html" %}
-{% set active_page = "about" %}
-
-{% block content %}
-
-    <h1>About Me</h1>
-
-    <p>todo write some stuff here</p>
-
-{% endblock %}
-```
-
-New layout called "web_app/templates/bootstrap_layout.html":
+Let's create a new shared layout in the "templates" directory called "bootstrap_layout.html":
 
 ```html
 <!doctype html>
@@ -131,5 +93,59 @@ New layout called "web_app/templates/bootstrap_layout.html":
 ```
 
 There's a lot going on in this file. But we still have the same "content" block which will allow the individual views to insert custom content.
+
+Instead of inheriting our views from the "layout.html" file, let's modify them to inherit from the new bootstrap layout.
+
+
+Updated "web_app/templates/home.html":
+
+```html
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "home" %}
+
+{% block content %}
+
+    <h1>This is a heading</h1>
+
+    <p>This is a paragraph text</p>
+
+    <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+    </ul>
+
+{% endblock %}
+```
+
+Updated "web_app/templates/about.html":
+
+```html
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "about" %}
+
+{% block content %}
+
+    <h1>About Me</h1>
+
+    <p>todo write some stuff here</p>
+
+{% endblock %}
+```
+
+Updated "web_app/templates/hello.html":
+
+```html
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "about" %}
+
+{% block content %}
+
+    <h1>About Me</h1>
+
+    <p>todo write some stuff here</p>
+
+{% endblock %}
+```
 
 Restart the server and view the app in the browser to see the new styles with a blue responsive navbar at the top!

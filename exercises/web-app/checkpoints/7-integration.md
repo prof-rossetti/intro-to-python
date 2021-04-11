@@ -1,6 +1,4 @@
-# Web App Checkpoint 7 - Integrating Weather Functionality
-
-Alright, we've demonstrated our ability to send and receive data via a web form. Now let's apply that approach to integrating our weather functionality.
+# Checkpoint 7 - Integrating Weather Functionality
 
 Let's create a web form with a text input element to allow the user to specify their given zip code. In the templates directory, add a new HTML file called "weather_form.html" and place inside the following contents:
 
