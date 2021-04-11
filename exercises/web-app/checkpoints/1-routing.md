@@ -96,23 +96,6 @@ def get_book(book_id):
     print("BOOK...", book_id)
     book = {"id": book_id, "title": f"Example Book", "year": 2000} # some dummy / placeholder data
     return jsonify(book)
-
-#
-# WEATHER ROUTES
-#
-
-@app.route("/weather/forecast.json")
-def weather_forecast():
-    print("WEATHER FORECAST...", dict(request.args))
-    country_code = request.args.get("country_code") or "US"
-    zip_code = request.args.get("zip_code") or "20057"
-    return jsonify({
-        "country_code": country_code,
-        "zip_code": zip_code,
-        "city_name": "TODO",
-        "hourly_forecasts": []
-    }) # some dummy / placeholder data
-
 ```
 
 After restarting the server, visit the following URLs in the browser:
@@ -146,8 +129,6 @@ Finally, visit the following urls in the browser:
   + http://localhost:5000/api/books.json
   + http://localhost:5000/api/books/100.json
   + http://localhost:5000/api/books/oops.json
-  + http://localhost:5000/weather/forecast.json
-  + http://localhost:5000/weather/forecast.json?country_code=FR&zip_code=101010
 
 Review the code that handles these "book" and "forecast" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
 

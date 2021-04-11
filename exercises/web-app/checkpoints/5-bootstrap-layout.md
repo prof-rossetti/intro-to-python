@@ -1,4 +1,4 @@
-# Web App Checkpoint 5 - Twitter Bootstrap Layout
+# Checkpoint 5: Bootstrap Layout
 
 Right now we have consistent navigation and footer, but our site could use some style upgrades. Let's leverage the capabilities of the [Twitter Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) front-end framework.
 

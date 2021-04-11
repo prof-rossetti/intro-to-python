@@ -27,10 +27,9 @@ Let's create a web form with a text input element to allow the user to specify t
 {% endblock %}
 ```
 
-Here we're saying when the user submits the form, we'll send their form inputs via POST request to a route called "/weather/forecast". So let's update our weather routes to handle the POST request:
+Here we're saying when the user submits the form, we'll send their form inputs via POST request to a route called "/weather/forecast". So let's create some weather routes to handle the POST request. Create a new file in the "routes" directory called "weather_routes.py", and place inside the following contents:
 
 ```py
-
 # web_app/routes/weather_routes.py
 
 from flask import Blueprint, request, jsonify, render_template
@@ -69,7 +68,9 @@ def weather_forecast():
 
 ```
 
-After we get a weather forecast for the given zip code, we'll send the results to a new page called "weather_forecast.html", so let's create that page now in the "templates" directory, and place inside the following contents:
+Also uncomment the corresponding lines in the init file to import and register these routes.
+
+Based on this routing logic, after we get a weather forecast for the given zip code, we'll send the results to a new page called "weather_forecast.html", so let's create that page now in the "templates" directory, and place inside the following contents:
 
 ```html
 {% extends "layout.html" %}

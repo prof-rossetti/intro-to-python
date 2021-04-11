@@ -18,13 +18,13 @@ from flask import Flask
 
 from web_app.routes.home_routes import home_routes
 from web_app.routes.book_routes import book_routes
-from web_app.routes.weather_routes import weather_routes
+#from web_app.routes.weather_routes import weather_routes
 
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(home_routes)
     app.register_blueprint(book_routes)
-    app.register_blueprint(weather_routes)
+    #app.register_blueprint(weather_routes)
     return app
 
 if __name__ == "__main__":
@@ -99,27 +99,6 @@ def get_book(book_id):
     print("BOOK...", book_id)
     book = {"id": book_id, "title": f"Example Book", "year": 2000} # some dummy / placeholder data
     return jsonify(book)
-
-```
-
-```py
-# web_app/routes/weather_routes.py
-
-from flask import Blueprint, request, jsonify
-
-weather_routes = Blueprint("weather_routes", __name__)
-
-@weather_routes.route("/weather/forecast.json")
-def weather_forecast():
-    print("WEATHER FORECAST...", dict(request.args))
-    country_code = request.args.get("country_code") or "US"
-    zip_code = request.args.get("zip_code") or "20057"
-    return jsonify({
-        "country_code": country_code,
-        "zip_code": zip_code,
-        "city_name": "TODO",
-        "hourly_forecasts": []
-    }) # some dummy / placeholder data
 
 ```
 
