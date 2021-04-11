@@ -1,11 +1,11 @@
 
-# Web App Checkpoint 2 - Modular Organization
+# Checkpoint 2: Modular Organization
 
-So far we've got a simple app with a few routes, but we need to use a more modular organizational structure for larger apps.
+So far we've got a simple app with a few routes, but to make this app easier to maintain as it grows, let's start adopting a more modular organizational structure.
 
 ## Application Factory
 
-First, let's implement the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function. Among other benefits, this can help us test our app later.
+First, let's implement the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function. Among other benefits, this can help us test our app in isolation later.
 
 Create a new directory called "web_app" with a file called "\_\_init_\_.py" and place the following contents inside:
 
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
 Let's move the route definitions to separate files, using [Flask Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/), just to be more organized.
 
-Inside the "web_app" directory, create a new subdirectory called "routes" with a file called "home_routes.py" and place the following contents inside:
+Inside the "web_app" directory, create a new subdirectory called "routes" with a file called "home_routes.py", "_____", and "", and place the following contents inside, respectively:
 
 ```py
 # web_app/routes/home_routes.py
