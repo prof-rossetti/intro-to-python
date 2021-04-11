@@ -2,99 +2,11 @@
 
 Right now we have consistent navigation and footer, but our site could use some style upgrades. Let's leverage the capabilities of the [Twitter Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) front-end framework.
 
-Let's create a new shared layout in the "templates" directory called "bootstrap_layout.html":
+Let's create a new shared layout in the "templates" directory called "bootstrap_layout.html" and place inside contents from this [Bootstrap 5 HTML layout](/exercises/web-app/bootstrap_5_layout.html).
 
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>My Starter Web App | Learning how to use the Flask Python package</title>
+There's a lot going on in this file. But we still have the same "content" block which will allow the individual pages to specify their own content.
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  </head>
-
-  <body>
-
-    <!-- FLASH MESSAGING -->
-    <!-- see: https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/ -->
-    <!-- see: https://getbootstrap.com/docs/4.3/components/alerts/ -->
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        {% for category, message in messages %}
-          <div class="alert alert-{{ category }} alert-dismissible" role="alert" style="margin-bottom:0px;">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            {{ message }}
-          </div>
-        {% endfor %}
-      {% endif %}
-    {% endwith %}
-
-    <!-- SITE NAVIGATION -->
-    <!-- see: https://jinja.palletsprojects.com/en/2.11.x/tricks/ -->
-    <!-- see: https://getbootstrap.com/docs/4.0/components/navbar/ -->
-    {% set nav_links = [
-      ('/about', 'about', 'About'),
-      ('/register', 'new_user', 'Sign Up')
-    ] -%}
-    {% set active_page = active_page|default('index') -%}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="/">My Web App</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="nav navbar-nav ml-auto">
-          {% for href, id, link_text in nav_links %}
-            {% if id == active_page %}
-              {% set is_active = "active" -%}
-            {% else %}
-              {% set is_active = "" -%}
-            {% endif %}
-            <li class="nav-item">
-              <a class="nav-link {{ is_active }}" href="{{href}}">{{link_text}}</a>
-            </li>
-          {% endfor %}
-        </div>
-      </ul>
-    </nav>
-
-
-    <div class="container" style="margin-top:2em;">
-      <!-- PAGE CONTENTS -->
-      <div id="content">
-        {% block content %}
-        {% endblock %}
-      </div>
-
-      <!-- FOOTER -->
-      <div id="footer">
-        <hr>
-        &copy; Copyright 2020 [Your Name Here] |
-        <a href="https://github.com/prof-rossetti/daily-briefings-py">source</a>
-      </div>
-    </div>
-
-    <!-- JAVASCRIPT SECTION -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-
-        console.log("Thanks for the page visit!")
-
-        // closes data-dismiss="alert" flash messages
-        // see: https://getbootstrap.com/docs/4.3/components/alerts/#javascript-behavior
-        //$().alert('close')
-
-    </script>
-  </body>
-</html>
-
-```
-
-There's a lot going on in this file. But we still have the same "content" block which will allow the individual views to insert custom content.
-
-Instead of inheriting our views from the "layout.html" file, let's modify them to inherit from the new bootstrap layout.
+Instead of inheriting our templates from the "layout.html" file, let's modify them to inherit from the new bootstrap layout.
 
 
 Updated "web_app/templates/home.html":
@@ -105,15 +17,9 @@ Updated "web_app/templates/home.html":
 
 {% block content %}
 
-    <h1>This is a heading</h1>
+    <h1>Welcome Home</h1>
 
-    <p>This is a paragraph text</p>
-
-    <ul>
-        <li>First list item</li>
-        <li>Second list item</li>
-        <li>Third list item</li>
-    </ul>
+    <p>This is a paragraph on the "home" page.</p>
 
 {% endblock %}
 ```
@@ -128,7 +34,7 @@ Updated "web_app/templates/about.html":
 
     <h1>About Me</h1>
 
-    <p>todo write some stuff here</p>
+    <p>This is a paragraph on the "about" page.</p>
 
 {% endblock %}
 ```
@@ -137,13 +43,35 @@ Updated "web_app/templates/hello.html":
 
 ```html
 {% extends "bootstrap_layout.html" %}
-{% set active_page = "about" %}
+{% set active_page = "hello" %}
 
 {% block content %}
 
-    <h1>About Me</h1>
+    <h1>{{ message }}</h1>
 
-    <p>todo write some stuff here</p>
+    <p>This is a paragraph on the "hello" page.</p>
+
+{% endblock %}
+```
+
+```html
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "weather_form" %}
+
+{% block content %}
+
+    <h2>Weather Form</h2>
+
+    <p>Request an hourly forecast for your zip code...</p>
+
+    <form action="/weather/forecast" method="POST">
+
+        <label>Zip Code:</label>
+        <input type="text" name="zip_code" placeholder="20057" value="20057">
+        <br>
+
+        <button>Submit</button>
+    </form>
 
 {% endblock %}
 ```

@@ -39,12 +39,11 @@ pip install -r requirements.txt
 
 Follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
 
-  1. [Routing](checkpoints/1-routing.md)
+  1. [Routing](checkpoints/1-routing.md), and Handling GET Requests
   2. [Modular Organization](checkpoints/2-modular-org.md)
   3. [Rendering HTML Pages](checkpoints/3-render-template.md)
-  4. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
-  5. [Integrating Weather Functionality](checkpoints/7-integration.md)
-  6. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
+  4. [Web Forms](checkpoints/4-web-forms.md), and Handling POST Requests
+  5. [Twitter Bootstrap Styling](checkpoints/5-bootstrap-layout.md), and Flash Messaging
 
 ### Running Locally
 
