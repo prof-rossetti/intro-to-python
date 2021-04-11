@@ -32,7 +32,9 @@ Here we're saying when the user submits the form, we'll send their form inputs v
 ```py
 # web_app/routes/weather_routes.py
 
-from flask import Blueprint, request, jsonify, render_template
+# web_app/routes/weather_routes.py
+
+from flask import Blueprint, request, jsonify, render_template, flash, redirect
 
 from app.weather_service import get_hourly_forecasts
 
@@ -43,28 +45,40 @@ def weather_form():
     print("WEATHER FORM...")
     return render_template("weather_form.html")
 
+@weather_routes.route("/weather/forecast.json")
+def weather_forecast_api():
+    print("WEATHER FORECAST (API)...")
+    print("URL PARAMS:", dict(request.args))
+    country_code = request.args.get("country_code") or "US"
+    zip_code = request.args.get("zip_code") or "20057"
+
+    results = get_hourly_forecasts(country_code=country_code, zip_code=zip_code)
+    if results:
+        return jsonify(results)
+    else:
+        return jsonify({"message":"Invalid Geograpy. Please try again."})
+
 @weather_routes.route("/weather/forecast", methods=["GET", "POST"])
-@weather_routes.route("/weather/forecast.json", methods=["GET", "POST"])
 def weather_forecast():
     print("WEATHER FORECAST...")
 
     if request.method == "GET":
         print("URL PARAMS:", dict(request.args))
-        request_data = request.args
+        request_data = dict(request.args)
     elif request.method == "POST": # the form will send a POST
         print("FORM DATA:", dict(request.form))
-        request_data = request.form
+        request_data = dict(request.form)
 
     country_code = request_data.get("country_code") or "US"
     zip_code = request_data.get("zip_code") or "20057"
 
     results = get_hourly_forecasts(country_code=country_code, zip_code=zip_code)
-    print(results.keys())
-
-    if ".json" in request.url:
-        return jsonify(results)
-    else:
+    if results:
+        flash(f"Weather Forecast Generated Successfully!", "success")
         return render_template("weather_forecast.html", country_code=country_code, zip_code=zip_code, results=results)
+    else:
+        flash(f"Geography Error. Please try again!", "danger")
+        return redirect("/weather/form")
 
 ```
 
@@ -95,10 +109,13 @@ Based on this routing logic, after we get a weather forecast for the given zip c
 Here, we are using the Jinja template language to loop through our forecasts and display each.
 
 Restart the server and visit the following routes to test the newly-integrated weather forecasting functionality:
-  + http://localhost:5000/weather/form (and submit the form)
   + http://localhost:5000/weather/forecast
-  + http://localhost:5000/weather/forecast?country_code=FR&zip_code=101010
+  + http://localhost:5000/weather/forecast?country_code=US&zip_code=10012
+  + http://localhost:5000/weather/forecast?country_code=US&zip_code=OOPS
   + http://localhost:5000/weather/forecast.json
-  + http://localhost:5000/weather/forecast.json?country_code=FR&zip_code=101010
+  + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=10012
+  + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=OOPS
 
-We now have both a web interface and a JSON API interface into our app's weather functionality. Nice!
+Also visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
+
+Nice! We now have both a web interface and a JSON API interface into our app's weather functionality.
