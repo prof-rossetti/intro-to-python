@@ -29,38 +29,25 @@ So, you've [deployed a background web service](/exercises/web-service/README.md)
 
 ### Setup
 
-To use the Flask package, let's add `Flask` to the "requirements.txt" file and re-install packages:
+To use the Flask package, let's first add `Flask` to the Daily Briefing repo's "requirements.txt" file, then re-install packages:
 
 ```sh
 pip install -r requirements.txt
 ```
 
-### Checkpoints
+### Guided Checkpoints
 
-Follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
+Now follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
 
-  1. [Routing](checkpoints/1-routing.md), and Handling GET Requests
+  1. [Routing (and Handling GET Requests)](checkpoints/1-routing.md)
   2. [Modular Organization](checkpoints/2-modular-org.md)
   3. [Rendering HTML Pages](checkpoints/3-render-template.md)
-  4. [Web Forms](checkpoints/4-web-forms.md), and Handling POST Requests
-  5. [Twitter Bootstrap Styling](checkpoints/5-bootstrap-layout.md), and Flash Messaging
-
-### Running Locally
-
-Depending on the way a Flask app is organized, the run command will differ, but based on the provided organizational structure (with the `create_app()` function in the "web_app/\_\_init__.py" file), the following command should run web application locally so we can view it in a browser at localhost:5000:
-
-```sh
-# Mac:
-FLASK_APP=web_app flask run
-
-# Windows:
-export FLASK_APP=web_app # first time, to set the env var
-flask run # subsequent times
-```
+  4. [Web Forms (and Handling POST Requests)](checkpoints/4-web-forms.md)
+  5. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
 
 ### Deploying to Production
 
-After demonstrating the ability to successfully run the web app locally, repeat the process we followed when [deploying the web service](/exercises/web-service/deploying.md) to upload an updated copy of the source code onto the server:
+After completing all the checkpoints and demonstrating the ability to successfully run the web app locally, repeat the process we followed when [deploying the web service](/exercises/web-service/deploying.md) to upload an updated copy of the source code onto the server:
 
 ```sh
 git push heroku main
