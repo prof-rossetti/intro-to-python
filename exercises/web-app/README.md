@@ -41,11 +41,11 @@ Follow these sequential "checkpoints" for a guided walk-through of how to create
 
   1. [Routing](checkpoints/1-routing.md)
   2. [Modular Organization](checkpoints/2-modular-org.md)
-  3. [HTML and JSON Responses](checkpoints/3-render-template.md)
+  3. [Rendering HTML Pages](checkpoints/3-render-template.md)
   4. [Shared Layouts](checkpoints/4-shared-layout.md)
-  6. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
-  7. [Integrating Weather Functionality](checkpoints/7-integration.md)
-  5. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
+  5. [Web Forms](checkpoints/6-forms.md), POST Requests, and Flash Messaging
+  6. [Integrating Weather Functionality](checkpoints/7-integration.md)
+  7. [Bootstrap Layouts](checkpoints/5-bootstrap-layout.md)
 
 ### Running Locally
 

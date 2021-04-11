@@ -44,14 +44,12 @@ Let's now move the route definitions to their own logically-related files, just 
 
 We're using [Flask Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/) to store the route definitions in a way the app can recognize.
 
-Inside the "web_app" directory, create a new subdirectory called "routes" with new files called "home_routes.py", "home_routes.py", and "home_routes.py", and place the following contents inside, respectively.
-
-Home routes:
+Inside the "web_app" directory, create a new subdirectory called "routes" with new files called "home_routes.py", "home_routes.py", and "home_routes.py", and place the following contents inside, respectively:
 
 ```py
 # web_app/routes/home_routes.py
 
-from flask import Blueprint
+from flask import Blueprint, render_template, request
 
 home_routes = Blueprint("home_routes", __name__)
 
@@ -77,8 +75,6 @@ def hello_world():
 
 ```
 
-Book routes:
-
 ```py
 # web_app/routes/book_routes.py
 
@@ -97,16 +93,14 @@ def list_books():
     ] # some dummy / placeholder data
     return jsonify(books)
 
-@app.route("/api/books/<int:book_id>")
-@app.route("/api/books/<int:book_id>.json")
+@book_routes.route("/api/books/<int:book_id>")
+@book_routes.route("/api/books/<int:book_id>.json")
 def get_book(book_id):
     print("BOOK...", book_id)
     book = {"id": book_id, "title": f"Example Book", "year": 2000} # some dummy / placeholder data
     return jsonify(book)
 
 ```
-
-Weather routes:
 
 ```py
 # web_app/routes/weather_routes.py
