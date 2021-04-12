@@ -1,36 +1,15 @@
 
-# Web App Checkpoint 3 - Rendering HTML Templates
+# Checkpoint 3: Rendering HTML Pages
 
-So far our app is just displaying some simple text when we visit each route. But we have the opportunity to display entire pages written in HTML.
+A web application is more fun with navigable HTML pages, so let's add take this opportunity to add some.
 
-Let's update the home routes to use the `render_template` function from Flask, and choose which files to render.
+## Rendering HTML Templates
 
-```py
-# web_app/routes/home_routes.py
+Reference:
+  + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
 
-from flask import Blueprint, render_template
+Flask will be looking for our HTML pages in a "templates" directory by default. So let's create a new subdirectory in the "web_app" folder called "templates", with new HTML files called "home.html", "about.html", and "hello.html", with the following contents inside, respectively.
 
-home_routes = Blueprint("home_routes", __name__)
-
-@home_routes.route("/")
-def index():
-    print("VISITED THE HOME PAGE")
-    #return "Welcome Home (TODO)"
-    return render_template("home.html")
-
-@home_routes.route("/about")
-def about():
-    print("VISITED THE ABOUT PAGE")
-    #return "About Me (TODO)"
-    return render_template("about.html")
-
-@home_routes.route("/users/new")
-def register():
-    print("VISITED THE REGISTRATION PAGE")
-    return "Sign Up for our Product! (TODO)" # we'll make an HTML template for this later!
-```
-
-Here we are referencing two HTML files, called "home.html" and "about.html". Flask wants to look in a specific directory called "templates" for these files. So let's create a new directory in the "web_app" directory called "templates" and insert the following files inside:
 
 Inside "web_app/templates/home.html":
 
@@ -43,18 +22,25 @@ Inside "web_app/templates/home.html":
 </head>
 <body>
 
-    <h1>This is a heading</h1>
+    <h1>Welcome Home</h1>
 
-    <p>This is a paragraph text</p>
+    <p>This is a paragraph on the "home" page.</p>
 
-    <ul>
-        <li>First list item</li>
-        <li>Second list item</li>
-        <li>Third list item</li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/hello">Hello</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>My footer</p>
+    </footer>
 
 </body>
 </html>
+
 ```
 
 Inside "web_app/templates/about.html":
@@ -71,13 +57,192 @@ Inside "web_app/templates/about.html":
 
     <h1>About Me</h1>
 
-    <p>todo write some stuff here</p>
+    <p>This is a paragraph on the "about" page.</p>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/hello">Hello</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>My footer</p>
+    </footer>
+
+</body>
+</html>
+
+```
+
+Inside "web_app/templates/hello.html":
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+</head>
+<body>
+
+    <h1>{{ message }}</h1>
+
+    <p>This is a paragraph on the "hello" page.</p>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/hello">Hello</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>My footer</p>
+    </footer>
+
+</body>
+</html>
+
+```
+
+Notice each HTML page has a unique heading, and a shared navigation and footer. We'll refactor the duplicate / shared HTML code later, but for right now it's fine.
+
+Let's update the home routes to render these HTML pages:
+
+```py
+# web_app/routes/home_routes.py
+
+from flask import Blueprint, request, render_template
+
+home_routes = Blueprint("home_routes", __name__)
+
+@home_routes.route("/")
+@home_routes.route("/home")
+def index():
+    print("HOME...")
+    return render_template("home.html")
+
+@home_routes.route("/about")
+def about():
+    print("ABOUT...")
+    return render_template("about.html")
+
+@home_routes.route("/hello")
+def hello_world():
+    print("HELLO...", dict(request.args))
+    # NOTE: `request.args` is dict-like, so below we're using the dictionary's `get()` method,
+    # ... which will return None instead of throwing an error if key is not present
+    # ... see also: https://www.w3schools.com/python/ref_dictionary_get.asp
+    name = request.args.get("name") or "World"
+    message = f"Hello, {name}!"
+    return render_template("hello.html", message=message)
+
+```
+
+Notice we're passing a variable called `message` from the router to the "hello" page, and using the "Jinja" template language to reference it (i.e. `{{ message }}`).
+
+Restart the server and view the app in the browser and navigate between the three HTML pages. Use URL params to customize the name on the "hello" page. Cool!
+
+
+## Shared Layouts
+
+Right now each template is a complete HTML file. If we wanted to continue to implement common navigation and footer across each of the files, we'd have to copy and paste the same header and footer into all the files. This is not ideal from a maintainability perspective.
+
+Luckily we have the ability to define the shared aspects of each page, like the header and footer, and inherit them from a common "layout".
+
+Let's create a new file in the "templates" directory called "layout.html", and place inside the following contents:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Web App</title>
+</head>
+<body>
+
+  <!-- SITE NAVIGATION -->
+  <div class="container">
+    <nav>
+      <h1><a href="/">My Web App</a></h1>
+      <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/hello">Hello</a></li>
+      </ul>
+    </nav>
+    <hr>
+
+    <!-- PAGE CONTENTS -->
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <hr>
+      &copy; Copyright 2021 [Your Name Here] |
+      <a href="https://github.com/prof-rossetti/intro-to-python/">source</a>
+    </footer>
+  </div>
 
 </body>
 </html>
 ```
 
+Notice the block called "content" (i.e. `{% block content %}`), which is a placeholder for the respective page contents.
 
-> FYI: we actually created the code in both of these HTML files by leveraging the auto-completion capabilities of our text editor. When we create a file with a ".html" extension, if we start to write the word "html" in that file, we'll see the ability to generate an entire "html:5" document skeleton (which you see above).
+Let's update the "home.html", "about.html", and "hello.html" templates to leverage this shared layout, using the following contents, respectively:
 
-Restart your server and view the app in the browser and see the complete HTML pages!
+Inside "web_app/templates/home.html":
+
+```html
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>Welcome Home</h1>
+
+    <p>This is a paragraph on the "home" page.</p>
+
+{% endblock %}
+```
+
+Inside "web_app/templates/about.html":
+
+
+```html
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>About Me</h1>
+
+    <p>This is a paragraph on the "about" page.</p>
+
+{% endblock %}
+```
+
+Inside "web_app/templates/hello.html":
+
+
+```html
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1>{{ message }}</h1>
+
+    <p>This is a paragraph on the "hello" page.</p>
+
+{% endblock %}
+```
+
+
+Notice each of these templates is inheriting from the "layout.html" template, and specifying some unique page contents to overwrite the "content" block.
+
+
+
+Restart your server and view your app in the browser and use the HTML links to navigate between pages. Observe the consistent header and footer. Nice!
