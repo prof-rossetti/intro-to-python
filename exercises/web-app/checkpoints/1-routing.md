@@ -104,7 +104,7 @@ After restarting the server, visit the following URLs in the browser:
   + http://localhost:5000/about
 
 
-Review the code that handles the "index" and "home" routes. What do you notice?
+Review the code that handles these "index" and "about" routes. What do you notice?
 
 Nice, our app is handling requests to different routes!
 
@@ -119,7 +119,7 @@ Visit the following URLs in the browser, and notice we are now passing a URL par
 
 > FYI: the `%20` character acts as a space character in the URL params
 
-Review the code that handles the "hello" route. Notice the "hello" route referencing the `request` object from Flask, specifically looking at its `args` property (i.e. `request.args`) to get the URL params.
+Review the code that handles the "hello" route. Notice the "hello" route referencing the `request` object from Flask, specifically looking at its `args` property (i.e. `request.args`), a dictionary-like object, to access the URL params.
 
 Nice, our app is dynamically handling different URL parameters!
 
@@ -130,6 +130,6 @@ Finally, visit the following urls in the browser:
   + http://localhost:5000/api/books/100.json
   + http://localhost:5000/api/books/oops.json
 
-Review the code that handles these "book" and "forecast" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
+Review the code that handles these "book" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
 
-Wow, we've just made our own JSON API.
+Wow, we've just made our own JSON API (although with limited functionality so far).

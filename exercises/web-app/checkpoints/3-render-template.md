@@ -115,7 +115,7 @@ Let's update the home routes to render these HTML pages:
 ```py
 # web_app/routes/home_routes.py
 
-from flask import Blueprint, render_template
+from flask import Blueprint, request, render_template
 
 home_routes = Blueprint("home_routes", __name__)
 
@@ -183,8 +183,8 @@ Let's create a new file in the "templates" directory called "layout.html", and p
     <!-- FOOTER -->
     <footer>
       <hr>
-      &copy; Copyright 2020 [Your Name Here] |
-      <a href="https://github.com/prof-rossetti/intro-to-python/_______________">source</a>
+      &copy; Copyright 2021 [Your Name Here] |
+      <a href="https://github.com/prof-rossetti/intro-to-python/">source</a>
     </footer>
   </div>
 
@@ -192,7 +192,9 @@ Let's create a new file in the "templates" directory called "layout.html", and p
 </html>
 ```
 
-Let's change the "home.html", "about.html", and "hello.html" templates to use the following contents, respectively.
+Notice the block called "content" (i.e. `{% block content %}`), which is a placeholder for the respective page contents.
+
+Let's update the "home.html", "about.html", and "hello.html" templates to leverage this shared layout, using the following contents, respectively:
 
 Inside "web_app/templates/home.html":
 
@@ -243,4 +245,4 @@ Notice each of these templates is inheriting from the "layout.html" template, an
 
 
 
-Restart your server and view your app in the browser and use the links to navigate between pages. Observe the consistent header and footer. Nice!
+Restart your server and view your app in the browser and use the HTML links to navigate between pages. Observe the consistent header and footer. Nice!

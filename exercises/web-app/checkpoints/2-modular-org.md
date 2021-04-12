@@ -3,11 +3,11 @@
 
 So far we've got a simple app with a few routes, but its already starting to get a bit cluttered, so to make this app easier to maintain as it grows, let's start adopting a more modular organizational structure.
 
-We'll move the app into a new "web_app" directory, and we'll also move the routes into a new "web_app/routes" directory.
+We'll move the app into a new directory and split the route definitions across multiple files.
 
 ## Application Factory Pattern
 
-First, let's implement the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function. Among other benefits, this can help us test our app's functionality later.
+First, let's implement the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function. Among other benefits, this can help us test the app later.
 
 Create a new subdirectory in your repo called "web_app" with a file called "\_\_init_\_.py" and place the following contents inside:
 
@@ -32,9 +32,7 @@ if __name__ == "__main__":
     my_app.run(debug=True)
 ```
 
-Remember that the "init" file is the entry-point into a local Python module.
-
-Review the new "create_app" function and notice we are importing and referencing our routing functions from their own logically-related files.
+Review the new "create_app" function and notice we are importing and referencing the routing functions from their own logically-related files.
 
 > NOTE: in the future, whenever we add more routing files, we'll need to import and register them in this way for our app to recognize them!
 
@@ -44,12 +42,12 @@ Let's now move the route definitions to their own logically-related files, just 
 
 We're using [Flask Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/) to store the route definitions in a way the app can recognize.
 
-Inside the "web_app" directory, create a new subdirectory called "routes" with new files called "home_routes.py", "home_routes.py", and "home_routes.py", and place the following contents inside, respectively:
+Inside the "web_app" directory, create a new subdirectory called "routes" with new files called "home_routes.py", "book_routes.py", and place the following contents inside, respectively:
 
 ```py
 # web_app/routes/home_routes.py
 
-from flask import Blueprint, render_template, request
+from flask import Blueprint, request #, render_template
 
 home_routes = Blueprint("home_routes", __name__)
 
@@ -102,11 +100,11 @@ def get_book(book_id):
 
 ```
 
-## New Run Command
+## Running the Web App
 
 We can now delete the original "hello.py" file.
 
-Since we moved the app into the "web_app" directory, we'll use this new command to run it moving forward:
+Since we moved the Flask app into the "web_app" directory, we'll use this new command to run it moving forward:
 
 ```sh
 # mac:
@@ -116,6 +114,8 @@ FLASK_APP=web_app flask run
 export FLASK_APP=web_app
 flask run
 ```
+
+Remember, the "init" file is the entry-point into a local Python module, so when we run the app this way, Flask will run the "web_app" module's "init" file.
 
 Let's restart the web server using this new command, and visit the same URLs in the browser to see the app is working like it was before.
 
