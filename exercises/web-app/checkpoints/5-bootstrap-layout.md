@@ -84,6 +84,9 @@ Restart the server and view the app in the browser to see the new styles with a 
 
 ## Flash Messaging
 
+
+Notice in the weather a flash message like this: `flash("Weather Forecast Generated Successfully!", "success")`, where the first parameter is the flash message and the second represents the [Bootstrap contextual color class](https://getbootstrap.com/docs/5.0/components/alerts/).
+
 Let's take advantage of Flask's flash messaging capabilities, and wrap these flash messages in Twitter Bootstrap alert components (see the top of the bootstrap layout).
 
 First, as a one-time setup, we'll need to update the web app's init file to configure the Flask app's secret key, to enable  flash messaging through session storage:
@@ -116,16 +119,5 @@ if __name__ == "__main__":
     my_app.run(debug=True)
 ```
 
-Then, from any route, before rending an HTML template, we can send a flash message like this: `flash("Weather Forecast Generated Successfully!", "success")`, where the first parameter is the flash message and the second represents the [Bootstrap contextual color class](https://getbootstrap.com/docs/5.0/components/alerts/).
-
-Weather routes:
-
-```py
-from Flask import flash #, etc.
-
-# etc ...
-flash(f"Weather Forecast Generated Successfully!", "success")
-return render_template("weather_forecast.html", country_code=country_code, zip_code=zip_code, results=results)
-```
 
 Restart the server and submit the weather form to see the flash message at the top of the forecast page!

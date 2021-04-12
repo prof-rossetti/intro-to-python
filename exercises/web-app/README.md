@@ -47,27 +47,31 @@ Now follow these sequential "checkpoints" for a guided walk-through of how to cr
 
 ### Deploying to Production
 
-After completing all the checkpoints and demonstrating the ability to successfully run the web app locally, repeat the process we followed when [deploying the web service](/exercises/web-service/deploying.md) to upload an updated copy of the source code onto the server:
+Reference:
+  + [Getting Started w/ Python - Heroku](https://devcenter.heroku.com/articles/getting-started-with-python)
+  + [Deploying Python Apps w/ Gunicorn - Heroku](https://devcenter.heroku.com/articles/python-gunicorn)
+
+After completing all the checkpoints and demonstrating the ability to successfully run the web app locally, let's re-deploy the source code:
 
 ```sh
 git push heroku main
 ```
 
-There are no scripts to be scheduled, so skip that part. Instead, you'll need to create a special file called the "Procfile" in the repo's root directory to instruct the Heroku server which command to invoke in order to run the app:
+Heroku says "no web process specified". They want us to create a specific file called the "Procfile" in the repo's root directory to instruct the Heroku server which command to invoke in order to run the web app:
 
 ```sh
 web: gunicorn "web_app:create_app()"
 ```
 
-> NOTE: since we're instructing the server to use the "gunicorn" package (Heroku's preferred tool) to run the web app on production, we'll also need to add `gunicorn` to the "requirements.txt" file so it will be installed on the server during the deployment process.
+Since we're instructing the server to use the "gunicorn" package (Heroku's preferred tool) to run the web app on production, we'll also need to add `gunicorn` to the "requirements.txt" file so it will be installed on the server during the deployment process.
 
-Save the "Procfile" and "requirements.txt" files, and make a commit before re-attempting to deploy your app to the server.
+After saving the "Procfile" and "requirements.txt" files, make a commit before re-attempting to re-deploy:
 
 ```sh
 git push heroku main
 ```
 
-View the server logs and troubleshoot as necessary until you're able to see the weather forecast in the browser. Nice!
+View the server logs and troubleshoot as necessary:
 
 ```sh
 heroku logs --tail

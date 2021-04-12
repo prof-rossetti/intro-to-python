@@ -1,11 +1,14 @@
 
 # Checkpoint 3: Rendering HTML Pages
 
-It's cool some of our routes are responding with JSON data, but some of them are just returning simple text. Let's take this opportunity to render HTML pages instead.
+A web application is more fun with navigable HTML pages, so let's add take this opportunity to add some.
 
 ## Rendering HTML Templates
 
-Flask will be looking for our HTML pages in a "templates" directory by default. So let's create a new subdirectory in the "web_app" folder called "templates", and place inside HTML files called "home.html", "about.html", and "hello.html", with the following contents inside, respectively:
+Reference:
+  + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
+
+Flask will be looking for our HTML pages in a "templates" directory by default. So let's create a new subdirectory in the "web_app" folder called "templates", with new HTML files called "home.html", "about.html", and "hello.html", with the following contents inside, respectively.
 
 
 Inside "web_app/templates/home.html":
@@ -107,11 +110,6 @@ Inside "web_app/templates/hello.html":
 
 Notice each HTML page has a unique heading, and a shared navigation and footer. We'll refactor the duplicate / shared HTML code later, but for right now it's fine.
 
-Notice what's going on with passing a variable to the "hello" page, and how we are using the "Jinja" template language to reference the variable using double curly braces. For more information about Jinja, see:
-
-  + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
-
-
 Let's update the home routes to render these HTML pages:
 
 ```py
@@ -143,6 +141,8 @@ def hello_world():
     return render_template("hello.html", message=message)
 
 ```
+
+Notice we're passing a variable called `message` from the router to the "hello" page, and using the "Jinja" template language to reference it (i.e. `{{ message }}`).
 
 Restart the server and view the app in the browser and navigate between the three HTML pages. Use URL params to customize the name on the "hello" page. Cool!
 
