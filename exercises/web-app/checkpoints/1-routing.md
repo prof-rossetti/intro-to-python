@@ -96,6 +96,26 @@ def get_book(book_id):
     print("BOOK...", book_id)
     book = {"id": book_id, "title": f"Example Book", "year": 2000} # some dummy / placeholder data
     return jsonify(book)
+
+#
+# WEATHER ROUTES
+#
+
+@app.route("/weather/forecast.json")
+def weather_forecast_api():
+    print("WEATHER FORECAST (API)...")
+    print("URL PARAMS:", dict(request.args))
+
+    country_code = request.args.get("country_code") or "US"
+    zip_code = request.args.get("zip_code") or "20057"
+
+    results = get_hourly_forecasts(country_code=country_code, zip_code=zip_code)
+    if results:
+        return jsonify(results)
+    else:
+        return jsonify({"message":"Invalid Geography. Please try again."}), 404
+
+
 ```
 
 After restarting the server, visit the following URLs in the browser:
@@ -129,7 +149,10 @@ Finally, visit the following urls in the browser:
   + http://localhost:5000/api/books.json
   + http://localhost:5000/api/books/100.json
   + http://localhost:5000/api/books/oops.json
+  + http://localhost:5000/weather/forecast.json
+  + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=10012
+  + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=OOPS
 
 Review the code that handles these "book" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
 
-Wow, we've just made our own JSON API (although with limited functionality so far).
+Wow, we've just made our own JSON API!
