@@ -69,9 +69,9 @@ Category | Description | Weight
 Pull Request Workflow | At least one or two Pull Requests used during development. | 20%
 Simplification | Code is reasonably well organized and simplified. | 20%
 Documentation | At least a few functions are documented via "docstring" comments, as appropriate. | 20%
-Automated Testing | Tests directly invoke functions from the source code to verify the program behaves as expected. | 30%
-Continuous Integration | Tests have been run and passed on a CI server at least once, ideally as part of the Pull Request workflow. | 10%
-Code Quality | The Code Climate service has been integrated into the Pull Request workflow to provide automated code quality checks. | 10%
+Automated Testing | Tests directly invoke functions from the source code to verify the program behaves as expected. | 25%
+Continuous Integration | Tests have been run and passed on a CI server at least once, ideally as part of the Pull Request workflow. | 7.5%
+Code Quality | The Code Climate service has been integrated into the Pull Request workflow to provide automated code quality checks. | 7.5%
 Peer Reviews | A peer has provided an unofficial comment or official review as part of the Pull Request workflow | 0% (OPTIONAL)
 
 > NOTE: for this project, evaluators will be reading your code and inspecting your repo across the various platforms (Github, Code Climate Travis CI), but not necessarily running or testing your application code directly.
