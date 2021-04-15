@@ -73,10 +73,10 @@ def weather_forecast():
 
     results = get_hourly_forecasts(country_code=country_code, zip_code=zip_code)
     if results:
-        #flash(f"Weather Forecast Generated Successfully!", "success")
+        #flash("Weather Forecast Generated Successfully!", "success")
         return render_template("weather_forecast.html", country_code=country_code, zip_code=zip_code, results=results)
     else:
-        #flash(f"Geography Error. Please try again!", "danger")
+        #flash("Geography Error. Please try again!", "danger")
         return redirect("/weather/form")
 
 ```
