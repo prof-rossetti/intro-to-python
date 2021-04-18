@@ -15,7 +15,7 @@ which brew
 Install Homebrew if necessary:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 > FYI: during the installation process you might be asked to also install "Xcode Developer Tools" for the first time if you have not already done so.
