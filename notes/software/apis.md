@@ -16,13 +16,14 @@ Some notable example web services and providers include:
   + [Google APIs](https://developers.google.com/apis-explorer/#p/)
   + [Twitter APIs](https://dev.twitter.com/rest/public)
   + [Facebook Social Graph API](https://developers.facebook.com/docs/graph-api)
-  + [Instagram API](https://instagram.com/developer/endpoints/)
+  + [Instagram API](https://developers.facebook.com/docs/instagram-basic-display-api)
   + [Foursquare API](https://developer.foursquare.com/docs/)
   + [GitHub API](https://developer.github.com/v3/)
   + [Yelp API](https://www.yelp.com/developers/documentation/)
   + [Flickr API](https://www.flickr.com/services/api/)
   + [US Federal Elections Commission API](https://api.open.fec.gov/developers)
   + [Alpha Vantage (Stock Market) API](https://www.alphavantage.co/documentation/)
+  + [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
 
 ### Requests
 
