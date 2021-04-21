@@ -55,7 +55,7 @@ The lesson is that the `load_dotenv()` function will load environment variables 
 
 ### Ignoring ".env" Files from Version Control
 
-> SECURITY NOTE: Because these ".env" files often contain sensative information like secret passwords and API Keys, we should absolutely avoid checking them into version control! To do this, we'll use a special ".gitignore" file.
+> SECURITY NOTE: Because these ".env" files often contain sensitive information like secret passwords and API Keys, we should absolutely avoid checking them into version control! To do this, we'll use a special ".gitignore" file.
 
 Create another file in the "my-secure-project" directory named ".gitignore", and place inside the following contents:
 
