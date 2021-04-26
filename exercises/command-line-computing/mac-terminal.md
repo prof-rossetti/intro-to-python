@@ -142,7 +142,12 @@ cp ~/Desktop/my_message.txt ~/Desktop/my_folder
 Copy contents of a file into the clipboard for pasting:
 
 ```sh
+# Mac OS:
 pbcopy < ~/Desktop/my_folder/my_message.txt
+
+# Windows OS:
+cat ~/Desktop/my_folder/my_message.txt | clip
+
 # ... then just paste as you normally would after copying some text
 ```
 
