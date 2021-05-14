@@ -42,9 +42,9 @@ A "version control" tool will help us download projects from GitHub and upload p
 
 Windows users who have installed Git Bash (see "Command-line Application" section above) will have satisfied the Git installation requirement.
 
-Mac users may find that Git is already installed, otherwise you are encouraged to install Git via Homebrew. See the professor's [Git installation reference](/notes/clis/git.md#installation) for more details.
+Mac users may find that a system version of Git is already installed, but we want to use a newer version, to make things as easy as possible. So all Mac users are encouraged to install Git via Homebrew. See the professor's [Git installation reference](/notes/clis/git.md#installation) for more details.
 
-After installing Git, students may need to configure their account credentials. See the professor's [Git configuration reference](/notes/clis/git.md#configuration) for more details.
+After installing Git, all students should generate SSH keys and configure their account credentials. See the professor's [Git configuration reference](/notes/clis/git.md#configuration) for more details.
 
 ### GitHub Desktop
 
