@@ -29,7 +29,7 @@ Optionally clear previous terminal output at any time by pressing "command + k",
 
 ### Current User
 
-Print the current user's name:
+Display the current user's name:
 
 ```sh
 whoami
@@ -37,7 +37,7 @@ whoami
 
 ### Present Working Directory
 
-Print the current/present working directory:
+Display the current/present working directory:
 
 ```sh
 pwd
@@ -119,7 +119,7 @@ code my_message.txt # may first require installation of shell commands from the 
 
 > NOTE: Mac users may need to first configure the `code` command by following these [VS Code shell command setup instructions](/notes/devtools/vs-code.md#shell-commands)
 
-Print file contents:
+Display file contents:
 
 ```sh
 cat my_message.txt
