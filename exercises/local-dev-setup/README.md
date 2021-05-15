@@ -14,7 +14,7 @@ Afterwards, consider signing up for the [GitHub Student Developer Pack](https://
 
 Unless you already have a text editor of choice, install [VS Code](https://code.visualstudio.com/).
 
-After installing VS Code, take some time to [configure and explore](/notes/devtools/vs-code.md#basic-configuration) its helpful features, like Python syntax auto-completion, and vertical column selection.
+After installing VS Code, take some time to explore its helpful features. See the professor's [VS Code configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details.
 
 ## Command-line Application
 
@@ -31,8 +31,6 @@ Unless it is already installed, install [Anaconda Version 3.8](https://www.anaco
 > IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows.
 
 > NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash`, and Mac Zsh profile users may need to run `conda init zsh`.
-
-> NOTE: if experiencing issues recognizing `conda` commands on Mac OS Catalina, reference these [Catalina setup steps](https://github.com/prof-rossetti/intro-to-python/issues/13).
 
 ## Version Control Utilities
 
