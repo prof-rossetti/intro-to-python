@@ -54,7 +54,7 @@ By default, you should be able to achieve column selection functionality in VS C
 
 These are some of the professor's personal VS Code configurations, for your reference. Feel free but not obligated to use them.
 
-### Extensions
+### Additional Extensions
 
 A sample of the professor's installed extensions (results from running `code --list-extensions`):
 
@@ -110,6 +110,8 @@ A sample of relevant settings from the professor's `settings.json` file:
 }
 ```
 
+### Keybord Shortcuts
+
 Keyboard shortcut overrides:
 
 ```json
@@ -125,3 +127,59 @@ Keyboard shortcut overrides:
     }
 ]
 ```
+
+### Python Snippets
+
+Use the command palette and start typing "snippets" to find the "Preferences > Configure User Snippets" setting which should yield a snippets JSON file. Feel free to update yours to include these helpful Python snippets:
+
+```
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Python Function Definition": {
+		"prefix": ["def"],
+		"body": [
+			"def my_func():",
+			"    pass"
+		],
+		"description": "A function definition in Python."
+	},
+
+	"Python Class Constructor": {
+		"prefix": ["init", "__init", "defi"],
+		"body": [
+			"def __init__(self):",
+			"    pass"
+		],
+		"description": "A class initializer method for Python."
+	},
+
+	"Python Main Conditional": {
+		"scope": "python",
+		"prefix": ["main", "__main"],
+		"body": [
+			"if __name__ == '__main__':",
+			"    pass"
+		],
+		"description": "The main conditional for Python."
+	}
+}
+
+```
+
+See also: https://code.visualstudio.com/docs/editor/userdefinedsnippets
