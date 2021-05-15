@@ -8,13 +8,13 @@ Unless you already have one, take a moment to [create a GitHub account](https://
 
 Afterwards, consider signing up for the [GitHub Student Developer Pack](https://education.github.com/pack), which provides some free resources.
 
-> PRIVACY OPTIONS: Many students wish to associate their personal identities with their GitHub accounts, to display a portfolio of programming projects. However, if you're concerned about privacy, you have a few options. First, consider choosing a GitHub username which is different than your university-issued net identifier. Second, avoid uploading any personally-identifiable information to your GitHub profile. Third, sign up for the Student Developer Pack, which will allow you to submit projects via free private repositories.
+> PRIVACY OPTIONS: Many students wish to associate their personal identities with their GitHub accounts, to display a portfolio of programming projects. However, if you're concerned about privacy, you have a few options. First, consider choosing a GitHub username which is different than your university-issued net identifier. Second, avoid uploading any personally-identifiable information to your GitHub profile. Third, consider submitting projects via private repositories.
 
 ## Text Editor
 
 Unless you already have a text editor of choice, install [VS Code](https://code.visualstudio.com/).
 
-After installing VS Code, take some time to [configure](/notes/devtools/vs-code.md#basic-configuration) it in helpful ways.
+After installing VS Code, take some time to [configure and explore](/notes/devtools/vs-code.md#basic-configuration) its helpful features, like Python syntax auto-completion, and vertical column selection.
 
 ## Command-line Application
 
