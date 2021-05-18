@@ -86,12 +86,9 @@ conda info --envs
 
 #### Creating Environments
 
-Create a new virtual environment, and name it something like "my-first-env":
+Create a new virtual environment, and name it something like "my-first-env" (we'll always want to specify the Python version):
 
 ```sh
-# conda create -n my-first-env
-
-# FYI: we'll always want to specify the Python version:
 conda create -n my-first-env python=3.8
 ```
 
