@@ -4,22 +4,21 @@
 
 [GitHub](https://github.com/), and competitors [BitBucket](https://bitbucket.org/product) and [GitLab](https://about.gitlab.com/), all use Git as the underlying version control system.
 
-References:
+## References
 
-  + https://github.com/git/git
-  + https://git-scm.com/doc
+Official References:
+  + [Git Source Code](https://github.com/git/git)
+  + [Git Docs](https://git-scm.com/doc)
 
-References for Beginners:
-  + https://guides.github.com/introduction/git-handbook/
-  + https://guides.github.com/introduction/flow/
-  + https://www.youtube.com/githubguides
-  + https://www.youtube.com/watch?v=MJUJ4wbFm_A
+Beginner References:
+  + [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+  + [Github Guides - YouTube Videos](https://www.youtube.com/githubguides)
+  + [An Intro to Git and GitHub - Youtube Video](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
   
 Command-Line References:
-  + https://education.github.com/git-cheat-sheet-education.pdf
-  + https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
-  + https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line
-  + https://www.atlassian.com/git/tutorials
+  + [Git CLI Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+  + [Getting Started w/ the Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+  + [Git Tutorials - Atlassian](https://www.atlassian.com/git/tutorials)
 
 ## Installation
 
@@ -58,8 +57,8 @@ The Git Bash application is where you can execute Git commands (like `git --vers
 
 References:
 
- + https://docs.github.com/en/github/using-git/setting-your-username-in-git
- + https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address
+ + [Configuring Git Username](https://docs.github.com/en/github/using-git/setting-your-username-in-git)
+ + [Configuring Git Email Address](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address)
 
 Configure the username and email message that will be associated with your work:
 
@@ -79,11 +78,10 @@ git config --global user.email
 
 References:
 
-  + https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
-  + https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh#step-2-generate-a-new-ssh-key
-  + https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-  + https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
-
+  + [Connecting to GitHub via SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), including:
+    + [Generating SSH Keys](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    + [Adding SSH Keys to GitHub](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+  
 If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub, first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
 
 <hr>
@@ -210,6 +208,9 @@ After pushing successfully, you should be able to visit your remote repository o
 
 
 ### Collaboration
+
+References:
+  + [Intro to Pull Request Work Flow](https://guides.github.com/introduction/flow/)
 
 #### Branch Operations
 
