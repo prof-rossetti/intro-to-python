@@ -4,10 +4,11 @@ Anaconda provides a command-line utility called `conda` for installing and manag
 
 > Anaconda is a package manager, an environment manager, a Python/R data science distribution, and a collection of over 1,500+ open source packages. Anaconda is free and easy to install, and it offers free community support. - [Anaconda website](https://docs.anaconda.com/anaconda/)
 
-## References
+## Benefits
 
-  + [Getting Started with Conda](https://conda.io/docs/user-guide/getting-started.html)
-  + [Managing Conda Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+Because new versions of the Python language and third-party Python packages get released from time to time, and because sometimes code that works with an older version may no longer work with a newer version, we need a way to manage which version of Python our project is using, and also the versions of all its third-party package dependencies.
+
+Anaconda helps us maintain project-specific environments with the right versions of Python and third-party packages, so we can easily switch between different environments when working on different projects. 
 
 ## Detection
 
@@ -74,7 +75,13 @@ Once you are able to successfully detect your installation of Anaconda, you are 
 
 ## Usage
 
+
 ### The `conda` Utility
+
+References:
+
+  + [Getting Started with Conda](https://conda.io/docs/user-guide/getting-started.html)
+  + [Managing Conda Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 #### Listing Environments
 
