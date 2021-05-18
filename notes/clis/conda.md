@@ -4,14 +4,10 @@ Anaconda provides a command-line utility called `conda` for installing and manag
 
 > Anaconda is a package manager, an environment manager, a Python/R data science distribution, and a collection of over 1,500+ open source packages. Anaconda is free and easy to install, and it offers free community support. - [Anaconda website](https://docs.anaconda.com/anaconda/)
 
-Resources:
+## References
 
-  + https://conda.io/docs/_downloads/conda-cheatsheet.pdf
-  + https://conda.io/docs/user-guide/getting-started.html
-  + https://conda.io/docs/user-guide/tasks/manage-conda.html
-  + https://conda.io/docs/user-guide/tasks/manage-environments.html
-  + https://conda.io/docs/user-guide/tasks/manage-pkgs.html#id2
-  + https://conda.io/docs/user-guide/tasks/view-command-line-help.html
+  + [Getting Started with Conda](https://conda.io/docs/user-guide/getting-started.html)
+  + [Managing Conda Environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ## Detection
 
@@ -33,29 +29,31 @@ where conda
 
 ### Detection on Mac
 
-On a Mac, you can invoke these commands directly in the Terminal.
+On a Mac, you can invoke the detection commands directly in the Terminal:
 
 ![](/img/notes/clis/conda/mac-terminal.png)
 
 ### Detection on Windows
 
-However, on Windows, you can alternatively search for the "Anaconda Prompt" application to know whether or not you have it installed.
+On Windows, you can search for the "Anaconda Prompt" application to know whether or not you have Anaconda installed (although we will not ususally be using this application):
 
 ![](/img/notes/clis/conda/windows-detecting-anaconda-prompt.png)
 
-After the Anaconda Prompt is installed, you can invoke `conda` commands from within it:
+After the Anaconda Prompt is installed, we can invoke `conda` commands from within it (although we will not usually be using this application):
 
 ![](/img/notes/clis/conda/windows-anaconda-prompt.png)
 
-If Anaconda is installed the way we need it to be, we should also be able to invoke `conda` commands from within the Git Bash console:
+> NOTE: we don't want to use the Anaconda Prompt, because it is harder to integrate with other tools. Instead, we want to be running our `conda` commands in Git Bash instead (see below).
+
+If Anaconda is installed the way we need it to be, we should ultimately be able to invoke `conda` commands from within the Git Bash console:
 
 ![](/img/notes/dev-tools/git-bash/git-bash-where-conda.png)
 
-If Git Bash doesn't recognize your `conda` commands, you might have to uninstall Anaconda and when re-installing it, make sure to check the "Add Anaconda to my PATH environment variable" option (see installation instructions below).
+> NOTE: if Git Bash doesn't recognize `conda` commands ("conda command not found"), you might have to uninstall Anaconda and when re-installing it, make sure to check the "Add Anaconda to my PATH environment variable" option (see installation instructions below).
 
 ## Installation
 
-If not yet installed, [download Anaconda Version 3.7](https://www.anaconda.com/download) for either Mac or Windows.
+If not yet installed, [download Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows.
 
 > NOTE: This might take a while, so prefer to do it over a strong WiFi connection. And feel free to ignore any email capture forms which may pop up afterwards.
 
@@ -74,11 +72,11 @@ After the installation is complete, try repeating the detection commands again, 
 
 Once you are able to successfully detect your installation of Anaconda, you are ready to proceed!
 
-> NOTE: On Windows, you may need to run the command `conda init bash` when prompted to do so, in order to activate a virtual environment for the first time.
-
 ## Usage
 
 ### The `conda` Utility
+
+#### Listing Environments
 
 View a list of existing virtual environments:
 
@@ -86,35 +84,50 @@ View a list of existing virtual environments:
 conda info --envs
 ```
 
+#### Creating Environments
+
 Create a new virtual environment, and name it something like "my-first-env":
 
 ```sh
-conda create -n my-first-env
+# conda create -n my-first-env
 
-# FYI: you can specify a Python version for your new environment with...
-# conda create -n my-first-env python=3.8
-
-# FYI: you can delete any environment with...
-# conda env remove -n my-first-env
+# FYI: we'll always want to specify the Python version:
+conda create -n my-first-env python=3.8
 ```
+
+#### Activating Existing Environments
+
 
 Enter into, or "activate", the virtual environment:
 
 ```sh
 conda activate my-first-env
-
-# FYI: to deactivate...
-# conda deactivate
 ```
 
-After activating the environment, you should be able to detect and use its installations of Python and Pip:
+> NOTE: when using conda to activate a virtual environment for the first time, Windows Git Bash users may need to run `conda init bash`, and Mac Zsh profile users may need to run `conda init zsh`, when prompted to do so.
+
+After activating the environment, you should be able to detect and use its installations of Python and Pip (see notes on [the `python` utility](python.md) and [the `pip` utility](pip.md)):
 
 ```sh
-which python #> /anaconda3/envs/my-first-env/bin/python
-python --version #> Python 3.6.7 :: Anaconda, Inc.
-
-which pip #> /anaconda3/envs/my-first-env/bin/pip
-pip --version #> pip 18.1 from /anaconda3/envs/my-first-env/lib/python3.6/site-packages/pip (python 3.6)
+python --version
+pip --version 
+pip list
+# etc.
 ```
 
-For more information, see notes on [the `python` utility](python.md) and [the `pip` utility](pip.md).
+
+#### Deactivating Environments
+
+To deactivate the current environment:
+
+```sh
+conda deactivate
+```
+
+#### Removing Environments
+
+It is possible to delete environments, although this might not be necessary unless trying to free up space on the computer:
+
+```sh
+conda env remove -n my-first-env
+```
