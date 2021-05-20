@@ -4,10 +4,6 @@
 
 In this exercise, we'll practice incorporating version control into our local development workflow.
 
-## Prerequisites
-
-This exercise assumes you have already done the ["Hello World (Local)" Exercise](local.md).
-
 ## Instructions
 
   1. On GitHub, create a new repository named something like "my-first-repo", and include a "README.md" file. We'll refer to this as the "remote repository".
@@ -21,7 +17,7 @@ This exercise assumes you have already done the ["Hello World (Local)" Exercise]
   9. Use your Git Client to "push" the changes to GitHub / sync with the remote repository.
 
 
-Example markdown:
+Example markdown ("README.md" file):
 
 ```
 # My First Repo!
@@ -39,13 +35,10 @@ And lists too:
 For more information about Markdown syntax, see the [Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 ```
 
-Example Python code:
+Example Python code ("my_script.py" file):
 
 ```py
-# This is an example python code cell
-# Run it and see the output below
-# These lines are "comments", starting with the #
-# Don't be confused that # means something different in .md and .py files.
+# this is the "my_script.py" file...
 
 print("HELLO WORLD!")
 
@@ -58,34 +51,5 @@ print(x)
 Once you see the new file contents reflected in your remote repository on GitHub, you have succeeded. Repeat the file-editing, committing and pushing steps at least one more time for good measure.
 
 
-<hr>
+## [Solutions](solutions.md)
 
-## Solutions
-
-Here are some of the commands you might use during the course of this exercise:
-
-```sh
-# create the remote repo and obtain its remote address - either the HTTPS or the SSH version, then ...
-
-cd ~/Desktop
-git clone REMOTE_ADDRESS # where REMOTE_ADDRESS is the remote address of your repo
-cd my-first-repo/
-
-code . # opens the project in the text editor
-touch my_script.py # or do this via the text editor
-
-# edit and save the files, then...
-git add .
-git commit -m "My first commit"
-git push origin main
-
-# edit and save the files, then...
-git add .
-git commit -m "My second commit"
-git push origin main
-
-# edit and save the files, then...
-git add .
-git commit -m "My third commit"
-git push origin main
-```
