@@ -51,5 +51,5 @@ print(x)
 Once you see the new file contents reflected in your remote repository on GitHub, you have succeeded. Repeat the file-editing, committing and pushing steps at least one more time for good measure.
 
 
-## [Solutions](solutions.md)
+## [Solutions](version-control-solutions.md)
 
