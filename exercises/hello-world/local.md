@@ -31,4 +31,4 @@ print(x)
 
 ## Success Criteria
 
-Once you see the printed messages in your command-line application, you have succeeded. Edit the file (by changing the message or the numbers), save it again, and run it again. Repeat this process more time for good measure.
+Once you see the printed messages in your command-line application, you have succeeded. Edit the file (by changing the message or the numbers), save it again, and run it again. Repeat this process one more time for good measure.
