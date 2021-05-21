@@ -13,7 +13,7 @@ This exercise assumes you have already signed up for a GitHub account. You're al
 ## Instructions
 
   1. On GitHub.com, create a new repository named something like "my-notebooks", and importantly include a "README.md" file. We'll refer to this as the "remote repository".
-  2. Use Google Colab to create a new notebook document, and give it a title like "My First Notebook".
+  2. Use [Google Colab](https://colab.research.google.com/) to create a new notebook document, and give it a title like "My First Notebook".
   3. In the notebook, create a new text cell and write some markdown in it (like the example markdown below).
   4. In the notebook, create a code cell and write some Python code in it (like the example code below).
   5. "Run" the notebook to see the output of your code cell.
