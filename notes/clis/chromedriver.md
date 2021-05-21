@@ -14,14 +14,14 @@ chromedriver --version
 /usr/local/bin/chromedriver --version
 ```
 
-[Install `chromedriver`](http://chromedriver.chromium.org/getting-started), if necessary (on Mac or Windows), or on Mac, can do this via [`homebrew`](/notes/clis/brew.md) and [`brew cask`](https://github.com/Homebrew/homebrew-cask):
+[Install `chromedriver`](http://chromedriver.chromium.org/getting-started), if necessary (on Mac or Windows), or on Mac, can do this via [`homebrew`](/notes/clis/brew.md):
 
 ```sh
 # install (on Mac OS, via homebrew):
-brew cask install chromedriver
+brew install chromedriver
 
 # (if you need to upgrade chromedriver):
-brew cask upgrade chromedriver
+brew upgrade chromedriver
 ```
 
 Observe the location where your `chromedriver` utility has been installed (e.g. "/usr/local/bin/chromedriver").
