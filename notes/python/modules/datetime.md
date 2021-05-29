@@ -40,7 +40,7 @@ print(type(now)) #> <class 'datetime.datetime'>
 print(now) #> 2021-03-08 18:26:47.259366
 ```
 
-Alternatively, we can convert a datetime-like string to an official datetime object, either by specifying the string's date format template to the `.strptime()` method, or by using a separate parsing method provided by the `dateutil` module:
+Alternatively, we can convert a datetime-like string to an official datetime object, either by specifying the string's date format template to the `.strptime()` method, or by using a separate parsing method provided by the `dateutil` package:
 
 
 ```py
@@ -55,6 +55,7 @@ print(dt) #> 2021-03-04 19:00:00-05:00
 ```
 
 ```py
+# first install this package via: pip install python-dateutil 
 import dateutil.parser
 
 start_time = '2021-03-04T19:00:00-05:00'
