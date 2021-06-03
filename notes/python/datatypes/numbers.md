@@ -73,7 +73,7 @@ def to_usd(my_price):
     
     Returns: $4,000.44
     """
-    return f"${my_price:,.2f}" #> $12,000.71
+    return f"${my_price:,.2f}" 
 ```
 
 ## Advanced Operations
