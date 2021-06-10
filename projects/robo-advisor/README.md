@@ -208,6 +208,8 @@ After receiving a successful API response, the system should write historical st
     2018-05-31, 99.2900, 99.9900, 98.6100, 98.8400, 34140891
     2018-05-30, 98.3100, 99.2500, 97.9100, 98.9500, 22158528
 
+> HINT: create a `pandas.DataFrame` object from the time series data, and invoke the dataframe's [`to_csv()` method](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html) to easily write it to a local CSV file.
+
 If the system processes only a single stock symbol at a time, the system may use a single CSV file named "data/prices.csv", or it may use multiple CSV files, each with a name corresponding to the given stock symbol (e.g. "data/prices_msft.csv, "prices_aapl.csv", etc.). If the system processes multiple stock symbols at a time, it should use multiple files, each with a name corresponding to the given stock symbol (e.g. "data/prices_msft.csv", "prices_aapl.csv", etc.).
 
 After writing historical data to a CSV file, the system should perform calculations (see "Calculation Requirements" section below) to produce/print the following outputs:
@@ -282,8 +284,9 @@ You are free to develop your own custom **recommendation** algorithm. This is pe
 
 For a more in-depth guided exercise walkthrough, feel free but not obligated to follow the screencast, but keep in mind a few caveats:
 
-  1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well
-  2. If there are any discrepancies between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document
+  1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well.
+  2. The video advocates using the `csv` module for writing a CSV file, but you're encouraged to use the `pandas` package instead!
+  3. If there are any discrepancies between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document.
 
 ## [Further Exploration Challenges](challenges.md)
 
