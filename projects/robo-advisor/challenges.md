@@ -3,7 +3,7 @@
 
 ## Handling Multiple Stocks
 
-> BONUS POINTS: 4-5%
+> BONUS POINTS: N/A
 
 Instead of processing a single stock at a time, allow the user to process multiple stocks at the same time.
 
@@ -12,7 +12,7 @@ If you decide to implement this approach, pay attention to the "Information Outp
 
 ## Calculating 52-Week Highs and Lows
 
-> BONUS POINTS: 3-4%
+> BONUS POINTS: N/A
 
 Instead of calculating and printing the stock's **recent average high** and **recent average low**, calculate and print the stock's **52-week high** and **52-week low**, respectively.
 
@@ -36,7 +36,7 @@ Charts should ideally include appropriate titles, axis labels, legends, etc.
 
 ## Sending Alerts via Email
 
-> BONUS POINTS: 0% (HARD TO TEST)
+> BONUS POINTS: N/A (HARD TO TEST)
 
 Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via email.
 
@@ -44,7 +44,7 @@ Modify the logic of your application such that if it detects the stock's price h
 
 ## Sending Alerts via SMS
 
-> BONUS POINTS: 0% (HARD TO TEST)
+> BONUS POINTS: N/A (HARD TO TEST)
 
 Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via SMS.
 
