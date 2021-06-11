@@ -194,7 +194,7 @@ Before requesting data from the Internet, the system should first perform prelim
 
 If preliminary validations are not satisfied, the system should display a friendly error message like "Oh, expecting a properly-formed stock symbol like 'MSFT'. Please try again." and stop execution, preventing a request from being made.
 
-Otherwise, if preliminary validations are satisfied, the system should proceed to issue a GET request to the [AlphaVantage API](https://www.alphavantage.co/documentation/) to retrieve corresponding stock market data.
+Otherwise, if preliminary validations are satisfied, the system should proceed to issue a GET request to the [AlphaVantage API](https://www.alphavantage.co/documentation/) to retrieve corresponding stock market data. NOTE: use one of the "Adjusted" URL endpoints.
 
 When the system makes an HTTP request for that stock symbol's trading data, if the stock symbol is not found or if there is an error message returned by the API server, the system should display a friendly error message like "Sorry, couldn't find any trading data for that stock symbol", and it should stop program execution, optionally prompting the user to try again.
 
@@ -231,7 +231,7 @@ The **recent high price** should be equal to the maximum daily "high" price over
 
 The **recent low price** should be calculated in a similar manner as the **recent high price**, but it should instead be equal to the minimum of all daily "low" prices.
 
-> NOTE: By default, the [daily data returned by the AlphaVantage API](https://www.alphavantage.co/documentation/#daily) uses an `outputsize` parameter value of `compact`. This "compact" response should provide daily data covering the previous 100 trading days, which is sufficient to use to calculate the **recent high** and **recent low** prices. It is acceptable and recommended to use these default, "compact" responses to calculate these recent prices.
+> NOTE: By default, the daily data returned by the AlphaVantage API uses an `outputsize` parameter value of `compact`. This "compact" response should provide daily data covering the previous 100 trading days, which is sufficient to use to calculate the **recent high** and **recent low** prices. It is acceptable and recommended to use these default, "compact" responses to calculate these recent prices.
 
 You are free to develop your own custom **recommendation** algorithm. This is perhaps one of the most fun and creative parts of this project. :smiley: One simple example algorithm would be (in pseudocode): If the stock's latest closing price is less than 20% above its recent low, "Buy", else "Don't Buy".
 
@@ -286,7 +286,8 @@ For a more in-depth guided exercise walkthrough, feel free but not obligated to 
 
   1. Some of the links reference a previous course repository, but you should be able to find related documents in this course repository as well.
   2. The video advocates using the `csv` module for writing a CSV file, but you're encouraged to use the `pandas` package instead!
-  3. If there are any discrepancies between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document.
+  3. The video demonstrates fetching data from a non-adjusted URL endpoint, but you should make requests to one of the "adjusted" endpoints instead!
+  4. If there are any discrepancies between requirements referenced in the video and requirements stated in this document, defer to the requirements stated in this document.
 
 ## [Further Exploration Challenges](challenges.md)
 
@@ -302,7 +303,7 @@ Repository | Includes README.md file with detailed instructions | 12.5%
 Security | Excludes secret API Key values from the source code, using an environment variable and ".env" file approach | 12.5%
 Validations (Prelim) | Prevents an HTTP request if stock symbol not likely to be valid (e.g. symbol of "8888") | 7.5%
 Validations | Fails gracefully if encountering a response error (e.g. symbol of "OOPS")| 12.5%
-Calculations | Displays accurate information | 10%
+Calculations | Displays accurate information (using "adjusted" closing price data) | 10%
 Info Outputs | Displays final recommendation, including justification / context | 10%
 Info Outputs | Writes historical prices to CSV file | 12.5%
 Info Outputs | Formats all prices as USD (doesn't apply to CSV file values) | 7.5%
