@@ -17,7 +17,7 @@ For your reference, the form will contain questions like those below.
 
 ### Group Membership
 
-You may work by yourself, or in a group with up to three members total.
+You may work by yourself, or in a group with up to X members total.
   + If working by yourself, write "N/A" below.
   + Otherwise if working in a group, write the email address(es) of all OTHER group members, separated by commas (e.g. "partner1@myschool.edu" for a two-person group, or "partner1@myschool.edu, partner2@myschool.edu" for a three-person group).
 
@@ -35,10 +35,10 @@ What information outputs (e.g. compiled reports, data aggregations, notification
 
 ### Technical Feasibility Analysis
 
-Investigate the degree to which your proposed system is implementable from a technical perspective, specifically via application software written in Python. Hopefully it is possible, otherwise you are advised to propose a different solution.
+Investigate the degree to which your proposed system is implementable from a technical perspective, specifically via application software written in Python. Hopefully it is possible, otherwise you are advised to propose a different idea.
 
 So, what technologies, tools, or services (e.g. third-party APIs and/or Python packages) will your proposed system require? Have you researched the documentation, tutorials, and examples for those other technologies? Have you demonstrated your ability to use them? How's it going? What do you "know you know" vs "know you don't know"? Are there any steps remaining to complete your investigation?
 
 ### Feature Prioritization
 
-Are you able to break your system's components up into smaller, more easily manageable pieces, or "features" such that someone could work on one logically-related feature at a time? Which feature(s) are the most important to implement, and which are the "nice to haves"? Which features will you implement first, and why? If working in a group, how do you propose to split up the work between all group members?
+Are you able to break your system's components up into smaller, more easily manageable pieces, or "features" such that someone could work on one logically-related feature at a time? Which feature(s) are the most important to implement, and which are the "nice to haves"? Which features will you implement first, and why? If working in a group, how do you propose to collaborate - for example, will you mostly follow a "pair-programming" strategy or a "divide and conquer" strategy?
