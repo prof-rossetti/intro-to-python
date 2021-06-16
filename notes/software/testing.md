@@ -18,7 +18,7 @@ Different people test software for different reasons. Some software development 
 
 The professor suggests you use tests to save yourself time, to improve the quality and maintainability of your programs, and to communicate your program's desired functionality to other developers. If you find yourself performing a manual action multiple times, consider automating that action by writing a corresponding test case. If you expect a specific function to operate in a certain way, write down your expectations in a new test. If you find yourself writing comments to describe some part of the source code which isn't clearly understood, make its function plain by describing it in a test.
 
-Well-tested applications in general tend to be of a higher quality than untested applications, at least because there is intentional effort spent in pursuit of such a goal, but perhaps also because tests serve their purpose.
+Well-tested applications in general tend to be of a higher quality than untested applications, at least because there is intentional effort spent in pursuit of such a goal, but perhaps also because tests serve their purpose. However just because an application has passing tests, that doesn't necessarily mean it is free of bugs. 
 
 Written expectations and descriptions of desired functionality mitigate risks of "brain drain" over time as development teams experience attrition. In this way, well-tested applications tend to be easier to maintain over time.
 
