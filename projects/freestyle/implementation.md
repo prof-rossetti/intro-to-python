@@ -5,9 +5,9 @@
 ## Learning Objectives
 
   1. Create a tool to address user needs and solve a business problem.
-  2. Practice implementing software according to a plan.
-  3. Practice investigating and leveraging third-party services and Python packages to speed development and enhance capabilities.
-  4. Practice incorporating quality control best practices into the development process.
+  2. Implement software according to a plan. 
+  3. Investigate and leverage third-party services and Python packages to speed development and enhance capabilities.
+  4. Incorporate quality control best practices into the development process.
 
 ## Instructions
 
@@ -18,9 +18,14 @@ The implementation should adhere to the requirements below.
 ### Documentation Requirements
 
 Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, run, and test your program. This includes:
-  + instructions for creating and activating a virtual environment, most likely using Anaconda
-  + instructions for installing package dependencies, most likely using Pip
-  + instructions for obtaining and setting environment variables, as necessary
+  + a "Setup" section for:
+    + creating and activating a virtual environment, most likely using Anaconda
+    + installing package dependencies, most likely using Pip
+    + obtaining and setting environment variables, as necessary
+  + a "Usage" section for:
+    + running the program, using Python, Flask, etc.
+  + a "Test" section for:
+    + running tests via Pytest
 
 As you document for your application, strive to make it as easy as possible for someone else (or even your future self) to install it, use it, and understand what it is about.
 
@@ -50,8 +55,8 @@ As you think about ways to test your application, consider asking yourself quest
   + Is it possible for the application to receive user inputs that are unexpected or invalid? How should the application handle various invalid inputs?
   + How should the application's component functions perform given various inputs, whether valid or invalid?
   + Are there any functions or sections of the code which aren't easy to read or understand? Is there a way to use examples to communicate what is supposed to happen?
-  + If the application processes data from the Internet: Is there a way to test the application's functionality without making any additional / unnecessary network requests?
-  + If the application processes data from a CSV file or database: Is there a way to test the application's functionality without affecting the development or production environment datastores?
+  + If the application processes data from the Internet: Is there a way to test the application's functionality without making any additional / unnecessary network requests? 
+  + If the application processes data from a CSV file or database: Is there a way to test the application's functionality without affecting the development or production environment datastores? 
 
 Ideally also integrate your GitHub repository with a Continuous Integration service like Travis CI to automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository.
 
@@ -61,7 +66,7 @@ Iteratively develop your project using version control practices. Save new versi
 
 Use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the main branch.
 
-If working in a group, each group member must make significant contributions to the application's source code! Any group member not committing significant portions of the code may be subject to deductions.
+If working in a group, each group member should strive to make significant contributions to the application's source code! 
 
 ## Submission Instructions
 
@@ -74,12 +79,12 @@ Project implementations will be evaluated according to the requirements set fort
 Category | Requirement | Weight
 --- | --- | ---
 Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 15%
-User Experience | Provides a simple, pleasant, and intuitive experience for the user, with clear usage instructions, and free of idiosyncrasies or errors. | 15%
-Documentation | Contains a comprehensive README file; includes Python docstrings as necessary. | 20%
-Licensing | Contains an appropriate LICENSE file. | 5%
+User Experience | Provides a simple, pleasant, and intuitive experience for the user, without "bugs" or errors. | 15%
+Documentation | Repo contains a comprehensive README file. | 20%
+Licensing | Repo contains an appropriate LICENSE file. | 5%
 Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
-Quality | Simplified to remove or minimize code duplication. Ideally integrates with Code Climate service. | 10%
-Testing | Contains relevant automated tests. Ideally integrates with the Travis CI service. | 10%
-Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from all team members. | 15%
+Quality | Code is simplified to remove or minimize code duplication. Ideally integrates with the Code Climate service for automated PR comments/checks. | 10%
+Testing | Contains relevant automated tests. Ideally integrates with the Travis CI service for automated PR checks. | 10%
+Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from ideally all team members. | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
