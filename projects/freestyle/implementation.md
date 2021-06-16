@@ -17,15 +17,12 @@ The implementation should adhere to the requirements below.
 
 ### Documentation Requirements
 
-Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, run, and test your program. This includes:
-  + a "Setup" section for:
-    + creating and activating a virtual environment, most likely using Anaconda
-    + installing package dependencies, most likely using Pip
-    + obtaining and setting environment variables, as necessary
-  + a "Usage" section for:
-    + running the program, using Python, Flask, etc.
-  + a "Test" section for:
-    + running tests via Pytest
+Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, run, and test your program. This includes instructions for:
+  + obtaining and setting environment variables, as necessary, via local ".env" file
+  + creating and activating a virtual environment, via Anaconda
+  + installing package dependencies, via Pip
+  + running the program, via Python, Flask, etc.
+  + running tests via Pytest
 
 As you document for your application, strive to make it as easy as possible for someone else (or even your future self) to install it, use it, and understand what it is about.
 
