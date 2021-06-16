@@ -35,13 +35,20 @@ The Pytest package is generally used as a command-line utility for running pre-d
 Example invocations:
 
 ```sh
+# run all tests:
 pytest
 
-pytest --disable-pytest-warnings # disables warnings
+# suppress warnings:
+pytest --disable-pytest-warnings
 
-pytest  -s #> see print statements
+# see print statements:
+pytest  -s 
 
-pytest test/parser_test.py -k 'test_my_thing' # test a certain file / function
+# run a specific test:
+pytest test/my_test.py  
+
+# run a specific function in a specific test:
+pytest test/my_test.py -k 'test_my_thing' 
 ```
 
 ### Expecting Errors
@@ -53,7 +60,8 @@ import pytest
 
 def test_divide_by_zero():
     with pytest.raises(Exception) as e_info:
-        result = 2 / 0 # we expect this code will raise the error (division by zero)
+        # we expect this code will raise an error (division by zero)
+        result = 2 / 0
 ```
 
 ### Fixtures
@@ -72,7 +80,27 @@ def nlp():
     print("LOADING THE LANGUAGE MODEL...")
     return spacy.load("en_core_web_md")
 
-def test_my_thing(nlp):
-    doc = nlp(reconstructed_text)
-    # etc
+# prevents unnecessary or duplicative network requests
+# fixture only loaded when a specific test needs it
+# module-level fixture only invoked once for all tests
+@pytest.fixture(scope="module")
+def parsed_response():
+    import requests
+    import json
+    print("MAKING A NETWORK REQUEST...")
+    response = requests.get("https://www.example.com/api/")
+    return json.loads(response.text)
+
+```
+
+
+```py
+
+# using fixtures in tests (just pass them like magic as a param to the test function that needs them):
+
+def test_my_language_model(nlp):
+    # do something with the nlp fixture
+
+def test_my_calculations(parsed_response):
+    # do something with the parsed_response fixture
 ```
