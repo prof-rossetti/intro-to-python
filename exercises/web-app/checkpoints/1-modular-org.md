@@ -1,6 +1,6 @@
 
 
-# Checkpoint 1: Setup
+# Checkpoint 1: Getting Started
 
 ## Quick Start
 
