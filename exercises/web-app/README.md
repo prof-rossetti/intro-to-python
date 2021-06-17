@@ -45,6 +45,19 @@ Now follow these sequential "checkpoints" for a guided walk-through of how to cr
   4. [Web Forms (and Handling POST Requests)](checkpoints/4-web-forms.md)
   5. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
 
+FYI: we'll be running the application using the following Flask command (not a Python command):
+
+```sh
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+export FLASK_APP=web_app
+flask run
+```
+
+
 ### Deploying to Production
 
 Reference:
