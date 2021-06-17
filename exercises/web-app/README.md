@@ -39,11 +39,24 @@ pip install -r requirements.txt
 
 Now follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
 
-  1. [Routing (and Handling GET Requests)](checkpoints/1-routing.md)
-  2. [Modular Organization](checkpoints/2-modular-org.md)
+  1. [Getting Started](checkpoints/1-modular-org.md)
+  2. [Routing](checkpoints/2-routing.md)
   3. [Rendering HTML Pages](checkpoints/3-render-template.md)
   4. [Web Forms (and Handling POST Requests)](checkpoints/4-web-forms.md)
   5. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
+
+FYI: we'll be running the application using the following Flask command (not a Python command):
+
+```sh
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS:
+# ... if `export` doesn't work for you, try `set` instead
+export FLASK_APP=web_app
+flask run
+```
+
 
 ### Deploying to Production
 

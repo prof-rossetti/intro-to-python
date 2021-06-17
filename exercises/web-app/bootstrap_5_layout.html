@@ -38,7 +38,8 @@
     -->
     {% set nav_links = [
       ('/about', 'about', 'About'),
-      ('/hello', 'hello', 'Hello')
+      ('/hello', 'hello', 'Hello'),
+      ('/weather/form', 'weather_form', 'Weather Form')
     ] -%}
     {% set active_page = active_page|default('home') -%}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -80,8 +81,7 @@
         <footer style="margin-top:2em; margin-bottom:2em;">
         <hr>
             &copy; Copyright 2021 [Your Name Here] |
-            <a href="https://github.com/prof-rossetti/intro-to-python/blob/master/exercises/web-app/README.md">source</a>
-
+            <a href="https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/web-app/README.md">Source</a>
         </footer>
     </div>
 

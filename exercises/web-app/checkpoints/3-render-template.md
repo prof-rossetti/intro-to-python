@@ -8,7 +8,9 @@ A web application is more fun with navigable HTML pages, so let's add take this 
 Reference:
   + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
 
-Flask will be looking for our HTML pages in a "templates" directory by default. So let's create a new subdirectory in the "web_app" folder called "templates", with new HTML files called "home.html", "about.html", and "hello.html", with the following contents inside, respectively.
+Let's update the "home_routes.py" file, commenting out the existing `return` statements, and un-commenting the ` return render_template()` statements instead, referencing HTML template files like "home.html", "about.html", and "hello.html".
+
+Flask will be looking for these HTML pages in a "templates" directory by default. So let's create a new subdirectory in the "web_app" folder called "templates", with new HTML files called "home.html", "about.html", and "hello.html", with the following contents inside, respectively.
 
 
 Inside "web_app/templates/home.html":
@@ -110,42 +112,12 @@ Inside "web_app/templates/hello.html":
 
 Notice each HTML page has a unique heading, and a shared navigation and footer. We'll refactor the duplicate / shared HTML code later, but for right now it's fine.
 
-Let's update the home routes to render these HTML pages:
-
-```py
-# web_app/routes/home_routes.py
-
-from flask import Blueprint, request, render_template
-
-home_routes = Blueprint("home_routes", __name__)
-
-@home_routes.route("/")
-@home_routes.route("/home")
-def index():
-    print("HOME...")
-    return render_template("home.html")
-
-@home_routes.route("/about")
-def about():
-    print("ABOUT...")
-    return render_template("about.html")
-
-@home_routes.route("/hello")
-def hello_world():
-    print("HELLO...", dict(request.args))
-    # NOTE: `request.args` is dict-like, so below we're using the dictionary's `get()` method,
-    # ... which will return None instead of throwing an error if key is not present
-    # ... see also: https://www.w3schools.com/python/ref_dictionary_get.asp
-    name = request.args.get("name") or "World"
-    message = f"Hello, {name}!"
-    return render_template("hello.html", message=message)
-
-```
-
 Notice we're passing a variable called `message` from the router to the "hello" page, and using the "Jinja" template language to reference it (i.e. `{{ message }}`).
 
 Restart the server and view the app in the browser and navigate between the three HTML pages. Use URL params to customize the name on the "hello" page. Cool!
 
+
+Before moving on, make a commit with a message like "Render HTML pages".
 
 ## Shared Layouts
 
@@ -184,13 +156,16 @@ Let's create a new file in the "templates" directory called "layout.html", and p
     <footer>
       <hr>
       &copy; Copyright 2021 [Your Name Here] |
-      <a href="https://github.com/prof-rossetti/intro-to-python/">source</a>
+      <a href="https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/web-app/README.md">Source</a>
     </footer>
   </div>
 
 </body>
 </html>
 ```
+
+> NOTE: feel free to update the footer to include your Name and a Source Code link to your own repo.
+
 
 Notice the block called "content" (i.e. `{% block content %}`), which is a placeholder for the respective page contents.
 
@@ -246,3 +221,5 @@ Notice each of these templates is inheriting from the "layout.html" template, an
 
 
 Restart your server and view your app in the browser and use the HTML links to navigate between pages. Observe the consistent header and footer. Nice!
+
+Before moving on, make a commit with a message like "Shared Layouts".
