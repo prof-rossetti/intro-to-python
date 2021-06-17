@@ -90,7 +90,7 @@ Inside the "web_app" directory, create a new subdirectory called "routes" with n
 ```py
 # web_app/routes/home_routes.py
 
-from flask import Blueprint #, request, render_template
+from flask import Blueprint, request, render_template
 
 home_routes = Blueprint("home_routes", __name__)
 
@@ -134,4 +134,4 @@ Review the code that handles these "index" and "about" routes. What do you notic
 
 Nice, our app is handling requests to different routes! And with the modular codebase we'll be able to maintain and extend our app more easily in the future.
 
-Before moving on, make a commit with a message like "Web App Organization".
+Before moving on, add the run command to your README file, so you'll remember how to run the web app in the future, then make a commit with a message like "Web App Organization".
