@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 Now follow these sequential "checkpoints" for a guided walk-through of how to create a Flask application:
 
-  1. [Setup and Organization](checkpoints/1-setup.md)
+  1. [Modular Organization](checkpoints/1-modular-org.md)
   2. [Routing](checkpoints/2-routing.md)
   3. [Rendering HTML Pages](checkpoints/3-render-template.md)
   4. [Web Forms (and Handling POST Requests)](checkpoints/4-web-forms.md)
