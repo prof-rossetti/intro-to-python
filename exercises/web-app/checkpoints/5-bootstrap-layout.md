@@ -82,6 +82,8 @@ Updated "web_app/templates/weather_form.html":
 
 Restart the server and view the app in the browser to see the new styles with a blue responsive navbar at the top!
 
+Before moving on, make a commit with a message like "Bootstrap Layout".
+
 ## Flash Messaging
 
 Reference:
@@ -125,3 +127,5 @@ if __name__ == "__main__":
 
 
 Restart the server and submit the weather form with valid and invalid inputs to see the flash message at the top of the forecast page!
+
+Before moving on, make a commit with a message like "Flash Messaging".

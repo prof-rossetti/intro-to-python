@@ -117,6 +117,8 @@ Notice we're passing a variable called `message` from the router to the "hello" 
 Restart the server and view the app in the browser and navigate between the three HTML pages. Use URL params to customize the name on the "hello" page. Cool!
 
 
+Before moving on, make a commit with a message like "Render HTML pages".
+
 ## Shared Layouts
 
 Right now each template is a complete HTML file. If we wanted to continue to implement common navigation and footer across each of the files, we'd have to copy and paste the same header and footer into all the files. This is not ideal from a maintainability perspective.
@@ -220,3 +222,5 @@ Notice each of these templates is inheriting from the "layout.html" template, an
 
 
 Restart your server and view your app in the browser and use the HTML links to navigate between pages. Observe the consistent header and footer. Nice!
+
+Before moving on, make a commit with a message like "Shared Layouts".

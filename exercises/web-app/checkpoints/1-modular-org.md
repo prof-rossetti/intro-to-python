@@ -48,11 +48,9 @@ This command starts a local web server on port 5000. Preview the app by visiting
 
 If we add dozens of additional routes, this single file approach will become harder to maintain. Also when we deploy the app to a Heroku server, the server will be looking for a different organizational structure.
 
-So let's adopt a more modular organizational structure, whereby we'll move the app into a new directory and split the routing logic across multiple files.
-
 ### Application Factory Pattern
 
-Let's implement the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) where we define our application inside a function. Among other benefits, this can help us test the app later.
+So let's adopt a more modular organizational structure, using the Flask ["application factory pattern"](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/), whereby we'll move the web app into a new directory and split the routing logic across multiple files. Among other maintenance benefits, this can help us test and deploy the app later.
 
 Create a new subdirectory in your repo called "web_app" with a file called "\_\_init_\_.py" and place the following contents inside:
 
@@ -92,7 +90,7 @@ Inside the "web_app" directory, create a new subdirectory called "routes" with n
 ```py
 # web_app/routes/home_routes.py
 
-from flask import Blueprint, request #, render_template
+from flask import Blueprint #, request, render_template
 
 home_routes = Blueprint("home_routes", __name__)
 
@@ -135,3 +133,5 @@ Let's restart the web server using this new command, then visit the following UR
 Review the code that handles these "index" and "about" routes. What do you notice?
 
 Nice, our app is handling requests to different routes! And with the modular codebase we'll be able to maintain and extend our app more easily in the future.
+
+Before moving on, make a commit with a message like "Web App Organization".

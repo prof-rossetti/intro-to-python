@@ -113,3 +113,5 @@ Restart the server and visit the following routes to test the newly-integrated w
 Most importantly, visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
 
 Nice! We now have both a web interface into our app's weather functionality.
+
+Before moving on, make a commit with a message like "Handle Form Data".

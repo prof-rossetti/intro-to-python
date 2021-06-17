@@ -108,3 +108,5 @@ Finally, visit the following urls in the browser:
 Review the code that handles these "book" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
 
 Wow, we've just made our own JSON API!
+
+Before moving on, make a commit with a message like "Web App Routing".
