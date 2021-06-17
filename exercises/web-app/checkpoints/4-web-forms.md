@@ -105,13 +105,13 @@ Based on this routing logic, after we get a weather forecast for the given zip c
 
 Here, we are using the Jinja template language to loop through our forecasts and display each.
 
-Restart the server and visit the following routes to test the newly-integrated weather forecasting functionality:
+Restart the server and visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
+
+Also know that we can directly visit the forecast route, supplying URL params as desired:
   + http://localhost:5000/weather/forecast
   + http://localhost:5000/weather/forecast?country_code=US&zip_code=10012
   + http://localhost:5000/weather/forecast?country_code=US&zip_code=OOPS
 
-Most importantly, visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
-
-Nice! We now have both a web interface into our app's weather functionality.
+Nice! We now have a web interface into our app's weather functionality.
 
 Before moving on, make a commit with a message like "Handle Form Data".

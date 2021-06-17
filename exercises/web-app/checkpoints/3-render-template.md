@@ -8,7 +8,7 @@ A web application is more fun with navigable HTML pages, so let's add take this 
 Reference:
   + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
 
-Let's update the "home_routes.py" file, commenting out the existing `return` statements, and un-commenting the ` return render_template()` statements instead, referencing HTML template file like "home.html", about.html", etc.
+Let's update the "home_routes.py" file, commenting out the existing `return` statements, and un-commenting the ` return render_template()` statements instead, referencing HTML template files like "home.html", "about.html", and "hello.html".
 
 Flask will be looking for these HTML pages in a "templates" directory by default. So let's create a new subdirectory in the "web_app" folder called "templates", with new HTML files called "home.html", "about.html", and "hello.html", with the following contents inside, respectively.
 
@@ -156,8 +156,7 @@ Let's create a new file in the "templates" directory called "layout.html", and p
     <footer>
       <hr>
       &copy; Copyright 2021 [Your Name Here] |
-      <a href="https://github.com/prof-rossetti/daily-briefings-py">Source Code</a> |
-      <a href="https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/web-app/README.md">Exercise Instructions</a>
+      <a href="https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/web-app/README.md">Source</a>
     </footer>
   </div>
 
