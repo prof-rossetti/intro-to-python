@@ -10,10 +10,6 @@ First, update the "home_routes.py" file to define another route there:
 
 # ...
 
-# GET /hello
-# GET /hello?name=Jim
-# GET /hello?name=Jane
-# GET /hello?name=Jon%20Snow
 @home_routes.route("/hello")
 def hello_world():
     print("HELLO...", dict(request.args))

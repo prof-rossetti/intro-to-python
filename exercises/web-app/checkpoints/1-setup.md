@@ -96,8 +96,6 @@ from flask import Blueprint, request #, render_template
 
 home_routes = Blueprint("home_routes", __name__)
 
-# GET /
-# GET /home
 @home_routes.route("/")
 @home_routes.route("/home")
 def index():
@@ -105,7 +103,6 @@ def index():
     return "Welcome Home"
     #return render_template("home.html")
 
-# GET /about
 @home_routes.route("/about")
 def about():
     print("ABOUT...")
@@ -128,7 +125,7 @@ export FLASK_APP=web_app
 flask run
 ```
 
-Remember, the "init" file is the entry-point into a local Python module, so when we run the app this way, Flask will run the "web_app" module's "init" file.
+> Remember, the "init" file is the entry-point into a local Python module, so when we run the app this way, Flask will run the "web_app" module's "init" file, specifically whatever is under the "main conditional".
 
 Let's restart the web server using this new command, then visit the following URLs in the browser:
   + http://localhost:5000
@@ -137,6 +134,4 @@ Let's restart the web server using this new command, then visit the following UR
 
 Review the code that handles these "index" and "about" routes. What do you notice?
 
-Nice, our app is handling requests to different routes!
-
-Great! With the modular codebase we'll be able to maintain and extend our app more easily in the future.
+Nice, our app is handling requests to different routes! And with the modular codebase we'll be able to maintain and extend our app more easily in the future.
