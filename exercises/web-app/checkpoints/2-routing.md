@@ -17,7 +17,10 @@ def hello_world():
     # ... which will return None instead of throwing an error if key is not present
     # ... see also: https://www.w3schools.com/python/ref_dictionary_get.asp
     name = request.args.get("name") or "World"
-    return f"Hello, {name}!"
+    message = f"Hello, {name}!"
+    return message
+    #return render_template("hello.html", message=message)
+
 ```
 
 Next, inside the "routes" directory, create new files called "book_routes.py" and "weather_routes.py", and place the following contents inside, respectively:
@@ -75,11 +78,11 @@ def weather_forecast_api():
 ```
 
 
-Finally, to let our app know about these new routes, let's un-comment the related lines from the web app's "\_\_init_\_.py" file.
+Finally, to let our app know about these new routes, let's un-comment the related "import" and "register" lines from the web app's "\_\_init_\_.py" file.
 
 ### Handling URL Parameters
 
-Visit the following URLs in the browser, and notice we are now passing a URL parameter called "name" along with our requests:
+Restart the server, and visit the following URLs in the browser. Notice we are now passing an optional URL parameter called "name" along with our requests:
 
   + http://localhost:5000/hello
   + http://localhost:5000/hello?name=Jim
@@ -97,7 +100,7 @@ Nice, our app is dynamically handling different URL parameters!
 Finally, visit the following urls in the browser:
   + http://localhost:5000/api/books.json
   + http://localhost:5000/api/books/100.json
-  + http://localhost:5000/api/books/oops.json
+  + http://localhost:5000/api/books/OOPS.json
   + http://localhost:5000/weather/forecast.json
   + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=10012
   + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=OOPS
