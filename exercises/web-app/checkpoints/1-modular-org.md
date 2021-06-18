@@ -85,7 +85,7 @@ Let's now move the route definitions to their own logically-related files, just 
 
 We're using [Flask Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/) to store the route definitions in a way the app can recognize.
 
-Inside the "web_app" directory, create a new subdirectory called "routes" with new files called "home_routes.py", "book_routes.py", and place the following contents inside, respectively:
+Inside the "web_app" directory, create a new subdirectory called "routes" with a new file inside called "home_routes.py", and place the following contents inside:
 
 ```py
 # web_app/routes/home_routes.py
