@@ -59,7 +59,6 @@ export FLASK_APP=web_app
 flask run
 ```
 
-
 ### Deploying to Production
 
 Reference:
@@ -75,6 +74,8 @@ git push heroku main
 Heroku says "no web process specified". They want us to create a specific file called the "Procfile" in the repo's root directory to instruct the Heroku server which command to invoke in order to run the web app:
 
 ```sh
+# this is the Procfile (a Heroku config file)
+
 web: gunicorn "web_app:create_app()"
 ```
 
