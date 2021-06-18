@@ -36,11 +36,14 @@ First, [sign up for a SendGrid account](https://signup.sendgrid.com/), then foll
 
 ![](https://user-images.githubusercontent.com/1328807/85074750-0cb54c00-b18b-11ea-940f-769cbcde53ad.png)
 
+> NOTE: some students have reported that yahoo-issued, university-issued, and work-issued email addresses may be less likely to work. So if you run into issues with these kinds of addresses, perhaps try a Gmail address.
+
+
 Then [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions. We'll want to store the API Key value in an [environment variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`.
 
-Also set an environment variable called `SENDER_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account (e.g. "abc123@gmail.com").
+Also set an environment variable called `SENDER_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account.
 
-Use a [".env" file approach](/notes/python/packages/dotenv.md) to managing these environment variables.
+Use a [".env" file approach](/notes/python/packages/dotenv.md) to manage these environment variables.
 
 ## Usage
 
