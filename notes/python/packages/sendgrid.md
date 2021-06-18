@@ -1,5 +1,7 @@
 # The `sendgrid` Package
 
+> FYI: [KNOWN ISSUES WITH SENDGRID](https://github.com/prof-rossetti/intro-to-python/issues/41)
+
 The `sendgrid` package provides some useful emailing capabilities via the [SendGrid Email Delivery Service](https://sendgrid.com/solutions/email-api/). :mailbox_with_mail: :envelope:
 
 Reference:
@@ -30,7 +32,9 @@ pip install sendgrid
 
 ## Setup
 
-First, [sign up for a SendGrid account](https://signup.sendgrid.com/), then follow the instructions to complete your "Single Sender Verification", clicking the link in a confirmation email to verify your account.
+First, [sign up for a SendGrid account](https://signup.sendgrid.com/), then follow the instructions to complete your "Single Sender Verification", clicking the link in a confirmation email to verify your account. You should also be able to access this via the settings menu:
+
+![](https://user-images.githubusercontent.com/1328807/85074750-0cb54c00-b18b-11ea-940f-769cbcde53ad.png)
 
 Then [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions. We'll want to store the API Key value in an [environment variable](/notes/environment-variables.md) called `SENDGRID_API_KEY`.
 
