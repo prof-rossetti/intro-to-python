@@ -6,7 +6,7 @@ A web application is more fun with navigable HTML pages, so let's add take this 
 ## Rendering HTML Templates
 
 Reference:
-  + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
+  + [Jinja Templates](https://jinja.palletsprojects.com/en/3.0.x/)
 
 Let's update the "home_routes.py" file, commenting out the existing `return` statements, and un-commenting the ` return render_template()` statements instead, referencing HTML template files like "home.html", "about.html", and "hello.html".
 
