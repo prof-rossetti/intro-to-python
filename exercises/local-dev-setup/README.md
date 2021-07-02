@@ -47,7 +47,7 @@ Rather than install a single specific version of Python, and use that same versi
 
 When we install Anaconda, we get to create project-specific "virtual environments", which are essentially separate work spaces on your computer, each with a specific version of Python installed inside. After "activating" a given virtual environment, we'll have access to the proper versions of the Python and Pip command-line tools. 
 
-We'll use the Python command-line tool to run Python programs. Each Python program generally requires its own set of third-party "package" dependencies. Packages are essentially separate open source libraries of Python code we can use to do certain things, but they aren't included in the official Python Language, so we need to install them separately. We use the Pip tool to install these packages before we're able to run the Python program that requires them.
+We'll use the Python command-line tool to run Python programs. Each Python program generally requires its own set of third-party "package" dependencies. Packages are essentially separate open source libraries of Python code we can use to do certain things, but they aren't included in the official Python Language, so we need to install them separately. We use the Pip tool to install these packages before we're able to run the Python program that requires them. When we use Pip to install a package, we are installing it from the centralized [Python Package Index (PyPI)](https://pypi.org/), where the package maintainer has already uploaded the source code for that package.
 
 Wow, enough background already!
 
