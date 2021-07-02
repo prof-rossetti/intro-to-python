@@ -58,9 +58,21 @@ alias gpom="git pull origin main"
 alias gr="git remote -v"
 alias gs="git status"
 
-# hiding or showing all icons on the desktop (can be helpful for screenshare or zen modes):
+# hiding or showing all icons on the desktop (when in screenshare or zen modes):
 alias deskhide="defaults write com.apple.finder CreateDesktop false && killall Finder"
 alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Finder"
+
+# changing scroll direction setting (when connecting my mouse):
+# ... Preferences > Trackpad > Scroll & Zoom > Scroll Direction
+# ... https://stackoverflow.com/questions/30767674/change-scroll-direction-on-mac-programatically-assign-to-key-combination-comman
+#
+# can read current setting with:
+# ... defaults read -g com.apple.swipescrolldirection
+alias scroll_natural="defaults write -g com.apple.swipescrolldirection -bool TRUE"
+alias scroll_mouse="defaults write -g com.apple.swipescrolldirection -bool FALSE"
+
+
+
 ```
 
 After editing the config file, save the file. You may need to close your terminal window and re-open a new one for the changes to take effect.
