@@ -12,25 +12,58 @@ Afterwards, consider signing up for the [GitHub Student Developer Pack](https://
 
 ## Text Editor
 
+The goal is for each student to have access to a text editing application of choice. 
+
 Unless you already have a text editor of choice, install [VS Code](https://code.visualstudio.com/).
 
-After installing VS Code, take some time to explore its helpful features. See the professor's [VS Code configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details.
+After installing VS Code, take some time to explore the settings and the "Command Palette". You're encouraged to review the professor's [VS Code configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details, tips, and tricks.
 
 ## Command-line Application
+
+The goal is for each student to have access to a command-line application of choice. 
 
 Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance as desired).
 
 Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users.
 
-> FYI: The ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md) will introduce you to the most useful commands.
+Alternatively, students on Mac or Windows may be able to use the integrated terminal in VS Code, but it may require additional configuration. 
+
+If successful, you should be able to use your command-line application to complete the ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md), which will introduce you to useful commands like these, for navigating your local filesystem:
+
+```sh
+cd ~/Desktop
+ls -al
+```
 
 ## Anaconda
 
-Unless it is already installed, install [Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows. See the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details.
+The goal is to install some version of Python, so we can run Python files from the command-line. 
+
+By default Mac computers have a super old version of Python (2.x) that we don't want to mess with, and Windows computers don't even have any version of Python installed, so we'll use a tool called Anaconda to install and manage different version(s) of Python. 
+
+Unless it is already installed, install [Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
 
 > IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows.
 
-> NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash`, and Mac Zsh profile users may need to run `conda init zsh`.
+If successful, you should be able to run the following commands:
+
+```sh
+# to see if conda is installed:
+conda --version
+
+# to check what environments exist (hopefully you see "base"):
+conda info --envs
+
+# to create and activate a new virtual environment with the right version of python installed:
+conda create -n my-first-env python=3.8
+conda activate my-first-env
+
+# to see if python is installed (after activating the virtual environment):
+python --version
+pip --version
+```
+
+> NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash`, and Mac Zsh profile users may need to run `conda init zsh`. If you do, close your command-line application and open another window for the changes to take affect, then try again.
 
 ## Version Control Utilities
 
@@ -40,12 +73,18 @@ A "version control" tool will help us download projects from GitHub and upload p
 
 Windows users who have installed Git Bash (see "Command-line Application" section above) will have satisfied the Git installation requirement.
 
-Mac users may find that a system version of Git is already installed, but we want to use a newer version, to make things as easy as possible. So all Mac users are encouraged to install Git via Homebrew. See the professor's [Git installation reference](/notes/clis/git.md#installation) for more details.
+Mac users may find that a system version of Git is already installed, but we'll want to use a newer version. So all Mac users are encouraged to [install Homebrew](/notes/clis/brew.md), then [use Homebrew to install Git](/notes/clis/git.md#installation-on-mac). 
 
-After installing Git, all students should generate SSH keys and configure their account credentials. See the professor's [Git configuration reference](/notes/clis/git.md#configuration) for more details.
+After installing Git, all students should generate SSH keys and configure their account credentials. You're encouraged to review the professor's [Git configuration reference](/notes/clis/git.md#configuration) for more details.
+
+If successful, you should be able to run the following command:
+
+```sh
+git --version
+```
 
 ### GitHub Desktop
 
-Students who want to use GitHub Desktop should first install the Git CLI (see step above), then they can also install [GitHub Desktop software](https://desktop.github.com/) on Mac or Windows.
+Students who want to use GitHub Desktop should first install the Git CLI (see step above), then also install [GitHub Desktop software](https://desktop.github.com/) on Mac or Windows.
 
-After installing, you will need to login with your GitHub account credentials. See the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
+After installing, you will need to login with your GitHub account credentials. You're encouraged to review the professor's [GitHub Desktop configuration reference](/notes/devtools/github-desktop.md#configuration) for more details.
