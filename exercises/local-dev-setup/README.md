@@ -30,7 +30,7 @@ Windows users who don't already have a preferred command-line application are en
 
 Alternatively, students on Mac or Windows may be able to use the integrated terminal in VS Code, but it may require additional configuration. 
 
-If successful, you should be able to use your command-line application to complete the ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md), which will introduce you to useful commands like these, for navigating your local filesystem:
+If successful, you should be able to use your command-line application to complete the ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md), which will introduce you to useful commands (like these, for navigating your local filesystem):
 
 ```sh
 cd ~/Desktop
