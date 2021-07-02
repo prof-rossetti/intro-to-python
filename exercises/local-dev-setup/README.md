@@ -12,7 +12,7 @@ Afterwards, consider signing up for the [GitHub Student Developer Pack](https://
 
 ## Text Editor
 
-The goal is for each student to have access to a text editing application of choice. 
+The goal is to have access to a text-editing application of choice, which we'll use to create and edit files of Python code (i.e. text files written in the Python Language and ending in the ".py" extension).
 
 Unless you already have a text editor of choice, install [VS Code](https://code.visualstudio.com/).
 
@@ -20,7 +20,7 @@ After installing VS Code, take some time to explore the settings and the "Comman
 
 ## Command-line Application
 
-The goal is for each student to have access to a command-line application of choice. 
+The goal is to have access to a command-line application of choice, which we'll use for a variety of purposes. 
 
 Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance as desired).
 
@@ -35,15 +35,23 @@ cd ~/Desktop
 ls -al
 ```
 
-## Anaconda
+## Anaconda, Python, and Pip
 
-The goal is to install some version of Python, so we can run Python files from the command-line. 
+The goal is to be able to run Python programs from the command-line. 
 
-By default Mac computers have a super old version of Python (2.x) that we don't want to mess with, and Windows computers don't even have any version of Python installed, so we'll use a tool called Anaconda to install and manage different version(s) of Python. 
+The Python programming language evolves over time as new features are added and new versions are released. For this course, we'll want to be running a Python version greater than 3.7. By default, Mac computers have a super old version of Python (2.x) we don't want to mess with, and Windows computers don't have any version of Python installed. So we'll need to install Python somehow. 
+
+Rather than install a single specific version of Python, and use that same version for all projects, sometimes different projects in a professional setting will require different minor versions of Python. So we'll use a tool called Anaconda to help us flexibly install different versions of Python in a project-specific way.
+
+When we install Anaconda, we get to create project-specific "virtual environments", which are essentially separate work spaces on your computer, each with a specific version of Python installed inside. After "activating" a given virtual environment, we'll have access to the proper versions of the Python and Pip command-line tools. 
+
+We'll use the Python command-line tool to run Python programs. Each Python program generally requires its own set of third-party "package" dependencies. Packages are essentially separate open source libraries of Python code we can use to do certain things, but they aren't included in the official Python Language, so we need to install them separately. We use the Pip tool to install these packages before we're able to run the Python program that requires them.
+
+Wow, enough background already!
 
 Unless it is already installed, install [Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
 
-> IMPORTANT: remember to check the "add to PATH" option during installation, especially on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows.
+> IMPORTANT: make sure to check the "add to PATH" option during installation, on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows.
 
 If successful, you should be able to run the following commands:
 
