@@ -4,7 +4,9 @@ This document helps you install and configure the tools you'll need to develop a
 
 ## GitHub
 
-Unless you already have one, take a moment to [create a GitHub account](https://github.com/). We'll use this platform to manage, share, and submit different versions of our software projects, called "repositories".
+We'll use GitHub to manage, share, and submit different versions of our software projects, called "repositories".
+
+Unless you already have one, take a moment to [create a GitHub account](https://github.com/). 
 
 Afterwards, consider signing up for the [GitHub Student Developer Pack](https://education.github.com/pack), which provides some free resources.
 
