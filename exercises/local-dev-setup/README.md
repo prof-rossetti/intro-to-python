@@ -12,6 +12,8 @@ Afterwards, consider signing up for the [GitHub Student Developer Pack](https://
 
 > PRIVACY OPTIONS: Many students wish to associate their personal identities with their GitHub accounts, to display a portfolio of programming projects. However, if you're concerned about privacy, you have a few options. First, consider choosing a GitHub username which is different than your university-issued net identifier. Second, avoid uploading any personally-identifiable information to your GitHub profile. Third, consider submitting projects via private repositories.
 
+If successful, when you view this page on GitHub, you should be able to click the buttons on the top-right of the page to "Star" the course repository, and also "Fork" it (i.e. create a copy under your own control).
+
 ## Text Editor
 
 The goal is to have access to a text-editing application of choice, which we'll use to create and edit files of Python code (i.e. text files written in the Python Language and ending in the ".py" extension).
@@ -92,6 +94,7 @@ If successful, you should be able to run the following command:
 ```sh
 git --version
 ```
+
 
 ### GitHub Desktop
 
