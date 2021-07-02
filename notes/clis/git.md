@@ -76,13 +76,11 @@ git config --global user.email
 
 ### Configuring SSH
 
-References:
+If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub (so you don't have to keep typing your username and password), first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
 
-  + [Connecting to GitHub via SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), including:
-    + [Generating SSH Keys](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-    + [Adding SSH Keys to GitHub](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+See: [Connecting to GitHub via SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), including: [Generating SSH Keys](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [Adding SSH Keys to GitHub](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
   
-If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub, first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
+
 
 <hr>
 
@@ -99,13 +97,38 @@ If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub, fir
 Navigate into a project directory, then initialize a new repository there:
 
 ```sh
-cd path/to/my/project # where path/to/my/project is the actual path to your project directory
+mkdir ~/Desktop/my-example-repo
+cd ~/Desktop/my-example-repo
 git init . # initialize a new git repository, creating a hidden folder called .git in your project's root directory
 ```
 
-#### Viewing Revision History
+> NOTE: instead of initializing repositories in this way, we'll usually create new repos via the GitHub interface, and then "clone" or download them to a specified local location.
 
-> NOTE: newly-created repositories won't have any revisions to view until you make your first commit (see "Committing Changes" below)
+#### Making Revisions
+
+Use your text editor to add, delete, and/or modify files, then save them.
+
+#### Committing Changes
+
+After making and saving changes to files in a repository, you can detect the changes and review them:
+
+```sh
+git status 
+
+git diff
+```
+
+After reviewing the changes, if you are satisfied, stage and commit them:
+
+```sh
+git add . 
+
+git commit -m "my message" 
+```
+
+Continue to iteratively repeat the process of reviewing and committing revisions as you incrementally develop your software.
+
+#### Viewing Revision History
 
 List the most recent revisions:
 
@@ -116,37 +139,17 @@ git log
 Show details about the most recent revision:
 
 ```sh
-git show # optionally specify any commit's identifier, or "SHA", to show that specific commit (e.g. `git show a5290eda34e9e0d89b90ae1cc01afe7753c294b8`)
+git show
 ```
 
-#### Making Revisions
-
-Use your text editor to add, delete, and/or modify files, then save them.
-
-#### Committing Changes
-
-After making and saving changes, detect and review them:
-
-```sh
-git status # see which files have changed since the last commit
-git diff # see how those files have changed (only shows diffs for files that existed during the last version, not for newly created files)
-```
-
-After reviewing the changes, if you are satisfied, stage and commit them:
-
-```sh
-git add . # this "stages" the files for commit. specify a period (`.`) to add all changed files, or specify a single filename to add only that file (e.g. `git add path/to/file.py`)
-git commit -m "my message" # saves the changes and adds a unique reference identifier for this particular version
-```
-
-Continue to iteratively repeat the process of reviewing and committing revisions as you incrementally develop your software.
 
 #### Reverting Changes
 
 One of the biggest benefits of version control is the ability to revert to previous versions. If you need to restore the state of your repository to some previous commit:
 
 ```sh
-git reset --hard abc123def456 # where abc123def456 is the identifier, or "SHA", of the commit you would like to revert to
+# where abc123def456 is the identifier, or "SHA", of the commit you would like to revert to:
+git reset --hard abc123def456
 ```
 
 
