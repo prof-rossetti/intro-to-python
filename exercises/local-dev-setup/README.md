@@ -1,6 +1,6 @@
-# Setting up your Local Development Environment
+# Local Development Environment Setup Guide
 
-This document helps you install and configure the tools you'll need to develop Python applications on your local machine.
+This document helps you install and configure the tools you'll need to develop and run Python applications on your local machine.
 
 ## GitHub
 
