@@ -28,16 +28,18 @@ After opening the file in your text editor, you can place any of the following c
 
 
 ``` sh
-# ~/.bash_profile
+# this is the ~/.bash_profile file or the ~/.zshrc file...
 
 #
 # CONFIGURATIONS
 #
 
-# control the "prompt" message that shows up in the terminal. see also: https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
+# control the "prompt" message that shows up in the terminal
+# ... see also: https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
 export PS1=" --->> "
 
-# control some colors. see also: https://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+# control some colors
+# ... see also: https://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
@@ -48,15 +50,13 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # listing all files in an easier to read format:
 alias ll="ls -lahG"
 
-# shortcuts for git commands:
-alias gb="git branch"
+# shortcuts for most common git commands:
+alias gs="git status"
 alias gd="git diff"
 alias gl="git log"
-alias glt="git log --graph --decorate --oneline --full-history --all --simplify-by-decoration"
-alias glsd="git ls-files --deleted"
-alias gpom="git pull origin main"
 alias gr="git remote -v"
-alias gs="git status"
+alias gb="git branch"
+alias gpom="git pull origin main"
 
 # hiding or showing all icons on the desktop (when in screenshare or zen modes):
 alias deskhide="defaults write com.apple.finder CreateDesktop false && killall Finder"
@@ -70,8 +70,6 @@ alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Fi
 # ... defaults read -g com.apple.swipescrolldirection
 alias scroll_natural="defaults write -g com.apple.swipescrolldirection -bool TRUE"
 alias scroll_mouse="defaults write -g com.apple.swipescrolldirection -bool FALSE"
-
-
 
 ```
 
