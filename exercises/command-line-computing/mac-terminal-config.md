@@ -73,4 +73,6 @@ alias scroll_mouse="defaults write -g com.apple.swipescrolldirection -bool FALSE
 
 ```
 
+> NOTE: if you see some Anaconda-related stuff in this file, leave it as-is!
+
 After editing the config file, save the file. You may need to close your terminal window and re-open a new one for the changes to take effect.
