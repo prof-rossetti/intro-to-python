@@ -43,15 +43,9 @@ ls -al
 
 The goal is to be able to run Python programs from the command-line. 
 
-The Python programming language evolves over time as new features are added and new versions are released. For this course, we'll want to be running a Python version greater than 3.7. By default, Mac computers have a super old version of Python (2.x) we don't want to mess with, and Windows computers don't have any version of Python installed. So we'll need to install Python somehow. 
+The Python programming language evolves over time as new features are added and new versions are released. For this course, we'll want to be running a Python version greater than 3.7. By default, Mac computers have a super old version of Python (2.x) we don't want to mess with, and Windows computers don't have any version of Python installed. So we'll need to install Python separately. 
 
-Rather than install a single specific version of Python, and use that same version for all projects, sometimes different projects in a professional setting will require different minor versions of Python. So we'll use a tool called Anaconda to help us flexibly install different versions of Python in a project-specific way.
-
-When we install Anaconda, we get to create project-specific "virtual environments", which are essentially separate work spaces on your computer, each with a specific version of Python installed inside. After "activating" a given virtual environment, we'll have access to the proper versions of the Python and Pip command-line tools. 
-
-We'll use the Python command-line tool to run Python programs. Each Python program generally requires its own set of third-party "package" dependencies. Packages are essentially separate open source libraries of Python code we can use to do certain things, but they aren't included in the official Python Language, so we need to install them separately. We use the Pip tool to install these packages before we're able to run the Python program that requires them. When we use Pip to install a package, we are installing it from the centralized [Python Package Index (PyPI)](https://pypi.org/), where the package maintainer has already uploaded the source code for that package.
-
-Wow, enough background already!
+Rather than install a single specific version of Python, and use that same version for all projects, sometimes different projects in a professional setting will require different minor versions of Python. So we'll use a tool called Anaconda to manage project-specific "virtual environments". Each virtual environment is like a separate work space with a different version of Python and combination of third-party Python pacakges installed inside.
 
 Unless it is already installed, install [Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
 
@@ -66,13 +60,18 @@ conda --version
 # to check what environments exist (hopefully you see "base"):
 conda info --envs
 
-# to create and activate a new virtual environment with the right version of python installed:
+# to create and activate a new virtual environment 
+# ... for example one called "my-first-env"
+# ... with a specified version of python, for example 3.8:
 conda create -n my-first-env python=3.8
 conda activate my-first-env
 
-# to see if python is installed (after activating the virtual environment):
+# to see which version of python and pip are installed in this environment:
 python --version
 pip --version
+
+# to see which packages are installed in this environment:
+pip list
 ```
 
 > NOTE: when using `conda` to activate a virtual environment for the first time, when prompted to do so, Windows Git Bash users may need to run `conda init bash`, and Mac Zsh profile users may need to run `conda init zsh`. If you do, close your command-line application and open another window for the changes to take affect, then try again.
