@@ -40,6 +40,8 @@ Once configured, the text editor is capable of automatically completing snippets
 
 When you open a Python file in VS Code, it should prompt you to install the official Python extension (`ms-python.python`). You are recommended to install this extension to enable Python syntax auto-completion.
 
+> NOTE: VS Code has removed many of the helpful auto-complete snippets. So we need to configure our own if we want to use them. Try searching for a plugin related to Python snippets, or configure your own (see "Python Snippets" section below).
+
 ### Column Selection
 
 If configured, your text editor can also enable vertical text selection. This comes in handy if you have to change multiple lines of text at the same time, including commenting-out many lines at once.
@@ -87,7 +89,7 @@ code --install-extension yzhang.markdown-all-in-one
 
 ### User Settings
 
-A sample of relevant settings from the professor's `settings.json` file:
+Use the command palette and start typing "settings" to find the "Preferences > Open Settings (JSON)" setting which should yield a snippets JSON file. Feel free to update yours to include any of these settings overrides:
 
 ```json
 {
@@ -112,7 +114,7 @@ A sample of relevant settings from the professor's `settings.json` file:
 
 ### Keybord Shortcuts
 
-Keyboard shortcut overrides:
+Use the command palette and start typing "shortcuts" to find the "Preferences > Open Keyboard Shortcusts (JSON)" setting which should yield a snippets JSON file. Feel free to update yours to include any of these keyboard shortcut overrides:
 
 ```json
 // Place your key bindings in this file to override the defaults
@@ -124,13 +126,36 @@ Keyboard shortcut overrides:
     {
         "key": "cmd+b",
         "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "editor.action.duplicateSelection"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "markdown-preview-enhanced.openPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+cmd+v",
+        "command": "-markdown-preview-enhanced.openPreview",
+        "when": "editorLangId == 'markdown'"
     }
 ]
+
 ```
 
 ### Python Snippets
 
-Use the command palette and start typing "snippets" to find the "Preferences > Configure User Snippets" setting which should yield a snippets JSON file. Feel free to update yours to include these helpful Python snippets:
+Use the command palette and start typing "snippets" to find the "Preferences > Configure User Snippets" setting which should yield a snippets JSON file. Feel free to update yours to include any of these helpful Python snippets:
 
 ```
 {
@@ -151,6 +176,15 @@ Use the command palette and start typing "snippets" to find the "Preferences > C
 	// 	"description": "Log output to console"
 	// }
 
+	"Python For Loop": {
+		"prefix": ["for"],
+		"body": [
+			"for item in my_list:",
+			"    print(item)"
+		],
+		"description": "A for loop in Python."
+	},
+	
 	"Python Function Definition": {
 		"prefix": ["def"],
 		"body": [
@@ -169,6 +203,17 @@ Use the command palette and start typing "snippets" to find the "Preferences > C
 		"description": "A class initializer method for Python."
 	},
 
+	"Python Try Block": {
+		"prefix": ["try"],
+		"body": [
+			"try:",
+			"    pass",
+			"except Exception as err:",
+			"    print('OOPS', err)"
+		],
+		"description": "A try block for error-handling in Python. Try to use the specific error class if you know it, instead of Exception."
+	},
+
 	"Python Main Conditional": {
 		"scope": "python",
 		"prefix": ["main", "__main"],
@@ -179,7 +224,6 @@ Use the command palette and start typing "snippets" to find the "Preferences > C
 		"description": "The main conditional for Python."
 	}
 }
-
 ```
 
 See also: https://code.visualstudio.com/docs/editor/userdefinedsnippets
