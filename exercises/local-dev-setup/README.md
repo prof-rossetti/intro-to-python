@@ -41,15 +41,13 @@ ls -al
 
 ## Anaconda, Python, and Pip
 
-The goal is to be able to run Python programs from the command-line. 
+The goal is to have access to command-line tools for running Python programs and installing Python packages. 
 
-The Python programming language evolves over time as new features are added and new versions are released. For this course, we'll want to be running a Python version greater than 3.7. By default, Mac computers have a super old version of Python (2.x) we don't want to mess with, and Windows computers don't have any version of Python installed. So we'll need to install Python separately. 
+The Python programming language evolves over time as new features are added and new versions are released. For this course, we'll want to be running any Python version 3.7 or greater. By default, Mac computers have a super old version of Python (2.x) we don't want to mess with, and Windows computers don't have any version of Python installed. So we'll need to install Python separately. 
 
 Rather than install a single specific version of Python, and use that same version for all projects, sometimes different projects in a professional setting will require different minor versions of Python. So we'll use a tool called Anaconda to manage project-specific "virtual environments". Each virtual environment is like a separate work space with a different version of Python and combination of third-party Python pacakges installed inside.
 
-Unless it is already installed, install [Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
-
-> IMPORTANT: make sure to check the "add to PATH" option during installation, on Windows, so Anaconda will integrate with the other local development tools such as Git Bash on Windows.
+Unless it is already installed, [install Anaconda](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
 
 If successful, you should be able to run the following commands:
 
@@ -78,7 +76,7 @@ pip list
 
 ## Version Control Utilities
 
-A "version control" tool will help us download projects from GitHub and upload projects to GitHub. We'll ultimately want to use the Git Command-line Utility (CLI) to do this. But many students think Git is harder to learn than Python, so beginners can feel free to get started with the GitHub Desktop software, which provides an easier to use graphical user interface (GUI).
+A "version control" tool will help us upload and download projects to and from GitHub, and save different versions of our project code. We'll ultimately want to use the Git Command-line Utility (CLI) to do this. But many students think Git is harder to learn than Python, so beginners can feel free to get started with the GitHub Desktop software, which provides an easier to use graphical user interface (GUI).
 
 ### Git CLI
 
