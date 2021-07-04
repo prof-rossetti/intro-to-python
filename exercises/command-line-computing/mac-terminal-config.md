@@ -62,15 +62,6 @@ alias gpom="git pull origin main"
 alias deskhide="defaults write com.apple.finder CreateDesktop false && killall Finder"
 alias deskshow="defaults write com.apple.finder CreateDesktop true && killall Finder"
 
-# changing scroll direction setting (when connecting my mouse):
-# ... Preferences > Trackpad > Scroll & Zoom > Scroll Direction
-# ... https://stackoverflow.com/questions/30767674/change-scroll-direction-on-mac-programatically-assign-to-key-combination-comman
-#
-# can read current setting with:
-# ... defaults read -g com.apple.swipescrolldirection
-alias scroll_natural="defaults write -g com.apple.swipescrolldirection -bool TRUE"
-alias scroll_mouse="defaults write -g com.apple.swipescrolldirection -bool FALSE"
-
 ```
 
 > NOTE: if you see some Anaconda-related stuff in this file, leave it as-is!
