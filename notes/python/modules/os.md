@@ -72,8 +72,6 @@ More filepath construction examples:
 
 ```py
 #
-# /Users/mjr/Desktop/my-dir/paths.py
-#
 # Assumes the following files and directories exist on your computer (might want to set these up to follow along yourself):
 #
 #   /Users/mjr/Desktop/desktop_message.txt
