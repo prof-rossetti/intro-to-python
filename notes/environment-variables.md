@@ -79,7 +79,7 @@ To access environment variables from within a Python program, use [the `os` modu
 
 #### Setting Locally Using Dotenv File
 
-To set project-specific local environment variables on either Mac or Windows, consider using the "dotenv" approach. Create a special file in your project named ".env" and place inside content like the following:
+To set project-specific local environment variables on either Mac or Windows, consider using the "dotenv" approach. Create a special file in your project named ".env" and place inside content like the following (for example in a repository called "my-secure-project":
 
 ```sh
 # this is the "my-secure-project/.env" file...
