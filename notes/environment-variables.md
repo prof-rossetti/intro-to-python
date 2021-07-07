@@ -83,7 +83,11 @@ To set project-specific local environment variables on either Mac or Windows, co
 
 ```sh
 # this is the "my-secure-project/.env" file...
+# ... you can store multiple env vars in ".env" files like this
+# ... to prevent passing them manually from the command-line every time
+# ... which is especially helpful when there are lots of vars
 
+MY_VAR=5
 MY_SECRET_MESSAGE="SecretPassword123"
 ```
 
