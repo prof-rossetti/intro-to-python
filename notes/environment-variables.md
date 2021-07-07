@@ -28,6 +28,12 @@ Environment variable customization allows an application to perform differently 
 
 ## Usage
 
+
+
+
+
+
+
 ### Setting
 
 Environment variables can be set "globally", in which case they are accessible by any program running on that given computer. Or they can be set "locally", in which case they are only accessible by programs located in a specific directory.
@@ -40,10 +46,9 @@ Mac users (or Git Bash users on Windows) should be able to manage global environ
 "~/.bash_profile". Open the file with your text editor (e.g. `code ~/.bash_profile`), and place inside the following contents:
 
 ```sh
-# ~/.bash_profile
+# this is the "~/.bash_profile" (or maybe "~/.zshrc") file...
+
 export MY_SECRET_MESSAGE="SecretPassword123"
-# or ...
-# export MY_SECRET_MESSAGE=SecretPassword123
 ```
 
 > NOTE: on newer Macs with the "Zsh" shell, you might have to use the `~/.zshrc` file instead of the `~/.bash_profile`.
@@ -57,8 +62,6 @@ Windows users can set local environment variables from the command-line using th
 ```sh
 # Windows Command Prompt:
 set MY_SECRET_MESSAGE="SecretPassword123"
-# or ...
-# export MY_SECRET_MESSAGE=SecretPassword123
 ```
 
 > NOTE: if you close your command prompt and re-open it, you may need to re-set the environment variable.
@@ -79,7 +82,7 @@ To access environment variables from within a Python program, use [the `os` modu
 To set project-specific local environment variables on either Mac or Windows, consider using the "dotenv" approach. Create a special file in your project named ".env" and place inside content like the following:
 
 ```sh
-# my-secure-project/.env
+# this is the "my-secure-project/.env" file...
 
 MY_SECRET_MESSAGE="SecretPassword123"
 ```
@@ -109,10 +112,12 @@ You will know you have successfully set an environment variable when you can acc
 
 ```shell
 # Mac Terminal:
-echo $MY_SECRET_MESSAGE #> SecretPassword123
+echo $MY_SECRET_MESSAGE 
+#> SecretPassword123
 
 # Windows Command Prompt:
-echo %MY_SECRET_MESSAGE% #> SecretPassword123
+echo %MY_SECRET_MESSAGE% 
+#> SecretPassword123
 ```
 
 To access environment variables from within a Python program, use [the `os` module](/notes/python/modules/os.md#environment-variables).
