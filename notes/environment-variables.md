@@ -34,7 +34,7 @@ Environment variables can be set "globally", in which case they are accessible b
 
 After setting an environment variable using one of the approaches below, reference the section on "Getting" to see if the variable was set properly.
 
-#### Setting on Mac or Git Bash
+#### Setting Globally (on Mac Terminal or Windows Git Bash)
 
 Mac users (or Git Bash users on Windows) should be able to manage global environment variables using a hidden file called
 "~/.bash_profile". Open the file with your text editor (e.g. `code ~/.bash_profile`), and place inside the following contents:
@@ -46,9 +46,11 @@ export MY_SECRET_MESSAGE="SecretPassword123"
 # export MY_SECRET_MESSAGE=SecretPassword123
 ```
 
+> NOTE: on newer Macs with the "Zsh" shell, you might have to use the `~/.zshrc` file instead of the `~/.bash_profile`.
+
 Then exit and re-open your Terminal for the changes to take effect.
 
-#### Setting on Windows
+#### Setting Globally (on Windows)
 
 Windows users can set local environment variables from the command-line using the `set` keyword (or `export`, if `set` doesn't work):
 
