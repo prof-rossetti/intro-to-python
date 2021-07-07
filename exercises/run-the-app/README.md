@@ -12,7 +12,7 @@ In this exercise, we'll learn how to install, configure, and run an existing Pyt
 ## Instructions
 
   1. Visit the Professor's ["My First Python App" repository](https://github.com/prof-rossetti/my-first-python-app), which contains a simple command-line application. We'll refer to the Professor's repository as the "upstream repository".
-  2. Click "Fork" to copy the repo under your own control. We'll refer to your forked copy as the "remote fork".
+  2. Click "Fork" to copy the repo under your own control. We'll refer to your forked copy as the "remote fork", otherwise known as the "origin repository".
   3. Follow the instructions in the repository's "README.md" file to install, setup and run the Python code contained inside:
      1. Use your Git client to "clone" (download) the remote fork onto your local machine, perhaps onto the Desktop. We'll refer to this as the "local repository".
      2. Use the command-line to navigate into the local repository.
