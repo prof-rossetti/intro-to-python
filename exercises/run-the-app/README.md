@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-  1. [Version Control Exercise](/exercises/hello-world/version-control.md)
-  2. [Environment Variables](/notes/environment-variables.md)
+  1. Do the [Version Control Exercise](/exercises/hello-world/version-control.md).
+  2. Read up about [Environment Variables](/notes/environment-variables.md), specifically setting via the ".env" file approach.
 
 ## Learning Objectives
 
