@@ -143,7 +143,7 @@ Example "requirements.txt" file contents:
 python-dotenv # see: https://github.com/theskumar/python-dotenv
 ```
 
-Also note we are now requiring the program to use a third-party package, so we should add a "requirements.txt" file to the repo with the package name inside. And we should add a `pip install -r requirements.txt` step to the README file to instruct the user to install packages before trying to run the program.
+Also note we are now requiring the program to use a third-party package, so we should add a "requirements.txt" file to the repo with the package name inside. And we should add a `pip install -r requirements.txt` step to the README file to instruct the user to install packages before trying to run the program. At this time your README file should somewhat resemble this [example README file](https://raw.githubusercontent.com/prof-rossetti/my-first-python-app/main/README.md), and you can feel free to reference and adapt that example.
 
 
 
