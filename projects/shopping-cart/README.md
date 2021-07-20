@@ -199,13 +199,13 @@ Project submissions will be evaluated according to the requirements set forth ab
 
 Category | Requirement | Weight
 --- | --- | ---
-Repository | Includes README.md file with detailed instructions, including specific `python` run command. If requiring third-party packages, must specify `conda` environment management commands and `pip` installation commands in conjunction with a "requirements.txt" file approach. If using environment variables, must use a secure ".env" file approach. | 12%
+Repository | Includes README.md file with detailed instructions, including specific `python` run command. If requiring third-party packages, must specify `conda` environment management commands and `pip` installation commands in conjunction with a "requirements.txt" file approach. If using environment variables, must use a secure ".env" file approach. | 20%
 Info Inputs | Captures / scans product identifiers. | 8%
 Info Inputs | Handles invalid inputs, fails gracefully on invalid product lookups. | 10%
 Info Inputs | Instructs the user about, and handles, the "DONE" signal. | 10%
 Info Outputs (Receipt) | Displays store info. | 8%
-Info Outputs (Receipt) | Displays checkout date and time, in a human-friendly format. | 10%
-Info Outputs (Receipt) | Displays names and prices of all scanned products. | 15%
+Info Outputs (Receipt) | Displays checkout date and time, in a human-friendly format. | 7%
+Info Outputs (Receipt) | Displays names and prices of all scanned products. | 10%
 Info Outputs (Receipt) | Displays tax and totals. | 15%
 Dev Process | Submitted via Git repository which reflects an incremental revision history. | 12%
 
