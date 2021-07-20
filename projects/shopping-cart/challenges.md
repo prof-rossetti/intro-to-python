@@ -30,7 +30,7 @@ The store owner likes your work and wants to use your app in all their regional 
 
 ## Handling Pricing per Pound
 
-> BONUS POINTS: 3-4%
+> BONUS POINTS: 0 (FOR FUN ONLY)
 
 Add a new product called "Organic Bananas" to the products inventory. Assign it a price of `0.79`, but add another attribute called something like `price_per` to indicate the item is priced per "pound". Update all the other product dictionaries to match the new structure, indicating they are priced per "item".
 
@@ -38,7 +38,7 @@ When running the program, if the clerk inputs the identifier of the bananas (or 
 
 ## Writing Receipts to File
 
-> BONUS POINTS: 3-5%
+> BONUS POINTS: 0 (FOR FUN ONLY)
 
 In addition to displaying a receipt at the end of the checkout process, the program should write the receipt information into a new ".txt" file saved in a new "receipts" directory inside the project repository. The clerk's printer-connected computer should be able to actually print a paper receipt from the information contained in this file.
 
