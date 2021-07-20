@@ -129,6 +129,7 @@ print(html_content)
 # ...
 ```
 
+> NOTE: for students unfamiliar with HTML syntax, first see these notes about [Basic HTML](https://www.w3schools.com/html/html_basic.asp) and [HTML Lists](https://www.w3schools.com/html/html_lists.asp).
 
 ### Email Templates
 
