@@ -66,6 +66,9 @@ At the very least, the email should display the checkout timestamp and the total
 
 > HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [SendGrid Email Templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents.
 
+> NOTE: your README file must contain instructions for how someone can obtain their own credentials and set up a local ".env" file. If you use a template, your README must include instructions for how someone could re-create that template (including sample HTML and sample data).
+
+
 ## Integrating with a CSV File Datastore
 
 > BONUS POINTS: 3-5%
@@ -74,24 +77,42 @@ Instead of using a hard-coded `products` variable, download or copy the contents
 
 > HINT: leverage the capabilities of [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
 
-> NOTE: to prevent clutter, exclude the CSV file from being tracked in version control by creating a new ".gitignore" file within the "data" directory, and adding the following contents inside:
+> NOTE: to prevent clutter, exclude the CSV file from being tracked in version control by using an entry like this in the ".gitignore" file:
 >
->     # this is the "data/.gitignore" file...
+>     # this is the ".gitignore" file...
 >
->     # ignore all the files in this directory:
->     *
+>     # ...
 >
->     # but don't ignore this ".gitignore" file:
->     !.gitignore
+>     # ignore the CSV file inventory in the data directory:
+>     data/products.csv
+>
 
+
+Ideally save a copy of this "products.csv" file into your repo as "data/default_products.csv" and provide instructions in the README telling someone to copy this file to "data/products.csv", thus allowing them to customize its contents. If you do this, your program should still read the inventory from the "data/products.csv" location.
+
+Ideally use the [`os` module to assemble os-agnostic relative filepaths](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/os.md#constructing-filepaths) (i.e. `os.path.dirname(os.path.dirname(__file__), "data", "products.csv")` instead of `"data/products.csv"`.
 
 ## Integrating with a Google Sheets Datastore
 
 > BONUS POINTS: 6-8%
 
-Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead. Update your code to read the `products` from this Google Sheet.
+Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use a Google Sheet like this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead. Update your code to read the `products` from this Google Sheet.
 
 > HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md).
+
+> NOTE: you'll need to download a google credentials JSON file into your repo, but this file must ABSOLUTELY be ignored from version control. HINT: you can use an entry like the following in your ".gitignore" file:
+> 
+>     # this is the .gitignore file
+>
+>     # ignore environment variables:
+>     .env
+>     
+>     # ignore google credentials:
+>     # if you want to name your credentials "google-credentials.json":
+>     google-credentials.json 
+>     # otherwise use this catch-all to ignore all JSON files:
+>     *.json   
+
 
 ## Integrating with a Barcode Scanner
 
