@@ -77,7 +77,15 @@ Instead of using a hard-coded `products` variable, download or copy the contents
 
 > HINT: leverage the capabilities of [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
 
-> NOTE: to prevent clutter, exclude the CSV file from being tracked in version control by using an entry like this in the ".gitignore" file:
+> NOTE: ideally use the `os` module to assemble [os-agnostic relative filepaths](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/os.md#constructing-filepaths) instead of hard-coded string filepaths:
+>
+>     # this is the "app/shopping_cart.py file...
+>     
+>     # HINT: this might be something like the filepath you are looking for!
+>     csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
+>     
+
+Ideally we'll allow the user to use their own custom CSV file inventory. To acheive this, save a copy of the provided "products.csv" file in your repo as "data/default_products.csv" and provide instructions in the README telling someone to copy this provided file into their local repo as "data/products.csv", where the program will be looking for it. Finally, before making any commits, exclude the "data/products.csv" file from being tracked in version control by using an entry like this in the ".gitignore" file:
 >
 >     # this is the ".gitignore" file...
 >
@@ -86,11 +94,9 @@ Instead of using a hard-coded `products` variable, download or copy the contents
 >     # ignore the CSV file inventory in the data directory:
 >     data/products.csv
 >
+> NOTE: to clarify, the "data/default_products.csv" file should be INCLUDED in the repo, while the "data/products.csv" should be IGNORED. 
 
 
-Ideally save a copy of this "products.csv" file into your repo as "data/default_products.csv" and provide instructions in the README telling someone to copy this file to "data/products.csv", thus allowing them to customize its contents. If you do this, your program should still read the inventory from the "data/products.csv" location.
-
-Ideally use the [`os` module to assemble os-agnostic relative filepaths](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/os.md#constructing-filepaths) (i.e. `os.path.dirname(os.path.dirname(__file__), "data", "products.csv")` instead of `"data/products.csv"`.
 
 ## Integrating with a Google Sheets Datastore
 
