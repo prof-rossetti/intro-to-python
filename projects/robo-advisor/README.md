@@ -163,6 +163,8 @@ Your program will need an API Key to issue requests to the [AlphaVantage API](ht
 You are encouraged to use a "dotenv" approach to setting project-specific environment variables by using a file called ".env" in conjunction with [the `dotenv` package](/notes/python/packages/dotenv.md). Example ".env" contents:
 
 ```
+# this is the ".env" file
+
 ALPHAVANTAGE_API_KEY="abc123"
 ```
 
@@ -194,7 +196,7 @@ Before requesting data from the Internet, the system should first perform prelim
 
 If preliminary validations are not satisfied, the system should display a friendly error message like "Oh, expecting a properly-formed stock symbol like 'MSFT'. Please try again." and stop execution, preventing a request from being made.
 
-Otherwise, if preliminary validations are satisfied, the system should proceed to issue a GET request to the [AlphaVantage API](https://www.alphavantage.co/documentation/) to retrieve corresponding stock market data. NOTE: use one of the "Adjusted" URL endpoints.
+Otherwise, if preliminary validations are satisfied, the system should proceed to issue a GET request to the [AlphaVantage API](https://www.alphavantage.co/documentation/) to retrieve corresponding stock market data. NOTE: use one of the "Adjusted" URL endpoints to account for stock splits.
 
 When the system makes an HTTP request for that stock symbol's trading data, if the stock symbol is not found or if there is an error message returned by the API server, the system should display a friendly error message like "Sorry, couldn't find any trading data for that stock symbol", and it should stop program execution, optionally prompting the user to try again.
 
