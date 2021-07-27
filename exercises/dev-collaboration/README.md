@@ -45,9 +45,10 @@ This is the process we will follow to add or revise the functionality of repos w
 
 To repeat the process (after changes have been merged):
 
-  9. Checkout the main branch, and pull the most recent changes from the upstream main branch
-  10. Then push those changes to the origin main branch, to ensure it is up-to-date with the upstream main branch.
-  11. Then repeat steps 4-8 above.
+  9. After the changes have been merged to the upstream repo, visit your origin repo on GitHub and click "Fetch Upstream" to update your origin main branch.
+  10. From GitHub Desktop, checkout the main branch, and pull the most recent changes from the upstream main branch.
+  11. Then push those changes to the origin main branch, to ensure it is up-to-date with the upstream main branch.
+  12. Then repeat steps 4-8 above.
 
 ### Team Projects
 
@@ -64,5 +65,6 @@ This is the process we will follow to add or revise the functionality of shared 
 
 To repeat the process (after changes have been merged):
 
-  9.  Checkout the main branch, and pull the most recent changes from the origin main branch.
-  10. Then repeat steps 3-8 above.
+  9.  After the changes have been merged to the upstream repo, visit your origin repo on GitHub and click "Fetch Upstream" to update your origin main branch.
+  10. From GitHub Desktop, checkout the main branch, and pull the most recent changes from the origin main branch.
+  11. Then repeat steps 3-8 above.
