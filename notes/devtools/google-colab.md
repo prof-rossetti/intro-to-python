@@ -7,6 +7,7 @@ A colab document is essentially a Python notebook in Google Drive. Python notebo
 Here are more essential resources for learning how to use Colab:
 
   + [Intro to Colab Video](https://www.youtube.com/watch?v=inN8seMm7UI)
+  + [Welcome to Colab](https://colab.research.google.com/notebooks/intro.ipynb#)
   + [Overview of Colab Features Notebook](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
   + [Using Colab with GitHub](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
 
