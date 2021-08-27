@@ -76,7 +76,7 @@ pip list
 
 The goal is to have access to a text-editing application of choice, which we'll use to create and edit files of Python code (i.e. text files written in the Python Language and ending in the ".py" extension).
 
-Unless you already have a text editor of choice, let's use the Spyder application which provides not only text editing capabilities, but also an integrated development environment (IDE) capable of running Python programs as well.
+Unless you already have a text editor of choice, let's use the [Spyder](https://www.spyder-ide.org/) application which provides not only text editing capabilities, but also an integrated development environment (IDE) capable of running Python programs as well.
 
-By installing Anaconda, you should also see the Spyder application has been installed.
+If the Spyder application didn't get installed alongside Anaconda, feel free to download Spyder separately from the website.
 
