@@ -1,4 +1,6 @@
-# Local Development Environment Setup Guide (COSC 010)
+# Local Development Environment Setup Guide
+
+> NOTE: COSC 010 students should alternatively use the [COSC 010 version of this guide](cosc-010.md)!
 
 This document helps you install and configure tools to develop and run Python applications on your local machine.
 
