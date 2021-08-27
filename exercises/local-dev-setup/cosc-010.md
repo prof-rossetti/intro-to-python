@@ -44,7 +44,7 @@ Rather than install a single specific version of Python, and use that same versi
 
 Unless it is already installed, [install Anaconda](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
 
-If successful, you should be able to run the following commands:
+If successful, you should be able to run the following commands (from Terminal on Mac, or Git Bash on Windows:
 
 ```sh
 # to see if conda is installed:
@@ -74,9 +74,4 @@ pip list
 
 ## Text Editor / IDE
 
-The goal is to have access to a text-editing application of choice, which we'll use to create and edit files of Python code (i.e. text files written in the Python Language and ending in the ".py" extension).
-
-Unless you already have a text editor of choice, let's use the [Spyder](https://www.spyder-ide.org/) application which provides not only text editing capabilities, but also an integrated development environment (IDE) capable of running Python programs as well.
-
-If the Spyder application didn't get installed alongside Anaconda, feel free to download Spyder separately from the website.
-
+Instructions TBD
