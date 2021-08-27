@@ -40,7 +40,7 @@ The goal is to have access to tools for installing Python packages and running P
 
 The Python programming language evolves over time as new features are added and new versions are released. For this course, we'll want to be running any Python version 3.7 or greater. By default, Mac computers have a super old version of Python (2.x) we don't want to mess with, and Windows computers don't have any version of Python installed. So we'll need to install Python separately. 
 
-Rather than install a single specific version of Python, and use that same version for all projects, sometimes different projects in a professional setting will require different minor versions of Python. So we'll use a tool called Anaconda to manage project-specific "virtual environments". Each virtual environment is like a separate work space with a different version of Python and combination of third-party Python pacakges installed inside.
+Rather than install a single specific version of Python, and use that same version for all projects, sometimes different projects in a professional setting will require different minor versions of Python. So we'll use a tool called Anaconda to manage project-specific "virtual environments". Each virtual environment is like a separate work space with a different version of Python and combination of third-party Python pacakges installed inside. We can easily switch between environments as we work on different projects.
 
 Unless it is already installed, [install Anaconda](https://www.anaconda.com/download) for either Mac or Windows. You're encouraged to also review the professor's [Anaconda installation reference](/notes/clis/conda.md#installation) for more details, tips, and tricks.
 
