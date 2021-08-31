@@ -84,7 +84,7 @@ There are many text editor / IDE options, so students are encouraged to try a fe
 
 Some popular text editors include [VS Code](https://code.visualstudio.com/), Notepad++, Atom, Sublime, Vi, etc. These programs can be used to edit text for any programming language. VS Code is the professor's current editor choice. Students who choose to use VS Code can consult the professor's [VS Code configuration guide](/notes/devtools/vs-code.md) for more info about configuring the desired functionalities.
 
-Alternatively, there are some Python-specific IDEs that may be easier to use for beginners. They not only provide text editing capabilities, but also an integrated development environment (IDE) capable of running Python programs and replacing some of the other tools (like version control utility). Some notable IDEs for Python include [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://www.spyder-ide.org/). The professor recommends PyCharm, while some TAs like Spyder. Students should feel free to explore and ultimately use one of these IDE tools if desired. 
+Alternatively, there are some Python-specific IDEs that may be easier to use for beginners. They not only provide text editing capabilities, but also an integrated development environment (IDE) capable of running Python programs and replacing some of the other tools (like version control utility). Some notable IDEs for Python include [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://www.spyder-ide.org/). The professor recommends PyCharm (Community Edition), while some TAs like Spyder. Students should feel free to explore and ultimately use one of these IDE tools if desired. 
 
 
 
