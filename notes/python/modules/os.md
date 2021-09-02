@@ -17,7 +17,7 @@ os.getcwd() #> '/Users/mjr/Desktop/my-dir'
 In scripts, detect the path of the directory where the script file exists:
 
 ```py
-os.path.dirname(__file__))
+os.path.dirname(__file__)
 ```
 
 Change directory:
