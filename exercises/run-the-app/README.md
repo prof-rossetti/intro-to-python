@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-  1. Do the [Version Control Exercise](/exercises/hello-world/version-control.md).
+  1. Complete the [Hello World (Local) Exercise](/exercises/hello-world/version-control.md), and/or the [Hello World (Version Control) Exercise](/exercises/hello-world/version-control.md), as instructed by the professor. NOTE: Students not instructed how to use version control can download the repository straight from GitHub in step 3.1 (instead of using a version control tool).
   2. Read up about [Environment Variables](/notes/environment-variables.md), specifically setting via the ".env" file approach.
 
 ## Learning Objectives
