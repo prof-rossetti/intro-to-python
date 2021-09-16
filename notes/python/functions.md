@@ -7,125 +7,129 @@ Reference:
   + https://docs.python.org/3/tutorial/controlflow.html#default-argument-values
   + https://docs.python.org/3/tutorial/controlflow.html#keyword-arguments
 
-Use a function to define your own custom, re-usable operation. Like in other languages, Python functions must first be defined before they can be invoked (or called).
+The primary responsibilities of a function are to perform some specified set of logical operations (i.e. "do something"), and optionally also to return a value (i.e. "return something").
 
-Define a function:
+In practice, we will move some expression into its own function if we need to re-use it over and over again. Then instead of repeating the entire expression again, we can easily invoke our function as a short-hand way of referencing the pre-defined functionality. This helps us keep our code maintainable. See also: [Refactoring](/notes/software/refactoring.md).
+
+Functions must first be defined (just once), then they can subsequently be used (i.e. "called" or "invoked") any number of times. Remember to use trailing parenthesis when defining and invoking functions.
 
 ```python
-def do_stuff(): # NOTE: the trailing parentheses are required
+
+# FUNCTION DEFINITION
+
+def do_stuff(): 
     print("DOING STUFF HERE!")
 ```
 
-Invoke the function:
-
 ```python
-do_stuff() # NOTE: the trailing parentheses are important. If they are omitted, the function will be accessed but not be invoked
-```
 
-If you try to invoke a function before or without defining it, you will see an error like `NameError: name 'do_stuff' is not defined`.
+# FUNCTION INVOCATIONS
+
+do_stuff() 
+#> "DOING STUFF HERE!"
+
+do_stuff() 
+#> "DOING STUFF HERE!"
+
+do_stuff() 
+#> "DOING STUFF HERE!"
+```
 
 ## Parameters (Input Values)
 
-Some functions accept parameters which can be passed to the function during its invocation. A function's parameters must be configured during the function's definition.
+A function may accept input arguments called parameters which are essentially variable references for whatever values are passed in.
 
 ### Single Parameter
 
-Define a function with a parameter:
-
 ```python
-def do_stuff_with_param(message):
-    print("---------")
-    print(message)
-    print("---------")
-```
 
-In this case, `message` is the name of the function's parameter. Invoke it like so:
+# FUNCTION DEFINITION
 
-```python
-do_stuff_with_param("HELLO!")
-#> ---------
-#> HELLO!
-#> ---------
-
-do_stuff_with_param("HELLO AGAIN!")
-#> ---------
-#> HELLO AGAIN!
-#> ---------
+def display_heading(message):
+    print("------------------")
+    print(message.upper())
+    print("------------------")
 ```
 
 ```python
-m = "HELLO!"
-do_stuff_with_param(m)
-#> ---------
-#> HELLO!
-#> ---------
 
-s = "HELLO AGAIN!"
-do_stuff_with_param(s)
-#> ---------
-#> HELLO AGAIN!
-#> ---------
+# FUNCTION INVOCATIONS
+
+display_heading("hello")
+#> ------------------
+#> HELLO
+#> ------------------
+
+display_heading("hello again")
+#> ------------------
+#> HELLO AGAIN
+#> ------------------
+
+m = "hello world" 
+display_heading(m)
+#> ------------------
+#> HELLO WORLD
+#> ------------------
+
 ```
 
 ### Multiple Parameters
 
-Defining a function with multiple parameters:
+For a function that accepts multiple parameters, order matters. By default, the function assumes we are passing the parameters in the same order as specified during the function definition. However it is also possible to pass the parameters in a different order, by explicitly specifying the parameter name during function invocation.
+
 
 ```python
-def do_stuff_with_params(message, first_name, last_name):
-    print("'" + message + "', says " + first_name + " " + last_name)
-```
+# FUNCTION DEFINITION
 
-The order of the parameters during function definition corresponds with the order they should be passed during function invocation. In this case, `message`, `first_name` and `last_name` are the names of the function's parameters, in that order. So we can invoke the function like so:
+def display_height(feet, inches):
+  print("THE HEIGHT IS: ", feet, "FEET AND", inches, "INCHES")
+```
 
 ```python
-do_stuff_with_params("HELLO THERE", "Ophelia", "Clark")
-#> 'HELLO THERE', says Ophelia Clark
+# FUNCTION INVOCATIONS
+
+display_height(6, 3)
+#> THE HEIGHT IS 6 FEET AND 3 INCHES 
+
+display_height(feet=6, inches=3)
+#> THE HEIGHT IS 6 FEET AND 3 INCHES 
+
+display_height(inches=3, feet=6)
+#> THE HEIGHT IS 6 FEET AND 3 INCHES 
 ```
-
-It is possible to pass the parameters in a different order, by explicitly specifying the parameter name during function invocation:
-
-```python
-do_stuff_with_params(first_name= "Ophelia", message="HELLO THERE", last_name="Clark")
-#> 'HELLO THERE', says Ophelia Clark
-```
-
 
 ## Return Values
 
-In order to have a function return some value when invoked, use the `return` keyword.
-
-A geometry-inspired example:
+A function can pass back a value to its caller by using the `return` keyword, which helps us store the results in a variable for later. 
 
 ```python
-def calculate_area(length, height):
-  length * height
 
-area = calculate_area(4, 2)
-print(area) #> None
+# FUNCTION DEFINITION
+
+def enlarge(n):
+    return n * 100
 ```
 
 ```python
-def calculate_area(length, height):
-  return length * height
 
-area = calculate_area(4, 2)
-print(area) #> 8
+# FUNCTION INVOCATIONS
+
+print(enlarge(3))
+#> 300
+
+result = enlarge(5)
+print(result)
+#> 500
+
+my_number = 7
+bigger_number = enlarge(my_number)
+print(bigger_number)
+#> 700
 ```
 
-An algebra-inspired example:
 
-```py
-# function definition (once only)
+## Function Documentation
 
-def f(x):
-    return (2 * x) + 1
+When defining our own functions, we'll want to include some documentation / helpful notes to help other people understand what the function is about, and how to invoke it. 
 
-# function invocation (potentially many times, as needed)
-
-y = f(5)
-print(y) #> 11
-
-z = f(10)
-print(z) #> 21
-```
+See the notes on [Docstrings](/notes/python/docstrings.md) for more info.
