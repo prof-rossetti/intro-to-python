@@ -39,7 +39,7 @@ cd ~/Desktop/rock-paper-scissors-exercise
 Use your text editor or the command-line to create a file in that repo called "game.py", and then place the following contents inside:
 
 ```py
-# game.py
+# this is the "game.py" file...
 
 print("Rock, Paper, Scissors, Shoot!")
 ```
