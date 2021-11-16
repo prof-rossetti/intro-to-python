@@ -36,8 +36,8 @@ Category | Requirement | Weight
 API Usage | Processes data from an API or other open data source. | 20%
 Function Usage | Performs the data processing from within a reusable function. | 20%
 API Documentation | Provides links to the API documentation, and instructions for how someone can obtain an API key (as necessary). | 10%
-Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 30%
+Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 20%
 User Experience | Provides a simple, pleasant, and intuitive experience for the user, without "bugs" or errors. | 15%
-Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 15%
+Security | Excludes sensitive information and credentials from the source code, and protects user data (as necessary). | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
