@@ -21,7 +21,7 @@ Your function should ideally be documented using a "docstring". It should specif
 
 If your program requires sensitive information like secret passwords, API keys, or other credentials, those secret values should absolutely not be included in the source code.
 
-If working in Colab, use `getpass` to prompt the user for their API key.
+If working in Colab, use `getpass` to prompt the user for their API key(s).
 
 ## Submission Instructions
 
