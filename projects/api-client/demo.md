@@ -10,40 +10,40 @@
 
 ## Instructions
 
-Prepare a five minute presentation to share your project with the rest of the class. It should be in Google Slides or MS PowerPoint format, and should generally include the following slides / components (see "Sections" below for more details):
+Prepare a five minute presentation to share your project with the rest of the class. It should generally include the following slides / components (see "Presentation Components" below for more details):
 
-  1. Introduction
-  2. Problem Statement / User Needs
-  3. Proposed Solution / Info Requirements
+  1. Team Member Introduction
+  2. Data Source Description
+  3. Application Features Overview
   4. Live Demo
-  5. Reflections (optional)
+  5. Reflections
 
-Record your presentation using a tool like Zoom, then submit your presentation slideshow and video file(s) as instructed.
+Optionally pre-record your presentation using a tool like Zoom, as applicable, then submit your presentation slideshow and video file(s) as instructed.
 
-## Sections
+## Presentation Components
 
-### Introduction
+### Team Member Introduction
 
-Introduce yourself and your project's name and subject matter.
+Introduce yourself and your teammates, including names, years, and majors.
 
-### Problem Statement / User Needs
+### Data Source Description
 
-Describe the problem addressed by your project. Who are the affected users and what are their needs?
+Introduce the API or data source you used, and provide a brief description of what it is about. Ideally include a link to the data source itself, and any other helpful documentation.
 
-### Proposed Solution / Info Requirements
+### Application Features Overview
 
-Describe your proposed solution to the problem, including a high-level Data Flow Diagram (DFD). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with.
+Describe your application at a high level. What does it do? What features does it provide the user?
 
 ### Live Demo
 
-Transition into a live demonstration of your project in action. If for some reason you have not yet completed your project, choose a small component to demo, or demo the results of your investigation efforts into the system's technical feasibility.
+Transition into a live demonstration of your project in action. Run your app / notebook to demonstrate its functionality.
 
 ### Reflections
 
-Remark on your reactions to the process. For example, you might address the following questions:
+Transition back into your slides and remark on your reactions to the process. For example, you might address the following questions:
 
   + What was the hardest part of the planning and/or implementation processes? Did you run into any unforeseen issues?
-  + How did you prioritize features? For groups, how did you split up the work?
+  + How did you prioritize features? For groups, how did you split up the work? Or how did you work together?
   + What did you learn while working on this project? How did you learn what you needed to learn? Did you find any helpful resources?
   + What went well, and/or what would you do differently next time?
   + What are your next steps, if any?
@@ -52,12 +52,19 @@ Remark on your reactions to the process. For example, you might address the foll
 
 The professor will assign your group to present on a designated "Demo Day" and time. The professor will designate whether presentations will be given in-person, or remotely via Zoom. The professor will also designate whether presentations will be pre-recorded, or delivered synchronously. See instructions below according to the guidance you're given.
 
-Before 11:59pm on the day before your designated demo day, upload a PDF version of your presentation document (and a copy of your prerecorded Zoom video .mp4 file) as instructed.
+Before 11:59pm on the day before your designated demo day, upload a PDF version of your presentation document (and optionally a copy of your prerecorded Zoom video .mp4 file, as applicable) as instructed.
 
 
 ### Synchronous Delivery Guidance
 
-If presenting in-person:
+If presenting in-person via the class computer:
+
+  1. During the first few minutes of class on your designated demo day, ensure the professor has loaded your presentation resources (i.e. files and/or links).
+  2. After the group scheduled to present before you starts to take questions, begin to find and setup your presentation resources on the class computer.
+  3. During your designated demo time, deliver your presentation in front of the class. When you are finished, step to the side to answer questions while the next group sets up.
+
+
+If presenting in-person via your own computer:
 
   1. During the first few minutes of class on your designated demo day, practice connecting your computer to the projector using either of the provided VGA or HDMI cables.
   2. After the group scheduled to present before you starts to take questions, begin setting up your computer by connecting it to the projector and preparing to demo.
