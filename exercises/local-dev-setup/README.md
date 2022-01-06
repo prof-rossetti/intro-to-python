@@ -1,6 +1,6 @@
 # Local Development Environment Setup Guide
 
-> NOTE: COSC 010 students should alternatively use the [COSC 010 version of this guide](cosc-010.md)!
+> NOTE: COSC 010 students should alternatively use the [COSC 010 version of this guide](cosc-010.md) instead!
 
 This document helps you install and configure tools to develop and run Python applications on your local machine.
 
@@ -32,8 +32,6 @@ Mac users who don't already have a preferred command-line application are encour
 
 Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users.
 
-Alternatively, students on Mac or Windows may be able to use the integrated terminal in VS Code, but it may require additional configuration. 
-
 If successful, you should be able to use your command-line application to complete the ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md), which will introduce you to useful commands (like these, for navigating your local filesystem):
 
 ```sh
@@ -41,6 +39,8 @@ cd ~/Desktop
 pwd
 ls -al
 ```
+
+> NOTE: students on Mac or Windows may be able to use the integrated terminal in VS Code, but are not recommended to do so because it may require additional configuration, and has been very buggy in the past. If any student does manage to get the VS Code Integrated Terminal to work, please share your setup with the professor.
 
 ## Anaconda, Python, and Pip
 
