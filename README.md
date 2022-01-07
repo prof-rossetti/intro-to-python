@@ -1,8 +1,8 @@
-# An Introduction to Python Programming
+# An Introduction to Python Programming (2022 Edition)
 
 ![](https://www.perforce.com/sites/default/files/image/2018-08/image-blog-enterprises-investing-python%20(2).jpg)
 
-## [Slides (2022 Edition)](https://docs.google.com/presentation/d/1ZIjg63yVoWOyvTrkJWDhJrw9IPo2--R_ywX3Z5Rs6PQ/edit?usp=sharing)
+## [Slides](https://docs.google.com/presentation/d/1ZIjg63yVoWOyvTrkJWDhJrw9IPo2--R_ywX3Z5Rs6PQ/edit?usp=sharing)
 
 ## Instructional Modules
 
