@@ -1,34 +1,38 @@
 # Environment Variables
 
-Developers use **Environment Variables** to configure the environment in which an application is operating, specifically by passing certain values to the program from its surrounding environment.
+**Environment variables** allow developers to customize the environment in which an application is operating, by passing certain values at runtime. This allows the program to behave differently, depending on what values have been specified.
 
-This allows the program to behave differently, depending on which environment variables have been configured, and what their values are.
+Environment variables are like an indirect way of providing inputs to a program, without hard-coding them in the program, and without asking for a manual user input.
 
 ## Benefits
 
-This leads to benefits, primarily in the area of application security, but in other areas as well.
+Environment variables provide benefits in terms of security and customization, and can help enable process automation.
 
-### Security
+### Security Benefits
 
-Sometimes applications need to reference secret passwords, tokens, and other values. This is especially the case when the app is authenticating to some other service on behalf of a given user.
+Sometimes applications need to use secret passwords, tokens, and other credentials to interface with external services and APIs. This is especially the case when the app is authenticating to a third-party service on behalf of a given user. For example, consider an application that automatically logs in to a user's email inbox to check for unread messages.
 
-But hard-coding these sensitive values into a program's source code would be irresponsible from a security standpoint, especially when sharing the source code online. You don't want your passwords on GitHub for everyone to see.
+Hard-coding secret credentials like email passwords into the program's source code would be irresponsible from a security standpoint, especially when sharing the source code online - we want to avoid publishing secret passwords to GitHub for people like hackers to see and exploit.
 
-Environment variables provide a way of separating these secret values from a program's source code.
+So to keep the secret credentials separate from the source code, we can pass them to the program as environment variables at runtime. This way, the program's code only contains a reference to these variables, but not their values.
 
-### Collaboration and Customization
 
-Sometimes developers need to run an application in different environments. For example, two developers may want to use the same program to download their respective social media posts from an API.
+### Collaboration Benefits
 
-But each developer has their own private API key which provides access to their own private social media posts. It would be ineffective for them to use the exact same source code, and inefficient to maintain two slightly different versions of the application's source code.
 
-Environment variables allow developers to share the same source code while specifying different values at run-time.
+Environment variables allow multiple developers to share the same codebase, without keeping their own slightly different copies.
 
-### Testing and Delivery
+Consider the case of two developers using the same program to download their own respective social media posts. This requires them to specify their own respective credentials (most likely in the form of API keys).
 
-Environment variables allow developers to specify customized environments in which to develop, test and deliver their application.
+If each developer hard-coded their own credentials into the application's source code, it would require them to keep two slightly different versions of the source code. This would lead to to increased maintenance costs, complexities, and inefficiencies.
 
-Environment variable customization allows an application to perform differently in a "test" environment than it would in a user-facing "production" environment. For example, developers can use the application to manipulate example data in a "test" environment without affecting real user data in the "production" environment.
+Instead, by passing their own environment variables at runtime, multiple developers can share the same source code. This is a much more maintainable and efficient solution than keeping separate copies. And allows hundreds or thousands of developers to share the same source code.
+
+
+
+
+
+
 
 ## Usage
 
