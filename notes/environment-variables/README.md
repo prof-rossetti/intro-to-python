@@ -47,7 +47,7 @@ The most common way to set environment variables is by passing them directly fro
 To set a script-specific environment variable on either Mac or Windows, its possible to prefix the environment variable before invoking your Python script. For example:
 
 ```sh
-MY_SECRET_MESSAGE="SecretPassword123" python path/to/my_script.py
+MY_VAR=5 MY_SECRET_MESSAGE="SecretPassword123" python path/to/my_script.py
 ```
 
 To access environment variables from within a Python program, use [the `os` module](/notes/python/modules/os.md#environment-variables).
