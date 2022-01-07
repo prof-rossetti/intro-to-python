@@ -1,8 +1,12 @@
 # Environment Variables
 
-**Environment variables** allow developers to customize the environment in which an application is operating.
+Developers use **Environment Variables** to configure the environment in which an application is operating, specifically by passing certain values to the program from its surrounding environment.
+
+This allows the program to behave differently, depending on which environment variables have been configured, and what their values are.
 
 ## Benefits
+
+This leads to benefits, primarily in the area of application security, but in other areas as well.
 
 ### Security
 
