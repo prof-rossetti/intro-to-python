@@ -30,7 +30,7 @@ Environment variable customization allows an application to perform differently 
 
 We can "set" environment variables, and later "get" their values, using a variety of strategies.
 
-Environment variables can be set ["globally"](/notes/environment-variables/setting-globally.md), in which case they are accessible by any program running on that given computer. Or they can be set "locally", in which case they are only accessible by programs located in a specific directory.
+Environment variables can be set ["globally"](/setting-globally.md), in which case they are accessible by any program running on that given computer. Or they can be set "locally", in which case they are only accessible by programs located in a specific directory.
 
 The most common way to set environment variables is by passing them directly from the command-line. But when the number of environment variables grows, it becomes easier to store them all in a single ".env" file and use the "dotenv" approach.
 

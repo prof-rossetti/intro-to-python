@@ -8,7 +8,7 @@ In this exercise, we'll learn how to install, configure, and run an existing Pyt
 ## Prerequisites
 
   1. Complete the [Hello World (Local) Exercise](/exercises/hello-world/version-control.md) or [Hello World (Version Control) Exercise](/exercises/hello-world/version-control.md), as instructed by the professor. The goal is to have familiarity with local dev tools like the command line, a text editor, and a Git utility like GitHub Desktop.
-  2. Read up about [Environment Variables](/notes/environment-variables.md) generally, focusing on their benefits. Don't worry about the sections describing how to set and get them - we will put that into practice in this exercise using different strategies depending on which version of this exercise you do.
+  2. Read up about [Environment Variables](/notes/environment-variables/README.md) generally, focusing on their benefits. Don't worry about the sections describing how to set and get them - we will put that into practice in this exercise.
 
 
 ## Instructions

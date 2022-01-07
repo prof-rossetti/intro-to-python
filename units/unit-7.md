@@ -14,7 +14,7 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
     + [The `requests` Package](/notes/python/packages/requests.md)
   + Processing JSON-formatted data:
     + [The `json` Module](/notes/python/modules/json.md)
-  + [Environment Variables](/notes/environment-variables.md), revisited:
+  + [Environment Variables](/notes/environment-variables/README.md), revisited:
     + [The `os` module](/notes/python/modules/os.md#environment-variables), focusing on environment variables
     + [The `dotenv` package](/notes/python/packages/dotenv.md)
 

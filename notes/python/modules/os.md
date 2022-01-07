@@ -54,9 +54,9 @@ os.path.isfile("/path/to/Desktop/some_file.txt") #> returns True or False
 
 ### Constructing Filepaths
 
-Since different operating systems use different slashes, we must standardize filepaths across operating systems. To do this, we use `os.path.join` in conjunction with commas, to apply the proper slashes depending on the user's operating system. 
+Since different operating systems use different slashes, we must standardize filepaths across operating systems. To do this, we use `os.path.join` in conjunction with commas, to apply the proper slashes depending on the user's operating system.
 
-Since certain filepaths will break if we run the same script from different locations on the command line, we also must ensure our filepaths work no matter which directory we are running the script from. So we use `os.path.dirname(__file__)` to reference the location of the current Python script, and start to form a relative reference from there. 
+Since certain filepaths will break if we run the same script from different locations on the command line, we also must ensure our filepaths work no matter which directory we are running the script from. So we use `os.path.dirname(__file__)` to reference the location of the current Python script, and start to form a relative reference from there.
 
 ```py
 # BAD:
@@ -112,7 +112,7 @@ print(os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "desktop_mess
 
 ## Environment Variables
 
-> Prerequisite: [Environment Variables](/notes/environment-variables.md)
+> Prerequisite: [Environment Variables](/notes/environment-variables/README.md)
 
 Get the entire environment:
 

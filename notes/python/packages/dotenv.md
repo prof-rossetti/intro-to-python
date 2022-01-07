@@ -1,6 +1,6 @@
 # The `dotenv` Package
 
-The `dotenv` package allows a program to reference [Environment Variables](/notes/environment-variables.md) from a special file called ".env" in the root directory of the given project, instead of passing them from the command-line.
+The `dotenv` package allows a program to reference [Environment Variables](/notes/environment-variables/README.md) from a special file called ".env" in the root directory of the given project, instead of passing them from the command-line.
 
 This file-based approach makes environment variables much easier to manage, especially for Windows users.
 
