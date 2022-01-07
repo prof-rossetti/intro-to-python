@@ -1,7 +1,7 @@
 
 # "Run the App" Exercise (Tic Tac Toe Version)
 
-> See ["Run the App" Exercise](README.md) description.
+> See the ["Run the App" Exercise](README.md) description.
 
 
 ## Instructions
