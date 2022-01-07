@@ -1,4 +1,4 @@
-# An Introduction to Programming in Python (for Business Students)
+# An Introduction to Python Programming
 
 ![](https://www.perforce.com/sites/default/files/image/2018-08/image-blog-enterprises-investing-python%20(2).jpg)
 
