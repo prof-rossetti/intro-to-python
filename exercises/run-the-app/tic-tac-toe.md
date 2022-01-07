@@ -25,4 +25,4 @@ For fun, try replaying the game against different kinds of opponents (computer, 
 
 Optionally simulate many games between computer players, and see the CSV file of game outcomes that gets produced.
 
-Practice passing environment variables to designate the game count and player types.
+Practice passing environment variables to customize the game count and player types.

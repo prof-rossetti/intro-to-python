@@ -1,4 +1,4 @@
-# "Run the App" Exercise
+# "Run the App" Exercise (My First Python App Version)
 
 > See the ["Run the App" Exercise](README.md) description.
 
