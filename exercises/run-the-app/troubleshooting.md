@@ -1,10 +1,15 @@
 
-## Troubleshooting
+# Troubleshooting Python Applications
 
-> See ["Run the App" Exercise](README.md) description.
+> See the ["Run the App" Exercise](README.md) description.
 
 Here are some common errors you may run into while trying to run Python apps locally.
 
+## Bad Anaconda Installation
+
+If you try to run a `conda` command, and you see an error like "conda: command not found", it means there's something wrong with your installation.
+
+It's OK. Feel free to reach out to an instructor and ask for help. See also these [known troubleshooting remedies](https://github.com/prof-rossetti/intro-to-python/issues/13).
 
 ## Can't Install Packages / Forgot to Navigate to the Local Repo
 
