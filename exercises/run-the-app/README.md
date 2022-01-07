@@ -1,26 +1,22 @@
+
 # "Run the App" Exercise
-
-## Prerequisites
-
-  1. Complete the [Hello World (Local) Exercise](/exercises/hello-world/version-control.md), and/or the [Hello World (Version Control) Exercise](/exercises/hello-world/version-control.md), as instructed by the professor. NOTE: Students not instructed how to use version control can download the repository straight from GitHub in step 3.1 (instead of using a version control tool).
-  2. Read up about [Environment Variables](/notes/environment-variables.md), specifically setting via the ".env" file approach.
 
 ## Learning Objectives
 
 In this exercise, we'll learn how to install, configure, and run an existing Python application. We'll focus on environment management, package management, and setting environment variables.
 
+## Prerequisites
+
+  1. Complete the [Hello World Exercise](/exercises/hello-world/local.md) and/or [Hello World (w/ Version Control) Exercise](/exercises/hello-world/version-control.md), as instructed. The goal is to have familiarity with local dev tools like the command line, a text editor, and a Git utility like GitHub Desktop.
+  2. Read about [Environment Variables](/notes/environment-variables/README.md) to get a general sense of what they're about.
+
+
 ## Instructions
 
-  1. Visit the Professor's ["My First Python App" repository](https://github.com/prof-rossetti/my-first-python-app), which contains a simple command-line application. We'll refer to the Professor's repository as the "upstream repository".
-  2. Click "Fork" to copy the repo under your own control. We'll refer to your forked copy as the "remote fork", otherwise known as the "origin repository".
-  3. Follow the instructions in the repository's "README.md" file to install, setup and run the Python code contained inside:
-     1. Use your Git client to "clone" (download) the remote fork onto your local machine, perhaps onto the Desktop. We'll refer to this as the "local repository".
-     2. Use the command-line to navigate into the local repository.
-     3. Use the `conda` utility to create a new virtual environment with the specified version of Python, then activate it.
-     4. Use the `pip` utility to install any required third-party packages specified in the repo's "requirements.txt" file.
-     5. Use a ".env" file approach to set an environment variable to customize the user name.
-     6. Use the `python` utility to run the Python file(s).
+There are different versions of this exercise, each with varying levels of difficulty. Choose one as instructed by the professor:
 
-## Success Criteria
+  + [My First Python App](my-first-python-app.md)
+  + [Daily Briefings App](daily-briefings.md)
+  + [Tic Tac Toe App](tic-tac-toe.md) -- RECOMMENDED IN 2022
 
-Once you have run the app, you will have succeeded. Repeat steps 3.5 and 3.6 (change the environment variable value and re-run the program) at least one more time for good measure.
+## [Troubleshooting & Help](troubleshooting.md)

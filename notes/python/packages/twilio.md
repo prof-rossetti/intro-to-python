@@ -20,7 +20,7 @@ pip install twilio
 
 For SMS capabilities, [sign up for a Twilio account](https://www.twilio.com/try-twilio), click the link in a confirmation email to verify your account, then confirm a code sent to your phone to enable 2FA.
 
-Then [create a new project](https://www.twilio.com/console/projects/create) with "Programmable SMS" capabilities. And from the console, view that project's Account SID and Auth Token. Update the contents of the ".env" file to specify these values as [Environment Variables](/notes/environment-variables.md) called `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN`, respectively.
+Then [create a new project](https://www.twilio.com/console/projects/create) with "Programmable SMS" capabilities. And from the console, view that project's Account SID and Auth Token. Update the contents of the ".env" file to specify these values as [Environment Variables](/notes/environment-variables/README.md) called `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN`, respectively.
 
 You'll also need to [obtain a Twilio phone number](https://www.twilio.com/console/sms/getting-started/build) to send the messages from. After doing so, update the contents of [the ".env" file](/notes/python/packages/dotenv.md) to specify this value (including the plus sign at the beginning) as an environment variable called `SENDER_SMS`.
 

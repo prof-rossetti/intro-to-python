@@ -1,7 +1,5 @@
 # Local Development Environment Setup Guide
 
-> NOTE: COSC 010 students should alternatively use the [COSC 010 version of this guide](cosc-010.md) instead!
-
 This document helps you install and configure tools to develop and run Python applications on your local machine.
 
 ## GitHub
@@ -39,8 +37,6 @@ cd ~/Desktop
 pwd
 ls -al
 ```
-
-> NOTE: students on Mac or Windows may be able to use the integrated terminal in VS Code, but are not recommended to do so because it may require additional configuration, and has been very buggy in the past. If any student does manage to get the VS Code Integrated Terminal to work, please share your setup with the professor.
 
 ## Anaconda, Python, and Pip
 

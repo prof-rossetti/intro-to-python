@@ -1,7 +1,11 @@
 
-# "Run the App" Exercise - Further Exploration
+# "Run the App" Exercise (Daily Briefings Version)
 
-Are you ready to run a real app that actually does something? Try the professor's ["Daily Briefings" repository](https://github.com/prof-rossetti/daily-briefings-py), which contains a command-line application for fetching weather forecasts, and sending weather forecast emails. 
+> See the ["Run the App" Exercise](README.md) description.
+
+## Instructions
+
+Are you ready to run a real app that actually does something? Try the professor's ["Daily Briefings" repository](https://github.com/prof-rossetti/daily-briefings-py), which contains a command-line application for fetching weather forecasts, and sending weather forecast emails.
 
 Just like before, we'll fork and clone the repo, then start to follow it's README instructions. Follow the Installation instructions, using a process like the one described above.
 

@@ -18,7 +18,7 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
   + [Version Control](/notes/software/version-control.md):
     + [GitHub Desktop Software](/notes/devtools/github-desktop.md)
     + [The `git` Utility](/notes/clis/git.md)
-  + [Environment Variables](/notes/environment-variables.md)
+  + [Environment Variables](/notes/environment-variables/README.md)
 
 ## Activities and Exercises
 

@@ -54,7 +54,7 @@ If Anaconda is installed the way we need it to be, we should ultimately be able 
 
 ## Installation
 
-If not yet installed, [download Anaconda Version 3.8](https://www.anaconda.com/download) for either Mac or Windows.
+If not yet installed, [download Anaconda](https://www.anaconda.com/download) for either Mac or Windows.
 
 > NOTE: This might take a while, so prefer to do it over a strong WiFi connection. And feel free to ignore any email capture forms which may pop up afterwards.
 
