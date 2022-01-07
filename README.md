@@ -4,7 +4,7 @@
 
 ## [Slides (2022 Edition)](https://docs.google.com/presentation/d/1ZIjg63yVoWOyvTrkJWDhJrw9IPo2--R_ywX3Z5Rs6PQ/edit?usp=sharing)
 
-## Courses
+## Instructional Modules
 
 This repository contains instructional materials to support various introductory Python programming courses. Students using these materials should consult their respective syllabus to know which materials they are responsible for.
 
