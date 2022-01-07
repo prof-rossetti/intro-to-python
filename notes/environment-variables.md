@@ -30,13 +30,11 @@ Environment variable customization allows an application to perform differently 
 
 We can "set" environment variables, and later "get" their values, using a variety of strategies.
 
-Environment variables can be set "globally", in which case they are accessible by any program running on that given computer. Or they can be set "locally", in which case they are only accessible by programs located in a specific directory.
+Environment variables can be set ["globally"](/notes/environment-variables/setting-globally.md), in which case they are accessible by any program running on that given computer. Or they can be set "locally", in which case they are only accessible by programs located in a specific directory.
 
 The most common way to set environment variables is by passing them directly from the command-line. But when the number of environment variables grows, it becomes easier to store them all in a single ".env" file and use the "dotenv" approach.
 
-### [Setting Globally](/notes/environment-variables/setting-globally.md) (Not Recommended)
-
-#### Setting Locally via the Command Line
+### Setting Environment Variables via Command Line
 
 To set a script-specific environment variable on either Mac or Windows, its possible to prefix the environment variable before invoking your Python script. For example:
 
@@ -46,18 +44,22 @@ MY_SECRET_MESSAGE="SecretPassword123" python path/to/my_script.py
 
 To access environment variables from within a Python program, use [the `os` module](/notes/python/modules/os.md#environment-variables).
 
-#### Setting Locally via "Dotenv" File Approach
+### Setting Environment Variables via "Dotenv" Approach
 
-To set project-specific local environment variables on either Mac or Windows, consider using the "dotenv" approach. Create a special file in your project named ".env" and place inside content like the following (for example in a repository called "my-secure-project":
+To set project-specific local environment variables on either Mac or Windows, consider using the "dotenv" approach.
+
+In this approach, we create a special file named ".env" in the project's root directory, and place inside any number of environment variable declarations, each on their own line.
+
+Example ".env" file contents:
 
 ```sh
-# this is the "my-secure-project/.env" file...
-# ... you can store multiple env vars in ".env" files like this
-# ... to prevent passing them manually from the command-line every time
-# ... which is especially helpful when there are lots of vars
+#
+# this is a special file called ".env" which is stored in your project's root directory
+#
 
 MY_VAR=5
 MY_SECRET_MESSAGE="SecretPassword123"
+MY_API_KEY="abc123"
 ```
 
-To load these variables from the ".env" file into a Python program, use [the `dotenv` package](/notes/python/packages/dotenv.md), then access them using [the `os` module](/notes/python/modules/os.md#environment-variables).
+To access these environment variables from a Python program, we first use [the `dotenv` package](/notes/python/packages/dotenv.md) to load them into the program's environment, then we can access them using [the `os` module](/notes/python/modules/os.md#environment-variables) as usual.
