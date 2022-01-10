@@ -2,9 +2,13 @@
 
 > Thanks to @windy030 and @oaw6 for surfacing the capabilities of this package
 
-The `PySimpleGUI` package provides an application with a graphical user interface capable of being run on a personal computer.
+The `PySimpleGUI` package provides a graphical user interface (GUI) for your applications.
 
-Reference:
+## Demo
+
+![](https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/ex1-tkinter.jpg)
+
+## Reference
 
   + https://pypi.org/project/PySimpleGUI/
   + https://github.com/PySimpleGUI/PySimpleGUI
@@ -16,6 +20,7 @@ Reference:
   + https://pysimplegui.readthedocs.io/en/latest/#button-element
   + https://pysimplegui.readthedocs.io/en/latest/#input-elements
   + etc...
+
 
 ## Installation
 
