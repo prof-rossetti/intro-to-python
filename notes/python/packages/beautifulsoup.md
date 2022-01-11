@@ -18,16 +18,22 @@ pip install beautifulsoup4 # note the 4 at the end - this is the latest version
 
 You can use this package from the command line or from within a script. The examples below depict usage from within a script.
 
+### Parsing HTML from the Internet
+
 When you make a request that returns some HTML string, you can parse it like this:
 
 ```py
 import requests
 from bs4 import BeautifulSoup # note that the import package command is `bs4`
 
+# fetch the webpage HTML
+
 response = requests.get("https://www.gutenberg.org/ebooks/author/65")
 response_html = response.text
 
 soup = BeautifulSoup(response_html)
+
+# parse the HTML
 
 titles = soup.find_all("span", "title")
 
@@ -54,3 +60,20 @@ print(books[2]["title"]) #> Romeo and Juliet
 ```
 
 It's easier to parse HTML once you know the document structure. Try using your browser's developer tools to examine the document structure of any web page. For example, in Google Chrome you can right-click on a webpage and select "Inspect".
+
+### Parsing HTML from File
+
+If you have the HTML file locally (for example "index.html"), you can read it using the following approach:
+
+```py
+# using a "context manager" approach to open the file for reading ("r") and auto-close it afterwards
+
+with open('index.html', 'r') as html_file:
+
+    contents = html_file.read()
+
+    soup = BeautifulSoup(contents, 'lxml')
+
+    # ...
+
+```
