@@ -32,7 +32,7 @@ Example markdown:
 ```
 # My First Notebook!
 
-This is a text cell. It uses the markdown language. The line above is a heading, starting with the # sign. Don't be confused that # means something different in .md and .py files.
+This is a text cell. It uses the markdown language. The line above is a heading, starting with the "#" sign. Remember "#" means something different in Markdown than it does in Python.
 
 We can make links like [this](https://github.com/prof-rossetti/intro-to-python).
 
@@ -49,9 +49,9 @@ For more information about Markdown syntax, see the [Markdown Guide](https://gui
 Example Python code:
 
 ```py
-# This is some example python code
-# These lines starting with # are "comments"
-# Don't be confused that # means something different in .md files than .py files
+# This is some example Python code
+# These lines starting with "#" are "comments"
+# Remember "#" means something different in Markdown than it does in Python
 
 print("HELLO WORLD!")
 
