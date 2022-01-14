@@ -33,16 +33,22 @@ Wherever you move it to, observe the absolute filepath location of the "youtube-
 
 ## Usage
 
-Note the URL of a YouTube video you'd like to download (e.g. "https://www.youtube.com/watch?v=ABC123").
+Note the URL of a YouTube video you'd like to download.
 
-Then download it, specifying the video URL and the desired local file name:
-
-```sh
-youtube-dl -o my_video.mp4 "https://www.youtube.com/watch?v=ABC123"
-```
-
-If you have issues downloading the video to MP4 (for example if you see the error message "requested-formats-are-incompatible-for-merge"), you may have luck [adjusting](https://askubuntu.com/questions/806258/requested-formats-are-incompatible-for-merge) the output file format:
+Then download it, for example onto your Desktop, by specifying the video URL and the desired local file name (e.g. "my_video.mp4"):
 
 ```sh
-youtube-dl -o my_video.mp4 "https://www.youtube.com/watch?v=ABC123" -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]'
+youtube-dl -o ~/Desktop/my_video.mp4 "https://www.youtube.com/watch?v=x7X9w_GIm1s"
 ```
+
+## Troubleshooting
+
+If you have issues downloading the video to MP4 (for example if you see the error message "requested formats are incompatible for merge"), you may have luck [adjusting](https://askubuntu.com/questions/806258/requested-formats-are-incompatible-for-merge) the output file format:
+
+```sh
+youtube-dl -o ~/Desktop/my_video.mp4 "https://www.youtube.com/watch?v=ABC123" -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]'
+```
+
+See the documentation for more download options.
+
+
