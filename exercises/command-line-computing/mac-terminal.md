@@ -151,35 +151,42 @@ cat ~/Desktop/my_folder/my_message.txt | clip
 # ... then just paste as you normally would after copying some text
 ```
 
-### Further Exploration (Mac only)
 
-There are many other utilities to use from the command-line.
+### Further Exploration
 
-First, turn up the volume on your computer so everyone around you can hear, then make it speak:
+There are many other utilities to use from the command-line. For example, you may optionally try some of the examples below.
+
+
+#### Further Exploration (Windows or Mac)
+
+To download videos from YouTube, try using the [`youtube-dl` command-line utility](/notes/clis/youtube-dl.md) (see the linked notes document for installation and usage instructions).
+
+#### Further Exploration (Mac only)
+
+
+Making your computer speak:
 
 ```sh
 say "Hello, I am your computer. Let's be friends." # or something else polite and appropriate
 ```
 
-Optionally explore additional command-line interfaces, if you're curious.
+##### Internet Computing
 
-#### Internet Computing
-
-Trace the route traveled by a network request:
+Tracing the route traveled by a network request:
 
 ```sh
 traceroute google.com
 # ... stop after a few seconds if necessary by pressing: control + c
 ```
 
-Time the duration of a network request:
+Timing the duration of a network request:
 
 ```sh
 ping google.com
 # ... stop after a few seconds if necessary by pressing: control + c
 ```
 
-Request the contents of a webpage:
+Requesting the contents of a webpage:
 
 ```sh
 curl google.com
