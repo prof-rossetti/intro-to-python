@@ -32,7 +32,7 @@ And lists too:
   + Item 2
   + Item 3
 
-For more information about Markdown syntax, see the [Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+For more information about Markdown syntax, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 ```
 
 Example Python code ("my_script.py" file):
