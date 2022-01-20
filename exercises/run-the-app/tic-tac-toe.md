@@ -7,7 +7,7 @@
 ## Instructions
 
   1. Visit the Professor's ["Tic Tac Toe" repository](https://github.com/s2t2/tic-tac-toe-py), which contains a simple command-line game. We'll refer to the Professor's repository as the "upstream repository".
-  2. Click "Fork" to copy the repo under your own control. We'll refer to your forked copy as the "remote fork", otherwise known as the "origin repository".
+  2. Click "Fork" to copy the repo under your own control (selecting the "for my own purposes" option, if prompted on GitHub Desktop). We'll refer to your forked copy as the "remote fork", otherwise known as the "origin repository".
   3. Follow the instructions in the repository's "README.md" file to install, setup and run the Python code contained inside:
      1. Use your Git client to "clone" (download) the remote fork onto your local machine, perhaps onto the Desktop. We'll refer to this as the "local repository".
      2. Use the command-line to navigate to the local repository (using one or more `cd` commands).
