@@ -4,6 +4,8 @@
 
 In this exercise, we'll practice incorporating version control into our local development workflow.
 
+For the version control tool (i.e. Git Client of choice), beginners are encouraged to use [GitHub Desktop](/notes/devtools/github-desktop.md) but any student desiring further exploration can use the [Git CLI](/notes/clis/git.md#usage) instead.
+
 ## Instructions
 
   1. On GitHub, create a new repository named something like "my-first-repo", and include a "README.md" file. We'll refer to this as the "remote repository".
@@ -50,6 +52,6 @@ print(x)
 
 Once you see the new file contents reflected in your remote repository on GitHub, you have succeeded. Repeat the file-editing, committing and pushing steps at least one more time for good measure.
 
+## Further Exploration (Git CLI)
 
-## [Solutions](version-control-solutions.md)
-
+If you are using Git from the command-line, feel free to reference these [exercise solutions](version-control-solutions.md).

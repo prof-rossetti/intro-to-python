@@ -14,7 +14,7 @@ Beginner References:
   + [Git Handbook](https://guides.github.com/introduction/git-handbook/)
   + [Github Guides - YouTube Videos](https://www.youtube.com/githubguides)
   + [An Intro to Git and GitHub - Youtube Video](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
-  
+
 Command-Line References:
   + [Git CLI Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
   + [Getting Started w/ the Git CLI](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
@@ -79,12 +79,14 @@ git config --global user.email
 If you'd like to use the SSH protocol instead of HTTPS to connect to GitHub (so you don't have to keep typing your username and password), first generate a new public / private key pair, then follow the instructions to share your public key via the GitHub settings.
 
 See: [Connecting to GitHub via SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), including: [Generating SSH Keys](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [Adding SSH Keys to GitHub](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-  
+
 
 
 <hr>
 
-## Usage (Git Commands Overview)
+## Usage
+
+This section provides an overview of the most important Git concepts and commands.
 
 > NOTE: after executing some commands like `git log` and `git diff`, you can press the "Enter" key to keep reading, and type "q" to quit when you are done.
 
@@ -102,7 +104,7 @@ cd ~/Desktop/my-example-repo
 git init . # initialize a new git repository, creating a hidden folder called .git in your project's root directory
 ```
 
-> NOTE: instead of initializing repositories in this way, we'll usually create new repos via the GitHub interface, and then "clone" or download them to a specified local location.
+> NOTE: instead of initializing repositories in this way, we'll usually create new repos via the GitHub interface, and then "clone" or download them to a specified local location (see "Remote Repositories" section below).
 
 #### Making Revisions
 
@@ -113,7 +115,7 @@ Use your text editor to add, delete, and/or modify files, then save them.
 After making and saving changes to files in a repository, you can detect the changes and review them:
 
 ```sh
-git status 
+git status
 
 git diff
 ```
@@ -121,9 +123,9 @@ git diff
 After reviewing the changes, if you are satisfied, stage and commit them:
 
 ```sh
-git add . 
+git add .
 
-git commit -m "my message" 
+git commit -m "my message"
 ```
 
 Continue to iteratively repeat the process of reviewing and committing revisions as you incrementally develop your software.
