@@ -15,9 +15,9 @@
 
 ## Instructions
 
-Iteratively develop a command-line Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer (NPC) opponent. The game's functionality should adhere to the "Requirements" below.
+Iteratively develop a command-line Python application which will allow a human user to play a game of Rock-Paper-Scissors against a computer opponent. The game's functionality should adhere to the "Requirements" below.
 
-Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below. After doing so, you'll have a remote repo on GitHub and a local copy on your computer within which to develop.
+Before attempting to implement the basic requirements, take some time to configure your project repository according to the "Setup" instructions below (or use this [RPS Starter Repo](https://github.com/prof-rossetti/rps-starter)). After doing so, you'll have a remote repo on GitHub and a local copy on your computer within which to develop.
 
 When developing, as you reach key milestones, use the command-line or GitHub Desktop software to intermittently "commit", or save new versions of, your code. And remember to push / sync / upload your work back up to your remote project repository on GitHub at least once before you're done.
 
