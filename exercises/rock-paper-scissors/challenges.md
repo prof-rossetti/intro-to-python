@@ -103,17 +103,18 @@ def test_determination_of_the_winner():
 
 ```
 
-Once both of those files have been saved, we'll use the `pytest` package to run the test from the command-line:
+Once both of those files have been saved, and once the `pytest` package has been installed into the active virtual environment (for example after having added a corresponding line to the "requirements.txt" file and installed via `pip`), we'll use the `pytest` package to run the tests from the command-line:
 
 ```sh
-pytest game_test.py
+# run all tests
+pytest
 ```
 
 At first, you'll see the tests fail. It's because the provided `determine_winner` function doesn't yet do anything. Your job is to update the logic of the `determine_winner` function in the "game.py" file until the tests pass. Afterwards, also update your "game.py" file to use the completed `determine_winner` function.
 
 Nice, you're testing like a Pro!
 
-Finally, add these instructions into the repo's README file:
+Before you wrap up, update your repo's documentation by ensuring `pytest` is located in the "requirements.txt" file, and by adding these  testing instructions into the README file:
 
     ## Testing
 
