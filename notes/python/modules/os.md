@@ -114,7 +114,7 @@ print(os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "desktop_mess
 
 > Prerequisite: [Environment Variables](/notes/environment-variables/README.md)
 
-Get the entire environment:
+It is possible to access all variables in the entire environment:
 
 ```py
 import os
@@ -130,18 +130,39 @@ print("------------")
 print(type(dict(my_env))) #> <class 'dict'>
 ```
 
-Get a specific environment variable (e.g. `MY_SECRET_MESSAGE`, only after you have set it):
+But most commonly, we'll access a specific environment variable by its name (e.g. `MY_SECRET_MESSAGE`). There are a few ways to do this, but we'll prefer the latest `os.getenv` approach:
 
 ```py
-# using a dictionary-like approach:
+import os
+
+# OPTION A (OLD) ... using a dictionary-like approach:
 my_var = os.environ["MY_SECRET_MESSAGE"]
 print(my_var) #> SecretPassword123
 
-# using a getter function:
+# OPTION B (OLD) ... using a getter function:
 my_var = os.environ.get("MY_SECRET_MESSAGE")
 print(my_var) #> SecretPassword123
 
-# using the newer getter function (recommended):
+# OPTION C (RECOMMENDED) ... using the newer, more high-level getter function:
+my_var = os.getenv("MY_SECRET_MESSAGE")
+print(my_var) #> SecretPassword123
+```
+
+Using the recommended `os.getenv` approach, it is also possible to specify a default fall-back value to use if the environment variable has not been set:
+
+```py
+import os
+
 my_var = os.getenv("MY_SECRET_MESSAGE", default="This is a default / fallback message.")
 print(my_var) #> SecretPassword123
+```
+
+You can see we have stored the environment variable's value in a Python variable (i.e. `my_var`) for future use, and the Python variable could be named anything. However, as a best practice, to help you stay organized, the professor recommends using Python variable names that match the environment variable name (i.e. `MY_SECRET_MESSAGE`):
+
+
+```py
+import os
+
+MY_SECRET_MESSAGE = os.getenv("MY_SECRET_MESSAGE", default="This is a default / fallback message.")
+print(MY_SECRET_MESSAGE) #> SecretPassword123
 ```
