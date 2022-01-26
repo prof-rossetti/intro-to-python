@@ -13,16 +13,16 @@ Place inside the following contents:
 # this is the "modules-overview/my_script.py" file...
 
 # IMPORT STRATEGY A) import the entire module and all it's functions
-import my_module
+import my_mod
 
 # IMPORT STRATEGY B) only import a certain function
-from my_module import my_message, other_message
+from my_mod import my_message, other_message
 
 print("INVOKING MY SCRIPT...")
 
 # INVOCATION STRATEGY A) prefix with the module name
-my_module.my_message()
-my_module.other_message()
+my_mod.my_message()
+my_mod.other_message()
 
 # INVOCATION STRATEGY B) no module prefix
 my_message()
@@ -32,7 +32,7 @@ other_message()
 Most of the code in a Python module file should be nested inside functions or the "main" conditional:
 
 ``` python
-# this is the "modules-overview/my_module.py" file...
+# this is the "modules-overview/my_mod.py" file...
 
 def my_message():
     print("HELLO FROM A MODULE")
@@ -61,7 +61,7 @@ python my_script.py
 And execute the module file directly, to show that is possible as well:
 
 ```sh
-python my_module.py
+python my_mod.py
 ```
 
 You'll notice only the module code nested inside the "main" conditional gets executed when we run the module file from the command-line
