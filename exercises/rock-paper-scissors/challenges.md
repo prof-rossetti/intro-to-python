@@ -79,3 +79,13 @@ pytest game_test.py
 At first, you'll see the tests fail. It's because the provided `determine_winner` function doesn't yet do anything. Your job is to update the logic of the `determine_winner` function in the "game.py" file until the tests pass. Afterwards, also update your "game.py" file to use the completed `determine_winner` function.
 
 Nice, you're testing like a Pro!
+
+Finally, add these instructions into the repo's README file:
+
+    ## Testing
+
+    Run tests:
+
+    ```sh
+    pytest
+    ```
