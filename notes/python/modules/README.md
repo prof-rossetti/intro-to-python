@@ -1,103 +1,28 @@
 # Python Modules
 
-You can extend the capabilities of your Python program by leveraging, or "importing" other files of code called "modules".
+In Python, a "module" is a file of Python code that can be "imported" and used in other Python files.
 
-Some selected Python modules of interest include:
+## Built-in Modules
 
-  + [The `csv` Module](csv.md)
-  + [The `datetime` Module](datetime.md)
-  + [The `itertools` Module](itertools.md)
-  + [The `json` Module](json.md)
-  + [The `math` Module](math.md)
+Many helpful built-in modules are provided along with the [Standard Library](https://docs.python.org/3/library/). Here are some built-in modules of interest:
+
   + [The `os` Module](os.md)
+  + [The `math` Module](math.md)
   + [The `random` Module](random.md)
   + [The `statistics` Module](statistics.md)
+  + [The `itertools` Module](itertools.md)
+  + [The `datetime` Module](datetime.md)
   + [The `time` Module](time.md)
   + [The `webbrowser` Module](webbrowser.md)
+  + [The `json` Module](json.md)
+  + [The `csv` Module](csv.md)
 
-You can also create and import your own modules to help you organize your code into separate logical files.
+A built-in "module" is like a third-party "package" in the sense that it provides some code for us to import and leverage. But unlike third-party packages which need to be installed separately (often via `pip`), modules don't need to be installed separately (just imported).
 
-For more details, follow along with this official tutorial on modules:
+## Local Modules
 
-  + https://docs.python.org/3/tutorial/modules.html#modules
-  + https://docs.python.org/3/tutorial/modules.html#more-on-modules
-  + https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts
+In addition to built-in modules, developers can create their own local Python modules. Separating our Python code across multiple files helps with code organization and maintainability.
 
-## Usage
+Any other python file can import code from the module file as long as the module file meets a few organizational conditions (such as nesting the code under the "main" conditional).
 
-To load any module, whether a built-in module or a custom module you create, use the `import` statement. Then after importing the module, you can reference code contained within.
-
-To see this concept in action, create a new directory on your computer called "modules-overview" and place inside the following two files...
-
-Script:
-
-``` python
-# modules-overview/my_script.py
-
-import my_module
-
-print("IMPORTING MY MODULE ...")
-my_module.my_message()
-```
-
-Module:
-
-``` python
-# modules-overview/my_module.py
-
-# anything in the global scope of this file will be executed immediately when the module is imported.
-# ... so we generally wrap all the code inside separate functions, which can later be invoked as desired.
-
-def my_message():
-    print("HELLO FROM A MODULE")
-
-def other_message():
-    print("GREETINGS EARTHLING")
-
-# but if we want something to happen when the module is invoked directly from the command line (as a script)
-# ... we can use this special conditional to detect that use case and perform instructions as desired.
-if __name__ == "__main__":
-    print("INVOKING MY MODULE AS A SCRIPT...")
-    my_message()
-```
-
-Then execute the script to prove it has access to code in the module:
-
-```sh
-python my_script.py
-#> IMPORTING MY MODULE ...
-#> HELLO FROM A MODULE
-```
-
-It is also possible to execute the module directly:
-
-```sh
-python my_module.py
-#> INVOKING MY MODULE AS A SCRIPT...
-#> HELLO FROM A MODULE
-```
-
-### Modules in Subdirectories
-
-If your python file is located in a subdirectory, you can reference it using the `[directory name].[file name]`. Like this:
-
-
-``` python
-# modules-overview/things/robot.py
-
-def robot_message():
-    print("HELLO I'M A ROBOT")
-```
-
-``` python
-# modules-overview/robot_script.py
-
-import things.robot as bot
-
-bot.robot_message()
-```
-
-```sh
-python robot_script.py
-#> HELLO I'M A ROBOT
-```
+For more practice, complete the ["Modules and Imports" Exercise](/exercises/modules-and-imports/README.md).

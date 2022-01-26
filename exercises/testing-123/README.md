@@ -2,7 +2,8 @@
 
 ## Prerequisites
 
- + [The `pytest` Package](/notes/python/packages/pytest.md)
+  + [The `pytest` Package](/notes/python/packages/pytest.md)
+  + [Python Modules and Imports](/notes/python/modules/README.md)
 
 ## Learning Objectives
 

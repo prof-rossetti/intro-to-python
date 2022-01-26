@@ -1,8 +1,11 @@
 # The `pytest` Package
 
-> Prerequisite: [Automated Testing](/notes/software/testing.md)
+Prerequisites:
+  + [Python Modules and Imports](/notes/python/modules/README.md)
+  + [Automated Testing](/notes/software/testing.md)
 
-Reference:
+
+References:
 
   + https://github.com/pytest-dev/pytest/
   + https://docs.pytest.org/en/latest/
@@ -42,13 +45,13 @@ pytest
 pytest --disable-pytest-warnings
 
 # see print statements:
-pytest  -s 
+pytest  -s
 
 # run a specific test:
-pytest test/my_test.py  
+pytest test/my_test.py
 
 # run a specific function in a specific test:
-pytest test/my_test.py -k 'test_my_thing' 
+pytest test/my_test.py -k 'test_my_thing'
 ```
 
 ### Expecting Errors
@@ -69,6 +72,8 @@ def test_divide_by_zero():
 The Pytest package can be imported to facilitate the construction of test fixtures (for example, to be placed in the "conftest.py" file):
 
 ```py
+# this is the "conftest.py" file...
+
 import pytest
 
 # prevents unnecessary or duplicative language model loading
@@ -96,11 +101,15 @@ def parsed_response():
 
 ```py
 
+# this is an example test file...
+
 # using fixtures in tests (just pass them like magic as a param to the test function that needs them):
 
 def test_my_language_model(nlp):
     # do something with the nlp fixture
+    # assert something
 
 def test_my_calculations(parsed_response):
     # do something with the parsed_response fixture
+    # assert something
 ```

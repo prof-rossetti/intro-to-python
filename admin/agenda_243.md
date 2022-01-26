@@ -2,6 +2,8 @@
 
 ## Onboarding
 
+Announcement:
+
 ```
 Hey everyone,
 
@@ -19,6 +21,8 @@ Prof Rossetti
 ```
 
 ## Class 1
+
+Agenda:
 
 ```
 @channel Welcome to Class 1! See Agenda below:
@@ -49,14 +53,71 @@ Preparation / HW for Next Class:
 
 ## Class 2
 
+Agenda:
+
 ```
-TBA
+@channel Welcome to Class 2! See Agenda below:
+
+  + 4:55 -- Zoom Admin: Remembering to Record (and Screenshare, and Un-mute)! :movie_camera:
+  + 5:00 -- Announcements:
+    + First weekly check-in is due sometime later this week/end (see canvas calendar).
+    + Please complete the polls below to let me know your progress on the homework exercises from last class.
+  + 5:05 -- Class 1 Recap:
+    + Why Python?
+    + Google Colab Exercise Recap (see Example Notebook from last class):
+    + Markdown Syntax (Markdown Guide)
+    + MNotebook Settings, Saving to Drive or GitHub
+    + MKeyboard Shortcuts / Vertical Column Select: press either "shift+alt" on Windows or "shift+option" on Mac, then click and drag down
+  + 5:15 -- Hello World (Local) Exercise, abbreviated
+    + Command-line Computing Recap (navigating the filesystem)
+    + Text Editor Overview (VS Code)
+    + The Python console (python -i)
+    + Running Python programs (python path/to/my_script.py)
+  + 5:35 -- Run the App (Tic Tac Toe) Exercise
+    + Navigating the Filesystem
+    + Managing Virtual Environments w/ conda
+    + Installing Python packages w/ pip
+    + Running Python programs w/ python
+    + Managing Environment Variables
+    + Anatomy of a Python Repository (focusing on "README.md", "requirements.txt" and "app/game.py" files)
+
+Today's Learning Objectives:
+  + Become familiar with local development tools (i.e. the command line, a text editor, and a version control tool).
+  + Become familiar with Python-specific command-line utilities (i.e. conda, pip, and python). Learn how to run python scripts as well as the interactive Python console.
+  + Practice running existing Python applications.
+  + Discuss the trade-offs between Colab and local development, and when we might want to use each.
+
+Preparation / HW for Next Class:
+  + Hello World (Local w/ Version Control) Exercise
 ```
+
+Polls:
+
+```
+/poll anonymous "My progress on the Command-line Computing Exercise is like..." "Completed" "In progress" "Not yet started"
+```
+
+
+```
+/poll anonymous "My progress on the Hello World Local Exercise is like..." "Completed" "In progress" "Not yet started"
+```
+
 
 ## Class 3
 
 ```
 TBA
+```
+
+Polls:
+
+```
+/poll anonymous "My progress on the Run the App (Tic Tac Toe) Exercise is like..." "Completed" "In progress" "Not yet started"
+```
+
+
+```
+/poll anonymous "My progress on the Hello World (Version Control) Exercise is like..." "Completed" "In progress" "Not yet started"
 ```
 
 ## Class 4
