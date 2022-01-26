@@ -79,7 +79,9 @@ The application should prompt the user to input, or otherwise select, an option 
 
 The application should compare the user's selection against the list of valid options (i.e. "rock", "paper", "scissors") to determine whether the user has selected a valid option.
 
-If the selection is invalid, the program should fail gracefully by displaying a friendly message to the user, and preventing further program execution. The program should not try to further process an invalid input, as it may lead to runtime errors.
+It should be able to handle various capitalizations of the valid options (e.g. "ROCK", "Rock", or "rock").
+
+However if the selection is invalid, the program should fail gracefully by displaying a friendly message to the user, and preventing further program execution. The program should not try to further process an invalid input, as it may lead to runtime errors.
 
 > HINT: use the `exit()` or `quit()` keywords to stop the program.
 
@@ -140,7 +142,7 @@ Category | Requirement | Weight
 Repository | Includes a README file with detailed instructions, including the appropriate setup instructions, and the exact `conda`, `pip`, and `python` commands needed to run the program from scratch. | 20%
 Info Inputs | Instructs the user to provide an input, and then captures and stores that user input. | 10%
 Validations | Handles user inputs of various capitalization (i.e. recognizes "rock", "Rock", and "ROCK" as valid inputs). | 10%
-Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors"). Handles user inputs of various capitalization (i.e. recognizes "rock", "Rock", and "ROCK" as valid inputs). | 15%
+Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides an invalid input, like "OOPS"). | 15%
 Calculations | Displays accurate information about which player is the winner. | 15%
 Info Outputs | Presents all desired information outputs to the user. | 10%
 Dev Process | Submitted via remote Git repository which reflects an incremental revision history with at least a handful of commits. | 20%
