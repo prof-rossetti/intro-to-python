@@ -139,7 +139,7 @@ import os
 my_var = os.environ["MY_SECRET_MESSAGE"]
 print(my_var) #> SecretPassword123
 
-# OPTION B OLD) ... using a getter function:
+# OPTION B (OLD) ... using a getter function:
 my_var = os.environ.get("MY_SECRET_MESSAGE")
 print(my_var) #> SecretPassword123
 
@@ -155,4 +155,14 @@ import os
 
 my_var = os.getenv("MY_SECRET_MESSAGE", default="This is a default / fallback message.")
 print(my_var) #> SecretPassword123
+```
+
+You can see we have stored the environment variable's value in a Python variable (i.e. `my_var`) for future use, and the Python variable could be named anything. However, as a best practice, to help you stay organized, the professor recommends using Python variable names that match the environment variable name (i.e. `MY_SECRET_MESSAGE`):
+
+
+```py
+import os
+
+MY_SECRET_MESSAGE = os.getenv("MY_SECRET_MESSAGE", default="This is a default / fallback message.")
+print(MY_SECRET_MESSAGE) #> SecretPassword123
 ```
