@@ -114,7 +114,7 @@ print(os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "desktop_mess
 
 > Prerequisite: [Environment Variables](/notes/environment-variables/README.md)
 
-Get the entire environment:
+It is possible to access all variables in the entire environment:
 
 ```py
 import os
@@ -130,25 +130,25 @@ print("------------")
 print(type(dict(my_env))) #> <class 'dict'>
 ```
 
-Get a specific environment variable (e.g. `MY_SECRET_MESSAGE`, only after you have set it):
+But most commonly, we'll access a specific environment variable by its name (e.g. `MY_SECRET_MESSAGE`). There are a few ways to do this, but we'll prefer the latest `os.getenv` approach:
 
 ```py
 import os
 
-# OPTION A) using a dictionary-like approach (OLD):
+# OPTION A (OLD) ... using a dictionary-like approach:
 my_var = os.environ["MY_SECRET_MESSAGE"]
 print(my_var) #> SecretPassword123
 
-# OPTION B) using a getter function (OLD):
+# OPTION B OLD) ... using a getter function:
 my_var = os.environ.get("MY_SECRET_MESSAGE")
 print(my_var) #> SecretPassword123
 
-# OPTION C - RECOMMENDED) using a newer, more high-level getter function:
+# OPTION C (RECOMMENDED) ... using the newer, more high-level getter function:
 my_var = os.getenv("MY_SECRET_MESSAGE")
 print(my_var) #> SecretPassword123
 ```
 
-Using the recommended approach, it is also possible to specify a default fall-back value to use if the environment variable is not set:
+Using the recommended `os.getenv` approach, it is also possible to specify a default fall-back value to use if the environment variable has not been set:
 
 ```py
 import os
