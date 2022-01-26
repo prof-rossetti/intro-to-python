@@ -48,7 +48,7 @@ Make sure to save Python files like this whenever you're done editing them. Afte
 
 ### Environment Setup
 
-> FYI: Only because we're going to be working with environment variables and requiring a third-party package called "python-dotenv" to read them from the ".env" file (see details below), we'll want to use a new project-specific Python environment within which to install any required packages. Otherwise we could do this exercise in the "base" environment.
+> NOTE: if you want, you could do this exercise in the "base" environment! Otherwise, for more practice, we could use a project-specific environment. And certainly if your app ends up requiring any third-party packages, we'll need to use the project-specific environment.
 
 Create and activate a new project-specific Anaconda virtual environment:
 
@@ -127,24 +127,8 @@ Oh, the computer won. It's ok.
 Thanks for playing. Please play again!
 ```
 
-### Customizing the Player Name
 
-Finally, update your program to allow the user to configure their own player name by passing an environment variable called "PLAYER_NAME" stored in a local ".env" file.
-
-Make sure to add corresponding instructions to the README file, to let the player know how to set up the ".env" file.
-
-Make sure the repository's ".gitignore" file includes an entry about the ".env" file, and ensure the ".gigitnore" file is saved and committed before adding a ".env" file. This should already be the case if you added a Python-flavored ".gitignore" file during the repo creation step.
-
-Example "requirements.txt" file contents:
-
-```sh
-# this is the requirements.txt file
-
-python-dotenv # see: https://github.com/theskumar/python-dotenv
-```
-
-Also note we are now requiring the program to use a third-party package, so we should add a "requirements.txt" file to the repo with the package name inside. And we should add a `pip install -r requirements.txt` step to the README file to instruct the user to install packages before trying to run the program. At this time your README file should somewhat resemble this [example README file](https://raw.githubusercontent.com/prof-rossetti/my-first-python-app/main/README.md), and you can feel free to reference and adapt that example.
-
+## [Further Exploration](challenges.md)
 
 
 ## Evaluation
@@ -155,11 +139,13 @@ Category | Requirement | Weight
 --- | --- | ---
 Repository | Includes a README file with detailed instructions, including the appropriate setup instructions, and the exact `conda`, `pip`, and `python` commands needed to run the program from scratch. | 20%
 Info Inputs | Instructs the user to provide an input, and then captures and stores that user input. | 10%
-Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors"). | 15%
+Validations | Handles user inputs of various capitalization (i.e. recognizes "rock", "Rock", and "ROCK" as valid inputs). | 10%
+Validations | Fails gracefully if encountering an invalid user input (i.e. program does not crash or malfunction if user provides something other than "rock", "paper", or "scissors"). Handles user inputs of various capitalization (i.e. recognizes "rock", "Rock", and "ROCK" as valid inputs). | 15%
 Calculations | Displays accurate information about which player is the winner. | 15%
 Info Outputs | Presents all desired information outputs to the user. | 10%
-Customization | Instructs and enables the user to configure their own player name without revising the code, by passing an environment variable from a local ".env" file. | 10%
 Dev Process | Submitted via remote Git repository which reflects an incremental revision history with at least a handful of commits. | 20%
+
+It is also possible to earn bonus points by tackling the [Further Exploration Challenges](challenges.md).
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
 

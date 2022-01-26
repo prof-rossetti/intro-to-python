@@ -133,15 +133,26 @@ print(type(dict(my_env))) #> <class 'dict'>
 Get a specific environment variable (e.g. `MY_SECRET_MESSAGE`, only after you have set it):
 
 ```py
-# using a dictionary-like approach:
+import os
+
+# OPTION A) using a dictionary-like approach (OLD):
 my_var = os.environ["MY_SECRET_MESSAGE"]
 print(my_var) #> SecretPassword123
 
-# using a getter function:
+# OPTION B) using a getter function (OLD):
 my_var = os.environ.get("MY_SECRET_MESSAGE")
 print(my_var) #> SecretPassword123
 
-# using the newer getter function (recommended):
+# OPTION C - RECOMMENDED) using a newer, more high-level getter function:
+my_var = os.getenv("MY_SECRET_MESSAGE")
+print(my_var) #> SecretPassword123
+```
+
+Using the recommended approach, it is also possible to specify a default fall-back value to use if the environment variable is not set:
+
+```py
+import os
+
 my_var = os.getenv("MY_SECRET_MESSAGE", default="This is a default / fallback message.")
 print(my_var) #> SecretPassword123
 ```
