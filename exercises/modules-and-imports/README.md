@@ -35,7 +35,7 @@ Most of the code in a Python module file should be nested inside functions or th
 # this is the "modules-overview/my_mod.py" file...
 
 def my_message():
-    print("HELLO FROM A MODULE")
+    print("HELLO WORLD")
 
 def other_message():
     print("GREETINGS EARTHLING")
