@@ -50,8 +50,6 @@ if __name__ == "__main__":
     other_message()
 ```
 
-Finally, to prevent import errors, let's add a special file called "\_\_init_\_.py" to the "modules-overview" directory. This file helps the import process.
-
 ## Usage
 
 Then execute the script to prove it has access to code in the module:
@@ -66,7 +64,7 @@ And execute the module file directly, to show that is possible as well:
 python my_mod.py
 ```
 
-You'll notice only the module code nested inside the "main" conditional gets executed when we run the module file from the command-line
+You'll notice only the module code nested inside the "main" conditional gets executed when we run the module file from the command-line.
 
 ## Further Exploration
 
