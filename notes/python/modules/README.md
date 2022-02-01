@@ -15,7 +15,7 @@ Many helpful built-in modules are provided along with the [Standard Library](htt
   + [The `time` Module](time.md)
   + [The `webbrowser` Module](webbrowser.md)
   + [The `json` Module](json.md)
-  + [The `csv` Module](csv.md)
+  + [The `csv` Module](csv.md) -- although you're recommended to use [the `pandas` package](/notes/python/packages/pandas.md) instead!!
 
 A built-in "module" is like a third-party "package" in the sense that it provides some code for us to import and leverage. But unlike third-party packages which need to be installed separately (often via `pip`), modules don't need to be installed separately (just imported).
 
