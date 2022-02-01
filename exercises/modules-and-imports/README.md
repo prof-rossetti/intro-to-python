@@ -18,7 +18,7 @@ import my_mod
 # IMPORT STRATEGY B) only import a certain function
 from my_mod import my_message, other_message
 
-print("INVOKING MY SCRIPT...")
+print("RUNNING MY SCRIPT...")
 
 # INVOCATION STRATEGY A) prefix with the module name
 my_mod.my_message()
@@ -43,7 +43,7 @@ def other_message():
 
 if __name__ == "__main__":
 
-    print("INVOKING MY MODULE AS A SCRIPT...")
+    print("RUNNING MY MODULE AS A SCRIPT...")
 
     my_message()
 
