@@ -46,15 +46,15 @@ Each text file should be named according to the date and time the checkout proce
 
 > HINT: consult the notes on [file management](/notes/python/file-management.md) for examples of how to write to file in Python
 
-> NOTE: to prevent clutter, exclude these receipt files from being tracked in version control by creating a new ".gitignore" file in the "receipts" directory, and adding the following contents inside:
+> NOTE: to prevent clutter, exclude these receipt files from being tracked in version control by adding a new entry to the ".gitignore" file:
 >
->     # this is the "receipts/.gitignore" file...
+>     # this is the ".gitignore" file...
 >
->     # ignore all the files in this directory:
->     *
+>     # ...
+>     
+>     # ignore all TXT files written to the receipts directory:
+>     receipts/*.txt
 >
->     # but don't ignore this ".gitignore" file:
->     !.gitignore
 
 ## Sending Receipts via Email
 
@@ -85,14 +85,18 @@ Instead of using a hard-coded `products` variable, download or copy the contents
 >     csv_filepath = os.path.join(os.path.dirname(__file__), "..", "data", "products.csv")
 >     
 
-Ideally we'll allow the user to use their own custom CSV file inventory. To acheive this, save a copy of the provided "products.csv" file in your repo as "data/default_products.csv" and provide instructions in the README telling someone to copy this provided file into their local repo as "data/products.csv", where the program will be looking for it. Finally, before making any commits, exclude the "data/products.csv" file from being tracked in version control by using an entry like this in the ".gitignore" file:
+Ideally we'll allow the user to use their own custom CSV file inventory. To acheive this, save a copy of the provided "products.csv" file in your repo as "data/default_products.csv" and provide instructions in the README telling someone to copy this provided file into their local repo as "data/products.csv", where the program will be looking for it. 
+
+
+Finally, before making any commits, exclude the "data/products.csv" file from being tracked in version control by using an entry like this in the ".gitignore" file:
 >
 >     # this is the ".gitignore" file...
 >
 >     # ...
 >
->     # ignore the CSV file inventory in the data directory:
+>     # ignore the products CSV file inventory (but not the default):
 >     data/products.csv
+>     !data/default_products.csv
 >
 > NOTE: to clarify, the "data/default_products.csv" file should be INCLUDED in the repo, while the "data/products.csv" should be IGNORED. 
 
