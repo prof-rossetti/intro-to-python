@@ -132,7 +132,7 @@ Instead of using a hard-coded `products` variable or a "products.csv" file as th
 
 Assemble a handful of real products that have barcodes.
 
-Ask to borrow the professor's barcode scanner during class or office hours, or feel free to [purchase one from Amazon](https://www.amazon.com/gp/product/B003OUQ174/ref=ppx_yo_dt_b_asin_title_o03__o00_s00?ie=UTF8&psc=1).
+Ask to borrow the professor's barcode scanner during class or office hours, or feel free to [purchase one from Amazon](https://www.amazon.com/UNIDEEPLY-Barcode-Scanner-Handheld-Scanning/dp/B07GYLKX4J/ref=sr_1_1_sspa).
 
 Connect the barcode scanner to your computer's USB port, and practice scanning a few of the items, and record the resulting product identifiers.
 
