@@ -106,7 +106,7 @@ Finally, before making any commits, exclude the "data/products.csv" file from be
 
 > BONUS POINTS: 6-8%
 
-Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use a Google Sheet like this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit?usp=sharing) instead. Update your code to read the `products` from this Google Sheet.
+Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use a Google Sheet like this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit#gid=1014123801) instead. Update your code to read the `products` from this Google Sheet, or a similar one you create. If you create your own, the document permissions should be public so evaluators can run your app using their own credentials.
 
 > HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md).
 
