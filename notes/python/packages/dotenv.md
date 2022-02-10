@@ -46,9 +46,10 @@ SECRET_MESSAGE="Hello World"
 import os
 from dotenv import load_dotenv
 
-load_dotenv() #> loads contents of the .env file into the script's environment
+load_dotenv() #> invoking this function loads contents of the ".env" file into the script's environment...
 
-print(os.getenv("SECRET_MESSAGE")) # reads the variable from the environment
+# ... where they can be accessed / read via the os module as usual:
+print(os.getenv("SECRET_MESSAGE"))
 ```
 
 And run the script to see the output:
@@ -60,7 +61,7 @@ python my_script.py
 
 The lesson is that the `load_dotenv()` function will load environment variables from the ".env" file into the Python script's environment so they can be accessed via the `os` module.
 
-Also, it's important to ensure there is a ".env" entry in your ".gitignore" file before making any commits. This prevents the ".env" file from being uploaded to GitHub. This is important on a practical level because ".env" files often contain sensitive information like secret passwords and API Keys, and preventing these credentials from being exposed on GitHub is an important security best practice.
+Also, it's important to ensure there is a ".env" entry in your ".gitignore" file before making any commits. This prevents the ".env" file from being uploaded to GitHub. This is important on a practical level because ".env" files often contain sensitive information like secret passwords and API Keys, and preventing these credentials from being exposed on GitHub is an important security best practice (even if your remote repo is private).
 
 > SECURITY NOTE: after pushing a repo to GitHub, you shouldn't be able to see the ".env" online. If you do see the ".env" in your remote repo on GitHub, follow these remediation steps:
 >   1. Delete the ".env" file from your local repo, and make a commit.
