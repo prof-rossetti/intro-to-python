@@ -75,9 +75,9 @@ At the very least, the email should display the checkout timestamp and the total
 
 Instead of using a hard-coded `products` variable, download or copy the contents of the provided ["products.csv" file](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.csv) into your project directory in a new subdirectory called "data" (so the path to the CSV file should be "data/products.csv"). Then update your code to read the `products` from this CSV file.
 
-> HINT: leverage the capabilities of [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
+> HINT: leverage the capabilities of [the `csv` module](/notes/python/modules/csv.md) (not recommended) or [the `pandas` package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
 
-> NOTE: ideally use the `os` module to assemble [os-agnostic relative filepaths](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/os.md#constructing-filepaths) instead of hard-coded string filepaths:
+> NOTE: ideally also use the `os` module to assemble [OS-agnostic relative filepaths](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/os.md#constructing-filepaths) instead of hard-coded string filepaths:
 >
 >     # this is the "app/shopping_cart.py file...
 >     
@@ -98,7 +98,9 @@ Finally, before making any commits, exclude the "data/products.csv" file from be
 >     data/products.csv
 >     !data/default_products.csv
 >
-> NOTE: to clarify, the "data/default_products.csv" file should be INCLUDED in the repo, while the "data/products.csv" should be IGNORED. 
+> NOTE: to clarify, the "data/default_products.csv" file should be INCLUDED in version control, while the "data/products.csv" should be IGNORED. 
+
+This allows each user to use their own custom inventory of products, and change those items without the changes getting tracked in version control. This allows many developers with different inventories to share the same code base.
 
 
 
