@@ -114,7 +114,7 @@ At first, you'll see the tests fail. It's because the provided `determine_winner
 
 Nice, you're testing like a Pro!
 
-Before you wrap up, update your repo's documentation by ensuring `pytest` is located in the "requirements.txt" file, and by adding these  testing instructions into the README file:
+Before you wrap up, update your repo's documentation by ensuring `pytest` is located in the "requirements.txt" file, and by ensuring these testing instructions are reflected in the README file:
 
     ## Testing
 
