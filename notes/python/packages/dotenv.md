@@ -25,7 +25,7 @@ To setup this example, create a new directory on your Desktop named "my-secure-p
 cd Desktop/my-secure-project/
 ```
 
-Create two files in the "my-secure-project" directory named ".env" and "my_script.py", respectively, and place inside the following contents:
+Create three files in the "my-secure-project" directory named ".env", ".gitignore", and "my_script.py", respectively, and place inside the following contents:
 
 ```sh
 # this is the "my-secure-project/.env" file...
