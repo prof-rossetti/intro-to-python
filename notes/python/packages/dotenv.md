@@ -28,13 +28,20 @@ cd Desktop/my-secure-project/
 Create two files in the "my-secure-project" directory named ".env" and "my_script.py", respectively, and place inside the following contents:
 
 ```sh
-# my-secure-project/.env
+# this is the "my-secure-project/.env" file...
 
 SECRET_MESSAGE="Hello World"
 ```
 
+```sh
+# this is the "my-secure-project/.gitignore" file...
+
+# ignore the contents of the ".env" file (prevent them from being exposed on GitHub):
+.env
+```
+
 ```py
-# my-secure-project/my_script.py
+# this is the "my-secure-project/my_script.py" file...
 
 import os
 from dotenv import load_dotenv
@@ -42,31 +49,20 @@ from dotenv import load_dotenv
 load_dotenv() #> loads contents of the .env file into the script's environment
 
 print(os.getenv("SECRET_MESSAGE")) # reads the variable from the environment
-#> "Hello World"
 ```
 
 And run the script to see the output:
 
 ```sh
 python my_script.py
+#> "Hello World"
 ```
 
 The lesson is that the `load_dotenv()` function will load environment variables from the ".env" file into the Python script's environment so they can be accessed via the `os` module.
 
-### Ignoring ".env" Files from Version Control
+Also, it's important to ensure there is a ".env" entry in your ".gitignore" file before making any commits. This prevents the ".env" file from being uploaded to GitHub. This is important on a practical level because ".env" files often contain sensitive information like secret passwords and API Keys, and preventing these credentials from being exposed on GitHub is an important security best practice.
 
-> SECURITY NOTE: Because these ".env" files often contain sensitive information like secret passwords and API Keys, we should absolutely avoid checking them into version control! To do this, we'll use a special ".gitignore" file.
-
-Create another file in the "my-secure-project" directory named ".gitignore", and place inside the following contents:
-
-```sh
-# my-secure-project/.gitignore
-
-# ignore the ".env" file:
-.env
-
-```
-
-Great! Now all subsequent commits will ignore the ".env" file from your project's version history, so you can push your code to GitHub without divulging your secret credentials.
-
-> NOTE: if your repository already contained a ".env" file before you added the corresponding entry to the ".gitignore" file, you'll need to commit the ".gitignore" file then delete / move the ".env" file and make another commit, and then afterwards you can feel free to restore your ".env" file and it will be ignored
+> SECURITY NOTE: after pushing a repo to GitHub, you shouldn't be able to see the ".env" online. If you do see the ".env" in your remote repo on GitHub, follow these remediation steps:
+>   1. Delete the ".env" file from your local repo, and make a commit.
+>   2. Ensure you have a ".env" entry in your local ".gitignore" file, and make another commit if necessary. 
+>   3. Finally, re-add the ".env" file to your local repo. Next time you push to GitHub, this file should no longer be in your remote repo.
