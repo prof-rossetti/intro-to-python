@@ -132,7 +132,8 @@ Instead of using a hard-coded `products` variable or a "products.csv" file as th
 
 Assemble a handful of real products that have barcodes.
 
-Ask to borrow the professor's barcode scanner during class or office hours, or feel free to [purchase one from Amazon](https://www.amazon.com/UNIDEEPLY-Barcode-Scanner-Handheld-Scanning/dp/B07GYLKX4J/ref=sr_1_1_sspa).
+Ask to borrow the professor's barcode scanner during class or office hours, or feel free to [purchase a barcode scanner from Amazon](https://www.amazon.com/UNIDEEPLY-Barcode-Scanner-Handheld-Scanning/dp/B07GYLKX4J/ref=sr_1_1_sspa). Some barcode scanners have a normal USB-A connection, so new Mac users without these ports may also need a [USB-A to USB-C adapter](https://www.amazon.com/nonda-Adapter-Thunderbolt-MacBook-Devices/dp/B083DRSWKR/?th=1).
+
 
 Connect the barcode scanner to your computer's USB port, and practice scanning a few of the items, and record the resulting product identifiers.
 
@@ -149,7 +150,7 @@ products = [
     {"id": "898248001114", "name": "Siggi's Peach Yogurt", "price": 1.45},
     {"id": "290295004269", "name": "Whole Foods Guacamole - Small", "price": 6.50},
     {"id": "012000161155", "name": "LIFE Water", "price": 2.15},
-]
+] # NOTE: these products are abbreviated for display. yours should also include some "department" and "aisle" values of choice
 # ...
 ```
 
