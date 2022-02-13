@@ -50,7 +50,7 @@ except Exception as err:
 
 ## Raising Errors
 
-If we find the need to trigger our own errors to stop program execution (less common), we can use the `raise` keyword followed by the type of error (e.g. `ValueError`):
+If we find the need to trigger our own errors to stop program execution (less common), we can use the `raise` keyword followed by the [type of error](https://docs.python.org/3/library/exceptions.html) (e.g. `ValueError`):
 
 ```python
 options = ["rock", "paper", "scissors"]
