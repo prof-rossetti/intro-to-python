@@ -66,8 +66,29 @@ trace = go.Pie(labels=labels, values=values)
 plotly.offline.plot([trace], filename="basic_pie_chart.html", auto_open=True)
 ```
 
+### Charting Multiple Graph Objects
+
+
+```py
+
+# assuming df is some DataFrame with columns of "timestamp", "closing_price", and "trendline"...
+
+from plotly.graph_objects import Figure, Scatter
+
+closing_prices = Scatter(x=df["timestamp"], y=df["closing_price"], name='Closing Prices')
+    
+trendline = Scatter(x=df["timestamp"], y=df["trendline"], name='50 day Moving Average')
+
+fig = Figure(data=[closing_prices, trendline]) 
+fig.update_layout(title="My Chart Title")
+fig.show()
+```
+
 ![the resulting chart - a pie chart with four slices](https://user-images.githubusercontent.com/1328807/52388830-38380a80-2a5e-11e9-8e7b-6951e083a265.png)
 
-## Further Exploration
+## Plotly Express
 
 See also [the `plotly.express` package](https://plotly.com/python/plotly-express/), which allows you to construct graphs from pandas DataFrames.
+
+
+
