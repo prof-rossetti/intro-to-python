@@ -66,6 +66,8 @@ trace = go.Pie(labels=labels, values=values)
 plotly.offline.plot([trace], filename="basic_pie_chart.html", auto_open=True)
 ```
 
+![the resulting chart - a pie chart with four slices](https://user-images.githubusercontent.com/1328807/52388830-38380a80-2a5e-11e9-8e7b-6951e083a265.png)
+
 ### Charting Multiple Graph Objects
 
 
@@ -84,7 +86,7 @@ fig.update_layout(title="My Chart Title")
 fig.show()
 ```
 
-![the resulting chart - a pie chart with four slices](https://user-images.githubusercontent.com/1328807/52388830-38380a80-2a5e-11e9-8e7b-6951e083a265.png)
+<img width="705" alt="Screen Shot 2022-02-16 at 2 58 18 PM" src="https://user-images.githubusercontent.com/1328807/154346057-09fe84e6-423b-4f8a-93b8-a11111e3a75e.png">
 
 ## Plotly Express
 
