@@ -96,7 +96,7 @@ client = gspread.authorize(credentials)
 print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 ```
 
-Reading sheet values:
+Reading data from Google Sheets:
 
 ```py
 
@@ -127,7 +127,7 @@ for row in rows:
     print(row) #> <class 'dict'>
 ```
 
-Writing to Google Sheets:
+Writing data to Google Sheets:
 
 ```py
 #
