@@ -60,6 +60,10 @@ If you create your own, make sure it contains a sheet called "Products-2021" wit
 
 ## Usage
 
+### Authorization
+
+To interface with the Google Sheets API, we'll first use our credentials to authorize an API client object, which provides certain capabilities:
+
 ```py
 import os
 from dotenv import load_dotenv
@@ -90,6 +94,11 @@ print("CREDS:", type(credentials)) #> <class 'oauth2client.service_account.Servi
 
 client = gspread.authorize(credentials)
 print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
+```
+
+Reading sheet values:
+
+```py
 
 #
 # READ SHEET VALUES
@@ -101,18 +110,26 @@ print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 print("-----------------")
 print("READING DOCUMENT...")
 
+# access the document:
 doc = client.open_by_key(DOCUMENT_ID)
 print("DOC:", type(doc), doc.title) #> <class 'gspread.models.Spreadsheet'>
 
+# access a sheet within the document:
 sheet = doc.worksheet(SHEET_NAME)
 print("SHEET:", type(sheet), sheet.title)#> <class 'gspread.models.Worksheet'>
 
+# fetch all data from that sheet:
 rows = sheet.get_all_records()
 print("ROWS:", type(rows)) #> <class 'list'>
 
+# loop through and print each row, one at a time:
 for row in rows:
     print(row) #> <class 'dict'>
+```
 
+Writing to Google Sheets:
+
+```py
 #
 # WRITE VALUES TO SHEET
 #
@@ -140,8 +157,10 @@ new_values = list(new_row.values()) #> [13, 'Product 13', 'snacks', 4.99, '2019-
 # the sheet's insert_row() method wants us to pass the row number where this will be inserted (see docs):
 next_row_number = len(rows) + 2 # number of records, plus a header row, plus one
 
+# actually insert the data:
 response = sheet.insert_row(new_values, next_row_number)
 
+# see if it worked ok:
 print("RESPONSE:", type(response)) #> dict
 print(response) #> {'spreadsheetId': '____', 'updatedRange': "'Products-2021'!A9:E9", 'updatedRows': 1, 'updatedColumns': 5, 'updatedCells': 5}
 
