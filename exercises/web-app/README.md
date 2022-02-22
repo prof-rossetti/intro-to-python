@@ -16,7 +16,7 @@
   + [The `flask` Package](/notes/python/packages/flask.md)
   + [HTTP Requests and Responses](/notes/info-systems/networks.md#HyperText-Transfer-Protocol)
   + [Basic HTML - W3Schools](https://www.w3schools.com/html/html_basic.asp) 
-  + [HTML Lists - W3Schools](https://www.w3schools.com/html/html_lists.asp)!
+  + [HTML Lists - W3Schools](https://www.w3schools.com/html/html_lists.asp)
   + [HTML Forms - W3Schools](https://www.w3schools.com/html/html_forms.asp)
   + [HTML Forms - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Forms)
   + [Sending and Retrieving Form Data - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
