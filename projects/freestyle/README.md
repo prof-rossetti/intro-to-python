@@ -19,7 +19,7 @@ The software should transform information inputs into information outputs for so
 
 ### Interface Requirements
 
-The app should ideally have some sort of graphical user interface (GUI), whether it be a native desktop app (using packages like tkinter, PySimpleGUI, etc.), or a web-based interface (using a package like flask).
+The app should ideally have some sort of graphical user interface (GUI), whether it be a native desktop app (using packages like [`tkinter`](/notes/python/packages/tkinter.md), [`PySimpleGUI`](/notes/python/packages/pysimplegui.md), etc.), or a web-based interface (using a package like [`flask`](/notes/python/packages/flask.md)).
 
 ### Delivery Requirements
 
