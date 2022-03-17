@@ -19,7 +19,7 @@ The software should transform information inputs into information outputs for so
 
 ## Groups
 
-Students have the option of working by themselves, or in groups.
+Students have the option of working by themselves, or in groups. The professor will announce the range of valid group sizes for your specific class.
 
 To fairly evaluate groups of different sizes, projects may be ranked against others of the same group composition (e.g. solo projects vs other solo projects, two-person teams vs other two-person teams, etc.).
 
