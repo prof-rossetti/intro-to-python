@@ -29,6 +29,8 @@ You can start by sketching the DFDs on a whiteboard or piece of paper. Then idea
   + **Entities**, or people and other organizations within the system's scope, should be depicted as squares or rectangles near the outside edges of the diagram. These entities should be labeled as proper nouns (e.g. "User", "Admin", "Bank XYZ", "Data Provider ABC", etc.).
   + **Flows of Information** between the system and these entities should be depicted as arrows to denote the source and destination of the information flows. Each arrow should be labeled with a noun to describe the information that is flowing (e.g. "receipt", "payment info", "notification preferences", "monthly sales report", etc.).
 
+> NOTE: in lucidchart, search shapes for "Data Flow" to find the system shape.
+
 See the DFD below for an example:
 
 ![A "data flow diagram" depicting a system with inputs flowing in and outputs flowing out.](/img/notes/info-systems/example-data-flow-diagram.png)
