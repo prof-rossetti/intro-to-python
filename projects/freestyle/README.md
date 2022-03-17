@@ -17,6 +17,14 @@ The project's scope should be roughly equivalent to the previous "guided" projec
 
 The software should transform information inputs into information outputs for some practical purpose.
 
+### Interface Requirements
+
+The app should ideally have some sort of graphical user interface (GUI), whether it be a native desktop app (using packages like tkinter, PySimpleGUI, etc.), or a web-based interface (using a package like flask).
+
+### Delivery Requirements
+
+The app should ideally be user-facing (i.e. deployed to a production server, as applicable), or should ideally integrate with other user-facing services.
+
 ## Groups
 
 Students have the option of working by themselves, or in groups. The professor will announce the range of valid group sizes for your specific class.
