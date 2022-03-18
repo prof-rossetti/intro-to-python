@@ -34,7 +34,7 @@ To repeat the process (after changes have been merged):
 
 This is the process we will follow to add or revise the functionality of repos we don't own or have write access to:
 
-  1. Choose a repo owned by someone else, that you don't have direct write access to (i.e. the "upstream" repo). For this exercise we'll use this [example open source repo](https://github.com/prof-rossetti/example-open-source-repo-2021).
+  1. Choose a repo owned by someone else, that you don't have direct write access to (i.e. the "upstream" repo). For example you could request access to this [example open source repo](https://github.com/prof-rossetti/example-open-source-repo-2021).
   2. Fork the upstream repo to create a copy under your own control (i.e. the "origin" repo).
   3. Clone the origin repo locally. Ensure your local main branch is up-to-date with the upstream and origin main branches.
   4. Checkout a new local feature branch called something like "new-feature-123".
