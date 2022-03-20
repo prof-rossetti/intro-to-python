@@ -32,21 +32,15 @@ cd codebase-cleanup-2022/
 code .
 ```
 
+Add an "app" directory with three files: "game.py", "shopping.py" and "robo.py", respectively, with contents from [this starter code](starter/).
+
 Add a "requirements.txt" file to the repo's root directory, with contents [like this](starter/requirements.txt). When new application code requires installation of new packages, we will update the file to include the names of those required packages. For now, save the file, make a commit, and push the changes up to the remote repo.
 
 
 
 ## Challenges
 
-For each of the challenges below:
-  + check out a new branch named something related to the challenge (e.g. "game-updates")
-  + add a new file corresponding to the challenge code, and make a commit.
-  + proceed to
-
-
 ### Game Improvements
-
-Initial Implementation: [see code here](starter/game.py)
 
 User Feedback: "Sometimes it gets the winner wrong!"
 
