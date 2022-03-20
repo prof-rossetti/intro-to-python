@@ -1,4 +1,4 @@
-# "Codebase Cleanup" Exercise
+# "Codebase Cleanup" Exercise (2021)
 
 ## Learning Objectives
 
@@ -10,43 +10,19 @@
 
 ## Instructions
 
+The [Codebase Cleanup Repo](https://github.com/prof-rossetti/codebase-cleanup-2021) contains some abbreviated example code related to some projects we have worked on. But there are few opportunities for us to improve the quality of this code.
 
-First, follow the "Repository Setup" instructions below.
+First, fork the repo under your own control. Then clone / download your forked repo (if using GitHub Desktoop, choose "for my own purposes"). Then integrate your forked repo with the [Code Climate](/notes/devtools/code-climate.md) platform, and the [Travis CI](/notes/devtools/travis-ci.md) platform.
 
-Then, use a Pull Request workflow to complete each of the "Challenges" below. Optionally invite a friend to collaborate on your repo, and perform a code review on at least one of your Pull Requests.
+Use a Pull Request workflow to complete each of the challenges below. Optionally invite a friend to collaborate on your repo, and perform a code review on at least one of your Pull Requests.
 
-## Repository Setup
+> NOTE: for Pull Requests, create them against your fork ("origin" repo), NOT the professor's "upstream" repo.
 
-Create a new repo called something like "codebase-cleanup-2022". During this process, add a "README.md" file and a Python-flavored ".gitignore file.
+## Instructions
 
-Configure the repo to integrate with the "Python application" GitHub Action. This is for "Continuous Integration" purposes, which we will talk about later. This step should add a ".github/workflows/python-app.yml" file [like this one](starter/python-app.yml) to your repo.
-
-Integrate your repo with the [Code Climate](/notes/devtools/code-climate.md) platform, which will provide automated quality and complexity assessments. Login to Code Climate (Quality Service) via your GitHub account. Visit the Code Climate dashboard, and click "Add a repository" and choose the repo you just created. Through the repo's settings on Code Climate, enable "Summary Comments" and/or "Inline Issue Comments".
-
-Clone the repo to download it onto your computer. Navigate there from the command line, and open in a text editor of choice. For example:
-
-```sh
-cd ~/Desktop
-git clone git@github.com:YOUR_USERNAME/codebase-cleanup-2022.git
-cd codebase-cleanup-2022/
-code .
-```
-
-Add a "requirements.txt" file to the repo's root directory, with contents [like this](starter/requirements.txt). When new application code requires installation of new packages, we will update the file to include the names of those required packages. For now, save the file, make a commit, and push the changes up to the remote repo.
-
-
-
-## Challenges
-
-For each of the challenges below:
-  + check out a new branch named something related to the challenge (e.g. "game-updates")
-  + add a new file corresponding to the challenge code, and make a commit.
-  + proceed to
-
+For Basic Requirements, do the "Game" and "Shopping" challenges. For further exploration, also do the "Robo" challenges.
 
 ### Game Improvements
-
-Initial Implementation: [see code here](starter/game.py)
 
 User Feedback: "Sometimes it gets the winner wrong!"
 
@@ -67,7 +43,7 @@ Developer Maintenance Steps:
   3. Test the program's price-formatting logic produces desired results. Move the logic into a stand-alone function called `format_usd()` that can be invoked and tested in isolation, separate from any user inputs.
   4. Test the program's ability to lookup matching products. Move the product lookup logic into a stand-alone function called `find_product()` that can be invoked and tested in isolation, separate from any user inputs. Use the mock products CSV file data to perform this test.
 
-### Robo Improvements
+### Robo Improvements (Further Exploration)
 
 User Feedback: "The chart shows prices in reverse!"
 
@@ -82,9 +58,9 @@ Developer Maintenance Steps:
 
 > FYI: our goal is to minimize the number of web requests that need to be made when testing. We can use mock data and/or pytest fixtures for this.
 
-
-
 ## Evaluation
+
+When you submit this project, you'll submit links to your repository on GitHub, Code Climate, and Travis CI. And evaluators will look at all these services when grading your project.
 
 The project will be evaluated according to the instructions above, as summarized in the table below:
 
@@ -98,4 +74,4 @@ Continuous Integration | Tests have been run and passed on a CI server at least 
 Code Quality | The Code Climate service has been integrated into the Pull Request workflow to provide automated code quality checks. | 7.5%
 Peer Reviews | A peer has provided an unofficial comment or official review as part of the Pull Request workflow | 0% (OPTIONAL)
 
-> NOTE: for this project, evaluators will be reading your code and inspecting your repo across the various platforms (Github, Code Climate, etc.), but not necessarily running or testing your application code directly.
+> NOTE: for this project, evaluators will be reading your code and inspecting your repo across the various platforms (Github, Code Climate Travis CI), but not necessarily running or testing your application code directly.
