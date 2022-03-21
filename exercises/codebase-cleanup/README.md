@@ -88,6 +88,7 @@ Optional, Advanced Testing Considerations:
 
   6. Test the program's ability to calculate the average product price. Move the average price calculation logic into a stand-alone function called something like `calculate_avg_price()` that can be invoked and tested in isolation. The function should accept any list or DataFrame of products as its input parameter, and should return the average price as a float (unformatted). Use mock data or a mock CSV file to perform this test.
 
+
 ### Financial Services Improvements
 
 File(s): "unemployment.py", "stocks.py", "crypto.py"
@@ -97,7 +98,7 @@ User Feedback: "The unemployment chart is messed up!"
 Developer Maintenance Steps:
 
   1. Refactor duplicate code related to the price-formatting logic (across all files in the repo, including the "groceries.py" file). Move the common formatter function to a separate file called something like "utils.py" or "decorators.py" or "formatters.py". Then import this shared function into all the files that need it. NOTE: you may need to add the infamous "init" file to the "app" directory, and you may need to use the infamous "main" conditional in any files being imported from.
-  2. Move any duplicate code into a separate module called something like "alphavantage_service.py". Include data fetching functions that can be tested in isolation, and imported into other files that need the data.
+  2. Move any duplicate or related financial data fetching code into a separate module called something like "alphavantage_service.py". Include data fetching functions that can be tested in isolation, and imported into other files that need the data.
 
 Optional, Advanced Testing Considerations:
 
