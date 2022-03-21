@@ -8,6 +8,12 @@
   + Write and execute automated tests to verify code is functioning as expected.
   + Incorporate automated checks (like running tests on a Continuous Integration server), to determine whether code updates are ready to be merged / adopted.
 
+## Prerequisites
+ 
+  + Sign up for the Code Climate (Quality) service, and login with your GitHub account, and "install" Code Climate to access your GitHub repos.
+  + Obtain a premium AlphaVantage API key (from the professor).
+  + Sign up for a Sendgrid account, verify single sender address, and obtain a SendGrid API key.
+
 ## Instructions
 
 
@@ -82,7 +88,7 @@ Optional, Advanced Testing Considerations:
 
   6. Test the program's ability to calculate the average product price. Move the average price calculation logic into a stand-alone function called something like `calculate_avg_price()` that can be invoked and tested in isolation. The function should accept any list or DataFrame of products as its input parameter, and should return the average price as a float (unformatted). Use mock data or a mock CSV file to perform this test.
 
-### Unemployment Report Improvements
+### Financial Services Improvements
 
 File(s): "unemployment.py", "stocks.py", "crypto.py"
 
