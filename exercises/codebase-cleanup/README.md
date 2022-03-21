@@ -21,7 +21,7 @@ Create a new repo called something like "codebase-cleanup-2022". During this pro
 
 Configure the repo to integrate with the "Python application" GitHub Action. This is for "Continuous Integration" purposes, which we will talk about later. This step should add a ".github/workflows/python-app.yml" file [like this one](starter/python-app.yml) to your repo.
 
-Integrate your repo with the [Code Climate](/notes/devtools/code-climate.md) platform, which will provide automated quality and complexity assessments. Login to Code Climate (Quality Service) via your GitHub account. Visit the Code Climate dashboard, and click "Add a repository" and choose the repo you just created. Through the repo's settings on Code Climate, enable "Summary Comments" and/or "Inline Issue Comments". Optionally explore the python-related plugins, or add a predefined "" file [like this one](starter/.codeclimate.yml) to your repo.
+Integrate your repo with the [Code Climate](/notes/devtools/code-climate.md) platform, which will provide automated quality and complexity assessments. Login to Code Climate (Quality Service) via your GitHub account. Visit the Code Climate dashboard, and click "Add a repository" and choose the repo you just created. Through the repo's settings on Code Climate, enable "Summary Comments" and/or "Inline Issue Comments". Optionally explore the python-related plugins, or add a predefined "codeclimate.yml" file [like this one](starter/.codeclimate.yml) to your repo.
 
 Clone the repo to download it onto your computer. Navigate there from the command line, and open in a text editor of choice. For example:
 
