@@ -2,13 +2,17 @@
 
 
 
+mock_rate_limit_response = {
+    "Note": "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."
+}
+
+
+#
+# TIME SERIES DAILY ENDPOINT
+#
 
 mock_error_response = {
     "Error Message": "Invalid API call. Please retry or visit the documentation (https://www.alphavantage.co/documentation/) for TIME_SERIES_DAILY."
-}
-
-mock_rate_limit_response = {
-    "Note": "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."
 }
 
 mock_msft_response = {
@@ -103,4 +107,77 @@ mock_amzn_response = {
             "5. volume": "3012489"
         }
     }
+}
+
+
+#
+# UNEMPLOYMENT ENDPOINT
+#
+
+{
+    "name": "Unemployment Rate",
+    "interval": "monthly",
+    "unit": "percent",
+    "data": [
+        {
+            "date": "2022-02-01",
+            "value": "3.8"
+        },
+        {
+            "date": "2022-01-01",
+            "value": "4.0"
+        },
+        {
+            "date": "2021-12-01",
+            "value": "3.9"
+        },
+        {
+            "date": "2021-11-01",
+            "value": "4.2"
+        },
+        {
+            "date": "2021-10-01",
+            "value": "4.6"
+        },
+        {
+            "date": "2021-09-01",
+            "value": "4.7"
+        },
+        {
+            "date": "2021-08-01",
+            "value": "5.2"
+        },
+        {
+            "date": "2021-07-01",
+            "value": "5.4"
+        },
+        {
+            "date": "2021-06-01",
+            "value": "5.9"
+        },
+        {
+            "date": "2021-05-01",
+            "value": "5.8"
+        },
+        {
+            "date": "2021-04-01",
+            "value": "6.0"
+        },
+        {
+            "date": "2021-03-01",
+            "value": "6.0"
+        },
+        {
+            "date": "2021-02-01",
+            "value": "6.2"
+        },
+        {
+            "date": "2021-01-01",
+            "value": "6.4"
+        },
+        {
+            "date": "2020-12-01",
+            "value": "6.7"
+        }
+    ]
 }
