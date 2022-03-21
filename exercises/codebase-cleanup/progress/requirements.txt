@@ -1,0 +1,21 @@
+# this is the requirements.txt file...
+
+# environment variable management via ".env" file approach:
+python-dotenv
+
+# web requests / fetching data:
+requests
+
+# data processing:
+pandas
+
+# email:
+sendgrid==6.6.0 # this version may be older than current docs
+
+# dataviz:
+plotly
+kaleido # for chart exports
+
+# quality control / code mgmt:
+pytest
+autopep8

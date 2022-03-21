@@ -1,0 +1,6 @@
+id,name,aisle,department,price
+1,Product 1,Aisle A,snacks,3.5
+2,Product 2,Aisle B,pantry,4.99
+3,Product 3,Aisle C,beverages,2.49
+8,Product 8,Aisle C,snacks,10
+201,Product 201,Aisle B,beverages,99.99
