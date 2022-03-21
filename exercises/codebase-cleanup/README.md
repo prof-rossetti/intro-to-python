@@ -80,7 +80,7 @@ Developer Maintenance Steps:
 
 Optional, Advanced Testing Considerations:
 
-  6. Test the program's ability to calculate the average product price. Move the average price calculation logic into a stand-alone function called something like `calculate_avg_price()` that can be invoked and tested in isolation. The function should accept any list or DataFrame of products as its input parameter, and should return the average price as a float(unformatted). Use the mock products CSV file data to perform this test.
+  6. Test the program's ability to calculate the average product price. Move the average price calculation logic into a stand-alone function called something like `calculate_avg_price()` that can be invoked and tested in isolation. The function should accept any list or DataFrame of products as its input parameter, and should return the average price as a float (unformatted). Use mock data or a mock CSV file to perform this test.
 
 ### Unemployment Report Improvements
 
@@ -121,7 +121,7 @@ Groceries Improvements | Simplify CSV filepaths. | 5%
 Groceries Improvements | Reduce complexity by using a single loop instead of two. | 5%
 Groceries Improvements | Refactor USD-formatting logic into a stand-alone function, document it, and test it to ensure it produces desired results. | 10%
 Financial Service Improvements | Refactor USD-formatting function into a helper "module" file, and import the function across whichever files need it. | 5%
-Financial Service Improvements  | Refactor financial data-fetching code into a helper "module" file, and import the respective functions across whichever files need it. | 5%
+Financial Service Improvements  | Refactor financial data-fetching code into a helper "module" file, and import the respective functions across whichever files need them. | 5%
 
 
 > NOTE: Tests should directly invoke functions from the source code to verify the program behaves as expected.
