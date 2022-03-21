@@ -48,7 +48,8 @@ By the end of the exercise, ensure your README file has all necessary instructio
   + Setup a virtual environment
   + Install all packages (in one step via the "requirements.txt" file)
   + Obtain any API Keys and configure Environment Variables using a ".env" file approach
-
+  + Run all python files of interest
+  + Run tests
 
 ### Game Improvements
 
