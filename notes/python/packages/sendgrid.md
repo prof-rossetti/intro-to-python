@@ -47,6 +47,8 @@ Use a [".env" file approach](/notes/python/packages/dotenv.md) to manage these e
 
 ## Usage
 
+### Sending Emails
+
 Send yourself an email:
 
 ```py
@@ -237,3 +239,72 @@ except Exception as err:
 ```
 
 ![](/img/notes/python/packages/sendgrid/receipt-screenshot.png)
+
+
+### Attachments
+
+References:
+  + https://www.twilio.com/blog/sending-email-attachments-with-twilio-sendgrid-python
+  + https://stackoverflow.com/questions/69419892/how-to-send-email-with-dataframe-as-attachment-using-sendgrid-api-in-python
+
+Send email with attachment(s):
+
+```py
+import base64
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType, Disposition, ContentId
+
+load_dotenv()
+
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
+SENDER_ADDRESS = os.getenv("SENDER_ADDRESS")
+
+# PREPARE MESSAGE
+
+subject="Unemployment"
+html="<p>This is your Unemployment Report! See attached files.</p>"
+
+client = SendGridAPIClient(SENDGRID_API_KEY)
+message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS, subject=subject, html_content=html)
+
+# encoding CSV files:
+csv_filepath = "my_data.csv" # path / name of existing file
+encoded_csv = base64.b64encode(df.to_csv(index=False).encode()).decode()
+
+# attaching the file:
+message.attachment = Attachment(
+    file_content = FileContent(encoded_csv),
+    file_type = FileType('text/csv'),
+    file_name = FileName('unemployment_report.csv'), # FileName('JuicyLiftWorkout.pdf')
+    disposition = Disposition('attachment'),
+    content_id = ContentId('Attachment 1')
+)
+
+# encoding binary files, like PDFs or images:
+img_filepath = "my_image.png" # path / name of existing file
+with open(img_filepath, 'rb') as f:
+    data = f.read()
+    f.close()
+encoded_img = base64.b64encode(data).decode()
+
+# attach the file:
+message.attachment = Attachment(
+    file_content = FileContent(encoded_img),
+    file_type = FileType('image/png'),
+    file_name = FileName('unemployment_chart.png'),
+    disposition = Disposition('attachment'),
+    content_id = ContentId('Attachment 2')
+)
+
+
+# SEND MESSAGE
+
+response = client.send(message)
+print(response.status_code)
+```
+
+> NOTE: common file attachment types include:
+  + `'text/csv'`
+  + `'image/png'`
+  + `'image/jpeg'`
+  + `'application/pdf'`

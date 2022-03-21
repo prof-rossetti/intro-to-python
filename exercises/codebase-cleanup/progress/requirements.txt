@@ -1,24 +1,20 @@
 # this is the requirements.txt file...
 
 # environment variable management via ".env" file approach:
-#python-dotenv
+python-dotenv
 
 # web requests / fetching data:
-#requests
+requests
 
 # data processing:
-#pandas
+pandas
 
 # email:
-#sendgrid==6.6.0 # this version may be older than current docs
+sendgrid==6.6.0 # this version may be older than current docs
 
 # dataviz:
-#plotly
-#kaleido # for chart exports
-
-# nlp
-#spacy
-#detoxify
+plotly
+kaleido # for chart exports
 
 # quality control / code mgmt:
 pytest
