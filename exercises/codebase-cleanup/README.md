@@ -110,18 +110,18 @@ Category | Description | Weight
 Pull Request Workflow | At least two or three Pull Requests used during development. | 10%
 Continuous Integration | Tests have been run and passed on a CI server at least once, ideally as part of the Pull Request workflow (using GitHub Actions). | 10%
 Code Quality | The Code Climate service has been integrated into the Pull Request workflow to provide automated code quality checks. | 10%
-Peer Reviews (Optional) | A peer has provided an unofficial comment or official review as part of the Pull Request workflow | 0%
+Peer Reviews (Optional) | A peer has provided an unofficial comment or official review as part of the Pull Request workflow. | 0%
 Repo Improvements | The "README.md" file contains comprehensive setup and usage instructions (see guidance above). | 10%
 Repo Improvements | The "requirements.txt" file facilitates package installations required to run any of the files. | 10%
 Game Improvements | Simplify valid options list. | 5%
-Game Improvements | Reduce complexity of winner validation logic. | 5%
-Game Improvements | Refactor winner validation logic into a stand-alone function and test it to ensure it produces desired results. | 5%
-Game Improvements | Document winner validation function using a docstring. | 5%
+Game Improvements | Reduce complexity of winner determination logic. | 5%
+Game Improvements | Refactor winner determination logic into a stand-alone function and test it to ensure it produces desired results. | 5%
+Game Improvements | Document winner determination function using a docstring. | 5%
 Groceries Improvements | Simplify CSV filepaths. | 5%
 Groceries Improvements | Reduce complexity by using a single loop instead of two. | 5%
 Groceries Improvements | Refactor USD-formatting logic into a stand-alone function, document it, and test it to ensure it produces desired results. | 10%
 Financial Service Improvements | Refactor USD-formatting function into a helper "module" file, and import the function across whichever files need it. | 5%
-Financial Service Improvements  | Refactor financial data-fetching code into a helper "module" file, and import the respective functions across whichever files need it | 5%
+Financial Service Improvements  | Refactor financial data-fetching code into a helper "module" file, and import the respective functions across whichever files need it. | 5%
 
 
 > NOTE: Tests should directly invoke functions from the source code to verify the program behaves as expected.
