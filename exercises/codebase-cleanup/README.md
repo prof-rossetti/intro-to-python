@@ -43,7 +43,7 @@ As necessary, if you were starting from scratch: ensure your repo contains an "a
 
 ## Challenges
 
-Use a Pull Request workflow to complete each of the "Challenges" below. 
+Use a Pull Request workflow to complete the coding-based challenges below (i.e. "Game Improvements", "Groceries Inventory Improvements", and "Financial Services Improvements").
 
 Optionally invite a friend to collaborate on your repo, and perform a code review on at least one of your Pull Requests.
 
