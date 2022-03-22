@@ -10,9 +10,9 @@
 
 ## Prerequisites
  
-  + Sign up for the Code Climate (Quality) service, and login with your GitHub account, and "install" Code Climate to access your GitHub repos.
-  + Obtain a premium AlphaVantage API key (from the professor).
-  + Sign up for a Sendgrid account, verify single sender address, and obtain a SendGrid API key.
+  + Sign up for the [Code Climate (Quality) service](https://codeclimate.com/quality/), and login with your GitHub account, and "install" Code Climate to access your GitHub repos.
+  + Obtain a premium [AlphaVantage API key](https://www.alphavantage.co/) (from the professor).
+  + Sign up for a [Sendgrid](https://sendgrid.com/) account, verify single sender address, and obtain a SendGrid API key.
 
 ## Instructions
 
