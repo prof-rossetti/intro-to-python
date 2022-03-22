@@ -49,8 +49,11 @@ Optionally invite a friend to collaborate on your repo, and perform a code revie
 
 ### Repo Updates and Improvements
 
+**"requirements.txt" file updates:**
 
-As you run each file to work on the challenges below, you'll notice you might need to install packages to avoid "ModuleNotFound" errors. To facilitate package installations, add a "requirements.txt" file to the repo's root directory. When new application code requires installation of new packages, update the file to include the names of those required packages. For now, save the empty file, make a commit, and push the changes up to the remote repo.
+As you run various Python files when working on the coding-based challenges below, you'll notice you might need to install packages to avoid "ModuleNotFound" errors. To facilitate package installations, ensure you're using a virtual environment, and that there is a "requirements.txt" file in the repo's root directory. When new application code requires installation of new packages, update the "requirements.txt" file to include the names of those required packages. If you have been starting from scratch: create an empty "requirements.txt" file, make a commit, and push the changes up to the remote repo (main branch).
+
+**"README.md" file updates:**
 
 By the end of the exercise, ensure your README file has all necessary instructions for how someone can:
   + Setup a virtual environment
