@@ -30,6 +30,12 @@ cd path/to/my-repo/
 pipenv install pytest --dev # NOTE: the --dev flag denotes this package will be used in development only
 ```
 
+## Configuration
+
+It helps to add a file called "conftest.py" to the root directory of your repository. This helps pytest find the application code and facilitates proper imports.
+
+Another use for the "conftest.py" file is to store some code that needs to be shared across multiple test files. If you do this, your test files could access the code using an import statement like this: `from conftest import my_thing`.
+
 ## Usage
 
 The Pytest package is generally used as a command-line utility for running pre-defined files of "test" code. Follow the ["Testing 1,2,3" Exercise](/exercises/testing-123/README.md) to get acclimated with Pytest.
@@ -59,6 +65,8 @@ pytest test/my_test.py -k 'test_my_thing'
 The Pytest package can be imported to facilitate assertions that errors will be raised:
 
 ```py
+# this is an example test file...
+
 import pytest
 
 def test_divide_by_zero():
@@ -69,10 +77,13 @@ def test_divide_by_zero():
 
 ### Fixtures
 
-The Pytest package can be imported to facilitate the construction of test fixtures (for example, to be placed in the "conftest.py" file):
+If there is a time-intensive or memory-intensive operation used by multiple tests, we can use a "fixture" to perform that operation just once. This is a big time saver.
+
+We'll generally place the fixtures in the same file as the tests that need them, but if multiple test files need to share the same fixture, we'll move it to the "conftest.py" file:
 
 ```py
-# this is the "conftest.py" file...
+# this is the "conftest.py" file (if fixtures need to be shared across multiple test files), 
+# ... otherwise we can put the fixtures in the same test file where they are being used 
 
 import pytest
 
