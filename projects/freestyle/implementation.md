@@ -55,7 +55,7 @@ As you think about ways to test your application, consider asking yourself quest
   + If the application processes data from the Internet: Is there a way to test the application's functionality without making any additional / unnecessary network requests? 
   + If the application processes data from a CSV file or database: Is there a way to test the application's functionality without affecting the development or production environment datastores? 
 
-Ideally also integrate your GitHub repository with a Continuous Integration service like Travis CI to automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository.
+Ideally also integrate your GitHub repository with a Continuous Integration service like ~~Travis CI~~ GitHub Actions to automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository.
 
 ### Dev Process Requirements
 
@@ -81,7 +81,7 @@ Documentation | Repo contains a comprehensive README file. | 20%
 Licensing | Repo contains an appropriate LICENSE file. | 5%
 Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
 Quality | Code is simplified to remove or minimize code duplication. Ideally integrates with the Code Climate service for automated PR comments/checks. | 10%
-Testing | Contains relevant automated tests. Ideally integrates with the Travis CI service for automated PR checks. | 10%
+Testing | Contains relevant automated tests. Ideally integrates with the a CI service like GitHub Actions for automated PR checks. | 10%
 Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from ideally all team members. | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
