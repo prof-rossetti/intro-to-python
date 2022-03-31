@@ -90,3 +90,10 @@ def test_fetch_data():
 
         
 ```
+
+## Additional Examples
+
+See also [this example](/exercises/codebase-cleanup/progress/tests/unemployment_test_2.py) of using `requests_mock` to mock some employment data requests. Since the unemployment data returned from an API will actually change over time, this is perhaps a more applicable use case than the simple example above (where the data doesn't change).
+
+
+
