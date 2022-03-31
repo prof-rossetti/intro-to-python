@@ -103,7 +103,7 @@ User Feedback: "The unemployment chart is messed up!"
 Developer Maintenance Steps:
 
   1. Refactor duplicate code related to the price-formatting logic (across all files in the repo, including the "groceries.py" file). Move the common formatter function to a separate file called something like "utils.py" or "decorators.py" or "formatters.py". Then import this shared function into all the files that need it. NOTE: you may need to add the infamous "init" file to the "app" directory, and you may need to use the infamous "main" conditional in any files being imported from.
-  2. Move any duplicate or related financial data fetching code into a separate module called something like "alphavantage_service.py". Include data fetching functions that can be tested in isolation, and imported into other files that need the data.
+  2. Move any duplicate or related financial data fetching code into a separate module called something like "alphavantage_service.py". Include data fetching functions that can be tested in isolation, and imported into other files that need the data. HINT: it might end up looking something [like this](progress/app/alphavantage_service.py).
 
 Optional, Advanced Testing Considerations:
 
@@ -111,6 +111,11 @@ Optional, Advanced Testing Considerations:
   2. In "stocks.py" and/or "crypto.py", test the program's ability to request data for a given stock or crypto symbol, and that the resulting response data is structured in the expected format. HINT: since the response data will be dynamic, we can focus on some consistent parts of the response data, like ensuring certain keys like "Meta Data" and "Time Series (Daily)" exist, and checking the symbol we requested is contained in the "Meta Data". Optionally can mock the response to return some example data.
   3. Write some tests that can be run without making any network requests (using mock data), and/or minimize the number of requests that get made (using pytest fixtures).
 
+> HINT: here are some examples of working through some of these advanced testing considerations, in different ways, for different purposes:
+>  + [testing the stocks report (2021, functional approach, with fixtures)](https://github.com/prof-rossetti/codebase-cleanup-2021/pull/5/files)
+>  + [testing the stocks report (2021, object-oriented approach, with fixtures)](https://github.com/prof-rossetti/codebase-cleanup-2021/pull/6/files)
+>  + [testing the unemployment report (2022, functional approach, end-to-end integration test)](progress/tests/unemployment_test_1.py)
+>  + [testing the unemployment report (2022, functional approach, using mock data)](progress/tests/unemployment_test_2.py)
 
 
 ## Evaluation
