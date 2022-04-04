@@ -10,7 +10,7 @@
 
 ### Setup
 
-Fork the professor's [Daily Briefings repo](https://github.com/prof-rossetti/daily-briefings-py), then clone / download your copy onto your local computer.
+Make a copy of the professor's [Daily Briefings repo template](https://github.com/prof-rossetti/daily-briefings-py), then clone / download your copy onto your local computer.
 
 Follow the README instructions to setup the virtual environment, install package dependencies, and configure environment variables.
 
