@@ -45,7 +45,11 @@ Now follow these sequential "checkpoints" for a guided walk-through of how to cr
   2. [Routing](checkpoints/2-routing.md)
   3. [Rendering HTML Pages](checkpoints/3-render-template.md)
   4. [Web Forms (and Handling POST Requests)](checkpoints/4-web-forms.md)
-  5. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
+
+Stretch goals / further exploration:
+
+  6. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
+  7. Google Login - see this [template repo](https://github.com/prof-rossetti/flask-firebase-template-2022) and feel free to use it for your projects!!!
 
 FYI: we'll be running the application using the following Flask command (not a Python command):
 
