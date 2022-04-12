@@ -38,7 +38,7 @@ from app.weather_service import get_hourly_forecasts
 
 weather_routes = Blueprint("weather_routes", __name__)
 
-@weather_routes.route("/weather/forecast.json")
+@weather_routes.route("/api/weather/forecast.json")
 def weather_forecast_api():
     print("WEATHER FORECAST (API)...")
     print("URL PARAMS:", dict(request.args))
