@@ -61,7 +61,7 @@ from app.weather_service import get_hourly_forecasts
 
 weather_routes = Blueprint("weather_routes", __name__)
 
-@weather_routes.route("/weather/forecast.json")
+@weather_routes.route("/api/weather/forecast.json")
 def weather_forecast_api():
     print("WEATHER FORECAST (API)...")
     print("URL PARAMS:", dict(request.args))
@@ -101,9 +101,9 @@ Finally, visit the following urls in the browser:
   + http://localhost:5000/api/books.json
   + http://localhost:5000/api/books/100.json
   + http://localhost:5000/api/books/OOPS.json
-  + http://localhost:5000/weather/forecast.json
-  + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=10012
-  + http://localhost:5000/weather/forecast.json?country_code=US&zip_code=OOPS
+  + http://localhost:5000/api/weather/forecast.json
+  + http://localhost:5000/api/weather/forecast.json?country_code=US&zip_code=10012
+  + http://localhost:5000/api/weather/forecast.json?country_code=US&zip_code=OOPS
 
 Review the code that handles these "book" routes. Notice how we are using the `jsonify` method from Flask to convert a Python list or dictionary to a JSON response.
 
