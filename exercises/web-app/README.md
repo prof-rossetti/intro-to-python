@@ -48,8 +48,8 @@ Now follow these sequential "checkpoints" for a guided walk-through of how to cr
 
 Stretch goals / further exploration:
 
-  6. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
-  7. Google Login - see this [template repo](https://github.com/prof-rossetti/flask-firebase-template-2022) and feel free to use it for your projects!!!
+  5. [Twitter Bootstrap Styling (and Flash Messaging)](checkpoints/5-bootstrap-layout.md)
+  6. Google Login - see this [template repo](https://github.com/prof-rossetti/flask-firebase-template-2022) and feel free to use it for your projects!!!
 
 FYI: we'll be running the application using the following Flask command (not a Python command):
 
