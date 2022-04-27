@@ -128,9 +128,9 @@ def test_my_calculations(parsed_response):
 
 ### Skipping Tests on CI
 
-If your tests make real life network requests, we'll want to prevent that from happening on the CI server. Partially because we'll also want to avoid needing to configure any secret credentials on the CI server. Also because it keeps our test suite fast. 
+If your tests make real life network requests, we'll sometimes want to prevent that from happening on the CI server. Partially because we'll also want to avoid needing to configure any secret credentials on the CI server. Also because it keeps our test suite fast. 
 
-To skip any test function, mark it to be skipped conditionally, if the `CI` environment variable is true. This environment variable is set by default on some CI servers, or you could configure your CI server to run tests with `CI=true pytest` instead of just `pytest` (to pass the environment variable that signals tests are being run on CI):
+To skip any test function, mark it to be skipped conditionally, if the `CI` environment variable is true. This environment variable is set by default on some CI servers, or you could configure your CI server to run tests with `CI=true pytest` instead of just `pytest` (see note below):
 
 ```py
 # this is an example test file...
@@ -146,3 +146,5 @@ def test_fetch_data():
     assert isinstance(data, list) # for example
 
 ```
+
+> NOTE: if using GitHub actions, you may need to update the "python.yml" GitHub Actions config file so the last line says `CI="true" pytest` instead of just `pytest`. Remember to save the file and make a commit before re-pushing your code.
