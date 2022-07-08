@@ -6,7 +6,7 @@ In this unit, we'll gain familiarity with the ecosystem of Python development to
 
 ## Discussions and Notes
 
-  + [Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) / [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+  + [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
   + Editing text:
     + [VS Code](/notes/devtools/vs-code.md)
   + Managing Virtual Environments:

@@ -2,7 +2,7 @@
 
 This document describes instructions and best practices for contributing to this repository. If you are a student unfamiliar with Git and GitHub, please consult the [official Git guides](https://guides.github.com/), the professor's Git notes, or ask an instructor for assistance.
 
-> NOTE: Most files in this repository are written in a syntax called Markdown. For reference, see this [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+> NOTE: Most files in this repository are written in a syntax called Markdown. For reference, see this [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 
 ## Step 1: Fork the Repository
 
@@ -12,7 +12,7 @@ Next, use the command-line or GitHub Desktop to "clone", or download, your fork 
 
 ```sh
 # this is the HTTPS address, but alternatively you can use the SSH address
-git clone https://github.com/YOUR_GITHUB_USERNAME/intro-to-python.git 
+git clone https://github.com/YOUR_GITHUB_USERNAME/intro-to-python.git
 ```
 
 After cloning it, navigate to the local repo from the command-line:
@@ -36,7 +36,7 @@ git remote -v
 If you cloned via GitHub Desktop, the remote address called "upstream" should have already been established as well (see output of the `git remote -v` command below). Otherwise, you may need to need to first configure the "upstream" remote address manually:
 
 ```sh
-git remote add upstream https://github.com/prof-rossetti/intro-to-python.git 
+git remote add upstream https://github.com/prof-rossetti/intro-to-python.git
 ```
 
 When you see associations with both remote addresses, you are ready to move on:

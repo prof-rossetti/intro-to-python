@@ -8,9 +8,9 @@ In this exercise, we'll practice using the Google Colab platform for the first t
 
 ## Prerequisites
 
-This exercise assumes you have already signed up for a GitHub account. 
+This exercise assumes you have already signed up for a GitHub account.
 
-You're also encouraged to review and reference this [Markdown Guide](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+You're also encouraged to review and reference this [Markdown Guide](https://www.markdownguide.org/).
 
 For more info about Colab, see:
   + https://colab.research.google.com/notebooks/intro.ipynb
