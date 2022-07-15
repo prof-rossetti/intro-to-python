@@ -189,7 +189,10 @@ for letter in ["a", "b", "c", "d"]:
 
 > TIP: If it helps, you can vocalize this like "for each item in the list of items, do something with that item"
 
-A common pattern is to loop through one list to populate the contents of another:
+
+### Mapping
+
+A common pattern is to loop through one list to populate the contents of another (for example with transformed versions of the original values):
 
 ```python
 arr = [1, 2, 3, 4]
@@ -201,8 +204,6 @@ for i in arr:
 arr #> [1, 2, 3, 4]
 arr2 #> [100, 200, 300, 400]
 ```
-
-### Mapping
 
 Lists can be looped "in-place" using Python's built-in `map()` function. The `map()` function takes two parameters. The first parameter is the name of a pre-defined function to perform on each item in the list. The function should accept a single parameter representing a single list item. The second parameter is the actual list to be operated on:
 
@@ -260,9 +261,25 @@ teams = [
 
 ### Filtering
 
-Reference: https://docs.python.org/3/library/functions.html#filter.
 
-Use the `filter()` function to select a subset of items from a list - only those items matching a given condition. The filter function accepts the same parameters as the `map()` fuction:
+We can perform a filtering operation by simply introducing some conditional logic to our mapping technique, essentially only collecting the value if it meets some logical condition:
+
+```python
+arr = [1, 2, 3, 4]
+arr2 = []
+
+for i in arr:
+  if i > 2:
+    arr2.append(i) # collect the original value, transformation not necessary
+
+arr #> [1, 2, 3, 4]
+arr2 #> [3, 4]
+```
+
+
+
+
+Lists can be filtered in place using the [`filter()` function](https://docs.python.org/3/library/functions.html#filter) to select a subset of items from a list - only those items matching a given condition. The filter function accepts the same parameters as the `map()` fuction:
 
 ```python
 arr = [1,2,4,8,16]
