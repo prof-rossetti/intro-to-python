@@ -27,7 +27,7 @@ For businesses which provide software products and services, improved code quali
 ## Activities and Exercises
 
   + ["Developer Collaboration" Exercise](/exercises/dev-collaboration/README.md)
-  + ["Codebase Cleanup" Exercise](/exercises/codebase-cleanup/README.md)
   + ["Modules and Imports" Exercise](/exercises/modules-and-imports/README.md)
   + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
   + ~~["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md)~~ -- use GitHub Actions instead!
+  + ["Codebase Cleanup" Exercise](/exercises/codebase-cleanup/README.md) | ["RPS Cleanup" Exercise](/exercises/rps-cleanup/README.md)
