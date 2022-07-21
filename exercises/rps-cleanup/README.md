@@ -43,7 +43,7 @@ Return to your repository's homepage on GitHub. Use the online editor to "Add fi
 
 
 ```
-# this is the "..codeclimate.yml" file (in the root directory of your repo)
+# this is the ".codeclimate.yml" file (in the root directory of your repo)
 #
 # see: https://docs.codeclimate.com/docs/duplication-concept
 # ... https://docs.codeclimate.com/docs/default-analysis-configuration#sample-codeclimateyml
