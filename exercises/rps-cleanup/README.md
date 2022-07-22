@@ -10,7 +10,7 @@
 
 ## Prerequisites
 
-  + Read the [Unit 8](/units/unit-8.md) Notes
+  + Read the [Unit 8](/units/unit-8.md) Notes.
   + Sign up for the [Code Climate (Quality) service](https://codeclimate.com/quality/), and login with your GitHub account, and "install" Code Climate to access your GitHub repos.
 
 ## Prompt
@@ -66,7 +66,7 @@ At this time when you view the issues Code Climate has identified, you should se
 
 Alright, you have successfully configured Code Climate!
 
-### Fix Duplication
+### Fixing Duplication
 
 Clone / download the repo via your git client of choice (i.e. GitHub Desktop).
 
@@ -84,7 +84,7 @@ Observe PR comments / checks made by Code Climate, saying the duplication has be
 
 When satisfied, merge the "simple" branch into the "main" branch. Now your repo homepage / "main" branch should be up to date.
 
-### Refresh your Local Repo
+### Refreshing your Local Repo
 
 After merging a PR remotely via the GitHub interface, we need to update our local repo's "main" branch.
 
@@ -98,7 +98,7 @@ Now your local repo's "main" branch is up to date.
 ## Part 2 (Automated Testing and Continuous Integration)
 
 
-### Configure GitHub Actions
+### Configuring GitHub Actions
 
 We're going to use GitHub Actions for continuous integration purposes. From the repo's "Actions" tab, add an action called "Python application". Conclude the commit to add a config file (".github/workflows/python-app.yml") to the remote repo.
 
@@ -106,7 +106,7 @@ From GitHub Desktop, pull the changes again to update your local repo to include
 
 Observe there is a new failing check. It says our tests are failing. We haven't yet setup tests, so we'll do that next.
 
-### Configuring Pytest
+### Installing Pytest
 
 Use GitHub Desktop to checkout a new branch called something like "testing".
 
@@ -122,7 +122,7 @@ Run `pytest` from the command line to see there are no tests.
 
 
 
-Let's add a new file to the repo called "game_test.py" and insert the following code inside:
+Let's add a new file to the repo called "game_test.py" and insert the following code inside (and save the file afterwards):
 
 
 ```py
@@ -178,7 +178,7 @@ def test_winner():
 
 This file contains two strategies we could use to test our gameplay logic. Choose the strategy that most closely matches your original approach. Default to using the first one for now, for demonstration purposes.
 
-The test wants to import a function called `winner` from the "game.py" file. Let's create that function now. In order for our test to import this function cleanly (and not run the rest of our game code), we need to nest everything else under the "main conditional". Your "game.py" file structure should look like this:
+The test wants to import a function called `winner` from the "game.py" file. Let's create that function now. In order for our test to import this function cleanly (and not run the rest of our game code), we need to nest everything else under the "main conditional". Your "game.py" file structure should look something like this:
 
 
 ```py
@@ -223,14 +223,14 @@ Push your code up to GitHub (on the "testing" branch), and create a new Pull Req
 
 Update the logic inside the `winner` function and re-run tests until the tests pass.
 
-When you're doing this, you might notice some bugs in our initial logic that we didn't catch before.
+When you're doing this, you might notice some bugs in our initial logic that we didn't catch before. 😸
 
 
 After tests are passing locally, push your code up to GitHub and notice our checks are passing.
 
 
 
-## Updating Game Code
+### Updating Game Code
 
 Update the game code at the bottom of the main conditional to use the function we just tested and proved is working. Run the game locally to make sure it still works. Save the file and make a commit.
 
