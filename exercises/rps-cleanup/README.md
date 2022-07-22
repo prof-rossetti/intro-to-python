@@ -117,6 +117,8 @@ Install the pytest package via `pip install -r requirements.txt`.
 
 Run `pytest` from the command line to see there are no tests.
 
+Add a "Testing" section to the bottom of the README file, and include instructions about how someone can test (i.e. by running the `pytest` command).
+
 
 ### Adding Tests
 
