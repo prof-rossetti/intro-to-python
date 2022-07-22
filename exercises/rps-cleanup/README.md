@@ -178,7 +178,7 @@ def test_winner():
 
 This file contains two strategies we could use to test our gameplay logic. Choose the strategy that most closely matches your original approach. Default to using the first one for now, for demonstration purposes.
 
-The test wants to import a function called ``winner` from the "game.py" file. Let's create that function now. In order for our test to import this function cleanly (and not run the rest of our game code), we need to nest everything else under the "main conditional". Your "game.py" file structure should look like this:
+The test wants to import a function called `winner` from the "game.py" file. Let's create that function now. In order for our test to import this function cleanly (and not run the rest of our game code), we need to nest everything else under the "main conditional". Your "game.py" file structure should look like this:
 
 
 ```py
