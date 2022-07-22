@@ -21,7 +21,7 @@ Developer Maintenance Steps / Objectives:
 
   1. Refactor duplicate code related to the valid options ("rock", "paper", and "scissors").
   2. Notice Code Climate says the existing winner determination logic is "complex". Refactor the complex logic to use less computational steps and also make it easier to read. Also notice the existing logic produces some inaccurate outcomes, and update the logic to produce accurate outcomes.
-  3. Test that the winner determination logic produces accurate outcomes. Move the logic into a stand-alone function called `determine_winner()` that can be invoked and tested in isolation, separate from any user inputs. The winner determination function should accept the user choice and the computer choice as input parameters, and should return the value of the winning choice.
+  3. Test that the winner determination logic produces accurate outcomes. Move the logic into a stand-alone function called something like `determine_winner()` that can be invoked and tested in isolation, separate from any user inputs. The winner determination function should accept the user choice and the computer choice as input parameters, and should return either A) the value of the winning choice or B) a message saying who won.
   4. Document the winner determination function with a docstring.
 
 ### Repo Setup
