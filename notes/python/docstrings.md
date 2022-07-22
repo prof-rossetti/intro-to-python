@@ -46,9 +46,9 @@ def enlarge(n):
     return n * 100
 ```
 
-## Usage
+## Benefits
 
 Python tools and text editors will recognize the docstring and show a helper message to anyone who is trying to use / invoke that function:
 
-<img width="831" alt="Screen Shot 2022-07-21 at 9 50 51 PM" src="https://user-images.githubusercontent.com/1328807/180344933-81c522cb-5965-4bcc-8de0-ecbb1a748643.png">
+<img width="600" alt="Screen Shot 2022-07-21 at 9 50 51 PM" src="https://user-images.githubusercontent.com/1328807/180344933-81c522cb-5965-4bcc-8de0-ecbb1a748643.png">
 
