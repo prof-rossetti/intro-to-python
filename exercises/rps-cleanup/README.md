@@ -22,7 +22,7 @@ Developer Maintenance Steps / Objectives:
   1. Refactor duplicate code related to the valid options ("rock", "paper", and "scissors").
   2. Test that the winner determination logic produces accurate outcomes. Move the logic into a stand-alone function called something like `determine_winner()` that can be invoked and tested in isolation, separate from any user inputs. The winner determination function should accept the user choice and the computer choice as input parameters, and should return either A) the value of the winning choice or B) a message saying who won.
   3. Notice Code Climate says the existing winner determination logic is "complex". Refactor the complex logic to use less computational steps and also make it easier to read.
-  4. Document the winner determination function with a docstring.
+  4. Document the winner determination function with a [docstring](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/docstrings.md).
 
 ## Repo Setup
 
