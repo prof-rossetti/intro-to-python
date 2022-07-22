@@ -24,7 +24,7 @@ Developer Maintenance Steps / Objectives:
   3. Test that the winner determination logic produces accurate outcomes. Move the logic into a stand-alone function called something like `determine_winner()` that can be invoked and tested in isolation, separate from any user inputs. The winner determination function should accept the user choice and the computer choice as input parameters, and should return either A) the value of the winning choice or B) a message saying who won.
   4. Document the winner determination function with a docstring.
 
-### Repo Setup
+## Repo Setup
 
 Make a copy of the professor's ["rps-cleanup-template" repo](https://github.com/prof-rossetti/rps-cleanup-template-2022).
 
