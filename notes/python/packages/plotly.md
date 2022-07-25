@@ -57,9 +57,7 @@ fig.show()
 With title and axis labels:
 
 ```py
-fig = bar(x=genres, y=viewers, 
-          title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"}
-          )
+fig = bar(x=genres, y=viewers, title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"})
 fig.show()
 ```
 
@@ -70,9 +68,7 @@ Horizontal bar:
 
 ```py
 # NOTE: for horizontal orientation, need to switch x and y 
-fig = bar(x=viewers, y=genres, orientation="h", 
-          title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"}
-          )
+fig = bar(x=viewers, y=genres, orientation="h", title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"})
 fig.show()
 ```
 
@@ -82,10 +78,9 @@ fig.show()
 With [colors](https://plotly.com/python/builtin-colorscales/):
 
 ```py
-fig = bar(x=viewers, y=genres, orientation="h", 
-          title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"})
+fig = bar(x=viewers, y=genres, orientation="h", title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"})
           color=viewers, color_continuous_scale="Pinkyl"
-          )
+)
 fig.show()
 ```
 ![newplot (5)](https://user-images.githubusercontent.com/1328807/180882876-9d09606d-8ab8-454b-8f54-fe9353c01a5e.png)
