@@ -109,6 +109,17 @@ fig.show()
 # ... etc.
 ```
 
+```py
+fig = bar(data_frame=df, x="genre", y="viewers"
+            
+    # from the docs: "The keys of this dict should correspond to column names, 
+    # and the values should correspond to the desired label to be displayed.
+    labels={"genre": "Movie Genre", "viewers": "Viewers"},
+
+    color="viewers"
+)
+fig.show()
+```
 
 
 
