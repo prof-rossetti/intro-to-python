@@ -32,25 +32,23 @@ Here we're saying when the user submits the form, we'll send their form inputs v
 ```py
 # web_app/routes/weather_routes.py
 
-from flask import Blueprint, request, jsonify, render_template, redirect, flash # FYI new imports
+from flask import Blueprint, request, jsonify, render_template, redirect, flash
 
-# ...
+from app.weather_service import get_hourly_forecasts
+
+weather_routes = Blueprint("weather_routes", __name__)
 
 @weather_routes.route("/weather/form")
 def weather_form():
     print("WEATHER FORM...")
     return render_template("weather_form.html")
 
-@weather_routes.route("/weather/forecast", methods=["GET", "POST"])
+@weather_routes.route("/weather/forecast", methods=["POST"])
 def weather_forecast():
     print("WEATHER FORECAST...")
 
-    if request.method == "GET":
-        print("URL PARAMS:", dict(request.args))
-        request_data = dict(request.args)
-    elif request.method == "POST": # the form will send a POST
-        print("FORM DATA:", dict(request.form))
-        request_data = dict(request.form)
+    request_data = dict(request.form)
+    print("FORM DATA:", request_data)
 
     country_code = request_data.get("country_code") or "US"
     zip_code = request_data.get("zip_code") or "20057"
@@ -58,10 +56,34 @@ def weather_forecast():
     results = get_hourly_forecasts(country_code=country_code, zip_code=zip_code)
     if results:
         #flash("Weather Forecast Generated Successfully!", "success")
-        return render_template("weather_forecast.html", country_code=country_code, zip_code=zip_code, results=results)
+        return render_template("weather_forecast.html",
+            country_code=country_code,
+            zip_code=zip_code,
+            results=results
+        )
     else:
         #flash("Geography Error. Please try again!", "danger")
         return redirect("/weather/form")
+
+#
+# API ROUTES
+#
+
+@weather_routes.route("/api/weather/forecast.json")
+def weather_forecast_api():
+    print("WEATHER FORECAST (API)...")
+
+    url_params = dict(request.args)
+    print("URL PARAMS:", url_params)
+
+    country_code = url_params.get("country_code") or "US"
+    zip_code = url_params.get("zip_code") or "20057"
+
+    results = get_hourly_forecasts(country_code=country_code, zip_code=zip_code)
+    if results:
+        return jsonify(results)
+    else:
+        return jsonify({"message":"Invalid Geography. Please try again."}), 404
 
 ```
 
@@ -91,10 +113,10 @@ Here, we are using the Jinja template language to loop through our forecasts and
 
 Restart the server and visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
 
-Also know that we can directly visit the forecast route, supplying URL params as desired:
-  + http://localhost:5000/weather/forecast
-  + http://localhost:5000/weather/forecast?country_code=US&zip_code=10012
-  + http://localhost:5000/weather/forecast?country_code=US&zip_code=OOPS
+Also know that we can request the forecast in JSON format, supplying URL params to our API route as desired:
+  + http://localhost:5000/api/weather/forecast
+  + http://localhost:5000/api/weather/forecast?country_code=US&zip_code=10012
+  + http://localhost:5000/api/weather/forecast?country_code=US&zip_code=OOPS
 
 Nice! We now have a web interface into our app's weather functionality.
 
