@@ -114,9 +114,9 @@ Here, we are using the Jinja template language to loop through our forecasts and
 Restart the server and visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
 
 Also know that we can request the forecast in JSON format, supplying URL params to our API route as desired:
-  + http://localhost:5000/api/weather/forecast
-  + http://localhost:5000/api/weather/forecast?country_code=US&zip_code=10012
-  + http://localhost:5000/api/weather/forecast?country_code=US&zip_code=OOPS
+  + http://localhost:5000/api/weather/forecast.json
+  + http://localhost:5000/api/weather/forecast.json?country_code=US&zip_code=10012
+  + http://localhost:5000/api/weather/forecast.json?country_code=US&zip_code=OOPS
 
 Nice! We now have a web interface into our app's weather functionality.
 
