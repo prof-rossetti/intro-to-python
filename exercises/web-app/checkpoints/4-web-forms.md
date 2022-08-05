@@ -111,6 +111,12 @@ Based on this routing logic, after we get a weather forecast for the given zip c
 
 Here, we are using the Jinja template language to loop through our forecasts and display each.
 
+Before visiting our app again in the browser, let's add a navigation link pointing to our weather form page. In the "web_app/templates/layout.html" file, add the following HTML code to the site navigation section, inside the `nav` element, below the other existing links:
+
+```html
+<li><a href="/weather/form">Weather Form</a></li>
+```
+
 Restart the server and visit http://localhost:5000/weather/form and submit the form to test the app's ability to handle POST requests.
 
 Also know that we can request the forecast in JSON format, supplying URL params to our API route as desired:
