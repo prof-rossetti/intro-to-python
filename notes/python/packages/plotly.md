@@ -78,7 +78,7 @@ fig.show()
 With [colors](https://plotly.com/python/builtin-colorscales/):
 
 ```py
-fig = bar(x=viewers, y=genres, orientation="h", title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"}
+fig = bar(x=viewers, y=genres, orientation="h", title="Viewers per Genre", labels={"y": "Genre", "x": "Viewers"},
           color=viewers, color_continuous_scale="Pinkyl"
 )
 fig.show()
