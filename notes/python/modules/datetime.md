@@ -8,7 +8,7 @@ Reference:
   + https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
   + https://docs.python.org/3/library/datetime.html#timedelta-objects
 
-The `datetime` module provides capabilities for handling dates and times. See the "Date Parsing" section below for some ways we can create official datetime objects, and the "Date Formatting" section for some ways to format or display these objects.
+The `datetime` module provides capabilities for handling dates and times. See the "Creating Datetime Objects" section below for some ways we can create official datetime objects, and the "Date Formatting" section for some ways to format or display these objects.
 
 > NOTE: the difference between a `datetime.date` object and a `datetime.datetime` object is that only the latter has information about hours, minutes, and seconds.
 
