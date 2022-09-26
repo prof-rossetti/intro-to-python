@@ -43,24 +43,48 @@ Then [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) wit
 
 Also set an environment variable called `SENDER_ADDRESS` to be the same email address as the single sender address you just associated with your SendGrid account.
 
-Use a [".env" file approach](/notes/python/packages/dotenv.md) to manage these environment variables.
-
 ## Usage
 
-### Sending Emails
+### Handling Secret Credentials
 
-Send yourself an email:
+We'll need to handle secret credentials differently depending on our development environment.
+
+If working in a Colab notebook, use [`getpass`](/notes/python/modules/getpass.md) to ask for a secure user input (at least for the API key, and probably also for your email address as well):
+
 
 ```py
+# NOTEBOOK APPROACH (ask for secure user inputs)
+
+from getpass import getpass
+ 
+SENDGRID_API_KEY = getpass("Please input your Sendgrid API Key: ")
+SENDER_ADDRESS = getpass("Please input your Sender Email Address: ")
+
+```
+
+Otherwise, if working locally, we'll use [Environment Variables](/notes/environment-variables/README.md) to specify the secret credentials, ideally in conjunction with a [".env" file approach](/notes/python/packages/dotenv.md):
+
+```py
+# LOCAL DEVELOPMENT APPROACH (use environment variables)
+
 import os
 from dotenv import load_dotenv
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
 
 load_dotenv()
 
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
 SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
+
+```
+
+
+### Sending Emails
+
+Send yourself an email (using secret credentials from setup above):
+
+```py
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
 client = SendGridAPIClient(SENDGRID_API_KEY) #> <class 'sendgrid.sendgrid.SendGridAPIClient>
 print("CLIENT:", type(client))
@@ -149,7 +173,7 @@ Back in the SendGrid platform, click "Add Version" to create a new version of a 
 
 At this point you should be able to paste the following HTML into the "Code" tab, and the corresponding example data in the "Test Data" tab, and save each after you're done editing them.
 
-Example "Code" template which will specify the structure of all emails:
+Example "Code" template which will specify the structure of all emails :
 
 ```html
 <img src="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png">
@@ -160,7 +184,7 @@ Example "Code" template which will specify the structure of all emails:
 
 <ul>
 {{#each products}}
-	<li>You ordered: ... {{this.name}}</li>
+	<li>You ordered: ... {{this.name}} </li>
 {{/each}}
 </ul>
 
@@ -168,6 +192,8 @@ Example "Code" template which will specify the structure of all emails:
 ```
 
 > NOTE: the ["handlebars" syntax above](https://sendgrid.com/docs/for-developers/sending-email/using-handlebars) is like HTML, but allows us to construct HTML dynamically based on some data (in this case it wants us to pass it `human_friendly_timestamp`, `products`, and `total_price_usd` variables)
+
+> NOTE: the product-level information provided in the example code template references each product dictionary's "name" attribute (matching the template data below), but you'll probably want to include a formatted version of the product price as well.
 
 Example "Test Data" which will populate the template:
 
@@ -191,19 +217,16 @@ Finally, configure the template's subject by clicking on "Settings" in the left 
 
 ![](/img/notes/python/packages/sendgrid/template-settings.png)
 
-After configuring and saving the email template, we should be able to use it to send an email:
+After configuring and saving the email template, we should be able to use it to send an email (using secret credentials from setup above):
 
 ```py
-import os
-from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
-load_dotenv()
-
-SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
-SENDGRID_TEMPLATE_ID = os.getenv("SENDGRID_TEMPLATE_ID", default="OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
-SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
+# colab notebook version (user input, doesn't have to be secure):
+SENDGRID_TEMPLATE_ID = input("Please input your SENDGRID_TEMPLATE_ID: ") 
+# OR local version (use env vars):
+# SENDGRID_TEMPLATE_ID = os.getenv("SENDGRID_TEMPLATE_ID", default="OOPS, please set env var called 'SENDGRID_TEMPLATE_ID'")
 
 # this must match the test data structure
 template_data = {
@@ -247,17 +270,12 @@ References:
   + https://www.twilio.com/blog/sending-email-attachments-with-twilio-sendgrid-python
   + https://stackoverflow.com/questions/69419892/how-to-send-email-with-dataframe-as-attachment-using-sendgrid-api-in-python
 
-Send email with attachment(s):
+Send email with attachment(s), using secret credentials from setup above :
 
 ```py
 import base64
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType, Disposition, ContentId
-
-load_dotenv()
-
-SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
-SENDER_ADDRESS = os.getenv("SENDER_ADDRESS")
 
 # PREPARE MESSAGE
 
