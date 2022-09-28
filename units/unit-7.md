@@ -21,5 +21,6 @@ In this unit, we'll learn how to use Python to process data from the Internet, f
 ## Activities and Exercises
 
   + "Web Requests" Exercise ([Local](/exercises/web-requests/README.md) | [Colab](https://colab.research.google.com/drive/1Er3WxQVtXaEjCG_oj-cChtKqDSp6LEqo?usp=sharing))
+  + [API Challenges](/exercises/api-challenges)
   + ["API Client" Exercise](/exercises/api-client/README.md)
   + ["Robo Advisor" Project](/projects/robo-advisor/README.md)
