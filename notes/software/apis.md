@@ -36,9 +36,10 @@ Some notable example web services and providers include:
   + [GitHub API](https://developer.github.com/v3/)
   + [Yelp API](https://www.yelp.com/developers/documentation/)
   + [Flickr API](https://www.flickr.com/services/api/)
-  + [US Federal Elections Commission API](https://api.open.fec.gov/developers)
   + [Alpha Vantage (Stock Market) API](https://www.alphavantage.co/documentation/)
+  + [US Federal Elections Commission API](https://api.open.fec.gov/developers)
   + [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
+  + [NASA APIs](https://api.nasa.gov/)
   + [ESPN APIs](http://www.espn.com/apis/devcenter/docs/)
   + [Pokemon API](https://pokeapi.co/)
 
