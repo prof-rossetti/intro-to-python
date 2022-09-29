@@ -28,6 +28,7 @@ Some notable example web services and providers include:
 
   + [New York Times APIs](https://developer.nytimes.com/apis)
   + [Google APIs](https://developers.google.com/apis-explorer/#p/)
+  + [Spotify API](https://developer.spotify.com/documentation/web-api/)
   + [Twitter APIs](https://dev.twitter.com/rest/public)
   + [Facebook Social Graph API](https://developers.facebook.com/docs/graph-api)
   + [Instagram API](https://developers.facebook.com/docs/instagram-basic-display-api)
@@ -38,6 +39,8 @@ Some notable example web services and providers include:
   + [US Federal Elections Commission API](https://api.open.fec.gov/developers)
   + [Alpha Vantage (Stock Market) API](https://www.alphavantage.co/documentation/)
   + [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
+  + [ESPN APIs](http://www.espn.com/apis/devcenter/docs/)
+  + [Pokemon API](https://pokeapi.co/)
 
 ### Requests
 
