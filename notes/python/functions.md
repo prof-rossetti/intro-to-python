@@ -19,9 +19,7 @@ Functions must first be defined (just once), then they can subsequently be used 
 
 def do_stuff(): 
     print("DOING STUFF HERE!")
-```
 
-```python
 
 # FUNCTION INVOCATIONS
 
@@ -49,9 +47,7 @@ def display_heading(message):
     print("------------------")
     print(message.upper())
     print("------------------")
-```
 
-```python
 
 # FUNCTION INVOCATIONS
 
@@ -83,9 +79,8 @@ For a function that accepts multiple parameters, order matters. By default, the 
 
 def display_height(feet, inches):
   print("THE HEIGHT IS: ", feet, "FEET AND", inches, "INCHES")
-```
 
-```python
+
 # FUNCTION INVOCATIONS
 
 display_height(6, 3)
@@ -98,6 +93,53 @@ display_height(inches=3, feet=6)
 #> THE HEIGHT IS 6 FEET AND 3 INCHES 
 ```
 
+### Default Parameters
+
+It is possible to specify default parameter values that should be used if the parameter is omitted during invocation:
+
+
+```py
+
+# FUNCTION DEFINITION
+
+def motivate(name="everyone"):
+    print("ROW FASTER,", name.upper())
+
+
+# FUNCTION INVOCATIONS
+
+motivate() 
+#> ROW FASTER, EVERYONE
+
+motivate("Mike") 
+#> ROW FASTER, MIKE
+
+```
+
+When we define a function that has default parameters, if it also has required parameters, the required parameters are listed first, and the default parameters are listed afterwards:
+
+
+```py
+
+# FUNCTION DEFINITION
+
+def format_temp(temp, temp_unit="F"):
+    DEGREE_SIGN = u"\N{DEGREE SIGN}"
+    print(f"{round(temp)} {DEGREE_SIGN}{temp_unit}")
+
+
+# FUNCTION INVOCATIONS
+
+format_temp(90.3) 
+#> 90 °F
+
+format_temp(90.3, "C") 
+#> 90 °C
+```
+
+
+
+
 ## Return Values
 
 A function can pass back a value to its caller by using the `return` keyword, which helps us store the results in a variable for later. 
@@ -108,9 +150,7 @@ A function can pass back a value to its caller by using the `return` keyword, wh
 
 def enlarge(n):
     return n * 100
-```
 
-```python
 
 # FUNCTION INVOCATIONS
 
@@ -126,6 +166,7 @@ bigger_number = enlarge(my_number)
 print(bigger_number)
 #> 700
 ```
+
 
 
 ## Function Documentation
