@@ -114,7 +114,7 @@ rm index.html
 Edit and save a file, using a command-line utility provided by your preferred text editor (like VS Code):
 
 ```sh
-code my_message.txt # may first require installation of shell commands from the settings 
+code my_message.txt 
 ```
 
 > NOTE: Mac users may need to first configure the `code` command by following these [VS Code shell command setup instructions](/notes/devtools/vs-code.md#shell-commands)
