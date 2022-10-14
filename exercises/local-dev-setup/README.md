@@ -18,9 +18,11 @@ If successful, when you view this page on GitHub, you should be able to click th
 
 The goal is to have access to a text-editing application of choice, which we'll use to create and edit files of Python code (i.e. text files written in the Python Language and ending in the ".py" extension).
 
-Unless you already have a text editor of choice, install [VS Code](https://code.visualstudio.com/).
+Unless you already have a text editor of choice, install [VS Code](https://code.visualstudio.com/). After installing VS Code, take some time to explore the settings and the "Command Palette". You're encouraged to review the professor's [VS Code configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details, tips, and tricks.
 
-After installing VS Code, take some time to explore the settings and the "Command Palette". You're encouraged to review the professor's [VS Code configuration reference](/notes/devtools/vs-code.md#basic-configuration) for more details, tips, and tricks.
+> NOTE: it may be possible to use alternative text editors like Sublime or integrated development environments (IDEs) like [PyCharm](/notes/devtools/pycharm.md) instead of VS Code, however the professor will be supporting VS Code. Not all tools will allow us to do everything we need to do, and students adopting alternative tools are responsible for learning how to use them. Ultimately it is up to each developer to adopt their own preferences, and it may be helpful and natural to explore a few options as part of the process.
+
+
 
 
 
@@ -28,9 +30,9 @@ After installing VS Code, take some time to explore the settings and the "Comman
 
 The goal is to have access to a command-line application of choice, which we'll use for a variety of purposes.
 
-Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance as desired).
+  + Mac users who don't already have a preferred command-line application are encouraged to use the built-in Terminal application (no need to download anything, although you may want to [customize](/exercises/command-line-computing/mac-terminal-config.md) the Terminal appearance as desired).
 
-Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users.
+  + Windows users who don't already have a preferred command-line application are encouraged to install [Git Bash](https://git-scm.com/downloads), which will allow Windows users to write the same unix-style commands as Mac users.
 
 If successful, you should be able to use your command-line application to complete the ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md), which will introduce you to useful commands (like these, for navigating your local filesystem):
 
@@ -83,9 +85,9 @@ A "version control" tool will help us upload and download projects to and from G
 
 ### Git CLI
 
-Windows users who have installed Git Bash (see "Command-line Application" section above) will have satisfied the Git installation requirement.
+  + Windows users who have installed Git Bash (see "Command-line Application" section above) will have satisfied the Git installation requirement.
 
-Mac users may find that a system version of Git is already installed, but we'll want to use a newer version. So all Mac users are encouraged to [install Homebrew](/notes/clis/brew.md), then [use Homebrew to install Git](/notes/clis/git.md#installation-on-mac).
+  + Mac users may find that a system version of Git is already installed, but we'll want to use a newer version. So all Mac users are encouraged to [install Homebrew](/notes/clis/brew.md), then [use Homebrew to install Git](/notes/clis/git.md#installation-on-mac).
 
 After installing the Git CLI, all students should generate SSH keys and configure their account credentials. You're encouraged to review the professor's [Git configuration reference](/notes/clis/git.md#configuration) for more details.
 
