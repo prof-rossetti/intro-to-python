@@ -53,6 +53,7 @@ When you open a Python file in VS Code, it should prompt you to install the offi
 
 > NOTE: VS Code has removed many of the helpful auto-complete snippets. So we need to configure our own if we want to use them. Try searching for a plugin related to Python snippets, or configure your own (see "Python Snippets" section below).
 
+> UPDATE: VS Code and the Pylance extension may give you irrelevant autocomplete suggestions. So consider disabling Pylance, and create your own auto-complete snippets instead (see "Python Snippets" section below).
 
 ### Python Snippets
 
@@ -190,9 +191,17 @@ Use the command palette and start typing "settings" to find the "Preferences > O
   "emmet.showSuggestionsAsSnippets": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "window.zoomLevel": 0,
+  "telemetry.telemetryLevel": "off",
 }
 ```
 
+If you want to disable Pylance / auto-complete , also include:
+
+```json
+  "python.linting.enabled": false,
+  "python.languageServer": "None",
+ ```
+ 
 ### Keybord Shortcuts
 
 Use the command palette and start typing "shortcuts" to find the "Preferences > Open Keyboard Shortcusts (JSON)" setting which should yield a snippets JSON file. Feel free to update yours to include any of these keyboard shortcut overrides:
