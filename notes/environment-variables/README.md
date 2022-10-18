@@ -71,3 +71,5 @@ MY_API_KEY="abc123"
 ```
 
 To access these environment variables from a Python program, we first use [the `dotenv` package](/notes/python/packages/dotenv.md) to load them into the program's environment, then we can access them using [the `os` module](/notes/python/modules/os.md#environment-variables) as usual.
+
+It is important for security reasons to ensure the ".env" file is ignored from version control, using the ".gitignore" file. We should not see the ".env" file on GitHub, but rather each developer will need to create their own local copy.
