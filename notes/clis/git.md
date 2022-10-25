@@ -96,6 +96,9 @@ This section provides an overview of the most important Git concepts and command
 
 #### Initializing a Local Repository
 
+> NOTE: instead of initializing repositories in this way, we'll usually create new repos via the GitHub interface, and then "clone" or download them to a specified local location (see "Remote Repositories" section below).
+
+
 Navigate into a project directory, then initialize a new repository there:
 
 ```sh
@@ -104,7 +107,6 @@ cd ~/Desktop/my-example-repo
 git init . # initialize a new git repository, creating a hidden folder called .git in your project's root directory
 ```
 
-> NOTE: instead of initializing repositories in this way, we'll usually create new repos via the GitHub interface, and then "clone" or download them to a specified local location (see "Remote Repositories" section below).
 
 #### Making Revisions
 
