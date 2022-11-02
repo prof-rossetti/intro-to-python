@@ -43,5 +43,5 @@ DON'T:
 Resources:
 
   + https://pypi.org/project/autopep8/
-  + http://pep8online.com/
+  + ~~http://pep8online.com/~~ (no longer operational)
   + https://codeclimate.com/
