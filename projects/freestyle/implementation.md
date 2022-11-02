@@ -40,7 +40,7 @@ If your program requires sensitive information like secret passwords, API keys, 
 
 Scan your application's codebase for duplication of terms, and refactor (using custom functions as necessary) to simplify the code and make it easier to maintain.
 
-Ideally also integrate your GitHub repository with a service like Code Climate to provide automated code quality checks.
+Integrate your repository with GitHub Actions for continuous integration purposes. Consider also optionally integrating your GitHub repository with a service like Code Climate to provide automated code quality checks.
 
 ### Testing Requirements
 
@@ -55,7 +55,7 @@ As you think about ways to test your application, consider asking yourself quest
   + If the application processes data from the Internet: Is there a way to test the application's functionality without making any additional / unnecessary network requests? 
   + If the application processes data from a CSV file or database: Is there a way to test the application's functionality without affecting the development or production environment datastores? 
 
-Ideally also integrate your GitHub repository with a Continuous Integration service like ~~Travis CI~~ GitHub Actions to automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository.
+GitHub Actions should automatically run your tests on the CI server whenever new code is pushed to the remote GitHub repository. For full points, your GitHub Actions build should be passing.
 
 ### Dev Process Requirements
 
@@ -80,7 +80,7 @@ User Experience | Provides a simple, pleasant, and intuitive experience for the 
 Documentation | Repo contains a comprehensive README file. | 20%
 Licensing | Repo contains an appropriate LICENSE file. | 5%
 Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
-Quality | Code is simplified to remove or minimize code duplication. Ideally integrates with the Code Climate service for automated PR comments/checks. | 10%
+Quality | Code is well organized, and simplified to remove or minimize code duplication. Ideally integrates with the Code Climate service for automated PR comments/checks. | 10%
 Testing | Contains relevant automated tests. Ideally integrates with the a CI service like GitHub Actions for automated PR checks. | 10%
 Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from ideally all team members. | 15%
 
