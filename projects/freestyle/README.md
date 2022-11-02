@@ -17,13 +17,12 @@ The project's scope should be roughly equivalent to the previous "guided" projec
 
 The software should transform information inputs into information outputs for some practical purpose.
 
-### Interface Requirements
+### Interface and Delivery Requirements
 
-The app should ideally have some sort of graphical user interface (GUI), whether it be a native desktop app (using packages like [`tkinter`](/notes/python/packages/tkinter.md), [`PySimpleGUI`](/notes/python/packages/pysimplegui.md), etc.), or a web-based interface (using a package like [`flask`](/notes/python/packages/flask.md)).
+The app should ideally be user-facing (i.e. deployed to a production server, if applicable), or integrate with other third-party services.
 
-### Delivery Requirements
+For example, instead of implementing a command-line interface (CLI), it would be nice to implement a graphical user interface (GUI), either as a native desktop app, or a web-based interface. Alternatively, you could send emails to users, solicit inputs via Google Forms, write data to Google Sheets, etc. The goal is to try to meet the users where they are. 
 
-The app should ideally be user-facing (i.e. deployed to a production server, as applicable), or should ideally integrate with other user-facing services.
 
 ## Groups
 
@@ -36,5 +35,6 @@ To incentivize individual effort within groups, each group member may be asked t
 ## Deliverables
 
   1. [Proposal](proposal.md)
-  2. [Implementation](implementation.md)
-  3. [Demonstration](demo.md)
+  2. Investigation / Prototype Notebook
+  3. [Implementation](implementation.md)
+  4. [Demonstration](demo.md)
