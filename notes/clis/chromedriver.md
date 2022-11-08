@@ -33,3 +33,6 @@ Use [the `selenium` package](/notes/python/packages/selenium.md) to control the 
 ## Troubleshooting
 
 If you're using `chromedriver` on Mac and you see an error like "chromedriver cannot be opened because the developer cannot be verified", you must first [adjust your security  and privacy settings](https://stackoverflow.com/questions/60362018/macos-catalinav-10-15-3-error-chromedriver-cannot-be-opened-because-the-de) to "Allow Anyway", and afterwards it should work.
+
+If you're using `chromedriver` on Mac and you see an error like "chromedriver cannot be opened because the developer cannot be verified.", you may need to manually tell your computer to [trust chromedriver](https://timonweb.com/misc/fixing-error-chromedriver-cannot-be-opened-because-the-developer-cannot-be-verified-unable-to-launch-the-chrome-browser-on-mac-os/).
+
