@@ -1,0 +1,27 @@
+{% extends "bootstrap_5_layout.html" %}
+{% set active_page = "home" %}
+
+{% block content %}
+
+    <h1>Welcome Home</h1>
+
+    <p>This is a paragraph on the "home" page.</p>
+
+    <!-- SEE: https://getbootstrap.com/docs/5.2/components/carousel/ -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://image.shutterstock.com/image-photo/business-development-success-growing-growth-600w-748617433.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://image.shutterstock.com/image-photo/double-exposure-hands-making-notes-600w-1577042437.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://image.shutterstock.com/image-photo/business-documents-on-office-table-600w-414153883.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
