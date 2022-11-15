@@ -1,0 +1,75 @@
+{% extends "bootstrap_5_layout.html" %}
+{% set active_page = "unemployment_dashboard" %}
+
+{% block content %}
+
+    <h2>Unemployment Dashboard</h2>
+
+    <p class="lead">Latest Rate: {{ latest_rate_pct }} (as of {{ latest_date }})</p>
+
+    <div id="chart-container" height="700px"></div>
+
+    <!--
+        BOOTSTRAP TABLES
+        https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    <table class="table table-hover table-responsive caption-top">
+        <caption>Latest Data</caption>
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <!--
+            JINJA FOR LOOP
+            https://jinja.palletsprojects.com/en/3.1.x/templates/
+        -->
+        {% for row in data[0:12] %}
+            <tr>
+                <td>{{ row["date"] }}</td>
+                <td>{{ row["value"] }}%</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+
+        console.log("UNEMPLOYMENT DASHBOARD...")
+
+        // use data from the router!
+        var unemploymentData = JSON.parse('{{data | tojson}}') // https://stackoverflow.com/a/45132694/670433
+        console.log(unemploymentData)
+
+        var dates = unemploymentData.map(obj => obj["date"])
+        var rates = unemploymentData.map(obj => parseFloat(obj["value"]) / 100.0)
+
+        // visualize the data
+        // see: https://plotly.com/javascript/line-charts/
+        var series = {
+            x: dates,
+            y: rates,
+            mode: "lines+markers"
+        }
+        var data = [series]
+        var layout = {
+            title: "Unemployment Rate by Month",
+            height: 600,
+            yaxis: {
+                //tickformat: '%' // https://plotly.com/javascript/tick-formatting/
+                tickformat: '.1%' // https://stackoverflow.com/questions/42043633/format-y-axis-as-percent-in-plot-ly
+            }
+        }
+        Plotly.newPlot("chart-container", data, layout, {responsive: true})
+
+    </script>
+
+{% endblock %}
