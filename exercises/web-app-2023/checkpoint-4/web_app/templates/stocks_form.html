@@ -1,0 +1,28 @@
+
+{% extends "bootstrap_5_layout.html" %}
+{% set active_page = "stocks_form" %}
+
+{% block content %}
+
+    <h2>Stocks Form</h2>
+
+    <p>Request some stock market data...</p>
+
+    <form action="/stocks/dashboard" method="POST">
+
+        <label>Stock Symbol:</label>
+        <input type="text" name="symbol" placeholder="MSFT" value="MSFT">
+        <br>
+
+        <label>Risk Tolerance:</label>
+        <select name="risk_level">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <br>
+
+        <button class="btn btn-success">Submit</button>
+    </form>
+
+{% endblock %}

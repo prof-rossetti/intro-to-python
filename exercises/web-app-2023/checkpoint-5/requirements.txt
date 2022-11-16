@@ -1,0 +1,8 @@
+
+
+
+
+
+
+# using bsoup in testing the web app:
+beautifulsoup4 # <-- ADDITION
