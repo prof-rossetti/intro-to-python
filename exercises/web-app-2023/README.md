@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
- + ["Web Service" Exercise](/exercises/web-service/README.md)
+ + [Codebase Cleanup Exercise (Financial Data Dashboards Version)](/exercises/codebase-cleanup-2023/README.md)
 
 ## Learning Objectives
 
