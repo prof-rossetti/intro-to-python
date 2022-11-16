@@ -50,7 +50,7 @@ Now follow these sequential "checkpoints" to develop the Flask application from 
 
 Further exploration:
 
- + Google Login - see this [template repo](https://github.com/prof-rossetti/flask-firebase-template-2022) and feel free to build on top of it for your projects!!!
+  + Google Login (see this [template repo](https://github.com/prof-rossetti/flask-firebase-template-2022) and feel free to build on top of it for your projects!!!
 
 ### Running the Web App
 
@@ -69,7 +69,7 @@ flask run
 
 ### Deploying to Production
 
-> See also the [Deployment Checkpoint](deployment/!
+> See also the [Deployment Checkpoint](deployment/)
 
 Reference:
   + [Getting Started w/ Python - Heroku](https://devcenter.heroku.com/articles/getting-started-with-python)
