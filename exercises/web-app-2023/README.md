@@ -2,7 +2,9 @@
 
 ## Prerequisites
 
- + [Codebase Cleanup Exercise (Financial Data Dashboards Version)](/exercises/codebase-cleanup-2023/README.md)
+ + Local Development Exercise (Financial Version) -- converting a prototype notebook to a repository
+ + [Codebase Cleanup Exercise (Financial Version)](/exercises/codebase-cleanup-2023/README.md)
+ + Web Service Exercise (Financial Version) -- sending emails not necessary, but you'll want to have at least deployed the code to the server
 
 ## Learning Objectives
 
