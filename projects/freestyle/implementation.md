@@ -81,7 +81,7 @@ Documentation | Repo contains a comprehensive README file. | 20%
 Licensing | Repo contains an appropriate LICENSE file. | 5%
 Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
 Quality | Code is well organized, and simplified to remove or minimize code duplication. Ideally integrates with the Code Climate service for automated PR comments/checks. | 10%
-Testing | Contains relevant automated tests. Ideally integrates with the a CI service like GitHub Actions for automated PR checks. | 10%
+Testing | Contains relevant automated tests. Ideally integrates with a CI service like GitHub Actions for automated PR checks. | 10%
 Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from ideally all team members. | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
