@@ -14,6 +14,7 @@ In this unit, we will take a high-level guided tour of the Python programming la
     + [Variables](/notes/python/variables.md)
     + [Functions](/notes/python/functions.md)
     + [Conditionals](/notes/python/control-flow.md) and Control Flow
+    + [Operators](https://www.w3schools.com/python/python_operators.asp)
 
 ## Activities and Exercises
 

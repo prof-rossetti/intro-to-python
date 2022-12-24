@@ -61,3 +61,5 @@ bt.full_name #> 'New York Yankees'
 
 bt.advertise() #> "COME TO  NEW YORK TO SEE OUR GAMES!"
 ```
+
+## [Inheritence](class-inheritence.md)
