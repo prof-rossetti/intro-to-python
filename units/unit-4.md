@@ -11,6 +11,7 @@ In this unit, we'll learn how process and validate user inputs in Python.
   + User Interfaces (UI) and User Experience (UX)
   + Capturing and Validating User Inputs:
     + [The `input()` Function](/notes/python/inputs.md)
+    + [The `getpass()` Function](/notes/python/modules/getpass.md) for secret credentials
 
 ## Activities and Exercises
 
