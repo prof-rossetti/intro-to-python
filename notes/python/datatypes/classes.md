@@ -7,6 +7,11 @@ Reference:
   + https://www.tutorialspoint.com/python/python_classes_objects.htm
   + https://realpython.com/instance-class-and-static-methods-demystified/
 
+See also:
+
+  + [Custom Classes Notebook](Advanced_Datatypes_Custom_Classes.ipynb)
+
+
 A **Class** is a representation of one or more objects which share the same or similar properties. Each class is like its own custom data type with properties defined by the developer.
 
 In Python, class definition requires a specific function called `__init__()` to initialize, or create a new member of the object class.
@@ -61,3 +66,5 @@ bt.full_name #> 'New York Yankees'
 
 bt.advertise() #> "COME TO  NEW YORK TO SEE OUR GAMES!"
 ```
+
+## [Inheritence](class-inheritence.md)
