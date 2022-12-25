@@ -1,28 +1,12 @@
-# Unit 1: The Python Development Environment
+# Unit 1: Python Development Tools
 
-## Learning Objectives
+The goal of this unit is to become familiar with a set of development tools we'll be using to write Python code.
 
-In this unit, we'll gain familiarity with the ecosystem of Python development tools. And we'll begin to practice a version controlled development process.
+Notebooks offer an easier onboarding experience for beginners, and may be suitable for data science and prototyping purposes, however notebooks have limitations. Local development has a high learning curve, but opens up the broadest range of capabilities, and is essential for professional software development. See one or both of these options, as instructed for your particular course or learning goals:
 
-## Discussions and Notes
+  + [Part A: Google Colab Notebooks](unit-1a.md)
+  + [Part B: Local Development Environment](unit-1b.md)
 
-  + [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
-  + Editing text:
-    + [VS Code](/notes/devtools/vs-code.md)
-  + Managing Virtual Environments:
-    + [The `conda` Utility](/notes/clis/conda.md)
-  + Running Python Programs:
-    + [The `python` Utility](/notes/clis/python.md)
-  + Installing Python Packages:
-    + [The `pip` Utility](/notes/clis/pip.md)
-  + [Version Control](/notes/software/version-control.md):
-    + [GitHub Desktop Software](/notes/devtools/github-desktop.md)
-    + [The `git` Utility](/notes/clis/git.md)
-  + [Environment Variables](/notes/environment-variables/README.md)
+For notebooks, the text cells are formatted in Markdown, and for local development, a repository's "README.md" file is formatted in Markdown, so whichever route you take, it will be important to also review the:
 
-## Activities and Exercises
-
-  + ["Hello World (Colab)" Exercise](/exercises/hello-world/colab.md)
-  + ["Hello World (Local)" Exercise](/exercises/hello-world/local.md)
-  + ["Hello World (Version Control)" Exercise](/exercises/hello-world/version-control.md)
-  + ["Run the App" Exercise](/exercises/run-the-app/README.md)
+ + [Markdown Guide](https://www.markdownguide.org/basic-syntax/)

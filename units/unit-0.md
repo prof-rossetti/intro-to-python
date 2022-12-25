@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-Hello and welcome! In this unit, we'll gain familiarity with high-level concepts and background knowledge. And we'll prepare to start developing Python applications by installing all the necessary development tools.
+Hello and welcome! In this unit, we'll gain familiarity with high-level concepts and background knowledge.
 
 ## Discussions and Notes
 
@@ -11,5 +11,4 @@ Hello and welcome! In this unit, we'll gain familiarity with high-level concepts
 
 ## Activities and Exercises
 
-  + [Local Development Environment Setup](/exercises/local-dev-setup/README.md)
-  + ["Command-line Computing" Exercise](/exercises/command-line-computing/README.md)
+  + Syllabus Review
