@@ -2,9 +2,9 @@
 
 [Google Colab](https://colab.research.google.com/) enables the remote development and execution of Python programs in the cloud, instead of on your local computer.
 
-A colab document is essentially a Python notebook in Google Drive. Python notebooks use a mix of "code cells" and "text cells" to produce outputs helpful for instructional and presentation purposes.
+A Colab notebook document is essentially a Python notebook in Google Drive. These notebook documents contain "code cells" and "text cells". In the code cells we write Python. In the text cells we can write in Markdown (see this [Markdown Cheat Sheet](https://www.markdownguide.org/basic-syntax/) for more details).
 
-Here are more essential resources for learning how to use Colab:
+Here are more resources for learning how to use Colab:
 
   + [Intro to Colab Video](https://www.youtube.com/watch?v=inN8seMm7UI)
   + [Welcome to Colab](https://colab.research.google.com/notebooks/intro.ipynb#)
