@@ -91,6 +91,7 @@ fig.show()
 Once you learn about `pandas.DataFrame` objects, we can chart them similarly, but we reference the column names of the `DataFrame`:
 
 ```py
+from pandas import DataFrame
 from plotly.express import bar
 
 df = DataFrame([
