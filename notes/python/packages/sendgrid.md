@@ -101,8 +101,7 @@ message = Mail(
 try:
     response = client.send(message)
 
-    print("RESPONSE:", type(response))
-    #> <class 'python_http_client.client.Response'>
+    print("RESPONSE:", type(response)) #> <class 'python_http_client.client.Response'>
     print(response.status_code) #> 202 indicates SUCCESS
     print(response.body)
     print(response.headers)

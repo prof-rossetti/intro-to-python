@@ -49,7 +49,7 @@ Add some data to one of the sheets, and note the sheet name (i.e. the `SHEET_NAM
 
 The way we access Google Sheets API differs, based on the development environment.
 
-#### Colab Authorization
+#### Credentials in Colab
 
 If working in a Colab notebook, we can login through the browser to obtain credentials:
 
@@ -75,7 +75,7 @@ client = gspread.authorize(credentials)
 print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 ```
 
-#### Service Account Authorization
+#### Service Account Credentials
 
 Otherwise, if working locally, we'll need to first configure [Google API service account credentials](/notes/devtools/google-apis.md#service-account-credentials), then download the service account credentials JSON file into the root directory of the repo as "google-credentials.json". Then we'll point to the path where that credentials file is located:
 
