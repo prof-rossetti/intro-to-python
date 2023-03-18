@@ -24,7 +24,7 @@ This document was originally adapted from an excellent [blog post](https://www.t
 
 ## Installation
 
-First install the package using Pip, if necessary:
+Installing the package, as necessary:
 
 ```sh
 pip install gspread

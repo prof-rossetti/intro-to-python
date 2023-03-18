@@ -17,7 +17,7 @@ Reference:
 
 ## Installation
 
-From within an active virtual environment, install the `sendgrid` package:
+Installing the package, as necessary:
 
 ```sh
 pip install sendgrid
@@ -44,27 +44,27 @@ Finally, [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys)
 
 ## Usage
 
-### Handling Secret Credentials
+### Authorization
 
-We'll need to handle secret credentials differently depending on our development environment.
 
-If working in a Colab notebook, we'll use [`getpass`](/notes/python/modules/getpass.md) to ask for a secure user input (for the API key, and your sender email address):
+We'll need to handle secret credentials differently, depending on the development environment.
+
+#### Credentials in Colab
+
+If working in a Colab notebook, we'll use [`getpass`](/notes/python/modules/getpass.md) to ask for a secure user input (for the API key, and the sender email address):
 
 ```py
-# NOTEBOOK APPROACH (ask for secure user inputs)
-
 from getpass import getpass
 
 SENDGRID_API_KEY = getpass("Please input your Sendgrid API Key: ")
 SENDER_ADDRESS = getpass("Please input your Sender Email Address: ")
-
 ```
+
+#### Credentials in Local Development Project
 
 Otherwise, if working locally, we'll use [Environment Variables](/notes/environment-variables/README.md) to specify the secret credentials, ideally in conjunction with a [".env" file approach](/notes/python/packages/dotenv.md):
 
 ```py
-# LOCAL DEVELOPMENT APPROACH (use environment variables)
-
 import os
 from dotenv import load_dotenv
 
@@ -91,10 +91,11 @@ subject = "Your Receipt from the Green Grocery Store"
 html_content = "Hello World"
 print("HTML:", html_content)
 
-# FYI: we'll need to use our verified SENDER_ADDRESS as the `from_email` param
-# ... but we can customize the `to_emails` param to send to other addresses
-message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS,
-                subject=subject, html_content=html_content
+message = Mail(
+    from_email=SENDER_ADDRESS, # needs to be the verified sender address
+    to_emails=SENDER_ADDRESS, # can specify any recipient address, but self-sending here for demo purposes
+    subject=subject,
+    html_content=html_content
 )
 
 try:
@@ -151,21 +152,26 @@ References:
   + https://www.twilio.com/blog/sending-email-attachments-with-twilio-sendgrid-python
   + https://stackoverflow.com/questions/69419892/how-to-send-email-with-dataframe-as-attachment-using-sendgrid-api-in-python
 
-Send email with attachment(s), using secret credentials from setup above:
+Send email with file attachment(s):
 
 ```py
 import base64
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType, Disposition, ContentId
 
+#
 # PREPARE MESSAGE
+#
 
 subject="Unemployment"
 html="<p>This is your Unemployment Report! See attached files.</p>"
 
 client = SendGridAPIClient(SENDGRID_API_KEY)
-message = Mail(from_email=SENDER_ADDRESS, to_emails=SENDER_ADDRESS,
-                subject=subject, html_content=html
+message = Mail(
+    from_email=SENDER_ADDRESS,
+    to_emails=SENDER_ADDRESS,
+    subject=subject,
+    html_content=html
 )
 
 # encoding CSV files:
@@ -197,8 +203,9 @@ message.attachment = Attachment(
     content_id = ContentId('Attachment 2')
 )
 
-
+#
 # SEND MESSAGE
+#
 
 response = client.send(message)
 print(response.status_code)
