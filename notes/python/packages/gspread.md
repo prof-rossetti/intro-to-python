@@ -77,7 +77,7 @@ print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 
 #### Service Account Authorization
 
-Otherwise, if working locally, we'll need to first configure [service account credentials](/notes/devtools/google-apis.md#service-account-credentials), download the service account credentials JSON file into the root directory of the repo as "google-credentials.json".
+Otherwise, if working locally, we'll need to first configure [Google API service account credentials](/notes/devtools/google-apis.md#service-account-credentials), then download the service account credentials JSON file into the root directory of the repo as "google-credentials.json". Then we'll point to the path where that credentials file is located:
 
 ```py
 import os
@@ -86,6 +86,7 @@ import os
 GOOGLE_CREDENTIALS_FILEPATH = os.path.join(os.path.dirname(__file__), "..", "google-credentials.json")
 
 client = gspread.service_account(filename=GOOGLE_CREDENTIALS_FILEPATH)
+print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 ```
 
 
@@ -149,5 +150,7 @@ response = sheet.insert_row(new_values, next_row_number)
 print("RESPONSE:", type(response)) #> dict
 print(response) #> {'spreadsheetId': '____', 'updatedRange': "'MySheet'!A9:D9", 'updatedRows': 1, 'updatedColumns': 4, 'updatedCells': 4}
 ```
+
+You can use `sheet.insert_row()` to insert one row at a time, or `sheet.insert_rows()` to insert multiple rows at a time (see the docs).
 
 For more advanced usage, see the Professor's [Google Sheets App](https://github.com/prof-rossetti/flask-sheets-template-2023/blob/main/app/spreadsheet_service.py).
