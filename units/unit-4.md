@@ -16,4 +16,4 @@ In this unit, we'll learn how process and validate user inputs in Python.
 ## Activities and Exercises
 
   + ["Rock, Paper, Scissors" Exercise](/exercises/rock-paper-scissors/README.md) | ["Rock Paper Scissors" (Colab)](/exercises/rock-paper-scissors/Rock_Paper_Scissors_Fall_2022.ipynb)
-  + ["Shopping Cart" Project](/projects/shopping-cart/README.md) | ["Shopping Cart" (Colab)](/projects/shopping-cart/Shopping_Cart_Fall_2022.ipynb)
+  + ["Shopping Cart" Project](/projects/shopping-cart/README.md) | ["Shopping Cart" (Colab)](/projects/shopping-cart/Shopping_Cart_Spring_2023.ipynb)
