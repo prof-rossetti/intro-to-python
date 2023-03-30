@@ -70,6 +70,8 @@ sns.pairplot(df)
 
 ## Seaborn Heatmap
 
+### Correlation Matrix
+
 Reference: https://seaborn.pydata.org/generated/seaborn.heatmap.html
 
 ```py
@@ -100,3 +102,41 @@ plot_correlation_matrix()
 ```
 
 ![corr_matrix](https://user-images.githubusercontent.com/1328807/228969240-c39aa56b-ab5e-470b-8004-fbd78aad7d81.png)
+
+### Confusion Matrix
+
+```py
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+def plot_confusion_matrix(clf, y_test, y_pred):
+    """Params clf : an sklearn classifier """
+
+    classes = clf.classes_
+
+    cm = confusion_matrix(y_test, y_pred)
+    # Confusion matrix whose i-th row and j-th column entry indicates the number of samples with 
+    # ... true label being i-th class and predicted label being j-th class.
+
+    # df = DataFrame(cm, columns=classes, index=classes)
+
+    sns.set(rc = {'figure.figsize':(10,10)})
+
+    sns.heatmap(cm, 
+                square=True, annot=True, cbar=True,
+                xticklabels=classes,
+                yticklabels=classes,            
+                cmap= "Blues" #"Blues" #"viridis_r" #"rocket_r" # r for reverse
+    )
+
+    plt.ylabel("True Genre") # cm rows are true
+    plt.xlabel("Predicted Genre") # cm cols are preds
+    plt.title("Confusion Matrix on Test Data (Logistic Regression)")
+    plt.show()
+
+
+plot_confusion_matrix(my_classifier, y_test, y_pred)
+```
+
+![conf_matrix](https://user-images.githubusercontent.com/1328807/228973169-4cb07689-edfb-4e80-a8a4-f2f2b3f38df5.png)
