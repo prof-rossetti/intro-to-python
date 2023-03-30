@@ -57,3 +57,46 @@ plt.show()
 
 Consult the documentation and examples for a variety of chart customization options.
 
+
+## Seaborn Pairplots
+
+Reference: https://seaborn.pydata.org/_images/pairplot_1_0.png
+
+```py
+sns.pairplot(df)
+```
+
+![](https://seaborn.pydata.org/_images/pairplot_1_0.png)
+
+## Seaborn Heatmap
+
+Reference: https://seaborn.pydata.org/generated/seaborn.heatmap.html
+
+```py
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+def plot_correlation_matrix(df, features):
+    # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html
+    mat = df[features].corr(method="spearman")
+    print(type(mat))
+
+    sns.set(rc = {'figure.figsize':(10,10)})
+    sns.heatmap(mat.T, 
+                square=True, annot=True, cbar=True,
+                xticklabels=features,
+                yticklabels=features,
+                #vmin=0, vmax=1 # orient the color scale properly?
+                
+                # https://stackoverflow.com/questions/47461506/how-to-invert-color-of-seaborn-heatmap-colorbar
+                cmap= "Blues" #"viridis_r" #"rocket_r" # r for reverse
+    )
+    plt.xlabel("Feature Name")
+    plt.ylabel("Feature Name")
+    plt.title("Spearman Correlation between features")
+    plt.show()
+
+plot_correlation_matrix()
+```
+
+![corr_matrix](https://user-images.githubusercontent.com/1328807/228969240-c39aa56b-ab5e-470b-8004-fbd78aad7d81.png)
