@@ -124,10 +124,10 @@ def plot_confusion_matrix(clf, y_test, y_pred):
     sns.set(rc = {'figure.figsize':(10,10)})
 
     sns.heatmap(cm, 
-                square=True, annot=True, cbar=True,
+                square=True, annot=True, fmt="d", # format d shows integer values
                 xticklabels=classes,
                 yticklabels=classes,            
-                cmap= "Blues" #"Blues" #"viridis_r" #"rocket_r" # r for reverse
+                cbar=True, cmap= "Blues" #"Blues" #"viridis_r" #"rocket_r" # r for reverse
     )
 
     plt.ylabel("True Genre") # cm rows are true
