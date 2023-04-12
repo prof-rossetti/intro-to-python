@@ -26,6 +26,9 @@ But many systems additionally or alternatively allow programmatic usage through 
 
 Some notable example web services and providers are listed below. If you find a fun API, you are encouraged to add it to the list.
 
+  + [Google APIs](https://developers.google.com/apis-explorer/#p/)
+  + [Flickr API](https://www.flickr.com/services/api/)
+ 
 News and Information:
 
   + [New York Times APIs](https://developer.nytimes.com/apis)
@@ -49,8 +52,6 @@ Social Networks:
 
 Games:
 
-  + [Google APIs](https://developers.google.com/apis-explorer/#p/)
-  + [Flickr API](https://www.flickr.com/services/api/)
   + [Pokemon API](https://pokeapi.co/)
   + [Dungeons and Dragons API](http://www.dnd5eapi.co/docs/)
 
