@@ -75,7 +75,7 @@ For Fun:
   + [Trivia API](https://the-trivia-api.com/)
 
 Other:
-  + [Open AI API)(https://platform.openai.com/)
+  + [Open AI API](https://platform.openai.com/)
  
  
 ### Requests
