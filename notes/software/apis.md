@@ -24,24 +24,52 @@ But many systems additionally or alternatively allow programmatic usage through 
 
 **Web Services** are APIs which facilitate the transmission of a system's data across the Internet. Web services provide one or more servers which accept HTTP requests at specified URLs and return HTTP responses containing textual information in a machine-readable format.
 
-Some notable example web services and providers include:
+Some notable example web services and providers are listed below. If you find a fun API, you are encouraged to add it to the list.
+
+News and Information:
 
   + [New York Times APIs](https://developer.nytimes.com/apis)
-  + [Google APIs](https://developers.google.com/apis-explorer/#p/)
+  + [Alpha Vantage (Stock Market) API](https://www.alphavantage.co/documentation/)
+  + [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
+  + [ESPN APIs](http://www.espn.com/apis/devcenter/docs/)
+  
+Music and Movies:
+
   + [Spotify API](https://developer.spotify.com/documentation/web-api/)
+  + [IMBD (Movies) API](https://developer.imdb.com/documentation)
+  + [YouTube API](https://developers.google.com/youtube/v3)
+
+Social Networks:
+
   + [Twitter APIs](https://dev.twitter.com/rest/public)
   + [Facebook Social Graph API](https://developers.facebook.com/docs/graph-api)
   + [Instagram API](https://developers.facebook.com/docs/instagram-basic-display-api)
   + [Foursquare API](https://developer.foursquare.com/docs/)
   + [GitHub API](https://developer.github.com/v3/)
-  + [Yelp API](https://www.yelp.com/developers/documentation/)
+
+Games:
+
+  + [Google APIs](https://developers.google.com/apis-explorer/#p/)
   + [Flickr API](https://www.flickr.com/services/api/)
-  + [Alpha Vantage (Stock Market) API](https://www.alphavantage.co/documentation/)
-  + [US Federal Elections Commission API](https://api.open.fec.gov/developers)
-  + [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
-  + [NASA APIs](https://api.nasa.gov/)
-  + [ESPN APIs](http://www.espn.com/apis/devcenter/docs/)
   + [Pokemon API](https://pokeapi.co/)
+  + [Dungeons and Dragons API](http://www.dnd5eapi.co/docs/)
+
+Food and Drink:
+
+  + [Yelp API](https://www.yelp.com/developers/documentation/)
+  + [Cocktail DB (Drinks) API](https://www.thecocktaildb.com/api.php)
+
+Government:
+
+  + [US Federal Elections Commission API](https://api.open.fec.gov/developers)
+  + [NASA APIs](https://api.nasa.gov/)
+
+For Fun:
+
+  + [Cats API](https://developers.thecatapi.com/)
+  + [Quiz API](https://quizapi.io/docs/1.0/overview)
+  + [Trivia API](https://the-trivia-api.com/)
+
 
 ### Requests
 
