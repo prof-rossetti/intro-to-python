@@ -26,8 +26,9 @@ But many systems additionally or alternatively allow programmatic usage through 
 
 Some notable example web services and providers are listed below. If you find a fun API, you are encouraged to add it to the list.
 
+General Purpose:
+
   + [Google APIs](https://developers.google.com/apis-explorer/#p/)
-  + [Flickr API](https://www.flickr.com/services/api/)
  
 News and Information:
 
@@ -36,11 +37,13 @@ News and Information:
   + [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
   + [ESPN APIs](http://www.espn.com/apis/devcenter/docs/)
   
-Music and Movies:
+Music, Movies, and Images:
 
   + [Spotify API](https://developer.spotify.com/documentation/web-api/)
   + [IMBD (Movies) API](https://developer.imdb.com/documentation)
   + [YouTube API](https://developers.google.com/youtube/v3)
+  + [Flickr API](https://www.flickr.com/services/api/)
+
 
 Social Networks:
 
