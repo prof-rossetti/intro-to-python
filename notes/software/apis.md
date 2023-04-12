@@ -74,7 +74,10 @@ For Fun:
   + [Quiz API](https://quizapi.io/docs/1.0/overview)
   + [Trivia API](https://the-trivia-api.com/)
 
-
+Other:
+  + [Open AI API)(https://platform.openai.com/)
+ 
+ 
 ### Requests
 
 #### Authentication
