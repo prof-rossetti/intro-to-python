@@ -4,18 +4,24 @@
 
 ## Instructions
 
+Here are some general suggestions and guidelines:
+
   1. Search the Internet for one or more APIs or open data sources you are interested in.
-  2. Investigate your ability to write Python to request and process the data.
-  3. After demonstrating your ability to use the API, package up your code into a single reusable function (like the Stocks Dashboard and Weather App).
-  4. Provide a single cell at the bottom which will capture user inputs as necessary, and invoke the function to produce the desired outputs.
+  2. Investigate your ability to write Python to request and process the data, and do something interesting and helpful with it. 
+  3. Refactor / simplify your code into one or more custom functions, as applicable. Write unit tests and docstrings for your custom functions. 
+  4. Consider providing a single cell at the bottom which captures user inputs as necessary, and invokes the function(s) to produce the desired outputs.
 
 ### Data Requirements
 
-Your app should fetch data from an API or other open data set / web page.
+Your app should fetch data from one or more APIs, web pages, or other open datasets.
 
 ### Function Requirements
 
-Your function should ideally be documented using a "docstring". It should specify what parameters it accepts (if any), and some example parameter values.
+Check your function parameters. Ensure any variables needed by the function (except for constants like API Keys) are passed in as parameter inputs.
+
+Your custom function(s) should ideally be documented using ["docstrings"](/notes/python/docstrings.md). 
+
+Your custom function(s) should ideally be accompanied by one or more unit tests, using example data and simple assertions.
 
 ### Security Requirements
 
@@ -33,11 +39,11 @@ Project implementations will be evaluated according to the requirements set fort
 
 Category | Requirement | Weight
 --- | --- | ---
-API Usage | Processes data from an API or other open data source. | 20%
-Function Usage | Performs the data processing from within a reusable function. | 20%
-API Documentation | Provides links to the API documentation, and instructions for how someone can obtain an API key (as necessary). | 10%
+Data Source Documentation | Provides links to the source data and/or API documentation, and instructions for how someone can obtain an API key, as necessary. | 10%
+API Usage | Processes data from one or more APIs, web pages or other open data sources. | 20%
+Function Usage | Performs data processing using one or more custom functions, with accompanying unit tests. | 20%
 Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 20%
 User Experience | Provides a simple, pleasant, and intuitive experience for the user, without "bugs" or errors. | 15%
-Security | Excludes sensitive information and credentials from the source code, and protects user data (as necessary). | 15%
+Security | Excludes sensitive information and credentials from the source code, and protects user data, as necessary. | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
