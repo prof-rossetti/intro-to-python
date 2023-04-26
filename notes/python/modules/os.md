@@ -30,6 +30,9 @@ Make a new directory:
 
 ```py
 os.mkdir("/path/to/Desktop/my-dir")
+
+# make all parent directories as well, if necessary:
+os.makedirs("/path/to/Desktop/my-dir", exist_ok=True)
 ```
 
 List all files in a given directory:
