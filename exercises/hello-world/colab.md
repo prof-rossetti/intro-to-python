@@ -8,7 +8,7 @@ In this exercise, we'll practice using the Google Colab platform for the first t
 
 ## Prerequisites
 
-You're encouraged to review the [Colab notes](/main/notes/devtools/google-colab.md) and reference this [Markdown Guide](https://www.markdownguide.org/).
+You're encouraged to review the [Colab notes](/notes/devtools/google-colab.md) and reference this [Markdown Guide](https://www.markdownguide.org/).
 
 
 
