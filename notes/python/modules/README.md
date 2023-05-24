@@ -7,6 +7,7 @@ In Python, a "module" is a file of Python code that can be "imported" and used i
 Many helpful built-in modules are provided along with the [Standard Library](https://docs.python.org/3/library/). Here are some built-in modules of interest:
 
   + [The `os` Module](os.md)
+  + [The `getpass` Module](getpass.md)
   + [The `math` Module](math.md)
   + [The `random` Module](random.md)
   + [The `statistics` Module](statistics.md)
