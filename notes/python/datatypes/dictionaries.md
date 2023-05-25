@@ -34,8 +34,8 @@ New Haven | Ravens | minor
 
 
 ```python
-[
-    {"city": "New York", "name": "Yankees", "league":"major"},
+[ # LIST OF DICTIONARIES:
+    {"city": "New York", "name": "Yankees", "league":"major"}, 
     {"city": "New York", "name": "Mets", "league":"major"},
     {"city": "Boston", "name": "Red Sox", "league":"major"},
     {"city": "New Haven", "name": "Ravens", "league":"minor"}
@@ -44,7 +44,8 @@ New Haven | Ravens | minor
 
 ## Operations
 
-Access individual object attributes by their key:
+
+Accessing dictionary values by their key, or attribute name:
 
 ```python
 person = {
@@ -54,14 +55,14 @@ person = {
     "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
-person["first_name"] #> "Ophelia"
-person["last_name"] #> "Clark"
-person["message"] #> "Hi, thanks for the ice cream!"
-person["fav_flavors"] #> ["Vanilla Bean", "Mocha", "Strawberry"]
-person["fav_flavors"][1] #> "Mocha" (an array is still an array, even if it exists inside a dictionary!)
+print(person["first_name"]) #> "Ophelia"
+print(person["last_name"]) #> "Clark"
+print(person["message"]) #> "Hi, thanks for the ice cream!"
+print(person["fav_flavors"]) #> ["Vanilla Bean", "Mocha", "Strawberry"]
+print(person["fav_flavors"][1]) #> "Mocha" (a list is still a list, even if it exists inside a dictionary!)
 ```
 
-Add or update or remove attributes from an object:
+Adding, updating, or removing attributes from a dictionary:
 
 ```python
 person = {
@@ -71,16 +72,20 @@ person = {
     "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
+# adding an attribute:
 person["message"] = "New Message" # this is mutating
 
+# updating an attribute:
 person["fav_color"] = "blue" # this is mutating
 
+# removing an attribute:
 del person["fav_flavors"] # this is mutating
 
-person #> {'first_name': 'Ophelia', 'last_name': 'Clark', 'message': 'New Message', 'fav_color': 'blue' }
+print(person) 
+#> {'first_name': 'Ophelia', 'last_name': 'Clark', 'message': 'New Message', 'fav_color': 'blue' }
 ```
 
-Its possible to separate the dictionaries keys from its values, and also to iterate through each pair:
+Accessing a dictionary's keys and/or values seperately, and iterating through them:
 
 ```python
 person = {
@@ -90,24 +95,52 @@ person = {
     "fav_flavors": ["Vanilla Bean", "Mocha", "Strawberry"]
 }
 
-person.keys()
-#> dict_keys(['first_name', 'last_name', 'message', 'fav_flavors'])
-list(person.keys())
-#> ['first_name', 'last_name', 'message', 'fav_flavors']
+#
+# KEYS:
+#
 
-person.values()
-#> dict_values(['Ophelia', 'Clark', 'Hi, thanks for the ice cream!', ["Vanilla Bean", "Mocha", "Strawberry"]])
-list(person.values())
-#> ['Ophelia', 'Clark', 'Hi, thanks for the ice cream!', ["Vanilla Bean", "Mocha", "Strawberry"]]
+print(person.keys()) #> dict_keys(['first_name', 'last_name', 'message', 'fav_flavors'])
+# print(list(person.keys())) #> ['first_name', 'last_name', 'message', 'fav_flavors']
 
-person.items()
-#> dict_items([('first_name', 'Ophelia'), ('last_name', 'Clark'), ('message', 'Hi, thanks for the ice cream!'), ('fav_flavors', ["Vanilla Bean", "Mocha", "Strawberry"])])
+for k in person.keys():
+    print("KEY:", k)
+    
 
+#
+# VALUES:
+#
+
+print(person.values()) #> dict_values(['Ophelia', 'Clark', 'Hi, thanks for the ice cream!', ["Vanilla Bean", "Mocha", "Strawberry"]])
+# print(list(person.values()) #> ['Ophelia', 'Clark', 'Hi, thanks for the ice cream!', ["Vanilla Bean", "Mocha", "Strawberry"]]
+
+for v in person.values():
+    print("VALUE:", v)
+    
+#
+# KEY/VALUE PAIRS:
+#
+
+print(person.items()) #> dict_items([('first_name', 'Ophelia'), ('last_name', 'Clark'), ('message', 'Hi, thanks for the ice cream!'), ('fav_flavors', ["Vanilla Bean", "Mocha", "Strawberry"])])
+# print(list(person.items())) #> [('first_name', 'Ophelia'), ('last_name', 'Clark'), ('message', 'Hi, thanks for the ice cream!'), ('fav_flavors', ["Vanilla Bean", "Mocha", "Strawberry"])]
+
+# referencing key-value tuple separately as k and v, using a "destructuring" approach:
 for k, v in person.items():
     print("KEY:", k, "... VALUE:", v)
-
-#> KEY: first ... VALUE: Ophelia
-#> KEY: last ... VALUE: Clark
-#> KEY: message ... VALUE: Hi, thanks for the ice cream!
-#> KEY: fav_flavors ... VALUE: ["Vanilla Bean", "Mocha", "Strawberry"]
 ```
+
+
+> NOTE: the `dict_keys`, `dict_values`, and `dict_items` are list-like, so we can convert them to lists by passing them into the `list()` function, or do list-like things such as looping through them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
