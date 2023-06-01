@@ -40,17 +40,10 @@ For more threats, including malware, see the notes on [Software Ethics](/notes/s
 
 **Authentication** is "a process which determines the identity of the person requesting access".
 
+Online systems generally implement authentication using login mechanisms, while APIs typically implement authentication using API Keys.
+
 Multi-Factor Authentication (MFA), or two-step authentication, is
- "a simple best practice that adds an extra layer of protection on top of your user name and password. With MFA enabled, when a user signs in, ... they will be prompted for their user name and password (the first factor — what they know), as well as for an authentication code from their ... MFA device (the second factor — what they have). Taken together, these multiple factors provide increased security... ([Amazon](https://aws.amazon.com/iam/details/mfa/)).
-
-Protect your accounts with MFA:
-
-  + https://support.google.com/accounts/answer/1066447?hl=en
-  + https://www.facebook.com/help/148233965247823
-  + https://help.twitter.com/en/managing-your-account/two-factor-authentication
-  + https://www.dropbox.com/en/help/363
-  + https://get.slack.help/hc/en-us/articles/204509068-Set-up-two-factor-authentication
-  + https://aws.amazon.com/iam/details/mfa/
+ "a simple best practice that adds an extra layer of protection on top of your user name and password. With MFA enabled, when a user signs in, they will be prompted for their user name and password (the first factor — what they know), as well as for an authentication code from their MFA device (the second factor — what they have). Taken together, these multiple factors provide increased security ([Amazon](https://aws.amazon.com/iam/details/mfa/)).
 
 #### Authorization
 
