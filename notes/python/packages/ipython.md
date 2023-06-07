@@ -56,6 +56,8 @@ To practice with an example audio file, first use this code to download the prov
 Then we can play the audio:
 
 ```py
+from IPython.display import Audio, display 
+
 audio_filepath = "pop.00032.wav"
 display(Audio(audio_filepath, autoplay=False)) # rate only necessary when passing custom audio data
 ```
