@@ -2,7 +2,7 @@
 
 ![](https://www.perforce.com/sites/default/files/image/2018-08/image-blog-enterprises-investing-python%20(2).jpg)
 
-## [Slides](https://docs.google.com/presentation/d/1ZIjg63yVoWOyvTrkJWDhJrw9IPo2--R_ywX3Z5Rs6PQ/edit?usp=sharing)
+## [Slides](https://docs.google.com/presentation/d/174cqh8mH_zdOORcEHxqARIWMek2TJTXQfz--HKnzLyo/edit?usp=sharing)
 
 ## Instructional Modules
 
