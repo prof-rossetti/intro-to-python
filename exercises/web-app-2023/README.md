@@ -44,9 +44,9 @@ Now follow these sequential "checkpoints" to develop the Flask application from 
 
   1. [Checkpoint 1](checkpoint-1/) - Basic Routing, Rendering HTML pages
   2. [Checkpoint 2](checkpoint-2/) - Shared Layouts
-  3. [Checkpoint 3](checkpint-3/) - Twitter Bootstrap Layout
-  4. [Checkpoint 4](checkpint-4/) - Interactive Dashboards
-  5. [Checkpoint 5](checkpint-5/) - Automated Testing for Web Apps
+  3. [Checkpoint 3](checkpoint-3/) - Twitter Bootstrap Layout
+  4. [Checkpoint 4](checkpoint-4/) - Interactive Dashboards
+  5. [Checkpoint 5](checkpoint-5/) - Automated Testing for Web Apps
 
 Further exploration:
 
