@@ -48,9 +48,15 @@ Now follow these sequential "checkpoints" to develop the Flask application from 
   4. [Checkpoint 4](checkpoint-4/) - Interactive Dashboards
   5. [Checkpoint 5](checkpoint-5/) - Automated Testing for Web Apps
 
-Further exploration:
+For further reference, here is a [completed version history](https://github.com/s2t2/unemployment-2023-testing-prep/pull/1/commits) which implements these checkpoints. 
 
-  + Google Login (see this [template repo](https://github.com/prof-rossetti/flask-firebase-template-2022) and feel free to build on top of it for your projects!!!
+**Further Exploration**
+
+For your reference, here are some Flask app templates which implement Google Login and fetch data from with datastores (Firebase and Google Sheets, respectively). Feel free to copy the templates and build on top of them for your final project, as desired:
+
+  + [flask-firebase-template-2022](https://github.com/prof-rossetti/flask-firebase-template-2022)
+  + [flask-sheets-starter-2023](https://github.com/prof-rossetti/flask-sheets-starter-2023) 
+  + [flask-sheets-template-2023](https://github.com/prof-rossetti/flask-sheets-template-2023) 
 
 ### Running the Web App
 
@@ -66,6 +72,8 @@ FLASK_APP=web_app flask run
 export FLASK_APP=web_app
 flask run
 ```
+
+To restart the server, press "ctrl+c" to stop it, and then re-run using the command above.
 
 ### Deploying to Production
 
