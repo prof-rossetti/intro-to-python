@@ -11,6 +11,7 @@ The `flask` package provides a micro-framework for making web applications and A
   + [Tutorial](https://flask.palletsprojects.com/en/2.1.x/tutorial/)
   + [Jinja Templates](https://jinja.palletsprojects.com/en/2.11.x/)
 
+
 ## Installation
 
 First install `flask`, if necessary:
@@ -23,6 +24,16 @@ pip install flask
 
 Follow the ["Web Application" Exercise](/exercises/web-app/README.md) for an introduction to making web applications with Flask.
 
+For your reference, here are some Flask app templates which implement more advanced set of functionality. Feel free to copy the templates and build on top of them as desired:
+
+Web App Template Repo | Login | Datastore | Comments
+--- | --- | --- | ---
+[flask-firebase-template-2022](https://github.com/prof-rossetti/flask-firebase-template-2022) | Google Login | Firestore |
+[flask-sheets-starter-2023](https://github.com/prof-rossetti/flask-sheets-starter-2023) | Google Login | Google Sheets | Simple example.
+[flask-sheets-template-2023](https://github.com/prof-rossetti/flask-sheets-template-2023) | Google Login | Google Sheets | Full example with tests and CI.
+[flask-spotify-template-2023](https://github.com/s2t2/spotify-flask-template) | Spotify Login | N/A
+
+    
 ### App Initialization
 
 Example application factory function:
