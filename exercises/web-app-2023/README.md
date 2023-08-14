@@ -50,13 +50,6 @@ Now follow these sequential "checkpoints" to develop the Flask application from 
 
 For further reference, here is a [completed version history](https://github.com/s2t2/unemployment-2023-testing-prep/pull/1/commits) which implements these checkpoints. 
 
-**Further Exploration**
-
-For your reference, here are some Flask app templates which implement Google Login and fetch data from with datastores (Firebase and Google Sheets, respectively). Feel free to copy the templates and build on top of them for your final project, as desired:
-
-  + [flask-firebase-template-2022](https://github.com/prof-rossetti/flask-firebase-template-2022)
-  + [flask-sheets-starter-2023](https://github.com/prof-rossetti/flask-sheets-starter-2023) 
-  + [flask-sheets-template-2023](https://github.com/prof-rossetti/flask-sheets-template-2023) 
 
 ### Running the Web App
 
