@@ -41,9 +41,11 @@ First create a new "requirements.txt" file in your repository's root directory, 
     pandas
     python-dotenv
     sendgrid==5.6.0 # can "lock" a specific version of the package
-    git+https://github.com/eskerda/pybikes.git # can install from GitHub source via HTTPS
-    git+ssh://git@github.com/s2t2/game-utils-py.git # can install from GitHub source via SSH
-
+    git+https://github.com/eskerda/pybikes.git # from GitHub source (HTTPS)
+    git+https://github.com/s2t2/truthbrush.git@pull-since-latest # from GitHub with specific branch
+    git+ssh://git@github.com/s2t2/game-utils-py.git # from GitHub source (SSH)
+    -e /path/to/local/package # from local folder
+    
 Make sure to save the file. Then finally, use Pip to install package dependencies by specifying the requirements filepath:
 
 ```sh
