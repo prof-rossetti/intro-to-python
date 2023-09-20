@@ -1,34 +1,5 @@
 # Shopping Cart - Starter Code
 
-
-## Image Display
-
-Image display examples:
-
-```py
-#
-# IMAGE DISPLAY
-# ... run this cell to display some example images
-# ... (and feel free to adapt the approach if you'd like to display the product images later)
-#
-
-from IPython.display import Image, display
-
-print("-----------")
-print("EXAMPLE IMAGE DISPLAY:")
-
-print("-----------")
-#image_url = "https://smartdesignworldwide.com/wp-content/uploads/2018/05/nyu-logo.jpg"
-image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/64px-Georgetown_Hoyas_logo.svg.png"
-display(Image(url=image_url, height=100))
-
-print("-----------")
-display(Image(url="https://www.python.org/static/community_logos/python-powered-w-200x80.png"))
-
-print("-----------")
-display(Image(url="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png", height=100))
-```
-
 ## Formatter Functions
 
 Price formatting function:
@@ -56,8 +27,6 @@ def to_usd(my_price):
 assert to_usd(4.5) == "$4.50"
 assert to_usd(1234567890.98765) == "$1,234,567,890.99"
 ```
-
-
 
 
 ## Inventory Options
@@ -291,3 +260,34 @@ def send_email(subject="[Shopping Cart App] This is a test", html="<p>Hello Worl
         return None
 
 ```
+
+## Image Display Examples
+
+Use this code if you would like to display product images (only applicable for certain inventory options that contain image URLs).
+
+```py
+#
+# IMAGE DISPLAY
+# ... run this cell to display some example images
+# ... (and feel free to adapt the approach if you'd like to display the product images later)
+#
+
+from IPython.display import Image, display
+
+print("-----------")
+print("EXAMPLE IMAGE DISPLAY:")
+
+print("-----------")
+#image_url = "https://smartdesignworldwide.com/wp-content/uploads/2018/05/nyu-logo.jpg"
+image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/64px-Georgetown_Hoyas_logo.svg.png"
+display(Image(url=image_url, height=100))
+
+print("-----------")
+display(Image(url="https://www.python.org/static/community_logos/python-powered-w-200x80.png"))
+
+print("-----------")
+display(Image(url="https://www.shareicon.net/data/128x128/2016/05/04/759867_food_512x512.png", height=100))
+```
+
+
+
