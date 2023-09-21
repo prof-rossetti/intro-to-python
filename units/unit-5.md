@@ -14,8 +14,8 @@ In this unit, we'll learn how to use Python to process machine-readable data sto
   + [Managing Files](/notes/python/file-management.md):
     + [The `os` Module](/notes/python/modules/os.md#file-operations) (focusing on filepath construction)
   + Processing CSV Files:
-    + [The `csv` Module](/notes/python/modules/csv.md)
-    + [The `pandas` Package](/notes/python/packages/pandas.md)
+    + [The `csv` Module](/notes/python/modules/csv.md) -- don't use this
+    + [The `pandas` Package](/notes/python/packages/pandas.md) -- recommended!
 
 ## Activities and Exercises
 
