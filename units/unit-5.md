@@ -19,4 +19,5 @@ In this unit, we'll learn how to use Python to process machine-readable data sto
 
 ## Activities and Exercises
 
+  + ["CSV Processing Exercise"](https://github.com/prof-rossetti/intro-to-python/tree/main/exercises/csv-processing)
   + "Monthly Sales Reporting" Exercise ([Local](/exercises/monthly-sales-reporting/README.md) | [Colab](/exercises/monthly-sales-reporting/Monthly_Sales_Reporting_Exercise.ipynb))
