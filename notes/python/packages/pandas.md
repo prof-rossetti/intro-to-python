@@ -21,6 +21,6 @@ First install the package using Pip, if necessary:
 pip install pandas
 ```
 
-## [Usage](https://colab.research.google.com/drive/1v5ySM0JmW1bXXnK5Kuozj_FOSlcqAM_w?usp=sharing)
+## Usage
 
-> NOTE: this `pandas` package guide has been moved to an interactive [Pandas Package Overview](https://colab.research.google.com/drive/1v5ySM0JmW1bXXnK5Kuozj_FOSlcqAM_w?usp=sharing) colab notebook!
+See this [Pandas Package Overview for Data Science - MEGA NOTEBOOK](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/packages/Pandas_Package_Overview_for_Data_Science_(Summer_2023).ipynb)
