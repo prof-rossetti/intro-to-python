@@ -49,7 +49,9 @@ List files in the current working directory:
 
 ```sh
 ls
-ls -al # for a different display
+
+# alternatively, for a different display:
+ls -al 
 ```
 
 ### Navigating and Managing Directories
@@ -83,8 +85,11 @@ mkdir my_folder
 Remove a directory:
 
 ```sh
-rm my_folder # triggers an error
-rm -rf my_folder # recursively (-r) forces (-f) removal
+# triggers an error:
+rm my_folder
+
+# uses options called flags to recursively (-r) force (-f) removal
+rm -rf my_folder 
 ```
 
 ### Managing Files
