@@ -122,7 +122,7 @@ Edit and save a file, using a command-line utility provided by your preferred te
 code my_message.txt 
 ```
 
-> NOTE: Mac users may need to first configure the `code` command by following these [VS Code shell command setup instructions](/notes/devtools/vs-code.md#shell-commands)
+> NOTE: Mac users may need to first configure the `code` command by following these [VS Code shell command setup instructions](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/devtools/vs-code.md#shell-commands)
 
 Display file contents:
 
