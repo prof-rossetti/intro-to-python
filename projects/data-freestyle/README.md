@@ -2,11 +2,18 @@
 
 This project provides students with an opportunity to collect and analyze a dataset to follow their own personal or professional interests.
 
-Students can work on this project in groups of one, two, or three students total.
+
+## Groups
+
+Students have the option of working by themselves, or in groups. The professor will announce the range of valid group sizes for your specific class.
+
+To fairly evaluate groups of different sizes, projects may be ranked against others of the same group composition (e.g. solo projects vs other solo projects, two-person teams vs other two-person teams, etc.).
+
+To incentivize individual effort within groups, each group member may be asked to submit a form describing and rating the roles and relative contributions of all other group members.
+
+## Deliverables
 
 There are three main phases to the project: Data Collection, Data Analysis, and Presentation. Each phase has its own set of deliverables.
-
-## Phases
 
 ### Data Collection
 
