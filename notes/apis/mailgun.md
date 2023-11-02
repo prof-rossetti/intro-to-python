@@ -27,8 +27,16 @@ MAILGUN_DOMAIN="sandbox__________.mailgun.org"
 ## Usage
 
 ```py
-import requests
+import os
 
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MAILGUN_API_KEY = os.getenv("MAILGUN_API_KEY")
+MAILGUN_SENDER_ADDRESS = os.getenv("MAILGUN_SENDER_ADDRESS")
+MAILGUN_DOMAIN = os.getenv("MAILGUN_DOMAIN") # "sandbox__________.mailgun.org"
 
 def send_email(recipient_address=MAILGUN_SENDER_ADDRESS, subject="[Shopping Cart App] Testing 123", html_content="<p>Hello World</p>"):
     print("SENDING EMAIL TO:", recipient_address)
