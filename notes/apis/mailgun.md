@@ -1,6 +1,6 @@
 # Mailgun for Sending Email
  
-https://app.mailgun.com/
+We can use the Mailgun API to send emails!
 
 ## Setup
 
