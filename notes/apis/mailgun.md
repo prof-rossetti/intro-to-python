@@ -8,7 +8,7 @@ Create account with university email address (i.e. `MAILGUN_SENDER_ADDRESS`). Cl
 
 From the domains page, note the sandbox domain provided to you by default (i.e. `MAILGUN_DOMAIN` like "sandbox______.mailgun.org"). 
 
-Find and click on API Key settings link on bottom right, then on the API Keys page, scroll down and click the button to create a new API Key (i.e. `MAILGUN_API_KEY`).
+From the overview page, find and click on API Key settings link on bottom right, then on the API Keys page, scroll down and click the button to create a new API Key (i.e. `MAILGUN_API_KEY`).
 
 > NOTE: Sandbox domains are restricted to authorized recipients only. So you'll only be able to send emails to yourself and a handful of "beta tester" friends and family until / unless you register your own domain later.
 
