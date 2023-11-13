@@ -17,7 +17,7 @@ In this unit, we'll discuss software products and services, and practice deliver
   + Software Delivery and Distribution:
     + [Remote Repositories](/notes/clis/git.md#remote-repositories) and Managing Remote Addresses
     + [Remote Servers](/notes/hardware/servers.md)
-    + [The `heroku` Utility](/notes/clis/heroku.md)
+    + ~~[The `heroku` Utility](/notes/clis/heroku.md)~~ -- they removed their free tier servers so we will be using the Render platform instead!
   + Web Applications:
     + [The `flask` Package](/notes/python/packages/flask.md)
 
