@@ -12,6 +12,7 @@ In this unit, we'll become more familiar with the preliminary phases of the Syst
   + Iterative Development Methodologies and Minimum Viable Products (MVPs)
   + [Users, User Needs, and User-Centered Design](/notes/info-systems/people.md)
   + [Business Process Analysis, Diagramming, and Re-engineering](/notes/info-systems/processes.md)
+  + [Example Systems Requirements Document](/notes/project-mgmt/ToneBase%20System%20Requirements%20-%2020170525.pdf)
 
 ## Activities and Exercises
 
