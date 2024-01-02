@@ -1,8 +1,8 @@
-# An Introduction to Python Programming (2023 Edition)
+# An Introduction to Python Programming (2024 Edition)
 
 ![](https://www.perforce.com/sites/default/files/image/2018-08/image-blog-enterprises-investing-python%20(2).jpg)
 
-## [Slides](https://docs.google.com/presentation/d/174cqh8mH_zdOORcEHxqARIWMek2TJTXQfz--HKnzLyo/edit?usp=sharing)
+## [Slides](https://docs.google.com/presentation/d/1ZuRTKyTh9gc6Hs2ihloUBOH-Ju_U2IjVpDOjgptgipg/edit?usp=sharing)
 
 ## Instructional Modules
 
