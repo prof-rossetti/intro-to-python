@@ -8,34 +8,49 @@
 
 This repository contains instructional materials to support various introductory Python programming courses. Students registered for an official course should consult that course's syllabus for more guidance about how to move through the material.
 
-### Intro to Software Development in Python
+### Intro to Programming in Python
 
-This module introduces students to the Python programming language.
+This module introduces students to computer programming concepts and the Python programming language.
 
 Instructional Units:
 
   + Onboarding:
     + Intro to Information Systems and Software
     + Why Python?
-  + Python Development Tools, Part I:
+  + Python Development Tools, Abbreviated:
     + Google Colab Notebooks
-    + Package Installation with Pip
-  + Python Language Overview, Part I:
+  + Python Language Overview:
     + Variables and Basic Datatypes (Booleans, Strings, etc.)
     + Conditional Logic (If Statements)
     + Functions and Unit Testing
-  + Python Language Overview, Part II:
     + Iteration (While Loops)
     + Container Datatypes (Lists, Dictionaries, etc.)
+  + Modules and Imports
+
+Project(s):
+
+### Practical Applications in Python
+
+In this module, students will venture out into the ecosystem of third-party Python packages, to explore practical applications of the Python programming language.
+
+Instructional Units:
+
+  + Python Development Tools, Continued:
+    + Package Installation (with Pip)
+  + Data Analysis and Visualization:
+    + Basic Charts and Graphs (with Plotly Express)
+    + Basic Data Processing (with Pandas)
   + Fetching Data from the Internet:
+    + Web Requests (with Requests)
     + Application Programming Interfaces (APIs)
-    + Web Scraping
+    + Web Scraping (with Beautiful Soup)
   + Special Topics:
     + User Interfaces and Experiences
     + Information Security and Privacy
+    + Sending Email (with Mailgun or Sendgrid)
     + Leveraging AI Tools for Coding Assistance
 
-Projects:
+Project(s):
   + "API Client" Project
 
 ### Management of Software Development in Python
@@ -44,7 +59,7 @@ In this module, students will explore best practices involved in the production 
 
 Instructional Units:
 
-  + Python Development Tools, Part II:
+  + Python Development Tools, Revisited:
     + Local Development Environment Setup Guide
   + Software Maintenance and Quality Control:
     + Version Control
@@ -61,13 +76,13 @@ Instructional Units:
     + Process Analysis and Diagramming
     + Design Thinking and User Centered Design
 
-Projects:
+Project(s):
   + "Freestyle" Project
 
 
-### Data Analysis and Visualization in Python
+### Data Science in Python
 
-This module introduces students to data processing, analysis, and visualization techniques in Python.
+This module provides a more in-depth introduction to data processing, analysis, and visualization techniques in Python.
 
 Instructional Units:
 
@@ -82,13 +97,14 @@ Instructional Units:
     + Moving Averages and Trends
   + Special Topics:
     + Applied Statistics
-    + Relational Databases (SQL) and Big Data
-    + Processing Multidimensional Data with Numpy
+    + Relational Databases (SQL)
+    + Big Data (with Google BigQuery)
+    + Multidimensional Data Processing (with Numpy)
 
-Projects:
+Project(s):
 
   + "Stocks Dashboard" Project
-  + "FinancialData Dashboard" Project
+  + "Financial Data Dashboard" Project
 
 ### Predictive Modeling in Python
 
@@ -101,20 +117,20 @@ Instructional Units:
     + Data Splitting
     + Feature Scaling
     + Feature Encoding
-  + Supervised Learning with Sklearn:
+  + Supervised Learning (with Sklearn):
     + Regression
     + Classification
     + Natural Language Processing (NLP)
-  + Unsupervised Learning with Sklearn:
+  + Unsupervised Learning (with Sklearn):
     + Dimensionality Reduction
     + Clustering
   + Special Topics:
-    + Deep Learning with Tensorflow
+    + Deep Learning and Neural Networks (with Tensorflow)
     + Large Language Models
-    + AI Agents with Langchain
+    + AI Agents (with Langchain)
 
 
-Projects:
+Project(s):
   + "Data Science Freestyle" Project
 
 
