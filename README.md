@@ -6,31 +6,124 @@
 
 ## Instructional Modules
 
-This repository contains instructional materials to support various introductory Python programming courses. Students using these materials should consult their respective syllabus to know which materials they are responsible for.
+This repository contains instructional materials to support various introductory Python programming courses. Students registered for an official course should consult that course's syllabus for more guidance about how to move through the material.
 
 ### Intro to Software Development in Python
 
+This module introduces students to the Python programming language.
+
 Instructional Units:
 
-  + [Unit 0](/units/unit-0.md) - Onboarding
-  + [Unit 1](/units/unit-1.md) - Python Development Environment
-  + [Unit 2](/units/unit-2.md) - Python Language Overview
-  + [Unit 3](/units/unit-3.md) - Python Datatypes
-  + [Unit 4](/units/unit-4.md) - User Interfaces and Experiences
-  + [Unit 5](/units/unit-5.md) - Processing CSV Data
-  + [Unit 6](/units/unit-6.md) - Data Visualization
-  + [Unit 7](/units/unit-7.md) - Fetching Data from the Internet
-  + Review
+  + Onboarding:
+    + Intro to Information Systems and Software
+    + Why Python?
+  + Python Development Tools, Part I:
+    + Google Colab Notebooks
+    + Package Installation with Pip
+  + Python Language Overview, Part I:
+    + Variables and Basic Datatypes (Booleans, Strings, etc.)
+    + Conditional Logic (If Statements)
+    + Functions and Unit Testing
+  + Python Language Overview, Part II:
+    + Iteration (While Loops)
+    + Container Datatypes (Lists, Dictionaries, etc.)
+  + Fetching Data from the Internet:
+    + Application Programming Interfaces (APIs)
+    + Web Scraping
+  + Special Topics:
+    + User Interfaces and Experiences
+    + Information Security and Privacy
+    + Leveraging AI Tools for Coding Assistance
+
+Projects:
+  + "API Client" Project
 
 ### Management of Software Development in Python
 
+In this module, students will explore best practices involved in the production and management of application software.
+
 Instructional Units:
 
-  + [Unit 8](/units/unit-8.md) - Software Maintenance and Quality Control
-  + [Unit 9](/units/unit-9.md) - Software Products and Services
-  + [Unit 10](/units/unit-10.md) - Software Planning, Analysis, and Design
-  + [Unit 11](/units/unit-11.md) - Project Implementation Sprint
-  + [Unit 12](/units/unit-12.md) - Project Presentations
+  + Python Development Tools, Part II:
+    + Local Development Environment Setup Guide
+  + Software Maintenance and Quality Control:
+    + Version Control
+    + Code Simplification and Refactoring
+    + Code Documentation
+    + Automated Testing (with Pytest)
+    + Continuous Integration (with GitHub Actions)
+  + Software Products and Services:
+    + Business, Licensing, and Distribution Models
+    + Web Services and Background Jobs
+    + Web Applications
+  + Software Planning, Analysis, and Design:
+    + The Systems Development Lifecycle (SDLC)
+    + Process Analysis and Diagramming
+    + Design Thinking and User Centered Design
+
+Projects:
+  + "Freestyle" Project
+
+
+### Data Analysis and Visualization in Python
+
+This module introduces students to data processing, analysis, and visualization techniques in Python.
+
+Instructional Units:
+
+  + Data Visualization (with Plotly Express):
+    + Basic Charts and Graphs
+    + Trend Lines
+  + CSV Data Processing (with Pandas):
+    + Pandas Datatypes (DataFrame, Series, etc.)
+    + Grouping and Aggregation
+    + Merging and Joining Datasets
+    + Percent Change and Shift Based Methods
+    + Moving Averages and Trends
+  + Special Topics:
+    + Applied Statistics
+    + Relational Databases (SQL) and Big Data
+    + Processing Multidimensional Data with Numpy
+
+Projects:
+
+  + "Stocks Dashboard" Project
+  + "FinancialData Dashboard" Project
+
+### Predictive Modeling in Python
+
+This module introduces students to predictive modeling and applied machine learning.
+
+Instructional Units:
+
+  + Machine Learning Concepts and Problem Formulation
+  + Data Preprocessing:
+    + Data Splitting
+    + Feature Scaling
+    + Feature Encoding
+  + Supervised Learning with Sklearn:
+    + Regression
+    + Classification
+    + Natural Language Processing (NLP)
+  + Unsupervised Learning with Sklearn:
+    + Dimensionality Reduction
+    + Clustering
+  + Special Topics:
+    + Deep Learning with Tensorflow
+    + Large Language Models
+    + AI Agents with Langchain
+
+
+Projects:
+  + "Data Science Freestyle" Project
+
+
+
+
+
+
+
+
 
 
 ## Alternative Resources
