@@ -1,0 +1,24 @@
+id,name,aisle,department,price,price_per,img_url
+1,Chocolate Sandwich Cookies,cookies cakes,snacks,3.50,item,https://tmbidigitalassetsazure.blob.core.windows.net/toh/GoogleImagesPostCard/Quick-Chocolate-Sandwich-Cookies_exps12928_CK133085D05_07_5bC_RMS.jpg
+2,All-Seasons Salt,spices seasonings,pantry,4.99,item,https://i5.walmartimages.com/asr/46a4e05c-4b00-4b8d-851f-5b6c489c05ce_2.0e41c87b7366e49ef0a19f4f8f89b5bf.png
+3,Robust Golden Unsweetened Oolong Tea,tea,beverages,2.49,item,https://cdn11.bigcommerce.com/s-tfv7q8thbe/images/stencil/800x800/products/430/1252/apifh3coi__16441.1560953606.jpg?c=2
+4,Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce,frozen meals,frozen,6.99,item,https://i.pinimg.com/736x/96/84/3f/96843f17057b78561a3ad4edb18c59aa--homemade-vodka-sauce-weight-watchers-smart-ones.jpg
+5,Green Chile Anytime Sauce,marinades meat preparation,pantry,7.99,item,https://cdn11.bigcommerce.com/s-qqb56hyrha/images/stencil/1280x1280/products/2799/8558/1084__90291.1565126801.jpg?c=2
+6,Dry Nose Oil,cold flu allergy,personal care,21.99,item,https://fess.com.au/wp-content/uploads/2017/11/CPC-FESS-DryNoseOil-600x600px-600x600.jpg
+7,Pure Coconut Water With Orange,juice nectars,beverages,3.50,item,https://i5.walmartimages.com/asr/0a98b9f4-349c-4d3a-b532-e19c130af4ce_1.29d7d4633c110aa83d7c877912a70969.jpeg
+8,Cut Russet Potatoes Steam N' Mash,frozen produce,frozen,4.25,item,https://i5.walmartimages.com/asr/332e0593-be1c-4bbc-b5a0-d628e9e068cb.84c7a077aa428b8dd7e96c4db7e63f73.jpeg
+9,Light Strawberry Blueberry Yogurt,yogurt,dairy eggs,6.50,item,https://res.cloudinary.com/general-mills/image/upload/products/00070470403953_C3N1_s105_9b1aa1a3-2987-4344-b18b-b350d64cead2.jpg
+10,Sparkling Orange Juice & Prickly Pear Beverage,water seltzer sparkling water,beverages,2.99,item,https://www.foodiesgeneralstore.com/assets/images/san%20pellegrino%20prickly%20pear%20%20orange%20sparkling%20drink.jpeg
+11,Peach Mango Juice,refrigerated,beverages,1.99,item,https://i5.walmartimages.com/asr/0f6eb4f5-51f9-4d79-8d19-c38f70e94410_1.468c1962ae62faf1254aef723c13f110.jpeg
+12,Chocolate Fudge Layer Cake,frozen dessert,frozen,18.50,item,https://images.heb.com/is/image/HEBGrocery/000148555
+13,Saline Nasal Mist,cold flu allergy,personal care,16.00,item,https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71A-NvoVMIL._AC_SX679_.jpg
+14,Fresh Scent Dishwasher Cleaner,dish detergents,household,4.99,item,https://i5.walmartimages.com/asr/d69352cc-8b5a-4919-b040-fc728f308499.38d9ea88b5da4f73d9c1937f4ca0272c.jpeg
+15,Overnight Diapers Size 6,diapers wipes,babies,25.50,item,https://i5.walmartimages.com/asr/d769c4ea-f71c-46b6-9f1c-18be40985374.9419d580efb58b5642bd563b720ad0c8.jpeg
+16,Mint Chocolate Flavored Syrup,ice cream toppings,snacks,4.50,item,https://m.media-amazon.com/images/I/81BCniKRzkL._SL1500_.jpg
+17,Rendered Duck Fat,poultry counter,meat seafood,9.99,item,https://i5.peapod.com/c/3U/3U5OU.png
+18,Pizza for One Suprema Frozen Pizza,frozen pizza,frozen,12.50,item,https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00019600046707/4b32e88d8ce88b66492de400816e4b7b_large.png&width=512&type=webp&quality=90
+19,Gluten Free Quinoa Three Cheese & Mushroom Blend,grains rice dried goods,dry goods pasta,3.99,item,https://www.foodservicedirect.com/media/catalog/product/8/5/859331002012.jpg?width=1200&height=1200&quality=85&fit=bounds
+20,Pomegranate Cranberry & Aloe Vera Enrich Drink,juice nectars,beverages,4.25,item,https://images.albertsons-media.com/is/image/ABS/960071018-ECOM?$ng-ecom-pdp-mobile$&defaultImage=Not_Available
+21,Jake's Yuzu Hot Sauce,sauces,sauces,11.99,item,http://cdn.shopify.com/s/files/1/0518/3216/0421/products/chotto-motto-yuzu-hot-sauce_1024x1024_2x_1024x1024_2x_1024x1024_2x_2c532adc-4d10-4dc1-aefb-366ebf04b1b4_800x.jpg?v=1645488264
+22,Organic Bananas,produce,produce,0.99,pound,https://scene7.samsclub.com/is/image/samsclub/0064312697196_A
+23,Organic Strawberries,produce,produce,1.49,pound,https://cdn11.bigcommerce.com/s-tfv7q8thbe/images/stencil/1280x1280/products/8801/23264/driscollsorgstr__53302.1620576795.jpg?c=2
