@@ -14,7 +14,7 @@ chromedriver --version
 /usr/local/bin/chromedriver --version
 ```
 
-[Install `chromedriver`](http://chromedriver.chromium.org/getting-started), if necessary (on Mac or Windows), or on Mac, can do this via [`homebrew`](/notes/clis/brew.md):
+[Install `chromedriver`](http://chromedriver.chromium.org/getting-started), if necessary (on Mac or Windows), or on Mac, can do this via [`homebrew`](brew.md):
 
 ```sh
 # install (on Mac OS, via homebrew):
@@ -28,7 +28,7 @@ Observe the location where your `chromedriver` utility has been installed (e.g. 
 
 ## Usage
 
-Use [the `selenium` package](/notes/python/packages/selenium.md) to control the `chromedriver` from a Python script.
+Use [the `selenium` package](./../python/packages/selenium.md) to control the `chromedriver` from a Python script.
 
 ## Troubleshooting
 

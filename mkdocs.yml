@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 site_name: Intro to Python
 
 # Repository 
@@ -11,7 +9,7 @@ repo_url: https://github.com/prof-rossetti/intro-to-python
 theme:
   name: material
   features: 
-    # - navigation.tabs # this option gives us tabs at the top
+    - navigation.tabs # this option gives us tabs at the top
     # - navigation.sections # this active removes the drop down subfolders 
     - navigation.top # look this up 
     - search.sugguest
@@ -170,6 +168,77 @@ nav:
       - Refactoring: notes/software/refactoring.md
       - Testing: notes/software/testing.md
       - Version control: notes/software/version-control.md
+  - Exercises:
+    -  Api Client: exercises/api-client/README.md
+    - Chart gallery: exercises/chart-gallery/README.md
+    - CI-123: exercises/ci-123/README.md
+    - Codebase Cleanup: exercises/codebase-cleanup/README.md
+    - Codebase Cleanup 2021: exercises/codebase-cleanup-2021/README.md
+    - Codebase Cleanup 2023: exercises/codebase-cleanup-2023/README.md
+    - command line computing:
+      - Overview: exercises/command-line-computing/README.md
+      - Mac terminal configuration: exercises/command-line-computing/mac-terminal-config.md
+      - Mac terminal: exercises/command-line-computing/mac-terminal.md
+      - Windows Command Prompt: exercises/command-line-computing/windows-command-prompt.md
+    - Custom functions: exercises/custom-functions/README.md 
+    - Data Flow Diagramming: exercises/data-flow-diagramming/README.md
+    - Databases SQL: exercises/databases-sql/README.md
+    - Dev collaboration: exercises/dev-collaboration/README.md
+    - Groceries:
+      - Overview: exercises/groceries/README.md
+      - Challenges: exercises/groceries/challenges.md
+      - Checkpoints: exercises/groceries/checkpoints.md
+    - Hello World:
+      - Colab: exercises/hello-world/colab.md
+      - Local: exercises/hello-world/local.md
+      - Version control solutions: exercises/hello-world/version-control-solutions.md
+      - Version control: exercises/hello-world/version-control.md
+    - interface capabilities: exercises/interface-capabilities/README.md
+    - List Comprehensions: exercises/list-comprehensions/README.md
+    - Local Developer Setup:
+      - Overview: exercises/local-dev-setup/README.md
+      - Anaconda setup: exercises/local-dev-setup/setup-anaconda.md
+      - GIT client setup: exercises/local-dev-setup/setup-git-client.md
+      - Github setup: exercises/local-dev-setup/setup-github.md
+      - Jupyter setup: exercises/local-dev-setup/setup-jupyter.md
+      - Terminal setup: exercises/local-dev-setup/setup-terminal.md
+      - Text editor IDE setup: exercises/local-dev-setup/setup-text-editor-ide.md
+    - Modules and imports: exercises/modules-and-imports/README.md
+    - Monthly Sales predictions: exercises/monthly-sales-predictions/README.md
+    - Monthly sales reporting: exercises/monthly-sales-reporting/README.md
+    - Omniparser: exercises/omniparser/README.md
+    - process diagramming: exercises/process-diagramming/README.md
+    - Rock Paper Scissors:
+      - Overview: exercises/rock-paper-scissors/README.md
+      - Challenges: exercises/rock-paper-scissors/challenges.md
+      - Functions practice: exercises/rock-paper-scissors/functions-practice.md
+      - Testing challenges: exercises/rock-paper-scissors/testing_challenges.md
+    - RPS cleanup: exercises/rps-cleanup/README.md
+    - Run the app:
+      - Overview: exercises/run-the-app/README.md
+      - Daily briefings: exercises/run-the-app/daily-briefings.md
+      - my first python app: exercises/run-the-app/my-first-python-app.md
+      - Tic tac toe: exercises/run-the-app/tic-tac-toe.md
+      - Troubleshooting: exercises/run-the-app/troubleshooting.md
+    - Testing 123: exercises/testing-123/README.md
+    - Web App:
+      - Overivew: exercises/web-app/README.md
+      - 1) Modular organization: exercises/web-app/checkpoints/1-modular-org.md
+      - 2) Routing: exercises/web-app/checkpoints/2-routing.md
+      - 3) Render template: exercises/web-app/checkpoints/3-render-template.md
+      - 4) Web forms: exercises/web-app/checkpoints/4-web-forms.md
+      - 5) Bootstrap layout: exercises/web-app/checkpoints/5-bootstrap-layout.md
+      - Further: exercises/web-app/further.md
+    - Web App 2023:
+      - Overview: exercises/web-app-2023/README.md
+      - Checkpoint 1: exercises/web-app-2023/checkpoint-1/README.md
+      - Deployment: exercises/web-app-2023/deployment/DEPLOYING.md
+      - Deployment heroku deprecated: exercises/web-app-2023/deployment-heroku-deprecated/DEPLOYING.md
+    - Web requests: exercises/web-requests/README.md
+    - Web service:
+      - Overview: exercises/web-service/README.md
+      - deploying: exercises/web-service/DEPLOYING.md
+      - Further: exercises/web-service/further.md
 
 
 
@@ -184,5 +253,3 @@ nav:
 
 
 
-
->>>>>>> Stashed changes
