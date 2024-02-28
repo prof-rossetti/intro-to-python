@@ -1,0 +1,188 @@
+<<<<<<< Updated upstream
+=======
+site_name: Intro to Python
+
+# Repository 
+repo_name: intro-to-python
+repo_url: https://github.com/prof-rossetti/intro-to-python
+
+
+# link to colors https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+theme:
+  name: material
+  features: 
+    # - navigation.tabs # this option gives us tabs at the top
+    # - navigation.sections # this active removes the drop down subfolders 
+    - navigation.top # look this up 
+    - search.sugguest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotation
+  palette:
+    - scheme: slate
+      primary: deep purple 
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+  # Right sidebar with the table of contents (requires 'navigation.sections')
+  right_sidebar:
+    - toc
+
+# Extensions
+markdown_extensions:
+  # - admonitiondocs
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+
+
+nav:
+  - Home: index.md
+  - Notes:
+    - mailgun API: notes/apis/mailgun.md
+    - CLIs:
+      - brew: notes/clis/brew.md
+      - Chromedriver: notes/clis/chromedriver.md
+      - Conda: notes/clis/conda.md
+      - GIT: notes/clis/git.md
+      - Heroku: notes/clis/heroku.md
+      - PDFtoText: notes/clis/pdftotext.md
+      - Pip: notes/clis/pip.md
+      - Python: notes/clis/python.md
+      - youtube-dl: notes/clis/youtube-dl.md
+    - Devtools:
+      - github actions: notes/devtools/github-actions/README.md
+      - code climate: notes/devtools/code-climate.md
+      - git bash: notes/devtools/git-bash.md
+      - git desktop: notes/devtools/git-desktop.md
+      - google APIs: notes/devtools/google-apis.md
+      - Google colab: notes/devtools/google-colab.md
+      - jupyter notebooks: notes/devtools/jupyter-notebooks.md
+      - pycharm: notes/devtools/pycharm.md
+      - travis-ci: notes/devtools/travis-ci.md
+      - VS code: notes/devtools/vs-code.md
+    - environment variables:
+      - accessing globally: notes/environment-variables/accessing-globally.md
+    - hardware: notes/hardware/hardware.md
+    - Info systems:
+      - README: notes/info-systems/README.md
+      - Data stores: notes/info-systems/datastores.md
+      - Networks: notes/info-systems/networks.md
+      - People: notes/info-systems/people.md
+      - Processes: notes/info-systems/processes.md
+      - Security-privacy: notes/info-systems/security-privacy.md
+    - Project Management:
+      - README: notes/project-mgmt/README.md
+      - Dev lifecycle: notes/project-mgmt/dev-lifecycle.md
+      - tools: notes/project-mgmt/tools.md
+  - Python: 
+    - Datatypes: 
+      - Overview: notes/python/datatypes/README.md
+      - booleans: notes/python/datatypes/booleans.md
+      - class inheritance: notes/python/datatypes/class-inheritance.md
+      - classes: notes/python/datatypes/classes.md
+      - dates: notes/python/datatypes/dates.md
+      - dictionaries: notes/python/datatypes/dictionaries.md
+      - lists: notes/python/datatypes/lists.md
+      - none: notes/python/datatypes/none.md
+      - numbers: notes/python/datatypes/numbers.md
+      - strings: notes/python/datatypes/strings.md
+    - Python Modules: 
+      - Overview: notes/python/modules/README.md
+      - collections: notes/python/modules/collections.md
+      - csv: notes/python/modules/csv.md
+      - datetime: notes/python/modules/datetime.md
+      - getpass: notes/python/modules/itertools.md
+      - itertools: notes/python/modules/itertools.md
+      - json: notes/python/modules/json.md
+      - math: notes/python/modules/math.md
+      - os: notes/python/modules/os.md
+      - Pprint: notes/python/modules/pprint.md
+      - Random: notes/python/modules/random.md
+      - SQLite: notes/python/modules/sqlite.md
+      - Statistics: notes/python/modules/statistics.md
+      - Time: notes/python/modules/time.md
+      - Types: notes/python/modules/types.md
+      - Web Browser: notes/python/modules/webbrowser.md
+    - Packages:
+      - Sendgrid: notes/python/packages/sendgrid/email-templates.md
+      - Altair: notes/python/packages/altair.md
+      - autopep8: notes/python/packages/autopep8.md
+      - beautifulsoup.md: notes/python/packages/beautifulsoup.md
+      - bigquery: notes/python/packages/bigquery.md
+      - dotenv: notes/python/packages/dotenv.md
+      - flask: notes/python/packages/flask.md
+      - fPDF: notes/python/packages/fpdf.md
+      - gspread-2021: notes/python/packages/gspread-2021.md
+      - gspread: notes/python/packages/gspread.md
+      - ipython: notes/python/packages/ipython.md
+      - matplotlib: notes/python/packages/matplotlib.md
+      - nltk: notes/python/packages/nltk.md
+      - pandas: notes/python/packages/pandas.md
+      - pipenv: notes/python/packages/pipenv.md
+      - plotly: notes/python/packages/plotly.md
+      - psycopg: notes/python/packages/psycopg.md
+      - pymongo: notes/python/packages/pymongo.md
+      - pymysql: notes/python/packages/pymysql.md
+      - pysimplegui: notes/python/packages/pysimplegui.md
+      - pytest: notes/python/packages/pytest.md
+      - Requests Mock: notes/python/packages/requests_mock.md
+      - requests: notes/python/packages/requests.md
+      - seaborn: notes/python/packages/seaborn.md
+      - selenium: notes/python/packages/selenium.md
+      - sendgrid: notes/python/packages/sendgrid.md
+      - speech recognition: notes/python/packages/speech_recognition.md
+      - spotipy: notes/python/packages/spotipy.md
+      - sqlalchemy: notes/python/packages/sqlalchemy.md
+      - tkinter: notes/python/packages/tkinter.md
+      - tweepy: notes/python/packages/tweepy.md
+      - twilio: notes/python/packages/twilio.md
+    - Comments: notes/python/comments.md
+    - Control flow: notes/python/control-flow.md
+    - Debugging: notes/python/debugging.md
+    - Docstrings: notes/python/docstrings.md
+    - Errors: notes/python/errors.md
+    - File management: notes/python/file-management.md
+    - Functions: notes/python/functions.md
+    - Inputs: notes/python/inputs.md
+    - Printing: notes/python/printing.md
+    - Syntax and style: notes/python/syntax-and-style.md
+    - Variables: notes/python/variables.md
+    - Software:
+      - Overview: notes/software/README.md
+      - APIs: notes/software/apis.md
+      - Documentation: notes/software/documentation.md
+      - Ethics: notes/software/ethics.md
+      - Liscensing: notes/software/licensing.md
+      - Refactoring: notes/software/refactoring.md
+      - Testing: notes/software/testing.md
+      - Version control: notes/software/version-control.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes

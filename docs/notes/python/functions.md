@@ -9,7 +9,7 @@ Reference:
 
 The primary responsibilities of a function are to perform some specified set of logical operations (i.e. "do something"), and optionally also to return a value (i.e. "return something").
 
-In practice, we will move some expression into its own function if we need to re-use it over and over again. Then instead of repeating the entire expression again, we can easily invoke our function as a short-hand way of referencing the pre-defined functionality. This helps us keep our code maintainable. See also: [Refactoring](/notes/software/refactoring.md).
+In practice, we will move some expression into its own function if we need to re-use it over and over again. Then instead of repeating the entire expression again, we can easily invoke our function as a short-hand way of referencing the pre-defined functionality. This helps us keep our code maintainable. See also: [Refactoring](/notes/software/refactoring).
 
 Functions must first be defined (just once), then they can subsequently be used (i.e. "called" or "invoked") any number of times. Remember to use trailing parenthesis when defining and invoking functions.
 
