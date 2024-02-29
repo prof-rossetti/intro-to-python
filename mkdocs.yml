@@ -239,6 +239,36 @@ nav:
       - Overview: exercises/web-service/README.md
       - deploying: exercises/web-service/DEPLOYING.md
       - Further: exercises/web-service/further.md
+  - Projects:
+    - API client:
+      - Overview: projects/api-client/README.md
+      - Demo: projects/api-client/demo.md
+      - implementation: projects/api-client/implementation.md
+    - Data freestyle: projects/data-freestyle/README.md
+    - Exec dash:
+      - Overview: projects/exec-dash/README.md
+      - Challenges: projects/exec-dash/challenges.md
+      - Testing: projects/exec-dash/testing.md
+    - Freestyle: 
+      - Ovefview: projects/freestyle/README.md
+      - Demo: projects/freestyle/demo.md
+      - Implementation: projects/freestyle/implementation.md
+      - Plan: projects/freestyle/plan.md
+      - Proposal: projects/freestyle/proposal.md
+    - Robo Advisor:
+      - Overview: projects/robo-advisor/README.md
+      - Challenges: projects/robo-advisor/challenges.md
+      - Testing: projects/robo-advisor/testing.md
+    - Shopping Cart:
+      - Overview: projects/shopping-cart/README.md
+      - Challenges: projects/shopping-cart/challenges.md
+      - Checkpoints: projects/shopping-cart/checkpoints.md
+      - Starter Code: projects/shopping-cart/starter-code.md
+      - Testing: projects/shopping-cart/testing.md
+    - Stocks Dash:
+      - Starter code: projects/stocks-dash/starter-code.md
+
+
 
 
 
