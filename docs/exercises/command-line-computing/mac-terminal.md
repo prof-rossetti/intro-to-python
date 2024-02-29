@@ -12,7 +12,7 @@ Open the Terminal application (Mac) or the Git Bash application (Windows).
 
 > FYI: Mac users who are into maximum efficiency through keyboard shortcuts can get there quickly by pressing the "command + space" buttons to start a spotlight search, then begin typing the word "terminal", then hit enter when you see "Terminal" show up. :smiley_cat:
 >
-> ![a screenshot of the terminal app showing up as a result of a spotlight search](/img/exercises/command-line-computing/mac-shortcut.png)
+> ![a screenshot of the terminal app showing up as a result of a spotlight search](./../../img/exercises/command-line-computing/mac-shortcut.png)
 
 ![a screenshot of the terminal](/img/exercises/command-line-computing/mac-terminal.png)
 
