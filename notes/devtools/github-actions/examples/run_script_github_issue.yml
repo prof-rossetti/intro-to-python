@@ -1,0 +1,33 @@
+# adapted from: https://github.com/gwuniversity/GWUniversity-SelfInvite/blob/main/.github/workflows/invite-by-issue.yml
+
+on:
+  issues:
+    types: [opened]
+
+name: Invite a new user by comment
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: checkout repo content
+          uses: actions/checkout@v2
+
+        - name: setup python
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.8
+
+        - name: install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install requests
+            if [ -f ./.github/workflows/requirements.txt ]; then pip install -r ./.github/workflows/requirements.txt; fi
+
+        - name: execute my python script
+          run: |
+            python ./app/my_script.py
+          env:
+            MY_GITHUB_KEY: ${{ secrets.MY_GITHUB_KEY }}
+            MY_TEAM_ID: ${{ secrets.MY_TEAM_ID }}
