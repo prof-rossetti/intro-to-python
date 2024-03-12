@@ -25,6 +25,8 @@ Students may consult these past exams in an effort to understand what kinds of q
 
 Semester(s) | Course | Duration
 ---|---|---
+[Spring 2024](/exam/Midterm%20Exam%20-%20COSC%201010%20(Spring%202024)%20-%20v4.pdf) | Georgetown COSC 1010 | 75 mins
+[Fall 2022 - Fall 2023](/exam/Crunch_the_YouTube_Data_Exam_(Fall_2023)_%5BYOUR_NET_ID%5D.ipynb) | Various | 75 mins
 [Fall 2021 - Summer 2022](/exam/Exam_2022.ipynb) | Various | 75 mins
 [Spring 2020](https://github.com/prof-rossetti/intro-to-python/blob/master/exam/Final%20Exam%20-%20OPIM%20243%20-%202020.pdf) | Georgetown OPIM 243 | 75 mins
 [Summer 2019](https://github.com/prof-rossetti/nyu-info-2335-201905/blob/master/exams/final/exam.pdf) | NYU INFO 2335 | 90 mins
