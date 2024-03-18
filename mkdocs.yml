@@ -65,7 +65,7 @@ nav:
       - github actions: notes/devtools/github-actions/README.md
       - code climate: notes/devtools/code-climate.md
       - git bash: notes/devtools/git-bash.md
-      - git desktop: notes/devtools/git-desktop.md
+      - git desktop: notes/devtools/github-desktop.md
       - google APIs: notes/devtools/google-apis.md
       - Google colab: notes/devtools/google-colab.md
       - jupyter notebooks: notes/devtools/jupyter-notebooks.md
@@ -73,8 +73,9 @@ nav:
       - travis-ci: notes/devtools/travis-ci.md
       - VS code: notes/devtools/vs-code.md
     - environment variables:
+      - Overview: notes/environment-variables/README.md
       - accessing globally: notes/environment-variables/accessing-globally.md
-    - hardware: notes/hardware/hardware.md
+    - Hardware: notes/hardware/servers.md
     - Info systems:
       - README: notes/info-systems/README.md
       - Data stores: notes/info-systems/datastores.md
@@ -90,7 +91,7 @@ nav:
     - Datatypes: 
       - Overview: notes/python/datatypes/README.md
       - booleans: notes/python/datatypes/booleans.md
-      - class inheritance: notes/python/datatypes/class-inheritance.md
+      - class inheritance: notes/python/datatypes/class-inheritence.md
       - classes: notes/python/datatypes/classes.md
       - dates: notes/python/datatypes/dates.md
       - dictionaries: notes/python/datatypes/dictionaries.md

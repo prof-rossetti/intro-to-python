@@ -18,7 +18,7 @@ Reference:
 
 Create a Twitter Account. Then while logged in to Twitter, visit the [Twitter Application Management Console](https://developer.twitter.com/en/apps) and click "Create New App" to create a new Twitter Application. You might have to first sign up for a Twitter developer account, and click the link in a confirmation email.
 
-After creating a new application, click on the "Keys and Access Tokens" tab, and note the application's "Consumer Key" and "Consumer Secret". Scroll down and generate a new Access Token and note its "Access Token" and "Access Token Secret" values. Store these four values as [Environment Variables](/notes/environment-variables/README.md) in a [".env" file](/notes/python/packages/dotenv.md) in your project's root directory, like:
+After creating a new application, click on the "Keys and Access Tokens" tab, and note the application's "Consumer Key" and "Consumer Secret". Scroll down and generate a new Access Token and note its "Access Token" and "Access Token Secret" values. Store these four values as [Environment Variables](./../../../notes/environment-variables/README.md) in a [".env" file](./dotenv.md) in your project's root directory, like:
 
 ```sh
 # the ".env" file...

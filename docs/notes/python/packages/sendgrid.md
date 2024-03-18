@@ -51,7 +51,7 @@ We'll need to handle secret credentials differently, depending on the developmen
 
 #### Credentials in Colab
 
-If working in a Colab notebook, we'll use [`getpass`](/notes/python/modules/getpass.md) to ask for a secure user input (for the API key, and the sender email address):
+If working in a Colab notebook, we'll use [`getpass`](./../modules/getpass.md) to ask for a secure user input (for the API key, and the sender email address):
 
 ```py
 from getpass import getpass
@@ -62,7 +62,7 @@ SENDER_ADDRESS = getpass("Please input your Sender Email Address: ")
 
 #### Credentials in Local Development Project
 
-Otherwise, if working locally, we'll use [Environment Variables](/notes/environment-variables/README.md) to specify the secret credentials, ideally in conjunction with a [".env" file approach](/notes/python/packages/dotenv.md):
+Otherwise, if working locally, we'll use [Environment Variables](./../../environment-variables/README.md) to specify the secret credentials, ideally in conjunction with a [".env" file approach](/notes/python/packages/dotenv.md):
 
 ```py
 import os

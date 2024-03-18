@@ -27,7 +27,7 @@ If these commands produce a version-looking output and a filepath-looking output
 
 ### Installation on Mac
 
-Mac users can install `pdftotext` via [homebrew](/notes/clis/brew.md):
+Mac users can install `pdftotext` via [homebrew](./../clis/brew.md):
 
 ```sh
 brew install pkg-config poppler

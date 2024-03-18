@@ -115,7 +115,7 @@ print(os.path.isfile(os.path.join(os.path.dirname(__file__), "..", "desktop_mess
 
 ## Environment Variables
 
-> Prerequisite: [Environment Variables](/notes/environment-variables/README.md)
+> Prerequisite: [Environment Variables](./../../environment-variables/README.md)
 
 It is possible to access all variables in the entire environment:
 

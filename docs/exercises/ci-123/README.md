@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-  + ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
-  + [Travis CI](/notes/devtools/travis-ci.md)
+  + ["Testing 1, 2, 3" Exercise](./../testing-123/README.md)
+  + [Travis CI](./../../notes/devtools/travis-ci.md)
 
 ## Learning Objectives
 
@@ -14,7 +14,7 @@
 
 Start following the [tutorial](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci) to integrate Travis CI with your GitHub account.
 
-If you haven't yet completed the ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md), take a moment to do that now. We'll build on that application for the purposes of this exercise. Our goal is to configure a remote repository to run automated tests whenever we propose a change to this application's source code.
+If you haven't yet completed the ["Testing 1, 2, 3" Exercise](./../testing-123/README.md), take a moment to do that now. We'll build on that application for the purposes of this exercise. Our goal is to configure a remote repository to run automated tests whenever we propose a change to this application's source code.
 
 Navigate to the "testing-123" directory from the command line, and open it with a text editor. Verify your ability to run its tests before moving on:
 

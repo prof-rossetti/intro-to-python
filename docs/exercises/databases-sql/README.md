@@ -22,12 +22,12 @@ Databases, and Datastores:
 
 ## Exercises and Notes
 
-Intro to SQL for Data Analysis, using an existing database, in the [SQL Practice notebook](/exercises/databases-sql/SQL_Practice_Chinook_DB_(Fall_2023).ipynb):
+Intro to SQL for Data Analysis, using an existing database, in the [SQL Practice notebook](./../databases-sql/SQL_Practice_Chinook_DB_(Fall_2023).ipynb):
   + [Single Table Queries](https://github.com/prof-rossetti/intro-to-databases/blob/main/notes/databases/analysis/single-table-sql.md): `SELECT`, `FROM`, `WHERE` , `ORDER BY` , `LIMIT` clauses`
   + [Single Table Aggregations](https://github.com/prof-rossetti/intro-to-databases/blob/main/notes/databases/analysis/single-table-aggregations.md): `GROUP BY`, `HAVING` clauses
   + [Multi-Table Queries](https://github.com/prof-rossetti/intro-to-databases/blob/main/notes/databases/analysis/multi-table-sql.md): `JOIN` clause
     
-Database Management and Collecting your own Data, in the [Database Management notebook](/exercises/databases-sql/Database_Management_Demo_SQLite_and_BigQuery_(Fall_2023).ipynb):
+Database Management and Collecting your own Data, in the [Database Management notebook](./../databases-sql/Database_Management_Demo_SQLite_and_BigQuery_(Fall_2023).ipynb):
   + [Management SQL](https://github.com/prof-rossetti/intro-to-databases/blob/main/notes/databases/management/management-sql.md): Creating and deleting tables. Populating tables with data.
 
 Database Design (STRETCH GOAL):

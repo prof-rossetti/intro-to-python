@@ -10,7 +10,7 @@
 
 ## Prerequisites
 
-  + Read the [Unit 8](/units/unit-8.md) Notes.
+  + Read the [Unit 8](./../../units/unit-8.md) Notes.
   + Sign up for the [Code Climate (Quality) service](https://codeclimate.com/quality/), and login with your GitHub account, and "install" Code Climate to access your GitHub repos.
 
 ## Prompt

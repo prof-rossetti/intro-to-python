@@ -110,10 +110,10 @@ You'll need to write Python code to convert the provided data structures into ch
 
 The instructions in the "Research" and "Investigation" sections below can help you get started on your own. Otherwise, you might consult the notes for one of the following Python charting packages to help you get started:
 
-  + [The `matplotlib` Package](/notes/python/packages/matplotlib.md)
-  + [The `plotly` Package](/notes/python/packages/plotly.md) (recommended)
-  + [The `altair` Package](/notes/python/packages/altair.md)
-  + [The `seaborn` Package](/notes/python/packages/seaborn.md)
+  + [The `matplotlib` Package](./../../notes/python/packages/matplotlib.md)
+  + [The `plotly` Package](./../../notes/python/packages/plotly.md) (recommended)
+  + [The `altair` Package](./../../notes/python/packages/altair.md)
+  + [The `seaborn` Package](./../../notes/python/packages/seaborn.md)
 
 Generally the approach you should try to follow is something like:
 

@@ -7,7 +7,7 @@
 
 Use the same repo with monthly sales CSV data files you used for the "Monthly Sales Reporting" exercise, or make a copy of that repo called something like "monthly-sales-predictions" and add the same CSV files into that new repo.
 
-Make sure your repo includes all available ["monthly sales data"](/data/monthly-sales) CSV files.
+Make sure your repo includes all available ["monthly sales data"](./../../data/monthly-sales) CSV files.
 
 ## Instructions
 

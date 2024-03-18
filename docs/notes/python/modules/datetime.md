@@ -2,11 +2,11 @@
 
 Reference:
 
-  + https://docs.python.org/3/library/datetime.html
-  + https://docs.python.org/3/library/datetime.html#date-objects
-  + https://docs.python.org/3/library/datetime.html#datetime-objects
-  + https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
-  + https://docs.python.org/3/library/datetime.html#timedelta-objects
+  + [datetime](https://docs.python.org/3/library/datetime.html)
+  + [date-objects](https://docs.python.org/3/library/datetime.html#date-objects)
+  + [datetime-objects](https://docs.python.org/3/library/datetime.html#datetime-objects)
+  + [strftime-strptime-behavior](https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior)
+  + [timedelta-objects](https://docs.python.org/3/library/datetime.html#timedelta-objects)
 
 The `datetime` module provides capabilities for handling dates and times. See the "Creating Datetime Objects" section below for some ways we can create official datetime objects, and the "Date Formatting" section for some ways to format or display these objects.
 

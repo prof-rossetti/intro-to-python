@@ -164,7 +164,7 @@ There are many other utilities to use from the command-line. For example, you ma
 
 #### Further Exploration (Windows or Mac)
 
-To download videos from YouTube, try using the [`youtube-dl` command-line utility](/notes/clis/youtube-dl.md) (see the linked notes document for installation and usage instructions).
+To download videos from YouTube, try using the [`youtube-dl` command-line utility](./../../notes/clis/youtube-dl.md) (see the linked notes document for installation and usage instructions).
 
 #### Further Exploration (Mac only)
 

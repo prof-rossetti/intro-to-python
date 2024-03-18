@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-  + [APIs](/notes/software/apis.md)
-  + ["Web Requests" Exercise](/exercises/web-requests/README.md)
+  + [APIs](./../../notes/software/apis.md)
+  + ["Web Requests" Exercise](./../web-requests/README.md)
 
 ## Business Prompt
 

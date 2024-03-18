@@ -1,6 +1,6 @@
 # The Systems Development Lifecycle (SDLC)
 
-> Prerequisite: [Project Management](project-mgmt.md)
+> Prerequisite: [Project Management](README.md)
 
 The **Systems Development Lifecycle (SDLC)** refers to an end-to-end process by which systems are built and managed.
 

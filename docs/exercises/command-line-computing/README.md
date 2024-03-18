@@ -12,7 +12,7 @@ Commands can differ based on which operating system and command-line application
 
 ## Prerequisites
 
-  + [Local Development Environment Setup](/exercises/local-dev-setup/README.md)
+  + [Local Development Environment Setup](./../local-dev-setup/README.md)
 
 ## Instructions
 

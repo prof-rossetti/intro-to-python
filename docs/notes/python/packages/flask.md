@@ -22,7 +22,7 @@ pip install flask
 
 ## Usage
 
-Follow the ["Web Application" Exercise](/exercises/web-app/README.md) for an introduction to making web applications with Flask.
+Follow the ["Web Application" Exercise](./../../../exercises/web-app/README.md) for an introduction to making web applications with Flask.
 
 For your reference, here are some Flask app templates which implement more advanced set of functionality. Feel free to copy the templates and build on top of them as desired:
 

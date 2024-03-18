@@ -50,16 +50,16 @@ python -i # for interactive
 
 If you type `python` on Mac Terminal (or `python -i` on Windows Git Bash) and press "enter", you will enter into an interactive Python console where you can evaluate Python statements and expressions. When you are done using the Python console, you can shut it down by typing `exit()` and pressing "enter".
 
-![a screenshot of using the python console to perform a simple calculation (2+2 = 4)](/img/notes/clis/python/python-console.png)
+![a screenshot of using the python console to perform a simple calculation (2+2 = 4)](./../../img/notes/clis/python/python-console.png)
 
 ### Executing Scripts
 
-You can alternatively use the `python` utility to execute a pre-written Python program, by specifying its filepath. To test this out yourself, follow the instructions in the [Hello World (Local) Exercise](/exercises/hello-world/local.md).
+You can alternatively use the `python` utility to execute a pre-written Python program, by specifying its filepath. To test this out yourself, follow the instructions in the [Hello World (Local) Exercise](./../../exercises/hello-world/local.md).
 
 ```sh
 python path/to/my_script.py
 ```
 
-![a screenshot of the output resulting from running a python script from the command-line. the hello message is printed in the terminal](/img/notes/clis/python/running-python-scripts.png)
+![a screenshot of the output resulting from running a python script from the command-line. the hello message is printed in the terminal](./../../img/notes/clis/python/running-python-scripts.png)
 
 

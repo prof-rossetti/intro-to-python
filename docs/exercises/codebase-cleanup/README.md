@@ -10,7 +10,7 @@
 
 ## Prerequisites
   
-  + Read the [Unit 8](/units/unit-8.md) Notes
+  + Read the [Unit 8](./../../units/unit-8.md) Notes
   + Sign up for the [Code Climate (Quality) service](https://codeclimate.com/quality/), and login with your GitHub account, and "install" Code Climate to access your GitHub repos.
   + Obtain a premium [AlphaVantage API key](https://www.alphavantage.co/) (from the professor).
   + Sign up for a [Sendgrid](https://sendgrid.com/) account, verify single sender address, and obtain a SendGrid API key.
@@ -23,9 +23,9 @@ Alternatively, if you'd like to start from scratch: create a new repo called som
 
 ## Repository Setup
 
-Configure the GitHub repo to integrate with the "Python application" GitHub Action. This is for "Continuous Integration" purposes, which we will talk about later. This step should add a ".github/workflows/python-app.yml" file [like this one](starter/python-app.yml) to your repo.
+Configure the GitHub repo to integrate with the "Python application" GitHub Action. This is for "Continuous Integration" purposes, which we will talk about later. This step should add a ".github/workflows/python-app.yml" file [like this one](./starter/python-app.yml) to your repo.
 
-Integrate your repo with the [Code Climate](/notes/devtools/code-climate.md) platform, which will provide automated quality and complexity assessments. Login to Code Climate (Quality Service) via your GitHub account. Visit the Code Climate dashboard, and click "Add a repository" and choose the repo you just created. Through the repo's settings on Code Climate, enable "Summary Comments" and/or "Inline Issue Comments". Optionally explore the python-related "Plugins", but prefer to add a predefined "codeclimate.yml" file [like this one](starter/.codeclimate.yml) to the root directory of the repo.
+Integrate your repo with the [Code Climate](/notes/devtools/code-climate.md) platform, which will provide automated quality and complexity assessments. Login to Code Climate (Quality Service) via your GitHub account. Visit the Code Climate dashboard, and click "Add a repository" and choose the repo you just created. Through the repo's settings on Code Climate, enable "Summary Comments" and/or "Inline Issue Comments". Optionally explore the python-related "Plugins", but prefer to add a predefined "codeclimate.yml" file [like this one](./starter/.codeclimate.yml) to the root directory of the repo.
 
 Clone the repo to download it onto your computer. Navigate there from the command line, and open in a text editor of choice. For example:
 
@@ -36,7 +36,7 @@ cd codebase-cleanup-2022/
 code .
 ```
 
-As necessary, if you were starting from scratch: ensure your repo contains an "app" directory with files: "game.py", "groceries.py", "crypto.py", "stocks.py", "crypto.py", "unemployment.py", and "email_me.py", respectively. You can copy the file contents from [this starter code](starter/app). As necessary, save the files, make a commit, and push the changes up to the remote repo (main branch).
+As necessary, if you were starting from scratch: ensure your repo contains an "app" directory with files: "game.py", "groceries.py", "crypto.py", "stocks.py", "crypto.py", "unemployment.py", and "email_me.py", respectively. You can copy the file contents from [this starter code](./starter/app). As necessary, save the files, make a commit, and push the changes up to the remote repo (main branch).
 
 
 
@@ -103,7 +103,7 @@ User Feedback: "The unemployment chart is messed up!"
 Developer Maintenance Steps:
 
   1. Refactor duplicate code related to the price-formatting logic (across all files in the repo, including the "groceries.py" file). Move the common formatter function to a separate file called something like "utils.py" or "decorators.py" or "formatters.py". Then import this shared function into all the files that need it. NOTE: you may need to add the infamous "init" file to the "app" directory, and you may need to use the infamous "main" conditional in any files being imported from.
-  2. Move any duplicate or related financial data fetching code into a separate module called something like "alphavantage_service.py". Include data fetching functions that can be tested in isolation, and imported into other files that need the data. HINT: it might end up looking something [like this](progress/app/alphavantage_service.py).
+  2. Move any duplicate or related financial data fetching code into a separate module called something like "alphavantage_service.py". Include data fetching functions that can be tested in isolation, and imported into other files that need the data. HINT: it might end up looking something [like this](./progress/app/alphavantage_service.py).
 
 Optional, Advanced Testing Considerations:
 

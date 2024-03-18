@@ -41,7 +41,7 @@ print(person) #> {'first_name': 'Ophelia', 'last_name': 'Clarke', 'message': 'Hi
 
 ### Reading and Writing JSON Files
 
-Combine these JSON-parsing techniques with [file management](/notes/python/file-management.md) techniques to read and write JSON data from a .json file.
+Combine these JSON-parsing techniques with [file management](./../file-management.md) techniques to read and write JSON data from a .json file.
 
 Writing:
 

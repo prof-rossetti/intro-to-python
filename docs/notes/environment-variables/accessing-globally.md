@@ -3,7 +3,7 @@
 
 # Global Access to Environment Variables
 
-> See [Environment Variables](/notes/environment-variables/README.md).
+> See [Environment Variables](README.md).
 
 Mac and Windows users can set environment variables from the command line. Windows users may need to use the `set` keyword (or `export`, if `set` doesn't work):
 

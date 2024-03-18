@@ -12,7 +12,7 @@
 
 ## Usage
 
-See the ["Continuous Integration 1, 2, 3" Exercise](/exercises/ci-123/README.md) for example usage.
+See the ["Continuous Integration 1, 2, 3" Exercise](./../../exercises/ci-123/README.md) for example usage.
 
 > NOTE: To configure Travis CI on an existing repository, visit the [Travis account settings](https://travis-ci.com/account/repositories) and click "Manage repositories on GitHub", where you will be redirected to GitHub and prompted to select which repositories to configure.
 

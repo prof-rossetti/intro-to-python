@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
- + ["Web Service" Exercise](/exercises/web-service/README.md)
+ + ["Web Service" Exercise](./../web-service/README.md)
 
 ## Learning Objectives
 
@@ -13,8 +13,8 @@
 
 ## References
 
-  + [The `flask` Package](/notes/python/packages/flask.md)
-  + [HTTP Requests and Responses](/notes/info-systems/networks.md#HyperText-Transfer-Protocol)
+  + [The `flask` Package](./../../notes/python/packages/flask.md)
+  + [HTTP Requests and Responses](./../../notes/info-systems/networks.md#HyperText-Transfer-Protocol)
   + [Basic HTML - W3Schools](https://www.w3schools.com/html/html_basic.asp) 
   + [HTML Lists - W3Schools](https://www.w3schools.com/html/html_lists.asp)
   + [HTML Forms - W3Schools](https://www.w3schools.com/html/html_forms.asp)
@@ -23,7 +23,7 @@
 
 ## Prompt
 
-So, you've [deployed a background web service](/exercises/web-service/README.md) to send you an email every day. But what if you wanted the information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
+So, you've [deployed a background web service](./../web-service/README.md) to send you an email every day. But what if you wanted the information on-demand at the click of a button, without waiting for the next daily email? And what if you wanted to allow other people to register for your service? Let's build a web application interface into your application's functionality!
 
 ![](../../img/exercises/web-app/weather-form.png)
 

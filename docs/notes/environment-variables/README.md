@@ -50,7 +50,7 @@ To set a script-specific environment variable on either Mac or Windows, its poss
 MY_VAR=5 MY_SECRET_MESSAGE="SecretPassword123" python path/to/my_script.py
 ```
 
-To access environment variables from within a Python program, use [the `os` module](/notes/python/modules/os.md#environment-variables).
+To access environment variables from within a Python program, use [the `os` module](./../python/modules/os.md#environment-variables).
 
 ### Setting Environment Variables via "Dotenv" Approach
 
@@ -70,6 +70,6 @@ MY_SECRET_MESSAGE="SecretPassword123"
 MY_API_KEY="abc123"
 ```
 
-To access these environment variables from a Python program, we first use [the `dotenv` package](/notes/python/packages/dotenv.md) to load them into the program's environment, then we can access them using [the `os` module](/notes/python/modules/os.md#environment-variables) as usual.
+To access these environment variables from a Python program, we first use [the `dotenv` package](./../python/packages/dotenv.md) to load them into the program's environment, then we can access them using [the `os` module](./../python/modules/os.md#environment-variables) as usual.
 
 It is important for security reasons to ensure the ".env" file is ignored from version control, using the ".gitignore" file. We should not see the ".env" file on GitHub, but rather each developer will need to create their own local copy.

@@ -1,6 +1,6 @@
 # The `requests` Package
 
-> Prerequisite: [Computer Networks](/notes/info-systems/networks.md) and [APIs](/notes/software/apis.md)
+> Prerequisite: [Computer Networks](./../../info-systems/networks.md) and [APIs](./../../software/apis.md)
 
 The `requests` package provides an easy way for Python programs to issue HTTP requests, whether scraping the contents of a web page, or exchanging data with an API.
 
@@ -61,7 +61,7 @@ print(response.text)
 
 ### Parsing HTTP Responses
 
-If the response contains JSON, you can use [the `json` module](/notes/python/modules/json.md) to parse it:
+If the response contains JSON, you can use [the `json` module](./../../python/modules/json.md) to parse it:
 
 ```py
 response = requests.get(some_url)
@@ -69,6 +69,6 @@ response_data = json.loads(response.text)
 print(type(response_data)) #> <class 'list'> or <class 'dict'>
 ```
 
-If the response contains data in CSV format, you can use the familiar CSV-processing mechanisms like the [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md), with some possible modifications for parsing a CSV-formatted string instead of a CSV file.
+If the response contains data in CSV format, you can use the familiar CSV-processing mechanisms like the [the `csv` module](./../modules/csv.md) or [the `pandas` package](./pandas.md), with some possible modifications for parsing a CSV-formatted string instead of a CSV file.
 
-If the response contains data in HTML or XML format, you can use [the `BeautifulSoup` package](/notes/python/packages/beautifulsoup.md) to parse it.
+If the response contains data in HTML or XML format, you can use [the `BeautifulSoup` package](./beautifulsoup.md) to parse it.

@@ -15,7 +15,7 @@ References:
 
 ### Installation on Mac
 
-Mac users can install `youtube-dl` via [Homebrew](/notes/clis/brew.md):
+Mac users can install `youtube-dl` via [Homebrew](./../clis/brew.md):
 
 ```sh
 brew install youtube-dl

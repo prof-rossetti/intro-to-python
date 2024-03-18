@@ -77,7 +77,7 @@ print("CLIENT:", type(client)) #> <class 'gspread.client.Client'>
 
 #### Service Account Credentials
 
-Otherwise, if working locally, we'll need to first configure [Google API service account credentials](/notes/devtools/google-apis.md#service-account-credentials), then download the service account credentials JSON file into the root directory of the repo as "google-credentials.json". Then we'll point to the path where that credentials file is located:
+Otherwise, if working locally, we'll need to first configure [Google API service account credentials](./../../devtools/google-apis.md#service-account-credentials), then download the service account credentials JSON file into the root directory of the repo as "google-credentials.json". Then we'll point to the path where that credentials file is located:
 
 ```py
 import os

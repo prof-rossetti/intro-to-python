@@ -1,8 +1,8 @@
 # The `pytest` Package
 
 Prerequisites:
-  + [Python Modules and Imports](/notes/python/modules/README.md)
-  + [Automated Testing](/notes/software/testing.md)
+  + [Python Modules and Imports](./../modules/README.md)
+  + [Automated Testing](./../../software/testing.md)
 
 
 References:
@@ -38,7 +38,7 @@ Another use for the "conftest.py" file is to store some code that needs to be sh
 
 ## Usage
 
-The Pytest package is generally used as a command-line utility for running pre-defined files of "test" code. Follow the ["Testing 1,2,3" Exercise](/exercises/testing-123/README.md) to get acclimated with Pytest.
+The Pytest package is generally used as a command-line utility for running pre-defined files of "test" code. Follow the ["Testing 1,2,3" Exercise](./../../../exercises/testing-123/README.md) to get acclimated with Pytest.
 
 
 Example invocations:
