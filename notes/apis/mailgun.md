@@ -12,6 +12,8 @@ From the overview page, find and click on API Key settings link on bottom right,
 
 > NOTE: Sandbox domains are restricted to authorized recipients only. So you'll only be able to send emails to yourself and a handful of "beta tester" friends and family until / unless you register your own domain later.
 
+> NOTE: if you see 403 error when sending email to yourself, try registering your own email address as an "Authorized Recipient", and click the verification email, and try sending again
+
 
 ## Configuration
 
