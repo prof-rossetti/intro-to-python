@@ -153,4 +153,51 @@ print(response) #> {'spreadsheetId': '____', 'updatedRange': "'MySheet'!A9:D9", 
 
 You can use `sheet.insert_row()` to insert one row at a time, or `sheet.insert_rows()` to insert multiple rows at a time (see the docs).
 
-For more advanced usage, see the Professor's [Google Sheets App](https://github.com/prof-rossetti/flask-sheets-template-2023/blob/main/app/spreadsheet_service.py).
+## Additional Examples
+
+For more advanced usage, see the Professor's [Google Sheets App](https://github.com/prof-rossetti/flask-sheets-template-2023/blob/main/app/spreadsheet_service.py), as well as the examples below.
+
+### Find or Create Sheet
+
+Here is a function to find or create a given sheet:
+
+```py
+from gspread.exceptions import WorksheetNotFound
+
+def find_or_create_sheet(sheet_name, doc=doc):
+    """Access a sheet within the document, or create if not exists."""
+    try:
+        sheet = doc.worksheet(sheet_name)
+    except WorksheetNotFound:
+        print("CREATING NEW SHEET...")
+        sheet = doc.add_worksheet(title=sheet_name, rows="10", cols="10")
+
+    return sheet
+
+
+sheet_name = "daily_prices_msft"
+sheet = find_or_create_sheet(sheet_name)
+print("SHEET:", type(sheet), sheet.title) #> <class 'gspread.models.Worksheet'>
+```
+
+
+### Writing DataFrames to Sheet
+
+Here is an example function for overwriting sheet contents, using a pandas DataFrame:
+
+```py
+def write_data_to_sheet(df, sheet):
+    """Write dataframe contents to a given sheet.
+        Params df: a pandas DataFrame object.
+    """
+    header_row = df.columns.tolist()
+    rows = df.values.tolist()
+    assert len(header_row) == len(rows[0]) # same number of columns in all rows
+    all_rows = [header_row] + rows
+
+    sheet.clear()
+    sheet.update(all_rows)
+
+
+write_data_to_sheet(df, sheet)
+```
