@@ -4,7 +4,7 @@ This project provides students with an opportunity to create software to suit th
 
 ## Scope and Complexity
 
-The project's scope should be roughly equivalent to the previous projects, or greater if desired.
+The project's scope should be roughly equivalent to previous projects and exercises, or greater.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ The app should transform information inputs into information outputs for some pr
 
 ## Groups
 
-Students have the option of working by themselves, or in groups.
+Students have the option of working by themselves, or in groups. Students are encouraged to work in groups of two or three total. If anyone would like to work alone, ask the professor for approval first.
 
 To fairly evaluate groups of different sizes, projects may be ranked against others of the same group composition (e.g. solo projects vs other solo projects, two-person teams vs other two-person teams, etc.).
 
