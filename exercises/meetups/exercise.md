@@ -12,9 +12,9 @@ Identify a meetup event that is related to business, startups, and/or technology
 
 The event should take place in your city, in the area near where you live, or it could potentially be an online remote event (but prefer in person events). 
 
-To find events, you could search [meetup.com](http://www.meetup.com/), or your school's events page, or other sites of interest. As you consider which event to attend, you are encouraged to post links to interesting events in the `#meetups` Slack channel, where you can also try to identify a group of other students to attend the event with.
+To find events, you could search sites like [meetup.com](http://www.meetup.com/), [eventbrite.com](https://www.eventbrite.com/), or your school's events page. As you consider which event to attend, you are encouraged to post links to interesting events in the `#meetups` Slack channel, where you can also try to identify a group of other students to attend the event with.
 
-Attend the event. Prefer to attend with a group of other students or friends (not alone).
+Attend the event. Prefer to attend with a group of other students or friends (try to avoid going alone).
 
 After attending, write a short (1-3 page) summary of your experiences, to address at least the following questions:
 
@@ -23,7 +23,7 @@ After attending, write a short (1-3 page) summary of your experiences, to addres
  + How did the event discussions relate to your own skills and interests?
  + What did you learn about contemporary industry challenges and practices?
 
-Embed photos to provide further evidence of event attendance. A "selfie" should suffice if it features distinguishable event imagery in the background.
+Embed photos to provide further evidence of event attendance (for example, a "selfie" that features distinguishable event imagery in the background).
 
 ## Submission Instructions
 
