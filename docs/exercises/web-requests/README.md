@@ -1,7 +1,7 @@
 # "Web Requests" Exercise
 
 > Prerequisite:
->   + [The `requests` Package](/notes/python/packages/requests.md)
+>   + [The `requests` Package](./../../notes/python/packages/requests.md)
 
 ## Learning Objectives
 
@@ -67,7 +67,7 @@ If you see the provided message, you're ready to move on to project development.
 
 Iteratively develop your Python script to tackle each of the following challenges.
 
-> HINT: the response text for each of the following challenges will be formatted as JSON, so you can use [the `json` module](/notes/python/modules/json.md) to parse it. Also, depending on which URL we are making a request to, sometimes the JSON response will resemble a list and sometimes it will resemble a dictionary, so make sure to parse each accordingly.
+> HINT: the response text for each of the following challenges will be formatted as JSON, so you can use [the `json` module](./../../notes/python/modules/json.md) to parse it. Also, depending on which URL we are making a request to, sometimes the JSON response will resemble a list and sometimes it will resemble a dictionary, so make sure to parse each accordingly.
 
 ### Requesting a Product
 

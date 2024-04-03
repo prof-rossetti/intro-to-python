@@ -10,9 +10,9 @@ Testing | Intermediate / Advanced | Includes automated tests to indicate if the 
 ### Automated Tests
 
 Prerequisites:
-  + [Python Modules and Imports](/notes/python/modules/README.md)
-  + ["Modules and Imports" Exercise](/exercises/modules-and-imports/README.md)
-  + [The `pytest` Package](/notes/python/packages/pytest.md)
+  + [Python Modules and Imports](./../../notes/python/modules/README.md)
+  + ["Modules and Imports" Exercise](./../modules-and-imports/README.md)
+  + [The `pytest` Package](./../../notes/python/packages/pytest.md)
 
 By now you've probably been running the app manually to determine whether or not it is behaving as desired. But due to the randomness of the computer's selection, you might've had to run many iterations of the game before you are able to see how it functions under all possible scenarios.
 

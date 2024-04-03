@@ -1,7 +1,7 @@
 # Process Diagramming Exercise
 
 ## Prerequisites
-  + [Process Analysis and Diagramming](/notes/info-systems/processes.md)
+  + [Process Analysis and Diagramming](./../../notes/info-systems/processes.md)
 
 ## Learning Objectives
 

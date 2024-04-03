@@ -40,7 +40,7 @@ Charts should ideally include appropriate titles, axis labels, legends, etc.
 
 Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via email.
 
-> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](./../../notes/python/packages/sendgrid.md), and optionally use [Sendgrid email templates](./../../notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents
 
 ## Sending Alerts via SMS
 
@@ -48,4 +48,4 @@ Modify the logic of your application such that if it detects the stock's price h
 
 Modify the logic of your application such that if it detects the stock's price has moved past a given threshold within a given time period (e.g. the price has increased or decreased by more than 5% within the past day), it will send the user a "Price Movement Alert" message via SMS.
 
-> HINT: leverage the SMS-sending capabilities of [the `twilio` package](/notes/python/packages/twilio.md)
+> HINT: leverage the SMS-sending capabilities of [the `twilio` package](./../../notes/python/packages/twilio.md)

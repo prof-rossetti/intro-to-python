@@ -62,7 +62,7 @@ SENDER_ADDRESS = getpass("Please input your Sender Email Address: ")
 
 #### Credentials in Local Development Project
 
-Otherwise, if working locally, we'll use [Environment Variables](./../../environment-variables/README.md) to specify the secret credentials, ideally in conjunction with a [".env" file approach](/notes/python/packages/dotenv.md):
+Otherwise, if working locally, we'll use [Environment Variables](./../../environment-variables/README.md) to specify the secret credentials, ideally in conjunction with a [".env" file approach](./../../notes/python/packages/dotenv.md):
 
 ```py
 import os

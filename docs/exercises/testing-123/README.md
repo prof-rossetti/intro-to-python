@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-  + [The `pytest` Package](/notes/python/packages/pytest.md)
-  + [Python Modules and Imports](/notes/python/modules/README.md)
+  + [The `pytest` Package](./../../notes/python/packages/pytest.md)
+  + [Python Modules and Imports](./../../notes/python/modules/README.md)
 
 ## Learning Objectives
 
@@ -122,7 +122,7 @@ Great! At this time, you should be able to invoke the script successfully, but w
 pytest #> OSError: reading from stdin while output is captured
 ```
 
-When the test file imports the code from the script, it will execute all code in the script's global scope, including the new code which asks for a user input. But it doesn't make sense for our automated test to ask a user for inputs, as there is no user involved in the process. So we need a way to isolate the `enlarge()` function's definition from its invocation. We can use a special convention (`if __name__ == "__main__"`) to check whether the file is being invoked from the command-line, or is being loaded from / imported by another file. This allows us to distinguish between what should happen in each case, and prevents certain functionality from being executed when the script is imported as a module. For more details, see also [Custom Modules in Python](/notes/python/modules/README.md).
+When the test file imports the code from the script, it will execute all code in the script's global scope, including the new code which asks for a user input. But it doesn't make sense for our automated test to ask a user for inputs, as there is no user involved in the process. So we need a way to isolate the `enlarge()` function's definition from its invocation. We can use a special convention (`if __name__ == "__main__"`) to check whether the file is being invoked from the command-line, or is being loaded from / imported by another file. This allows us to distinguish between what should happen in each case, and prevents certain functionality from being executed when the script is imported as a module. For more details, see also [Custom Modules in Python](./../../notes/python/modules/README.md).
 
 Let's make that final change now:
 

@@ -24,7 +24,7 @@ This data visualization identifies some of the [biggest data breaches](http://ww
 
 What notable hacks have you seen in the news lately?
 
-For more threats, including malware, see the notes on [Software Ethics](/notes/software/ethics.md).
+For more threats, including malware, see the notes on [Software Ethics](./../software/ethics.md).
 
 ## Controls
 

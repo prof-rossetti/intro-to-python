@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-  + [Information Systems](/notes/info-systems/README.md)
+  + [Information Systems](./../../notes/info-systems/README.md)
 
 ## Learning Objectives
 

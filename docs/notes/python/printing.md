@@ -15,4 +15,4 @@ print("HELLO", "WORLD") #> HELLO WORLD
 print("HELLO", "WORLD", 5, {'a': 1, 'c': 3, 'b': 2}) #> HELLO WORLD 5 {'a': 1, 'c': 3, 'b': 2}
 ```
 
-See also: pretty printing with [the `pprint` module](/notes/python/modules/pprint.md).
+See also: pretty printing with [the `pprint` module](./../python/modules/pprint.md).

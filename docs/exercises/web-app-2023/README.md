@@ -3,7 +3,7 @@
 ## Prerequisites
 
  + Local Development Exercise (Financial Version) -- converting a prototype notebook to a repository
- + [Codebase Cleanup Exercise (Financial Version)](/exercises/codebase-cleanup-2023/README.md)
+ + [Codebase Cleanup Exercise (Financial Version)](./../codebase-cleanup-2023/README.md)
  + Web Service Exercise (Financial Version) -- sending emails not necessary, but you'll want to have at least deployed the code to the server
 
 ## Learning Objectives
@@ -15,8 +15,8 @@
 
 ## References
 
-  + [The `flask` Package](/notes/python/packages/flask.md)
-  + [HTTP Requests and Responses](/notes/info-systems/networks.md#HyperText-Transfer-Protocol)
+  + [The `flask` Package](./../../notes/python/packages/flask.md)
+  + [HTTP Requests and Responses](./../../notes/info-systems/networks.md#HyperText-Transfer-Protocol)
   + [Basic HTML - W3Schools](https://www.w3schools.com/html/html_basic.asp)
   + [HTML Lists - W3Schools](https://www.w3schools.com/html/html_lists.asp)
   + [HTML Forms - W3Schools](https://www.w3schools.com/html/html_forms.asp)

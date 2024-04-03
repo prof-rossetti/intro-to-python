@@ -2,7 +2,7 @@
 
 # Prerequisites
 
-  + The [`csv`](/notes/python/modules/csv.md) and [`itertools`](/notes/python/modules/itertools.md) Modules ... OR ... [The `pandas` Package](/notes/python/packages/pandas.md)
+  + The [`csv`](./../../notes/python/modules/csv.md) and [`itertools`](./../../notes/python/modules/itertools.md) Modules ... OR ... [The `pandas` Package](./../../notes/python/packages/pandas.md)
 
 ## Learning Objectives
 
@@ -16,7 +16,7 @@ Assume you own and operate a successful small business, selling artisan clothing
 
 ![hoodie for sale on etsy](https://user-images.githubusercontent.com/1328807/51781151-cb7a5300-20e2-11e9-863f-3b82aaa5f5a9.png)
 
-At the end of each calendar month, the online platform makes available for download from its admin interface a CSV file representing all individual sales orders for that month. See the ["monthly sales data"](/data/monthly-sales) examples (row per day per product sold that day).
+At the end of each calendar month, the online platform makes available for download from its admin interface a CSV file representing all individual sales orders for that month. See the ["monthly sales data"](./../../data/monthly-sales) examples (row per day per product sold that day).
 
 To aid your ability to make data-driven decisions, you decide to create a Python program which will automate the process of gleaning business insights from the monthly sales data.
 
@@ -56,7 +56,7 @@ print("GENERATING SALES REPORT FOR MONTH OF OCTOBER 2013...")
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-Finally, download one or more of the ["monthly sales data"](/data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv"). You can assume that each of these CSV files will have a name resembling "sales-YYYYMM.csv" (where "YYYY" represents the four digit year and "MM" represents the zero-padded month). And you can assume each of these CSV files will have the same header row (`date`, `product`, `unit price`, `units sold`, `sales price`).
+Finally, download one or more of the ["monthly sales data"](./../../data/monthly-sales) CSV files into your exercise repository, inside a new sub-directory called "data" (e.g. "monthly-sales/data/monthly-sales/sales-201803.csv"). You can assume that each of these CSV files will have a name resembling "sales-YYYYMM.csv" (where "YYYY" represents the four digit year and "MM" represents the zero-padded month). And you can assume each of these CSV files will have the same header row (`date`, `product`, `unit price`, `units sold`, `sales price`).
 
 ### Environment Setup
 
@@ -93,7 +93,7 @@ SALES REPORT (MARCH 2018)
 TOTAL SALES: $12,000.71
 ```
 
-> HINT: use either [the `csv` module](/notes/python/modules/csv.md) or [the `pandas` package](/notes/python/packages/pandas.md) to read the CSV file contents into memory for further processing
+> HINT: use either [the `csv` module](./../../notes/python/modules/csv.md) or [the `pandas` package](./../../notes/python/packages/pandas.md) to read the CSV file contents into memory for further processing
 
 
 ## Further Exploration Challenges
@@ -111,13 +111,13 @@ TOP SELLING PRODUCTS:
   3. etc.
 ```
 
-> HINT: use the `groupby()` method provided by either the [the `itertools` module](/notes/python/modules/itertools.md) or [the `pandas` package](/notes/python/packages/pandas.md) to group the rows by product for further processing
+> HINT: use the `groupby()` method provided by either the [the `itertools` module](./../../notes/python/modules/itertools.md) or [the `pandas` package](./../../notes/python/packages/pandas.md) to group the rows by product for further processing
 
 ## Solutions
 
 There are many many ways to solve the challenges. Here are some example solutions via two different approaches (i.e. the `csv` module vs the `pandas` package):
 
-  + [Solution](/exercises/monthly-sales-reporting/csv_solution.py)
-  + [Further Exploration Solution](/exercises/monthly-sales-reporting/csv_solution_further.py)
-  + [Solution (using Pandas)](/exercises/monthly-sales-reporting/pandas_solution.py)
-  + [Further Exploration Solution (using Pandas)](/exercises/monthly-sales-reporting/pandas_solution_further.py)
+  + [Solution](./../monthly-sales-reporting/csv_solution.py)
+  + [Further Exploration Solution](./../exercises/monthly-sales-reporting/csv_solution_further.py)
+  + [Solution (using Pandas)](./../monthly-sales-reporting/pandas_solution.py)
+  + [Further Exploration Solution (using Pandas)](./../monthly-sales-reporting/pandas_solution_further.py)

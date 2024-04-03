@@ -40,7 +40,7 @@ component | description
 --- | ---
 [People](people.md) | Individuals who use the system.
 [Processes](processes.md) | Procedures the system performs or facilitates.
-[Hardware](../hardware/servers.md) | Physical devices such as computers, servers, sensors, monitors, printers, speakers, etc. which perform as instructed by the system's software.
-[Software](../software/README.md) | Written instructions which govern the system's logic.
+[Hardware](./../hardware/servers.md) | Physical devices such as computers, servers, sensors, monitors, printers, speakers, etc. which perform as instructed by the system's software.
+[Software](./../software/README.md) | Written instructions which govern the system's logic.
 [Network](networks.md) | Facilitates connection and communication between system components, often a computer network such as the Internet.
 [Datastore](datastores.md) | A storage place for the system's information, like a Database or file cabinet.

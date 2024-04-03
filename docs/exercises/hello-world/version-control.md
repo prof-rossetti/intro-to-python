@@ -4,7 +4,7 @@
 
 In this exercise, we'll practice incorporating version control into our local development workflow.
 
-For the version control tool (i.e. Git Client of choice), beginners are encouraged to use [GitHub Desktop](/notes/devtools/github-desktop.md) but any student desiring further exploration can use the [Git CLI](/notes/clis/git.md#usage) instead.
+For the version control tool (i.e. Git Client of choice), beginners are encouraged to use [GitHub Desktop](./../../notes/devtools/github-desktop.md) but any student desiring further exploration can use the [Git CLI](./../../notes/clis/git.md#usage) instead.
 
 ## Instructions
 

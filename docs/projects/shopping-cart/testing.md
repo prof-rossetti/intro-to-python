@@ -1,7 +1,7 @@
 
 # "Shopping Cart" Project - Automated Testing Challenges
 
-> Prerequisite: ["Testing 1, 2, 3" Exercise](/exercises/testing-123/README.md)
+> Prerequisite: ["Testing 1, 2, 3" Exercise](./../../exercises/testing-123/README.md)
 
 ## Setup
 

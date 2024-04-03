@@ -87,4 +87,4 @@ According to HTTP, a client computer can issue different kinds of requests to th
 
 This course focuses primarily on `GET` requests. The most common way a computer can issue a `GET` request is by visiting some URL in a browser. But a computer is also capable of programmatically issuing `GET` requests using command-line utilities and modern programming languages.
 
-See also: [the `requests` package](/notes/python/packages/requests.md) for issuing HTTP requests in Python.
+See also: [the `requests` package](./../python/packages/requests.md) for issuing HTTP requests in Python.

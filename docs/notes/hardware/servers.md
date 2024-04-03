@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-  + [Software Distribution Models](/notes/software/README.md#distribution-models)
-  + [Computer Networks](/notes/info-systems/networks.md)
+  + [Software Distribution Models](./../software/README.md#distribution-models)
+  + [Computer Networks](./../info-systems/networks.md)
 
 Today's software services are powered by scores of keyboard-less, mouse-less, monitor-less computers called **servers**, which generally run all day or at scheduled intervals.
 

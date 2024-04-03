@@ -10,8 +10,8 @@
 
 ## Prerequisites
 
-  + ["Run the App" Exercise](/exercises/run-the-app/README.md)
-  + Python Language Overview (focusing on [Variables](/notes/python/variables.md) and [Conditionals](/notes/python/control-flow.md))
+  + ["Run the App" Exercise](./../exercises/run-the-app/README.md)
+  + Python Language Overview (focusing on [Variables](./../../notes/python/variables.md) and [Conditionals](./../../notes/python/control-flow.md))
 
 ## Instructions
 
@@ -73,7 +73,7 @@ Once you have completed the setup section above, you are ready to tackle the imp
 
 The application should prompt the user to input, or otherwise select, an option (i.e. "rock", "paper", or "scissors") via command-line interface (CLI). It should store the user's selection in a variable for later reference.
 
-> HINT: use [the `input()` function](/notes/python/inputs.md) to capture user inputs.
+> HINT: use [the `input()` function](./../../notes/python/inputs.md) to capture user inputs.
 
 ### Validating User Inputs
 
@@ -89,9 +89,9 @@ However if the selection is invalid, the program should fail gracefully by displ
 
 The application should select one of the options (i.e. "rock", "paper", or "scissors") at random, and assign that as the computer player's choice.
 
-> HINT: use the `choice()` function provided by [the `random` module](/notes/python/modules/random.md).
+> HINT: use the `choice()` function provided by [the `random` module](./../../notes/python/modules/random.md).
 
-> HINT: ensure the valid choices are stored in a ["list" datatype](/notes/python/datatypes/lists.md), and then pass that list to the random choice function.
+> HINT: ensure the valid choices are stored in a ["list" datatype](./../../notes/python/datatypes/lists.md), and then pass that list to the random choice function.
 
 ### Determining the Winner
 
@@ -102,7 +102,7 @@ The application should compare the user's selection to the computer player's sel
   3. Scissors beats Paper
   4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
 
-> HINT: use one or more [`if` statements](/notes/python/control-flow.md#if-statements) (recommended approach for beginners), or it may also be possible to use a pre-configured ["dictionary" datatype](/notes/python/datatypes/dictionaries.md) containing all possible outcomes.
+> HINT: use one or more [`if` statements](./../../notes/python/control-flow.md#if-statements) (recommended approach for beginners), or it may also be possible to use a pre-configured ["dictionary" datatype](./../../notes/python/datatypes/dictionaries.md) containing all possible outcomes.
 
 ### Displaying Results
 

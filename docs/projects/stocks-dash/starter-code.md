@@ -121,3 +121,5 @@ selected_symbol = "NFLX" # @param ['MSFT', 'GOOGL', 'AAPL', 'NFLX', "SBUX", "TSL
 
 generate_stocks_report(selected_symbol)
 ```
+
+

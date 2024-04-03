@@ -2,7 +2,7 @@
 
 # Prerequisites
 
-  + [The `csv` Module](/notes/python/modules/csv.md) ... OR ... [The `pandas` Package](/notes/python/packages/pandas.md)
+  + [The `csv` Module](./../../notes/python/modules/csv.md) ... OR ... [The `pandas` Package](./../../notes/python/packages/pandas.md)
 
 ## Learning Objectives
 

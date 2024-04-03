@@ -22,7 +22,7 @@ The store owner likes your work and wants to use your app in all their regional 
 >     .env
     
 
-> HINT: use [the `os` module](/notes/python/modules/os.md) in conjunction with [the `dotenv` package](/notes/python/packages/dotenv.md)
+> HINT: use [the `os` module](./../../notes/python/modules/os.md) in conjunction with [the `dotenv` package](./../../notes/python/packages/dotenv.md)
 
 > HINT: you might need to use the `float()` function to convert the environment variable value to a float datatype, so you can perform numeric calculations with it
 
@@ -44,7 +44,7 @@ In addition to displaying a receipt at the end of the checkout process, the prog
 
 Each text file should be named according to the date and time the checkout process started (e.g. "/receipts/2019-07-04-15-43-13-579531.txt", where the numbers represent the year, month, day, 24-hour-style hour, minute, second, and milliseconds/microseconds, respectively).
 
-> HINT: consult the notes on [file management](/notes/python/file-management.md) for examples of how to write to file in Python
+> HINT: consult the notes on [file management](./../../notes/python/file-management.md) for examples of how to write to file in Python
 
 > NOTE: to prevent clutter, exclude these receipt files from being tracked in version control by adding a new entry to the ".gitignore" file:
 >
@@ -64,7 +64,7 @@ In addition to displaying a receipt at the end of the checkout process, the prog
 
 At the very least, the email should display the checkout timestamp and the total price. But ideally it should contain all the receipt information described in the basic requirements.
 
-> HINT: leverage the email-sending capabilities of [the `sendgrid` package](/notes/python/packages/sendgrid.md), and optionally use [SendGrid Email Templates](/notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents.
+> HINT: leverage the email-sending capabilities of [the `sendgrid` package](./../../notes/python/packages/sendgrid.md), and optionally use [SendGrid Email Templates](./../../notes/python/packages/sendgrid.md#email-templates) to further control the formatting of email contents.
 
 > NOTE: your README file must contain instructions for how someone can obtain their own credentials and set up a local ".env" file. If you use a template, your README must include instructions for how someone could re-create that template (including sample HTML and sample data).
 
@@ -75,7 +75,7 @@ At the very least, the email should display the checkout timestamp and the total
 
 Instead of using a hard-coded `products` variable, download or copy the contents of the provided ["products.csv" file](https://raw.githubusercontent.com/prof-rossetti/intro-to-python/master/data/products.csv) into your project directory in a new subdirectory called "data" (so the path to the CSV file should be "data/products.csv"). Then update your code to read the `products` from this CSV file.
 
-> HINT: leverage the capabilities of [the `csv` module](/notes/python/modules/csv.md) (not recommended) or [the `pandas` package](/notes/python/packages/pandas.md) (recommended) for CSV file management.
+> HINT: leverage the capabilities of [the `csv` module](./../../notes/python/modules/csv.md) (not recommended) or [the `pandas` package](./../../notes/python/packages/pandas.md) (recommended) for CSV file management.
 
 > NOTE: ideally also use the `os` module to assemble [OS-agnostic relative filepaths](https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/os.md#constructing-filepaths) instead of hard-coded string filepaths:
 >
@@ -110,7 +110,7 @@ This allows each user to use their own custom inventory of products, and change 
 
 Instead of using a hard-coded `products` variable or a "products.csv" file as the application's datastore, use a Google Sheet like this provided [products Google Sheet document](https://docs.google.com/spreadsheets/d/1ItN7Cc2Yn4K90cMIsxi2P045Gzw0y2JHB_EkV4mXXpI/edit#gid=1014123801) instead. Update your code to read the `products` from this Google Sheet, or a similar one you create. If you create your own, the document permissions should be public so evaluators can run your app using their own credentials.
 
-> HINT: leverage the capabilities of [the `gspread` package](/notes/python/packages/gspread.md).
+> HINT: leverage the capabilities of [the `gspread` package](./../../notes/python/packages/gspread.md).
 
 > NOTE: you'll need to download a google credentials JSON file into your repo, but this file must ABSOLUTELY be ignored from version control. HINT: you can use an entry like the following in your ".gitignore" file:
 > 

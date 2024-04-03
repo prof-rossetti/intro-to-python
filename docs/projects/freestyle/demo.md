@@ -32,7 +32,7 @@ Describe the problem addressed by your project. Who are the affected users and w
 
 ### Proposed Solution / Info Requirements
 
-Describe your proposed solution to the problem, including a high-level [Data Flow Diagram (DFD)](/exercises/data-flow-diagramming/README.md). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with.
+Describe your proposed solution to the problem, including a high-level [Data Flow Diagram (DFD)](./../../exercises/data-flow-diagramming/README.md). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with.
 
 ### Live Demo
 

@@ -19,7 +19,7 @@ Your app should fetch data from one or more APIs, web pages, or other open datas
 
 Check your function parameters. Ensure any variables needed by the function (except for constants like API Keys) are passed in as parameter inputs.
 
-Your custom function(s) should ideally be documented using ["docstrings"](/notes/python/docstrings.md). 
+Your custom function(s) should ideally be documented using ["docstrings"](./../../notes/python/docstrings.md). 
 
 Your custom function(s) should ideally be accompanied by one or more unit tests, using example data and simple assertions.
 
@@ -27,7 +27,7 @@ Your custom function(s) should ideally be accompanied by one or more unit tests,
 
 If your program requires sensitive information like secret passwords, API keys, or other credentials, those secret values should absolutely not be included in the source code.
 
-If working in Colab, use [the `getpass` function](/notes/python/modules/getpass.md) to prompt the user for their API key(s), as necessary.
+If working in Colab, use [the `getpass` function](./../../notes/python/modules/getpass.md) to prompt the user for their API key(s), as necessary.
 
 ## Submission Instructions
 

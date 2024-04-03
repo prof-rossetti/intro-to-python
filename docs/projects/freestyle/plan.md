@@ -6,8 +6,8 @@ This is an optional alternative part of the Freestyle Project which may or may n
 
 # Prerequisites:
 
-  + ["Data Flow Diagramming" Exercise](/exercises/data-flow-diagramming/README.md)
-  + ["Process Diagramming" Exercise](/exercises/process-diagramming/README.md)
+  + ["Data Flow Diagramming" Exercise](./../../exercises/data-flow-diagramming/README.md)
+  + ["Process Diagramming" Exercise](./../../exercises/process-diagramming/README.md)
 
 ## Learning Objectives
 
@@ -23,7 +23,7 @@ The document should include an analysis of the problem, a description of user ne
 
 If the document were to be shared with clients or potential investors, it should reinforce their confidence in your capabilities and planning efforts. If the document were to be shared with a third-party development team, it should convey enough information to instruct the development team what to build.
 
-The document should incorporate embedded illustrations and diagrams as necessary. These may be low-fidelity hand-drawn images, but prefer to deliver higher-fidelity versions produced via a [digital diagramming tool](/notes/info-systems/processes.md#process-diagramming-tools).
+The document should incorporate embedded illustrations and diagrams as necessary. These may be low-fidelity hand-drawn images, but prefer to deliver higher-fidelity versions produced via a [digital diagramming tool](./../../notes/info-systems/processes.md#process-diagramming-tools).
 
 A reasonable length for this document, including embedded images, is between three and eight pages, with a maximum of around 11 pages.
 

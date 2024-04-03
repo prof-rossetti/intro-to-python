@@ -11,13 +11,13 @@ Customization | Beginner | Instructs and enables the user to configure their own
 ### Player Name Customization
 
 Prerequisites:
-  + [Environment Variables](/notes/environment-variables/README.md)
-  + [The `os` Module](/notes/python/modules/os.md#Environment-Variables) -- focusing on getting environment variables
+  + [Environment Variables](./../../notes/environment-variables/README.md)
+  + [The `os` Module](./../../notes/python/modules/os.md#Environment-Variables) -- focusing on getting environment variables
 
 
 Right now the player's name is always "Player One" but it would be nice to allow the user to configure their own player name by passing an environment variable called `PLAYER_NAME`.
 
-Update your "game.py" file to use [the `os` module](/notes/python/modules/os.md#Environment-Variables) to read this environment variable.
+Update your "game.py" file to use [the `os` module](./../../notes/python/modules/os.md#Environment-Variables) to read this environment variable.
 
 ```py
 # this is the "game.py" file...

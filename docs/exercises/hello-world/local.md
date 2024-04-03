@@ -6,7 +6,7 @@ In this exercise, we'll practice using the local development environment to crea
 
 ## Prerequisites
 
-This exercise assumes you have already done the [Command-line Computing Exercise](/exercises/command-line-computing/README.md).
+This exercise assumes you have already done the [Command-line Computing Exercise](./../command-line-computing/README.md).
 
 ## Instructions
 

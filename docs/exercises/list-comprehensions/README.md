@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-  + [Lists](/notes/python/datatypes/lists.md)
+  + [Lists](./../../notes/python/datatypes/lists.md)
 
 ## Learning Objectives
 
