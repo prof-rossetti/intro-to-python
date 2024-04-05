@@ -17,7 +17,10 @@ From the overview page, find and click on API Key settings link on bottom right,
 
 ## Configuration
 
-Strategy for secret credentials depends on development environment. If on Colab, use notebook secrets. Otherwise if developing in a local repo, use environment variables instead.
+Strategy for secret credentials depends on development environment. If on Colab, use notebook secrets. Otherwise if developing in a local repo, use [environment variables](/notes/environment-variables/README.md), ideally in conjunction with a [".env" file approach](/notes/python/packages/dotenv.md).
+
+
+
 
 A) Colab (reading notebook secrets):
 
@@ -30,16 +33,7 @@ MAILGUN_API_KEY = userdata.get("MAILGUN_API_KEY")
 ```
 
 
-B) Local development (setting environment variables via ".env" file):
-
-```sh
-# example ".env file" contents:
-MAILGUN_API_KEY="__________"
-MAILGUN_SENDER_ADDRESS="example@myschool.edu"
-MAILGUN_DOMAIN="sandbox__________.mailgun.org"
-```
-
-... Local development (reading environment variables):
+B) Local development (reading environment variables):
 
 ```py
 import os
