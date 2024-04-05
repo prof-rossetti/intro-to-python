@@ -51,13 +51,13 @@ We'll need to handle secret credentials differently, depending on the developmen
 
 #### Credentials in Colab
 
-If working in a Colab notebook, we'll use [`getpass`](/notes/python/modules/getpass.md) to ask for a secure user input (for the API key, and the sender email address):
+If working in a Colab notebook, we'll use notebook secrets to specify the secret credentials (i.e. the API key, and the sender email address):
 
 ```py
-from getpass import getpass
+from google.colab import userdata
 
-SENDGRID_API_KEY = getpass("Please input your Sendgrid API Key: ")
-SENDER_ADDRESS = getpass("Please input your Sender Email Address: ")
+SENDGRID_API_KEY = userdata.get("SENDGRID_API_KEY")
+SENDGRID_SENDER_ADDRESS = userdata.get("SENDGRID_SENDER_ADDRESS")
 ```
 
 #### Credentials in Local Development Project
