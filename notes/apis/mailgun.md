@@ -17,7 +17,20 @@ From the overview page, find and click on API Key settings link on bottom right,
 
 ## Configuration
 
-Strategy for secret credentials depends on development environment. If on Colab, use `getpass` based approach. Otherwise if developing in a local repo, use environment variables instead:
+Strategy for secret credentials depends on development environment. If on Colab, use notebook secrets. Otherwise if developing in a local repo, use environment variables instead.
+
+A) Colab (reading notebook secrets):
+
+```py
+from google.colab import userdata
+
+MAILGUN_SENDER_ADDRESS = userdata.get("MAILGUN_SENDER_ADDRESS") #  "example@georgetown.edu"
+MAILGUN_DOMAIN = userdata.get("MAILGUN_DOMAIN") #  "sandbox______.mailgun.org"
+MAILGUN_API_KEY = userdata.get("MAILGUN_API_KEY")
+```
+
+
+B) Local development (setting environment variables via ".env" file):
 
 ```sh
 # example ".env file" contents:
@@ -26,12 +39,10 @@ MAILGUN_SENDER_ADDRESS="example@myschool.edu"
 MAILGUN_DOMAIN="sandbox__________.mailgun.org"
 ```
 
-## Usage
+... Local development (reading environment variables):
 
 ```py
 import os
-
-import requests
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -39,6 +50,12 @@ load_dotenv()
 MAILGUN_API_KEY = os.getenv("MAILGUN_API_KEY")
 MAILGUN_SENDER_ADDRESS = os.getenv("MAILGUN_SENDER_ADDRESS")
 MAILGUN_DOMAIN = os.getenv("MAILGUN_DOMAIN") # "sandbox__________.mailgun.org"
+```
+
+## Usage
+
+```py
+import requests
 
 def send_email(recipient_address=MAILGUN_SENDER_ADDRESS, subject="[Shopping Cart App] Testing 123", html_content="<p>Hello World</p>"):
     print("SENDING EMAIL TO:", recipient_address)
