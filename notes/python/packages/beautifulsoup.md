@@ -59,7 +59,7 @@ with open(html_filepath, 'r') as html_file:
 ```
 
 
-## Querying / Parsing the Page Contents
+### Querying / Parsing the Page Contents
 
 Once have access to the soup object, it allows us to query / find certain contents on the page. 
 
