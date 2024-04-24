@@ -28,7 +28,48 @@ pip install spotipy
 
 ## Setup
 
-Create a [Spotify API Client application](https://developer.spotify.com/dashboard/applications/), note its credentials, then store them in environment variables called `SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET`, respectively.
+Create a [Spotify API Client application](https://developer.spotify.com/dashboard/applications/), note its credentials (`SPOTIPY_CLIENT_ID` and `SPOTIPY_CLIENT_SECRET`).
+
+## Authentication
+
+It is simplest to try one of the following basic authentication methods (depending on whether you are working in Colab or locally). Otherwise if you need a specific user's data, skip down to the "User Authentication" section below.
+
+### Basic Authentication
+
+You can use this approach to directly pass the credentials (for example if using notebook secrets in Colab):
+
+```py
+from google.colab import userdata
+from spotipy import Spotify
+from spotipy.oauth2 import SpotifyClientCredentials
+
+# for example if using notebook secrets:
+SPOTIPY_CLIENT_ID = userdata.get("SPOTIPY_CLIENT_ID")
+SPOTIPY_CLIENT_SECRET = userdata.get("SPOTIPY_CLIENT_SECRET")
+
+creds = SpotifyClientCredentials(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET)
+client = Spotify(client_credentials_manager=creds)
+print("CLIENT:", type(client))
+```
+
+Otherwise if running locally, we can use environment variables to specify the credentials indirectly instead:
+
+```py
+import os
+from dotenv import load_dotenv
+from spotipy import Spotify
+from spotipy.oauth2 import SpotifyClientCredentials
+
+load_dotenv() # load environment variables
+
+# for example if using environment variables (spotipy package will check for them implicitly):
+#print("CLIENT ID:", os.environ.get("SPOTIPY_CLIENT_ID")) 
+#print("CLIENT SECRET:", os.environ.get("SPOTIPY_CLIENT_SECRET"))
+
+# FYI, this client configuration approach expects / implicitly uses env vars named SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET
+client_credentials_manager = SpotifyClientCredentials()
+client = Spotify(client_credentials_manager=client_credentials_manager)
+```
 
 If your app doesn't need to make authenticated requests on behalf of the user, this setup should be sufficient. Feel free to move on to the "Basic Usage" example below.
 
@@ -40,7 +81,7 @@ First, in your client application's developer settings, you'll need to specify a
 
 Note your Spotify username, and store in an environment varible called `SPOTIFY_USERNAME`.
 
-After setting the redirect URL and username, setup the code provided in the "Authenticated Usage" section below, and invoke the provided `get_token()` function. This process will download a file called `.cache-USERNAME` to the root directory of the repo. It looks like this:
+After setting the redirect URL and username, setup the code provided in the "Advanced Usage" section below, and invoke the provided `get_token()` function. This process will download a file called `.cache-USERNAME` to the root directory of the repo. It looks like this:
 
 ```json
 {
@@ -53,41 +94,24 @@ After setting the redirect URL and username, setup the code provided in the "Aut
 }
 ```
 
-Since this file contains secret credentials, ignore it from version control by adding an entry like `.cache-*` to your repository's ".gitignore" file.
+Since this file contains secret credentials, ignore it from version control by adding an entry like `.cache-*` to your repository's ".gitignore" file (if working locally).
 
-Subsequent requests (see the provided `get_playlists()` function below) will use the auth token from this credentials file to avoid additional user logins.
+Subsequent requests will use the auth token from this credentials file to avoid additional user logins (see the `get_playlists()` function provided in the "Advanced Usage" section below).
 
 ## Usage
 
 ### Basic Usage
 
-Example request which doesn't require authentication (i.e. a song search):
+Example request which doesn't require user authentication (i.e. a song search):
 
 ```py
-# adapted from: https://github.com/s2t2/my-spotify-app-py/blob/master/list_songs.py
-
-from dotenv import load_dotenv
-import os
-
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
-
-load_dotenv() # load environment variables
-
-print("CLIENT ID:", os.environ.get("SPOTIPY_CLIENT_ID")) # env var used implicitly by the spotipy package
-print("CLIENT SECRET:", os.environ.get("SPOTIPY_CLIENT_SECRET"))  # env var used implicitly by the spotipy package
-
-# FYI, this client configuration approach expects / implicitly uses env vars named SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET
-client_credentials_manager = SpotifyClientCredentials()
-client = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-
 response = client.search(q="Springsteen on Broadway", limit=20)
 
 for i, track in enumerate(response['tracks']['items']):
     print(' ', i, track['name'])
 ```
 
-### Authenticated Usage
+### Advanced Usage
 
 Example request which requires authentication (i.e. listing a user's playlists):
 
@@ -97,15 +121,17 @@ Example request which requires authentication (i.e. listing a user's playlists):
 import os
 from dotenv import load_dotenv
 
-import spotipy
+from spotipy import Spotify
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy.util as util
 
 load_dotenv() # load environment variables
 
-print("CLIENT ID:", os.environ.get("SPOTIPY_CLIENT_ID")) # env var used implicitly by the spotipy package
-print("CLIENT SECRET:", os.environ.get("SPOTIPY_CLIENT_SECRET")) # env var used implicitly by the spotipy package
-print("REDIRECT URL:", os.environ.get("SPOTIPY_REDIRECT_URI")) # env var used implicitly by the spotipy package
+# env vars used implicitly by the spotipy package:
+#print("CLIENT ID:", os.environ.get("SPOTIPY_CLIENT_ID")) 
+#print("CLIENT SECRET:", os.environ.get("SPOTIPY_CLIENT_SECRET"))
+#print("REDIRECT URL:", os.environ.get("SPOTIPY_REDIRECT_URI"))
+
 USERNAME = os.environ.get("SPOTIFY_USERNAME", "OOPS")
 
 # requires user interaction
@@ -117,12 +143,13 @@ def get_token():
 # requires user auth
 def get_playlists():
     token = get_token()
-    client = spotipy.Spotify(auth=token)
+    client = Spotify(auth=token)
 
     response = client.current_user_playlists()
 
     for i, playlist in enumerate(response['items']):
         print(f"{i + 1 + response['offset']} {playlist['uri']} {playlist['name']}")
+
 
 if __name__ == "__main__":
 
