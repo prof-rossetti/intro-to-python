@@ -23,7 +23,7 @@ Colab Notebook Advantages:
 
 Colab Notebook Disadvantages:
   + Can only write and execute Python code, not other languages
-  + Harder to secure credentials and environment variables
+  + ~~Harder to secure credentials and environment variables~~ UPDATE: use notebook secrets feature for secure credentials
   + Minimal processing power and parallel processing capabilities by default (excluding GPU / TPU)
   + Relatively low degree of customization
   + Unable to run certain kinds of apps, like web apps written in the Flask framework
