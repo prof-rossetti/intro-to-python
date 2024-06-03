@@ -243,3 +243,8 @@ Use the command palette and start typing "shortcuts" to find the "Preferences > 
 
 ```
 
+We can toggle the sidebar visibility with "command + \\".
+
+We can show the file explorer in the sidebar with "command + shift + E".
+
+
