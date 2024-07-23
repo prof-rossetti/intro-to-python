@@ -34,7 +34,7 @@ To incentivize individual effort within groups, each group member may be asked t
 
 ## Deliverables
 
-  1. [Proposal](proposal.md)
-  2. Investigation / Prototype Notebook
+  1. [Proposal](proposal.md) (optional, as directed)
+  2. [Investigation](investigation.md) / Prototype Notebook
   3. [Implementation](implementation.md)
   4. [Demonstration](demo.md)
