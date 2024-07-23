@@ -8,8 +8,6 @@ Define the requirements and objectives of your proposed solution, and investigat
 
 ## Instructions
 
-Work in your chosen group of two or three students total.
-
 Brainstorm some project ideas you are interested in. Most likely you may wish to fetch and process data from an API or website. It is possible you may want to do some analysis on a work-related dataset. Or maybe you want to create a game of some kind.
 
 In many cases, you will be able to investigate your idea in a Colab notebook, however in the event the packages you are using are only suited for local development, you can submit a GitHub repository instead, rather than a Colab notebook.
