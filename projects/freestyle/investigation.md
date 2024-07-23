@@ -16,4 +16,11 @@ In your investigation deliverable, your goal is to demonstrate the feasability o
 
 By investigating your project idea, we decrease "what we know we don't know" and "what we don't know we don't know", thus lowering the risk involved in your project, and helping development progress in an efficient manner moving forward.
 
+## Scoping and Prioritization
+
+If your idea has multiple components, for example fetching data (or capturing some other information inputs), and then exporting it via email (or producing some other information outputs), then consider splitting up the work using a "divide and conquer" strategy, whereby one person focuses on fetching the data, and the other focuses on sending some example emails using dummy data. Then you can meet in the middle later, during your project implementation, to connect the component pieces. 
+
+Alternatively you can consider a "pair programming" strategy, whereby all group members work on the same thing at the same time. For example one group member might be writing code (i.e. the "driver"), and another can be looking up documentation and assisting with troubleshooting (i.e. the "navigator").
+
+
 
