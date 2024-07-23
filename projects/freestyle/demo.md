@@ -18,8 +18,6 @@ Prepare a five minute presentation to share your project with the rest of the cl
   4. Live Demo
   5. Reflections (optional)
 
-Record your presentation using a tool like Zoom, then submit your presentation slideshow and video file(s) as instructed.
-
 ## Sections
 
 ### Introduction
@@ -32,7 +30,7 @@ Describe the problem addressed by your project. Who are the affected users and w
 
 ### Proposed Solution / Info Requirements
 
-Describe your proposed solution to the problem, including a high-level [Data Flow Diagram (DFD)](/exercises/data-flow-diagramming/README.md). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with.
+Describe your proposed solution to the problem, ideally including a high-level [Data Flow Diagram (DFD)](/exercises/data-flow-diagramming/README.md). What does it do? At a high-level, describe how it works, how users interact with it, and any other services or platforms it interfaces with.
 
 ### Live Demo
 
