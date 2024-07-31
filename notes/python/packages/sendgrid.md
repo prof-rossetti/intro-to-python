@@ -38,7 +38,7 @@ Then follow the instructions to complete your "Single Sender Verification", clic
 
 > NOTE: some students have reported that yahoo-issued, university-issued, and work-issued email addresses may be less likely to work. So if you run into issues with these kinds of addresses, perhaps try a Gmail address.
 
-Moving forward we will reference this single sender address as the `SENDER_ADDRESS`.
+Moving forward we will reference this single sender address as the `SENDGRID_SENDER_ADDRESS`.
 
 Finally, [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions (i.e. the `SENDGRID_API_KEY`).
 
@@ -71,7 +71,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY", default="OOPS, please set env var called 'SENDGRID_API_KEY'")
-SENDER_ADDRESS = os.getenv("SENDER_ADDRESS", default="OOPS, please set env var called 'SENDER_ADDRESS'")
+SENDGRID_SENDER_ADDRESS = os.getenv("SENDGRID_SENDER_ADDRESS", default="OOPS, please set env var called 'SENDGRID_SENDER_ADDRESS'")
 ```
 
 
@@ -92,8 +92,8 @@ html_content = "Hello World"
 print("HTML:", html_content)
 
 message = Mail(
-    from_email=SENDER_ADDRESS, # needs to be the verified sender address
-    to_emails=SENDER_ADDRESS, # can specify any recipient address, but self-sending here for demo purposes
+    from_email=SENDGRID_SENDER_ADDRESS, # needs to be the verified sender address
+    to_emails=SENDGRID_SENDER_ADDRESS, # can specify any recipient address, but self-sending here for demo purposes
     subject=subject,
     html_content=html_content
 )
@@ -167,21 +167,20 @@ html="<p>This is your Unemployment Report! See attached files.</p>"
 
 client = SendGridAPIClient(SENDGRID_API_KEY)
 message = Mail(
-    from_email=SENDER_ADDRESS,
-    to_emails=SENDER_ADDRESS,
+    from_email=SENDGRID_SENDER_ADDRESS,
+    to_emails=SENDGRID_SENDER_ADDRESS,
     subject=subject,
     html_content=html
 )
 
 # encoding CSV files:
-csv_filepath = "my_data.csv" # path / name of existing file
 encoded_csv = base64.b64encode(df.to_csv(index=False).encode()).decode()
 
 # attaching the file:
 message.attachment = Attachment(
     file_content = FileContent(encoded_csv),
     file_type = FileType('text/csv'),
-    file_name = FileName('unemployment_report.csv'), # FileName('JuicyLiftWorkout.pdf')
+    file_name = FileName('unemployment_report.csv'),
     disposition = Disposition('attachment'),
     content_id = ContentId('Attachment 1')
 )
