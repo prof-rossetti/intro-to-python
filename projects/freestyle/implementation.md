@@ -30,7 +30,7 @@ Also, your codebase should be reasonably documented with docstrings and other co
 
 ### Licensing Requirements
 
-Choose a software license, and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository. If you need help choosing a license, ask an instructor for guidance.
+Choose a software license, and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository. If you need help choosing a license, consult https://choosealicense.com/ or ask an instructor for guidance. The [MIT license](https://choosealicense.com/licenses/mit/) is a popular choice for open source projects.
 
 ### Security Requirements
 
@@ -61,7 +61,7 @@ GitHub Actions should automatically run your tests on the CI server whenever new
 
 Iteratively develop your project using version control practices. Save new versions of your source code as you reach key milestones.
 
-Use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the main branch.
+Ideally use branch operations to develop logically-related features on a specific branch, then push that branch to GitHub in order to create a Pull Request, where you can further review your proposed changes and allow automated checks to run  before eventually "merging" the code into the main branch.
 
 If working in a group, each group member should strive to make significant contributions to the application's source code! 
 
