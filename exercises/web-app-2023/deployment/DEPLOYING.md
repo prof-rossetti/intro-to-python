@@ -9,7 +9,11 @@ References:
 
 Login to [Render](https://dashboard.render.com) and visit the dashboard.
 
-Create a New "Web Service". Choose your own repository by specifying its public URL (at the bottom of the page).
+Create a New "Web Service". 
+
+Update the name, as desired.
+
+Choose your own repository by specifying its public URL (Public Git Repository).
 
 Specify start command:
 
@@ -19,9 +23,9 @@ gunicorn "web_app:create_app()"
 
 Choose instance type of "free".
 
-Under the "Advanced" options, set an environment variable called `ALPHAVANTAGE_API_KEY` (specifying your own API Key value, without quotes).
+Set any environment variables your applications needs, such as the `ALPHAVANTAGE_API_KEY` (specifying your own API Key value, without quotes). If you implemented flash messaging, also set a `SECRET_KEY`.
 
-Finally, click to "Create" the web service.
+Finally, click to "Deploy" the web service.
 
 ## Render Deploys
 
