@@ -76,12 +76,12 @@ Project implementations will be evaluated according to the requirements set fort
 Category | Requirement | Weight
 --- | --- | ---
 Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 15%
-User Experience | Provides a simple, pleasant, and intuitive experience for the user, without "bugs" or errors. | 15%
-Documentation | Repo contains a comprehensive README file. | 20%
+User Experience | Provides a simple, pleasant, and intuitive experience for the user, without "bugs" or errors. | 10%
+Documentation | Repo contains a comprehensive README file. | 15%
 Licensing | Repo contains an appropriate LICENSE file. | 5%
 Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
-Quality | Code is well organized, and simplified to remove or minimize code duplication. Ideally integrates with the Code Climate service for automated PR comments/checks. | 10%
-Testing | Contains relevant automated tests. Ideally integrates with a CI service like GitHub Actions for automated PR checks. | 10%
-Dev Process | Submitted via Git repository which reflects an incremental revision history, branch operations, a Pull Request workflow, and contributions from ideally all team members. | 15%
+Quality | Code is well organized, and simplified to remove or minimize code duplication. | 15%
+Testing | Contains relevant automated tests. Ideally implements continuous integration using GitHub Actions. | 15%
+Dev Process | Submitted via Git repository which reflects an incremental revision history, and contributions from ideally all team members. Ideally practices branch operations, and implements a Pull Request workflow. | 15%
 
 This rubric is tentative, and may be subject to slight adjustments during the grading process.
