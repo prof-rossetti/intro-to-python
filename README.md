@@ -10,6 +10,8 @@ This repository contains instructional materials to support various introductory
 
 ### Intro to Software Development in Python
 
+> NOTE: for updated course materials, see Prof Rossetti's new [Intro to Python Programming Book](https://prof-rossetti.github.io/intro-software-dev-python-book/)! 📖
+
 Instructional Units:
 
   + [Unit 0](/units/unit-0.md) - Onboarding
