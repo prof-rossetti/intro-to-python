@@ -25,6 +25,8 @@ Students may consult these past exams in an effort to understand what kinds of q
 
 Semester(s) | Course | Duration
 ---|---|---
+[Spring 2025](/exam/Midterm%20Exam%20-%20COSC%201010%20(Spring%202025)%20-%20v2.pdf) | Georgetown COSC 1010 | 75 mins
+[Fall 2024](/exam/Final%20Exam%20-%20EMSE%206574%20(Fall%202024)%20-%20v2.pdf) | GWU EMSE 6754 | 120 mins
 [Spring 2024](/exam/Midterm%20Exam%20-%20COSC%201010%20(Spring%202024)%20-%20v4.pdf) | Georgetown COSC 1010 | 75 mins
 [Fall 2022 - Fall 2023](/exam/Crunch_the_YouTube_Data_Exam_(Fall_2023)_%5BYOUR_NET_ID%5D.ipynb) | Various | 75 mins
 [Fall 2021 - Summer 2022](/exam/Exam_2022.ipynb) | Various | 75 mins
