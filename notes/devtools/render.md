@@ -8,7 +8,7 @@ References:
 
 ## Prerequisites
 
-This guide assumes you have a flask web application defined in the "web_app" directory of your repo, specifically in the directory's "\__init\__.py" file, within a function called `create_app`.
+This guide assumes you have a flask web application defined in the "web_app" directory of your repo, specifically in the directory's "\__init\__.py" file.
 
 Before deploying, take a moment to add `gunicorn` to the repository's "requirements.txt" file. Save the file, make a commit, and push your code up to GitHub.
 
@@ -23,6 +23,10 @@ Specify the URL of your repository (under the Public Git Repository tab).
 Specify start command referencing the "web_app" directory:
 
 ```
+# if your app variable is exposed directly in the file:
+gunicorn "web_app:app"
+
+# if your app is defined within a create_app function:
 gunicorn "web_app:create_app()"
 ```
 
