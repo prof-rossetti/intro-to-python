@@ -30,7 +30,7 @@ Choose instance type of "free".
 
 Under the "Advanced" options, set any environment variables that your app requires, as necessary.
 
-Finally, click to "Create" the web service.
+Finally, click "Deploy web service". This will trigger a build. Since we are using the free server option, it might take a few moments for the deployment to complete. 
 
 ## Render Deploys
 
@@ -39,3 +39,5 @@ Whenever you push new code to the designated branch in your GitHub repository, i
 You can also trigger builds manually.
 
 After a deployment build has finished, you should be able to view the updated app at the URL provided in the top left (i.e. `https://YOUR_APP.onrender.com/`).
+
+Note that since we are using a free server, it may take a few moments to show up in the browser when you first visit the URL.
