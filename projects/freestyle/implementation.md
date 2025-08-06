@@ -30,7 +30,7 @@ Also, your codebase should be reasonably documented with docstrings and other co
 
 ### Licensing Requirements
 
-Choose a software license, and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository. If you need help choosing a license, consult https://choosealicense.com/ or ask an instructor for guidance. The [MIT license](https://choosealicense.com/licenses/mit/) is a popular choice for open source projects.
+Optionally choose a software license, and include a corresponding file called "LICENSE" or "LICENSE.md" in the root directory of your repository. If you need help choosing a license, consult https://choosealicense.com/ or ask an instructor for guidance. The [MIT license](https://choosealicense.com/licenses/mit/) is a popular choice for open source projects.
 
 ### Security Requirements
 
@@ -78,8 +78,7 @@ Category | Requirement | Weight
 Uniqueness and Individuality | Exhibits creativity, and a unique set of functionality. | 15%
 User Experience | Provides a simple, pleasant, and intuitive experience for the user, without "bugs" or errors. | 10%
 Documentation | Repo contains a comprehensive README file. | 15%
-Licensing | Repo contains an appropriate LICENSE file. | 5%
-Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 10%
+Security | Excludes sensitive information and credentials from version control; protects user data as necessary. | 15%
 Quality | Code is well organized, and simplified to remove or minimize code duplication. | 15%
 Testing | Contains relevant automated tests. Ideally implements continuous integration using GitHub Actions. | 15%
 Dev Process | Submitted via Git repository which reflects an incremental revision history, and contributions from ideally all team members. Ideally practices branch operations, and implements a Pull Request workflow. | 15%
